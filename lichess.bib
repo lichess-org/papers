@@ -473,6 +473,19 @@
   abstract      = {Abstract Gambits are central to human decision-making. Our goal is to provide a theory of Gambits. A Gambit is a combination of psychological and technical factors designed to disrupt predictable play. Chess provides an environment to study gambits and behavioral game theory. Our theory is based on the Bellman optimality path for sequential decision-making. This allows us to calculate the Q\$\$ Q \$\$-values of a Gambit where material (usually a pawn) is sacrificed for dynamic play. On the empirical side, we study the effectiveness of a number of popular chess Gambits. This is a natural setting as chess Gambits require a sequential assessment of a set of moves (a.k.a. policy) after the Gambit has been accepted. Our analysis uses Stockfish 14.1 to calculate the optimal Bellman Q\$\$ Q \$\$-values, which fundamentally measures if a position is winning or losing. To test whether Bellman's equation holds in play, we estimate the transition probabilities to the next board state via a database of expert human play. This then allows us to test whether the Gambiteer is following the optimal path in his decision-making. Our methodology is applied to the popular Stafford and reverse Stafford (a.k.a. Boden–Kieretsky–Morphy) Gambit and other common ones including the Smith–Morra, Goring, Danish and Halloween Gambits. We build on research in human decision-making by proving an irrational skewness preference within agents in chess. We conclude with directions for future research.},
 }
 
+@inproceedings{maksim:2025:neural-network-approach-chess-cheat-detectoin,
+  title         = {A Neural Network Approach to Chess Cheat Detection},
+  author        = {Iavich, Maksim and Kevanishvili, Zura},
+  year          = {2025},
+  booktitle     = {Information and Software Technologies},
+  publisher     = {Springer Nature Switzerland},
+  address       = {Cham},
+  pages         = {131--145},
+  isbn          = {978-3-031-84263-4},
+  editor        = {Lopata, Audrius and Gudonien{\.{e}}, Daina and Butkien{\.{e}}, Rita and {\v{C}}eponis, Jonas},
+  abstract      = {With the development of chess engines, cheating online has never been easier, resulting in a need for more robust and accurate detection systems. This paper presents a novel approach to chess cheater detection that combines conventional chess engines and neural networks to help identify which games are authentically played by humans and which show signs of extraneous intervention. By utilizing Stockfish to measure centipawn loss and its mathematical derivatives, we can measure deviations from typical computer-generated moves much like in conventional anti-cheat systems. Additionally, the neural network Maia, designed specifically to mimic human play, transmutes centipawn loss data to highlight deviations from human style. This dual-measurement system addresses the limitations of the given traditional anti-cheat systems, which face the issue of distinguishing between strong human players and those using engines. The collected metadata is analyzed using a sequential neural network, which identifies patterns of fair play violation. Our approach offers a robust solution for maintaining the integrity of online chess by accurately detecting and preventing cheating.},
+}
+
 @article{martin:2025:re-evaluating-metamorphic-testing-chess-engines-replication-study,
   title         = {Re-evaluating metamorphic testing of chess engines: A replication study},
   author        = {Axel Martin and Djamel Eddine Khelladi and Th\'{e}o Matricon and Mathieu Acher},
