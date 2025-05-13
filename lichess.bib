@@ -1091,6 +1091,24 @@ BibTex
   primaryclass  = {cs.CL},
 }
 
+@inproceedings{weissenberger:2025:massively-parallel-inverse-block-sorting-transforms-bzip2-decompression-gpu,
+  title         = {Massively Parallel Inverse Block-sorting Transforms for bzip2 Decompression on GPUs},
+  author        = {Wei{\ss}enberger, Andr{\'e} and Schmidt, Bertil},
+  year          = {2024},
+  booktitle     = {Proceedings of the 53rd International Conference on Parallel Processing},
+  location      = {Gotland, Sweden},
+  publisher     = {Association for Computing Machinery},
+  address       = {New York, NY, USA},
+  series        = {ICPP '24},
+  pages         = {856–865},
+  doi           = {10.1145/3673038.3673067},
+  isbn          = {9798400717932},
+  url           = {https://doi.org/10.1145/3673038.3673067},
+  abstract      = {Lossless data compression has evolved into an indispensable tool for reducing data transfer times in heterogeneous systems. However, performing decompression on host systems can create performance bottlenecks. Accelerator libraries, such as nvCOMP, address this problem by providing custom GPU-enabled versions of some general-purpose compression methods, including Snappy, ZStandard and gzip. However, popular bzip-like compression schemes, which rely on block-sorting transforms have not yet been integrated since their fine-grained parallelization is challenging. With a focus on decompression, we propose novel techniques for fine-grained parallelization of inverse Burrows-Wheeler transform (iBWT) and inverse Move-to-Front (iMTF) transform on GPUs, which enable efficient processing of bzip2-based archives on CUDA-enabled accelerators for the first time. Consequently, we present the first fully GPU-enabled bzip2 decompression pipeline as a use case for the proposed algorithms. Our experimental results reveal speedups of up to 6.1x over a multicore CPU implementation for iBWT, and throughput rates of up to 2400 MB/s for combined iBWT and iMTF on an A100 GPU. For decompression of bzip2 archives, a throughput of over 11.62 GB/s is achieved on a DGX H100 server. The source code of our parallel decoder implementation is available at https://github.com/weissenberger/bzip2gpu.},
+  numpages      = {10},
+  keywords      = {Burrows-Wheeler transform, CUDA, GPU, Move-to-front transform, accelerators, bzip2, data compression},
+}
+
 @inproceedings{wieczerzak:2022:dataset-experimental-investigation-chess-position-evaluation-neural-network,
   title         = {Dataset Related Experimental Investigation of Chess Position Evaluation Using a Deep Neural Network},
   author        = {Dawid Wieczerzak and Pawel Czarnul},
