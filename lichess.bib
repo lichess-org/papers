@@ -34,6 +34,25 @@
   abstract      = {This report encompasses the implementation of two state-of-the-art machine learning algorithms for evaluating chess positions. The first algorithm makes use of artificial neural networks and manual feature representation thus closely following the implementation and architecture of Matthew Lai's Giraffe.  Giraffe learns to play chess largely by self-play and derives its own rules based on the data [1]. Giraffe was implemented as a 7 class classification problem on a dataset of over 10,000 grandmaster level games. Four different implementations of Giraffe were explored covering two different architectures and the effects of regularization on the model performance. The second algorithm implemented goes through an unsupervised learning phase to perform feature extraction followed by a supervised learning phase thus replicating David Eli's DeepChess. DeepChess evaluates chess positions using a deep neural network without any a priori knowledge regarding the rules of chess. DeepChess is implemented as a siamese network of two disjoint deep belief networks connected to each other by fully connected layers [2]. This architecture was implemented as a binary classification problem on the same dataset as Giraffe and also on a larger dataset of LiChess games. Different implementations of DeepChess covering different training methodologies and parameter sets were executed.},
 }
 
+@article{baek:2024:wasm-r3-webassembly-benchmarks,
+  title         = {Wasm-R3: Record-Reduce-Replay for Realistic and Standalone WebAssembly Benchmarks},
+  author        = {Baek, Doehyun and Getz, Jakob and Sim, Yusung and Lehmann, Daniel and Titzer, Ben L. and Ryu, Sukyoung and Pradel, Michael},
+  year          = {2024},
+  month         = oct,
+  journal       = {Proc. ACM Program. Lang.},
+  publisher     = {Association for Computing Machinery},
+  address       = {New York, NY, USA},
+  volume        = {8},
+  number        = {OOPSLA2},
+  doi           = {10.1145/3689787},
+  url           = {https://doi.org/10.1145/3689787},
+  issue_date    = {October 2024},
+  abstract      = {WebAssembly (Wasm for short) brings a new, powerful capability to the web as well as Edge, IoT, and embedded systems. Wasm is a portable, compact binary code format with high performance and robust sandboxing properties. As Wasm applications grow in size and importance, the complex performance characteristics of diverse Wasm engines demand robust, representative benchmarks for proper tuning. Stopgap benchmark suites, such as PolyBenchC and libsodium, continue to be used in the literature, though they are known to be unrepresentative. Porting of more complex suites remains difficult because Wasm lacks many system APIs and extracting real-world Wasm benchmarks from the web is difficult due to complex host interactions. To address this challenge, we introduce Wasm-R3, the first record and replay technique for Wasm. Wasm-R3 transparently injects instrumentation into Wasm modules to record an execution trace from inside the module, then reduces the execution trace via several optimizations, and finally produces a replay module that is executable standalone without any host environment-on any engine. The benchmarks created by our approach are (i) realistic, because the approach records real-world web applications, (ii) faithful to the original execution, because the replay benchmark includes the unmodified original code, only adding emulation of host interactions, and (iii) standalone, because the replay benchmarks run on any engine. Applying Wasm-R3 to web-based Wasm applications in the wild demonstrates the correctness of our approach as well as the effectiveness of our optimizations, which reduce the recorded traces by 99.53\% and the size of the replay benchmark by 9.98\%. We release the resulting benchmark suite of 27 applications, called Wasm-R3-Bench, to the community, to inspire a new generation of realistic and standalone Wasm benchmarks.},
+  articleno     = {347},
+  numpages      = {27},
+  keywords      = {Benchmarking, WebAssembly, record and replay},
+}
+
 @article{banerjee:2024:skill-v-chance-card-board-games,
   title         = {Skill vs. Chance Quantification for Popular Card {\&} Board Games},
   author        = {Tathagata Banerjee and Anushka De and Subhamoy Maitra and Diganta Mukherjee},
