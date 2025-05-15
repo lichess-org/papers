@@ -602,6 +602,23 @@
   abstract      = {Abstract Gambits are central to human decision-making. Our goal is to provide a theory of Gambits. A Gambit is a combination of psychological and technical factors designed to disrupt predictable play. Chess provides an environment to study gambits and behavioral game theory. Our theory is based on the Bellman optimality path for sequential decision-making. This allows us to calculate the Q\$\$ Q \$\$-values of a Gambit where material (usually a pawn) is sacrificed for dynamic play. On the empirical side, we study the effectiveness of a number of popular chess Gambits. This is a natural setting as chess Gambits require a sequential assessment of a set of moves (a.k.a. policy) after the Gambit has been accepted. Our analysis uses Stockfish 14.1 to calculate the optimal Bellman Q\$\$ Q \$\$-values, which fundamentally measures if a position is winning or losing. To test whether Bellman's equation holds in play, we estimate the transition probabilities to the next board state via a database of expert human play. This then allows us to test whether the Gambiteer is following the optimal path in his decision-making. Our methodology is applied to the popular Stafford and reverse Stafford (a.k.a. Boden–Kieretsky–Morphy) Gambit and other common ones including the Smith–Morra, Goring, Danish and Halloween Gambits. We build on research in human decision-making by proving an irrational skewness preference within agents in chess. We conclude with directions for future research.},
 }
 
+@inproceedings{makovec:2023:merging-neural-networks-traditional-evaluations-crazyhouse,
+  title         = {Merging Neural Networks with Traditional Evaluations in Crazyhouse},
+  author        = {Makovec, Anei and Pirker, Johanna and Guid, Matej},
+  year          = {2023},
+  booktitle     = {Advances in Computer Games: 18th International Conference, ACG 2023, Virtual Event, November 28–30, 2023, Revised Selected Papers},
+  location      = {Siegen, Germany},
+  publisher     = {Springer-Verlag},
+  address       = {Berlin, Heidelberg},
+  pages         = {15–25},
+  doi           = {10.1007/978-3-031-54968-7_2},
+  isbn          = {978-3-031-54967-0},
+  url           = {https://doi.org/10.1007/978-3-031-54968-7_2},
+  abstract      = {In the intricate landscape of game-playing algorithms, Crazyhouse stands as a complex variant of chess where captured pieces are reintroduced, presenting unique evaluation challenges. This paper explores a hybrid approach that combines traditional evaluation functions with neural network-based evaluations, seeking an optimal balance in performance. Through rigorous experimentation, including self-play, matchups against a variant of the renowned program, Go-deep experiments, and score deviations, we present compelling evidence for the effectiveness of a weighted sum of both evaluations. Remarkably, in our experiments, the combination of 75\% neural network and 25\% traditional evaluation consistently emerged as the most effective choice. Furthermore, we introduce the use of Best-Change rates, which have previously been associated with evaluation quality, in the context of Monte Carlo tree search-based algorithms.},
+  numpages      = {11},
+  keywords      = {Crazyhouse, chess variants, heuristic evaluation functions, neural networks, Best-Change rates, Monte Carlo tree search},
+}
+
 @inproceedings{maksim:2025:neural-network-approach-chess-cheat-detectoin,
   title         = {A Neural Network Approach to Chess Cheat Detection},
   author        = {Iavich, Maksim and Kevanishvili, Zura},
