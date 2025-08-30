@@ -1600,6 +1600,20 @@ BibTex
   primaryclass  = {cs.LG},
 }
 
+@inproceedings{ye:2025:implicit-search-discrete-diffusion-study-chess,
+  title         = {Implicit Search via Discrete Diffusion: {A} Study on Chess},
+  author        = {Jiacheng Ye and Zhenyu Wu and Jiahui Gao and Zhiyong Wu and Xin Jiang and Zhenguo Li and Lingpeng Kong},
+  year          = {2025},
+  booktitle     = {The Thirteenth International Conference on Learning Representations, {ICLR} 2025, Singapore, April 24-28, 2025},
+  publisher     = {OpenReview.net},
+  url           = {https://openreview.net/forum?id=A9y3LFX4ds},
+  abstract      = {In the post-AlphaGo era, there has been a renewed interest in search techniques such as Monte Carlo Tree Search (MCTS), particularly in their application to Large Language Models (LLMs). This renewed attention is driven by the recognition that current next-token prediction models often lack the ability for long-term planning. Is it possible to instill search-like abilities within the models to enhance their planning abilities without relying on explicit search? We propose DiffuSearch , a model that does \textit{implicit search} by looking into the future world via discrete diffusion modeling. We instantiate DiffuSearch on a classical board game, Chess, where explicit search is known to be essential. Through extensive controlled experiments, we show DiffuSearch outperforms both the searchless and explicit search-enhanced policies. Specifically, DiffuSearch outperforms the one-step policy by 19.2\% and the MCTS-enhanced policy by 14\% on action accuracy. Furthermore, DiffuSearch demonstrates a notable 30\% enhancement in puzzle-solving abilities compared to explicit search-based policies, along with a significant 540 Elo increase in game-playing strength assessment. These results indicate that implicit search via discrete diffusion is a viable alternative to explicit search over a one-step policy. All codes are publicly available at \href{https://github.com/HKUNLP/DiffuSearch}{https://github.com/HKUNLP/DiffuSearch}},
+  tldr          = {We propose a model that does implicit search by looking into the future world via discrete diffusion modeling.},
+  keywords      = {discrete diffusion model, search, planning, chess, MCTS},
+  github        = {https://github.com/HKUNLP/DiffuSearch},
+  huggingface   = {https://huggingface.co/datasets/jiacheng-ye/chess10k},
+}
+
 @inproceedings{yohanes:2024:chess-piece-image-recognition-nn-cnn,
   title         = {Chess Piece Image Recognition Using Transfer Learning, Simple Neural Network, and Convolutional Neural Network},
   author        = {Yohanes, Gabriel and Nursalim, Mario and Nicholas and Kurniadi, Felix Indra},
