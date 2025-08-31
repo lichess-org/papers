@@ -316,6 +316,24 @@
   keywords      = {Representation Engineering; Probing Classifiers; Chess-playing Language Models, GPT},
 }
 
+@thesis{davis:2025:interpreation-control-ai-model-behavior-direct-adjustment-latent-representations,
+  title         = {Interpretation and Control of AI Model Behavior Through Direct Adjustment of Latent Representations},
+  author        = {Davis, Austin},
+  year          = {2025},
+  url           = {https://stars.library.ucf.edu/etd2024/285},
+  institution   = {University of Central Florida},
+  type          = {PhD thesis},
+  supervisor    = {Sukthankar, Gita},
+  keywords      = {Latent Representation Editing; Mechanistic Interpretability; Linear Probes; Chess Language Models; Artificial Intelligence},
+  abstract      = {
+    This dissertation investigates the structures and mechanisms underpinning the latent space representations that emerge within Generative Pretrained Transformer (GPT) models. Addressing the broader goal of enhancing AI trustworthiness through transparency, accountability, and controllability, we focus on techniques to understand, quantify, and manipulate these latent space representations. Through a series of analyses, we examine several chess-playing GPT models as controlled testbeds, leveraging their structured decision space to explore emergent representations and decision-making processes.
+
+    Key contributions include a mechanistic analysis of the attention heads and latent representations, the development of novel metrics for evaluating intervention outcomes, and the application of linear probe classifiers to decode and edit the model's internal world representations. Analysis of the probe weight vectors reveals that the chess-playing GPT developed an emergent world model of the game that includes pieces, positions, and movement rules, and provides empirical support for the linear representation hypothesis--the idea that abstract concepts are encoded as specific directions in the model's hidden state space. Complementary analysis of the hidden state vectors demonstrates that the model's internal representations honor the Markovian property of chess.
+
+    Experimental results demonstrate that linear interventions can causally steer GPT outputs while preserving their semantic validity. Drawing on the dose-response analogy from medicine, we vary both the strength and position of interventions, showing that output quality is maximized when intervention strength follows an exponentially decaying schedule across token positions. Similar experiments using sparse autoencoders in place of linear probes yielded significantly poorer performance. These results highlight the effectiveness of simple linear probes as valuable tools for interpretability and control.
+  },
+}
+
 @article{de-marzo:2023:complexity-similarity-chess-openings-community-data,
   title         = {Quantifying the complexity and similarity of chess openings using online chess community data},
   author        = {De Marzo, Giordano and Servedio, Vito D. P.},
