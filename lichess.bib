@@ -182,6 +182,11 @@
   year          = {2025},
   booktitle     = {The Thirteenth International Conference on Learning Representations},
   url           = {https://openreview.net/forum?id=CvjXlsBLCX},
+  abstract = {Strength estimation and adjustment are crucial in designing human-AI interactions, particularly in games where AI surpasses human players. This paper introduces a novel strength system, including a strength estimator (SE) and an SE-based Monte Carlo tree search, denoted as SE-MCTS, which predicts strengths from games and offers different playing strengths with human styles. The strength estimator calculates strength scores and predicts ranks from games without direct human interaction. SE-MCTS utilizes the strength scores in a Monte Carlo tree search to adjust playing strength and style. We first conduct experiments in Go, a challenging board game with a wide range of ranks. Our strength estimator significantly achieves over 80% accuracy in predicting ranks by observing 15 games only, whereas the previous method reached 49% accuracy for 100 games. For strength adjustment, SE-MCTS successfully adjusts to designated ranks while achieving a 51.33% accuracy in aligning to human actions, outperforming a previous state-of-the-art, with only 42.56% accuracy. To demonstrate the generality of our strength system, we further apply SE and SE-MCTS to chess and obtain consistent results. These results show a promising approach to strength estimation and adjustment, enhancing human-AI interactions in games. Our code is available at https://rlg.iis.sinica.edu.tw/papers/strength-estimator.},
+  tldr = {This paper proposes a strength system that can estimate the strength from games and provide various playing strengths while simultaneously offer a human-like behavior in both Go and chess.},
+  keywords = {Bradley-Terry Model, Strength Estimation, Strength Adjustment, Human-like Playing Style, Monte-Carlo Tree Search, Go, Chess},
+  github = {https://github.com/rlglab/strength-estimator/},
+  website = {https://rlg.iis.sinica.edu.tw/papers/strength-estimator/},
 }
 
 @inproceedings{cheong:2025:design-electronic-chess-board-analogue-hall-effect-sensors-piece-identification,
@@ -249,6 +254,21 @@
   doi           = {10.1177/13896911251315903},
   url           = {https://doi.org/10.1177/13896911251315903},
   abstract      = {There is a long-held belief in the chess community that the player with the white pieces has an advantage in making the first move. This phenomenon has been observed repeatedly in over-the-board games between high-level players and professionals. However, less is known about the prevalence of white's advantage in games played between amateurs in more casual settings. This article attempts to identify a first-move advantage in chess by examining a large database of amateur games played online on a dedicated chess website. Win rates are calculated for various rating levels, and the influence of opening move choice is also explored. These results can help determine whether there is an inherent first-move advantage in chess observable for all players in multiple settings, or if this effect is exclusively seen with players of high skill during games played in person.},
+}
+
+@article{cruz:2025:understanding-learned-look-ahead-behavior-chess-neural-networks,
+  title         = {Understanding the learned look-ahead behavior of chess neural networks},
+  author        = {Diogo Cruz},
+  year          = {2025},
+  journal       = {CoRR},
+  volume        = {abs/2505.21552},
+  doi           = {10.48550/ARXIV.2505.21552},
+  url           = {https://doi.org/10.48550/arXiv.2505.21552},
+  note          = {keywords from rejected openreview submission: https://openreview.net/forum?id=OcBAd0JPxv\&noteId=ZcMfmDpMpn},
+  eprinttype    = {arXiv},
+  eprint        = {2505.21552},
+  abstract      = {We investigate the look-ahead capabilities of chess-playing neural networks, specifically focusing on the Leela Chess Zero policy network. We build on the work of Jenner et al. (2024) by analyzing the model's ability to consider future moves and alternative sequences beyond the immediate next move. Our findings reveal that the network's look-ahead behavior is highly context-dependent, varying significantly based on the specific chess position. We demonstrate that the model can process information about board states up to seven moves ahead, utilizing similar internal mechanisms across different future time steps. Additionally, we provide evidence that the network considers multiple possible move sequences rather than focusing on a single line of play. These results offer new insights into the emergence of sophisticated look-ahead capabilities in neural networks trained on strategic tasks, contributing to our understanding of AI reasoning in complex domains. Our work also showcases the effectiveness of interpretability techniques in uncovering cognitive-like processes in artificial intelligence systems.},
+  keywords      = {model behavior attribution, look-ahead planning, mechanistic interpretability},
 }
 
 @article{czech:2020:learning-crazyhouse-above-world-champion-deep-neural-networks-human-data,
