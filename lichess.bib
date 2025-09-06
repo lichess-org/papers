@@ -182,11 +182,11 @@
   year          = {2025},
   booktitle     = {The Thirteenth International Conference on Learning Representations},
   url           = {https://openreview.net/forum?id=CvjXlsBLCX},
-  abstract = {Strength estimation and adjustment are crucial in designing human-AI interactions, particularly in games where AI surpasses human players. This paper introduces a novel strength system, including a strength estimator (SE) and an SE-based Monte Carlo tree search, denoted as SE-MCTS, which predicts strengths from games and offers different playing strengths with human styles. The strength estimator calculates strength scores and predicts ranks from games without direct human interaction. SE-MCTS utilizes the strength scores in a Monte Carlo tree search to adjust playing strength and style. We first conduct experiments in Go, a challenging board game with a wide range of ranks. Our strength estimator significantly achieves over 80% accuracy in predicting ranks by observing 15 games only, whereas the previous method reached 49% accuracy for 100 games. For strength adjustment, SE-MCTS successfully adjusts to designated ranks while achieving a 51.33% accuracy in aligning to human actions, outperforming a previous state-of-the-art, with only 42.56% accuracy. To demonstrate the generality of our strength system, we further apply SE and SE-MCTS to chess and obtain consistent results. These results show a promising approach to strength estimation and adjustment, enhancing human-AI interactions in games. Our code is available at https://rlg.iis.sinica.edu.tw/papers/strength-estimator.},
-  tldr = {This paper proposes a strength system that can estimate the strength from games and provide various playing strengths while simultaneously offer a human-like behavior in both Go and chess.},
-  keywords = {Bradley-Terry Model, Strength Estimation, Strength Adjustment, Human-like Playing Style, Monte-Carlo Tree Search, Go, Chess},
-  github = {https://github.com/rlglab/strength-estimator/},
-  website = {https://rlg.iis.sinica.edu.tw/papers/strength-estimator/},
+  abstract      = {Strength estimation and adjustment are crucial in designing human-AI interactions, particularly in games where AI surpasses human players. This paper introduces a novel strength system, including a strength estimator (SE) and an SE-based Monte Carlo tree search, denoted as SE-MCTS, which predicts strengths from games and offers different playing strengths with human styles. The strength estimator calculates strength scores and predicts ranks from games without direct human interaction. SE-MCTS utilizes the strength scores in a Monte Carlo tree search to adjust playing strength and style. We first conduct experiments in Go, a challenging board game with a wide range of ranks. Our strength estimator significantly achieves over 80\% accuracy in predicting ranks by observing 15 games only, whereas the previous method reached 49\% accuracy for 100 games. For strength adjustment, SE-MCTS successfully adjusts to designated ranks while achieving a 51.33\% accuracy in aligning to human actions, outperforming a previous state-of-the-art, with only 42.56\% accuracy. To demonstrate the generality of our strength system, we further apply SE and SE-MCTS to chess and obtain consistent results. These results show a promising approach to strength estimation and adjustment, enhancing human-AI interactions in games. Our code is available at https://rlg.iis.sinica.edu.tw/papers/strength-estimator.},
+  tldr          = {This paper proposes a strength system that can estimate the strength from games and provide various playing strengths while simultaneously offer a human-like behavior in both Go and chess.},
+  keywords      = {Bradley-Terry Model, Strength Estimation, Strength Adjustment, Human-like Playing Style, Monte-Carlo Tree Search, Go, Chess},
+  github        = {https://github.com/rlglab/strength-estimator/},
+  website       = {https://rlg.iis.sinica.edu.tw/papers/strength-estimator/},
 }
 
 @inproceedings{cheong:2025:design-electronic-chess-board-analogue-hall-effect-sensors-piece-identification,
@@ -1365,6 +1365,19 @@ BibTex
   institution   = {National Bureau of Economic Research},
   type          = {Working Paper},
   abstract      = {We explore the role of memory for choice behavior in unfamiliar environments. Using a unique data set, we document that  decision makers exhibit a "memory premium." They tend to choose in-memory alternatives over out-of-memory ones, even when the latter are objectively better. Consistent with well-established regularities regarding the inner workings of human memory, the memory premium is associative, subject to interference and repetition effects, and decays over time. Even as decision makers gain familiarity with the environment, the memory premium remains economically large. Our results imply that the ease with which past experiences come to mind plays an important role in shaping choice behavior.},
+}
+
+@misc{sandmann:2025:iterative-inference-chess-playing-neural-network,
+  title         = {Iterative Inference in a Chess-Playing Neural Network},
+  author        = {Elias Sandmann and Sebastian Lapuschkin and Wojciech Samek},
+  year          = {2025},
+  url           = {https://arxiv.org/abs/2508.21380},
+  eprint        = {2508.21380},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  abstract      = {Do neural networks build their representations through smooth, gradual refinement, or via more complex computational processes? We investigate this by extending the logit lens to analyze the policy network of Leela Chess Zero, a superhuman chess engine. We find strong monotonic trends in playing strength and puzzle-solving ability across layers, yet policy distributions frequently follow non-smooth trajectories. Evidence for this includes correct puzzle solutions that are discovered early but subsequently discarded, move rankings that remain poorly correlated with final outputs, and high policy divergence until late in the network. These findings contrast with the smooth distributional convergence typically observed in language models.},
+  github        = {https://github.com/hartigel/leela-logit-lens},
+  figshare      = {https://figshare.com/s/5342980a9ba8b26985a9},
 }
 
 @article{sanjaya:2022-non-transitivity-chess,
