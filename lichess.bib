@@ -1,21 +1,3 @@
-@inproceedings{2024:biemer:solution-path-heuristics-predicting-difficulty-enjoyment-ratings-roguelike-level-segments,
-  title         = {Solution Path Heuristics for Predicting Difficulty and Enjoyment Ratings of Roguelike Level Segments},
-  author        = {Biemer, Colan and Cooper, Seth},
-  year          = {2024},
-  booktitle     = {Proceedings of the 19th International Conference on the Foundations of Digital Games},
-  location      = {Worcester, MA, USA},
-  publisher     = {Association for Computing Machinery},
-  address       = {New York, NY, USA},
-  series        = {FDG '24},
-  doi           = {10.1145/3649921.3659846},
-  isbn          = {9798400709555},
-  url           = {https://doi.org/10.1145/3649921.3659846},
-  abstract      = {When generating levels, algorithmically evaluating the results is essential. In this paper, we looked at predicting a level's difficulty and enjoyment. Past work has approached this problem for puzzle games like Sudoku by analyzing the characteristics of the initial level, the solved level, and the process that led to that solution. In this work, we examined a set of heuristics for Roguelike levels and their solutions, and their relationship to subjective player ratings of the levels. We gathered ratings of difficulty and enjoyment of levels in a study with 143 players. We ran an ablation study on the set of heuristics to find the best combination of heuristics for predicting difficulty and enjoyment with a linear regression model, and found solution path-based heursitics performed well. However, these models did not outperform a simple baseline for predicting enjoyment. Jaccard similarity on paths--a method we have not seen used in the field of game AI--was a useful predictor of difficulty. Testing proximity to enemies across a solution path is the only heuristic needed to predict how enjoyable a level will be.},
-  articleno     = {69},
-  numpages      = {8},
-  keywords      = {difficulty, player study, procedural content generation},
-}
-
 @article{adnan:2024:unleashing-artificial-cognition-integrating-multiple-ai-systems,
   title         = {Unleashing Artificial Cognition: Integrating Multiple {AI} Systems},
   author        = {Muntasir Adnan and Buddhi Gamage and Zhiwei Xu and Damith Herath and Carlos C. N. Kuhn},
@@ -139,6 +121,24 @@
   pages         = {2905--2921},
   url           = {https://proceedings.mlr.press/v206/bertrand23a.html},
   editor        = {Francisco J. R. Ruiz and Jennifer G. Dy and Jan{-}Willem van de Meent},
+}
+
+@inproceedings{biemer:2024:solution-path-heuristics-predicting-difficulty-enjoyment-ratings-roguelike-level-segments,
+  title         = {Solution Path Heuristics for Predicting Difficulty and Enjoyment Ratings of Roguelike Level Segments},
+  author        = {Biemer, Colan and Cooper, Seth},
+  year          = {2024},
+  booktitle     = {Proceedings of the 19th International Conference on the Foundations of Digital Games},
+  location      = {Worcester, MA, USA},
+  publisher     = {Association for Computing Machinery},
+  address       = {New York, NY, USA},
+  series        = {FDG '24},
+  doi           = {10.1145/3649921.3659846},
+  isbn          = {9798400709555},
+  url           = {https://doi.org/10.1145/3649921.3659846},
+  abstract      = {When generating levels, algorithmically evaluating the results is essential. In this paper, we looked at predicting a level's difficulty and enjoyment. Past work has approached this problem for puzzle games like Sudoku by analyzing the characteristics of the initial level, the solved level, and the process that led to that solution. In this work, we examined a set of heuristics for Roguelike levels and their solutions, and their relationship to subjective player ratings of the levels. We gathered ratings of difficulty and enjoyment of levels in a study with 143 players. We ran an ablation study on the set of heuristics to find the best combination of heuristics for predicting difficulty and enjoyment with a linear regression model, and found solution path-based heursitics performed well. However, these models did not outperform a simple baseline for predicting enjoyment. Jaccard similarity on paths--a method we have not seen used in the field of game AI--was a useful predictor of difficulty. Testing proximity to enemies across a solution path is the only heuristic needed to predict how enjoyable a level will be.},
+  articleno     = {69},
+  numpages      = {8},
+  keywords      = {difficulty, player study, procedural content generation},
 }
 
 @inproceedings{bizjak:2021:automatic-recognition-similar-chess-motifs,
@@ -1117,6 +1117,16 @@ BibTex
   primaryclass  = {eess.SY},
 }
 
+@misc{pav:2025:inferring-piece-value,
+  title         = {Inferring Piece Value in Chess and Chess Variants},
+  author        = {Steven Pav},
+  year          = {2025},
+  url           = {https://arxiv.org/abs/2509.04691},
+  eprint        = {2509.04691},
+  archiveprefix = {arXiv},
+  primaryclass  = {stat.AP},
+}
+
 @inproceedings{pilone:2025:automatically-augmenting-github-issues-informative-user-reviews,
   title         = {Automatically Augmenting GitHub Issues with Informative User Reviews},
   author        = {Pilone, Arthur and Raglianti, Marco and Lanza, Michele and Kon, Fabio and Meirelles, Paulo},
@@ -1818,14 +1828,4 @@ BibTex
   year          = {2024},
   booktitle     = {{IEEE} International Conference on Big Data, Big Data 2024, Washington DC, USA, December 15-18, 2024},
   publisher     = {{IEEE}},
-}
-
-@misc{pav:2025:inferring-piece-value,
-  title         = {Inferring Piece Value in Chess and Chess Variants},
-  author        = {Steven Pav},
-  year          = {2025},
-  url           = {https://arxiv.org/abs/2509.04691},
-  eprint        = {2509.04691},
-  archiveprefix = {arXiv},
-  primaryclass  = {stat.AP},
 }
