@@ -702,6 +702,16 @@
   urldate       = {2025-03-14},
 }
 
+@inproceedings{kolasani:2025:llm-chess-benchmarking-reasoning-instruction-following-llms-through-chess,
+  title         = {LLM CHESS: Benchmarking Reasoning and Instruction-Following in LLMs through Chess},
+  author        = {Kolasani, Sai and Saplin, Maxim and Crispino, Nicholas and Montgomery, Kyle and Davis, Jared and Zaharia, Matei and Wang, Chi and Wang, Chenguang},
+  year          = {2025},
+  booktitle     = {Workshop on Foundations of Reasoning in Language Models at NeurIPS 2025},
+  github        = {https://github.com/LLM-CHESS/llm\_chess\_minimal, https://github.com/maxim-saplin/llm\_chess/},
+  website       = {https://maxim-saplin.github.io/llm\_chess/},
+  abstract      = {We introduce LLM CHESS, an evaluation framework designed to probe the generalization of reasoning and instruction-following abilities in large language models (LLMs) through extended agentic interaction in the domain of chess. We rank over 50 open and closed source models by playing against a random opponent using a range of behavioral metrics, including win and loss rates, move quality, move legality, hallucinated actions, and game duration. For a subset of models, we derive an Elo estimate by playing against a chess engine with variably configured skill. Despite the simplicity of the instruction-following task and the weakness of the opponent, many state-of-the-art models struggle to complete games or achieve consistent wins. Similar to other benchmarks on complex reasoning tasks, our experiments reveal a clear separation between reasoning and non-reasoning models. However, unlike existing static benchmarks, the stochastic and dynamic nature of LLM CHESS uniquely reduces overfitting and memorization while preventing benchmark saturation. To support future work on evaluating reasoning and instruction-following in LLMs, we release our experimental framework, a public leaderboard, and a dataset of associated games. Our code is available athttps://github.com/LLM-CHESS/llm\_chess.},
+}
+
 @inproceedings{krishnan:2022:automatic-synthesis-interpretable-chess-tactics,
   title         = {Towards the automatic synthesis of interpretable chess tactics},
   author        = {Krishnan, Abhijeet and Martens, Chris},
@@ -1446,6 +1456,8 @@ BibTex
   url           = {https://openreview.net/forum?id=nRPQhySXJP},
   abstract      = {Do neural networks build their representations through smooth, gradual refinement, or via more complex computational processes? We investigate this by extending the logit lens to analyze the policy network of Leela Chess Zero, a superhuman chess engine. We find strong monotonic trends in playing strength and puzzle-solving ability across layers, yet policy distributions frequently follow non-smooth trajectories. Evidence for this includes correct puzzle solutions that are discovered early but subsequently discarded, move rankings that remain poorly correlated with final outputs, and high policy divergence until late in the network. These findings contrast with the smooth distributional convergence typically observed in language models.},
   github        = {https://github.com/hartigel/leela-logit-lens},
+  keywords      = {Understanding high-level properties of models, Probing, logit lens, chess, iterative inference},
+  tldr          = {We extended the logit lens to Post-LN to analyze Leela Chess, revealing interpretable intermediate policies with monotonic capability improvement but non-monotonic policy dynamics that contrast with smooth language model convergence},
   figshare      = {https://figshare.com/s/5342980a9ba8b26985a9},
 }
 
