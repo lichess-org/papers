@@ -959,6 +959,18 @@
   editor        = {Aidong Zhang and Huzefa Rangwala},
 }
 
+@misc{meszaros:2025:out-of-distribution-tests-reveal-compositionality-chess-transformers,
+  title         = {Out-of-distribution Tests Reveal Compositionality in Chess Transformers},
+  author        = {Anna M\'{e}sz\'{a}ros and Patrik Reizinger and Ferenc Husz\'{a}r},
+  year          = {2025},
+  url           = {https://arxiv.org/abs/2510.20783},
+  eprint        = {2510.20783},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  abs           = {Chess is a canonical example of a task that requires rigorous reasoning and long-term planning. Modern decision Transformers - trained similarly to LLMs - are able to learn competent gameplay, but it is unclear to what extent they truly capture the rules of chess. To investigate this, we train a 270M parameter chess Transformer and test it on out-of-distribution scenarios, designed to reveal failures of systematic generalization. Our analysis shows that Transformers exhibit compositional generalization, as evidenced by strong rule extrapolation: they adhere to fundamental syntactic rules of the game by consistently choosing valid moves even in situations very different from the training data. Moreover, they also generate high-quality moves for OOD puzzles. In a more challenging test, we evaluate the models on variants including Chess960 (Fischer Random Chess) - a variant of chess where starting positions of pieces are randomized. We found that while the model exhibits basic strategy adaptation, they are inferior to symbolic AI algorithms that perform explicit search, but gap is smaller when playing against users on Lichess. Moreover, the training dynamics revealed that the model initially learns to move only its own pieces, suggesting an emergent compositional understanding of the game.},
+  github        = {https://github.com/meszarosanna/ood\_chess},
+}
+
 @inproceedings{milosz:2024:predicting-puzzle-difficulty-transformers,
   title         = {{Predicting Chess Puzzle Difficulty with Transformers}},
   author        = {Szymon Mi{\l}osz and Pawe{\l} Kapusta},
