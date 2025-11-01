@@ -1895,6 +1895,18 @@ BibTex
   keywords      = {Burrows-Wheeler transform, CUDA, GPU, Move-to-front transform, accelerators, bzip2, data compression},
 }
 
+@misc{wen:2025:chessqa-evaluating-large-language-models-chess-understanding,
+  title         = {ChessQA: Evaluating Large Language Models for Chess Understanding},
+  author        = {Qianfeng Wen and Zhenwei Tang and Ashton Anderson},
+  year          = {2025},
+  url           = {https://arxiv.org/abs/2510.23948},
+  eprint        = {2510.23948},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  abstract      = {Chess provides an ideal testbed for evaluating the reasoning, modeling, and abstraction capabilities of large language models (LLMs), as it has well-defined structure and objective ground truth while admitting a wide spectrum of skill levels. However, existing evaluations of LLM ability in chess are ad hoc and narrow in scope, making it difficult to accurately measure LLM chess understanding and how it varies with scale, post-training methodologies, or architecture choices. We present ChessQA, a comprehensive benchmark that assesses LLM chess understanding across five task categories (Structural, Motifs, Short Tactics, Position Judgment, and Semantic), which approximately correspond to the ascending abstractions that players master as they accumulate chess knowledge, from understanding basic rules and learning tactical motifs to correctly calculating tactics, evaluating positions, and semantically describing high-level concepts. In this way, ChessQA captures a more comprehensive picture of chess ability and understanding, going significantly beyond the simple move quality evaluations done previously, and offers a controlled, consistent setting for diagnosis and comparison. Furthermore, ChessQA is inherently dynamic, with prompts, answer keys, and construction scripts that can evolve as models improve. Evaluating a range of contemporary LLMs, we find persistent weaknesses across all five categories and provide results and error analyses by category. We will release the code, periodically refreshed datasets, and a public leaderboard to support further research.},
+  dataset       = {https://huggingface.co/datasets/wieeii/ChessQA-Benchmark},
+}
+
 @inproceedings{wieczerzak:2022:dataset-experimental-investigation-chess-position-evaluation-neural-network,
   title         = {Dataset Related Experimental Investigation of Chess Position Evaluation Using a Deep Neural Network},
   author        = {Dawid Wieczerzak and Pawel Czarnul},
