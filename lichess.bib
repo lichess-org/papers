@@ -459,6 +459,17 @@
   url           = {https://doi.org/10.1007/979-8-8688-1261-3_17},
 }
 
+@inproceedings{donoway:2025:quantifying-elicitation-latent-capabilities-language-models,
+  title         = {Quantifying Elicitation of Latent Capabilities in Language Models},
+  author        = {Elizabeth Donoway and Hailey Joren and Arushi Somani and Henry Sleight and Julian Michael and Michael R DeWeese and John Schulman and Ethan Perez and Fabien Roger and Jan Leike},
+  year          = {2025},
+  booktitle     = {The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+  url           = {https://openreview.net/forum?id=Dkgx2pS4Ww},
+  keywords      = {elicitation, large language models, LLMs, latent capabilities, minimum description length},
+  abstarct      = {Large language models often possess latent capabilities that lie dormant unless explicitly elicited, or surfaced, through fine-tuning or prompt engineering. Predicting, assessing, and understanding these latent capabilities pose significant challenges in the development of effective, safe AI systems. In this work, we recast elicitation as an information-constrained fine-tuning problem and empirically characterize upper bounds on the minimal number of parameters needed to achieve specific task performances. We find that training as few as 10-100 randomly chosen parameters--several orders of magnitude fewer than state-of-the-art parameter-efficient methods--can recover up to 50\% of the performance gap between pretrained-only and full fine-tuned models, and 1,000s to 10,000s of parameters can recover 95\% of this performance gap. We show that a logistic curve fits the relationship between the number of trained parameters and model performance gap recovery. This scaling generalizes across task formats and domains, as well as model sizes and families, extending to reasoning models and remaining robust to increases in inference compute. To help explain this behavior, we consider a simplified picture of elicitation via fine-tuning where each trainable parameter serves as an encoding mechanism for accessing task-specific knowledge. We observe a relationship between the number of trained parameters and how efficiently relevant model capabilities can be accessed and elicited, offering a potential route to distinguish elicitation from teaching.},
+  github        = {https://github.com/edonoway/quantifying-elicitation-neurips25},
+}
+
 @article{eisma:2024:turing-tests-chess-human-subjectivity,
   title         = {Turing Tests in Chess: An Experiment Revealing the Role of Human Subjectivity},
   author        = {Yke Bauke Eisma and Robin Koerts and Joost {de Winter}},
