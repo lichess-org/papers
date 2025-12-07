@@ -1645,6 +1645,19 @@ BibTex
   language      = {English},
 }
 
+@misc{sadhuka:2025:evaluator-reliable-agent-verifiers-sequential-hypothesis-testing,
+  title         = {E-valuator: Reliable Agent Verifiers with Sequential Hypothesis Testing},
+  author        = {Shuvom Sadhuka and Drew Prinster and Clara Fannjiang and Gabriele Scalia and Aviv Regev and Hanchen Wang},
+  year          = {2025},
+  url           = {https://arxiv.org/abs/2512.03109},
+  eprint        = {2512.03109},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  abstract      = {Agentic AI systems execute a sequence of actions, such as reasoning steps or tool calls, in response to a user prompt. To evaluate the success of their trajectories, researchers have developed verifiers, such as LLM judges and process-reward models, to score the quality of each action in an agent's trajectory. Although these heuristic scores can be informative, there are no guarantees of correctness when used to decide whether an agent will yield a successful output. Here, we introduce e-valuator, a method to convert any black-box verifier score into a decision rule with provable control of false alarm rates. We frame the problem of distinguishing successful trajectories (that is, a sequence of actions that will lead to a correct response to the user's prompt) and unsuccessful trajectories as a sequential hypothesis testing problem. E-valuator builds on tools from e-processes to develop a sequential hypothesis test that remains statistically valid at every step of an agent's trajectory, enabling online monitoring of agents over arbitrarily long sequences of actions. Empirically, we demonstrate that e-valuator provides greater statistical power and better false alarm rate control than other strategies across six datasets and three agents. We additionally show that e-valuator can be used for to quickly terminate problematic trajectories and save tokens. Together, e-valuator provides a lightweight, model-agnostic framework that converts verifier heuristics into decisions rules with statistical guarantees, enabling the deployment of more reliable agentic systems.},
+  github        = {https://github.com/shuvom-s/e-valuator},
+  software      = {https://pypi.org/project/e-valuator/},
+}
+
 @article{saha:2024:valued-vision-logical-understanding-dataset,
   title         = {{VALUED} - Vision and Logical Understanding Evaluation Dataset},
   author        = {Soumadeep Saha and Saptarshi Saha and Utpal Garain},
