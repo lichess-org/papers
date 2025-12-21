@@ -1925,6 +1925,18 @@ BibTex
   number        = {4},
 }
 
+@misc{song:2025:beyond-accuracy-geometric-stability-analysis-large-language-models-chess-evaluation,
+  title         = {Beyond Accuracy: A Geometric Stability Analysis of Large Language Models in Chess Evaluation},
+  author        = {Xidan Song and Weiqi Wang and Ruifeng Cao and Qingya Hu},
+  year          = {2025},
+  url           = {https://arxiv.org/abs/2512.15033},
+  eprint        = {2512.15033},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.AI},
+  keywords      = {Large Language Models, Geometric Stability, Chess Evaluation, Robustness Analysis, AI Reasoning, Evaluation Metrics},
+  abstract      = {The evaluation of Large Language Models (LLMs) in complex reasoning domains typically relies on performance alignment with ground-truth oracles. In the domain of chess, this standard manifests as accuracy benchmarks against strong engines like Stockfish. However, high scalar accuracy does not necessarily imply robust conceptual understanding. This paper argues that standard accuracy metrics fail to distinguish between genuine geometric reasoning and the superficial memorization of canonical board states. To address this gap, we propose a Geometric Stability Framework, a novel evaluation methodology that rigorously tests model consistency under invariant transformations-including board rotation, mirror symmetry, color inversion, and format conversion. We applied this framework to a comparative analysis of six state-of-the-art LLMs including GPT-5.1, Claude Sonnet 4.5, and Kimi K2 Turbo, utilizing a dataset of approximately 3,000 positions. Our results reveal a significant Accuracy-Stability Paradox. While models such as GPT-5.1 achieve near-optimal accuracy on standard positions, they exhibit catastrophic degradation under geometric perturbation, specifically in rotation tasks where error rates surge by over 600\%. This disparity suggests a reliance on pattern matching over abstract spatial logic. Conversely, Claude Sonnet 4.5 and Kimi K2 Turbo demonstrate superior dual robustness, maintaining high consistency across all transformation axes. Furthermore, we analyze the trade-off between helpfulness and safety, identifying Gemini 2.5 Flash as the leader in illegal state rejection (96.0\%). We conclude that geometric stability provides an orthogonal and essential metric for AI evaluation, offering a necessary proxy for disentangling reasoning capabilities from data contamination and overfitting in large-scale models.},
+}
+
 @inproceedings{spinnato:2025:towards-piece-by-piece-explanations-chess-positions-shap,
   title         = {Towards Piece-by-Piece Explanations for Chess Positions with {SHAP}},
   author        = {Spinnato, Francesco},
