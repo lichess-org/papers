@@ -2040,6 +2040,17 @@ BibTex
   primaryclass  = {cs.CR},
 }
 
+@misc{stenzel:2026:quantum-king-ring-domination-chess-qaoa-approach,
+  title         = {Quantum King-Ring Domination in Chess: A QAOA Approach},
+  author        = {Gerhard Stenzel and Michael K\"{o}lle and Tobias Rohe and Julian Hager and Leo S\"{u}nkel and Maximilian Zorn and Claudia Linnhoff-Popien},
+  year          = {2026},
+  url           = {https://arxiv.org/abs/2601.00318},
+  eprint        = {2601.00318},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  abstract      = {The Quantum Approximate Optimization Algorithm (QAOA) is extensively benchmarked on synthetic random instances such as MaxCut, TSP, and SAT problems, but these lack semantic structure and human interpretability, offering limited insight into performance on real-world problems with meaningful constraints. We introduce Quantum King-Ring Domination (QKRD), a NISQ-scale benchmark derived from chess tactical positions that provides 5,000 structured instances with one-hot constraints, spatial locality, and 10--40 qubit scale. The benchmark pairs human-interpretable coverage metrics with intrinsic validation against classical heuristics, enabling algorithmic conclusions without external oracles. Using QKRD, we systematically evaluate QAOA design choices and find that constraint-preserving mixers (XY, domain-wall) converge approximately 13 steps faster than standard mixers (p<10^{-7}, d\approx0.5) while eliminating penalty tuning, warm-start strategies reduce convergence by 45 steps (p<10^{-127}, d=3.35) with energy improvements exceeding d=8, and Conditional Value-at-Risk (CVaR) optimization yields an informative negative result with worse energy (p<10^{-40}, d=1.21) and no coverage benefit. Intrinsic validation shows QAOA outperforms greedy heuristics by 12.6\% and random selection by 80.1\%. Our results demonstrate that structured benchmarks reveal advantages of problem-informed QAOA techniques obscured in random instances. We release all code, data, and experimental artifacts for reproducible NISQ algorithm research.},
+}
+
 @inproceedings{stockl:2021:watching-language-model-learning-chess,
   title         = {Watching a Language Model Learning Chess},
   author        = {St{\"o}ckl, Andreas},
