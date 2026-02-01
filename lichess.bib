@@ -495,6 +495,19 @@
   },
 }
 
+@article{davis:2026:exploring-limits-probes-latent-representation-edits-gpt-models,
+  title         = {Exploring the Limits of Probes for Latent Representation Edits in GPT Models},
+  author        = {Austin L. Davis and Robinson Vasquez Ferrer and Gita Sukthankar},
+  year          = {2026},
+  month         = {January},
+  journal       = {Preprints},
+  publisher     = {Preprints},
+  doi           = {10.20944/preprints202601.2229.v1},
+  url           = {https://doi.org/10.20944/preprints202601.2229.v1},
+  abstract      = {Probing classifiers are a technique for understanding and modifying the operation of neural networks in which a smaller classifier is trained to use the model's internal representation to learn a probing task. Similar to a neural electrode array, probing classifiers help both discern and edit the internal representation of a neural network. This article evaluates the use of probing classifiers to modify the internal hidden state of a chess-playing transformer. We contrast the performance of standard linear probes against Sparse Autoencoders (SAEs), a latent space interpretability technique designed to decompose polysemantic concepts into atomic features via an overcomplete basis. Our experiments demonstrate that linear probes trained directly on the residual stream significantly outperform probes based on SAE latents. When quantifying the success of interventions via the probability of legal moves, linear probe edits achieved an 88\% success rate, whereas SAE-based edits yielded only 41\%. These findings suggest that while SAEs are valuable for specific interpretability tasks, they do not enhance the controllability of hidden states compared to raw vectors. Finally, we show that the residual stream respects the Markovian property of chess, validating the feasibility of applying consistent edits across different time steps for the same board state.},
+  keywords      = {representation engineering;  probing classifiers;  chess;  language models;  GPT;  sparse autoencoders},
+}
+
 @article{de-marzo:2023:complexity-similarity-chess-openings-community-data,
   title         = {Quantifying the complexity and similarity of chess openings using online chess community data},
   author        = {De Marzo, Giordano and Servedio, Vito D. P.},
