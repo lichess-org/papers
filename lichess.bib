@@ -460,7 +460,7 @@
   location      = {SEATTLE, WA, USA},
   publisher     = {Springer-Verlag},
   address       = {Berlin, Heidelberg},
-  pages         = {63–72},
+  pages         = {63--72},
   doi           = {10.1007/978-3-031-65572-2_7},
   isbn          = {978-3-031-65571-5},
   url           = {https://doi.org/10.1007/978-3-031-65572-2_7},
@@ -469,11 +469,14 @@
   keywords      = {chess cognition, mechanistic interpretability, transformers},
 }
 
-@inproceedings{davis:2024:performance-envelopes-linear-probes-latent-representation-edits-gpt-models,
-  title         = {Performance Envelopes of Linear Probes for Latent Representation Edits in GPT Models},
+@inproceedings{davis:2024:hidden-pirces-analysis-linear-probes-gpt-representation-edits,
+  title         = {Hidden Pieces: An Analysis of Linear Probes for GPT Representation Edits},
   author        = {Davis, Austin L and Sukthankar, Gita},
   year          = {2024},
   booktitle     = {2024 International Conference on Machine Learning and Applications (ICMLA)},
+  abstract      = {Probing classifiers are a technique for understanding and modifying the operation of neural networks in which a smaller classifier is trained to use the model's internal representation to learn a probing task. Similar to a neural electrode array, probing classifiers help both discern and edit the internal representation of a neural network. This paper evaluates the use of probing classifiers to modify the internal hidden state of a chess-playing transformer. The weights of the learned linear classifiers are very informative and can be used to reliably delete pieces from the board showing that the model internally maintains an editable emergent representation of game state.},
+  pdf           = {https://ial.eecs.ucf.edu/pdf/Sukthankar-Austin-ICMLA2024.pdf},
+  github        = {https://github.com/austinleedavis/icmla-2024},
   keywords      = {Representation Engineering; Probing Classifiers; Chess-playing Language Models, GPT},
 }
 
@@ -505,6 +508,7 @@
   doi           = {10.20944/preprints202601.2229.v1},
   url           = {https://doi.org/10.20944/preprints202601.2229.v1},
   abstract      = {Probing classifiers are a technique for understanding and modifying the operation of neural networks in which a smaller classifier is trained to use the model's internal representation to learn a probing task. Similar to a neural electrode array, probing classifiers help both discern and edit the internal representation of a neural network. This article evaluates the use of probing classifiers to modify the internal hidden state of a chess-playing transformer. We contrast the performance of standard linear probes against Sparse Autoencoders (SAEs), a latent space interpretability technique designed to decompose polysemantic concepts into atomic features via an overcomplete basis. Our experiments demonstrate that linear probes trained directly on the residual stream significantly outperform probes based on SAE latents. When quantifying the success of interventions via the probability of legal moves, linear probe edits achieved an 88\% success rate, whereas SAE-based edits yielded only 41\%. These findings suggest that while SAEs are valuable for specific interpretability tasks, they do not enhance the controllability of hidden states compared to raw vectors. Finally, we show that the residual stream respects the Markovian property of chess, validating the feasibility of applying consistent edits across different time steps for the same board state.},
+  github        = {https://github.com/austinleedavis/icmla-2024},
   keywords      = {representation engineering;  probing classifiers;  chess;  language models;  GPT;  sparse autoencoders},
 }
 
