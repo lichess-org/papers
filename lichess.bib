@@ -875,16 +875,21 @@
   abstract      = {ChessFormer introduces a novel searchless chess engine leveraging transformer architecture to approximate human decision-making in chess. Trained on a vast dataset of 3 billion chess positions, our model learns its entire decision-making process directly from training data. Evaluations show an improvement in human move-matching accuracy over prior models in high-Elo ranges and the model's ability to distinguish between human and algorithmic decision-making, offering potential applications in chess analysis or cheat detection.},
 }
 
-@article{jenner:2024:evidence-lookahead-chess-neural-network,
+@inproceedings{jenner:2024:evidence-lookahead-chess-neural-network,
   title         = {Evidence of Learned Look-Ahead in a Chess-Playing Neural Network},
-  author        = {Erik Jenner and Shreyas Kapur and Vasil Georgiev and Cameron Allen and Scott Emmons and Stuart Russell},
+  author        = {Jenner, Erik and Kapur, Shreyas and Georgiev, Vasil and Allen, Cameron and Emmons, Scott and Russell, Stuart},
   year          = {2024},
-  journal       = {CoRR},
-  volume        = {abs/2406.00877},
-  doi           = {10.48550/ARXIV.2406.00877},
-  url           = {https://doi.org/10.48550/arXiv.2406.00877},
-  eprinttype    = {arXiv},
-  eprint        = {2406.00877},
+  booktitle     = {Advances in Neural Information Processing Systems},
+  publisher     = {Curran Associates, Inc.},
+  volume        = {37},
+  pages         = {31410--31437},
+  doi           = {10.52202/079017-0987},
+  url           = {https://proceedings.neurips.cc/paper_files/paper/2024/file/37d9f19150fce07bced2a81fc87d47a6-Paper-Conference.pdf},
+  editor        = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+  abstract      = {Do neural networks learn to implement algorithms such as look-ahead or search "in the wild"? Or do they rely purely on collections of simple heuristics? We present evidence of learned look-ahead in the policy and value network of Leela Chess Zero, the currently strongest deep neural chess engine. We find that Leela internally represents future optimal moves and that these representations are crucial for its final output in certain board states. Concretely, we exploit the fact that Leela is a transformer that treats every chessboard square like a token in language models, and give three lines of evidence: (1) activations on certain squares of future moves are unusually important causally; (2) we find attention heads that move important information "forward and backward in time," e.g., from squares of future moves to squares of earlier ones; and (3) we train a simple probe that can predict the optimal move 2 turns ahead with 92\% accuracy (in board states where Leela finds a single best line). These findings are clear evidence of learned look-ahead in neural networks and might be a step towards a better understanding of their capabilities.},
+  pdf           = {https://proceedings.neurips.cc/paper_files/paper/2024/file/37d9f19150fce07bced2a81fc87d47a6-Paper-Conference.pdf},
+  website       = {https://leela-interp.github.io/},
+  github        = {https://github.com/HumanCompatibleAI/leela-interp},
 }
 
 @misc{jiang:2023:building-natural-language-chess-engine-pretraining-instruction-finetunine,
@@ -904,6 +909,7 @@
   eprint        = {2502.20216},
   archiveprefix = {arXiv},
   primaryclass  = {stat.ME},
+  abstract      = {We consider supervised learning (regression/classification) problems with tensor-valued input. We derive multi-linear sufficient reductions for the regression or classification problem by modeling the conditional distribution of the predictors given the response as a member of the quadratic exponential family. We develop estimation procedures of sufficient reductions for both continuous and binary tensor-valued predictors. We prove the consistency and asymptotic normality of the estimated sufficient reduction using manifold theory. For continuous predictors, the estimation algorithm is highly computationally efficient and is also applicable to situations where the dimension of the reduction exceeds the sample size. We demonstrate the superior performance of our approach in simulations and real-world data examples for both continuous and binary tensor-valued predictors.},
 }
 
 @inproceedings{karn:2024:personalized-recommendation-chess-puzzles,
