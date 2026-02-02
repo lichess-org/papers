@@ -922,14 +922,6 @@
   abstract      = {In this paper, we address the problem of finding similar chess puzzles to a given query puzzle using a dataset of one million puzzles. We approach this problem through an information retrieval (IR) perspective. Chess positions can be compared in mainly two aspects, positional similarity and dynamic similarity. We experimented by comparing chess positions solely based on the string representation. However, to capture static and dynamic features of a position, we create an index of features for the chess puzzles which include static and dynamic information regarding the best move for the given puzzles. The features of the query chess puzzle can be compared to the puzzles in the dataset to find the most similar chess puzzle. To optimize the search, the index features can be stored in a separate database to avoid repetitive calculations of mobility and similarity between FENs. Our approach incorporates algorithms such as cosine similarity, Levenshtein distance, and feature encoding to enhance the accuracy and efficiency of puzzle retrieval.},
 }
 
-@inproceedings{karvonen:2024:dictionary-learning-board-games,
-  title         = {Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models},
-  author        = {Adam Karvonen and Benjamin Wright and Can Rager and Rico Angell and Jannik Brinkmann and Logan Riggs Smith and Claudio Mayrink Verdun and David Bau and Samuel Marks},
-  year          = {2024},
-  booktitle     = {ICML 2024 Workshop on Mechanistic Interpretability},
-  url           = {https://openreview.net/forum?id=qzsDKwGJyB},
-}
-
 @article{karvonen:2024:emergent-world-models-latent-variable-estimation-chess-playing,
   title         = {Emergent World Models and Latent Variable Estimation in Chess-Playing Language Models},
   author        = {Adam Karvonen},
@@ -940,6 +932,18 @@
   url           = {https://doi.org/10.48550/arXiv.2403.15498},
   eprinttype    = {arXiv},
   eprint        = {2403.15498},
+}
+
+@inproceedings{karvonen:2024:measuring-progress-dictionary-learning-language-model-interpretability-board-games-models,
+  title         = {Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models},
+  author        = {Adam Karvonen and Benjamin Wright and Can Rager and Rico Angell and Jannik Brinkmann and Logan Riggs Smith and Claudio Mayrink Verdun and David Bau and Samuel Marks},
+  year          = {2024},
+  booktitle     = {ICML 2024 Workshop on Mechanistic Interpretability},
+  url           = {https://openreview.net/forum?id=qzsDKwGJyB},
+  keywords      = {Language models, interpretability, dictionary learning},
+  tldr          = {We measure progress in training sparse autoencoders for LM interpretability by working in the setting of LMs trained on chess and Othello.},
+  github        = {https://github.com/adamkarvonen/SAE\_BoardGameEval},
+  abstract      = {What latent features are encoded in language model (LM) representations? Recent work on training sparse autoencoders (SAEs) to disentangle interpretable features in LM representations has shown significant promise. However, evaluating the quality of these SAEs is difficult because we lack a ground-truth collection of interpretable features that we expect good SAEs to recover. We thus propose to measure progress in interpretable dictionary learning by working in the setting of LMs trained on chess and Othello transcripts. These settings carry natural collections of interpretable features---for example, ``there is a knight on F3''---which we leverage into supervised metrics for SAE quality. To guide progress in interpretable dictionary learning, we introduce a new SAE training technique, p-annealing, which improves performance on prior unsupervised metrics as well as our new metrics.},
 }
 
 @thesis{keusch:2025:binary-matching-android-ios-apps,
