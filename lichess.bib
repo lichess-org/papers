@@ -1075,6 +1075,9 @@
   publisher     = {PsyArXiv},
   doi           = {10.31234/osf.io/d8zje},
   url           = {osf.io/preprints/psyarxiv/d8zje},
+  abstract      = {Acting intelligently in complex environments poses a challenging learning problem: faced with many different situations and possible actions, how do people learn which action to take in each situation? While traditional laboratory-based experiments have been used to study specific learning mechanisms, these experiments often employ relatively simple tasks conducted over a short period of time. Thus, it is unclear to what extent these mechanisms are used in the significantly more complex and temporally extended environments people encounter in their everyday lives. To understand the processes by which people learn policies to guide their decisions, we investigate the opening strategies of novice online chess players over their first months of play. We use a large online data set consisting of 2,499,783 games, providing us with the necessary scale to explore learning mechanisms in a complex setting. In particular, we focus on two types of learning: reinforcement learning, or learning from rewards given repeated experiences, and social learning, or learning from the actions of others. We show that players' choices are modulated by both game outcomes and observing their opponents' actions, and that they exhibit important hallmarks of adaptive decision-making such as exploration and expertise. Our results provide evidence that people use sophisticated learning algorithms in naturalistic strategic behavior.},
+  keywords      = {decision-making, learning, reinforcement learning, social learning},
+  github        = {https://github.com/ionatankuperwajs/learning-openings},
 }
 
 @article{kuperwajs:2025:exploring-resource-rational-planning-time-pressure-online-chess,
@@ -1099,6 +1102,11 @@
   doi           = {10.1007/978-3-031-34017-8\_14},
   url           = {https://doi.org/10.1007/978-3-031-34017-8\_14},
   editor        = {Cameron Browne and Akihiro Kishimoto and Jonathan Schaeffer},
+  abstract      = {
+    Online game providers face the challenge of preventing malicious users (cheaters) from breaking the rules and winning games through illegal means. This issue in particular plagues the online chess scene, where the strongest algorithms have long surpassed the world's best players - any cheater can beat the best human players through computer assistance. Moreover, recent developments in AI-based chess engines have opened the door to even more human-like engines, which are increasingly able to mimic legitimate human players. Unfortunately, because major chess websites do not discuss their cheat detection mechanisms publicly, there is limited scientific literature on how to tackle the pervasive problem of cheating in online chess. Certainly, there is no way to validate whether these mechanisms actually work.
+
+    We take a first step towards formalizing a proper cheat detection framework for online chess by leveraging a large-scale statistical examination of human and computer decision-making tendencies over millions of chess games played online. Although cheaters are not engines (computer players) but centaurs (computer-assisted human players), the insights into computer play serve as a useful guideline for finding the strongest indicators of cheating. We then demonstrate how these findings may distinguish legitimate human players from cheaters in an automated, rules-based manner. Additionally, we argue that the status quo of hiding cheat detection mechanisms from the public eye is dangerous to the integrity of the game, and that cheat detection is foremost a service to society instead of a competitive advantage for chess websites to attract more users. Consistent with Kerckhoffs' paradigm, we believe that the benefits of an open discussion on cheat detection far outweigh the potential drawbacks of cheaters learning about these methods.
+  },
 }
 
 @inproceedings{le-louedec:2019:chess-player-attention-prediction,
@@ -1111,6 +1119,9 @@
   doi           = {10.1145/3314111.3319827},
   url           = {https://doi.org/10.1145/3314111.3319827},
   editor        = {Krzysztof Krejtz and Bonita Sharif},
+  pdf           = {https://dl.acm.org/doi/pdf/10.1145/3314111.3319827},
+  abstract      = {This article reports on an investigation of the use of convolutional neural networks to predict the visual attention of chess players. The visual attention model described in this article has been created to generate saliency maps that capture hierarchical and spatial features of chessboard, in order to predict the probability fixation for individual pixels Using a skip-layer architecture of an autoencoder, with a unified decoder, we are able to use multiscale features to predict saliency of part of the board at different scales, showing multiple relations between pieces. We have used scan path and fixation data from players engaged in solving chess problems, to compute 6600 saliency maps associated to the corresponding chess piece configurations. This corpus is completed with synthetically generated data from actual games gathered from an online chess platform. Experiments realized using both scan-paths from chess players and the CAT2000 saliency dataset of natural images, highlights several results. Deep features, pretrained on natural images, were found to be helpful in training visual attention prediction for chess. The proposed neural network architecture is able to generate meaningful saliency maps on unseen chess configurations with good scores on standard metrics. This work provides a baseline for future work on visual attention prediction in similar contexts.},
+  keywords      = {Deep neural network, Computer vision, Visual attention, Chess},
 }
 
 @inproceedings{lemes:2025:computer-vision-chess-game-automation,
@@ -1202,7 +1213,7 @@
   url           = {https://onlinelibrary.wiley.com/doi/abs/10.1002/asmb.2684},
   keywords      = {adversarial risk analysis, AI, AlphaZero, behavioral economics, behavioral game theory, behavioral science, chess gambits, decision-making, deep learning, neural network, Q learning, rationality, skewness preference, Stafford Gambit, Stockfish 14},
   eprint        = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/asmb.2684},
-  abstract      = {Abstract Gambits are central to human decision-making. Our goal is to provide a theory of Gambits. A Gambit is a combination of psychological and technical factors designed to disrupt predictable play. Chess provides an environment to study gambits and behavioral game theory. Our theory is based on the Bellman optimality path for sequential decision-making. This allows us to calculate the Q\$\$ Q \$\$-values of a Gambit where material (usually a pawn) is sacrificed for dynamic play. On the empirical side, we study the effectiveness of a number of popular chess Gambits. This is a natural setting as chess Gambits require a sequential assessment of a set of moves (a.k.a. policy) after the Gambit has been accepted. Our analysis uses Stockfish 14.1 to calculate the optimal Bellman Q\$\$ Q \$\$-values, which fundamentally measures if a position is winning or losing. To test whether Bellman's equation holds in play, we estimate the transition probabilities to the next board state via a database of expert human play. This then allows us to test whether the Gambiteer is following the optimal path in his decision-making. Our methodology is applied to the popular Stafford and reverse Stafford (a.k.a. Boden–Kieretsky–Morphy) Gambit and other common ones including the Smith–Morra, Goring, Danish and Halloween Gambits. We build on research in human decision-making by proving an irrational skewness preference within agents in chess. We conclude with directions for future research.},
+  abstract      = {Abstract Gambits are central to human decision-making. Our goal is to provide a theory of Gambits. A Gambit is a combination of psychological and technical factors designed to disrupt predictable play. Chess provides an environment to study gambits and behavioral game theory. Our theory is based on the Bellman optimality path for sequential decision-making. This allows us to calculate the Q\$\$ Q \$\$-values of a Gambit where material (usually a pawn) is sacrificed for dynamic play. On the empirical side, we study the effectiveness of a number of popular chess Gambits. This is a natural setting as chess Gambits require a sequential assessment of a set of moves (a.k.a. policy) after the Gambit has been accepted. Our analysis uses Stockfish 14.1 to calculate the optimal Bellman Q\$\$ Q \$\$-values, which fundamentally measures if a position is winning or losing. To test whether Bellman's equation holds in play, we estimate the transition probabilities to the next board state via a database of expert human play. This then allows us to test whether the Gambiteer is following the optimal path in his decision-making. Our methodology is applied to the popular Stafford and reverse Stafford (a.k.a. Boden–Kieretsky–Morphy) Gambit and other common ones including the Smith-Morra, Goring, Danish and Halloween Gambits. We build on research in human decision-making by proving an irrational skewness preference within agents in chess. We conclude with directions for future research.},
 }
 
 @inproceedings{makovec:2023:merging-neural-networks-traditional-evaluations-crazyhouse,
@@ -1213,7 +1224,7 @@
   location      = {Siegen, Germany},
   publisher     = {Springer-Verlag},
   address       = {Berlin, Heidelberg},
-  pages         = {15–25},
+  pages         = {15--25},
   doi           = {10.1007/978-3-031-54968-7_2},
   isbn          = {978-3-031-54967-0},
   url           = {https://doi.org/10.1007/978-3-031-54968-7_2},
@@ -1260,17 +1271,6 @@
   editor        = {Rajesh Gupta and Yan Liu and Jiliang Tang and B. Aditya Prakash},
 }
 
-@article{mcilroy-young:2020:learning-personalized-models-human-behavior-chess,
-  title         = {Learning Personalized Models of Human Behavior in Chess},
-  author        = {Reid McIlroy{-}Young and Russell Wang and Siddhartha Sen and Jon M. Kleinberg and Ashton Anderson},
-  year          = {2020},
-  journal       = {CoRR},
-  volume        = {abs/2008.10086},
-  url           = {https://arxiv.org/abs/2008.10086},
-  eprinttype    = {arXiv},
-  eprint        = {2008.10086},
-}
-
 @inproceedings{mcilroy-young:2021:chess-stylometry,
   title         = {Detecting Individual Decision-Making Style: Exploring Behavioral Stylometry in Chess},
   author        = {Reid McIlroy{-}Young and Yu Wang and Siddhartha Sen and Jon M. Kleinberg and Ashton Anderson},
@@ -1291,6 +1291,10 @@
   doi           = {10.1145/3534678.3539367},
   url           = {https://doi.org/10.1145/3534678.3539367},
   editor        = {Aidong Zhang and Huzefa Rangwala},
+  abstract      = {AI systems that can capture human-like behavior are becoming increasingly useful in situations where humans may want to learn from these systems, collaborate with them, or engage with them as partners for an extended duration. In order to develop human-oriented AI systems, the problem of predicting human actions---as opposed to predicting optimal actions---has received considerable attention. Existing work has focused on capturing human behavior in an aggregate sense, which potentially limits the benefit any particular individual could gain from interaction with these systems. We extend this line of work by developing highly accurate predictive models of individual human behavior in chess. Chess is a rich domain for exploring human-AI interaction because it combines a unique set of properties: AI systems achieved superhuman performance many years ago, and yet humans still interact with them closely, both as opponents and as preparation tools, and there is an enormous corpus of recorded data on individual player games. Starting with Maia, an open-source version of AlphaZero trained on a population of human players, we demonstrate that we can significantly improve prediction accuracy of a particular player's moves by applying a series of fine-tuning methods. Furthermore, our personalized models can be used to perform stylometry---predicting who made a given set of moves---indicating that they capture human decision-making at an individual level. Our work demonstrates a way to bring AI systems into better alignment with the behavior of individual people, which could lead to large improvements in human-AI interaction.},
+  video         = {https://dl.acm.org/doi/suppl/10.1145/3534678.3539367/suppl\_file/maia-individual.mp4},
+  github        = {https://github.com/CSSLab/maia-Individual},
+  keywords      = {Mimetic models; Human-AI interaction; Chess; Action prediction; Machine learning; Behavioral stylometry},
 }
 
 @misc{meireles:2025:practice-structure-predicts-skill-growth-online-chess-behavioral-modeling-approach,
