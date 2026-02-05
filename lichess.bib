@@ -1555,13 +1555,16 @@ BibTex
   abstract      = {Current chess rating systems update ratings incrementally and may not always accurately reflect a player's true strength at all times, especially for rapidly improving players or very rusty players. To overcome this, we explore a method to estimate player ratings directly from game moves and clock times. We compiled a benchmark dataset from Lichess with over one million games, encompassing various time controls and including move sequences and clock times. Our model architecture comprises a CNN to learn positional features, which are then integrated with clock-time data into a Bidirectional LSTM, predicting player ratings after each move. The model achieved an MAE of 182 rating points on the test data. Additionally, we applied our model to the 2024 IEEE Big Data Cup Chess Puzzle Difficulty Competition dataset, predicted puzzle ratings and achieved competitive results. This model is the first to use no hand-crafted features to estimate chess ratings and also the first to output a rating prediction after each move. Our method highlights the potential of using move-based rating estimation for enhancing rating systems and potentially other applications such as cheating detection.},
 }
 
-@article{ong:2024:sparse-but-strategic-quantiative-insights-chess-middlegame-complexity,
+@article{ong:2024:sparse-but-strategic-quantitative-insights-chess-middlegame-complexity,
   title         = {Sparse but Strategic: Quantitative Insights into Chess Middlegame Complexity},
   author        = {Ong, Justin and Bilali{\'c}, Merim and Vaci, Nemanja},
   year          = {2024},
   journal       = {Research Square},
   doi           = {https://doi.org/10.21203/rs.3.rs-5574128/v1},
+  pdf           = {https://www.researchsquare.com/article/rs-5574128/v1.pdf?c=1748726628000},
+  abstract      = {Introduction: Quantifying signals in large, sparse datasets is challenging, as noise and redundant features often obscure informative patterns. Chess middlegames, with their dynamic complexity and endless possibilities, provide a testbed for exploring such challenges. Building on 12 studies that identified three categories of chess complexity--difficulty, optionality, and rarity--we propose a novel method to quantify chess pattern complexity. Methods: A complexity scoring system was developed, integrating centipawn change, variability, engine search depth, and inverse document frequency of constellations to measure difficulty, optionality, and rarity. From a large dataset of chess games, we extracted 106,810 unique 11-ply constellations that appeared at least 20 times across 2,235,823 games. The chess engine was used to evaluate chess decisions when answering on constellations, and a multinomial logistic regression model was employed to predict move quality. Results: The model demonstrated good predictive power with a weighted F1 score of 0.75 and a ROC AUC of 0.82. It correctly classified over 70\% of blunders, mistakes, and optimal moves, although it has less success in differentiating inaccuracies from optimal moves. Discussion: Our approach establishes a flexible framework for quantifying complexity in large, sparse datasets, demonstrating applicability beyond chess. By integrating different metrics, we achieve high accuracy in predicting move quality during chess middlegames. Beyond supporting chess education by identifying constellations tied to specific move types, this methodology could be valuable in contexts where understanding the interplay of dynamic patterns and their outcomes is essential for deriving actionable insights.},
   keywords      = {Chess Complexity, Move Prediction, Cognitive Modeling, Big Data Analysis, Sparse Data},
+  github        = {https://github.com/sgjustino/Chess\_Thesis},
 }
 
 @inproceedings{palsson:2024:empirical-evaluation-concept-probing-game-playing-agents,
@@ -1585,6 +1588,9 @@ BibTex
   booktitle     = {2021 4th International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)},
   pages         = {389--395},
   doi           = {10.1109/ISRITI54043.2021.9702792},
+  url           = {https://ieeexplore.ieee.org/document/9702792},
+  abstract      = {With the widespread use of chess engines cheating in chess has become easier than ever, especially in online chess. Cheating obviously brings a negative impact to the sport. However, research on the topic on cheat detection in chess is still scarcely found. Thus, this paper will discuss data and algorithms that can be used to develop cheat detection tools to analyze games. For data, there are analyzed data and unanalyzed data from online chess games whereas for the algorithm that will be explored there are convolutional neural network (CNN) and densely connected neural network. The results from the experiment using the CNN algorithm are better than the densely connected neural network for detecting if the player is cheating or not. Meanwhile for the data, using either unanalyzed and analyzed data doesn't change the best performing neural network, but it was found using the analyzed data still boosts the accuracy of both neural networks.},
+  pdf           = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9702792},
   keywords      = {Seminars;Neural networks;Games;Convolutional neural networks;Intelligent systems;Information technology;Engines;Cheat Detection;Online Chess Games;Convolutional Neural Network;Dense Neural Network;Neural Network},
 }
 
@@ -1596,6 +1602,10 @@ BibTex
   eprint        = {2504.21548},
   archiveprefix = {arXiv},
   primaryclass  = {eess.SY},
+  keywords      = {Mathematical Dynamic Model of Mental States, Adaptive Cognition-Aware Social Robots, Model-based Control},
+  abstract      = {Social robots (SRs) should autonomously interact with humans, while exhibiting proper social behaviors associated to their role. By contributing to health-care, education, and companionship, SRs will enhance life quality. However, personalization and sustaining user engagement remain a challenge for SRs, due to their limited understanding of human mental states. Accordingly, we leverage a recently introduced mathematical dynamic model of human perception, cognition, and decision-making for SRs. Identifying the parameters of this model and deploying it in behavioral steering system of SRs allows to effectively personalize the responses of SRs to evolving mental states of their users, enhancing long-term engagement and personalization. Our approach uniquely enables autonomous adaptability of SRs by modeling the dynamics of invisible mental states, significantly contributing to the transparency and awareness of SRs. We validated our model-based control system in experiments with 10 participants who interacted with a Nao robot over three chess puzzle sessions, 45 - 90 minutes each. The identified model achieved a mean squared error (MSE) of 0.067 (i.e., 1.675\% of the maximum possible MSE) in tracking beliefs, goals, and emotions of participants. Compared to a model-free controller that did not track mental states of participants, our approach increased engagement by 16\% on average. Post-interaction feedback of participants (provided via dedicated questionnaires) further confirmed the perceived engagement and awareness of the model-driven robot. These results highlight the unique potential of model-based approaches and control theory in advancing human-SR interactions.},
+  github        = {https://github.com/marialuis-mp/MMM-Controller-for-Social-Robot},
+  dataset       = {https://data.4tu.nl/datasets/ccadc914-9502-46d6-9ba5-fef581f2933f},
 }
 
 @misc{pav:2025:inferring-piece-value-chess-variants,
