@@ -1490,7 +1490,7 @@ BibTex
   publisher     = {Association for Computing Machinery},
   address       = {New York, NY, USA},
   series        = {SAC '25},
-  pages         = {936–944},
+  pages         = {936--944},
   doi           = {10.1145/3672608.3707740},
   isbn          = {9798400706295},
   url           = {https://doi.org/10.1145/3672608.3707740},
@@ -1504,13 +1504,14 @@ BibTex
   author        = {Allen Nie and Anirudhan Badrinath and Nicholas Tomlin and Timothy Dai and Carissa Yip and Rose E Wang and Emma Brunskill and Christopher J Piech},
   year          = {2024},
   url           = {https://openreview.net/forum?id=YKW98Icu1X},
+  note          = {candidate for removal},
 }
 
 @misc{nolan:2021:online-chess-social-networks,
   title         = {Online Chess Social Networks},
   author        = {Nolan, Eva and Scognamillo, Valentin},
   year          = {2021},
-  url           = {https://github.com/ornicar/lichess-db/blob/master/web/chess-social-networks-paper.pdf},
+  url           = {https://github.com/lichess-org/database/blob/master/web/chess-social-networks-paper.pdf},
   note          = {Student project},
   school        = {Hamilton College},
   abstract      = {The goal of this research is to analyze the structure of the network of chess players that play on Lichess.org. We aim to understand the way that Lichess randomizes player pairings and how closely related players are in order to better understand the relationship between ranking and pairing systems. We will also observe the behavior of players with respect to the game types that they play to see if this influences player groupings. Another hope of this project is to do an exploratory analysis of standout players and those that choose their opponents, rather than let the algorithm choose for them.},
@@ -1524,6 +1525,8 @@ BibTex
   eprint        = {2505.14943},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
+  abstract      = {To help evaluate and understand the latent capabilities of language models, this paper introduces an approach using optimized input embeddings, or 'soft prompts,' as a metric of conditional distance between a model and a target behavior. The technique aims to facilitate latent capability discovery as a part of automated red teaming/evaluation suites and to provide quantitative feedback about the accessibility of potentially concerning behaviors in a way that may scale to powerful future models, including those which may otherwise be capable of deceptive alignment. An evaluation framework using soft prompts is demonstrated in natural language, chess, and pathfinding, and the technique is extended with generalized conditional soft prompts to aid in constructing task evaluations.},
+  github        = {https://github.com/RossNordby/SoftPromptsForEvaluation},
 }
 
 @thesis{o-rourke:2024:alternative-chess-rating-model-latent-variables,
@@ -1536,14 +1539,20 @@ BibTex
   annote        = {The ranking of players and particularly of chess players has been a topic of debate throughout the last 80 years. Such exploration spawned what has become the benchmark of evaluating professional chess players since the 1970s: the Elo rating model. The Elo system, the first to have a sound statistical basis, was designed by Elo (1978) from the assumption that the performance of a player in a game is a normally distributed random variable Alliot (2017). However, this ranking model is not without its limitations and such has led to extreme rating deflation of the World Chess Federation (FIDE) Standard Elo rating system Sonas (2023). Such attention on the FIDE's rating mechanism has ignited focus on the Elo system's drawbacks which we will address in this dissertation.},
 }
 
-@misc{omori:2024:chess-rating-estimation-moves,
+@inproceedings{omori:2024:chess-rating-estimation-moves-clock-times-cnn-lstm,
   title         = {Chess Rating Estimation from Moves and Clock Times Using a CNN-LSTM},
-  author        = {Michael Omori and Prasad Tadepalli},
-  year          = {2024},
-  url           = {https://arxiv.org/abs/2409.11506},
-  eprint        = {2409.11506},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.LG},
+  author        = {Omori, Michael and Tadepalli, Prasad},
+  year          = {2025},
+  booktitle     = {Computers and Games},
+  publisher     = {Springer Nature Switzerland},
+  address       = {Cham},
+  pages         = {3--13},
+  isbn          = {978-3-031-86585-5},
+  url           = {https://link.springer.com/chapter/10.1007/978-3-031-86585-5_1},
+  editor        = {Hartisch, Michael and Hsueh, Chu-Hsuan and Schaeffer, Jonathan},
+  keywords      = {Chess, Rating Estimation, Cheating Detection},
+  pdf           = {https://arxiv.org/pdf/2409.11506},
+  abstract      = {Current chess rating systems update ratings incrementally and may not always accurately reflect a player's true strength at all times, especially for rapidly improving players or very rusty players. To overcome this, we explore a method to estimate player ratings directly from game moves and clock times. We compiled a benchmark dataset from Lichess with over one million games, encompassing various time controls and including move sequences and clock times. Our model architecture comprises a CNN to learn positional features, which are then integrated with clock-time data into a Bidirectional LSTM, predicting player ratings after each move. The model achieved an MAE of 182 rating points on the test data. Additionally, we applied our model to the 2024 IEEE Big Data Cup Chess Puzzle Difficulty Competition dataset, predicted puzzle ratings and achieved competitive results. This model is the first to use no hand-crafted features to estimate chess ratings and also the first to output a rating prediction after each move. Our method highlights the potential of using move-based rating estimation for enhancing rating systems and potentially other applications such as cheating detection.},
 }
 
 @article{ong:2024:sparse-but-strategic-quantiative-insights-chess-middlegame-complexity,
