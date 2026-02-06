@@ -1654,13 +1654,19 @@ BibTex
   abstract      = {Interpretability of Deep Neural Networks (DNNs) is a growing field driven by the study of vision and language models. Yet, some use cases, like image captioning, or domains like Deep Reinforcement Learning (DRL), require complex modelling, with multiple inputs and outputs or use composable and separated networks. As a consequence, they rarely fit natively into the API of popular interpretability frameworks. We thus present TDHook, an open-source, lightweight, generic interpretability framework based on `tensordict` and applicable to any `torch`' model. It focuses on handling complex composed models which can be trained for Computer Vision, Natural Language Processing, Reinforcement Learning or any other domain. This library features ready-to-use methods for attribution, probing and a flexible get-set API for interventions, and is aiming to bridge the gap between these method classes to make modern interpretability pipelines more accessible. TDHook is designed with minimal dependencies, requiring roughly half as much disk space as `transformer\_lens`, and, in our controlled benchmark, achieves up to a \texttimes{}2 speed-up over `captum` when running integrated gradients for multi-target pipelines on both CPU and GPU. In addition, to value our work, we showcase concrete use cases of our library with composed interpretability pipelines in Computer Vision (CV) and Natural Language Processing (NLP), as well as with complex models in DRL.},
 }
 
-@inproceedings{puri:2020:explain-your-move,
+@inproceedings{puri:2020:explain-your-move-understanding-agent-actions-using-specific-relevant-feature-attribution,
   title         = {Explain Your Move: Understanding Agent Actions Using Specific and Relevant Feature Attribution},
-  author        = {Nikaash Puri and Sukriti Verma and Piyush Gupta and Dhruv Kayastha and Shripad V. Deshmukh and Balaji Krishnamurthy and Sameer Singh},
+  author        = {Nikaash Puri and Sukriti Verma and Piyush Gupta and Dhruv Kayastha and Shripad Deshmukh and Balaji Krishnamurthy and Sameer Singh},
   year          = {2020},
-  booktitle     = {8th International Conference on Learning Representations, {ICLR} 2020, Addis Ababa, Ethiopia, April 26-30, 2020},
-  publisher     = {OpenReview.net},
+  booktitle     = {International Conference on Learning Representations},
   url           = {https://openreview.net/forum?id=SJgzLkBKPB},
+  tldr          = {We propose a model-agnostic approach to explain the behaviour of black-box deep RL agents, trained to play Atari and board games, by highlighting relevant portions of the input state.},
+  abstract      = {As deep reinforcement learning (RL) is applied to more tasks, there is a need to visualize and understand the behavior of learned agents. Saliency maps explain agent behavior by highlighting the features of the input state that are most relevant for the agent in taking an action. Existing perturbation-based approaches to compute saliency often highlight regions of the input that are not relevant to the action taken by the agent. Our proposed approach, SARFA (Specific and Relevant Feature Attribution), generates more focused saliency maps by balancing two aspects (specificity and relevance) that capture different desiderata of saliency. The first captures the impact of perturbation on the relative expected reward of the action to be explained. The second downweighs irrelevant features that alter the relative expected rewards of actions other than the action to be explained. We compare SARFA with existing approaches on agents trained to play board games (Chess and Go) and Atari games (Breakout, Pong and Space Invaders). We show through illustrative examples (Chess, Atari, Go), human studies (Chess), and automated evaluation methods (Chess) that SARFA generates saliency maps that are more interpretable for humans than existing approaches. For the code release and demo videos, see: https://nikaashpuri.github.io/sarfa-saliency/.},
+  website       = {https://nikaashpuri.github.io/sarfa-saliency/},
+  pdf           = {https://openreview.net/pdf?id=SJgzLkBKPB},
+  github        = {https://github.com/nikaashpuri/sarfa-saliency},
+  dataset       = {https://github.com/nikaashpuri/sarfa-saliency/tree/master/chess\_saliency\_databases},
+  keywords      = {Deep Reinforcement Learning, Saliency maps, Chess, Go, Atari, Interpretable AI, Explainable AI},
 }
 
 @article{purohit:2025:metacognitive-appraisal-quitting,
