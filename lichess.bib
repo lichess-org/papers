@@ -677,6 +677,22 @@
   abstract      = {Can we learn more from data than existed in the generating process itself? Can new and useful information be constructed from merely applying deterministic transformations to existing data? Can the learnable content in data be evaluated without considering a downstream task? On these questions, Shannon information and Kolmogorov complexity come up nearly empty-handed, in part because they assume observers with unlimited computational capacity and fail to target the useful information content. In this work, we identify and exemplify three seeming paradoxes in information theory: (1) information cannot be increased by deterministic transformations; (2) information is independent of the order of data; (3) likelihood modeling is merely distribution matching. To shed light on the tension between these results and modern practice, and to quantify the value of data, we introduce epiplexity, a formalization of information capturing what computationally bounded observers can learn from data. Epiplexity captures the structural content in data while excluding time-bounded entropy, the random unpredictable content exemplified by pseudorandom number generators and chaotic dynamical systems. With these concepts, we demonstrate how information can be created with computation, how it depends on the ordering of the data, and how likelihood modeling can produce more complex programs than present in the data generating process itself. We also present practical procedures to estimate epiplexity which we show capture differences across data sources, track with downstream performance, and highlight dataset interventions that improve out-of-distribution generalization. In contrast to principles of model selection, epiplexity provides a theoretical foundation for data selection, guiding how to select, generate, or transform data for learning systems.},
 }
 
+@misc{frisoni:2026:mixture-masters-sparse-chess-language-models-player-routing,
+  title         = {Mixture of Masters: Sparse Chess Language Models with Player Routing},
+  author        = {Giacomo Frisoni and Lorenzo Molfetta and Davide Freddi and Gianluca Moro},
+  year          = {2026},
+  url           = {https://arxiv.org/abs/2602.04447},
+  note          = {Submitted to ICLR 2026 https://openreview.net/forum?id=lnIlH0hfek},
+  eprint        = {2602.04447},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  tldr          = {Sparse Chess Language Models with Player Routing},
+  keywords      = {chess language modeling, mixture of experts, reinforcement learning, behavioral stylometry},
+  abstract      = {Modern chess language models are dense transformers trained on millions of games played by thousands of high-rated individuals. However, these monolithic networks tend to collapse into mode-averaged behavior, where stylistic boundaries are blurred, and rare but effective strategies are suppressed. To counteract homogenization, we introduce Mixture-of-Masters (MoM), the first chess mixture-of-experts model with small-sized GPT experts emulating world-class grandmasters. Each expert is trained with a combination of self-supervised learning and reinforcement learning guided by chess-specific rewards. For each move, a post-hoc learnable gating network selects the most appropriate persona to channel depending on the game state, allowing MoM to switch its style dynamically--e.g., Tal's offensive vocation or Petrosian's defensive solidity. When evaluated against Stockfish on unseen standard games, MoM outperforms both dense individual expert networks and popular GPT baselines trained on aggregated data, while ensuring generation variety, control, and interpretability.},
+  bot           = {https://lichess.org/\@/mixture-of-masters},
+  github        = {https://anonymous.4open.science/r/mixture-of-masters/README.md},
+}
+
 @inproceedings{gamal:2025:machine-learning-based-dynamic-difficulty-adaptation-chess,
   title         = {Machine Learning Based Dynamic Difficulty Adaptation for Chess},
   author        = {Gamal, Mohamed and Aboulhassan, Amal and Hassan, Yomna M.I.},
