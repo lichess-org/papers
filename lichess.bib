@@ -93,6 +93,18 @@
   keywords      = {Benchmarking, WebAssembly, record and replay},
 }
 
+@inproceedings{balogh:2026:verification-implicit-world-model-generative-model-adversarial-sequences,
+  title         = {Verification of the Implicit World Model in a Generative Model via Adversarial Sequences},
+  author        = {Andr\'{a}s Balogh and M\'{a}rk Jelasity},
+  year          = {2026},
+  booktitle     = {The Fourteenth International Conference on Learning Representations},
+  url           = {https://openreview.net/forum?id=BLOIB8CwBI},
+  keywords      = {generative sequence model, implicit world model, adversarial sequences, chess},
+  abstract      = {Generative sequence models are typically trained on sample sequences from natural or formal languages. It is a crucial question whether -- or to what extent -- sample-based training is able to capture the true structure of these languages, often referred to as the "world model". Theoretical results indicate that we can hope for soundness at best, that is, generating valid sequences, but not necessarily all of them. However, it is still important to have practical tools that are able to verify whether a given sequence model is sound. In this study, we focus on chess, as it is a domain that provides enough complexity while having a simple rule-based world model. We propose adversarial sequence generation for verifying the soundness of the sequence model. Our adversaries generate valid sequences so as to force the sequence model to generate an invalid next move prediction. Apart from the falsification of soundness, this method is also suitable for a more fine-grained analysis of the failure modes and the effects of different choices during training. To demonstrate this, we propose a number of methods for adversarial sequence generation and evaluate the approach on a large set of chess models. We train models on random as well as high-quality chess games, using several training recipes. We find that none of the models are sound, but some training techniques and dataset choices are able to improve soundness remarkably. We also investigate the potential application of board state probes in both our training and attack methods. Our findings indicate that the extracted board states have no causal role in next token prediction in most of the models.},
+  pdf           = {https://arxiv.org/pdf/2602.05903},
+  github        = {https://github.com/szegedai/world-model-verification},
+}
+
 @article{banerjee:2024:skill-vs-chance-quantification-popular-card-board-games,
   title         = {Skill vs. Chance Quantification for Popular Card {\&} Board Games},
   author        = {Tathagata Banerjee and Anushka De and Subhamoy Maitra and Diganta Mukherjee},
