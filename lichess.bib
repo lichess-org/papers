@@ -355,6 +355,7 @@
   booktitle     = {2025 7th International Congress on Human-Computer Interaction, Optimization and Robotic Applications (ICHORA)},
   pages         = {1--5},
   doi           = {10.1109/ICHORA65333.2025.11016842},
+  abstract      = {This paper presents the design, implementation, and evaluation of an innovative electronic chess board leveraging Hall-effect sensors for chess piece identification. Current electronic chess boards employ diverse technologies such as RFID, resistive switches, optical sensors, and computer vision, each with varying complexity and cost. The proposed solution utilizes Hall-effect sensors to detect changes in magnetic flux density caused by magnets embedded in chess pieces.The design features a modular 4x4 grid of sensors integrated on printed circuit boards, where each piece is differentiated by a unique magnet-spacer configuration. Experimental investigations validate the relationship between magnetic flux density and distance, modelled theoretically and tested with a field strength meter and the PCB system. Results confirm the accurate detection of piece positions and classes, despite minor interference from adjacent pieces. A Python-based system processes the sensor data, translating chess moves into live updates on the Li-Chess platform.The system has displayed good results in piece position identification accurately. Further improvement including as spacer configurations are to be done to implement piece classification. Future work aims to explore enhanced micro-controller integration, offering a streamlined and accessible alternative to existing technologies.},
   keywords      = {Magnetic flux density;Magnetic sensors;Printed circuits;Interference;Sensor phenomena and characterization;Robot sensing systems;Sensor systems;Sensors;Reliability;Magnets;electronic chessboard;analogue object identification;Hall-effect sensors;micro-controller},
 }
 
@@ -567,6 +568,9 @@
   booktitle     = {2019 21st Symposium on Virtual and Augmented Reality (SVR)},
   pages         = {152--160},
   doi           = {10.1109/SVR.2019.00038},
+  github        = {https://github.com/rafaelmcam/cChess},
+  dataset       = {https://github.com/rafaelmcam/cChess/tree/master/Jogos},
+  abstract      = {Chess pieces recognition using computer vision is a problem generally approached in various ways, with different kinds of results and complexity. Deep learning is a state of the art approach to solve problems on image recognition although facing necessity of huge data sets. This paper discusses a method to identify synthetically generated chess images on Blender using its Python API via fine-tuning of VGG16 convolutional network obtaining close to 97\% accuracy on piece classification. Possible applications include automated record of real chess games and real-time play between online players using real boards.},
   keywords      = {Histograms, Image color analysis, Games, Tracking, Image edge detection, Machine learning, Task analysis, chess, neural networks, piece recognition, synthetic data generation},
 }
 
@@ -574,6 +578,11 @@
   title         = {Generative Reinforcement Learning with Transformers},
   author        = {Gregoire Deletang and Anian Ruoss and Li Kevin Wenliang and Elliot Catt and Tim Genewein and Jordi Grau-Moya and Marcus Hutter and Joel Veness},
   year          = {2024},
+  abstract = {In reinforcement learning, Transformers have been shown to be powerful models for multi-task policy distillation and, to a lesser extent, policy improvement via return interventions within frameworks such as Decision Transformers. These recent results are somewhat atypical for reinforcement learning, as they do not rely on the learning of a value function, which is usually at the heart of most traditional approaches. In this paper, we explore a principled approach to purely generative value function approximation with Transformers, opening the way for existing techniques to be applied for policy improvement. Importantly, unlike other RL methods, this generative approach allows us to kickstart the learning process by fine-tuning strong pretrained state predictors, such as foundation models, substantially shortening the training time. We showcase the potential of our approach by constructing an action-value function for chess that can play at the level of an expert human and over 400 Elo stronger than direct behavioural cloning.},
+  note = {Submitted to ICLR 2024},
+  keywords = {reinforcement learning, transformers, policy evaluation, policy improvement, sequence modeling, compression},
+  pdf = {https://openreview.net/pdf?id=6qtDu7hVPF},
+  dataset = {https://openreview.net/attachment?id=6qtDu7hVPF&name=supplementary_material},
   url           = {https://openreview.net/forum?id=6qtDu7hVPF},
 }
 
@@ -599,6 +608,7 @@
   booktitle     = {SoutheastCon 2025},
   pages         = {475--480},
   doi           = {10.1109/SoutheastCon56624.2025.10971611},
+  abstract = {Creating a chess engine using language models is challenging due to the complexity of understanding the logic and depth of moves. To solve this problem, we propose several approaches with different types of training of different LLMs that already have some knowledge of tasks and not necessarily on chess, and adjust them for faster learning. We propose three groups of methods and five approaches to enhance state-of-the-art results. Our approaches will involve different types of database manipulation, the training of different types of networks and the application of a new, widely used approach, the RAG (Retrieval-Augmented Generation). We demonstrated the potential of networks and approaches with promising results for the first 2 methods, and we demonstrated with RAG in combination with FAISS (Facebook AI Similarity Search) [1], algebraic notation and GPT3.5-turbo-instruct that it is possible to increase the ability of networks to predict good chess moves. The first approach demonstrated that successive move generation benefits generalization and reduces illegal moves; for the second approach, we proved that the use of noiseless algebraic notation gives the network the possibility of progressing significantly before giving illegal moves. The second group of approaches, demonstrated that using the FEN (Forsyth-Edwards Notation), a textual graphical representation, for the prediction of move sequences to force context understanding could give promising results with a low number of epochs. Even with limitations in computation time and epochs, we were able to find promising results with a part of our dataset that can be improved with more epochs and data.},
   keywords      = {Training, Deep learning, Social networking (online), Large language models, Retrieval augmented generation, Force, Transformers, Logic, Engines, Tuning, Deep learning, Transformers ,LLMs, RAG, FAISS, GPT, Similarity Search, Chess engine, Fine tuning},
 }
 
@@ -612,7 +622,7 @@
   abstract      = {While generalization over tasks from easy to hard is crucial to profile language models (LLMs), the datasets with fine-grained difficulty annotations for each problem across a broad range of complexity are still blank. Aiming to address this limitation, we present Easy2Hard-Bench, a consistently formatted collection of 6 benchmark datasets spanning various domains, such as mathematics and programming problems, chess puzzles, and reasoning questions. Each problem within these datasets is annotated with numerical difficulty scores. To systematically estimate problem difficulties, we collect abundant performance data on attempts to each problem by humans in the real world or LLMs on the prominent leaderboard. Leveraging the rich performance data, we apply well-established difficulty ranking systems, such as Item Response Theory (IRT) and Glicko-2 models, to uniformly assign numerical difficulty scores to problems. Moreover, datasets in Easy2Hard-Bench distinguish themselves from previous collections by a higher proportion of challenging problems. Through extensive experiments with six state-of-the-art LLMs, we provide a comprehensive analysis of their performance and generalization capabilities across varying levels of difficulty, with the aim of inspiring future research in LLM generalization. The datasets are available at https://huggingface.co/datasets/furonghuang-lab/Easy2Hard-Bench.},
 }
 
-@inbook{divakaran:2025:data-serializaiton-persistence-deep-dive-python-techniques-best-practices-developers,
+@inbook{divakaran:2025:data-serialization-persistence-deep-dive-python-techniques-best-practices-developers,
   title         = {Data Serialization and Persistence},
   author        = {Divakaran, Adarsh},
   year          = {2025},
