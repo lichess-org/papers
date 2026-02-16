@@ -578,12 +578,12 @@
   title         = {Generative Reinforcement Learning with Transformers},
   author        = {Gregoire Deletang and Anian Ruoss and Li Kevin Wenliang and Elliot Catt and Tim Genewein and Jordi Grau-Moya and Marcus Hutter and Joel Veness},
   year          = {2024},
-  abstract = {In reinforcement learning, Transformers have been shown to be powerful models for multi-task policy distillation and, to a lesser extent, policy improvement via return interventions within frameworks such as Decision Transformers. These recent results are somewhat atypical for reinforcement learning, as they do not rely on the learning of a value function, which is usually at the heart of most traditional approaches. In this paper, we explore a principled approach to purely generative value function approximation with Transformers, opening the way for existing techniques to be applied for policy improvement. Importantly, unlike other RL methods, this generative approach allows us to kickstart the learning process by fine-tuning strong pretrained state predictors, such as foundation models, substantially shortening the training time. We showcase the potential of our approach by constructing an action-value function for chess that can play at the level of an expert human and over 400 Elo stronger than direct behavioural cloning.},
-  note = {Submitted to ICLR 2024},
-  keywords = {reinforcement learning, transformers, policy evaluation, policy improvement, sequence modeling, compression},
-  pdf = {https://openreview.net/pdf?id=6qtDu7hVPF},
-  dataset = {https://openreview.net/attachment?id=6qtDu7hVPF&name=supplementary_material},
   url           = {https://openreview.net/forum?id=6qtDu7hVPF},
+  note          = {Submitted to ICLR 2024},
+  abstract      = {In reinforcement learning, Transformers have been shown to be powerful models for multi-task policy distillation and, to a lesser extent, policy improvement via return interventions within frameworks such as Decision Transformers. These recent results are somewhat atypical for reinforcement learning, as they do not rely on the learning of a value function, which is usually at the heart of most traditional approaches. In this paper, we explore a principled approach to purely generative value function approximation with Transformers, opening the way for existing techniques to be applied for policy improvement. Importantly, unlike other RL methods, this generative approach allows us to kickstart the learning process by fine-tuning strong pretrained state predictors, such as foundation models, substantially shortening the training time. We showcase the potential of our approach by constructing an action-value function for chess that can play at the level of an expert human and over 400 Elo stronger than direct behavioural cloning.},
+  keywords      = {reinforcement learning, transformers, policy evaluation, policy improvement, sequence modeling, compression},
+  pdf           = {https://openreview.net/pdf?id=6qtDu7hVPF},
+  dataset       = {https://openreview.net/attachment?id=6qtDu7hVPF\&name=supplementary\_material},
 }
 
 @inproceedings{demeter:2021:probing-learning-representation-language-models-closed-domains,
@@ -608,7 +608,7 @@
   booktitle     = {SoutheastCon 2025},
   pages         = {475--480},
   doi           = {10.1109/SoutheastCon56624.2025.10971611},
-  abstract = {Creating a chess engine using language models is challenging due to the complexity of understanding the logic and depth of moves. To solve this problem, we propose several approaches with different types of training of different LLMs that already have some knowledge of tasks and not necessarily on chess, and adjust them for faster learning. We propose three groups of methods and five approaches to enhance state-of-the-art results. Our approaches will involve different types of database manipulation, the training of different types of networks and the application of a new, widely used approach, the RAG (Retrieval-Augmented Generation). We demonstrated the potential of networks and approaches with promising results for the first 2 methods, and we demonstrated with RAG in combination with FAISS (Facebook AI Similarity Search) [1], algebraic notation and GPT3.5-turbo-instruct that it is possible to increase the ability of networks to predict good chess moves. The first approach demonstrated that successive move generation benefits generalization and reduces illegal moves; for the second approach, we proved that the use of noiseless algebraic notation gives the network the possibility of progressing significantly before giving illegal moves. The second group of approaches, demonstrated that using the FEN (Forsyth-Edwards Notation), a textual graphical representation, for the prediction of move sequences to force context understanding could give promising results with a low number of epochs. Even with limitations in computation time and epochs, we were able to find promising results with a part of our dataset that can be improved with more epochs and data.},
+  abstract      = {Creating a chess engine using language models is challenging due to the complexity of understanding the logic and depth of moves. To solve this problem, we propose several approaches with different types of training of different LLMs that already have some knowledge of tasks and not necessarily on chess, and adjust them for faster learning. We propose three groups of methods and five approaches to enhance state-of-the-art results. Our approaches will involve different types of database manipulation, the training of different types of networks and the application of a new, widely used approach, the RAG (Retrieval-Augmented Generation). We demonstrated the potential of networks and approaches with promising results for the first 2 methods, and we demonstrated with RAG in combination with FAISS (Facebook AI Similarity Search) [1], algebraic notation and GPT3.5-turbo-instruct that it is possible to increase the ability of networks to predict good chess moves. The first approach demonstrated that successive move generation benefits generalization and reduces illegal moves; for the second approach, we proved that the use of noiseless algebraic notation gives the network the possibility of progressing significantly before giving illegal moves. The second group of approaches, demonstrated that using the FEN (Forsyth-Edwards Notation), a textual graphical representation, for the prediction of move sequences to force context understanding could give promising results with a low number of epochs. Even with limitations in computation time and epochs, we were able to find promising results with a part of our dataset that can be improved with more epochs and data.},
   keywords      = {Training, Deep learning, Social networking (online), Large language models, Retrieval augmented generation, Force, Transformers, Logic, Engines, Tuning, Deep learning, Transformers ,LLMs, RAG, FAISS, GPT, Similarity Search, Chess engine, Fine tuning},
 }
 
@@ -2525,16 +2525,19 @@ BibTex
   eprint        = {2308.09175},
 }
 
-@article{zaidi:2024:predicting-user-perception-move-brilliance-chess,
+@inproceedings{zaidi:2024:predicting-user-perception-move-brilliance-chess,
   title         = {Predicting User Perception of Move Brilliance in Chess},
-  author        = {Kamron Zaidi and Michael Guerzhoy},
+  author        = {Zaidi, Kamron and Guerzhoy, Michael},
   year          = {2024},
-  journal       = {CoRR},
-  volume        = {abs/2406.11895},
-  doi           = {10.48550/ARXIV.2406.11895},
-  url           = {https://doi.org/10.48550/arXiv.2406.11895},
-  eprinttype    = {arXiv},
-  eprint        = {2406.11895},
+  booktitle     = {Proceedings of the 15th International Conference on Computational Creativity},
+  publisher     = {Association for Computational Creativity},
+  address       = {J{\"o}nk{\"o}ping, Sweden},
+  pages         = {423--427},
+  url           = {https://computationalcreativity.net/iccc24/papers/ICCC24_paper_200.pdf},
+  editor        = {Grace, Kazjon and Llano, Maria Teresa and Martins, Pedro and Hedblom, Maria M.},
+  github        = {https://github.com/kamronzaidi/brilliant-moves-clf},
+  pdf           = {https://computationalcreativity.net/iccc24/papers/ICCC24_paper_200.pdf},
+  abstract      = {AI research in chess has been primarily focused on producing stronger agents that can maximize the probability of winning. However, there is another aspect to chess that has largely gone unexamined: its aesthetic appeal. Specifically, there exists a category of chess moves called ``brilliant'' moves. These moves are appreciated and admired by players for their high intellectual aesthetics. We demonstrate the first system for classifying chess moves as brilliant. The system uses a neural network, using the output of a chess engine as well as features that describe the shape of the game tree. The system achieves an accuracy of 79\% (with 50\% base-rate), a PPV of 83\%, and an NPV of 75\%. We demonstrate that what humans perceive as "brilliant" moves is not merely the best possible move. We show that a move is more likely to be predicted as brilliant, all things being equal, if a weaker engine considers it lower-quality (for the same rating by a stronger engine). Our system opens the avenues for computer chess engines to (appear to) display human-like brilliance, and, hence, creativity.},
 }
 
 @thesis{zelek:2022:topological-data-analysis-chess,
@@ -2571,6 +2574,8 @@ BibTex
   url           = {https://arxiv.org/abs/2506.01242},
   eprint        = {2506.01242},
   archiveprefix = {arXiv},
+  abstract      = {Since the advent of AI, games have served as progress benchmarks. Meanwhile, imperfect-information variants of chess have existed for over a century, present extreme challenges, and have been the focus of significant AI research. Beyond calculation needed in regular chess, they require reasoning about information gathering, the opponent's knowledge, signaling, etc. The most popular variant, Fog of War (FoW) chess (aka. dark chess) is a recognized challenge problem in AI after superhuman performance was reached in no-limit Texas hold'em poker. We present Obscuro, the first superhuman AI for FoW chess. It introduces advances to search in imperfect-information games, enabling strong, scalable reasoning. Experiments against the prior state-of-the-art AI and human players -- including the world's best -- show that Obscuro is significantly stronger. FoW chess is the largest (by amount of imperfect information) turn-based game in which superhuman performance has been achieved and the largest game in which imperfect-information search has been successfully applied.},
+  study         = {https://lichess.org/study/1zHFym7e, https://lichess.org/study/sja93Uc0},
   primaryclass  = {cs.GT},
 }
 
@@ -2596,12 +2601,15 @@ BibTex
   abstract      = {Chess, a deterministic game with perfect information, has long served as a benchmark for studying strategic decision-making and artificial intelligence. Traditional chess engines or tools for analysis primarily focus on calculating optimal moves, often neglecting the variability inherent in human chess playing, particularly across different skill levels. To overcome this limitation, we propose a novel and computationally efficient move prediction framework that approaches chess move prediction as a behavioral analysis task. The framework employs n-gram language models to capture move patterns characteristic of specific player skill levels. By dividing players into seven distinct skill groups, from novice to expert, we trained separate models using data from the open-source chess platform Lichess. The framework dynamically selects the most suitable model for prediction tasks and generates player moves based on preceding sequences. Evaluation on real-world game data demonstrates that the model selector module within the framework can classify skill levels with an accuracy of up to 31.7\% when utilizing early game information (16 half-moves). The move prediction framework also shows substantial accuracy improvements, with our Selector Assisted Accuracy being up to 39.1\% more accurate than our benchmark accuracy. The computational efficiency of the framework further enhances its suitability for real-time chess analysis.},
 }
 
-@inproceedings{zysko:2024:predicting-chess-puzzle-difficulty,
-  title         = {{IEEE Big Data Cup 2024 Report: Predicting Chess Puzzle Difficulty at KnowledgePit.ai}},
-  author        = {Jan Zy\'sko and Maciej \'Swiechowski and Sebastian Stawicki and Katarzyna Jagie{\l}a and Andrzej Janusz and  Dominik \'{S}l\k{e}zak},
+@inproceedings{zysko:2024:ieee-big-data-cup-2024-report-predicting-chess-puzzle-difficulty-knowledgepitai,
+  title         = {IEEE Big Data Cup 2024 Report: Predicting Chess Puzzle Difficulty at KnowledgePit.ai},
+  author        = {Zy\'{s}ko, Jan and \'{S}wiechowski, Maciej and Stawicki, Sebastian and Jagie\l{}a, Katarzyna and Janusz, Andrzej and \'{S}l\k{e}zak, Dominik},
   year          = {2024},
-  booktitle     = {{IEEE} International Conference on Big Data, Big Data 2024, Washington DC, USA, December 15-18, 2024},
-  publisher     = {{IEEE}},
+  booktitle     = {2024 IEEE International Conference on Big Data (BigData)},
+  pages         = {8423--8429},
+  doi           = {10.1109/BigData62323.2024.10825289},
+  keywords      = {Training;Human computer interaction;Reviews;Predictive models;Big Data;Vectors;Mathematical models;User experience;Problem-solving;Artificial intelligence;Human-Computer Interaction;Chess;Big Data Processing;Data Science Competitions},
+  abstract      = {We summarize the results of the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty – a data science competition organized at the knowledgepit.ai platform in association with the IEEE BigData 2024 conference. We describe the competition goal and tie it to existing research on human-computer interaction, focusing on task difficulty estimation and aligning human and AI behavior. We explain how we acquired and processed the data, separately for training and testing datasets. We review submitted solutions and evaluate their performance by comparing them to a simple benchmark. We explain how the achieved rating differences translate to user experience when solving chess puzzles. We further explore the concept of chess puzzle difficulty by replicating competition results with puzzle ratings obtained using chess bots only. We conclude with a summary of our findings and directions for future studies, as well as an invitation to the next edition of the competition in 2025.},
 }
 
 @inproceedings{zysko:2025:fedcis-2025-competition-predicting-chess-puzzle-difficulty-part-2-step-toward-uncertainty-contests,
