@@ -840,16 +840,16 @@
   abstract      = {With large chess-playing neural network models like AlphaZero contesting the state of the art within the world of computerised chess, two challenges present themselves: the question of how to explain the domain knowledge internalised by such models, and the problem that such models are not made openly available. This work presents the re-implementation of the concept detection methodology applied to AlphaZero, by using large, open-source chess models with comparable performance. We obtain results similar to those achieved when applying this methodology to AlphaZero, while relying solely on open-source resources. We also present a novel explainable AI (XAI) method, which is guaranteed to highlight exhaustively and exclusively the information used by the explained model. This method generates visual explanations tailored to domains characterised by discrete input spaces, as is the case for chess. Our presented method has the desirable property of controlling the information flow between any input vector and the given model, which in turn provides strict guarantees regarding what information is used by the trained model during inference. We demonstrate the viability of our method by applying it to standard {\$}{\$}8 {\backslash}times 8{\$}{\$}chess, using large open-source chess models.},
 }
 
-@article{helfenstein:2024:checkmating-one-many-mixture-of-experts-mcts-improve-chess,
-  title         = {Checkmating One, by Using Many: Combining Mixture of Experts with {MCTS} to Improve in Chess},
-  author        = {Felix Helfenstein and Jannis Bl{\"{u}}ml and Johannes Czech and Kristian Kersting},
-  year          = {2024},
-  journal       = {CoRR},
-  volume        = {abs/2401.16852},
-  doi           = {10.48550/ARXIV.2401.16852},
-  url           = {https://doi.org/10.48550/arXiv.2401.16852},
-  eprinttype    = {arXiv},
+@misc{helfenstein:2025:checkmating-one-using-many-combining-mixture-experts-mcts-improve-chess,
+  title         = {Checkmating One, by Using Many: Combining Mixture of Experts with MCTS to Improve in Chess},
+  author        = {Felix Helfenstein and Johannes Czech and Jannis Bl\"{u}ml and Max Eisel and Kristian Kersting},
+  year          = {2025},
+  url           = {https://arxiv.org/abs/2401.16852},
   eprint        = {2401.16852},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  github        = {https://github.com/QueensGambit/CrazyAra},
+  abstract      = {In games like chess, strategy evolves dramatically across distinct phases - the opening, middlegame, and endgame each demand different forms of reasoning and decision-making. Yet, many modern chess engines rely on a single neural network to play the entire game uniformly, often missing opportunities to specialize. In this work, we introduce M2CTS, a modular framework that combines Mixture of Experts with Monte Carlo Tree Search to adapt strategy dynamically based on game phase. We explore three different methods for training the neural networks: Separated Learning, Staged Learning, and Weighted Learning. By routing decisions through specialized neural networks trained for each phase, M2CTS improves both computational efficiency and playing strength. In experiments on chess, M2CTS achieves up to +122 Elo over standard single-model baselines and shows promising generalization to multi-agent domains such as Pommerman. These results highlight how modular, phase-aware systems can better align with the structured nature of games and move us closer to human-like behavior in dividing a problem into many smaller units.},
 }
 
 @inproceedings{holdaway:2021:risk-taking-adversarial-games-what-billion-chess-games-tell-us,
