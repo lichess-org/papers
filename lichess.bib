@@ -999,16 +999,18 @@
   keywords      = {Encryption;Steganography;Security;Tensors;Table lookup;Encoding;Music;Heuristic algorithms;Ciphers;Transforms;Cryptography;Encryption;Generative Steganography;Transforms;Trinary Encoding},
 }
 
-@article{karvonen:2024:emergent-world-models-latent-variable-estimation-chess-playing,
+@inproceedings{karvonen:2024:emergent-world-models-latent-variable-estimation-chess-playing,
   title         = {Emergent World Models and Latent Variable Estimation in Chess-Playing Language Models},
   author        = {Adam Karvonen},
   year          = {2024},
-  journal       = {CoRR},
-  volume        = {abs/2403.15498},
-  doi           = {10.48550/ARXIV.2403.15498},
-  url           = {https://doi.org/10.48550/arXiv.2403.15498},
-  eprinttype    = {arXiv},
-  eprint        = {2403.15498},
+  booktitle     = {First Conference on Language Modeling},
+  url           = {https://openreview.net/forum?id=PPTrmvEnpW},
+  tldr          = {We train a GPT model from scratch to play chess and  find that it learns to compute board state and estimate player Elo. We use these representations to edit the GPT's internal board state and increase or decrease its chess-playing ability.},
+  abstract      = {Language models have shown unprecedented capabilities, sparking debate over the source of their performance. Is it merely the outcome of learning syntactic patterns and surface level statistics, or do they extract semantics and a world model from the text? Prior work by Li et al. investigated this by training a GPT model on synthetic, randomly generated Othello games and found that the model learned an internal representation of the board state. We extend this work into the more complex domain of chess, training on real games and investigating our model's internal representations using linear probes and contrastive activations. The model is given no a priori knowledge of the game and is solely trained on next character prediction, yet we find evidence of internal representations of board state. We validate these internal representations by using them to make interventions on the model's activations and edit its internal board state. Unlike Li et al's prior synthetic dataset approach, our analysis finds that the model also learns to estimate latent variables like player skill to better predict the next character. We derive a player skill vector and add it to the model, improving the model's win rate by up to 2.6 times.},
+  keywords      = {GPT, large language model, interpretability, world model},
+  github        = {https://github.com/adamkarvonen/chess\_llm\_interpretability},
+  dataset       = {https://huggingface.co/datasets/adamkarvonen/chess\_games},
+  huggingface   = {https://huggingface.co/adamkarvonen/chess\_llms},
 }
 
 @inproceedings{karvonen:2024:measuring-progress-dictionary-learning-language-model-interpretability-board-games-models,
