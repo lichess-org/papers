@@ -2547,14 +2547,17 @@ BibTex
   editor        = {Hyeran Byun and Beng Chin Ooi and Katsumi Tanaka and Sang{-}Won Lee and Zhixu Li and Akiyo Nadamoto and Giltae Song and Young{-}Guk Ha and Kazutoshi Sumiya and Yuncheng Wu and Hyuk{-}Yoon Kwon and Takehiro Yamamoto},
 }
 
-@misc{yang:2025:mixture-experts-intrinsically-interpretable,
+@inproceedings{yang2025miyang:2025:mixture-experts-intrinsically-interpretablexture,
   title         = {Mixture of Experts Made Intrinsically Interpretable},
   author        = {Xingyi Yang and Constantin Venhoff and Ashkan Khakzar and Christian Schroeder de Witt and Puneet K. Dokania and Adel Bibi and Philip Torr},
   year          = {2025},
-  url           = {https://arxiv.org/abs/2503.07639},
-  eprint        = {2503.07639},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.LG},
+  booktitle     = {Forty-second International Conference on Machine Learning},
+  url           = {https://openreview.net/forum?id=6QERrXMLP2},
+  tldr          = {We present MoE-X a mixture-of-experts (MoE) language model designed to be intrinsically interpretable.},
+  abstract      = {Neurons in large language models often exhibit polysemanticity, simultaneously encoding multiple unrelated concepts and obscuring interpretability. Instead of relying on post-hoc methods, we present MoE-X, a mixture-of-experts (MoE) language model designed to be intrinsically interpretable. Our approach is motivated by the observation that, in language models, wider networks with sparse activations are more likely to capture interpretable factors. however, directly training such large sparse networks is computationally prohibitive. MoE architectures offer a scalable alternative by activating only a subset of experts for any given input, inherently aligning with interpretability objectives. In MoE-X, we establish this connection by rewriting the MoE layer as an equivalent sparse, large MLP. This approach enables efficient scaling of the hidden size while maintaining sparsity. To further enhance interpretability, we enforce sparse activation within each expert and redesign the routing mechanism to prioritize experts with the highest activation sparsity. These designs ensure that only the most salient features are routed and processed by the experts. We evaluate MoE-X on chess and natural language tasks, showing that it achieves performance comparable to dense models while significantly improving interpretability. MoE-X achieves a perplexity better than GPT-2, with interpretability surpassing even sparse autoencoder (SAE)-based approaches.},
+  keywords      = {Mixture of Expert; Interpretability; Polysemanticity},
+  website       = {https://icml.cc/virtual/2025/poster/46377},
+  note = {https://proceedings.mlr.press/v267/yang25ag.html}
 }
 
 @inproceedings{ye:2025:implicit-search-discrete-diffusion-study-chess,
