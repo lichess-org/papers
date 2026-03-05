@@ -789,6 +789,20 @@
   github        = {https://github.com/LauraWangQiu/AlphaDeepChess},
 }
 
+@thesis{gramaje:2023:exploring-gpt-capabilities-chess-puzzles,
+  title         = {Exploring GPT's Capabilities in Chess-Puzzles},
+  author        = {Albert Gramaje, Borja},
+  year          = {2023},
+  location      = {Valencia, Spain},
+  url           = {https://riunet.upv.es/handle/10251/197801},
+  pdf           = {https://riunet.upv.es/server/api/core/bitstreams/8dc80122-7f5c-40d2-9844-cd40d5a943d7/content},
+  type          = {mathesis},
+  institution   = {Universitat Polit\`{e}cnica de Val\`{e}ncia},
+  supervisor    = {Ferri Ram\'{i}rez, C\'{e}sar},
+  abstract      = {Language Models have not acquired their popularity based only on their text-generation capabilities, but also for the ability of learning they do have. An exploration of these capabilities over chess is carried out. With chess, it allows to process the game as a Natural Language problem. Analysing its capabilities of reasoning and solving puzzles with different prompt approaches, introducing concepts of in-context learning and fine-tuning.},
+  keywords      = {GPT-4, GPT-3, Modelos ling\"{u}\'{\i}sticos GPT, Modelos ling\"{u}\'{\i}sticos (LM), Machine Learning (ML), Artificial Intelligence (AI), GPT Language models, Language models (LMs)},
+}
+
 @inproceedings{guntz:2018:role-emotion-problem-solving-first-results-observing-chess,
   title         = {The role of emotion in problem solving: first results from observing chess},
   author        = {Guntz, Thomas and Crowley, James L. and Vaufreydaz, Dominique and Balzarini, Raffaella and Dessus, Philippe},
@@ -2547,17 +2561,17 @@ BibTex
   editor        = {Hyeran Byun and Beng Chin Ooi and Katsumi Tanaka and Sang{-}Won Lee and Zhixu Li and Akiyo Nadamoto and Giltae Song and Young{-}Guk Ha and Kazutoshi Sumiya and Yuncheng Wu and Hyuk{-}Yoon Kwon and Takehiro Yamamoto},
 }
 
-@inproceedings{yang2025miyang:2025:mixture-experts-intrinsically-interpretablexture,
+@inproceedings{yang2025miyang:2025:mixture-experts-intrinsically-interpretable,
   title         = {Mixture of Experts Made Intrinsically Interpretable},
   author        = {Xingyi Yang and Constantin Venhoff and Ashkan Khakzar and Christian Schroeder de Witt and Puneet K. Dokania and Adel Bibi and Philip Torr},
   year          = {2025},
   booktitle     = {Forty-second International Conference on Machine Learning},
   url           = {https://openreview.net/forum?id=6QERrXMLP2},
+  note          = {https://proceedings.mlr.press/v267/yang25ag.html},
   tldr          = {We present MoE-X a mixture-of-experts (MoE) language model designed to be intrinsically interpretable.},
   abstract      = {Neurons in large language models often exhibit polysemanticity, simultaneously encoding multiple unrelated concepts and obscuring interpretability. Instead of relying on post-hoc methods, we present MoE-X, a mixture-of-experts (MoE) language model designed to be intrinsically interpretable. Our approach is motivated by the observation that, in language models, wider networks with sparse activations are more likely to capture interpretable factors. however, directly training such large sparse networks is computationally prohibitive. MoE architectures offer a scalable alternative by activating only a subset of experts for any given input, inherently aligning with interpretability objectives. In MoE-X, we establish this connection by rewriting the MoE layer as an equivalent sparse, large MLP. This approach enables efficient scaling of the hidden size while maintaining sparsity. To further enhance interpretability, we enforce sparse activation within each expert and redesign the routing mechanism to prioritize experts with the highest activation sparsity. These designs ensure that only the most salient features are routed and processed by the experts. We evaluate MoE-X on chess and natural language tasks, showing that it achieves performance comparable to dense models while significantly improving interpretability. MoE-X achieves a perplexity better than GPT-2, with interpretability surpassing even sparse autoencoder (SAE)-based approaches.},
   keywords      = {Mixture of Expert; Interpretability; Polysemanticity},
   website       = {https://icml.cc/virtual/2025/poster/46377},
-  note = {https://proceedings.mlr.press/v267/yang25ag.html}
 }
 
 @inproceedings{ye:2025:implicit-search-discrete-diffusion-study-chess,
