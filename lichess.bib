@@ -633,6 +633,7 @@
   doi           = {10.1007/979-8-8688-1261-3_17},
   isbn          = {979-8-8688-1261-3},
   url           = {https://doi.org/10.1007/979-8-8688-1261-3_17},
+  abstract      = {In the previous chapter, we explored asynchronous programming with asyncio, learning how to handle multiple I/O-bound operations efficiently within a single thread.},
 }
 
 @article{dogra:2025:beyond-perfect-play-combinatorial-probabilistic-approach-chess-endgame-strategy,
@@ -652,7 +653,7 @@
   booktitle     = {The Thirty-ninth Annual Conference on Neural Information Processing Systems},
   url           = {https://openreview.net/forum?id=Dkgx2pS4Ww},
   keywords      = {elicitation, large language models, LLMs, latent capabilities, minimum description length},
-  abstarct      = {Large language models often possess latent capabilities that lie dormant unless explicitly elicited, or surfaced, through fine-tuning or prompt engineering. Predicting, assessing, and understanding these latent capabilities pose significant challenges in the development of effective, safe AI systems. In this work, we recast elicitation as an information-constrained fine-tuning problem and empirically characterize upper bounds on the minimal number of parameters needed to achieve specific task performances. We find that training as few as 10-100 randomly chosen parameters--several orders of magnitude fewer than state-of-the-art parameter-efficient methods--can recover up to 50\% of the performance gap between pretrained-only and full fine-tuned models, and 1,000s to 10,000s of parameters can recover 95\% of this performance gap. We show that a logistic curve fits the relationship between the number of trained parameters and model performance gap recovery. This scaling generalizes across task formats and domains, as well as model sizes and families, extending to reasoning models and remaining robust to increases in inference compute. To help explain this behavior, we consider a simplified picture of elicitation via fine-tuning where each trainable parameter serves as an encoding mechanism for accessing task-specific knowledge. We observe a relationship between the number of trained parameters and how efficiently relevant model capabilities can be accessed and elicited, offering a potential route to distinguish elicitation from teaching.},
+  abstract      = {Large language models often possess latent capabilities that lie dormant unless explicitly elicited, or surfaced, through fine-tuning or prompt engineering. Predicting, assessing, and understanding these latent capabilities pose significant challenges in the development of effective, safe AI systems. In this work, we recast elicitation as an information-constrained fine-tuning problem and empirically characterize upper bounds on the minimal number of parameters needed to achieve specific task performances. We find that training as few as 10-100 randomly chosen parameters--several orders of magnitude fewer than state-of-the-art parameter-efficient methods--can recover up to 50\% of the performance gap between pretrained-only and full fine-tuned models, and 1,000s to 10,000s of parameters can recover 95\% of this performance gap. We show that a logistic curve fits the relationship between the number of trained parameters and model performance gap recovery. This scaling generalizes across task formats and domains, as well as model sizes and families, extending to reasoning models and remaining robust to increases in inference compute. To help explain this behavior, we consider a simplified picture of elicitation via fine-tuning where each trainable parameter serves as an encoding mechanism for accessing task-specific knowledge. We observe a relationship between the number of trained parameters and how efficiently relevant model capabilities can be accessed and elicited, offering a potential route to distinguish elicitation from teaching.},
   github        = {https://github.com/edonoway/quantifying-elicitation-neurips25},
 }
 
@@ -668,13 +669,21 @@
   abstract      = {With the growing capabilities of AI, technology is increasingly able to match or even surpass human performance. In the current study, focused on the game of chess, we investigated whether chess players could distinguish if they were playing against a human or a computer, and how they achieved this. A total of 24 chess players each played eight 5+0 Blitz games from different starting positions. They played against (1) a human, (2) Maia, a neural network-based chess engine trained to play in a human-like manner, (3) Stockfish 16, the best chess engine available, downgraded to play at a lower level, and (4) Stockfish 16 at its maximal level. The opponent's move time was fixed at 10 seconds. During the game, participants verbalized their thoughts, and after each game, they indicated by means of a questionnaire whether they thought they had played against a human or a machine and if there were particular moves that revealed the nature of the opponent. The results showed that Stockfish at the highest level was usually correctly identified as an engine, while Maia was often incorrectly identified as a human. The moves of the downgraded Stockfish were relatively often labeled as `strange' by the participants. In conclusion, the Turing test, as applied here in a domain where computers can perform superhumanly, is essentially a test of whether the chess computer can devise suboptimal moves that correspond to human moves, and not necessarily a test of computer intelligence.},
 }
 
-@inproceedings{feng:2023:chessgpt-policy-learning-language-modeling,
-  title         = {ChessGPT: Bridging Policy Learning and Language Modeling},
-  author        = {Xidong Feng and Yicheng Luo and Ziyan Wang and Hongrui Tang and Mengyue Yang and Kun Shao and David Mguni and Yali Du and Jun Wang},
+@inproceedings{feng:2023:chessgpt-bridging-policy-learning-language-modeling,
+  title         = {ChessGPT: bridging policy learning and language modeling},
+  author        = {Feng, Xidong and Luo, Yicheng and Wang, Ziyan and Tang, Hongrui and Yang, Mengyue and Shao, Kun and Mguni, David and Du, Yali and Wang, Jun},
   year          = {2023},
-  booktitle     = {Advances in Neural Information Processing Systems 36: Annual Conference on Neural Information Processing Systems 2023, NeurIPS 2023, New Orleans, LA, USA, December 10 - 16, 2023},
-  url           = {http://papers.nips.cc/paper\_files/paper/2023/hash/16b14e3f288f076e0ca73bdad6405f77-Abstract-Datasets\_and\_Benchmarks.html},
-  editor        = {Alice Oh and Tristan Naumann and Amir Globerson and Kate Saenko and Moritz Hardt and Sergey Levine},
+  booktitle     = {Proceedings of the 37th International Conference on Neural Information Processing Systems},
+  location      = {New Orleans, LA, USA},
+  publisher     = {Curran Associates Inc.},
+  address       = {Red Hook, NY, USA},
+  series        = {NeurIPS '23},
+  abstract      = {When solving decision-making tasks, humans typically depend on information from two key sources: (1) Historical policy data, which provides interaction replay from the environment, and (2) Analytical insights in natural language form, exposing the invaluable thought process or strategic considerations. Despite this, the majority of preceding research focuses on only one source: they either use historical replay exclusively to directly learn policy or value functions, or engaged in language model training utilizing mere language corpus. In this paper, we argue that a powerful autonomous agent should cover both sources. Thus, we propose ChessGPT, a GPT model bridging policy learning and language modeling by integrating data from these two sources in Chess games. Specifically, we build a large-scale game and language dataset related to chess. Leveraging the dataset, we showcase two model examples ChessCLIP and ChessGPT, integrating policy learning and language modeling. Finally, we propose a full evaluation framework for evaluating language model's chess ability. Experimental results validate our model and dataset's effectiveness. We open source our code, model, and dataset at https://github.com/waterhorse1/ChessGPT.},
+  pdf           = {https://proceedings.neurips.cc/paper_files/paper/2023/file/16b14e3f288f076e0ca73bdad6405f77-Paper-Datasets_and_Benchmarks.pdf},
+  articleno     = {316},
+  numpages      = {47},
+  huggingface   = {https://huggingface.co/Waterhorse/ChessCLIP,https://huggingface.co/Waterhorse/chessgpt-base-v1,https://huggingface.co/Waterhorse/chessgpt-chat-v1},
+  github        = {https://github.com/waterhorse1/ChessGPT},
 }
 
 @misc{feng:2025:generating-creative-chess-puzzles,
@@ -726,14 +735,18 @@
   keywords      = {Accuracy;Games;Machine learning;Ubiquitous computing;Timing;Problem-solving;Engines;Game Analytics;Dynamic Difficulty Adaption;Chess;Machine Learning},
 }
 
-@misc{gee:2025:investigating-experiential-effects-online-chess-hierarchical-bayesian-analysis,
-  title         = {Investigating Experiential Effects in Online Chess using a Hierarchical Bayesian Analysis},
+@article{gee:2025:investigating-experiential-effects-online-chess-hierarchical-bayesian-analysis,
+  title         = {Investigating experiential effects in online chess using a hierarchical Bayesian analysis},
   author        = {Adam Gee and Sydney O. Seese and James P. Curley and Owen G. Ward},
   year          = {2025},
-  url           = {https://arxiv.org/abs/2503.21713},
-  eprint        = {2503.21713},
-  archiveprefix = {arXiv},
-  primaryclass  = {stat.AP},
+  journal       = {Journal of Quantitative Analysis in Sports},
+  doi           = {doi:10.1515/jqas-2025-0035},
+  url           = {https://doi.org/10.1515/jqas-2025-0035},
+  pdf           = {https://www.degruyterbrill.com/document/doi/10.1515/jqas-2025-0035/pdf},
+  abstract      = {The presence or absence of winner-loser effects is a widely discussed phenomenon across both sports and psychology research. Investigation of such effects is often hampered by the limited availability of data. Online chess has exploded in popularity in recent years and provides vast amounts of data which can be used to explore this question. With a hierarchical Bayesian regression model, we carefully investigate the presence of such experiential effects in online chess. Using a large quantity of online chess data, we see little evidence for experiential effects that are consistent across all players, with some individual players showing some evidence for such effects. Given the challenging temporal nature of this data, we discuss several methods for assessing the suitability of our model and carefully check its validity.},
+  dataset       = {https://zenodo.org/records/17247312},
+  github        = {https://github.com/OwenWard/Chess\_Winner},
+  keywords      = {Winner-loser Effects, Chess, Hierarchical Bayesian Modeling, online competitions},
 }
 
 @article{ghayebzadeh:2025:effect-transcranial-current-decision-making-chess-personality,
@@ -873,17 +886,23 @@
   booktitle     = {Proceedings of the 43rd Annual Meeting of the Cognitive Science Society, CogSci 2021, virtual, July 26-29, 2021},
   publisher     = {cognitivesciencesociety.org},
   url           = {https://escholarship.org/uc/item/403764rd},
+  abstract      = {Humans are social beings, and most of our decisions are influenced by considerations of how others will respond. Whether in poker or political negotiations, the riskiness of a decision is often determined by the variance of the other party's possible responses. Such socially-contingent decisions can be framed in terms of adversarial games, which differ from other risky situations such as lotteries because the risk arises from uncertainty about the opponent's decisions, and not some independent stochasticity in the world. We use chess as a lens through which we can study human risk-taking behavior in adversarial decision making. We develop a novel algorithm for calculating the riskiness of each move in a chess game, and apply it to data from over 1 billion online chess games. We find that players not only exhibit state-dependent risk preferences, but also change their risk-taking strategy depending on their opponent, and that this effect differs in experts and novices.},
+  keywords      = {risk taking; adversarial games; chess},
+  github        = {https://github.com/choldawa/Chess},
+  blog          = {https://www.linkedin.com/pulse/what-can-1-billion-chess-games-tell-us-risk-taking-cameron-holdaway/},
   editor        = {W. Tecumseh Fitch and Claus Lamm and Helmut Leder and Kristin Te{\ss}mar{-}Raible},
 }
 
-@mastersthesis{hoque:2022:classification-anomaly-detection-chess,
+@thesis{hoque:2022:classification-chess-games-exploration-classifiers-anomaly-detection-chess,
   title         = {Classification of Chess Games: An Exploration of Classifiers for Anomaly Detection in Chess},
   author        = {Hoque, Masudul},
   year          = {2021},
   note          = {https://cornerstone.lib.mnsu.edu/etds/1119/},
-  school        = {Minnesota State University, Mankato},
-  type          = {Master's thesis},
-  annote        = {Chess is a strategy board game with its inception dating back to the 15th century. The Covid-19 pandemic has led to a chess boom online with 95,853,038 chess games being played during January, 2021 on lichess.com. Along with the chess boom, instances of cheating have also become more rampant. Classifications have been used for anomaly detection in different fields and thus it is a natural idea to develop classifiers to detect cheating in chess. However, there are no specific examples of this, and it is difficult to obtain data where cheating has occurred. So, in this paper, we develop 4 machine learning classifiers, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Multinomial Logistic Regression, and K-Nearest Neighbour classifiers to predict chess game results and explore predictors that produce the best accuracy performance. We use Confusion Matrix, K Fold Cross-Validation, and Leave-One-Out Cross-Validation methods to find the accuracy metrics. There are three phases of analysis. In phase I, we train classifiers using 1.94 million over the board game as training data and 20 thousand online games as testing data and obtain accuracy metrics. In phase II, we select a smaller pool of 212 games, select additional predictor variables from chess engine evaluation of the moves played in those games and check whether the inclusion of the variables improve performance. Finally, in phase III, we investigate for patterns in misclassified cases to define anomalies. From phase I, the models are not performing at a utilizable level of accuracy (44-63\%). For all classifiers, it is no better than deciding the class with a coin toss. K-Nearest Neighbour with K = 7 was the best model. In phase II, adding the new predictors improved the performance of all the classifiers significantly across all validation methods. In fact, using only significant variables as predictors produced highly accurate classifiers. Finally, from phase III, we could not find any patterns or significant differences between the predictors for both correct classifications and misclassifications. In conclusion, machine learning classification is only one useful tool to spot instances that indicates anomalies. However, we cannot simply judge anomalous games using only this method.},
+  institution   = {Minnesota State University, Mankato},
+  type          = {mathesis},
+  abstract      = {Chess is a strategy board game with its inception dating back to the 15th century. The Covid-19 pandemic has led to a chess boom online with 95,853,038 chess games being played during January, 2021 on lichess.com. Along with the chess boom, instances of cheating have also become more rampant. Classifications have been used for anomaly detection in different fields and thus it is a natural idea to develop classifiers to detect cheating in chess. However, there are no specific examples of this, and it is difficult to obtain data where cheating has occurred. So, in this paper, we develop 4 machine learning classifiers, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Multinomial Logistic Regression, and K-Nearest Neighbour classifiers to predict chess game results and explore predictors that produce the best accuracy performance. We use Confusion Matrix, K Fold Cross-Validation, and Leave-One-Out Cross-Validation methods to find the accuracy metrics. There are three phases of analysis. In phase I, we train classifiers using 1.94 million over the board game as training data and 20 thousand online games as testing data and obtain accuracy metrics. In phase II, we select a smaller pool of 212 games, select additional predictor variables from chess engine evaluation of the moves played in those games and check whether the inclusion of the variables improve performance. Finally, in phase III, we investigate for patterns in misclassified cases to define anomalies. From phase I, the models are not performing at a utilizable level of accuracy (44-63\%). For all classifiers, it is no better than deciding the class with a coin toss. K-Nearest Neighbour with K = 7 was the best model. In phase II, adding the new predictors improved the performance of all the classifiers significantly across all validation methods. In fact, using only significant variables as predictors produced highly accurate classifiers. Finally, from phase III, we could not find any patterns or significant differences between the predictors for both correct classifications and misclassifications. In conclusion, machine learning classification is only one useful tool to spot instances that indicates anomalies. However, we cannot simply judge anomalous games using only this method.},
+  pdf           = {https://cornerstone.lib.mnsu.edu/cgi/viewcontent.cgi?article=2118&context=etds},
+  supervisor    = {Premarathna, Galkande Iresha},
 }
 
 @misc{hull:2025:beyond-evaluation-learning-contextual-chess-position-representations,
@@ -919,7 +938,9 @@
   title         = {Can Large Language Models Develop Strategic Reasoning? Post-training Insights from Learning Chess},
   author        = {Dongyoon Hwang and Hojoon Lee and Jaegul Choo and Dongmin Park and Jongho Park},
   year          = {2025},
-  journal       = {CoRR},
+}
+
+journal       = {CoRR},
   volume        = {abs/2507.00726},
   doi           = {10.48550/ARXIV.2507.00726},
   url           = {https://doi.org/10.48550/arXiv.2507.00726},
@@ -929,7 +950,6 @@
   abstract      = {While reinforcement learning (RL) for large language models (LLMs) has shown promise in mathematical reasoning, strategic reasoning for LLMs using RL remains largely unexplored. We investigate whether LLMs can develop strategic reasoning capabilities through RL in chess. To this end, we leverage a chess-pretrained action-value network to provide dense reward on the LLM's output move quality, which can be seen as a form of knowledge distillation. Our experiments show that our distillation-based dense rewards often outperform sparse binary rewards. However, surprisingly, all models plateau far below expert levels. We provide SFT and RL ablations on chess reasoning training and find evidence that this limitation stems from a deficit in the pretrained models' internal understanding of chess-a deficit which RL alone may not be able to fully overcome. The code is available at this https URL: https://github.com/krafton-ai/Chess-R1},
   github        = {https://github.com/krafton-ai/Chess-R1},
 }
-
 @inproceedings{iavich:2024:detecting-fair-play-violations-chess-neural-networks,
   title         = {Detecting Fair Play Violations in Chess Using Neural Networks},
   author        = {Iavich, Maksim and Kevanishvili, Zura},
@@ -940,6 +960,9 @@
   volume        = {3341},
   pages         = {121--127},
   url           = {https://ceur-ws.org/Vol-3885/paper13.pdf},
+  keywords      = {Chess, Cheating, AI, Neural Networks},
+  abstract      = {This study addresses the challenge of distinguishing between human and computer-generated play in chess, crucial for ensuring the integrity and fairness of both onlineand tournament play. As unauthorized computer assistance becomes increasinglysophisticated, we utilize sequential neural networks to analyze a vast dataset of chessgames, employing both traditional engines, such as Stockfish and Leela, andinnovative neural networks like Maia and its individual sub-models. This analysisincorporates centipawn deviation metrics to gauge departures from typicalcomputer strategies, Maia's insights into human and idiosyncratic playstyles, and anevaluation of time distribution for moves. Our method extends by considering thestrategic implications of move sequences and the consistency of play under varyinggame conditions, enhancing our understanding of the nuanced differences betweenhuman and AI play. Remarkably, our algorithm achieves approximately 98\% accuracyin identifying the use of chess engines, offering a significant advancement in effortsto maintain the game's integrity.To further validate our findings, we conducted cross-validation with a separatedataset, confirming the robustness of our model. We also explored the algorithm'sapplicability to detecting AI assistance in other board games, suggesting its potentialfor broader use. The research highlights the critical role of machine learning incombating digital cheating, emphasizing the need for continuous adaptation ofdetection methods to keep pace with evolving technologies. Additionally, ourfindings point to the importance of developing ethical guidelines for the use of AI ingames, ensuring a fair and level playing field for all participants. Lastly, bypublishing our methodology and the criteria for AI detection, we aim to foster anopen dialogue within the gaming community and among developers, promotingtransparency and collaboration in the fight against cheating.},
+  video         = {https://www.youtube.com/watch?v=hJ7POry\_q6U},
 }
 
 @inproceedings{jakub:2026:chessformer-modeling-human-decision-making-chess,
@@ -1060,6 +1083,21 @@
   type          = {Diploma Thesis},
   keyword       = {Mobile Security; Android; iOS; Binary Analysis; Cross-Platform Analysis},
   abstract      = {Android and iOS are the two dominant mobile operating systems in the rapidly expanding smartphone market, serving billions of users worldwide. Both platforms feature extensive app stores with millions of applications available for download. While security measures are in place to prevent the distribution of malicious or vulnerable apps, instances of malware have still been discovered in both stores. These incidents highlight a significant security risk that threatens user privacy and highlights the urgent need for advanced research in detecting malicious code and security vulnerabilities in mobile applications. As a step toward addressing this challenge, this thesis explores the feasibility of using binary similarity detection techniques to identify similarities between Android and iOS applications. To achieve this, we designed and implemented a novel analysis pipeline specifically tailored for comparing Android apps (compiled into binary OAT files) with iOS binaries. This pipeline enables the automatic identification of matches between corresponding applications across both platforms. The pipeline comprises several key stages, including preparing the apps and their third-party libraries for binary analysis, disassembling the binaries using both IDA Pro and Ghidra to account for potential variations introduced by different disassemblers, and conducting similarity analysis on the disassembly results. To assess the effectiveness of our pipeline, we conducted a comprehensive analysis on a dataset of 100 cross-platform apps. Our findings indicate that current binary similarity analysis methods have limitations in directly identifying cross-platform similarities between applications. However, we demonstrated that incorporating third-party libraries into the analysis significantly enhances similarity detection and can help to provide meaningful insights. This highlights the crucial role that third-party libraries play in cross-platform app analysis. Additionally, we found that the choice of disassembler has a significant impact on analysis results. Notably, no single disassembler proved to be clearly superior, as both exhibited their own strengths and limitations. Ultimately, this study offers valuable insights into the challenges and potential of cross-platform binary app analysis using traditional binary diffing techniques, laying a strong foundation for future research in this evolving field.},
+}
+
+@article{Kevanishvili:2026:hybrid-human-centric-framework-discriminating-engine-like-human-like-chess-play-proof-concept-study,
+  title         = {A Hybrid Human-Centric Framework for Discriminating Engine-like from Human-like Chess Play: A Proof-of-Concept Study},
+  author        = {Kevanishvili, Zura and Iavich, Maksim},
+  year          = {2026},
+  journal       = {Applied System Innovation},
+  volume        = {9},
+  number        = {1},
+  doi           = {10.3390/asi9010011},
+  issn          = {2571-5577},
+  url           = {https://www.mdpi.com/2571-5577/9/1/11},
+  article-number = {11},
+  keywors       = {online chess; gameplay integrity analysis; hybrid system design; stylometric modeling; centipawn loss; move match probability; convolutional neural networks; explainable AI; human-AI interaction; applied system innovation},
+  abstract      = {The rapid growth of online chess has intensified the challenge of distinguishing engine-assisted from authentic human play, exposing the limitations of existing approaches that rely solely on deterministic evaluation metrics. This study introduces a proof-of-concept hybrid framework for discriminating between engine-like and human-like chess play patterns, integrating Stockfish's deterministic evaluations with stylometric behavioral features derived from the Maia engine. Key metrics include Centipawn Loss (CPL), Mismatch Move Match Probability (MMMP), and a novel Curvature-Based Stability (\ensuremath{\Delta}S) indicator. These features were incorporated into a convolutional neural network (CNN) classifier and evaluated on a controlled benchmark dataset of 1000 games, where "suspicious" gameplay was algorithmically generated to simulate engine-optimal patterns, while "clean" play was modeled using Maia's human-like predictions. Results demonstrate the framework's ability to discriminate between these behavioral archetypes, with the hybrid model achieving a macro F1-score of 0.93, significantly outperforming the Stockfish-only baseline (F1 = 0.87), as validated by McNemar's test (p = 0.0153). Feature ablation confirmed that Maia-derived features reduced false negatives and improved recall, while \ensuremath{\Delta}S enhanced robustness. This work establishes a methodological foundation for behavioral pattern discrimination in chess, demonstrating the value of combining deterministic and human-centric modeling. Beyond chess, the approach offers a template for behavioral anomaly analysis in cybersecurity, education, and other decision-based domains, with real-world validation on adjudicated misconduct cases identified as the essential next step.},
 }
 
 @inproceedings{khamele:2025:modular-voice-controlled-iot-architecture-screenless-real-time-interaction,
@@ -1653,10 +1691,13 @@ BibTex
   title         = {An alternative chess rating model based on latent variables},
   author        = {O'Rourke, Patrick},
   year          = {2024},
-  note          = {http://dx.doi.org/10.13140/RG.2.2.18931.13604},
+  doi           = {10.13140/RG.2.2.18931.13604},
+  url           = {http://dx.doi.org/10.13140/RG.2.2.18931.13604},
+  supervisor    = {Riccardo Rastelli},
   school        = {University College Dublin},
-  type          = {Master's thesis},
-  annote        = {The ranking of players and particularly of chess players has been a topic of debate throughout the last 80 years. Such exploration spawned what has become the benchmark of evaluating professional chess players since the 1970s: the Elo rating model. The Elo system, the first to have a sound statistical basis, was designed by Elo (1978) from the assumption that the performance of a player in a game is a normally distributed random variable Alliot (2017). However, this ranking model is not without its limitations and such has led to extreme rating deflation of the World Chess Federation (FIDE) Standard Elo rating system Sonas (2023). Such attention on the FIDE's rating mechanism has ignited focus on the Elo system's drawbacks which we will address in this dissertation.},
+  type          = {mathesis},
+  pdf           = {https://www.researchgate.net/profile/Patrick-Orourke-7/publication/383313248_An_alternative_chess_rating_model_based_on_latent_variables/links/66c87d5975613475fe76987d/An-alternative-chess-rating-model-based-on-latent-variables.pdf},
+  abstract      = {The ranking of players and particularly of chess players has been a topic of debate throughout the last 80 years. Such exploration spawned what has become the benchmark of evaluating professional chess players since the 1970s: the Elo rating model. The Elo system, the first to have a sound statistical basis, was designed by Elo (1978) from the assumption that the performance of a player in a game is a normally distributed random variable Alliot (2017). However, this ranking model is not without its limitations and such has led to extreme rating deflation of the World Chess Federation (FIDE) Standard Elo rating system Sonas (2023). Such attention on the FIDE's rating mechanism has ignited focus on the Elo system's drawbacks which we will address in this dissertation.},
 }
 
 @inproceedings{omori:2024:chess-rating-estimation-moves-clock-times-cnn-lstm,
@@ -1759,7 +1800,7 @@ BibTex
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
   github        = {https://github.com/gpoesia/leapr/},
-  abstarct      = {Classical models for supervised machine learning, such as decision trees, are efficient and interpretable predictors, but their quality is highly dependent on the particular choice of input features. Although neural networks can learn useful representations directly from raw data (e.g., images or text), this comes at the expense of interpretability and the need for specialized hardware to run them efficiently. In this paper, we explore a hypothesis class we call Learned Programmatic Representations (LeaPR) models, which stack arbitrary features represented as code (functions from data points to scalars) and decision tree predictors. We synthesize feature functions using Large Language Models (LLMs), which have rich prior knowledge in a wide range of domains and a remarkable ability to write code using existing domain-specific libraries. We propose two algorithms to learn LeaPR models from supervised data. First, we design an adaptation of FunSearch to learn features rather than directly generate predictors. Then, we develop a novel variant of the classical ID3 algorithm for decision tree learning, where new features are generated on demand when splitting leaf nodes. In experiments from chess position evaluation to image and text classification, our methods learn high-quality, neural network-free predictors often competitive with neural networks. Our work suggests a flexible paradigm for learning interpretable representations end-to-end where features and predictions can be readily inspected and understood.},
+  abstract      = {Classical models for supervised machine learning, such as decision trees, are efficient and interpretable predictors, but their quality is highly dependent on the particular choice of input features. Although neural networks can learn useful representations directly from raw data (e.g., images or text), this comes at the expense of interpretability and the need for specialized hardware to run them efficiently. In this paper, we explore a hypothesis class we call Learned Programmatic Representations (LeaPR) models, which stack arbitrary features represented as code (functions from data points to scalars) and decision tree predictors. We synthesize feature functions using Large Language Models (LLMs), which have rich prior knowledge in a wide range of domains and a remarkable ability to write code using existing domain-specific libraries. We propose two algorithms to learn LeaPR models from supervised data. First, we design an adaptation of FunSearch to learn features rather than directly generate predictors. Then, we develop a novel variant of the classical ID3 algorithm for decision tree learning, where new features are generated on demand when splitting leaf nodes. In experiments from chess position evaluation to image and text classification, our methods learn high-quality, neural network-free predictors often competitive with neural networks. Our work suggests a flexible paradigm for learning interpretable representations end-to-end where features and predictions can be readily inspected and understood.},
 }
 
 @misc{poupart:2025:tdhook-lightweight-framework-interpretability,
@@ -2527,11 +2568,17 @@ BibTex
 }
 
 @inproceedings{woodruff:2024:predicting-chess-puzzle-difficulty,
-  title         = {{The bread emoji Team's Submission to the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty Challenge}},
-  author        = {Tyler Woodruff and Oleg Filatov and Marco Cognetta},
+  title         = {The bread emoji Team's Submission to the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty Challenge},
+  author        = {Woodruff, Tyler and Filatov, Oleg and Cognetta, Marco},
   year          = {2024},
-  booktitle     = {{IEEE} International Conference on Big Data, Big Data 2024, Washington DC, USA, December 15-18, 2024},
-  publisher     = {{IEEE}},
+  month         = {Dec},
+  booktitle     = {2024 IEEE International Conference on Big Data (BigData)},
+  pages         = {8415--8422},
+  doi           = {10.1109/BigData62323.2024.10826037},
+  issn          = {2573-2978},
+  abstract      = {We detail the bread emoji team's submission to the IEEE BigData 2024 Predicting Chess Puzzle Difficulty Challenge. Our solution revolved around the use of ensembled, pretrained, neural chessboard embedders (specifically, truncated Maia and Leela models) and an empirically-guided distribution rescaling postprocessing step.Our approach was the outright winner of the competition with a >16.4\% reduction in mean squared error (MSE) over second place in the preliminary evaluation and a >13.3\% reduction in MSE over second place in the final evaluation.},
+  github        = {https://github.com/mcognetta/ieee-chess},
+  keywords      = {Training;Transfer learning;Artificial neural networks;Predictive models;Big Data;Data models;Emojis},
 }
 
 @inproceedings{xiao:2025:multi-source-feature-fusion-neural-embedding-predicting-chess-puzzle-difficulty,
@@ -2559,6 +2606,8 @@ BibTex
   doi           = {10.1109/BIGCOMP57234.2023.00066},
   url           = {https://doi.org/10.1109/BigComp57234.2023.00066},
   editor        = {Hyeran Byun and Beng Chin Ooi and Katsumi Tanaka and Sang{-}Won Lee and Zhixu Li and Akiyo Nadamoto and Giltae Song and Young{-}Guk Ha and Kazutoshi Sumiya and Yuncheng Wu and Hyuk{-}Yoon Kwon and Takehiro Yamamoto},
+  abstract      = {Chess is a popular game among many people worldwide and is frequently played online. Although players are ranked based on existing rating systems, automation is essential for coordinating matches in tournaments with thousands of participants. In this study, we analyzed the game records of highly skilled chess players and determined appropriate ratings for players without ratings by using a decision tree model. It was determined that high-rated and low-rated players could be identified with accuracy levels above 80\%, even for players who were not included at the time of model training.},
+  keywords      = {Chess log, player rating prediction, Training, Analytical models, Automation, Computational modeling, Games, Big Data, Decision trees, Model Training Time, Skilled Players, Chess Players, Thousands Of Participants, Process Mining, Internet Gaming, Tree Depth, Stage Of The Game},
 }
 
 @inproceedings{yang2025miyang:2025:mixture-experts-intrinsically-interpretable,
