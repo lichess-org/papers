@@ -1409,7 +1409,12 @@ journal       = {CoRR},
   pages         = {1677--1687},
   doi           = {10.1145/3394486.3403219},
   url           = {https://doi.org/10.1145/3394486.3403219},
+  pdf           = {https://dl.acm.org/doi/pdf/10.1145/3394486.3403219},
   editor        = {Rajesh Gupta and Yan Liu and Jiliang Tang and B. Aditya Prakash},
+  abstract      = {As artificial intelligence becomes increasingly intelligent---in some cases, achieving superhuman performance---there is growing potential for humans to learn from and collaborate with algorithms. However, the ways in which AI systems approach problems are often different from the ways people do, and thus may be uninterpretable and hard to learn from. A crucial step in bridging this gap between human and artificial intelligence is modeling the granular actions that constitute human behavior, rather than simply matching aggregate human performance. We pursue this goal in a model system with a long history in artificial intelligence: chess. The aggregate performance of a chess player unfolds as they make decisions over the course of a game. The hundreds of millions of games played online by players at every skill level form a rich source of data in which these decisions, and their exact context, are recorded in minute detail. Applying existing chess engines to this data, including an open-source implementation of AlphaZero, we find that they do not predict human moves well. We develop and introduce Maia, a customized version of AlphaZero trained on human chess games, that predicts human moves at a much higher accuracy than existing engines, and can achieve maximum accuracy when predicting decisions made by players at a specific skill level in a tuneable way. For a dual task of predicting whether a human will make a large mistake on the next move, we develop a deep neural network that significantly outperforms competitive baselines. Taken together, our results suggest that there is substantial promise in designing artificial intelligence systems with human collaboration in mind by first accurately modeling granular human decision-making.},
+  keywords      = {Human-AI collaboration, Action Prediction, Chess},
+  github        = {https://github.com/CSSLab/maia-chess},
+  website       = {https://www.maiachess.com/},
 }
 
 @inproceedings{mcilroy-young:2021:chess-stylometry,
@@ -1657,14 +1662,6 @@ BibTex
   keywords      = {large language models, natural language processing, model adaptation techniques},
 }
 
-@misc{nie:2024:discovering-high-quality-chess-puzzles-offline-reinforcement-learning,
-  title         = {Discovering High-Quality Chess Puzzles Through One Billion Plays with Offline Reinforcement Learning},
-  author        = {Allen Nie and Anirudhan Badrinath and Nicholas Tomlin and Timothy Dai and Carissa Yip and Rose E Wang and Emma Brunskill and Christopher J Piech},
-  year          = {2024},
-  url           = {https://openreview.net/forum?id=YKW98Icu1X},
-  note          = {candidate for removal},
-}
-
 @misc{nolan:2021:online-chess-social-networks,
   title         = {Online Chess Social Networks},
   author        = {Nolan, Eva and Scognamillo, Valentin},
@@ -1739,6 +1736,7 @@ BibTex
   pages         = {874--881},
   doi           = {10.3233/FAIA240574},
   url           = {https://doi.org/10.3233/FAIA240574},
+  abstract      = {Concept probing is one prominent methodology for interpreting and analyzing (deep) neural network models. It has, for example, formed the backbone of several recent works to understand better the high-level knowledge learned and employed by game-playing agents, particularly in chess. However, some recent theoretical and empirical studies have questioned the methodology's reliability and highlighted some limitations. Here, in the game-playing domain of chess, we investigate the effectiveness of several different probing architectures and look into the reliability of methods for interpreting their results. We use a world-class chess-playing agent as our test domain, which allows us, via self-play, to quantify the importance of the concepts identified in the agent's neural network by the concept probes. Our results demonstrate that the widespread practice of using linear probes and interpreting their accuracy to indicate concept importance is somewhat unreliable and needs to be revised. We demonstrate several ways of doing that in our domain, particularly by using more complex probes and amnesic-like probing.},
   editor        = {Ulle Endriss and Francisco S. Melo and Kerstin Bach and Alberto Jos{\'{e}} Bugar{\'{\i}}n Diz and Jose Maria Alonso{-}Moral and Sen{\'{e}}n Barro and Fredrik Heintz},
 }
 
@@ -2033,24 +2031,31 @@ BibTex
   abstract      = {The rapidly evolving field of Human-Computer Interaction (HCI) faces a fundamental constraint: the limited bandwidth of information exchange between users and computing systems. One promising approach to increasing this bandwidth is implicit interaction: a paradigm in which applications modify their state based on information gleaned from users, rather than direct input. Within the context of reading such information from human neural signals, this concept is formally recognized as implicit Brain-Computer Interfaces (implicit BCI). My work focuses on implicit BCIs which measure the prefrontal cortex (PFC); early prototypes have successfully leveraged the PFC to approximate mental workload, but much is left to be understood about the full potential of this region. Through three research projects spanning two brain measurement modalities, this dissertation makes targeted contributions to this area of research. With functional Near-Infrared Spectroscopy (fNIRS), I explore two facets of PFC activation demonstrated in functional Magnetic Resonance Imaging (fMRI)-based neuroscience research which are underexplored in applied contexts: episodic memory and brain-network based classification; in the first project, I study the measurable effects of episodic and working memory within the context of using Large Language Models (LLMs), and in the second project I develop a real-time implicit BCI designed to differentiate between different brain networks. The third project benchmarks low-cost EEG in three studies which distinguish brain states based on different factors: quality of moves made during chess playing, workload levels within standard cognitive psychology tasks, and cognitive states during the tasks. For all studies I use Linear Mixed Models (LMM) to observe macro patterns in the data, and machine learning to explore potential for implicit BCI. Results indicate that, in addition to the well-understood concept of measuring singular aspects of consciousness across a gradient (e.g. workload), promising potential exists for leveraging the PFC towards classification across tasks which engage different cognitive processes, both with fNIRS and low-cost EEG. Further, careful consideration of ``noise'' in implicit BCI introduces a new idea: Human-Sensor-Computer Interaction (HSCI). Taken together, this dissertation provides relevant context to inform the next generation of Human-Sensor-Computer systems, including PFC-based interfaces stretching past workload, and beyond.},
 }
 
-@article{russell:2025:decoding-chess-puzzle-play-bci-eeg-study,
-  title         = {Decoding Chess Puzzle Play and Standard Cognitive Tasks for {BCI:} {A} Low-Cost {EEG} Study},
+@misc{russell:2025:neural-signatures-chess-puzzle-solving-standard-cognitive-tasks-brain-computer-interfaces-low-cost-electroencephalography-study,
+  title         = {Neural Signatures Within and Between Chess Puzzle Solving and Standard Cognitive Tasks for Brain-Computer Interfaces: A Low-Cost Electroencephalography Study},
   author        = {Matthew Russell and Samuel Youkeles and William Xia and Kenny Zheng and Aman Shah and Robert J. K. Jacob},
   year          = {2025},
-  journal       = {CoRR},
-  volume        = {abs/2505.07592},
-  doi           = {10.48550/ARXIV.2505.07592},
-  url           = {https://doi.org/10.48550/arXiv.2505.07592},
-  eprinttype    = {arXiv},
+  url           = {https://arxiv.org/abs/2505.07592},
+  note          = {Code and data link available in the v1 preprint but the data link doesn't work: https://github.com/mattrussell2/chess-mw-MUSE-DATA},
   eprint        = {2505.07592},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.HC},
+  abstract      = {Consumer-grade electroencephalography (EEG) devices show promise for Brain-Computer Interface (BCI) applications, but their efficacy in detecting subtle cognitive states remains understudied. We developed a comprehensive study paradigm which incorporates a combination of established cognitive tasks (N-Back, Stroop, and Mental Rotation) and adds a novel ecological Chess puzzles task. We tested our paradigm with the MUSE 2, a low-cost consumer-grade EEG device. Using linear mixed-effects modeling we demonstrate successful distinctions of within-task workload levels and cross-task cognitive states based on the spectral power data derived from the MUSE 2 device. With machine learning we further show reliable predictive power to differentiate between workload levels in the N-Back task, and also achieve effective cross-task classification. These findings demonstrate that consumer-grade EEG devices like the MUSE 2 can be used to effectively differentiate between various levels of cognitive workload as well as among more nuanced task-based cognitive states, and that these tools can be leveraged for real-time adaptive BCI applications in practical settings.},
+  github        = {https://github.com/mattrussell2/chess-mw-MUSE},
 }
 
 @inproceedings{ruta:2024:moves-based-prediction-chess-puzzle-difficulty-convolutional-neural-networks,
-  title         = {{Moves Based Prediction of Chess Puzzle Difficulty with Convolutional Neural Networks}},
-  author        = {Dymitr Ruta and Ming Liu and Ling Cen},
+  title         = {Moves Based Prediction of Chess Puzzle Difficulty with Convolutional Neural Networks},
+  author        = {Ruta, Dymitr and Liu, Ming and Cen, Ling},
   year          = {2024},
-  booktitle     = {{IEEE} International Conference on Big Data, Big Data 2024, Washington DC, USA, December 15-18, 2024},
-  publisher     = {{IEEE}},
+  month         = {Dec},
+  booktitle     = {2024 IEEE International Conference on Big Data (BigData)},
+  pages         = {8390--8395},
+  doi           = {10.1109/BigData62323.2024.10825595},
+  issn          = {2573-2978},
+  url           = {https://ieeexplore.ieee.org/document/10825595},
+  abstract      = {Chess is a complex logical game involving ongoing strategic forward planning and evaluation. Solving chess puzzles is one of the most common ways of training and developing chess skills. It involves continuing the game from a certain initial chessboard state against a real or AI opponent until defeat or a significant advantage is achieved. To ensure solving chess puzzles is efficient and engaging for the real player, it is important to understand the difficulty of the puzzle and match it with the skill of the solver. Accurate and fast assessment of puzzle difficulty is therefore a critical problem that online chess platforms need to solve at scale to optimally match many real players with adequate puzzles. To solve this challenge, we propose a chess knowledge-agnostic strategy to predict puzzle difficulty based solely on the moves of the players against their opponents trying to solve the puzzles. Specifically designed deep convolutional neural networks (CNN) were deployed as supervised learning predictors, fed with player moves represented as multichannel chessboard images. Extensive testing of our model with almost 4 million training examples against Glicko-2 evaluated puzzle difficulty ratings--considered as ground truth--resulted in good predictive performance. This was acknowledged by our runner-up result as the 7th place in the IEEE Big Data 2024 Cup and highlighted the capability of fast puzzle difficulty prediction based only on players' moves as evidence, with no prior chess knowledge nor utilization of computationally expensive chess engines.},
+  keywords      = {Training;Costs;Games;Computer architecture;Predictive models;Big Data;Data models;Complexity theory;Convolutional neural networks;Engines;chess puzzle difficulty;deep learning;convolutional neural networks;ensemble learning;Glicko-2 rating},
 }
 
 @inproceedings{sabatelli:2018:learning-evaluate-chess-positions-deep-neural-networks-limited-lookahead,
@@ -2200,21 +2205,30 @@ BibTex
 }
 
 @inproceedings{schuett:2024:estimating-chess-puzzle-difficulty-without-past-records-using-neural-network,
-  title         = {{Estimating Chess Puzzle Difficulty Without Past Game Records Using a Human Problem-Solving Inspired Neural Network Architecture}},
-  author        = {Anan Sch\"{u}tt and Tobias Huber and Elisabeth Andr\'{e}},
+  title         = {Estimating Chess Puzzle Difficulty Without Past Game Records Using a Human Problem-Solving Inspired Neural Network Architecture},
+  author        = {Sch\"{u}tt, Anan and Huber, Tobias and Andr\'{e}, Elisabeth},
   year          = {2024},
-  booktitle     = {{IEEE} International Conference on Big Data, Big Data 2024, Washington DC, USA, December 15-18, 2024},
-  publisher     = {{IEEE}},
+  month         = {Dec},
+  booktitle     = {2024 IEEE International Conference on Big Data (BigData)},
+  pages         = {8396--8402},
+  doi           = {10.1109/BigData62323.2024.10826087},
+  issn          = {2573-2978},
+  url           = {https://ieeexplore.ieee.org/document/10826087},
+  abstract      = {For chess players to sharpen their tactical skills effectively, they train on chess puzzles with a fitting difficulty level. This paper presents an approach to estimate the difficulty level of chess puzzles using a deep neural network. The proposed approach achieved second place in the IEEE BigData Cup 2024 competition: Predicting chess puzzle difficulty. For the design of our network architecture, we take inspiration from the human problem-solving process for chess puzzles. We train the model to predict the correct move as an auxiliary task to improve the training process. We also predict themes, which are patterns in chess puzzles as a second auxiliary task. Finally, we use the uncertainty in the position, i.e. how incorrect the model's move prediction is, as a further input to guide the estimation of the puzzle difficulty.},
+  keywords      = {Training;Uncertainty;Fitting;Estimation;Games;Artificial neural networks;Predictive models;Network architecture;Big Data;Problem-solving;chess puzzle;difficulty estimation;neural network},
 }
 
-@misc{schultz:2024:mastering-board-games-external-internal-planning-language-models,
+@inproceedings{schultz:2025:mastering-board-games-external-internal-planning-language-models,
   title         = {Mastering Board Games by External and Internal Planning with Language Models},
-  author        = {John Schultz and Jakub Adamek and Matej Jusup and Marc Lanctot and Michael Kaisers and Sarah Perrin and Daniel Hennes and Jeremy Shar and Cannada Lewis and Anian Ruoss and Tom Zahavy and Petar Veli\v{c}kovi\'{c} and Laurel Prince and Satinder Singh and Eric Malmi and Nenad Toma\v{s}ev},
-  year          = {2024},
-  url           = {https://arxiv.org/abs/2412.12119},
-  eprint        = {2412.12119},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.AI},
+  author        = {John Schultz and Jakub Adamek and Matej Jusup and Marc Lanctot and Michael Kaisers and Sarah Perrin and Daniel Hennes and Jeremy Shar and Cannada A. Lewis and Anian Ruoss and Tom Zahavy and Petar Veli{\v{c}}kovi{\'c} and Laurel Prince and Satinder Singh and Eric Malmi and Nenad Tomasev},
+  year          = {2025},
+  booktitle     = {Forty-second International Conference on Machine Learning},
+  url           = {https://openreview.net/forum?id=KKwBo3u3IW},
+  tldr          = {We pre-trained an LLM capable of playing board games at a high level. We further introduce external and internal planning methods that achieve Grandmaster-level performance in chess while operating closer to the human search budget.},
+  abstract      = {Advancing planning and reasoning capabilities of Large Language Models (LLMs) is one of the key prerequisites towards unlocking their potential for performing reliably in complex and impactful domains. In this paper, we aim to demonstrate this across board games (Chess, Fischer Random / Chess960, Connect Four, and Hex), and we show that search-based planning can yield significant improvements in LLM game-playing strength. We introduce, compare and contrast two major approaches: In external search, the model guides Monte Carlo Tree Search (MCTS) rollouts and evaluations without calls to an external game engine, and in internal search, the model is trained to generate in-context a linearized tree of search and a resulting final choice. Both build on a language model pre-trained on relevant domain knowledge, reliably capturing the transition and value functions in the respective environments, with minimal hallucinations. We evaluate our LLM search implementations against game-specific state-of-the-art engines, showcasing substantial improvements in strength over the base model, and reaching Grandmaster-level performance in chess while operating closer to the human search budget. Our proposed approach, combining search with domain knowledge, is not specific to board games, hinting at more general future applications.},
+  laysummary    = {1.Large Language Models (LLMs) demonstrate impressive performance across various tasks that require complex reasoning. Yet, they still struggle to play board games as simple as tic-tac-toe.\n2.We developed an LLM that can play different board games, reaching Grandmaster-level chess performance. We investigated different planning strategies that enable the LLM to improve its performance, the more ``thinking time'' we provide to the model.\n3.In the future, similar planning strategies can unlock strong performance improvements in LLMs applied to other reasoning problems.},
+  video         = {https://www.youtube.com/watch?v=JyxE\_GE8noc},
+  keywords      = {search, planning, language models, games, chess},
 }
 
 @article{schut:2025:briding-human-ai-knowledge-gap-concept-discovery-transfer-alphazero,
@@ -2270,7 +2284,10 @@ BibTex
   booktitle     = {2025 IEEE Conference on Artificial Intelligence (CAI)},
   pages         = {1230--1234},
   doi           = {10.1109/CAI64502.2025.00213},
-  keywords      = {Fans;Ethics;Education;Games;Learning (artificial intelligence);Transformers;Cognition;Logic;Artificial intelligence;Engines;Artificial Intelligence;Human-AI Interaction;Chess;Transformer;Move Prediction;Multitask Learning;AI Alignment;Human Cognition},
+  url           = {https://ieeexplore.ieee.org/document/11050701},
+  pdf           = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11050701},
+  abstract      = {At the moment, it's clear that AI has surpassed human ability in almost every field. But, how useful really is this to us? Several fields (eg. law, education, games) have noticed that having a ``perfect'' AI isn't as good as it seems in all cases. One of the marquee examples is law, where an AI wouldn't consider highly important parts of human thinking such as fairness and ethics, it would sentence the victim based on raw logic, something that we clearly want to avoid. Being able to make AI that can understand humans and make decisions like them is becoming much more important in order to be able to make critical decisions that others can interpret and collaborate with. Being able to completely model human reasoning in any field is not possible due to the amount of `noise' in each individual, but we aim for this in the game of chess. Chess is one of the most complex and popular games due to its large fan base and the vast amount of positions that can arise, despite the test of time chess remains unsolved. There are multiple existing chess engines, such as Stockfish and Alphazero, which are essentially `perfect' forms of AI, they aim to be as strong as possible and win as many games as possible rather than trying to play like a human. We introduce Harmonia, an encoder-only Transformer trained through multitask learning to predict human chess moves and game outcomes. Although there have been multiple attempts to emulate human play in chess through the Maia project, Allie Chess, etc., our model is able to surpass all of these existing baselines despite being significantly smaller in size and trained on fewer data. Although Harmonia is extremely good at modeling human play in chess, it is much more important to promote the development of human-AI interaction. It is unique in the sense that it was trained on human data in order to learn human policies and internal representations, which can be used as a tool for further research on educational uses and understanding how humans think. The results in this paper show that there is a high potential for artificial intelligence that can mimic human behavior to be more understandable and collaborative with fellow humans.},
+  keywords      = {Artificial Intelligence, Human-AI Interaction, Chess, Transformer, Move Prediction, Multitask Learning, AI Alignment, Human Cognition},
 }
 
 @article{serpell:2025:stress-strategic-decision-making,
@@ -2308,14 +2325,18 @@ BibTex
   },
 }
 
-@misc{siji:2025:seqret-mining-rule-sets-event-sequences,
+@inproceedings{siji:2026:seqret-mining-rule-sets-event-sequences,
   title         = {Seqret: Mining Rule Sets from Event Sequences},
   author        = {Aleena Siji and Joscha C\"{u}ppers and Osman Ali Mian and Jilles Vreeken},
-  year          = {2025},
+  booktitle     = {Proceedings of the Fortieth AAAI Conference on Artificial Intelligence (AAAI-26)},
+  location      = {Singapore},
+  publisher     = {AAAI Press},
   url           = {https://arxiv.org/abs/2505.06049},
-  eprint        = {2505.06049},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.AI},
+  note          = {preprint: https://arxiv.org/abs/2505.06049},
+  code          = {https://eda.rg.cispa.io/prj/seqret/seqret-v20250526.zip},
+  abstract      = {Summarizing event sequences is a key aspect of data mining. Most existing methods neglect conditional dependencies and focus on discovering sequential patterns only. In this paper, we study the problem of discovering both conditional and unconditional dependencies from event sequences. We do so by discovering rules of the form X \rightarrow{} Y where X and Yare sequential patterns. Such rules are simple to understand and provide a clear description of the relation between the antecedent and the consequent. To discover a succinct and non-redundant set of rules we formalize the problem in terms of the Minimum Description Length principle. As the search space is enormous and does not exhibit helpful structure, we propose the SEQRET method to discover high-quality rule sets in practice. Through extensive empirical evaluation we show that unlike the state of the art, SEQRET ably recovers the ground truth on synthetic datasets and finds useful rules from real datasets.},
+  keywords      = {sequential patterns, rule mining, minimum description length},
+  website       = {https://eda.rg.cispa.io/prj/seqret/},
 }
 
 @misc{skidanov:2025:behavior-based-knowledge-representation-improves-prediction-player-moves,
@@ -2326,6 +2347,8 @@ BibTex
   eprint        = {2504.05425},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
+  abstract      = {Predicting player behavior in strategic games, especially complex ones like chess, presents a significant challenge. The difficulty arises from several factors. First, the sheer number of potential outcomes stemming from even a single position, starting from the initial setup, makes forecasting a player's next move incredibly complex. Second, and perhaps even more challenging, is the inherent unpredictability of human behavior. Unlike the optimized play of engines, humans introduce a layer of variability due to differing playing styles and decision-making processes. Each player approaches the game with a unique blend of strategic thinking, tactical awareness, and psychological tendencies, leading to diverse and often unexpected actions. This stylistic variation, combined with the capacity for creativity and even irrational moves, makes predicting human play difficult. Chess, a longstanding benchmark of artificial intelligence research, has seen significant advancements in tools and automation. Engines like Deep Blue, AlphaZero, and Stockfish can defeat even the most skilled human players. However, despite their exceptional ability to outplay top-level grandmasters, predicting the moves of non-grandmaster players, who comprise most of the global chess community -- remains complicated for these engines. This paper proposes a novel approach combining expert knowledge with machine learning techniques to predict human players' next moves. By applying feature engineering grounded in domain expertise, we seek to uncover the patterns in the moves of intermediate-level chess players, particularly during the opening phase of the game. Our methodology offers a promising framework for anticipating human behavior, advancing both the fields of AI and human-computer interaction.},
+  keywords      = {Knowledge Representation, Machine Learning, Behavioral Programming, Predicting Human Actions, Human Decision-Making in Chess, Feature Engineering, Chess},
 }
 
 @inproceedings{soliman:2026:caissa-ai-neuro-symbolic-chess-agent-explainable-move-suggestion-grounded-commentary,
@@ -2349,6 +2372,10 @@ BibTex
   journal       = {Interdisciplinary Humanities and Communication Studies},
   volume        = {1},
   number        = {4},
+  url           = {https://doi.org/10.61173/v2xdqn32},
+  keywords      = {Chess games; Sicilian defense; Chi-square Test},
+  pdf           = {https://www.deanfrancispress.com/index.php/hc/article/view/323/HC000572.pdf},
+  abstract      = {Chess games demonstrate players' ability to envision the situation on a large scale, cope with variations, and take precautions. It's been proven statistically and mathematically that the white sides are more likely to win due to offensive advantage. Nonetheless, utilizing numerous defensive gambits, the black enhances its chances of succeeding, among which the Sicilian defense ranks the top. Characterized by asymmetrical arrangements, the Sicilian defense carves the path for the queen while not waiving to occupy central positional advantages. Dating back to its origin in the 16th century, it has prevailed since the mid-20th century and has now developed its most complex variations in response to white's first move, ``e4''. In this research, whether there is a significant difference in the winning rate of each variation is examined, and the payoffs for them are evaluated mathematically for a theoretically optimized strategy.},
 }
 
 @misc{song:2025:beyond-accuracy-geometric-stability-analysis-large-language-models-chess-evaluation,
@@ -2374,14 +2401,19 @@ BibTex
   keywords      = {chess, explainable AI, shap},
 }
 
-@misc{stanek:2024:bad-crypto-chessography-weak-randomness-chess-games,
-  title         = {Bad Crypto: Chessography and Weak Randomness of Chess Games},
-  author        = {Martin Stanek},
-  year          = {2024},
-  url           = {https://arxiv.org/abs/2412.09742},
-  eprint        = {2412.09742},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.CR},
+@inproceedings{stanek:2025:bad-cipher-design-chessography-cascaded-spin-shuffle,
+  title         = {Bad cipher design: Chessography and Cascaded Spin Shuffle},
+  author        = {Stanek, Martin},
+  year          = {2025},
+  booktitle     = {Proceedings of the Workshop on Applied Security (WAS 2025) at the 25th Conference Information Technologies – Applications and Theory (ITAT 2025)},
+  publisher     = {CEUR-WS.org},
+  series        = {CEUR Workshop Proceedings},
+  volume        = {4092},
+  pages         = {395--403},
+  url           = {https://ceur-ws.org/Vol-4092/paper32.pdf},
+  note          = {Older version with only chessography scheme covered: https://arxiv.org/abs/2412.09742},
+  abstract      = {This paper shows the weaknesses of two symmetric encryption schemes – Chessography and Cascaded Spin Shuffle. The security claims made by their authors are unsubstantiated. Despite being featured in peer-reviewed publications, their flaws are readily apparent and do not require any sophisticated cryptanalysis. Consequently, the paper proposes a set of speculative "red flag" indicators aimed at identifying encryption proposals of potentially questionable quality.},
+  keywords      = {encryption, symmetric ciphers, cryptanalysis, chess},
 }
 
 @misc{stenzel:2026:quantum-king-ring-domination-chess-qaoa-approach,
@@ -2431,9 +2463,12 @@ BibTex
   author        = {Shange Tang and Yuanhao Wang and Chi Jin},
   year          = {2025},
   url           = {https://arxiv.org/abs/2502.10985},
+  note          = {submitted to ICLR 2026: https://openreview.net/forum?id=uUq0gemhnv},
   eprint        = {2502.10985},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
+  keywords      = {Pairwise comparison, ranking},
+  abstract      = {Elo rating, widely used for skill assessment across diverse domains ranging from competitive games to large language models, is often understood as an incremental update algorithm for estimating a stationary Bradley-Terry (BT) model. However, our empirical analysis of practical matching datasets reveals two surprising findings: (1) Most games deviate significantly from the assumptions of the BT model and stationarity, raising questions on the reliability of Elo. (2) Despite these deviations, Elo frequently outperforms more complex rating systems, such as mElo and pairwise models, which are specifically designed to account for non-BT components in the data, particularly in terms of win rate prediction. This paper explains this unexpected phenomenon through three key perspectives: (a) We reinterpret Elo as an instance of online gradient descent, which provides no-regret guarantees even in misspecified and non-stationary settings. (b) Through extensive synthetic experiments on data generated from transitive but non-BT models, such as strongly or weakly stochastic transitive models, we show that the ''sparsity'' of practical matching data is a critical factor behind Elo's superior performance in prediction compared to more complex rating systems. (c) We observe a strong correlation between Elo's predictive accuracy and its ranking performance, further supporting its effectiveness in ranking.},
 }
 
 @inproceedings{tang:2025:seam-semantically-equivalent-modalities-benchmark-vlm-vision-language-models,
@@ -2455,6 +2490,8 @@ BibTex
   booktitle     = {Proceedings of the Annual Meeting of the Cognitive Science Society},
   volume        = {45},
   url           = {https://escholarship.org/uc/item/85d620jz},
+  abstract      = {The ability to make good decisions is critical in life. Although anecdotal and preliminary evidence suggests that social comparison could impair decision making, surprisingly little attention has been paid to such dynamics within cognitive science. The present study aimed to address this gap by exploring, via a sample of 1.5 million chess games and a fuzzy regression discontinuity design, whether higher status of competitors could cause individuals to commit more errors. Critically, chess data includes overt symbols of social status, viz. titles conferred at arbitrary thresholds of ratings that represent playing strength, and an objective measure of errors could be calculated by contrasting the moves that players chose in games against the optimal moves determined by powerful chess engines. I found no evidence that the mere presence of status titles impacted error rates.},
+  keywords      = {decision making; error rate; cognitive psychology, social psychology, regression discontinuity design; chess},
 }
 
 @inproceedings{tijhuis:2023:predicting-chess-rating-single-game,
@@ -2663,7 +2700,7 @@ BibTex
   editor        = {Ikl{\'e}, Matthew and Kolonin, Anton and Bennett, Michael},
   pdf           = {https://arxiv.org/pdf/2507.10951},
   keywords      = {biological inspired AI, biological connectome, chess},
-  abstract      = {The complete connectome of the Drosophila larva brain offers a unique opportunity to investigate whether biologically evolved circuits can support artificial intelligence. We convert this wiring diagram into a Biological Processing Unit (BPU)---a fixed recurrent network derived directly from synaptic connectivity. Despite its modest size (3,000 neurons and 65,000 weights between them), the unmodified BPU achieves 98{\%} accuracy on MNIST and 58{\%} on CIFAR-10, surpassing size-matched MLPs. Scaling the BPU via structured connectome expansions further improves CIFAR-10 performance, while modality-specific ablations reveal the uneven contributions of different sensory subsystems. On the ChessBench dataset, a lightweight GNN-BPU model trained on only 10,000 games achieves 60{\%} move accuracy, nearly 10x better than any size transformer. Moreover, CNN-BPU models with {\$}{\$}{\backslash}sim {\$}{\$}\sim{}2M parameters outperform parameter-matched Transformers, and with a depth-6 minimax search at inference, reach 91.7{\%} accuracy, exceeding even a 9M-parameter Transformer baseline. These results demonstrate the potential of biofidelic neural architectures to support complex cognitive tasks and motivate scaling to larger and more intelligent connectomes in future work.},
+  abstract      = {The complete connectome of the Drosophila larva brain offers a unique opportunity to investigate whether biologically evolved circuits can support artificial intelligence. We convert this wiring diagram into a Biological Processing Unit (BPU)---a fixed recurrent network derived directly from synaptic connectivity. Despite its modest size (3,000 neurons and 65,000 weights between them), the unmodified BPU achieves 98\% accuracy on MNIST and 58\% on CIFAR-10, surpassing size-matched MLPs. Scaling the BPU via structured connectome expansions further improves CIFAR-10 performance, while modality-specific ablations reveal the uneven contributions of different sensory subsystems. On the ChessBench dataset, a lightweight GNN-BPU model trained on only 10,000 games achieves 60{\%} move accuracy, nearly 10x better than any size transformer. Moreover, CNN-BPU models with {\$}{\$}{\backslash}sim {\$}{\$}\sim{}2M parameters outperform parameter-matched Transformers, and with a depth-6 minimax search at inference, reach 91.7{\%} accuracy, exceeding even a 9M-parameter Transformer baseline. These results demonstrate the potential of biofidelic neural architectures to support complex cognitive tasks and motivate scaling to larger and more intelligent connectomes in future work.},
 }
 
 @article{zahavy:2023:diversifying-ai-towards-creative-chess-alphazero,
