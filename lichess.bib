@@ -43,6 +43,7 @@
   url           = {https://paulaldea.com/project_pictures/chess_elo_file.pdf},
   note          = {Student project paper, CSE 592, University of Michigan},
   github        = {https://github.com/paulxro/cse592\_chess},
+  abstract      = {Modern chess engines, such as Stockfish, have grown increasingly powerful at analyzing and calculating evaluations of given chess positions. Most chess engines are capable of not only providing several sequences of optimal moves which are most likely to yield the highest advantage, but also quantifying the perceived advantage for a side in a given position. Most evaluations of chess positions primarily involve a heuristic approximation of several factors, commonly learned through a deep learning approach, along with a branchlike exploration of possible moves. Although chess engines demonstrate extraordinary playing strength, their evaluations of positions are often limited to the advantage under optimal play, which may not be very applicable to the average player if those ideal moves are unlikely to be executed. More explicitly, the evaluation given by an engine is unlikely to accurately reflect the objective advantage of a human player, likely to make sub-optimal moves, and thus falls short of achieving an accurate representation of the given positional advantage.},
   keywords      = {Python; Multi-threaded; Research; Chess},
 }
 
@@ -365,6 +366,7 @@
   year          = {2025},
   url           = {https://cs224r.stanford.edu/projects/pdfs/CS224R_Final_Report__1_%20(3).pdf},
   note          = {Final project for CS 224R Deep Reinforcement Learning, Spring 2025 https://cs224r.stanford.edu/projects/cs224r\_final\_projects.html},
+  abstract      = {Traditional chess engines face a compelling dual challenge that significantly limits their practical utility for human chess education and training. First, engines like Stockfish, AlphaZero, and LeelaChess require computationally intensive tree-search algorithms, evaluating millions of positions per second to determine optimal moves. Second, and more critically, these systems fail to provide realistic opponents for human players across different skill levels. Current approaches create weaker opponents by simply limiting search depth, resulting in highly inconsistent play patterns that alternate unpredictably between brilliant strategic moves and inexplicable blunders--fundamentally unlike the systematic, consistent errors characteristic of human players at specific ELO ratings. This creates an unrealistic training environment where players practice against opponents that exhibit superhuman tactical vision followed by irrational mistakes, poorly preparing them for actual human competition.},
 }
 
 @article{chowdhary:2023:quantifying-human-performance-chess,
@@ -513,7 +515,7 @@
   keywords      = {Representation Engineering; Probing Classifiers; Chess-playing Language Models, GPT},
 }
 
-@thesis{davis:2025:interpreation-control-ai-model-behavior-direct-adjustment-latent-representations,
+@thesis{davis:2025:interpretation-control-ai-model-behavior-direct-adjustment-latent-representations,
   title         = {Interpretation and Control of AI Model Behavior Through Direct Adjustment of Latent Representations},
   author        = {Davis, Austin},
   year          = {2025},
@@ -1188,9 +1190,11 @@ journal       = {CoRR},
   title         = {Optimizing AI-Driven Chess Bots: Strategies for Balancing Performance, Accuracy, and Computational Efficiency},
   author        = {D, Girish Kumar and Shiva Kumar, K S and Rama Prasad, P Pani and Jalade, Sangamesh C and Praveen Kumar, C T M and D C, Subhashree},
   year          = {2025},
+  month         = {April},
   booktitle     = {2025 4th International Conference on Distributed Computing and Electrical Circuits and Electronics (ICDCECE)},
   pages         = {1--5},
   doi           = {10.1109/ICDCECE65353.2025.11035271},
+  abstract      = {This paper presents a novel AI-driven chess engine that integrates a lightweight deep learning architecture with an uncertainty-aware Monte Carlo Tree Search (MCTS) framework. Unlike traditional engines that rely on brute-force search, our model utilizes reinforcement learning with a transformer-based neural network to optimize decision-making under computational constraints. We trained our system using high-quality chess datasets from Lichess and implemented Proximal Policy Optimization (PPO) for stable learning. Experimental results demonstrate that our model achieves a 79.5\% win rate, a move accuracy of 92.3\%, and a 37.7\% reduction in inference time compared to AlphaZero, making it well-suited for real-time and resource-constrained applications. Furthermore, our findings suggest that similar AI optimization techniques can be applied to other domains requiring strategic decision-making, such as robotic control and financial modeling. Future work will explore adaptive neural networks and energy-efficient computing to further enhance performance and accessibility. The framework achieves a 79.5\% win rate against Stockfish 16, with a 37.7\% reduction in inference time compared to AlphaZero.},
   keywords      = {Accuracy;Monte Carlo methods;Computational modeling;Decision making;Reinforcement learning;Transformers;Computational efficiency;Artificial intelligence;Optimization;Engines;AI chess engine;reinforcement learning;monte carlo tree search (MCTS);deep learning;transformer-based models;proximal policy optimization (PPO)},
 }
 
@@ -1475,11 +1479,18 @@ journal       = {CoRR},
 }
 
 @inproceedings{milosz:2024:predicting-puzzle-difficulty-transformers,
-  title         = {{Predicting Chess Puzzle Difficulty with Transformers}},
-  author        = {Szymon Mi{\l}osz and Pawe{\l} Kapusta},
+  title         = {{ Predicting Chess Puzzle Difficulty with Transformers }},
+  author        = {Milosz, Szymon and Kapusta, Pawel},
   year          = {2024},
-  booktitle     = {{IEEE} International Conference on Big Data, Big Data 2024, Washington DC, USA, December 15-18, 2024},
-  publisher     = {{IEEE}},
+  month         = Dec,
+  booktitle     = {2024 IEEE International Conference on Big Data (BigData)},
+  publisher     = {IEEE Computer Society},
+  address       = {Los Alamitos, CA, USA},
+  pages         = {8377--8384},
+  doi           = {10.1109/BigData62323.2024.10825919},
+  url           = {https://doi.ieeecomputersociety.org/10.1109/BigData62323.2024.10825919},
+  abstract      = {This study addresses the challenge of quantifying chess puzzle difficulty - a complex task that combines elements of game theory and human cognition and underscores its critical role in effective chess training. We present GlickFormer, a novel transformer-based architecture that predicts chess puzzle difficulty by approximating the Glicko-2 rating system. Unlike conventional chess engines that optimize for game outcomes, GlickFormer models human perception of tactical patterns and problem-solving complexity.The proposed model utilizes a modified ChessFormer backbone for spatial feature extraction and incorporates temporal information via factorized transformer techniques. This approach enables the capture of both spatial chess piece arrangements and move sequences, effectively modeling spatio-temporal relationships relevant to difficulty assessment.Experimental evaluation was conducted on a dataset of over 4 million chess puzzles. Results demonstrate GlickFormer's superior performance compared to the state-of-the-art ChessFormer baseline across multiple metrics. The algorithm's performance has also been recognized through its competitive results in the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty competition, where it placed 11th.The insights gained from this study have implications for personalized chess training and broader applications in educational technology and cognitive modeling.},
+  keywords      = {Training;Measurement;Accuracy;Games;Predictive models;Transformers;Feature extraction;Data models;Problem-solving;Context modeling},
 }
 
 @inproceedings{milosz:2025:pretraining-transformers-chess-puzzle-difficulty-prediction,
@@ -1507,6 +1518,8 @@ journal       = {CoRR},
   pages         = {45--60},
   doi           = {10.2478/ijcss-2025-0012},
   url           = {https://doi.org/10.2478/ijcss-2025-0012},
+  abstract      = {From the observational methodology approach, this study analyses definitive errors or losing blunders, i.e. errors that result in the loss of the game, in elite players at U8 level. An ad hoc observation instrument has been designed as a combination of field format and category systems, based on a thorough theoretical review of the internal logic of chess. The games were compiled in the ChessBase 17 program and analysed using Stockfish 16 NNUE via https://lichess.org/es. The moment in the game when the error occurs is extracted and recorded and coded using Lince software. The reliability of the records from the observation system developed was guaranteed by interobserver agreement, calculated using Cohen's Kappa coefficient. This paper's objective is achieved by means of the decision tree analysis technique, obtained using the CHAID procedure, taking the ``impact of the error'' as the predicted dimension. The results obtained have allowed us to conclude that the errors that lead to the loss of the game for elite U8 players are related to short-term calculation (tactical motifs, undefended pieces or checkmate) as opposed to long-term strategic errors.},
+  keywords      = {Chess, Definitive Errors, Children, Elite, Stockfish NNUE},
 }
 
 @thesis{miranda:2026:observational-analysis-illegal-erroneous-moves-chess-beginners,
@@ -1545,14 +1558,15 @@ journal       = {CoRR},
   keywords      = {online well-being, problematic platform use, specification curve analysis, survey methodology},
 }
 
-@phdthesis{mok:2024:measuring-digital-welfare-online-systems,
+@thesis{mok:2024:measuring-digital-welfare-online-systems,
   title         = {Measuring the Digital Welfare of Online Social Systems},
   author        = {Mok, Lillio},
   year          = {2024},
   note          = {http://hdl.handle.net/1807/140863},
+  supervisor    = {Anderson, Ashton},
   school        = {University of Toronto},
   keywords      = {Computational Social Science, Data Science, Human-AI Interaction, Human-Computer Interaction, Web Science},
-  annote        = {We rely on all manners of digital systems to organize and facilitate our human functions. From social networks connecting us to each other, to content providers keeping us perpetually entertained, to search engines serving each of our informational needs, to computational models informing us how healthy we are, to artificially-intelligent coaches supplementing our natural intelligence, every corner of human existence is permeated by the digital tools we create. Accompanying the boons of these systems, however, are increasingly complex risks to our digital health. Our attention is pulled into cyberspace via algorithms that use billions of datapoints to learn what we like, sometimes to the detriment of our physical wellness. Ideological rifts online threaten our societal harmony as partisans become ever more polarized, whose obsession with political content in turn feeds the underbelly of our social media ecosystem. All the while, the same data underpinning these online interactions also allow others to make finely-optimized decisions about us, often to the detriment of the disadvantaged. This thesis offers a more optimistic vision: that the same computational infrastructure powering our potentially perilous systems can be repurposed to help us understand their perils. We first outline a framework for rigorously assessing the welfare of our digital systems through the well-being of individual users, the cohesion of user communities, and whether the systems themselves deserve trust. We then utilize this framework to conduct four empirical studies measuring the extent to which digital welfare is preserved or endangered by data-driven systems. At the level of individual users, we directly measure how spending time on a large-scale chess platform, Lichess, can be perceived as detrimental to personal well-being. We find that perceived harms are explained not only by the time that people believe they spend online, but also the actual time they spend engaging with the platform. For groups of users, we quantify how partisan users on the Reddit platform are selective towards politically-congruent news outlets, thus consuming and disseminating polarized news. Despite the platform appearing polarized on aggregate, we discover that narrow, hyper-partisan communities are responsible for deeply-ingrained ideological segregation. We then extend this result by identifying whether key individuals can influence the news consumption cycle on Reddit. Through an analysis of where news about political figures is shared on Reddit and the language it attracts, we illustrate that nationally-recognizable politicians are selectively discussed more by in-group online communities than they are by in-group news outlets. Out-group communities, on the other hand, generate the most toxic and hateful commentary. At the level of problematic downstream outcomes, we further probe whether people can tell when systems like algorithmic risk assessments harm data subjects in unfair ways. We find that observers are easily distracted by who makes risk assessments rather than how equitable the assessments are, suggesting that the task of welfare measurement itself needs to be made accessible for laypeople at large. This thesis posits that the online social systems jeopardizing our collective welfare can also be used to understand the very dangers they pose. By empirically measuring how well people are doing when they use or are impacted by these systems, we in turn empirically demonstrate the feasibility of this ideal. We conclude by speculating on the imminent ubiquity of artificial intelligence in our cyber-environment and their implications for the work in this thesis.},
+  abstract      = {We rely on all manners of digital systems to organize and facilitate our human functions. From social networks connecting us to each other, to content providers keeping us perpetually entertained, to search engines serving each of our informational needs, to computational models informing us how healthy we are, to artificially-intelligent coaches supplementing our natural intelligence, every corner of human existence is permeated by the digital tools we create. Accompanying the boons of these systems, however, are increasingly complex risks to our digital health. Our attention is pulled into cyberspace via algorithms that use billions of datapoints to learn what we like, sometimes to the detriment of our physical wellness. Ideological rifts online threaten our societal harmony as partisans become ever more polarized, whose obsession with political content in turn feeds the underbelly of our social media ecosystem. All the while, the same data underpinning these online interactions also allow others to make finely-optimized decisions about us, often to the detriment of the disadvantaged. This thesis offers a more optimistic vision: that the same computational infrastructure powering our potentially perilous systems can be repurposed to help us understand their perils. We first outline a framework for rigorously assessing the welfare of our digital systems through the well-being of individual users, the cohesion of user communities, and whether the systems themselves deserve trust. We then utilize this framework to conduct four empirical studies measuring the extent to which digital welfare is preserved or endangered by data-driven systems. At the level of individual users, we directly measure how spending time on a large-scale chess platform, Lichess, can be perceived as detrimental to personal well-being. We find that perceived harms are explained not only by the time that people believe they spend online, but also the actual time they spend engaging with the platform. For groups of users, we quantify how partisan users on the Reddit platform are selective towards politically-congruent news outlets, thus consuming and disseminating polarized news. Despite the platform appearing polarized on aggregate, we discover that narrow, hyper-partisan communities are responsible for deeply-ingrained ideological segregation. We then extend this result by identifying whether key individuals can influence the news consumption cycle on Reddit. Through an analysis of where news about political figures is shared on Reddit and the language it attracts, we illustrate that nationally-recognizable politicians are selectively discussed more by in-group online communities than they are by in-group news outlets. Out-group communities, on the other hand, generate the most toxic and hateful commentary. At the level of problematic downstream outcomes, we further probe whether people can tell when systems like algorithmic risk assessments harm data subjects in unfair ways. We find that observers are easily distracted by who makes risk assessments rather than how equitable the assessments are, suggesting that the task of welfare measurement itself needs to be made accessible for laypeople at large. This thesis posits that the online social systems jeopardizing our collective welfare can also be used to understand the very dangers they pose. By empirically measuring how well people are doing when they use or are impacted by these systems, we in turn empirically demonstrate the feasibility of this ideal. We conclude by speculating on the imminent ubiquity of artificial intelligence in our cyber-environment and their implications for the work in this thesis.},
   type          = {Doctoral Thesis},
 }
 
@@ -1828,6 +1842,22 @@ BibTex
   keywords      = {Deep Reinforcement Learning, Saliency maps, Chess, Go, Atari, Interpretable AI, Explainable AI},
 }
 
+@inproceedings{purohit:2024:sounds-like-skill-issue-what-makes-you-quit-chess,
+  title         = {`Sounds like a skill issue': what makes you quit at chess?},
+  author        = {Purohit, Hariharan and Srivastava, Nisheeth},
+  year          = {2024},
+  booktitle     = {Proceedings of the 11th Annual Conference of Cognitive Science (ACCS 2024)},
+  location      = {Mumbai, India},
+  url           = {https://www.cgs.iitk.ac.in/user/hariharan22/site/pdfs/Paper126_ACCS11_chess_quit_final.pdf},
+  note          = {
+    abstract is the last paragraph from the introduction. The author describes the paper on the website: I am currently investigating the cognitive mechanisms underlying quitting behavior, using computational models and behavioral experiments. My work aims to bridge theoretical frameworks with real-world quitting scenarios. I take inspiration from phenomenology to approach quitting as a phenomenal experience first and aim to provide a mechanistic framework for it.
+
+    Quitting in Online Chess players: My first project looked at the quitting behavior of online chess players. Using the the open access data from lichess.org, I analyzed chess players' propensity to quit in 'Classical' chess matches. Using a combination of game factors and custom quitting factors, I quantified the quitting behavior of player with a statistical hazard of quitting. I also showed evidence for tilting in chess players, that occurs as a consquence of quitting a chess match.
+  },
+  abstract      = {Online chess serves as a naturalistic context where cognitive processes can be studied within rule-based, constrained environments. Player skills are defined via ELO rating system accomodating game factors such as wins/losses, and change in ratings over time. Furthermore, quitting a chess match possesses actual consequences for a player by affecting their rankings/ratings. We used chess as a testbed for understanding quitting due to its adversarial nature and availability of large amounts of data that contribute towards its ecological relevance.},
+  website       = {https://www.cgs.iitk.ac.in/user/hariharan22/site/},
+}
+
 @article{purohit:2025:metacognitive-appraisal-quitting,
   title         = {A metacognitive appraisal of quitting},
   author        = {Purohit, Hariharan and Srivastava, Nisheeth},
@@ -1836,13 +1866,6 @@ BibTex
   volume        = {47},
   url           = {https://escholarship.org/uc/item/02n5p1j5},
   abstract      = {Stopping decisions are frequently modeled as decisions to switch to alternative activities once the current activity stops being adequately rewarding, such as in optimal foraging theory, as well as more recent metacognitive models. However, the sense of stopping and making decisions in such frameworks is highly platonic, with both decisions and stopping actions occurring instantaneously. In contrast, the phenomenology of quitting actions that one is undertaking appears to be temporally extended and metacognitively challenging. We study the metacognitive covariates of quitting decisions made by chess players using a large database of chess games sourced from an online chess portal. Our analysis reveals that players tend to persevere when they are playing against stronger opponents and after having played poor moves. We also find that a history of quitting games makes players more likely to quit in future games, but that having recently quit in a game offers some protective effect against quitting. Finally, we find that quitting a game makes it more likely that a player will play a game again soon. We place these results in the context of modeling quitting as a metacognitive choice affected by multiple competing goals.},
-}
-
-@misc{purohit:2025:skill-issue-quit-chess,
-  title         = {'Sounds like a skill issue': what makes you quit at chess?},
-  author        = {Hariharan Purohit and Nisheeth Srivastava},
-  year          = {2025},
-  url           = {https://www.cgs.iitk.ac.in/user/hariharan22/site/pdfs/Paper126_ACCS11_chess_quit_final.pdf},
 }
 
 @inproceedings{qian:2020:comparative-study-online-chess-educational-products,
@@ -1869,8 +1892,14 @@ BibTex
   booktitle     = {Proceedings of the Seventeenth {AAAI} Conference on Artificial Intelligence and Interactive Digital Entertainment, {AIIDE} 2021, virtual, October 11-15, 2021},
   publisher     = {{AAAI} Press},
   pages         = {187--194},
+  isbn          = {978-1-57735-871-8},
   url           = {https://ojs.aaai.org/index.php/AIIDE/article/view/18907},
+  pdf           = {https://dl.acm.org/doi/pdf/10.5555/3505520.3505544},
   editor        = {David Thue and Stephen G. Ware},
+  abstract      = {In this paper we show how word embeddings, a technique used most commonly for natural language processing, can be repurposed to analyse gameplay data. Using a large study of chess games and applying the popular Word2Vec algorithm, we show that the resulting vector representation can reveal both common knowledge and subtle details about the game, including relative piece values and the natural spatial flow of chess play. Our results suggest that word embeddings are a cheap and simple technique that can provide a broad overview of a game's dynamics, helping designers and critics form new hypotheses about a game's design, structure and flow.},
+  video         = {https://www.youtube.com/watch?v=Qj96jh4c6As},
+  tldr          = {This paper shows that word embedding techniques such as Word2Vec can be applied to gameplay data, helping show possible relationships between elements of a game's design. We apply Word2Vec to chess and show how it rediscovers interesting strategic knowledge about the game.},
+  website       = {https://knivesandpaintbrushes.org/younes},
 }
 
 @inproceedings{rabii:2024:hunt-takes-hare-theming-games-through-game-word-vector-translation,
@@ -1891,14 +1920,21 @@ BibTex
   keywords      = {automated game design, computational creativity, procedural content generation},
 }
 
-@inproceedings{rafaralahy:2024-pairwise-ltr-chess-puzzle-difficulty-prediction,
-  title         = {{Pairwise Learning to Rank for Chess Puzzle Difficulty Prediction}},
-  author        = {Andry Rafaralahy},
+@inproceedings{rafaralahy:2024-pairwise-ltr-learning-to-rank-chess-puzzle-difficulty-prediction,
+  title         = {Pairwise Learning to Rank for Chess Puzzle Difficulty Prediction},
+  author        = {Rafaralahy, Andry},
   year          = {2024},
-  booktitle     = {{IEEE} International Conference on Big Data, Big Data 2024, Washington DC, USA, December 15-18, 2024},
-  publisher     = {{IEEE}},
+  month         = {Dec},
+  booktitle     = {2024 IEEE International Conference on Big Data (BigData)},
+  pages         = {8385--8389},
+  doi           = {10.1109/BigData62323.2024.10825356},
+  issn          = {2573-2978},
+  url           = {https://ieeexplore.ieee.org/document/10825356},
+  abstract      = {Machine learning has shown great success in various aspects of chess, particularly in game-playing engines such as AlphaZero. However, predicting the difficulty of chess puzzles remains a relatively unexplored area. In the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty competition, participants are asked to build a machine learning approach to predict the difficulty of chess puzzles. We present an approach that leverages deep learning and pairwise learning-to-rank techniques to estimate the difficulty of chess puzzles. Our method applies pairwise learning to rank approaches to simulate games between puzzles and uses the outcomes to estimate their Glicko-2 ratings. This approach achieved 4th place in the competition, demonstrating its effectiveness.},
+  keywords      = {Deep learning;Computer vision;Transfer learning;Games;Predictive models;Big Data;Transformers;Data models;Engines;chess;deep learning;learning to rank;glicko-2},
 }
 
+}
 @article{rautalahti:2025:fluid-roles-close-knit-gaming-households-playing-digital-games,
   title         = {Fluid Roles for Close-Knit Gaming: Households Playing Digital Games},
   author        = {Rautalahti, Heidi and Ma, Rongjun and Bourdoucen, Amel and Wang, Yajing and Lindqvist, Janne},
@@ -2095,6 +2131,11 @@ BibTex
   year          = {2024},
   journal       = {Journal of Data-centric Machine Learning Research},
   url           = {https://openreview.net/forum?id=nS9oxKyy9u},
+  dataset       = {https://zenodo.org/records/10607059},
+  abstract      = {Starting with early successes in computer vision tasks, deep learning based techniques have since overtaken state of the art approaches in a multitude of domains. However, it has been demonstrated time and again that these techniques fail to capture semantic context and logical constraints, instead often relying on spurious correlations to arrive at the answer. Since application of deep learning techniques to critical scenarios are dependent on adherence to domain specific constraints, several attempts have been made to address this issue. One limitation holding back a thorough exploration of this area, is a lack of suitable datasets which feature a rich set of rules. In order to address this, we present the VALUE (Vision And Logical Understanding Evaluation) Dataset, consisting of 200,000+ annotated images and an associated rule set, based on the popular board game - chess. The curated rule set considerably constrains the set of allowable predictions, and are designed to probe key semantic abilities like localization and enumeration. Alongside standard metrics, additional metrics to measure performance with regards to logical consistency is presented. We analyze several popular and state of the art vision models on this task, and show that, although their performance on standard metrics are laudable, they produce a plethora of incoherent results, indicating that this dataset presents a significant challenge for future works.},
+  github        = {https://github.com/espressoVi/VALUE-Dataset},
+  video         = {https://www.youtube.com/watch?v=6V9VlTEfHT4},
+  keywords      = {logical constraints, domain knowledge, deep learning, computer vision},
 }
 
 @thesis{saha:2025:domain-obedient-deep-learning,
@@ -2175,6 +2216,9 @@ BibTex
   pages         = {152},
   doi           = {10.3390/A15050152},
   url           = {https://doi.org/10.3390/a15050152},
+  note          = {code access expired: https://anonymous.4open.science/r/MSc-Thesis-8543},
+  abstract      = {In this paper, we quantify the non-transitivity in chess using human game data. Specifically, we perform non-transitivity quantification in two ways--Nash clustering and counting the number of rock-paper-scissor cycles--on over one billion matches from the Lichess and FICS databases. Our findings indicate that the strategy space of real-world chess strategies has a spinning top geometry and that there exists a strong connection between the degree of non-transitivity and the progression of a chess player's rating. Particularly, high degrees of non-transitivity tend to prevent human players from making progress in their Elo ratings. We also investigate the implications of non-transitivity for population-based training methods. By considering fixed-memory fictitious play as a proxy, we conclude that maintaining large and diverse populations of strategies is imperative to training effective AI agents for solving chess.},
+  keywords      = {game theory; multi-agent AI; non-transitivity quantification},
 }
 
 @thesis{schmid-maag:2024:optimizing-language-models-chess-impact-custom-notation-elo-based-finetuning,
@@ -2256,14 +2300,25 @@ BibTex
   abstract      = {What factors of our learning experiences enable us to best acquire complex skills? Recent ideas from artificial intelligence point to two such factors: (1) a balance of real experience with simulated experience acquired during planning itself, and (2) appropriate diversity in training examples. To test whether these factors influence the development of human expertise, we analyzed data from 1,873 chess players on the online platform Lichess, each of whom played hundreds to thousands of games over months to years. We found that both the time spent planning before moves and the diversity of opening positions encountered predict skill improvement over time. These findings suggest that principles shaping the development of expertise in artificial intelligence systems may also apply to human learning.},
 }
 
-@inproceedings{schwarzschild:2021:can-you-learn-algorithm-easy-hard-examples,
-  title         = {Can You Learn an Algorithm? Generalizing from Easy to Hard Problems with Recurrent Networks},
-  author        = {Avi Schwarzschild and Eitan Borgnia and Arjun Gupta and Furong Huang and Uzi Vishkin and Micah Goldblum and Tom Goldstein},
+@inproceedings{schwarzschild:2021:can-you-learn-algorithm-generalizing-easy-hard-examples-,
+  title         = {Can you learn an algorithm? generalizing from easy to hard problems with recurrent networks},
+  author        = {Schwarzschild, Avi and Borgnia, Eitan and Gupta, Arjun and Huang, Furong and Vishkin, Uzi and Goldblum, Micah and Goldstein, Tom},
   year          = {2021},
-  booktitle     = {Advances in Neural Information Processing Systems 34: Annual Conference on Neural Information Processing Systems 2021, NeurIPS 2021, December 6-14, 2021, virtual},
-  pages         = {6695--6706},
-  url           = {https://proceedings.neurips.cc/paper/2021/hash/3501672ebc68a5524629080e3ef60aef-Abstract.html},
-  editor        = {Marc'Aurelio Ranzato and Alina Beygelzimer and Yann N. Dauphin and Percy Liang and Jennifer Wortman Vaughan},
+  booktitle     = {Proceedings of the 35th International Conference on Neural Information Processing Systems},
+  publisher     = {Curran Associates Inc.},
+  address       = {Red Hook, NY, USA},
+  series        = {NeurIPS '21},
+  isbn          = {9781713845393},
+  url           = {https://openreview.net/forum?id=Tsp2PL7-GQ},
+  abstract      = {Deep neural networks are powerful machines for visual pattern recognition, but reasoning tasks that are easy for humans may still be difficult for neural models. Humans possess the ability to extrapolate reasoning strategies learned on simple problems to solve harder examples, often by thinking for longer. For example, a person who has learned to solve small mazes can easily extend the very same search techniques to solve much larger mazes by spending more time. In computers, this behavior is often achieved through the use of algorithms, which scale to arbitrarily hard problem instances at the cost of more computation. In contrast, the sequential computing budget of feed-forward neural networks is limited by their depth, and networks trained on simple problems have no way of extending their reasoning to accommodate harder problems. In this work, we show that recurrent networks trained to solve simple problems with few recurrent steps can indeed solve much more complex problems simply by performing additional recurrences during inference. We demonstrate this algorithmic behavior of recurrent networks on prefix sum computation, mazes, and chess. In all three domains, networks trained on simple problem instances are able to extend their reasoning abilities at test time simply by "thinking for longer."},
+  website       = {https://proceedings.neurips.cc/paper/2021/hash/3501672ebc68a5524629080e3ef60aef-Abstract.html},
+  keywords      = {Deep learning, algorithms, generalization, recurrent networks, prefix sums, mazes, chess},
+  tldr          = {Recurrent netowrks can learn processes that can generalize from easy training data to harder examples at test time by iterating more times.},
+  github        = {https://github.com/aks2203/easy-to-hard},
+  articleno     = {513},
+  numpages      = {12},
+  pdf           = {https://openreview.net/pdf?id=Tsp2PL7-GQ},
+  appendix      = {https://openreview.net/attachment?id=Tsp2PL7-GQ\&name=supplementary\_material},
 }
 
 @article{schwarzschild:2021:datasets-easy-hard-examples,
@@ -2275,6 +2330,8 @@ BibTex
   url           = {https://arxiv.org/abs/2108.06011},
   eprinttype    = {arXiv},
   eprint        = {2108.06011},
+  abstract      = {We describe new datasets for studying generalization from easy to hard examples.},
+  pypi          = {https://pypi.org/project/easy-to-hard-data/},
 }
 
 @inproceedings{sekar:2025:human-aligned-chess-ai-multitask-transformer-humanlike-decision-making,
