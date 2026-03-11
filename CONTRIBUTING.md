@@ -2,7 +2,7 @@
 
 Use BibLaTeX conventions and try to include as much metadata as possible. A good example is:
 
-```json
+```
 @inproceedings{ruoss:2024:amortized-planning-transformers-case-study-chess,
   title         = {Amortized planning with large-scale transformers: a case study on chess},
   author        = {Ruoss, Anian and Del\'{e}tang, Gr\'{e}goire and Medapati, Sourabh and Grau-Moya, Jordi and Wenliang, Li Kevin and Catt, Elliot and Reid, John and Lewis, Cannada A. and Veness, Joel and Genewein, Tim},
