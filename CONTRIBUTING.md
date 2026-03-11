@@ -1,13 +1,13 @@
 # Contributing and Style Guide
 
-# What to include
+## What to include
 
 - Works that rely on Lichess data.
 - Works that rely on Lichess code (For example, some papers are included because they rely on the definition or implementation of the [`accuracy`](https://lichess.org/page/accuracy) metric.
 - Works that rely on Lichess content.
 - Works that make statements about Lichess.
 
-# Style
+## Style
 
 Use BibLaTeX conventions and try to include as much metadata as possible. A good example is:
 
