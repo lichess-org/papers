@@ -6,7 +6,7 @@
   url           = {https://aisel.aisnet.org/acis2024/31},
   abstract      = {In this study, we present an innovative fusion of language models and query analysis techniques to unlock cognition in artificial intelligence. The introduced open-source AI system seamlessly integrates a Chess engine with a language model, enabling it to predict moves and provide strategic explanations. Leveraging a vector database to achieve retrievable answer generation, our AI system elucidates its decision-making process, bridging the gap between machine's computational cognition and human-like understanding. Our choice of Chess as the demonstration environment underscores the versatility of our approach. Beyond Chess, our system holds promise for diverse applications, from medical diagnostics to financial forecasting. Our AI system is available at https://github.com/TheOpenSI/CoSMIC},
   keywords      = {AI cognition, Chess, large language models, query analysis, retrievable answer generation},
-  github        = {https://github.com/TheOpenSI/CoSMIC},
+  code          = {https://github.com/TheOpenSI/CoSMIC},
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
@@ -44,7 +44,7 @@
   note          = {Student project paper, CSE 592, University of Michigan},
   abstract      = {Modern chess engines, such as Stockfish, have grown increasingly powerful at analyzing and calculating evaluations of given chess positions. Most chess engines are capable of not only providing several sequences of optimal moves which are most likely to yield the highest advantage, but also quantifying the perceived advantage for a side in a given position. Most evaluations of chess positions primarily involve a heuristic approximation of several factors, commonly learned through a deep learning approach, along with a branchlike exploration of possible moves. Although chess engines demonstrate extraordinary playing strength, their evaluations of positions are often limited to the advantage under optimal play, which may not be very applicable to the average player if those ideal moves are unlikely to be executed. More explicitly, the evaluation given by an engine is unlikely to accurately reflect the objective advantage of a human player, likely to make sub-optimal moves, and thus falls short of achieving an accurate representation of the given positional advantage.},
   keywords      = {Python; Multi-threaded; Research; Chess},
-  github        = {https://github.com/paulxro/cse592_chess},
+  code          = {https://github.com/paulxro/cse592_chess},
 }
 
 @inproceedings{ambrona:2022:practical-algorithm-chess-unwinnability,
@@ -62,7 +62,7 @@
   abstract      = {The FIDE Laws of Chess establish that if a player runs out of time during a game, they lose unless there exists no sequence of legal moves that ends in a checkmate by their opponent, in which case the game is drawn. The problem of determining whether or not a given chess position is unwinnable for a certain player has been considered intractable by the community and, consequently, chess servers do not apply the above rule rigorously, thus unfairly classifying many games. We propose, to the best of our knowledge, the first algorithm for chess unwinnability that is sound, complete and efficient for practical use. We also develop a prototype implementation and evaluate it over the entire Lichess Database (containing more than 3 billion games), successfully identifying all unfairly classified games in the database.},
   website       = {https://chasolver.org/},
   pdf           = {https://chasolver.org/FUN22-full.pdf},
-  github        = {https://github.com/miguel-ambrona/D3-Chess},
+  code          = {https://github.com/miguel-ambrona/D3-Chess},
 }
 
 @misc{arora:2022:deep-learning-computer-chess,
@@ -103,7 +103,7 @@
   abstract      = {Generative sequence models are typically trained on sample sequences from natural or formal languages. It is a crucial question whether -- or to what extent -- sample-based training is able to capture the true structure of these languages, often referred to as the "world model". Theoretical results indicate that we can hope for soundness at best, that is, generating valid sequences, but not necessarily all of them. However, it is still important to have practical tools that are able to verify whether a given sequence model is sound. In this study, we focus on chess, as it is a domain that provides enough complexity while having a simple rule-based world model. We propose adversarial sequence generation for verifying the soundness of the sequence model. Our adversaries generate valid sequences so as to force the sequence model to generate an invalid next move prediction. Apart from the falsification of soundness, this method is also suitable for a more fine-grained analysis of the failure modes and the effects of different choices during training. To demonstrate this, we propose a number of methods for adversarial sequence generation and evaluate the approach on a large set of chess models. We train models on random as well as high-quality chess games, using several training recipes. We find that none of the models are sound, but some training techniques and dataset choices are able to improve soundness remarkably. We also investigate the potential application of board state probes in both our training and attack methods. Our findings indicate that the extracted board states have no causal role in next token prediction in most of the models.},
   keywords      = {generative sequence model, implicit world model, adversarial sequences, chess},
   pdf           = {https://arxiv.org/pdf/2602.05903},
-  github        = {https://github.com/szegedai/world-model-verification},
+  code          = {https://github.com/szegedai/world-model-verification},
 }
 
 @article{banerjee:2024:skill-vs-chance-quantification-popular-card-board-games,
@@ -189,7 +189,7 @@
   url           = {https://proceedings.mlr.press/v206/bertrand23a.html},
   abstract      = {The Elo score has been extensively used to rank players by their skill or strength in competitive games such as chess, go, or StarCraft II. The Elo score implicitly assumes games have a strong additive--hence transitive--component. In this paper, we investigate the challenge of identifying transitive components in games. As a starting point, we show that the Elo score provably fails to extract the transitive component of some elementary transitive games. Based on this observation, we propose an alternative ranking system which properly extracts the transitive components in these games. Finally, we conduct an in-depth empirical validation on real-world game payoff matrices: it shows significant prediction performance improvements compared to the Elo score.},
   pdf           = {https://proceedings.mlr.press/v206/bertrand23a/bertrand23a.pdf},
-  github        = {https://github.com/QB3/discrating},
+  code          = {https://github.com/QB3/discrating},
 }
 
 @inproceedings{biemer:2024:solution-path-heuristics-predicting-difficulty-enjoyment-ratings-roguelike-level-segments,
@@ -307,7 +307,7 @@
   url           = {https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2025.1457563},
   abstract      = {Open-source software (OSS) projects, characterized by distributed development and volunteer contributions, face challenges in prioritizing user-centered design and usability. This difficulty arises because these projects are primarily driven by developers who focus on technical contributions. As a result, usability and user experience (UX) considerations are often neglected, leading to software that may not meet the needs of its broad and diverse users. To address this issue, we explore the potential of using user personas, which are fictional characters representing real user groups, to enhance user-centered design in OSS projects. Personas promote empathy and a deeper understanding of user needs, thereby improving alignment between developers and users. We conducted an experimental study on three OSS projects: Moodle, Lichess, and Audacity. Personas were created for each project and refined based on feedback from industry experts. Developers rated personas highly for credibility (86\%), consistency(79\%), and friendliness (86\%), highlighting their relevance in OSS projects. A follow-up experiment with students confirmed these findings, with consistency (79\%) demonstrating personas' role in improving usability and aligning developers with user needs. While adoption remains limited due to technical priorities (only 14\% of developers and 34\% of students found personas useful and expressed willingness to adopt them), personas show significant potential to enhance user-centered design in OSS. Further research is needed to understand developers' reluctance to adopt this technique and explore strategies to integrate personas more effectively into OSS workflows. This study's novelty lies in its empirical exploration of personas within OSS, providing quantitative evidence of their effectiveness in improving usability and user-centered design.},
   keywords      = {open-source software, user-centered design, usability, User persona, UX design},
-  github        = {https://github.com/ChellyAhmed/personas-os-resources},
+  code          = {https://github.com/ChellyAhmed/personas-os-resources},
 }
 
 @inproceedings{chen:2025:how-to-scale-second-order-optimization,
@@ -349,7 +349,7 @@
   blog          = {https://lichess.org/@/Dr_Kiwi/blog/a-humanlike-playstyle-chess-bot-for-every-level-player/pU3M8ya4},
   poster        = {https://rlg.iis.sinica.edu.tw/papers/strength-estimator/assets/Strength%20Estimation%20and%20Human-Like%20Strength%20Adjustment%20in%20Games%20Poster.pdf},
   slides        = {https://rlg.iis.sinica.edu.tw/papers/strength-estimator/assets/Strength%20Estimation%20and%20Human-Like%20Strength%20Adjustment%20in%20Games%20Slides.pdf},
-  github        = {https://github.com/rlglab/strength-estimator/},
+  code          = {https://github.com/rlglab/strength-estimator/},
   model         = {https://rlg.iis.sinica.edu.tw/papers/strength-estimator/assets/models/chess.tar.gz},
   bot           = {SEtheChessBot8, SEtheChessBot7, SEtheChessBot6, SEtheChessBot5, SEtheChessBot4, SEtheChessBot3, SEtheChessBot2, SEtheChessBot1, SEtheChessGod},
 }
@@ -456,7 +456,7 @@
   abstract      = {Deep neural networks have been successfully applied in learning the board games Go, chess, and shogi without prior knowledge by making use of reinforcement learning. Although starting from zero knowledge has been shown to yield impressive results, it is associated with high computationally costs especially for complex games. With this paper, we present CrazyAra which is a neural network based engine solely trained in supervised manner for the chess variant crazyhouse. Crazyhouse is a game with a higher branching factor than chess and there is only limited data of lower quality available compared to AlphaGo. Therefore, we focus on improving efficiency in multiple aspects while relying on low computational resources. These improvements include modifications in the neural network design and training configuration, the introduction of a data normalization step and a more sample efficient Monte-Carlo tree search which has a lower chance to blunder. After training on 569537 human games for 1.5 days we achieve a move prediction accuracy of 60.4\%. During development, versions of CrazyAra played professional human players. Most notably, CrazyAra achieved a four to one win over 2017 crazyhouse world champion Justin Tan (aka LM Jann Lee) who is more than 400 Elo higher rated compared to the average player in our training set. Furthermore, we test the playing strength of CrazyAra on CPU against all participants of the second Crazyhouse Computer Championships 2017, winning against twelve of the thirteen participants. Finally, for CrazyAraFish we continue training our model on generated engine games. In 10 long-time control matches playing Stockfish 10, CrazyAraFish wins three games and draws one out of 10 matches.},
   keywords      = {deep learning, chess, crazyhouse, supervised learning, Monte-Carlo tree search},
   pdf           = {https://public-pages-files-2025.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2020.00024/pdf},
-  github        = {https://github.com/QueensGambit/CrazyAra},
+  code          = {https://github.com/QueensGambit/CrazyAra},
   dataset       = {https://github.com/QueensGambit/CrazyAra/wiki/Stockfish-10:-Crazyhouse-Self-Play},
 }
 
@@ -517,7 +517,7 @@
   abstract      = {Probing classifiers are a technique for understanding and modifying the operation of neural networks in which a smaller classifier is trained to use the model's internal representation to learn a probing task. Similar to a neural electrode array, probing classifiers help both discern and edit the internal representation of a neural network. This paper evaluates the use of probing classifiers to modify the internal hidden state of a chess-playing transformer. The weights of the learned linear classifiers are very informative and can be used to reliably delete pieces from the board showing that the model internally maintains an editable emergent representation of game state.},
   keywords      = {Representation Engineering; Probing Classifiers; Chess-playing Language Models, GPT},
   pdf           = {https://ial.eecs.ucf.edu/pdf/Sukthankar-Austin-ICMLA2024.pdf},
-  github        = {https://github.com/austinleedavis/icmla-2024},
+  code          = {https://github.com/austinleedavis/icmla-2024},
 }
 
 @thesis{davis:2025:interpretation-control-ai-model-behavior-direct-adjustment-latent-representations,
@@ -549,7 +549,7 @@
   url           = {https://doi.org/10.20944/preprints202601.2229.v1},
   abstract      = {Probing classifiers are a technique for understanding and modifying the operation of neural networks in which a smaller classifier is trained to use the model's internal representation to learn a probing task. Similar to a neural electrode array, probing classifiers help both discern and edit the internal representation of a neural network. This article evaluates the use of probing classifiers to modify the internal hidden state of a chess-playing transformer. We contrast the performance of standard linear probes against Sparse Autoencoders (SAEs), a latent space interpretability technique designed to decompose polysemantic concepts into atomic features via an overcomplete basis. Our experiments demonstrate that linear probes trained directly on the residual stream significantly outperform probes based on SAE latents. When quantifying the success of interventions via the probability of legal moves, linear probe edits achieved an 88\% success rate, whereas SAE-based edits yielded only 41\%. These findings suggest that while SAEs are valuable for specific interpretability tasks, they do not enhance the controllability of hidden states compared to raw vectors. Finally, we show that the residual stream respects the Markovian property of chess, validating the feasibility of applying consistent edits across different time steps for the same board state.},
   keywords      = {representation engineering;  probing classifiers;  chess;  language models;  GPT;  sparse autoencoders},
-  github        = {https://github.com/austinleedavis/icmla-2024},
+  code          = {https://github.com/austinleedavis/icmla-2024},
 }
 
 @article{de-marzo:2023:complexity-similarity-chess-openings-community-data,
@@ -577,7 +577,7 @@
   doi           = {10.1109/SVR.2019.00038},
   abstract      = {Chess pieces recognition using computer vision is a problem generally approached in various ways, with different kinds of results and complexity. Deep learning is a state of the art approach to solve problems on image recognition although facing necessity of huge data sets. This paper discusses a method to identify synthetically generated chess images on Blender using its Python API via fine-tuning of VGG16 convolutional network obtaining close to 97\% accuracy on piece classification. Possible applications include automated record of real chess games and real-time play between online players using real boards.},
   keywords      = {Histograms, Image color analysis, Games, Tracking, Image edge detection, Machine learning, Task analysis, chess, neural networks, piece recognition, synthetic data generation},
-  github        = {https://github.com/rafaelmcam/cChess},
+  code          = {https://github.com/rafaelmcam/cChess},
   dataset       = {https://github.com/rafaelmcam/cChess/tree/master/Jogos},
 }
 
@@ -661,7 +661,7 @@
   url           = {https://openreview.net/forum?id=Dkgx2pS4Ww},
   abstract      = {Large language models often possess latent capabilities that lie dormant unless explicitly elicited, or surfaced, through fine-tuning or prompt engineering. Predicting, assessing, and understanding these latent capabilities pose significant challenges in the development of effective, safe AI systems. In this work, we recast elicitation as an information-constrained fine-tuning problem and empirically characterize upper bounds on the minimal number of parameters needed to achieve specific task performances. We find that training as few as 10-100 randomly chosen parameters--several orders of magnitude fewer than state-of-the-art parameter-efficient methods--can recover up to 50\% of the performance gap between pretrained-only and full fine-tuned models, and 1,000s to 10,000s of parameters can recover 95\% of this performance gap. We show that a logistic curve fits the relationship between the number of trained parameters and model performance gap recovery. This scaling generalizes across task formats and domains, as well as model sizes and families, extending to reasoning models and remaining robust to increases in inference compute. To help explain this behavior, we consider a simplified picture of elicitation via fine-tuning where each trainable parameter serves as an encoding mechanism for accessing task-specific knowledge. We observe a relationship between the number of trained parameters and how efficiently relevant model capabilities can be accessed and elicited, offering a potential route to distinguish elicitation from teaching.},
   keywords      = {elicitation, large language models, LLMs, latent capabilities, minimum description length},
-  github        = {https://github.com/edonoway/quantifying-elicitation-neurips25},
+  code          = {https://github.com/edonoway/quantifying-elicitation-neurips25},
 }
 
 @article{eisma:2024:turing-tests-chess-human-subjectivity,
@@ -689,7 +689,7 @@
   articleno     = {316},
   abstract      = {When solving decision-making tasks, humans typically depend on information from two key sources: (1) Historical policy data, which provides interaction replay from the environment, and (2) Analytical insights in natural language form, exposing the invaluable thought process or strategic considerations. Despite this, the majority of preceding research focuses on only one source: they either use historical replay exclusively to directly learn policy or value functions, or engaged in language model training utilizing mere language corpus. In this paper, we argue that a powerful autonomous agent should cover both sources. Thus, we propose ChessGPT, a GPT model bridging policy learning and language modeling by integrating data from these two sources in Chess games. Specifically, we build a large-scale game and language dataset related to chess. Leveraging the dataset, we showcase two model examples ChessCLIP and ChessGPT, integrating policy learning and language modeling. Finally, we propose a full evaluation framework for evaluating language model's chess ability. Experimental results validate our model and dataset's effectiveness. We open source our code, model, and dataset at https://github.com/waterhorse1/ChessGPT.},
   pdf           = {https://proceedings.neurips.cc/paper_files/paper/2023/file/16b14e3f288f076e0ca73bdad6405f77-Paper-Datasets_and_Benchmarks.pdf},
-  github        = {https://github.com/waterhorse1/ChessGPT},
+  code          = {https://github.com/waterhorse1/ChessGPT},
   huggingface   = {https://huggingface.co/Waterhorse/ChessCLIP,https://huggingface.co/Waterhorse/chessgpt-base-v1,https://huggingface.co/Waterhorse/chessgpt-chat-v1},
 }
 
@@ -725,7 +725,7 @@
   tldr          = {Sparse Chess Language Models with Player Routing},
   abstract      = {Modern chess language models are dense transformers trained on millions of games played by thousands of high-rated individuals. However, these monolithic networks tend to collapse into mode-averaged behavior, where stylistic boundaries are blurred, and rare but effective strategies are suppressed. To counteract homogenization, we introduce Mixture-of-Masters (MoM), the first chess mixture-of-experts model with small-sized GPT experts emulating world-class grandmasters. Each expert is trained with a combination of self-supervised learning and reinforcement learning guided by chess-specific rewards. For each move, a post-hoc learnable gating network selects the most appropriate persona to channel depending on the game state, allowing MoM to switch its style dynamically--e.g., Tal's offensive vocation or Petrosian's defensive solidity. When evaluated against Stockfish on unseen standard games, MoM outperforms both dense individual expert networks and popular GPT baselines trained on aggregated data, while ensuring generation variety, control, and interpretability.},
   keywords      = {chess language modeling, mixture of experts, reinforcement learning, behavioral stylometry},
-  github        = {https://anonymous.4open.science/r/mixture-of-masters},
+  code          = {https://anonymous.4open.science/r/mixture-of-masters},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
   bot           = {mixture-of-masters},
@@ -752,7 +752,7 @@
   abstract      = {The presence or absence of winner-loser effects is a widely discussed phenomenon across both sports and psychology research. Investigation of such effects is often hampered by the limited availability of data. Online chess has exploded in popularity in recent years and provides vast amounts of data which can be used to explore this question. With a hierarchical Bayesian regression model, we carefully investigate the presence of such experiential effects in online chess. Using a large quantity of online chess data, we see little evidence for experiential effects that are consistent across all players, with some individual players showing some evidence for such effects. Given the challenging temporal nature of this data, we discuss several methods for assessing the suitability of our model and carefully check its validity.},
   keywords      = {Winner-loser Effects, Chess, Hierarchical Bayesian Modeling, online competitions},
   pdf           = {https://www.degruyterbrill.com/document/doi/10.1515/jqas-2025-0035/pdf},
-  github        = {https://github.com/OwenWard/Chess_Winner},
+  code          = {https://github.com/OwenWard/Chess_Winner},
   dataset       = {https://zenodo.org/records/17247312},
 }
 
@@ -806,7 +806,7 @@
   supervisor    = {F\'{a}bregas Alfaro, Ignacio and Rubio Cu\'{e}llar, Rub\'{e}n Rafael},
   abstract      = {Chess engines have played a fundamental role in the advancement of articial intelligence applied to the game since the mid-20th century. Today, Stocksh, the most powerful and open source chess engine, still relies on alpha-beta pruning, but also incorporates machine learning techniques. The goal of this project is to develop a chess engine capable of competing againstboth other engines and human players, using minimax with alpha-beta pruning as its core. Additionally, we analyze the impact of other classical algorithmic techniquessuch as transposition tables, iterative deepening, and a move generator based on magic bitboards. The chess engine has been uploaded to the Lichess platform, where AlphaDeepChess achieved an Elo rating of 1900 while running on a Raspberry Pi 5 equipped with a 2GB transposition table.},
   keywords      = {Articial Intelligence, Chess Engine, Alpha-beta pruning, Iterative deepening, Quiescence search, Move ordering, Transposition table, Zobrist hashing, Magic bitboards},
-  github        = {https://github.com/LauraWangQiu/AlphaDeepChess},
+  code          = {https://github.com/LauraWangQiu/AlphaDeepChess},
 }
 
 @thesis{gramaje:2023:exploring-gpt-capabilities-chess-puzzles,
@@ -871,7 +871,7 @@
   url           = {https://doi.org/10.1038/s41598-024-70701-2},
   abstract      = {With large chess-playing neural network models like AlphaZero contesting the state of the art within the world of computerised chess, two challenges present themselves: the question of how to explain the domain knowledge internalised by such models, and the problem that such models are not made openly available. This work presents the re-implementation of the concept detection methodology applied to AlphaZero, by using large, open-source chess models with comparable performance. We obtain results similar to those achieved when applying this methodology to AlphaZero, while relying solely on open-source resources. We also present a novel explainable AI (XAI) method, which is guaranteed to highlight exhaustively and exclusively the information used by the explained model. This method generates visual explanations tailored to domains characterised by discrete input spaces, as is the case for chess. Our presented method has the desirable property of controlling the information flow between any input vector and the given model, which in turn provides strict guarantees regarding what information is used by the trained model during inference. We demonstrate the viability of our method by applying it to standard {\$}{\$}8 {\backslash}times 8{\$}{\$}chess, using large open-source chess models.},
   website       = {https://patrik-ha.github.io/ii-map/},
-  github        = {https://github.com/patrik-ha/ii-map},
+  code          = {https://github.com/patrik-ha/ii-map},
 }
 
 @misc{helfenstein:2025:checkmating-one-using-many-combining-mixture-experts-mcts-improve-chess,
@@ -881,7 +881,7 @@
   eprint        = {2401.16852},
   url           = {https://arxiv.org/abs/2401.16852},
   abstract      = {In games like chess, strategy evolves dramatically across distinct phases - the opening, middlegame, and endgame each demand different forms of reasoning and decision-making. Yet, many modern chess engines rely on a single neural network to play the entire game uniformly, often missing opportunities to specialize. In this work, we introduce M2CTS, a modular framework that combines Mixture of Experts with Monte Carlo Tree Search to adapt strategy dynamically based on game phase. We explore three different methods for training the neural networks: Separated Learning, Staged Learning, and Weighted Learning. By routing decisions through specialized neural networks trained for each phase, M2CTS improves both computational efficiency and playing strength. In experiments on chess, M2CTS achieves up to +122 Elo over standard single-model baselines and shows promising generalization to multi-agent domains such as Pommerman. These results highlight how modular, phase-aware systems can better align with the structured nature of games and move us closer to human-like behavior in dividing a problem into many smaller units.},
-  github        = {https://github.com/QueensGambit/CrazyAra},
+  code          = {https://github.com/QueensGambit/CrazyAra},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
@@ -897,7 +897,7 @@
   abstract      = {Humans are social beings, and most of our decisions are influenced by considerations of how others will respond. Whether in poker or political negotiations, the riskiness of a decision is often determined by the variance of the other party's possible responses. Such socially-contingent decisions can be framed in terms of adversarial games, which differ from other risky situations such as lotteries because the risk arises from uncertainty about the opponent's decisions, and not some independent stochasticity in the world. We use chess as a lens through which we can study human risk-taking behavior in adversarial decision making. We develop a novel algorithm for calculating the riskiness of each move in a chess game, and apply it to data from over 1 billion online chess games. We find that players not only exhibit state-dependent risk preferences, but also change their risk-taking strategy depending on their opponent, and that this effect differs in experts and novices.},
   keywords      = {risk taking; adversarial games; chess},
   blog          = {https://www.linkedin.com/pulse/what-can-1-billion-chess-games-tell-us-risk-taking-cameron-holdaway/},
-  github        = {https://github.com/choldawa/Chess},
+  code          = {https://github.com/choldawa/Chess},
 }
 
 @thesis{hoque:2022:classification-chess-games-exploration-classifiers-anomaly-detection-chess,
@@ -921,7 +921,7 @@
   abstract      = {This paper introduces ChessLM, a novel Transformer-based model designed to learn rich, contextual vector representations (embeddings) of chess positions. Moving beyond traditional chess engines focused on move evaluation, our approach is inspired by the success of self-supervised learning in Natural Language Processing. We adapt the Vision Transformer architecture and train the model using two self-supervised tasks on a large corpus of chess games: Masked Piece Prediction, which requires the model to infer masked pieces based on board context, and Move Difference Prediction, which involves predicting the number of moves between two positions from the same game. Qualitative analysis demonstrates the model's ability to capture high-level structural and thematic similarities between positions across different game phases (opening, middlegame, endgame), such as shared pawn structures, material imbalances, and king safety patterns. However, the analysis also reveals limitations that would significantly impact our model's ability to generate position evaluations. Despite this, the learned embeddings are shown to be effective for retrieving strategically or tactically similar positions, enabling applications such as intelligent chess puzzle suggestions. This work contributes a novel method for learning chess position representations that encode thematic information, opening avenues for future research in applying representation learning to various chess-related tasks beyond traditional evaluation.},
   keywords      = {Chess, Transformers, Machine Learning, Embeddings},
   pdf           = {https://bluehood.github.io/research/benh_Beyond_Evaluation__Learning_Contextual_Chess_Position_Representations_2025.pdf},
-  github        = {https://github.com/bluehood/Encoder-ChessLM},
+  code          = {https://github.com/bluehood/Encoder-ChessLM},
   huggingface   = {https://huggingface.co/odestorm1/chesslm},
   howpublished  = {Accessed via \url{[https://bluehood.github.io/](https://bluehood.github.io/)}},
 }
@@ -955,7 +955,7 @@ journal       = {CoRR},
   eprinttype    = {arXiv},
   eprint        = {2507.00726},
   abstract      = {While reinforcement learning (RL) for large language models (LLMs) has shown promise in mathematical reasoning, strategic reasoning for LLMs using RL remains largely unexplored. We investigate whether LLMs can develop strategic reasoning capabilities through RL in chess. To this end, we leverage a chess-pretrained action-value network to provide dense reward on the LLM's output move quality, which can be seen as a form of knowledge distillation. Our experiments show that our distillation-based dense rewards often outperform sparse binary rewards. However, surprisingly, all models plateau far below expert levels. We provide SFT and RL ablations on chess reasoning training and find evidence that this limitation stems from a deficit in the pretrained models' internal understanding of chess-a deficit which RL alone may not be able to fully overcome. The code is available at this https URL: https://github.com/krafton-ai/Chess-R1},
-  github        = {https://github.com/krafton-ai/Chess-R1},
+  code          = {https://github.com/krafton-ai/Chess-R1},
 }
 @inproceedings{iavich:2024:detecting-fair-play-violations-chess-neural-networks,
   title         = {Detecting Fair Play Violations in Chess Using Neural Networks},
@@ -999,7 +999,7 @@ journal       = {CoRR},
   abstract      = {Do neural networks learn to implement algorithms such as look-ahead or search "in the wild"? Or do they rely purely on collections of simple heuristics? We present evidence of learned look-ahead in the policy and value network of Leela Chess Zero, the currently strongest deep neural chess engine. We find that Leela internally represents future optimal moves and that these representations are crucial for its final output in certain board states. Concretely, we exploit the fact that Leela is a transformer that treats every chessboard square like a token in language models, and give three lines of evidence: (1) activations on certain squares of future moves are unusually important causally; (2) we find attention heads that move important information "forward and backward in time," e.g., from squares of future moves to squares of earlier ones; and (3) we train a simple probe that can predict the optimal move 2 turns ahead with 92\% accuracy (in board states where Leela finds a single best line). These findings are clear evidence of learned look-ahead in neural networks and might be a step towards a better understanding of their capabilities.},
   website       = {https://leela-interp.github.io/},
   pdf           = {https://proceedings.neurips.cc/paper_files/paper/2024/file/37d9f19150fce07bced2a81fc87d47a6-Paper-Conference.pdf},
-  github        = {https://github.com/HumanCompatibleAI/leela-interp},
+  code          = {https://github.com/HumanCompatibleAI/leela-interp},
 }
 
 @misc{jiang:2023:building-natural-language-chess-engine-pretraining-instruction-finetunine,
@@ -1052,7 +1052,7 @@ journal       = {CoRR},
   tldr          = {We train a GPT model from scratch to play chess and  find that it learns to compute board state and estimate player Elo. We use these representations to edit the GPT's internal board state and increase or decrease its chess-playing ability.},
   abstract      = {Language models have shown unprecedented capabilities, sparking debate over the source of their performance. Is it merely the outcome of learning syntactic patterns and surface level statistics, or do they extract semantics and a world model from the text? Prior work by Li et al. investigated this by training a GPT model on synthetic, randomly generated Othello games and found that the model learned an internal representation of the board state. We extend this work into the more complex domain of chess, training on real games and investigating our model's internal representations using linear probes and contrastive activations. The model is given no a priori knowledge of the game and is solely trained on next character prediction, yet we find evidence of internal representations of board state. We validate these internal representations by using them to make interventions on the model's activations and edit its internal board state. Unlike Li et al's prior synthetic dataset approach, our analysis finds that the model also learns to estimate latent variables like player skill to better predict the next character. We derive a player skill vector and add it to the model, improving the model's win rate by up to 2.6 times.},
   keywords      = {GPT, large language model, interpretability, world model},
-  github        = {https://github.com/adamkarvonen/chess_llm_interpretability},
+  code          = {https://github.com/adamkarvonen/chess_llm_interpretability},
   dataset       = {https://huggingface.co/datasets/adamkarvonen/chess_games},
   huggingface   = {https://huggingface.co/adamkarvonen/chess_llms},
 }
@@ -1076,7 +1076,7 @@ journal       = {CoRR},
   poster        = {https://nips.cc/media/PosterPDFs/NeurIPS%202024/95121.png?t=1730259153.6686015},
   slides        = {https://nips.cc/media/neurips-2024/Slides/95121_AxaqEUR.pdf},
   talk          = {https://slideslive.com/39025524/measuring-progress-in-dictionary-learning-for-language-model-interpretability-with-board-game-models},
-  github        = {https://github.com/adamkarvonen/SAE_BoardGameEval},
+  code          = {https://github.com/adamkarvonen/SAE_BoardGameEval},
 }
 
 @thesis{keusch:2025:binary-matching-android-ios-apps,
@@ -1135,7 +1135,7 @@ journal       = {CoRR},
   booktitle     = {Workshop on Foundations of Reasoning in Language Models at NeurIPS 2025},
   abstract      = {We introduce LLM CHESS, an evaluation framework designed to probe the generalization of reasoning and instruction-following abilities in large language models (LLMs) through extended agentic interaction in the domain of chess. We rank over 50 open and closed source models by playing against a random opponent using a range of behavioral metrics, including win and loss rates, move quality, move legality, hallucinated actions, and game duration. For a subset of models, we derive an Elo estimate by playing against a chess engine with variably configured skill. Despite the simplicity of the instruction-following task and the weakness of the opponent, many state-of-the-art models struggle to complete games or achieve consistent wins. Similar to other benchmarks on complex reasoning tasks, our experiments reveal a clear separation between reasoning and non-reasoning models. However, unlike existing static benchmarks, the stochastic and dynamic nature of LLM CHESS uniquely reduces overfitting and memorization while preventing benchmark saturation. To support future work on evaluating reasoning and instruction-following in LLMs, we release our experimental framework, a public leaderboard, and a dataset of associated games. Our code is available athttps://github.com/LLM-CHESS/llm\_chess.},
   website       = {https://maxim-saplin.github.io/llm_chess/},
-  github        = {https://github.com/LLM-CHESS/llm_chess_minimal, https://github.com/maxim-saplin/llm_chess/},
+  code          = {https://github.com/LLM-CHESS/llm_chess_minimal, https://github.com/maxim-saplin/llm_chess/},
 }
 
 @inproceedings{krishnan:2022:automatic-synthesis-interpretable-chess-tactics,
@@ -1163,7 +1163,7 @@ journal       = {CoRR},
   note          = {The title in the paper from the proceedings is "Synthesizing chess tactics from player games"},
   abstract      = {Competitive games admit a wide variety of player strategies and emergent, domain-specific concepts that are not obvious from an examination of their rules. Expert agents trained on these games demonstrate many useful strategies, but these are difficult for human players to understand and adopt. Algorithmically revealing these strategies could help players develop a better model for making decisions that lead to victories. This paper presents a method for the automatic discovery of player-oriented strategies for chess. We present a formal model for chess strategies, inspired by documented chess tactics, that uses first-order logic clauses for representation. Our system uses inductive logic programming to learn human-interpretable strategies for playing chess in the form of our tactic model. Given minimal background knowledge and training data drawn from real games, our system is able to learn tactics that generalize to a large number of positions. We show that these tactics cover a large number of real-world positions and produce moves that outperform a random player.},
   pdf           = {https://www.convivial.tools/PapersPublic/aiide22-synthesizing-tactics.pdf},
-  github        = {https://github.com/AbhijeetKrishnan/interpretable-chess-tactics},
+  code          = {https://github.com/AbhijeetKrishnan/interpretable-chess-tactics},
 }
 
 @misc{kruger:2025:synthetic-data-generation-screen-time-app-usage,
@@ -1227,7 +1227,7 @@ journal       = {CoRR},
   url           = {osf.io/preprints/psyarxiv/d8zje},
   abstract      = {Acting intelligently in complex environments poses a challenging learning problem: faced with many different situations and possible actions, how do people learn which action to take in each situation? While traditional laboratory-based experiments have been used to study specific learning mechanisms, these experiments often employ relatively simple tasks conducted over a short period of time. Thus, it is unclear to what extent these mechanisms are used in the significantly more complex and temporally extended environments people encounter in their everyday lives. To understand the processes by which people learn policies to guide their decisions, we investigate the opening strategies of novice online chess players over their first months of play. We use a large online data set consisting of 2,499,783 games, providing us with the necessary scale to explore learning mechanisms in a complex setting. In particular, we focus on two types of learning: reinforcement learning, or learning from rewards given repeated experiences, and social learning, or learning from the actions of others. We show that players' choices are modulated by both game outcomes and observing their opponents' actions, and that they exhibit important hallmarks of adaptive decision-making such as exploration and expertise. Our results provide evidence that people use sophisticated learning algorithms in naturalistic strategic behavior.},
   keywords      = {decision-making, learning, reinforcement learning, social learning},
-  github        = {https://github.com/ionatankuperwajs/learning-openings},
+  code          = {https://github.com/ionatankuperwajs/learning-openings},
 }
 
 @article{kuperwajs:2025:exploring-resource-rational-planning-time-pressure-online-chess,
@@ -1423,7 +1423,7 @@ journal       = {CoRR},
   keywords      = {Human-AI collaboration, Action Prediction, Chess},
   website       = {https://www.maiachess.com/},
   pdf           = {https://dl.acm.org/doi/pdf/10.1145/3394486.3403219},
-  github        = {https://github.com/CSSLab/maia-chess},
+  code          = {https://github.com/CSSLab/maia-chess},
 }
 
 @inproceedings{mcilroy-young:2021:chess-stylometry,
@@ -1442,7 +1442,7 @@ journal       = {CoRR},
   poster        = {https://github.com/CSSLab/behavioral-stylometry/blob/main/images/chess_embedding_poster.png},
   slides        = {https://github.com/CSSLab/behavioral-stylometry/blob/main/documents/chess_embedding_slides.pdf},
   video         = {https://slideslive.com/38970556/detecting-individual-decisionmaking-style-exploring-behavioral-stylometry-in-chess?ref=speaker-92823},
-  github        = {https://github.com/CSSLab/behavioral-stylometry},
+  code          = {https://github.com/CSSLab/behavioral-stylometry},
 }
 
 @inproceedings{mcilroy-young:2022:learning-models-individual-behavior-chess,
@@ -1458,7 +1458,7 @@ journal       = {CoRR},
   abstract      = {AI systems that can capture human-like behavior are becoming increasingly useful in situations where humans may want to learn from these systems, collaborate with them, or engage with them as partners for an extended duration. In order to develop human-oriented AI systems, the problem of predicting human actions---as opposed to predicting optimal actions---has received considerable attention. Existing work has focused on capturing human behavior in an aggregate sense, which potentially limits the benefit any particular individual could gain from interaction with these systems. We extend this line of work by developing highly accurate predictive models of individual human behavior in chess. Chess is a rich domain for exploring human-AI interaction because it combines a unique set of properties: AI systems achieved superhuman performance many years ago, and yet humans still interact with them closely, both as opponents and as preparation tools, and there is an enormous corpus of recorded data on individual player games. Starting with Maia, an open-source version of AlphaZero trained on a population of human players, we demonstrate that we can significantly improve prediction accuracy of a particular player's moves by applying a series of fine-tuning methods. Furthermore, our personalized models can be used to perform stylometry---predicting who made a given set of moves---indicating that they capture human decision-making at an individual level. Our work demonstrates a way to bring AI systems into better alignment with the behavior of individual people, which could lead to large improvements in human-AI interaction.},
   keywords      = {Mimetic models; Human-AI interaction; Chess; Action prediction; Machine learning; Behavioral stylometry},
   video         = {https://dl.acm.org/doi/suppl/10.1145/3534678.3539367/suppl_file/maia-individual.mp4},
-  github        = {https://github.com/CSSLab/maia-Individual},
+  code          = {https://github.com/CSSLab/maia-Individual},
 }
 
 @misc{meireles:2025:practice-structure-predicts-skill-growth-online-chess-behavioral-modeling-approach,
@@ -1481,7 +1481,7 @@ journal       = {CoRR},
   abstract      = {Modern decision transformers, trained similarly to LLMs, can achieve strong in- distribution performance in complex sequential domains like chess, but it remains unclear to what extent they reason systematically about rules and strategy. We study the reasoning capabilities of a 270M-parameter chess transformer trained via behavior cloning on standard chess. To investigate its abilities, we construct out-of-distribution test sets —including board states and variants never seen dur- ing training—designed to reveal failures of systematic generalization. Our analy- sis shows that the model exhibits robust rule-based reasoning, consistently gener- ating legal moves in novel configurations, but its strategic reasoning is more lim- ited. The model generates high-quality moves on curated OOD puzzles and shows basic strategy adaptation in full games. It underperforms symbolic AI algorithms that rely on explicit search, although the performance gap is smaller when playing against human users on Lichess. Moreover, the training dynamics reveals distinct phases in how the model learns to respect the fundamental constraints, suggesting an emergent compositional understanding of the game.},
   keywords      = {Language model, reasoning, transformer, chess, out-of-distribution generalization, compositional generalization, rule extrapolation, chess960},
   preprint      = {https://arxiv.org/abs/2510.20783},
-  github        = {https://github.com/meszarosanna/ood_chess},
+  code          = {https://github.com/meszarosanna/ood_chess},
 }
 
 @inproceedings{milosz:2024:predicting-puzzle-difficulty-transformers,
@@ -1607,7 +1607,7 @@ journal       = {CoRR},
   abstract      = {Ranking items from pairwise comparisons is common in domains ranging from sports to consumer preferences. Statistical inference-based methods, such as the Bradley--Terry model, have emerged as flexible and powerful tools to tackle ranking in empirical data. However, in situations with limited and/or noisy comparisons, it is often challenging to confidently distinguish item performance based on evidence available in the data. Most ranking methods nevertheless force a complete ordering, suggesting a meaningful distinction when there is none. Here, we introduce a principled nonparametric Bayesian framework for learning partial rankings---rankings with ties---that infers distinctions between items only when supported by the evidence. We develop a fast agglomerative algorithm for Maximum a Posteriori (MAP) inference under this framework and evaluate its performance on a range of synthetic and real-world datasets, finding that it often yields a more parsimonious and reliable summary of the data than traditional ranking approaches, particularly in sparse observational settings.},
   pdf           = {https://www.nature.com/articles/s42005-025-02461-y.pdf},
   preprint      = {https://arxiv.org/abs/2501.02505},
-  github        = {https://github.com/seb310/partial-rankings},
+  code          = {https://github.com/seb310/partial-rankings},
 }
 
 @inproceedings{muecke:2022:check-mate-sanity-check-trustworthy-ai,
@@ -1698,7 +1698,7 @@ journal       = {CoRR},
   eprint        = {2505.14943},
   url           = {https://arxiv.org/abs/2505.14943},
   abstract      = {To help evaluate and understand the latent capabilities of language models, this paper introduces an approach using optimized input embeddings, or 'soft prompts,' as a metric of conditional distance between a model and a target behavior. The technique aims to facilitate latent capability discovery as a part of automated red teaming/evaluation suites and to provide quantitative feedback about the accessibility of potentially concerning behaviors in a way that may scale to powerful future models, including those which may otherwise be capable of deceptive alignment. An evaluation framework using soft prompts is demonstrated in natural language, chess, and pathfinding, and the technique is extended with generalized conditional soft prompts to aid in constructing task evaluations.},
-  github        = {https://github.com/RossNordby/SoftPromptsForEvaluation},
+  code          = {https://github.com/RossNordby/SoftPromptsForEvaluation},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
@@ -1741,7 +1741,7 @@ journal       = {CoRR},
   abstract      = {Introduction: Quantifying signals in large, sparse datasets is challenging, as noise and redundant features often obscure informative patterns. Chess middlegames, with their dynamic complexity and endless possibilities, provide a testbed for exploring such challenges. Building on 12 studies that identified three categories of chess complexity--difficulty, optionality, and rarity--we propose a novel method to quantify chess pattern complexity. Methods: A complexity scoring system was developed, integrating centipawn change, variability, engine search depth, and inverse document frequency of constellations to measure difficulty, optionality, and rarity. From a large dataset of chess games, we extracted 106,810 unique 11-ply constellations that appeared at least 20 times across 2,235,823 games. The chess engine was used to evaluate chess decisions when answering on constellations, and a multinomial logistic regression model was employed to predict move quality. Results: The model demonstrated good predictive power with a weighted F1 score of 0.75 and a ROC AUC of 0.82. It correctly classified over 70\% of blunders, mistakes, and optimal moves, although it has less success in differentiating inaccuracies from optimal moves. Discussion: Our approach establishes a flexible framework for quantifying complexity in large, sparse datasets, demonstrating applicability beyond chess. By integrating different metrics, we achieve high accuracy in predicting move quality during chess middlegames. Beyond supporting chess education by identifying constellations tied to specific move types, this methodology could be valuable in contexts where understanding the interplay of dynamic patterns and their outcomes is essential for deriving actionable insights.},
   keywords      = {Chess Complexity, Move Prediction, Cognitive Modeling, Big Data Analysis, Sparse Data},
   pdf           = {https://www.researchsquare.com/article/rs-5574128/v1.pdf?c=1748726628000},
-  github        = {https://github.com/sgjustino/Chess_Thesis},
+  code          = {https://github.com/sgjustino/Chess_Thesis},
 }
 
 @inproceedings{palsson:2024:empirical-evaluation-concept-probing-game-playing-agents,
@@ -1780,7 +1780,7 @@ journal       = {CoRR},
   url           = {https://arxiv.org/abs/2504.21548},
   abstract      = {Social robots (SRs) should autonomously interact with humans, while exhibiting proper social behaviors associated to their role. By contributing to health-care, education, and companionship, SRs will enhance life quality. However, personalization and sustaining user engagement remain a challenge for SRs, due to their limited understanding of human mental states. Accordingly, we leverage a recently introduced mathematical dynamic model of human perception, cognition, and decision-making for SRs. Identifying the parameters of this model and deploying it in behavioral steering system of SRs allows to effectively personalize the responses of SRs to evolving mental states of their users, enhancing long-term engagement and personalization. Our approach uniquely enables autonomous adaptability of SRs by modeling the dynamics of invisible mental states, significantly contributing to the transparency and awareness of SRs. We validated our model-based control system in experiments with 10 participants who interacted with a Nao robot over three chess puzzle sessions, 45 - 90 minutes each. The identified model achieved a mean squared error (MSE) of 0.067 (i.e., 1.675\% of the maximum possible MSE) in tracking beliefs, goals, and emotions of participants. Compared to a model-free controller that did not track mental states of participants, our approach increased engagement by 16\% on average. Post-interaction feedback of participants (provided via dedicated questionnaires) further confirmed the perceived engagement and awareness of the model-driven robot. These results highlight the unique potential of model-based approaches and control theory in advancing human-SR interactions.},
   keywords      = {Mathematical Dynamic Model of Mental States, Adaptive Cognition-Aware Social Robots, Model-based Control},
-  github        = {https://github.com/marialuis-mp/MMM-Controller-for-Social-Robot},
+  code          = {https://github.com/marialuis-mp/MMM-Controller-for-Social-Robot},
   dataset       = {https://data.4tu.nl/datasets/ccadc914-9502-46d6-9ba5-fef581f2933f},
   archiveprefix = {arXiv},
   primaryclass  = {eess.SY},
@@ -1805,7 +1805,7 @@ journal       = {CoRR},
   abstract      = {Development teams for mobile applications can receive thousands of user reviews daily. At the same time, these developers use different communication channels, such as the GitHub issue tracker. Although GitHub issues are accessible and manageable for developers, their content often differs starkly from what users write in app reviews. Issues may lack steps to reproduce bugs or insights that justify the priority of new feature requests. The sheer volume of user reviews for a popular app, combined with their heterogeneity and varying quality, makes manual integration into issue trackers unfeasible. We present an approach that automatically augments GitHub issues with informative user reviews to bridge the gap between user feedback and developer-managed issues. Using a state-of-the-art large language model (LLM), our approach automatically retrieves user reviews with high semantic textual similarity (STS) to the issue content and suggests reviews that augment developers' understanding of the issue. In this paper, we present large-scale quantitative and qualitative analyses to assess the feasibility of enriching development workflows with user-written information. Using over 37,000 issues and 750,000 reviews from 19 popular Free/Libre/Open Source Software (FLOSS) mobile applications, our approach augments 3,017 (8\%) issues with 7,287 (1\%) potentially informative reviews. In addition to providing insights into user-reported bugs and feature requests, the information from these matches points toward a novel and promising way to leverage user reviews for concerted app evolution.},
   keywords      = {Semantic Textual Similarity, User Feedback Mining, GitHub Issues, Information Retrieval, Software Repository Mining},
   dataset       = {https://figshare.com/articles/dataset/Replication_package_for_the_paper_Automatically_Augmenting_GitHub_Issues_with_Informative_User_Reviews_/28578140},
-  repository    = {https://gitlab.com/ArthurPilone/deepermatcher},
+  code          = {https://gitlab.com/ArthurPilone/deepermatcher},
 }
 
 @misc{poesia:2025:programmatic-representation-learning-language-models,
@@ -1815,7 +1815,7 @@ journal       = {CoRR},
   eprint        = {2510.14825},
   url           = {https://arxiv.org/abs/2510.14825},
   abstract      = {Classical models for supervised machine learning, such as decision trees, are efficient and interpretable predictors, but their quality is highly dependent on the particular choice of input features. Although neural networks can learn useful representations directly from raw data (e.g., images or text), this comes at the expense of interpretability and the need for specialized hardware to run them efficiently. In this paper, we explore a hypothesis class we call Learned Programmatic Representations (LeaPR) models, which stack arbitrary features represented as code (functions from data points to scalars) and decision tree predictors. We synthesize feature functions using Large Language Models (LLMs), which have rich prior knowledge in a wide range of domains and a remarkable ability to write code using existing domain-specific libraries. We propose two algorithms to learn LeaPR models from supervised data. First, we design an adaptation of FunSearch to learn features rather than directly generate predictors. Then, we develop a novel variant of the classical ID3 algorithm for decision tree learning, where new features are generated on demand when splitting leaf nodes. In experiments from chess position evaluation to image and text classification, our methods learn high-quality, neural network-free predictors often competitive with neural networks. Our work suggests a flexible paradigm for learning interpretable representations end-to-end where features and predictions can be readily inspected and understood.},
-  github        = {https://github.com/gpoesia/leapr/},
+  code          = {https://github.com/gpoesia/leapr/},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
@@ -1827,7 +1827,7 @@ journal       = {CoRR},
   eprint        = {2509.25475},
   url           = {https://arxiv.org/abs/2509.25475},
   abstract      = {Interpretability of Deep Neural Networks (DNNs) is a growing field driven by the study of vision and language models. Yet, some use cases, like image captioning, or domains like Deep Reinforcement Learning (DRL), require complex modelling, with multiple inputs and outputs or use composable and separated networks. As a consequence, they rarely fit natively into the API of popular interpretability frameworks. We thus present TDHook, an open-source, lightweight, generic interpretability framework based on `tensordict` and applicable to any `torch`' model. It focuses on handling complex composed models which can be trained for Computer Vision, Natural Language Processing, Reinforcement Learning or any other domain. This library features ready-to-use methods for attribution, probing and a flexible get-set API for interventions, and is aiming to bridge the gap between these method classes to make modern interpretability pipelines more accessible. TDHook is designed with minimal dependencies, requiring roughly half as much disk space as `transformer\_lens`, and, in our controlled benchmark, achieves up to a \texttimes{}2 speed-up over `captum` when running integrated gradients for multi-target pipelines on both CPU and GPU. In addition, to value our work, we showcase concrete use cases of our library with composed interpretability pipelines in Computer Vision (CV) and Natural Language Processing (NLP), as well as with complex models in DRL.},
-  github        = {https://github.com/Xmaster6y/tdhook},
+  code          = {https://github.com/Xmaster6y/tdhook},
   archiveprefix = {arXiv},
   primaryclass  = {cs.AI},
 }
@@ -1843,7 +1843,7 @@ journal       = {CoRR},
   keywords      = {Deep Reinforcement Learning, Saliency maps, Chess, Go, Atari, Interpretable AI, Explainable AI},
   website       = {https://nikaashpuri.github.io/sarfa-saliency/},
   pdf           = {https://openreview.net/pdf?id=SJgzLkBKPB},
-  github        = {https://github.com/nikaashpuri/sarfa-saliency},
+  code          = {https://github.com/nikaashpuri/sarfa-saliency},
   dataset       = {https://nikaashpuri.github.io/sarfa-saliency/jekyll/update/2020/04/25/chess-saliency-dataset.html},
 }
 
@@ -2072,7 +2072,7 @@ journal       = {CoRR},
   poster        = {https://neurips.cc/media/PosterPDFs/NeurIPS%202024/94747.png},
   pdf           = {https://proceedings.neurips.cc/paper_files/paper/2024/file/78f0db30c39c850de728c769f42fc903-Paper-Conference.pdf},
   preprint      = {https://arxiv.org/abs/2402.04494},
-  github        = {https://github.com/google-deepmind/searchless_chess},
+  code          = {https://github.com/google-deepmind/searchless_chess},
   dataset       = {https://storage.googleapis.com/searchless_chess},
 }
 
@@ -2106,7 +2106,7 @@ journal       = {CoRR},
   eprint        = {2505.07592},
   url           = {https://arxiv.org/abs/2505.07592},
   abstract      = {Consumer-grade electroencephalography (EEG) devices show promise for Brain-Computer Interface (BCI) applications, but their efficacy in detecting subtle cognitive states remains understudied. We developed a comprehensive study paradigm which incorporates a combination of established cognitive tasks (N-Back, Stroop, and Mental Rotation) and adds a novel ecological Chess puzzles task. We tested our paradigm with the MUSE 2, a low-cost consumer-grade EEG device. Using linear mixed-effects modeling we demonstrate successful distinctions of within-task workload levels and cross-task cognitive states based on the spectral power data derived from the MUSE 2 device. With machine learning we further show reliable predictive power to differentiate between workload levels in the N-Back task, and also achieve effective cross-task classification. These findings demonstrate that consumer-grade EEG devices like the MUSE 2 can be used to effectively differentiate between various levels of cognitive workload as well as among more nuanced task-based cognitive states, and that these tools can be leveraged for real-time adaptive BCI applications in practical settings.},
-  github        = {https://github.com/mattrussell2/chess-mw-MUSE},
+  code          = {https://github.com/mattrussell2/chess-mw-MUSE},
   dataset       = {https://github.com/mattrussell2/chess-mw-MUSE-DATA},
   archiveprefix = {arXiv},
   primaryclass  = {cs.HC},
@@ -2150,8 +2150,8 @@ journal       = {CoRR},
   eprint        = {2512.03109},
   url           = {https://arxiv.org/abs/2512.03109},
   abstract      = {Agentic AI systems execute a sequence of actions, such as reasoning steps or tool calls, in response to a user prompt. To evaluate the success of their trajectories, researchers have developed verifiers, such as LLM judges and process-reward models, to score the quality of each action in an agent's trajectory. Although these heuristic scores can be informative, there are no guarantees of correctness when used to decide whether an agent will yield a successful output. Here, we introduce e-valuator, a method to convert any black-box verifier score into a decision rule with provable control of false alarm rates. We frame the problem of distinguishing successful trajectories (that is, a sequence of actions that will lead to a correct response to the user's prompt) and unsuccessful trajectories as a sequential hypothesis testing problem. E-valuator builds on tools from e-processes to develop a sequential hypothesis test that remains statistically valid at every step of an agent's trajectory, enabling online monitoring of agents over arbitrarily long sequences of actions. Empirically, we demonstrate that e-valuator provides greater statistical power and better false alarm rate control than other strategies across six datasets and three agents. We additionally show that e-valuator can be used for to quickly terminate problematic trajectories and save tokens. Together, e-valuator provides a lightweight, model-agnostic framework that converts verifier heuristics into decisions rules with statistical guarantees, enabling the deployment of more reliable agentic systems.},
-  github        = {https://github.com/shuvom-s/e-valuator},
-  software      = {https://pypi.org/project/e-valuator/},
+  code          = {https://github.com/shuvom-s/e-valuator},
+  code          = {https://pypi.org/project/e-valuator/},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
@@ -2165,7 +2165,7 @@ journal       = {CoRR},
   abstract      = {Starting with early successes in computer vision tasks, deep learning based techniques have since overtaken state of the art approaches in a multitude of domains. However, it has been demonstrated time and again that these techniques fail to capture semantic context and logical constraints, instead often relying on spurious correlations to arrive at the answer. Since application of deep learning techniques to critical scenarios are dependent on adherence to domain specific constraints, several attempts have been made to address this issue. One limitation holding back a thorough exploration of this area, is a lack of suitable datasets which feature a rich set of rules. In order to address this, we present the VALUE (Vision And Logical Understanding Evaluation) Dataset, consisting of 200,000+ annotated images and an associated rule set, based on the popular board game - chess. The curated rule set considerably constrains the set of allowable predictions, and are designed to probe key semantic abilities like localization and enumeration. Alongside standard metrics, additional metrics to measure performance with regards to logical consistency is presented. We analyze several popular and state of the art vision models on this task, and show that, although their performance on standard metrics are laudable, they produce a plethora of incoherent results, indicating that this dataset presents a significant challenge for future works.},
   keywords      = {logical constraints, domain knowledge, deep learning, computer vision},
   video         = {https://www.youtube.com/watch?v=6V9VlTEfHT4},
-  github        = {https://github.com/espressoVi/VALUE-Dataset},
+  code          = {https://github.com/espressoVi/VALUE-Dataset},
   dataset       = {https://zenodo.org/records/10607059},
 }
 
@@ -2233,7 +2233,7 @@ journal       = {CoRR},
   tldr          = {We extended the logit lens to Post-LN to analyze Leela Chess, revealing interpretable intermediate policies with monotonic capability improvement but non-monotonic policy dynamics that contrast with smooth language model convergence},
   abstract      = {Do neural networks build their representations through smooth, gradual refinement, or via more complex computational processes? We investigate this by extending the logit lens to analyze the policy network of Leela Chess Zero, a superhuman chess engine. We find strong monotonic trends in playing strength and puzzle-solving ability across layers, yet policy distributions frequently follow non-smooth trajectories. Evidence for this includes correct puzzle solutions that are discovered early but subsequently discarded, move rankings that remain poorly correlated with final outputs, and high policy divergence until late in the network. These findings contrast with the smooth distributional convergence typically observed in language models.},
   keywords      = {Understanding high-level properties of models, Probing, logit lens, chess, iterative inference},
-  github        = {https://github.com/hartigel/leela-logit-lens},
+  code          = {https://github.com/hartigel/leela-logit-lens},
   figshare      = {https://figshare.com/s/5342980a9ba8b26985a9},
 }
 
@@ -2348,7 +2348,7 @@ journal       = {CoRR},
   keywords      = {Deep learning, algorithms, generalization, recurrent networks, prefix sums, mazes, chess},
   website       = {https://proceedings.neurips.cc/paper/2021/hash/3501672ebc68a5524629080e3ef60aef-Abstract.html},
   pdf           = {https://openreview.net/pdf?id=Tsp2PL7-GQ},
-  github        = {https://github.com/aks2203/easy-to-hard},
+  code          = {https://github.com/aks2203/easy-to-hard},
   appendix      = {https://openreview.net/attachment?id=Tsp2PL7-GQ&name=supplementary_material},
 }
 
@@ -2486,7 +2486,7 @@ journal       = {CoRR},
   url           = {https://ai4hgi.github.io/paper13.pdf},
   abstract      = {Contemporary chess engines offer precise yet opaque evaluations, typically expressed as centipawn scores. While effective for decision-making, these outputs obscure the underlying contributions of individual pieces or patterns. In this paper, we explore adapting SHAP (SHapley Additive exPlanations) to the domain of chess analysis, aiming to attribute a chess engines evaluation to specific pieces on the board. By treating pieces as features and systematically ablating them, we compute additive, per-piece contributions that explain the engines output in a locally faithful and human-interpretable manner. This method draws inspiration from classical chess pedagogy, where players assess positions by mentally removing pieces, and grounds it in modern explainable AI techniques. Our approach opens new possibilities for visualization, human training, and engine comparison. We release accompanying code and data to foster future research in interpretable chess AI.},
   keywords      = {chess, explainable AI, shap},
-  github        = {https://github.com/fspinna/chessplainer},
+  code          = {https://github.com/fspinna/chessplainer},
 }
 
 @inproceedings{stanek:2025:bad-cipher-design-chessography-cascaded-spin-shuffle,
@@ -2543,7 +2543,7 @@ journal       = {CoRR},
   articleno     = {659},
   abstract      = {There are an increasing number of domains in which artificial intelligence (AI) systems both surpass human ability and accurately model human behavior. This introduces the possibility of algorithmically-informed teaching in these domains through more relatable AI partners and deeper insights into human decision-making. Critical to achieving this goal, however, is coherently modeling human behavior at various skill levels. Chess is an ideal model system for conducting research into this kind of human-AI alignment, with its rich history as a pivotal testbed for AI research, mature superhuman AI systems like AlphaZero, and precise measurements of skill via chess rating systems. Previous work in modeling human decision-making in chess uses completely independent models to capture human style at different skill levels, meaning they lack coherence in their ability to adapt to the full spectrum of human improvement and are ultimately limited in their effectiveness as AI partners and teaching tools. In this work, we propose a unified modeling approach for human-AI alignment in chess that coherently captures human style across different skill levels and directly captures how people improve. Recognizing the complex, non-linear nature of human learning, we introduce a skill-aware attention mechanism to dynamically integrate players' strengths with encoded chess positions, enabling our model to be sensitive to evolving player skill. Our experimental results demonstrate that this unified framework significantly enhances the alignment between AI and human players across a diverse range of expertise levels, paving the way for deeper insights into human decision-making and AI-guided teaching tools. Our implementation is available https://github.com/CSSLab/maia2.},
   keywords      = {Human-AI Alignment, Action Prediction, Chess, Skill-aware Attention},
-  github        = {https://github.com/CSSLab/maia2},
+  code          = {https://github.com/CSSLab/maia2},
 }
 
 @misc{tang:2025:is-elo-rating-reliable-study-under-model-misspecification,
@@ -2566,7 +2566,7 @@ journal       = {CoRR},
   booktitle     = {Second Conference on Language Modeling},
   url           = {https://openreview.net/forum?id=lI4LgGv4sX},
   abstract      = {Evaluating whether vision-language models (VLMs) reason consistently across representations is challenging because modality comparisons are typically confounded by task differences and asymmetric information. We introduce SEAM, a benchmark that pairs semantically equivalent inputs across four domains that have existing standardized textual and visual notations. By employing distinct notation systems across modalities, in contrast to OCR-based image-text pairing, SEAM provides a rigorous comparative assessment of the textual-symbolic and visual-spatial reasoning capabilities of VLMs. Across 21 contemporary models, we observe systematic modality imbalance: vision frequently lags language in overall performance, despite the problems containing semantically equivalent information, and cross-modal agreement is relatively low. Our error analysis reveals two main drivers: textual perception failures from tokenization in domain notation and visual perception failures that induce hallucinations. We also show that our results are largely robust to visual transformations. SEAM establishes a controlled, semantically equivalent setting for measuring and improving modality-agnostic reasoning.},
-  github        = {https://github.com/CSSLab/SEAM},
+  code          = {https://github.com/CSSLab/SEAM},
   huggingface   = {https://huggingface.co/datasets/lilvjosephtang/SEAM-Benchmark},
   annote        = {https://lilv98.github.io/SEAM-Website/},
 }
@@ -2706,7 +2706,7 @@ journal       = {CoRR},
   issn          = {2573-2978},
   abstract      = {We detail the bread emoji team's submission to the IEEE BigData 2024 Predicting Chess Puzzle Difficulty Challenge. Our solution revolved around the use of ensembled, pretrained, neural chessboard embedders (specifically, truncated Maia and Leela models) and an empirically-guided distribution rescaling postprocessing step.Our approach was the outright winner of the competition with a >16.4\% reduction in mean squared error (MSE) over second place in the preliminary evaluation and a >13.3\% reduction in MSE over second place in the final evaluation.},
   keywords      = {Training;Transfer learning;Artificial neural networks;Predictive models;Big Data;Data models;Emojis},
-  github        = {https://github.com/mcognetta/ieee-chess},
+  code          = {https://github.com/mcognetta/ieee-chess},
 }
 
 @inproceedings{xiao:2025:multi-source-feature-fusion-neural-embedding-predicting-chess-puzzle-difficulty,
@@ -2761,7 +2761,7 @@ journal       = {CoRR},
   tldr          = {We propose a model that does implicit search by looking into the future world via discrete diffusion modeling.},
   abstract      = {In the post-AlphaGo era, there has been a renewed interest in search techniques such as Monte Carlo Tree Search (MCTS), particularly in their application to Large Language Models (LLMs). This renewed attention is driven by the recognition that current next-token prediction models often lack the ability for long-term planning. Is it possible to instill search-like abilities within the models to enhance their planning abilities without relying on explicit search? We propose DiffuSearch , a model that does \textit{implicit search} by looking into the future world via discrete diffusion modeling. We instantiate DiffuSearch on a classical board game, Chess, where explicit search is known to be essential. Through extensive controlled experiments, we show DiffuSearch outperforms both the searchless and explicit search-enhanced policies. Specifically, DiffuSearch outperforms the one-step policy by 19.2\% and the MCTS-enhanced policy by 14\% on action accuracy. Furthermore, DiffuSearch demonstrates a notable 30\% enhancement in puzzle-solving abilities compared to explicit search-based policies, along with a significant 540 Elo increase in game-playing strength assessment. These results indicate that implicit search via discrete diffusion is a viable alternative to explicit search over a one-step policy. All codes are publicly available at \href{https://github.com/HKUNLP/DiffuSearch}{https://github.com/HKUNLP/DiffuSearch}},
   keywords      = {discrete diffusion model, search, planning, chess, MCTS},
-  github        = {https://github.com/HKUNLP/DiffuSearch},
+  code          = {https://github.com/HKUNLP/DiffuSearch},
   huggingface   = {https://huggingface.co/datasets/jiacheng-ye/chess10k},
 }
 
@@ -2816,7 +2816,7 @@ journal       = {CoRR},
   url           = {https://computationalcreativity.net/iccc24/papers/ICCC24_paper_200.pdf},
   abstract      = {AI research in chess has been primarily focused on producing stronger agents that can maximize the probability of winning. However, there is another aspect to chess that has largely gone unexamined: its aesthetic appeal. Specifically, there exists a category of chess moves called ``brilliant'' moves. These moves are appreciated and admired by players for their high intellectual aesthetics. We demonstrate the first system for classifying chess moves as brilliant. The system uses a neural network, using the output of a chess engine as well as features that describe the shape of the game tree. The system achieves an accuracy of 79\% (with 50\% base-rate), a PPV of 83\%, and an NPV of 75\%. We demonstrate that what humans perceive as "brilliant" moves is not merely the best possible move. We show that a move is more likely to be predicted as brilliant, all things being equal, if a weaker engine considers it lower-quality (for the same rating by a stronger engine). Our system opens the avenues for computer chess engines to (appear to) display human-like brilliance, and, hence, creativity.},
   pdf           = {https://computationalcreativity.net/iccc24/papers/ICCC24_paper_200.pdf},
-  github        = {https://github.com/kamronzaidi/brilliant-moves-clf},
+  code          = {https://github.com/kamronzaidi/brilliant-moves-clf},
 }
 
 @thesis{zelek:2022:topological-data-analysis-chess,
@@ -2843,7 +2843,7 @@ journal       = {CoRR},
   abstract      = {Generative models are trained with the simple objective of imitating the conditional probability distribution induced by the data they are trained on. Therefore, when trained on data generated by humans, we may not expect the artificial model to outperform the humans on their original objectives. In this work, we study the phenomenon of transcendence: when a generative model achieves capabilities that surpass the abilities of the experts generating its data. We demonstrate transcendence by training an autoregressive transformer to play chess from game transcripts, and show that the trained model can sometimes achieve better performance than all players in the dataset. We theoretically prove that transcendence can be enabled by low-temperature sampling, and rigorously assess this claim experimentally. Finally, we discuss other sources of transcendence, laying the groundwork for future investigation of this phenomenon in a broader setting.},
   keywords      = {theory, foundations, generative modelling, sequence modelling},
   website       = {https://transcendence.eddie.win/},
-  github        = {https://github.com/KempnerInstitute/chess-research},
+  code          = {https://github.com/KempnerInstitute/chess-research},
   dataset       = {https://github.com/KempnerInstitute/chess-data},
   huggingface   = {https://huggingface.co/datasets/ezipe/lichess-models/},
 }
