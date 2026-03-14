@@ -1471,15 +1471,16 @@ journal       = {CoRR},
   abstract      = {Skill acquisition is central to developing expertise, yet the behavioral mechanisms that separate more successful learners from less successful ones remain poorly understood. Using a large naturalistic dataset of about one million online chess games played by ~\hspace{0.167em}820 individuals over three years (2013–2015), we built an interpretable machine learning model to classify learners based only on behavioral features. Learners were labeled as ``fast learners'' or ``not fast learners'' based on normalized monthly Elo progression, adjusted for both starting rating and the increasing difficulty of improving at higher levels. We engineered time-sensitive features across four behavioral dimensions: practice structure, challenge level, strategic exploration (measured via move-sequence entropy), and tactical efficiency (the number of rounds needed to reach a 70\% win probability in games eventually won). A logistic regression model trained on the five strongest predictors - optimal challenge steady magnitude, optimal challenge late slope, entropy steady magnitude, optimal challenge mean, and tactical efficiency mean - achieved an F1 of 0.68 and an AUC of 0.78. Coefficients showed that average tactical efficiency was a strong predictor of fast learning, whereas the role of challenge-level features was less clear. To explore this, we fitted a linear regression with average tactical efficiency (as a proxy for expertise) as the dependent variable. This model explained 53\% of the variance (R\ensuremath{^2} = 0.53, RMSE\hspace{0.167em}=\hspace{0.167em}0.05) and revealed optimal challenge as the strongest predictor. This suggests that well-calibrated challenge levels are key to differences in chess performance.},
 }
 
-@misc{meszaros:2025:out-of-distribution-tests-reveal-compositionality-chess-transformers,
-  title         = {Out-of-distribution Tests Reveal Compositionality in Chess Transformers},
-  author        = {Anna M\'{e}sz\'{a}ros and Patrik Reizinger and Ferenc Husz\'{a}r},
-  year          = {2025},
-  url           = {https://arxiv.org/abs/2510.20783},
-  eprint        = {2510.20783},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.LG},
-  abstract      = {Chess is a canonical example of a task that requires rigorous reasoning and long-term planning. Modern decision Transformers - trained similarly to LLMs - are able to learn competent gameplay, but it is unclear to what extent they truly capture the rules of chess. To investigate this, we train a 270M parameter chess Transformer and test it on out-of-distribution scenarios, designed to reveal failures of systematic generalization. Our analysis shows that Transformers exhibit compositional generalization, as evidenced by strong rule extrapolation: they adhere to fundamental syntactic rules of the game by consistently choosing valid moves even in situations very different from the training data. Moreover, they also generate high-quality moves for OOD puzzles. In a more challenging test, we evaluate the models on variants including Chess960 (Fischer Random Chess) - a variant of chess where starting positions of pieces are randomized. We found that while the model exhibits basic strategy adaptation, they are inferior to symbolic AI algorithms that perform explicit search, but gap is smaller when playing against users on Lichess. Moreover, the training dynamics revealed that the model initially learns to move only its own pieces, suggesting an emergent compositional understanding of the game.},
+@inproceedings{meszaros:2026:out-of-distribution-study-rule-based-strategic-reasoning-chess-transformers,
+  title         = {Out-of-Distribution Study of Rule-Based and Strategic Reasoning in Chess Transformers},
+  author        = {Anna M{\'e}sz{\'a}ros and Patrik Reizinger and Ferenc Husz{\'a}r},
+  year          = {2026},
+  booktitle     = {ICLR 2026 Workshop on Logical Reasoning of Large Language Models},
+  url           = {https://openreview.net/forum?id=bG9LOL7fF6},
+  note          = {Preprint title: Out-of-distribution Tests Reveal Compositionality in Chess Transformers},
+  abstract      = {Modern decision transformers, trained similarly to LLMs, can achieve strong in- distribution performance in complex sequential domains like chess, but it remains unclear to what extent they reason systematically about rules and strategy. We study the reasoning capabilities of a 270M-parameter chess transformer trained via behavior cloning on standard chess. To investigate its abilities, we construct out-of-distribution test sets —including board states and variants never seen dur- ing training—designed to reveal failures of systematic generalization. Our analy- sis shows that the model exhibits robust rule-based reasoning, consistently gener- ating legal moves in novel configurations, but its strategic reasoning is more lim- ited. The model generates high-quality moves on curated OOD puzzles and shows basic strategy adaptation in full games. It underperforms symbolic AI algorithms that rely on explicit search, although the performance gap is smaller when playing against human users on Lichess. Moreover, the training dynamics reveals distinct phases in how the model learns to respect the fundamental constraints, suggesting an emergent compositional understanding of the game.},
+  keywords      = {Language model, reasoning, transformer, chess, out-of-distribution generalization, compositional generalization, rule extrapolation, chess960},
+  preprint      = {https://arxiv.org/abs/2510.20783},
   github        = {https://github.com/meszarosanna/ood_chess},
 }
 
@@ -1872,6 +1873,21 @@ journal       = {CoRR},
   abstract      = {Stopping decisions are frequently modeled as decisions to switch to alternative activities once the current activity stops being adequately rewarding, such as in optimal foraging theory, as well as more recent metacognitive models. However, the sense of stopping and making decisions in such frameworks is highly platonic, with both decisions and stopping actions occurring instantaneously. In contrast, the phenomenology of quitting actions that one is undertaking appears to be temporally extended and metacognitively challenging. We study the metacognitive covariates of quitting decisions made by chess players using a large database of chess games sourced from an online chess portal. Our analysis reveals that players tend to persevere when they are playing against stronger opponents and after having played poor moves. We also find that a history of quitting games makes players more likely to quit in future games, but that having recently quit in a game offers some protective effect against quitting. Finally, we find that quitting a game makes it more likely that a player will play a game again soon. We place these results in the context of modeling quitting as a metacognitive choice affected by multiple competing goals.},
 }
 
+@article{purohit:2026-metacognitive-appraisal-quitting-chess,
+  title         = {A Metacognitive Appraisal of Quitting in Chess},
+  author        = {Purohit, Hariharan and Srivastava, Nisheeth},
+  year          = {2026},
+  journal       = {Cognitive Science},
+  volume        = {50},
+  number        = {3},
+  pages         = {e70193},
+  doi           = {https://doi.org/10.1111/cogs.70193},
+  url           = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.70193},
+  keywords      = {Decision-making, Metacognition, Optimal stopping problem, Quitting decisions},
+  eprint        = {https://onlinelibrary.wiley.com/doi/pdf/10.1111/cogs.70193},
+  abstract      = {Abstract Decisions to stop or quit are often described as choices to switch to alternative activities once the current activity ceases to be rewarding. However, popular models of stopping—such as optimal foraging theory and recent metacognitive frameworks—fail to fully capture the nuanced differences in behavior between quitting and stopping. While quitting is closely related to stopping, it remains a phenomenologically distinct experience. The absence of a clear, separate definition for quitting motivates the present study. We investigate the contextual and noncontextual factors influencing quitting decisions among chess players, utilizing a large dataset of games from an online chess platform. Our analysis reveals that players tend to persevere in higher skill brackets and against stronger opponents when they are performing poorly. Additionally, a history of quitting increases the likelihood of quitting in future games, although recent quitting episodes can have protective effects. We also find that quitting influences subsequent behavior, with players often playing more games after a recent quit. We discuss these findings within the broader context of resource-rational and metacognitive approaches. Finally, we provide a metacognitive account of quitting decisions with the aim to derive better models of complex decision-making.},
+}
+
 @inproceedings{qian:2020:comparative-study-online-chess-educational-products,
   title         = {A Comparative Study of Chess Online Educational Products},
   author        = {Dong, Qian and Miao, Rong},
@@ -1936,6 +1952,18 @@ journal       = {CoRR},
   url           = {https://ieeexplore.ieee.org/document/10825356},
   abstract      = {Machine learning has shown great success in various aspects of chess, particularly in game-playing engines such as AlphaZero. However, predicting the difficulty of chess puzzles remains a relatively unexplored area. In the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty competition, participants are asked to build a machine learning approach to predict the difficulty of chess puzzles. We present an approach that leverages deep learning and pairwise learning-to-rank techniques to estimate the difficulty of chess puzzles. Our method applies pairwise learning to rank approaches to simulate games between puzzles and uses the outcomes to estimate their Glicko-2 ratings. This approach achieved 4th place in the competition, demonstrating its effectiveness.},
   keywords      = {Deep learning;Computer vision;Transfer learning;Games;Predictive models;Big Data;Transformers;Data models;Engines;chess;deep learning;learning to rank;glicko-2},
+}
+
+@misc{rajendran:2026:oracle-guided-soft-shielding-safe-shielding-move-prediction-chess,
+  title         = {Oracle-Guided Soft Shielding for Safe Move Prediction in Chess},
+  author        = {Prajit T Rajendran and Fabio Arnez and Huascar Espinoza and Agnes Delaborde and Chokri Mraidha},
+  year          = {2026},
+  url           = {https://arxiv.org/abs/2603.08506},
+  eprint        = {2603.08506},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+  todo          = {Update with camera-ready once published: Accepted for publication at the 24th International Conference on Machine Learning and Applications (ICMLA), 2025},
+  abstract      = {In high stakes environments, agents relying purely on imitation learning or reinforcement learning often struggle to avoid safety-critical errors during exploration. Existing reinforcement learning approaches for environments such as chess require hundreds of thousands of episodes and substantial computational resources to converge. Imitation learning, on the other hand, is more sample efficient but is brittle under distributional shift and lacks mechanisms for proactive risk avoidance. In this work, we propose Oracle-Guided Soft Shielding (OGSS), a simple yet effective framework for safer decision-making, enabling safe exploration by learning a probabilistic safety model from oracle feedback in an imitation learning setting. Focusing on the domain of chess, we train a model to predict strong moves based on past games, and separately learn a blunder prediction model from Stockfish evaluations to estimate the tactical risk of each move. During inference, the agent first generates a set of candidate moves and then uses the blunder model to determine high-risk options, and uses a utility function combining the predicted move likelihood from the policy model and the blunder probability to select actions that strike a balance between performance and safety. This enables the agent to explore and play competitively while significantly reducing the chance of tactical mistakes. Across hundreds of games against a strong chess engine, we compare our approach with other methods in the literature, such as action pruning, SafeDAgger, and uncertainty-based sampling. Our results demonstrate that OGSS variants maintain a lower blunder rate even as the agent's exploration ratio is increased by several folds, highlighting its ability to support broader exploration without compromising tactical soundness.},
 }
 
 }
