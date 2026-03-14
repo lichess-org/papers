@@ -156,13 +156,13 @@
   author        = {Beliaev, Mark},
   year          = {2024},
   type          = {Doctoral Thesis},
+  institution   = {UC Santa Barbara},
   note          = {https://escholarship.org/uc/item/6mc2d7q3},
   abstract      = {
     Recent progress in machine learning has been fueled by increasing scale, enabling breakthroughs in domains such as image generation, natural language understanding, and decision-making. While tremendous improvements have been realized for low-risk applications like chat completion and recommendation, there are fundamental challenges that need to be addressed for high-risk applications like robotics and security. Specifically, this thesis is motivated by the following issues: (1) Collecting large datasets often relies on crowdsourcing, which inevitably introduces heterogeneous and potentially suboptimal data. (2) Applications that require coordination between multiple agents are often coupled with risk, making it challenging to use decentralized learning algorithms. (3) While neural networks have demonstrated tremendous predictive capabilities, they are inherently fragile to adversarial attacks. In this thesis, we present algorithms for combatting these challenges within the domains of Reinforcement Learning and Adversarial Machine Learning.
 
     The first contribution introduces two algorithms for imitation learning in suboptimal settings, demonstrating that by modeling the suboptimalities present, we can improve the learning framework. The second contribution proposes a mechanism to encourage cooperation in multi-agent reinforcement learning, demonstrating that by allowing agents to gift part of their reward, we can promote prosocial behavior in a decentralized fashion. The third contribution develops a robust classification algorithm designed for sparse attacks, demonstrating that by extending our theoretical insights from idealized settings, we can combat adversarial attacks in neural network classifiers. We test our proposed algorithms across applications in image-classification, game-playing, and robotics. Together, these contributions aim to advance the deployment of machine learning in real-world scenarios by considering practical problem settings, presenting novel theoretical and algorithmic insights, and validating these findings empirically.
   },
-  institution   = {UC Santa Barbara},
 }
 
 @inproceedings{benitez-garcia:2025:ylichess-live-interactive-over-the-board-chess-recognition-play-yolo,
@@ -1086,10 +1086,10 @@ journal       = {CoRR},
   doi           = {10.34726/hss.2025.128603},
   url           = {http://hdl.handle.net/20.500.12708/217584},
   type          = {Diploma Thesis},
+  institution   = {Technische Universit\"{a}t Wien},
   supervisor    = {Lindorfer, Martina and Bleier, Jakob},
   abstract      = {Android and iOS are the two dominant mobile operating systems in the rapidly expanding smartphone market, serving billions of users worldwide. Both platforms feature extensive app stores with millions of applications available for download. While security measures are in place to prevent the distribution of malicious or vulnerable apps, instances of malware have still been discovered in both stores. These incidents highlight a significant security risk that threatens user privacy and highlights the urgent need for advanced research in detecting malicious code and security vulnerabilities in mobile applications. As a step toward addressing this challenge, this thesis explores the feasibility of using binary similarity detection techniques to identify similarities between Android and iOS applications. To achieve this, we designed and implemented a novel analysis pipeline specifically tailored for comparing Android apps (compiled into binary OAT files) with iOS binaries. This pipeline enables the automatic identification of matches between corresponding applications across both platforms. The pipeline comprises several key stages, including preparing the apps and their third-party libraries for binary analysis, disassembling the binaries using both IDA Pro and Ghidra to account for potential variations introduced by different disassemblers, and conducting similarity analysis on the disassembly results. To assess the effectiveness of our pipeline, we conducted a comprehensive analysis on a dataset of 100 cross-platform apps. Our findings indicate that current binary similarity analysis methods have limitations in directly identifying cross-platform similarities between applications. However, we demonstrated that incorporating third-party libraries into the analysis significantly enhances similarity detection and can help to provide meaningful insights. This highlights the crucial role that third-party libraries play in cross-platform app analysis. Additionally, we found that the choice of disassembler has a significant impact on analysis results. Notably, no single disassembler proved to be clearly superior, as both exhibited their own strengths and limitations. Ultimately, this study offers valuable insights into the challenges and potential of cross-platform binary app analysis using traditional binary diffing techniques, laying a strong foundation for future research in this evolving field.},
   keywords      = {Mobile Security; Android; iOS; Binary Analysis; Cross-Platform Analysis},
-  institution   = {Technische Universit\"{a}t Wien},
 }
 
 @article{Kevanishvili:2026:hybrid-human-centric-framework-discriminating-engine-like-human-like-chess-play-proof-concept-study,
@@ -1173,9 +1173,9 @@ journal       = {CoRR},
   eprint        = {2509.13892},
   url           = {https://arxiv.org/abs/2509.13892},
   abstract      = {Smartphone usage data can provide valuable insights for understanding interaction with technology and human behavior. However, collecting large-scale, in-the-wild smartphone usage logs is challenging due to high costs, privacy concerns, under representative user samples and biases like non-response that can skew results. These challenges call for exploring alternative approaches to obtain smartphone usage datasets. In this context, large language models (LLMs) such as Open AI's ChatGPT present a novel approach for synthetic smartphone usage data generation, addressing limitations of real-world data collection. We describe a case study on how four prompt strategies influenced the quality of generated smartphone usage data. We contribute with insights on prompt design and measures of data quality, reporting a prompting strategy comparison combining two factors, prompt level of detail (describing a user persona, describing the expected results characteristics) and seed data inclusion (with versus without an initial real usage example). Our findings suggest that using LLMs to generate structured and behaviorally plausible smartphone use datasets is feasible for some use cases, especially when using detailed prompts. Challenges remain in capturing diverse nuances of human behavioral patterns in a single synthetic dataset, and evaluating tradeoffs between data fidelity and diversity, suggesting the need for use-case-specific evaluation metrics and future research with more diverse seed data and different LLM models.},
+  dataset       = {https://osf.io/u2h3d/},
   archiveprefix = {arXiv},
   primaryclass  = {cs.HC},
-  data          = {https://osf.io/u2h3d/},
 }
 
 @article{kuboki:2025:policies-multiple-skill-levels-better-strength-estimation-games,
@@ -1569,11 +1569,11 @@ journal       = {CoRR},
   author        = {Mok, Lillio},
   year          = {2024},
   type          = {Doctoral Thesis},
+  institution   = {University of Toronto},
   supervisor    = {Anderson, Ashton},
   note          = {http://hdl.handle.net/1807/140863},
   abstract      = {We rely on all manners of digital systems to organize and facilitate our human functions. From social networks connecting us to each other, to content providers keeping us perpetually entertained, to search engines serving each of our informational needs, to computational models informing us how healthy we are, to artificially-intelligent coaches supplementing our natural intelligence, every corner of human existence is permeated by the digital tools we create. Accompanying the boons of these systems, however, are increasingly complex risks to our digital health. Our attention is pulled into cyberspace via algorithms that use billions of datapoints to learn what we like, sometimes to the detriment of our physical wellness. Ideological rifts online threaten our societal harmony as partisans become ever more polarized, whose obsession with political content in turn feeds the underbelly of our social media ecosystem. All the while, the same data underpinning these online interactions also allow others to make finely-optimized decisions about us, often to the detriment of the disadvantaged. This thesis offers a more optimistic vision: that the same computational infrastructure powering our potentially perilous systems can be repurposed to help us understand their perils. We first outline a framework for rigorously assessing the welfare of our digital systems through the well-being of individual users, the cohesion of user communities, and whether the systems themselves deserve trust. We then utilize this framework to conduct four empirical studies measuring the extent to which digital welfare is preserved or endangered by data-driven systems. At the level of individual users, we directly measure how spending time on a large-scale chess platform, Lichess, can be perceived as detrimental to personal well-being. We find that perceived harms are explained not only by the time that people believe they spend online, but also the actual time they spend engaging with the platform. For groups of users, we quantify how partisan users on the Reddit platform are selective towards politically-congruent news outlets, thus consuming and disseminating polarized news. Despite the platform appearing polarized on aggregate, we discover that narrow, hyper-partisan communities are responsible for deeply-ingrained ideological segregation. We then extend this result by identifying whether key individuals can influence the news consumption cycle on Reddit. Through an analysis of where news about political figures is shared on Reddit and the language it attracts, we illustrate that nationally-recognizable politicians are selectively discussed more by in-group online communities than they are by in-group news outlets. Out-group communities, on the other hand, generate the most toxic and hateful commentary. At the level of problematic downstream outcomes, we further probe whether people can tell when systems like algorithmic risk assessments harm data subjects in unfair ways. We find that observers are easily distracted by who makes risk assessments rather than how equitable the assessments are, suggesting that the task of welfare measurement itself needs to be made accessible for laypeople at large. This thesis posits that the online social systems jeopardizing our collective welfare can also be used to understand the very dangers they pose. By empirically measuring how well people are doing when they use or are impacted by these systems, we in turn empirically demonstrate the feasibility of this ideal. We conclude by speculating on the imminent ubiquity of artificial intelligence in our cyber-environment and their implications for the work in this thesis.},
   keywords      = {Computational Social Science, Data Science, Human-AI Interaction, Human-Computer Interaction, Web Science},
-  institution   = {University of Toronto},
 }
 
 @article{mondal:2025:adaptive-decision-making-in-the-wild-case-study-chess,
@@ -1686,9 +1686,9 @@ journal       = {CoRR},
   author        = {Nolan, Eva and Scognamillo, Valentin},
   year          = {2021},
   url           = {https://github.com/lichess-org/database/blob/master/web/chess-social-networks-paper.pdf},
+  institution   = {Hamilton College},
   note          = {Student project},
   abstract      = {The goal of this research is to analyze the structure of the network of chess players that play on Lichess.org. We aim to understand the way that Lichess randomizes player pairings and how closely related players are in order to better understand the relationship between ranking and pairing systems. We will also observe the behavior of players with respect to the game types that they play to see if this influences player groupings. Another hope of this project is to do an exploratory analysis of standout players and those that choose their opponents, rather than let the algorithm choose for them.},
-  institution   = {Hamilton College},
 }
 
 @misc{nordby:2025:soft-prompts-evaluation-measuring-conditional-distance-capabilities,
@@ -1710,10 +1710,10 @@ journal       = {CoRR},
   doi           = {10.13140/RG.2.2.18931.13604},
   url           = {http://dx.doi.org/10.13140/RG.2.2.18931.13604},
   type          = {mathesis},
+  institution   = {University College Dublin},
   supervisor    = {Riccardo Rastelli},
   abstract      = {The ranking of players and particularly of chess players has been a topic of debate throughout the last 80 years. Such exploration spawned what has become the benchmark of evaluating professional chess players since the 1970s: the Elo rating model. The Elo system, the first to have a sound statistical basis, was designed by Elo (1978) from the assumption that the performance of a player in a game is a normally distributed random variable Alliot (2017). However, this ranking model is not without its limitations and such has led to extreme rating deflation of the World Chess Federation (FIDE) Standard Elo rating system Sonas (2023). Such attention on the FIDE's rating mechanism has ignited focus on the Elo system's drawbacks which we will address in this dissertation.},
   pdf           = {https://www.researchgate.net/profile/Patrick-Orourke-7/publication/383313248_An_alternative_chess_rating_model_based_on_latent_variables/links/66c87d5975613475fe76987d/An-alternative-chess-rating-model-based-on-latent-variables.pdf},
-  institution   = {University College Dublin},
 }
 
 @inproceedings{omori:2024:chess-rating-estimation-moves-clock-times-cnn-lstm,
@@ -2259,10 +2259,10 @@ journal       = {CoRR},
   doi           = {10.21256/zhaw-31999},
   url           = {https://digitalcollection.zhaw.ch/items/2ca7f5f3-535c-406a-87af-432ea6ba940b},
   type          = {Bachelor's thesis},
+  institution   = {Z{\"u}rcher Hochschule f{\"u}r Angewandte Wissenschaften},
   supervisor    = {Cieliebak, Mark	and von D\"{a}niken, Pius},
   abstract      = {This research investigates the potential for large language models to learn to generate valid chess moves solely through pre-training on chess game data. The primary objective of this study is to investigate the impact of custom notation systems and tokenisation methods specifically designed for use with chess games. The study aims to improve the models' understanding of game states and move sequences by developing and implementing a custom notation system, xLAN+. This notation system incorporates additional information about captures, checks and checkmates in order to increase the performance of the models. Furthermore, the strategic gameplay capabilities of the models are to be enhanced by fine-tuning them on datasets filtered by Elo rating. This approach postulates that filtering games by skill level can help models develop a deeper understanding of strategic gameplay, thereby improving their ability to generate high-quality moves. The research uses two different architectures, Transformer, based on OpenAI's GPT-2 configuration, and Mamba, a State Space Model (SSM) optimised for long sequence processing. Initial findings indicate that the custom notation xLAN+ significantly improves the models' ability to generate valid moves and maintain game state accuracy over extended sequences. The comparison between GPT-2 and Mamba reveals that while both architectures can learn chess rules and generate plausible moves, the SSM offers slight advantages in handling long-range dependencies and maintaining game context. This project demonstrates the potential of language models to learn complex tasks like chess through data-driven approaches, paving the way for their application in other strategic and decision-making domains.},
   keywords      = {AI, Chess, GPT-2, LLM, Mamba, NLP, KI, Schach},
-  institution   = {Z{\"u}rcher Hochschule f{\"u}r Angewandte Wissenschaften},
 }
 
 @article{schroedter:2025:role-expertise-impulsivity-preference-intuition-decision-quality,
@@ -2624,9 +2624,9 @@ journal       = {CoRR},
   number        = {2019:377},
   pages         = {18},
   type          = {Bachelor's thesis},
+  institution   = {KTH, School of Electrical Engineering and Computer Science (EECS)},
   supervisor    = {Markidis, Stefano},
   abstract      = {Convolutional neural networks are typically applied to image analysis problems. We investigate whether a simple convolutional neural network can be trained to evaluate chess positions by means of predicting Stockfish (an existing chess engine) evaluations. Publicly available data from lichess.org was used, and we obtained a final MSE of 863.48 and MAE of 12.18 on our test dataset (with labels ranging from -255 to +255). To accomplish better results, we conclude that a more capable model architecture must be used.},
-  institution   = {KTH, School of Electrical Engineering and Computer Science (EECS)},
 }
 
 @inproceedings{wang:2025:explore-reasoning-capability-llms-chess-testbed,
@@ -2825,11 +2825,11 @@ journal       = {CoRR},
   year          = {2022},
   url           = {https://ruj.uj.edu.pl/xmlui/handle/item/295689},
   type          = {Master's thesis},
+  institution   = {Jagiellonian University},
   supervisor    = {\.{Z}elawski Marcin},
   note          = {Polish keywords: Szachy, Topologiczna analiza danych, Wzorce Projektowe, Modelowanie danych, Modu\l{}y, Teoria Kategorii, Topologia. Polish abstract: W niniejszej pracy magisterskiej zosta\l{}a wykorzystana Topologiczna Analiza Danych do przeanalizowania partii szachowych, kt\'{o}re zosta\l{}y zgromadzone z portalu lichess.org. Celem analizy jest rozr\'{o}\.{z}nienie graczy z r\'{o}\.{z}nym poziomem umiej\k{e}tno\'{s}ci oraz jak najlepsze odtworzenie rankingu dla najlepszych graczy. Partia ka\.{z}dego gracza jest reprezentowana przezwielowymiarowy wektor, kt\'{o}ry koduje informacje o przebiegu rozgrywki.Przedstawione s\k{a} trzy podej\'{s}cia do stworzenia tego wektora, co pozwalaskupi\'{c} si\k{e} na r\'{o}\.{z}nych aspektach partii szachowej. Proponowana analiza zosta\l{}a przeprowadzona w celu weryfikacji, czy Topologiczna Analiza Danych jest odpowiednia dla problem\'{o}w powi\k{a}zanych z szachami. W rezultacie zosta\l{}o pokazane, \.{z}e Topologiczna Analiza Danych jest potencjalnym narz\k{e}dziem do rozpoznania jako\'{s}ci gracza, o ile mamy wystarczaj\k{a}c\k{a} liczb\k{e} jego partii, oraz do rekonstruowania ranking\'{o}w. Wa\.{z}nym rezultatem jest r\'{o}wnie\.{z} potencja\l{} do dalszych bada\'{n}, dla kt\'{o}rych ta praca magisterska mo\.{z}e by\'{c} fundamentalna.},
   abstract      = {This thesis uses Topological Data Analysis to examine the data collected from the lichess.org portal. The analysis was based on the games of players playing at different levels. The purpose of the analysis was to distinguish groups of players and players with the highest ranking from eachother. Each player's game is represented by a multidimensional vectorthat encodes information about the course of the game. There are threeapproaches to creating this vector, allowing us to focus on different aspects of the chess game. The proposed analysis was carried out with theintention of verifying the Topological Data Analysis as a tool for analyzing chess games. As a result, it was shown that Topological Data Analysis can be a potential tool for recognizing the quality of a given player, if wehave enough number of his games, and to reconstruct player rankings. Asignificant result is also the potential for further research for which this thesis could be the foundation.},
   keywords      = {Chess, Topological Data Analysis, Design Patterns, Data modeling, Modules, Category theory, Topology},
-  institution   = {Jagiellonian University},
 }
 
 @inproceedings{zhang:2024:transcendence-generative-models-can-outperform-experts-that-train-them,
