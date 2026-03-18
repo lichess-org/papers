@@ -1804,8 +1804,8 @@ journal       = {CoRR},
   booktitle     = {2025 International Conference on Software Maintenance and Evolution (ICSME)},
   abstract      = {Development teams for mobile applications can receive thousands of user reviews daily. At the same time, these developers use different communication channels, such as the GitHub issue tracker. Although GitHub issues are accessible and manageable for developers, their content often differs starkly from what users write in app reviews. Issues may lack steps to reproduce bugs or insights that justify the priority of new feature requests. The sheer volume of user reviews for a popular app, combined with their heterogeneity and varying quality, makes manual integration into issue trackers unfeasible. We present an approach that automatically augments GitHub issues with informative user reviews to bridge the gap between user feedback and developer-managed issues. Using a state-of-the-art large language model (LLM), our approach automatically retrieves user reviews with high semantic textual similarity (STS) to the issue content and suggests reviews that augment developers' understanding of the issue. In this paper, we present large-scale quantitative and qualitative analyses to assess the feasibility of enriching development workflows with user-written information. Using over 37,000 issues and 750,000 reviews from 19 popular Free/Libre/Open Source Software (FLOSS) mobile applications, our approach augments 3,017 (8\%) issues with 7,287 (1\%) potentially informative reviews. In addition to providing insights into user-reported bugs and feature requests, the information from these matches points toward a novel and promising way to leverage user reviews for concerted app evolution.},
   keywords      = {Semantic Textual Similarity, User Feedback Mining, GitHub Issues, Information Retrieval, Software Repository Mining},
-  dataset       = {https://figshare.com/articles/dataset/Replication_package_for_the_paper_Automatically_Augmenting_GitHub_Issues_with_Informative_User_Reviews_/28578140},
   code          = {https://gitlab.com/ArthurPilone/deepermatcher},
+  dataset       = {https://figshare.com/articles/dataset/Replication_package_for_the_paper_Automatically_Augmenting_GitHub_Issues_with_Informative_User_Reviews_/28578140},
 }
 
 @misc{poesia:2025:programmatic-representation-learning-language-models,
@@ -2151,7 +2151,6 @@ journal       = {CoRR},
   url           = {https://arxiv.org/abs/2512.03109},
   abstract      = {Agentic AI systems execute a sequence of actions, such as reasoning steps or tool calls, in response to a user prompt. To evaluate the success of their trajectories, researchers have developed verifiers, such as LLM judges and process-reward models, to score the quality of each action in an agent's trajectory. Although these heuristic scores can be informative, there are no guarantees of correctness when used to decide whether an agent will yield a successful output. Here, we introduce e-valuator, a method to convert any black-box verifier score into a decision rule with provable control of false alarm rates. We frame the problem of distinguishing successful trajectories (that is, a sequence of actions that will lead to a correct response to the user's prompt) and unsuccessful trajectories as a sequential hypothesis testing problem. E-valuator builds on tools from e-processes to develop a sequential hypothesis test that remains statistically valid at every step of an agent's trajectory, enabling online monitoring of agents over arbitrarily long sequences of actions. Empirically, we demonstrate that e-valuator provides greater statistical power and better false alarm rate control than other strategies across six datasets and three agents. We additionally show that e-valuator can be used for to quickly terminate problematic trajectories and save tokens. Together, e-valuator provides a lightweight, model-agnostic framework that converts verifier heuristics into decisions rules with statistical guarantees, enabling the deployment of more reliable agentic systems.},
   code          = {https://github.com/shuvom-s/e-valuator},
-  code          = {https://pypi.org/project/e-valuator/},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
@@ -2527,6 +2526,19 @@ journal       = {CoRR},
   pages         = {1369--1379},
   url           = {https://aclanthology.org/2021.ranlp-1.153},
   abstract      = {We analyse how a transformer-based language model learns the rules of chess from text data of recorded games. We show how it is possible to investigate how the model capacity and the available number of training data influence the learning success of a language model with the help of chess-specific metrics. With these metrics, we show that more games used for training in the studied range offers significantly better results for the same training time. However, model size does not show such a clear influence. It is also interesting to observe that the usual evaluation metrics for language models, predictive accuracy and perplexity, give no indication of this here. Further examination of trained models reveals how they store information about board state in the activations of neuron groups, and how the overall sequence of previous moves influences the newly-generated moves.},
+}
+
+@article{sukhorukov:2026:effect-visual-attention-outcome-chess-game,
+  title         = {Effect of visual attention on the outcome of a chess game},
+  author        = {Vladislav Sukhorukov and Sergei Gostilovich and Anh-Huy Phan},
+  year          = {2026},
+  journal       = {Computers in Human Behavior Reports},
+  pages         = {100998},
+  doi           = {10.1016/j.chbr.2026.100998},
+  issn          = {2451-9588},
+  url           = {https://www.sciencedirect.com/science/article/pii/S2451958826000722},
+  abstract      = {This research explores the relationship between visual attention and chess performance through an analysis of eye-tracking data collected from 30 participants engaging with 15 chess puzzles of varying difficulty levels. By constructing saliency maps and conducting correlation analyses, we identified that successful players tend to focus on critical areas of the chessboard. Furthermore, we have found 22 out of 35 general features, 11 out of 26 Important squares features, and 40 out of 55 Attention map features to be statistically significant. To predict puzzle-solving success, we evaluated three predictive models: Puzzle-agnostic (puzzle independent), Puzzle-informed (with additional features encoding puzzle information), and Puzzle-driven (individual feature set for each puzzle). The Puzzle-driven model, performing feature selection for each puzzle individually, achieved the highest accuracy of 0.8911 with a standard deviation of 0.0452. These findings not only highlight the importance of visual attention in chess performance but also showcase the value of the newly introduced complex features. Both the Important squares and the Attention maps can be viewed as extensions of ideas rooted in earlier literature, particularly chunk theory. Their success demonstrates the possibilities of applying chunk theory beyond theoretical explanations, enabling its practical use in real-world tasks such as feature construction and model development.},
+  keywords      = {Eye-tracking, Visual attention, Chess, Machine learning, Saliency maps, Correlation analysis},
 }
 
 @inproceedings{tang:2024:maia-2-unified-model-human-ai-alignment-chess,
