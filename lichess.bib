@@ -106,6 +106,7 @@
   url           = {https://openreview.net/forum?id=BLOIB8CwBI},
   abstract      = {Generative sequence models are typically trained on sample sequences from natural or formal languages. It is a crucial question whether -- or to what extent -- sample-based training is able to capture the true structure of these languages, often referred to as the "world model". Theoretical results indicate that we can hope for soundness at best, that is, generating valid sequences, but not necessarily all of them. However, it is still important to have practical tools that are able to verify whether a given sequence model is sound. In this study, we focus on chess, as it is a domain that provides enough complexity while having a simple rule-based world model. We propose adversarial sequence generation for verifying the soundness of the sequence model. Our adversaries generate valid sequences so as to force the sequence model to generate an invalid next move prediction. Apart from the falsification of soundness, this method is also suitable for a more fine-grained analysis of the failure modes and the effects of different choices during training. To demonstrate this, we propose a number of methods for adversarial sequence generation and evaluate the approach on a large set of chess models. We train models on random as well as high-quality chess games, using several training recipes. We find that none of the models are sound, but some training techniques and dataset choices are able to improve soundness remarkably. We also investigate the potential application of board state probes in both our training and attack methods. Our findings indicate that the extracted board states have no causal role in next token prediction in most of the models.},
   keywords      = {generative sequence model, implicit world model, adversarial sequences, chess},
+  affiliation   = {University of Szeged, Hungarian Academy of Sciences},
   pdf           = {https://arxiv.org/pdf/2602.05903},
   code          = {https://github.com/szegedai/world-model-verification},
 }
@@ -138,6 +139,7 @@
   url           = {https://doi.org/10.1007/978-3-031-54968-7_1},
   abstract      = {Computer chess research has traditionally focused on creating the strongest possible chess engine. Recently, however, attempts have been made to create engines that mimic the playing strength and style of human players. Our research proposes enhancements of models developed in this vein that more accurately imitate master-level players, as well as improve the prediction accuracy of existing models on weaker players. Our proposed enhancements are simple to apply by post-processing the output of existing chess engines. The performance of our enhancements was evaluated and compared using two metrics, prediction accuracy and average centipawn loss. We found that using an ensemble model over search depths maximised prediction accuracy, while an evaluation window filtering approach was preferable with respect to average centipawn loss.},
   keywords      = {Artificial intelligence, Chess, Action prediction},
+  affiliation   = {Stellenbosch University},
 }
 
 @article{bart:2023:can-artificial-intelligence-identify-creativity,
@@ -228,6 +230,8 @@
   numpages      = {11},
   abstract      = {We present a novel method to find chess positions similar to a given query position from a collection of chess games. We consider not only the static similarity resulting from the arrangement of chess pieces, but also the dynamic similarity involving the recognition of chess motifs and the tactical, dynamic aspects of position similarity. By encoding chess tactical problems as text documents, we use information retrieval techniques to enable efficient approximate searches. We have also developed a method for automatically generating tactical puzzles from a collection of chess games. We have experimentally shown the importance of including both static and dynamic features for successful recognition of similar chess motifs. The experiments have clearly shown that dynamic similarity plays a very important role in the evaluation of the similarity of chess motifs by both the program and chess experts.},
   keywords      = {Problem solving, Chess motifs, Automatic similarity recognition},
+  affiliation   = {University of Ljubljana},
+  pdf           = {https://icga.org/wp-content/uploads/2021/11/ACG_2021_paper_30.pdf},
 }
 
 @inproceedings{bjorkqvist:2024:estimating-puzzlingness-chess-puzzles,
@@ -376,6 +380,7 @@
   url           = {https://cs224r.stanford.edu/projects/pdfs/CS224R_Final_Report__1_%20(3).pdf},
   note          = {Final project for CS 224R Deep Reinforcement Learning, Spring 2025 https://cs224r.stanford.edu/projects/cs224r_final_projects.html},
   abstract      = {Traditional chess engines face a compelling dual challenge that significantly limits their practical utility for human chess education and training. First, engines like Stockfish, AlphaZero, and LeelaChess require computationally intensive tree-search algorithms, evaluating millions of positions per second to determine optimal moves. Second, and more critically, these systems fail to provide realistic opponents for human players across different skill levels. Current approaches create weaker opponents by simply limiting search depth, resulting in highly inconsistent play patterns that alternate unpredictably between brilliant strategic moves and inexplicable blunders--fundamentally unlike the systematic, consistent errors characteristic of human players at specific ELO ratings. This creates an unrealistic training environment where players practice against opponents that exhibit superhuman tactical vision followed by irrational mistakes, poorly preparing them for actual human competition.},
+  affiliation   = {Stanford University},
 }
 
 @article{chowdhary:2023:quantifying-human-performance-chess,
@@ -392,6 +397,7 @@
   issn          = {2045-2322},
   url           = {https://doi.org/10.1038/s41598-023-27735-9},
   abstract      = {From sports to science, the recent availability of large-scale data has allowed to gain insights on the drivers of human innovation and success in a variety of domains. Here we quantify human performance in the popular game of chess by leveraging a very large dataset comprising of over 120 million games between almost 1 million players. We find that individuals encounter hot streaks of repeated success, longer for beginners than for expert players, and even longer cold streaks of unsatisfying performance. Skilled players can be distinguished from the others based on their gaming behaviour. Differences appear from the very first moves of the game, with experts tending to specialize and repeat the same openings while beginners explore and diversify more. However, experts experience a broader response repertoire, and display a deeper understanding of different variations within the same line. Over time, the opening diversity of a player tends to decrease, hinting at the development of individual playing styles. Nevertheless, we find that players are often not able to recognize their most successful openings. Overall, our work contributes to quantifying human performance in competitive settings, providing a first large-scale quantitative analysis of individual careers in chess, helping unveil the determinants separating elite from beginner performance.},
+  affiliation   = {Central European University},
 }
 
 @article{chowdhury:2021:predicting-chess-openings-modelling-opponents,
