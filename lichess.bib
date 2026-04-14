@@ -123,6 +123,7 @@
   url           = {https://doi.org/10.48550/arXiv.2410.14363},
   abstract      = {This paper presents a data-driven statistical framework to quantify the role of skill in games, addressing the long-standing question of whether success in a game is predominantly driven by skill or chance. We analyze player level data from four popular games Chess, Rummy, Ludo, and Teen Patti, using empirical win statistics across varying levels of experience. By modeling win rate as a function of experience through a regression framework and employing empirical bootstrap resampling, we estimate the degree to which outcomes improve with repeated play. To summarize these dynamics, we propose a flexible skill score that emphasizes learning over initial performance, aligning with practical and regulatory interpretations of skill. Our results reveal a clear ranking, with Chess showing the highest skill component and Teen Patti the lowest, while Rummy and Ludo fall in between. The proposed framework is transparent, reproducible, and adaptable to other game formats and outcome metrics, offering potential applications in legal classification, game design, and player performance analysis.},
   keywords      = {Chance, Chess, Ludo, Rummy, Skill, Statistical Analysis, Teen Patti},
+  affiliation   = {Indian Statistical Institute},
 }
 
 @inproceedings{barrish:2023:making-superhuman-ai-more-human,
@@ -155,6 +156,7 @@
   url           = {https://www.sciencedirect.com/science/article/pii/S271337452300016X},
   abstract      = {This article reports an investigation of the extent to which a chess program with an artificial intelligence component (i.e., Stockfish with NNUE) can identify 10 chess moves that are recognized as outstanding chess moves. Stockfish with NNUE was able to identify seven of the ten moves. Although Stockfish with NNUE is a very powerful chess program, it has some limitations in identifying creative chess moves. There is a discussion of those limitations.},
   keywords      = {Chess, Creative move, Creativity, Stockfish 15, Artificial intelligence},
+  affiliation   = {University of Minnesota},
 }
 
 @thesis{beliaev:2024:robust-cooperative-learning-algorithms,
@@ -469,6 +471,7 @@
   url           = {https://doi.org/10.3389/frai.2020.00024},
   abstract      = {Deep neural networks have been successfully applied in learning the board games Go, chess, and shogi without prior knowledge by making use of reinforcement learning. Although starting from zero knowledge has been shown to yield impressive results, it is associated with high computationally costs especially for complex games. With this paper, we present CrazyAra which is a neural network based engine solely trained in supervised manner for the chess variant crazyhouse. Crazyhouse is a game with a higher branching factor than chess and there is only limited data of lower quality available compared to AlphaGo. Therefore, we focus on improving efficiency in multiple aspects while relying on low computational resources. These improvements include modifications in the neural network design and training configuration, the introduction of a data normalization step and a more sample efficient Monte-Carlo tree search which has a lower chance to blunder. After training on 569537 human games for 1.5 days we achieve a move prediction accuracy of 60.4\%. During development, versions of CrazyAra played professional human players. Most notably, CrazyAra achieved a four to one win over 2017 crazyhouse world champion Justin Tan (aka LM Jann Lee) who is more than 400 Elo higher rated compared to the average player in our training set. Furthermore, we test the playing strength of CrazyAra on CPU against all participants of the second Crazyhouse Computer Championships 2017, winning against twelve of the thirteen participants. Finally, for CrazyAraFish we continue training our model on generated engine games. In 10 long-time control matches playing Stockfish 10, CrazyAraFish wins three games and draws one out of 10 matches.},
   keywords      = {deep learning, chess, crazyhouse, supervised learning, Monte-Carlo tree search},
+  affiliation   = {TU Darmstadt},
   pdf           = {https://public-pages-files-2025.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2020.00024/pdf},
   code          = {https://github.com/QueensGambit/CrazyAra},
   dataset       = {https://github.com/QueensGambit/CrazyAra/wiki/Stockfish-10:-Crazyhouse-Self-Play},
@@ -485,6 +488,7 @@
   url           = {https://ojs.aaai.org/index.php/ICAPS/article/view/15952},
   abstract      = {The AlphaZero algorithm has been successfully applied in a range of discrete domains, most notably board games. It utilizes a neural network that learns a value and policy function to guide the exploration in a Monte-Carlo Tree Search. Although many search improvements such as graph search have been proposed for Monte-Carlo Tree Search in the past, most of them refer to an older variant of the Upper Confidence bounds for Trees algorithm that does not use a policy for planning. We improve the search algorithm for AlphaZero by generalizing the search tree to a directed acyclic graph. This enables information flow across different subtrees and greatly reduces memory consumption. Along with Monte-Carlo Graph Search, we propose a number of further extensions, such as the inclusion of Epsilon-Greedy exploration, a revised terminal solver and the integration of domain knowledge as constraints. In our empirical evaluations, we use the CrazyAra engine on chess and crazyhouse as examples to show that these changes bring significant improvements to AlphaZero.},
   keywords      = {Classical Planning Techniques And Analysis, Applications And Case Studies Of Planning And Scheduling Techniques, Learning For Planning And Scheduling, Multi-agent And Distributed Planning},
+  affiliation   = {TU Darmstadt},
   pdf           = {https://ojs.aaai.org/index.php/ICAPS/article/view/15952/15763},
 }
 
@@ -581,6 +585,7 @@
   issn          = {2045-2322},
   url           = {https://doi.org/10.1038/s41598-023-31658-w},
   abstract      = {Chess is a centuries-old game that continues to be widely played worldwide. Opening Theory is one of the pillars of chess and requires years of study to be mastered. In this paper, we use the games played in an online chess platform to exploit the ``wisdom of the crowd'' and answer questions traditionally tackled only by chess experts. We first define a relatedness network of chess openings that quantifies how similar two openings are to play. Using this network, we identify communities of nodes corresponding to the most common opening choices and their mutual relationships. Furthermore, we demonstrate how the relatedness network can be used to forecast future openings players will start to play, with back-tested predictions outperforming a random predictor. We then apply the Economic Fitness and Complexity algorithm to measure the difficulty of openings and players' skill levels. Our study not only provides a new perspective on chess analysis but also opens the possibility of suggesting personalized opening recommendations using complex network theory.},
+  affiliation   = {Complexity Science Hub Vienna; Centro Ricerche Enrico Fermi},
 }
 
 @inproceedings{de-sa-delgado-neto:2019:chess-position-identification,
@@ -692,6 +697,7 @@
   issn          = {2451-9588},
   url           = {https://www.sciencedirect.com/science/article/pii/S2451958824001295},
   abstract      = {With the growing capabilities of AI, technology is increasingly able to match or even surpass human performance. In the current study, focused on the game of chess, we investigated whether chess players could distinguish if they were playing against a human or a computer, and how they achieved this. A total of 24 chess players each played eight 5+0 Blitz games from different starting positions. They played against (1) a human, (2) Maia, a neural network-based chess engine trained to play in a human-like manner, (3) Stockfish 16, the best chess engine available, downgraded to play at a lower level, and (4) Stockfish 16 at its maximal level. The opponent's move time was fixed at 10 seconds. During the game, participants verbalized their thoughts, and after each game, they indicated by means of a questionnaire whether they thought they had played against a human or a machine and if there were particular moves that revealed the nature of the opponent. The results showed that Stockfish at the highest level was usually correctly identified as an engine, while Maia was often incorrectly identified as a human. The moves of the downgraded Stockfish were relatively often labeled as `strange' by the participants. In conclusion, the Turing test, as applied here in a domain where computers can perform superhumanly, is essentially a test of whether the chess computer can devise suboptimal moves that correspond to human moves, and not necessarily a test of computer intelligence.},
+  affiliation   = {Delft University of Technology},
 }
 
 @inproceedings{feng:2023:chessgpt-bridging-policy-learning-language-modeling,
@@ -731,6 +737,7 @@
   eprint        = {2601.03220},
   url           = {https://arxiv.org/abs/2601.03220},
   abstract      = {Can we learn more from data than existed in the generating process itself? Can new and useful information be constructed from merely applying deterministic transformations to existing data? Can the learnable content in data be evaluated without considering a downstream task? On these questions, Shannon information and Kolmogorov complexity come up nearly empty-handed, in part because they assume observers with unlimited computational capacity and fail to target the useful information content. In this work, we identify and exemplify three seeming paradoxes in information theory: (1) information cannot be increased by deterministic transformations; (2) information is independent of the order of data; (3) likelihood modeling is merely distribution matching. To shed light on the tension between these results and modern practice, and to quantify the value of data, we introduce epiplexity, a formalization of information capturing what computationally bounded observers can learn from data. Epiplexity captures the structural content in data while excluding time-bounded entropy, the random unpredictable content exemplified by pseudorandom number generators and chaotic dynamical systems. With these concepts, we demonstrate how information can be created with computation, how it depends on the ordering of the data, and how likelihood modeling can produce more complex programs than present in the data generating process itself. We also present practical procedures to estimate epiplexity which we show capture differences across data sources, track with downstream performance, and highlight dataset interventions that improve out-of-distribution generalization. In contrast to principles of model selection, epiplexity provides a theoretical foundation for data selection, guiding how to select, generate, or transform data for learning systems.},
+  affiliation   = {Carnegie Mellon University; New York University},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
@@ -892,6 +899,7 @@
   issn          = {2045-2322},
   url           = {https://doi.org/10.1038/s41598-024-70701-2},
   abstract      = {With large chess-playing neural network models like AlphaZero contesting the state of the art within the world of computerised chess, two challenges present themselves: the question of how to explain the domain knowledge internalised by such models, and the problem that such models are not made openly available. This work presents the re-implementation of the concept detection methodology applied to AlphaZero, by using large, open-source chess models with comparable performance. We obtain results similar to those achieved when applying this methodology to AlphaZero, while relying solely on open-source resources. We also present a novel explainable AI (XAI) method, which is guaranteed to highlight exhaustively and exclusively the information used by the explained model. This method generates visual explanations tailored to domains characterised by discrete input spaces, as is the case for chess. Our presented method has the desirable property of controlling the information flow between any input vector and the given model, which in turn provides strict guarantees regarding what information is used by the trained model during inference. We demonstrate the viability of our method by applying it to standard {\$}{\$}8 {\backslash}times 8{\$}{\$}chess, using large open-source chess models.},
+  affiliation   = {Norwegian University of Science and Technology},
   website       = {https://patrik-ha.github.io/ii-map/},
   code          = {https://github.com/patrik-ha/ii-map},
 }
@@ -903,6 +911,7 @@
   eprint        = {2401.16852},
   url           = {https://arxiv.org/abs/2401.16852},
   abstract      = {In games like chess, strategy evolves dramatically across distinct phases - the opening, middlegame, and endgame each demand different forms of reasoning and decision-making. Yet, many modern chess engines rely on a single neural network to play the entire game uniformly, often missing opportunities to specialize. In this work, we introduce M2CTS, a modular framework that combines Mixture of Experts with Monte Carlo Tree Search to adapt strategy dynamically based on game phase. We explore three different methods for training the neural networks: Separated Learning, Staged Learning, and Weighted Learning. By routing decisions through specialized neural networks trained for each phase, M2CTS improves both computational efficiency and playing strength. In experiments on chess, M2CTS achieves up to +122 Elo over standard single-model baselines and shows promising generalization to multi-agent domains such as Pommerman. These results highlight how modular, phase-aware systems can better align with the structured nature of games and move us closer to human-like behavior in dividing a problem into many smaller units.},
+  affiliation   = {TU Darmstadt},
   code          = {https://github.com/QueensGambit/CrazyAra},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
@@ -918,6 +927,7 @@
   url           = {https://escholarship.org/uc/item/403764rd},
   abstract      = {Humans are social beings, and most of our decisions are influenced by considerations of how others will respond. Whether in poker or political negotiations, the riskiness of a decision is often determined by the variance of the other party's possible responses. Such socially-contingent decisions can be framed in terms of adversarial games, which differ from other risky situations such as lotteries because the risk arises from uncertainty about the opponent's decisions, and not some independent stochasticity in the world. We use chess as a lens through which we can study human risk-taking behavior in adversarial decision making. We develop a novel algorithm for calculating the riskiness of each move in a chess game, and apply it to data from over 1 billion online chess games. We find that players not only exhibit state-dependent risk preferences, but also change their risk-taking strategy depending on their opponent, and that this effect differs in experts and novices.},
   keywords      = {risk taking; adversarial games; chess},
+  affiliation   = {University of California San Diego},
   blog          = {https://www.linkedin.com/pulse/what-can-1-billion-chess-games-tell-us-risk-taking-cameron-holdaway/},
   code          = {https://github.com/choldawa/Chess},
 }
@@ -992,6 +1002,7 @@ journal       = {CoRR},
   url           = {https://ceur-ws.org/Vol-3885/paper13.pdf},
   abstract      = {This study addresses the challenge of distinguishing between human and computer-generated play in chess, crucial for ensuring the integrity and fairness of both onlineand tournament play. As unauthorized computer assistance becomes increasinglysophisticated, we utilize sequential neural networks to analyze a vast dataset of chessgames, employing both traditional engines, such as Stockfish and Leela, andinnovative neural networks like Maia and its individual sub-models. This analysisincorporates centipawn deviation metrics to gauge departures from typicalcomputer strategies, Maia's insights into human and idiosyncratic playstyles, and anevaluation of time distribution for moves. Our method extends by considering thestrategic implications of move sequences and the consistency of play under varyinggame conditions, enhancing our understanding of the nuanced differences betweenhuman and AI play. Remarkably, our algorithm achieves approximately 98\% accuracyin identifying the use of chess engines, offering a significant advancement in effortsto maintain the game's integrity.To further validate our findings, we conducted cross-validation with a separatedataset, confirming the robustness of our model. We also explored the algorithm'sapplicability to detecting AI assistance in other board games, suggesting its potentialfor broader use. The research highlights the critical role of machine learning incombating digital cheating, emphasizing the need for continuous adaptation ofdetection methods to keep pace with evolving technologies. Additionally, ourfindings point to the importance of developing ethical guidelines for the use of AI ingames, ensuring a fair and level playing field for all participants. Lastly, bypublishing our methodology and the criteria for AI detection, we aim to foster anopen dialogue within the gaming community and among developers, promotingtransparency and collaboration in the fight against cheating.},
   keywords      = {Chess, Cheating, AI, Neural Networks},
+  affiliation   = {Caucasus University},
   video         = {https://www.youtube.com/watch?v=hJ7POry_q6U},
 }
 
@@ -1131,6 +1142,7 @@ journal       = {CoRR},
   url           = {https://www.mdpi.com/2571-5577/9/1/11},
   abstract      = {The rapid growth of online chess has intensified the challenge of distinguishing engine-assisted from authentic human play, exposing the limitations of existing approaches that rely solely on deterministic evaluation metrics. This study introduces a proof-of-concept hybrid framework for discriminating between engine-like and human-like chess play patterns, integrating Stockfish's deterministic evaluations with stylometric behavioral features derived from the Maia engine. Key metrics include Centipawn Loss (CPL), Mismatch Move Match Probability (MMMP), and a novel Curvature-Based Stability (\ensuremath{\Delta}S) indicator. These features were incorporated into a convolutional neural network (CNN) classifier and evaluated on a controlled benchmark dataset of 1000 games, where "suspicious" gameplay was algorithmically generated to simulate engine-optimal patterns, while "clean" play was modeled using Maia's human-like predictions. Results demonstrate the framework's ability to discriminate between these behavioral archetypes, with the hybrid model achieving a macro F1-score of 0.93, significantly outperforming the Stockfish-only baseline (F1 = 0.87), as validated by McNemar's test (p = 0.0153). Feature ablation confirmed that Maia-derived features reduced false negatives and improved recall, while \ensuremath{\Delta}S enhanced robustness. This work establishes a methodological foundation for behavioral pattern discrimination in chess, demonstrating the value of combining deterministic and human-centric modeling. Beyond chess, the approach offers a template for behavioral anomaly analysis in cybersecurity, education, and other decision-based domains, with real-world validation on adjudicated misconduct cases identified as the essential next step.},
   keywords      = {online chess; gameplay integrity analysis; hybrid system design; stylometric modeling; centipawn loss; move match probability; convolutional neural networks; explainable AI; human-AI interaction; applied system innovation},
+  affiliation   = {Caucasus University},
   article-number = {11},
 }
 
@@ -1254,6 +1266,7 @@ journal       = {CoRR},
   url           = {osf.io/preprints/psyarxiv/d8zje},
   abstract      = {Acting intelligently in complex environments poses a challenging learning problem: faced with many different situations and possible actions, how do people learn which action to take in each situation? While traditional laboratory-based experiments have been used to study specific learning mechanisms, these experiments often employ relatively simple tasks conducted over a short period of time. Thus, it is unclear to what extent these mechanisms are used in the significantly more complex and temporally extended environments people encounter in their everyday lives. To understand the processes by which people learn policies to guide their decisions, we investigate the opening strategies of novice online chess players over their first months of play. We use a large online data set consisting of 2,499,783 games, providing us with the necessary scale to explore learning mechanisms in a complex setting. In particular, we focus on two types of learning: reinforcement learning, or learning from rewards given repeated experiences, and social learning, or learning from the actions of others. We show that players' choices are modulated by both game outcomes and observing their opponents' actions, and that they exhibit important hallmarks of adaptive decision-making such as exploration and expertise. Our results provide evidence that people use sophisticated learning algorithms in naturalistic strategic behavior.},
   keywords      = {decision-making, learning, reinforcement learning, social learning},
+  affiliation   = {Princeton University; New York University},
   code          = {https://github.com/ionatankuperwajs/learning-openings},
 }
 
@@ -1265,6 +1278,7 @@ journal       = {CoRR},
   volume        = {47},
   url           = {https://escholarship.org/uc/item/75b4m9c2},
   abstract      = {Human planning is incredibly efficient. Even in complex situations with many possible courses of action, people are able to make good decisions. Recent proposals suggest that a primary contributor to this efficiency is the intelligent use of cognitive resources, but how people allocate these resources under time constraints is not fully understood. In this work, we conduct a resource-rational analysis of planning in a large data set of online chess games. We first demonstrate that players spent more time thinking when they had more time to do so, and that this effect was especially prevalent when computation was more valuable. Then, we show that additional time spent planning resulted in better selected moves when one existed, and compare between signals of general and immediate time pressure. Finally, we highlight the role of expertise in this setting. Our results provide evidence that people make resource-rational choices when planning under time pressure.},
+  affiliation   = {Princeton University; New York University; University of Oxford},
 }
 
 @inproceedings{laarhoven:2022:transparent-cheat-detection-online-chess,
@@ -1423,6 +1437,7 @@ journal       = {CoRR},
   pages         = {131--145},
   isbn          = {978-3-031-84263-4},
   abstract      = {With the development of chess engines, cheating online has never been easier, resulting in a need for more robust and accurate detection systems. This paper presents a novel approach to chess cheater detection that combines conventional chess engines and neural networks to help identify which games are authentically played by humans and which show signs of extraneous intervention. By utilizing Stockfish to measure centipawn loss and its mathematical derivatives, we can measure deviations from typical computer-generated moves much like in conventional anti-cheat systems. Additionally, the neural network Maia, designed specifically to mimic human play, transmutes centipawn loss data to highlight deviations from human style. This dual-measurement system addresses the limitations of the given traditional anti-cheat systems, which face the issue of distinguishing between strong human players and those using engines. The collected metadata is analyzed using a sequential neural network, which identifies patterns of fair play violation. Our approach offers a robust solution for maintaining the integrity of online chess by accurately detecting and preventing cheating.},
+  affiliation   = {Caucasus University},
 }
 
 @article{martin:2025:re-evaluating-metamorphic-testing-chess-engines-replication-study,
@@ -1594,6 +1609,7 @@ journal       = {CoRR},
   articleno     = {86},
   abstract      = {As online platforms become ubiquitous, there is growing concern that their use can potentially lead to negative outcomes in users' personal lives, such as disrupted sleep and impacted social relationships. A central question in the literature studying these problematic effects is whether they are associated with the amount of time users spend on online platforms. This is often addressed by either analyzing self-reported measures of time spent online, which are generally inaccurate, or using objective metrics derived from server logs or tracking software. Nonetheless, how the two types of time measures comparatively relate to problematic effects -- whether they complement or are redundant with each other in predicting problematicity -- remains unknown. Additionally, transparent research into this question is hindered by the literature's focus on closed platforms with inaccessible data, as well as selective analytical decisions that may lead to reproducibility issues.In this work, we investigate how both self-reported and data-derived metrics of time spent relate to potentially problematic effects arising from the use of an open, non-profit online chess platform. These effects include disruptions to sleep, relationships, school and work performance, and self-control. To this end, we distributed a gamified survey to players and linked their responses with publicly-available game logs. We find problematic effects to be associated with both self-reported and data-derived usage measures to similar degrees. However, analytical models incorporating both self-reported and actual time explain problematic effects significantly more effectively than models with either type of measure alone. Furthermore, these results persist across thousands of possible analytical decisions when using a robust and transparent statistical framework. This suggests that the two methods of measuring time spent measure contain distinct, complementary information about problematic usage outcomes and should be used in conjunction with each other.},
   keywords      = {online well-being, problematic platform use, specification curve analysis, survey methodology},
+  affiliation   = {University of Toronto},
   issue_date    = {April 2021},
 }
 
@@ -1897,6 +1913,7 @@ journal       = {CoRR},
     Quitting in Online Chess players: My first project looked at the quitting behavior of online chess players. Using the the open access data from lichess.org, I analyzed chess players' propensity to quit in 'Classical' chess matches. Using a combination of game factors and custom quitting factors, I quantified the quitting behavior of player with a statistical hazard of quitting. I also showed evidence for tilting in chess players, that occurs as a consquence of quitting a chess match.
   },
   abstract      = {Online chess serves as a naturalistic context where cognitive processes can be studied within rule-based, constrained environments. Player skills are defined via ELO rating system accomodating game factors such as wins/losses, and change in ratings over time. Furthermore, quitting a chess match possesses actual consequences for a player by affecting their rankings/ratings. We used chess as a testbed for understanding quitting due to its adversarial nature and availability of large amounts of data that contribute towards its ecological relevance.},
+  affiliation   = {Indian Institute of Technology Kanpur},
   website       = {https://www.cgs.iitk.ac.in/user/hariharan22/site/},
 }
 
@@ -1908,6 +1925,7 @@ journal       = {CoRR},
   volume        = {47},
   url           = {https://escholarship.org/uc/item/02n5p1j5},
   abstract      = {Stopping decisions are frequently modeled as decisions to switch to alternative activities once the current activity stops being adequately rewarding, such as in optimal foraging theory, as well as more recent metacognitive models. However, the sense of stopping and making decisions in such frameworks is highly platonic, with both decisions and stopping actions occurring instantaneously. In contrast, the phenomenology of quitting actions that one is undertaking appears to be temporally extended and metacognitively challenging. We study the metacognitive covariates of quitting decisions made by chess players using a large database of chess games sourced from an online chess portal. Our analysis reveals that players tend to persevere when they are playing against stronger opponents and after having played poor moves. We also find that a history of quitting games makes players more likely to quit in future games, but that having recently quit in a game offers some protective effect against quitting. Finally, we find that quitting a game makes it more likely that a player will play a game again soon. We place these results in the context of modeling quitting as a metacognitive choice affected by multiple competing goals.},
+  affiliation   = {Indian Institute of Technology Kanpur},
 }
 
 @article{purohit:2026-metacognitive-appraisal-quitting-chess,
@@ -1923,6 +1941,7 @@ journal       = {CoRR},
   url           = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.70193},
   abstract      = {Abstract Decisions to stop or quit are often described as choices to switch to alternative activities once the current activity ceases to be rewarding. However, popular models of stopping—such as optimal foraging theory and recent metacognitive frameworks—fail to fully capture the nuanced differences in behavior between quitting and stopping. While quitting is closely related to stopping, it remains a phenomenologically distinct experience. The absence of a clear, separate definition for quitting motivates the present study. We investigate the contextual and noncontextual factors influencing quitting decisions among chess players, utilizing a large dataset of games from an online chess platform. Our analysis reveals that players tend to persevere in higher skill brackets and against stronger opponents when they are performing poorly. Additionally, a history of quitting increases the likelihood of quitting in future games, although recent quitting episodes can have protective effects. We also find that quitting influences subsequent behavior, with players often playing more games after a recent quit. We discuss these findings within the broader context of resource-rational and metacognitive approaches. Finally, we provide a metacognitive account of quitting decisions with the aim to derive better models of complex decision-making.},
   keywords      = {Decision-making, Metacognition, Optimal stopping problem, Quitting decisions},
+  affiliation   = {Indian Institute of Technology Kanpur},
 }
 
 @inproceedings{qian:2020:comparative-study-online-chess-educational-products,
@@ -1954,6 +1973,7 @@ journal       = {CoRR},
   url           = {https://ojs.aaai.org/index.php/AIIDE/article/view/18907},
   tldr          = {This paper shows that word embedding techniques such as Word2Vec can be applied to gameplay data, helping show possible relationships between elements of a game's design. We apply Word2Vec to chess and show how it rediscovers interesting strategic knowledge about the game.},
   abstract      = {In this paper we show how word embeddings, a technique used most commonly for natural language processing, can be repurposed to analyse gameplay data. Using a large study of chess games and applying the popular Word2Vec algorithm, we show that the resulting vector representation can reveal both common knowledge and subtle details about the game, including relative piece values and the natural spatial flow of chess play. Our results suggest that word embeddings are a cheap and simple technique that can provide a broad overview of a game's dynamics, helping designers and critics form new hypotheses about a game's design, structure and flow.},
+  affiliation   = {Queen Mary University of London},
   website       = {https://knivesandpaintbrushes.org/younes},
   video         = {https://www.youtube.com/watch?v=Qj96jh4c6As},
   pdf           = {https://dl.acm.org/doi/pdf/10.5555/3505520.3505544},
@@ -1975,6 +1995,7 @@ journal       = {CoRR},
   articleno     = {74},
   abstract      = {A game's theme is an important part of its design – it conveys narrative information, rhetorical messages, helps the player intuit strategies, aids in tutorialisation and more. Thematic elements of games are notoriously difficult for AI systems to understand and manipulate, however, and often rely on large amounts of hand-written interpretations and knowledge. In this paper we present a technique which connects game embeddings, a recent method for modelling game dynamics from log data, and word embeddings, which models semantic information about language. We explain two different approaches for using game embeddings in this way, and show evidence that game embeddings enhance the linguistic translations of game concepts from one theme to another, opening up exciting new possibilities for reasoning about the thematic elements of games in the future.},
   keywords      = {automated game design, computational creativity, procedural content generation},
+  affiliation   = {Queen Mary University of London; King's College London},
 }
 
 @inproceedings{rafaralahy:2024-pairwise-ltr-learning-to-rank-chess-puzzle-difficulty-prediction,
@@ -2088,6 +2109,7 @@ journal       = {CoRR},
   url           = {https://doi.org/10.1145/3349537.3351904},
   abstract      = {Human chess players prefer training with human opponents over chess agents as the latter are distinctively different in level and style than humans. Chess agents designed for human-agent play are capable of adjusting their level, however their style is not aligned with that of human players. In this paper, we propose a novel approach for designing such agents by integrating the theory of chess players' decision-making with a state-of-the-art Monte Carlo Tree Search (MCTS) algorithm. We demonstrate the benefits of our approach using two sets of analyses. Quantitatively, we establish that the agents attain their desired Elo ratings. Qualitatively, through a Turing-inspired test with a human chess expert, we show that our agents are indistinguishable from human players.},
   keywords      = {chess, game playing agents, human-agent play},
+  affiliation   = {Bar-Ilan University},
 }
 
 @inproceedings{ruoss:2024:amortized-planning-transformers-case-study-chess,
@@ -2182,6 +2204,7 @@ journal       = {CoRR},
   note          = {7th International Conference on Pattern Recognition Applications and Methods ; Conference date: 16-01-2018 Through 18-01-2018},
   abstract      = {In this paper we propose a novel supervised learning approach for training Artificial Neural Networks (ANNs) to evaluate chess positions. The method that we present aims to train different ANN architectures to understand chess positions similarly to how highly rated human players do. We investigate the capabilities that ANNs have when it comes to pattern recognition, an ability that distinguishes chess grandmasters from more amateurplayers. We collect around 3,000,000 different chess positions played by highly skilled chess players and label them with the evaluation function of Stockfish, one of the strongest existing chess engines. We create 4 different datasets from scratch that are used for different classification and regression experiments. The results show how relatively simple Multilayer Perceptrons (MLPs) outperform Convolutional Neural Networks (CNNs) in all the experiments that we have performed. We also investigate two different board representations, the first one representing if a piece is present on the board or not, and the second one in which we assign a numerical value to the piece according to its strength. Our results show how the latter input representation influences the performances of the ANNs negatively in almost all experiments.},
   keywords      = {Deep Learning, COMPUTER GAMES, Machine Learning},
+  affiliation   = {University of Groningen},
 }
 
 @misc{sadhuka:2025:evaluator-reliable-agent-verifiers-sequential-hypothesis-testing,
@@ -2233,6 +2256,7 @@ journal       = {CoRR},
   url           = {http://www.nber.org/papers/w30002},
   type          = {Working Paper},
   institution   = {National Bureau of Economic Research},
+  affiliation   = {Northwestern University},
   abstract      = {We develop a satisficing model of choice in which the available alternatives differ in their inherent complexity. We assume--and experimentally validate--that complexity leads to errors in the perception of alternatives' values. The model yields sharp predictions about the effect of complexity on choice probabilities, some of which qualitatively contrast with those of maximization-based choice models. We confirm the predictions of the satisficing model--and thus reject maximization--in a novel data set with information on hundreds of millions of real-world chess moves by highly experienced players. These findings point to the importance of complexity and satisficing for decision making outside of the laboratory.},
 }
 
@@ -2247,6 +2271,7 @@ journal       = {CoRR},
   url           = {http://www.nber.org/papers/w33649},
   type          = {Working Paper},
   institution   = {National Bureau of Economic Research},
+  affiliation   = {Northwestern University},
   abstract      = {We explore the role of memory for choice behavior in unfamiliar environments. Using a unique data set, we document that  decision makers exhibit a "memory premium." They tend to choose in-memory alternatives over out-of-memory ones, even when the latter are objectively better. Consistent with well-established regularities regarding the inner workings of human memory, the memory premium is associative, subject to interference and repetition effects, and decays over time. Even as decision makers gain familiarity with the environment, the memory premium remains economically large. Our results imply that the ease with which past experiences come to mind plays an important role in shaping choice behavior.},
 }
 
@@ -2373,6 +2398,7 @@ journal       = {CoRR},
   volume        = {47},
   url           = {https://escholarship.org/uc/item/5c76v07h},
   abstract      = {What factors of our learning experiences enable us to best acquire complex skills? Recent ideas from artificial intelligence point to two such factors: (1) a balance of real experience with simulated experience acquired during planning itself, and (2) appropriate diversity in training examples. To test whether these factors influence the development of human expertise, we analyzed data from 1,873 chess players on the online platform Lichess, each of whom played hundreds to thousands of games over months to years. We found that both the time spent planning before moves and the diversity of opening positions encountered predict skill improvement over time. These findings suggest that principles shaping the development of expertise in artificial intelligence systems may also apply to human learning.},
+  affiliation   = {University of Oxford; Princeton University; New York University},
 }
 
 @inproceedings{schwarzschild:2021:can-you-learn-algorithm-generalizing-easy-hard-examples-,
@@ -2882,6 +2908,7 @@ journal       = {CoRR},
   abstract      = {AI research in chess has been primarily focused on producing stronger agents that can maximize the probability of winning. However, there is another aspect to chess that has largely gone unexamined: its aesthetic appeal. Specifically, there exists a category of chess moves called ``brilliant'' moves. These moves are appreciated and admired by players for their high intellectual aesthetics. We demonstrate the first system for classifying chess moves as brilliant. The system uses a neural network, using the output of a chess engine as well as features that describe the shape of the game tree. The system achieves an accuracy of 79\% (with 50\% base-rate), a PPV of 83\%, and an NPV of 75\%. We demonstrate that what humans perceive as "brilliant" moves is not merely the best possible move. We show that a move is more likely to be predicted as brilliant, all things being equal, if a weaker engine considers it lower-quality (for the same rating by a stronger engine). Our system opens the avenues for computer chess engines to (appear to) display human-like brilliance, and, hence, creativity.},
   pdf           = {https://computationalcreativity.net/iccc24/papers/ICCC24_paper_200.pdf},
   code          = {https://github.com/kamronzaidi/brilliant-moves-clf},
+  affiliation   = {University of Toronto},
 }
 
 @thesis{zelek:2022:topological-data-analysis-chess,
