@@ -2199,7 +2199,6 @@
   keywords      = {Training;Costs;Games;Computer architecture;Predictive models;Big Data;Data models;Complexity theory;Convolutional neural networks;Engines;chess puzzle difficulty;deep learning;convolutional neural networks;ensemble learning;Glicko-2 rating},
 }
 
-
 @misc{sadhuka:2025:evaluator-reliable-agent-verifiers-sequential-hypothesis-testing,
   title         = {E-valuator: Reliable Agent Verifiers with Sequential Hypothesis Testing},
   author        = {Shuvom Sadhuka and Drew Prinster and Clara Fannjiang and Gabriele Scalia and Aviv Regev and Hanchen Wang},
@@ -2240,7 +2239,7 @@
 
 @techreport{salant:2022:complexity-satisficing-theory-evidence-chess,
   title         = {Complexity and Satisficing: Theory with Evidence from Chess},
-  author        = {Salant, Yuval and Spenkuch, Jorg L},
+  author        = {Salant, Yuval and Spenkuch, J{\"o}rg L.},
   year          = {2022},
   month         = apr,
   series        = {Working Paper Series},
@@ -2251,6 +2250,10 @@
   institution   = {National Bureau of Economic Research},
   abstract      = {We develop a satisficing model of choice in which the available alternatives differ in their inherent complexity. We assume--and experimentally validate--that complexity leads to errors in the perception of alternatives' values. The model yields sharp predictions about the effect of complexity on choice probabilities, some of which qualitatively contrast with those of maximization-based choice models. We confirm the predictions of the satisficing model--and thus reject maximization--in a novel data set with information on hundreds of millions of real-world chess moves by highly experienced players. These findings point to the importance of complexity and satisficing for decision making outside of the laboratory.},
   affiliation   = {Northwestern University},
+  blog          = {https://www.nber.org/digest/202208/decision-making-lessons-online-chess},
+  pdf           = {https://www.nber.org/system/files/working_papers/w30002/w30002.pdf},
+  dataset       = {https://osf.io/6zk9m},
+  appendix      = {https://data.nber.org/data-appendix/w30002/appendix.pdf},
 }
 
 @techreport{salant:2025:memory-premium,
@@ -2379,7 +2382,9 @@
   eprint        = {https://www.pnas.org/doi/pdf/10.1073/pnas.2406675122},
   url           = {https://www.pnas.org/doi/abs/10.1073/pnas.2406675122},
   abstract      = {As AI systems become more capable, they may internally represent concepts outside the sphere of human knowledge. This work gives an end-to-end example of unearthing machine-unique knowledge in the domain of chess. We obtain machine-unique knowledge from an AI system (AlphaZero) by a method that finds novel yet teachable concepts and show that it can be transferred to human experts (grandmasters). In particular, the new knowledge is learned from internal mathematical representations without a priori knowing what it is or where to start. The produced knowledge from AlphaZero (new chess concepts) is then taught to four grandmasters in a setting where we can quantify their learning, showing that machine-guided discovery and teaching is possible at the highest human level. AI systems have attained superhuman performance across various domains. If the hidden knowledge encoded in these highly capable systems can be leveraged, human knowledge and performance can be advanced. Yet, this internal knowledge is difficult to extract. Due to the vast space of possible internal representations, searching for meaningful new conceptual knowledge can be like finding a needle in a haystack. Here, we introduce a method that extracts new chess concepts from AlphaZero, an AI system that mastered chess via self-play without human supervision. Our method excavates vectors that represent concepts from AlphaZero's internal representations using convex optimization, and filters the concepts based on teachability (whether the concept is transferable to another AI agent) and novelty (whether the concept contains information not present in human chess games). These steps ensure that the discovered concepts are useful and meaningful. For the resulting set of concepts, prototypes (chess puzzle–solution pairs) are presented to experts for final validation. In a preliminary human study, four top chess grandmasters (all former or current world chess champions) were evaluated on their ability to solve concept prototype positions. All grandmasters showed improvement after the learning phase, suggesting that the concepts are at the frontier of human understanding. Despite the small scale, our result is a proof of concept demonstrating the possibility of leveraging knowledge from a highly capable AI system to advance the frontier of human knowledge; a development that could bear profound implications and shape how we interact with AI systems across many applications.},
-  affiliation   = {Google DeepMind},
+  affiliation   = {Google DeepMind, University of Oxford, Goodfire AI},
+  dataset       = {https://www.pnas.org/doi/suppl/10.1073/pnas.2406675122/suppl_file/pnas.2406675122.sd01.rtf},
+  appendix      = {https://www.pnas.org/doi/suppl/10.1073/pnas.2406675122/suppl_file/pnas.2406675122.sapp.pdf},
   annote        = {Lichess openings cited in appendix},
 }
 
@@ -2409,7 +2414,7 @@
   tldr          = {Recurrent netowrks can learn processes that can generalize from easy training data to harder examples at test time by iterating more times.},
   abstract      = {Deep neural networks are powerful machines for visual pattern recognition, but reasoning tasks that are easy for humans may still be difficult for neural models. Humans possess the ability to extrapolate reasoning strategies learned on simple problems to solve harder examples, often by thinking for longer. For example, a person who has learned to solve small mazes can easily extend the very same search techniques to solve much larger mazes by spending more time. In computers, this behavior is often achieved through the use of algorithms, which scale to arbitrarily hard problem instances at the cost of more computation. In contrast, the sequential computing budget of feed-forward neural networks is limited by their depth, and networks trained on simple problems have no way of extending their reasoning to accommodate harder problems. In this work, we show that recurrent networks trained to solve simple problems with few recurrent steps can indeed solve much more complex problems simply by performing additional recurrences during inference. We demonstrate this algorithmic behavior of recurrent networks on prefix sum computation, mazes, and chess. In all three domains, networks trained on simple problem instances are able to extend their reasoning abilities at test time simply by "thinking for longer."},
   keywords      = {Deep learning, algorithms, generalization, recurrent networks, prefix sums, mazes, chess},
-  affiliation   = {University of Maryland; New York University},
+  affiliation   = {University of Maryland},
   website       = {https://proceedings.neurips.cc/paper/2021/hash/3501672ebc68a5524629080e3ef60aef-Abstract.html},
   pdf           = {https://openreview.net/pdf?id=Tsp2PL7-GQ},
   code          = {https://github.com/aks2203/easy-to-hard},
@@ -2426,6 +2431,7 @@
   eprinttype    = {arXiv},
   url           = {https://arxiv.org/abs/2108.06011},
   abstract      = {We describe new datasets for studying generalization from easy to hard examples.},
+  affiliation   = {University of Maryland},
   pypi          = {https://pypi.org/project/easy-to-hard-data/},
 }
 
@@ -2617,11 +2623,16 @@
   address       = {Red Hook, NY, USA},
   series        = {NeurIPS '24},
   isbn          = {9798331314385},
+  url           = {https://proceedings.neurips.cc/paper_files/paper/2024/hash/250190819ff1dda47cd23cecc0c5a69b-Abstract-Conference.html},
   numpages      = {26},
   articleno     = {659},
   abstract      = {There are an increasing number of domains in which artificial intelligence (AI) systems both surpass human ability and accurately model human behavior. This introduces the possibility of algorithmically-informed teaching in these domains through more relatable AI partners and deeper insights into human decision-making. Critical to achieving this goal, however, is coherently modeling human behavior at various skill levels. Chess is an ideal model system for conducting research into this kind of human-AI alignment, with its rich history as a pivotal testbed for AI research, mature superhuman AI systems like AlphaZero, and precise measurements of skill via chess rating systems. Previous work in modeling human decision-making in chess uses completely independent models to capture human style at different skill levels, meaning they lack coherence in their ability to adapt to the full spectrum of human improvement and are ultimately limited in their effectiveness as AI partners and teaching tools. In this work, we propose a unified modeling approach for human-AI alignment in chess that coherently captures human style across different skill levels and directly captures how people improve. Recognizing the complex, non-linear nature of human learning, we introduce a skill-aware attention mechanism to dynamically integrate players' strengths with encoded chess positions, enabling our model to be sensitive to evolving player skill. Our experimental results demonstrate that this unified framework significantly enhances the alignment between AI and human players across a diverse range of expertise levels, paving the way for deeper insights into human decision-making and AI-guided teaching tools. Our implementation is available https://github.com/CSSLab/maia2.},
   keywords      = {Human-AI Alignment, Action Prediction, Chess, Skill-aware Attention},
-  affiliation   = {University of Toronto; Microsoft Research; Cornell University},
+  affiliation   = {University of Toronto; Microsoft Research; Cornell University; Harvard University},
+  website       = {https://neurips.cc/virtual/2024/poster/94764},
+  poster        = {https://neurips.cc/media/PosterPDFs/NeurIPS%202024/94764.png?t=1732745637.3167117},
+  video         = {https://slideslive.com/39028331/maia2-a-unified-model-for-humanai-alignment-in-chess},
+  pdf           = {https://proceedings.neurips.cc/paper_files/paper/2024/file/250190819ff1dda47cd23cecc0c5a69b-Paper-Conference.pdf},
   code          = {https://github.com/CSSLab/maia2},
 }
 
@@ -2691,7 +2702,7 @@
   eprint        = {2510.23772},
   url           = {https://arxiv.org/abs/2510.23772},
   abstract      = {The rapid advancement of Generative AI has raised significant questions regarding its ability to produce creative and novel outputs. Our recent work investigates this question within the domain of chess puzzles and presents an AI system designed to generate puzzles characterized by aesthetic appeal, novelty, counter-intuitive and unique solutions. We briefly discuss our method below and refer the reader to the technical paper for more details. To assess our system's creativity, we presented a curated booklet of AI-generated puzzles to three world-renowned experts: International Master for chess compositions Amatzia Avni, Grandmaster Jonathan Levitt, and Grandmaster Matthew Sadler. All three are noted authors on chess aesthetics and the evolving role of computers in the game. They were asked to select their favorites and explain what made them appealing, considering qualities such as their creativity, level of challenge, or aesthetic design.},
-  affiliation   = {Google DeepMind},
+  affiliation   = {Google DeepMind; University of Oxford; Google; Mila, Quebec Artificial Intelligence Institute; Université de Montréal},
   archiveprefix = {arXiv},
   primaryclass  = {cs.AI},
 }
@@ -2843,7 +2854,7 @@
   tldr          = {We propose a model that does implicit search by looking into the future world via discrete diffusion modeling.},
   abstract      = {In the post-AlphaGo era, there has been a renewed interest in search techniques such as Monte Carlo Tree Search (MCTS), particularly in their application to Large Language Models (LLMs). This renewed attention is driven by the recognition that current next-token prediction models often lack the ability for long-term planning. Is it possible to instill search-like abilities within the models to enhance their planning abilities without relying on explicit search? We propose DiffuSearch , a model that does \textit{implicit search} by looking into the future world via discrete diffusion modeling. We instantiate DiffuSearch on a classical board game, Chess, where explicit search is known to be essential. Through extensive controlled experiments, we show DiffuSearch outperforms both the searchless and explicit search-enhanced policies. Specifically, DiffuSearch outperforms the one-step policy by 19.2\% and the MCTS-enhanced policy by 14\% on action accuracy. Furthermore, DiffuSearch demonstrates a notable 30\% enhancement in puzzle-solving abilities compared to explicit search-based policies, along with a significant 540 Elo increase in game-playing strength assessment. These results indicate that implicit search via discrete diffusion is a viable alternative to explicit search over a one-step policy. All codes are publicly available at \href{https://github.com/HKUNLP/DiffuSearch}{https://github.com/HKUNLP/DiffuSearch}},
   keywords      = {discrete diffusion model, search, planning, chess, MCTS},
-  affiliation   = {University of Hong Kong; Shanghai Jiao Tong University; Huawei Noah's Ark Lab; Shanghai AI Laboratory},
+  affiliation   = {The University of Hong Kong; Shanghai Jiao Tong University; Huawei Noah's Ark Lab; Shanghai AI Laboratory},
   code          = {https://github.com/HKUNLP/DiffuSearch},
   huggingface   = {https://huggingface.co/datasets/jiacheng-ye/chess10k},
 }
@@ -2885,7 +2896,7 @@
   eprinttype    = {arXiv},
   url           = {https://doi.org/10.48550/arXiv.2308.09175},
   abstract      = {In recent years, Artificial Intelligence (AI) systems have surpassed human intelligence in a variety of computational tasks. However, AI systems, like humans, make mistakes, have blind spots, hallucinate, and struggle to generalize to new situations. This work explores whether AI can benefit from creative decision-making mechanisms when pushed to the limits of its computational rationality. In particular, we investigate whether a team of diverse AI systems can outperform a single AI in challenging tasks by generating more ideas as a group and then selecting the best ones. We study this question in the game of chess, the so-called drosophila of AI. We build on AlphaZero (AZ) and extend it to represent a league of agents via a latent-conditioned architecture, which we call AZ\_db. We train AZ\_db to generate a wider range of ideas using behavioral diversity techniques and select the most promising ones with sub-additive planning. Our experiments suggest that AZ\_db plays chess in diverse ways, solves more puzzles as a group and outperforms a more homogeneous team. Notably, AZ\_db solves twice as many challenging puzzles as AZ, including the challenging Penrose positions. When playing chess from different openings, we notice that players in AZ\_db specialize in different openings, and that selecting a player for each opening using sub-additive planning results in a 50 Elo improvement over AZ. Our findings suggest that diversity bonuses emerge in teams of AI agents, just as they do in teams of humans and that diversity is a valuable asset in solving computationally hard problems.},
-  affiliation   = {Google DeepMind},
+  affiliation   = {Google DeepMind; Sony AI; University of Oxford},
 }
 
 @inproceedings{zaidi:2024:predicting-user-perception-move-brilliance-chess,
