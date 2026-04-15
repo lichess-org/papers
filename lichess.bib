@@ -1117,7 +1117,7 @@
   tldr          = {We measure progress in training sparse autoencoders for LM interpretability by working in the setting of LMs trained on chess and Othello.},
   abstract      = {What latent features are encoded in language model (LM) representations? Recent work on training sparse autoencoders (SAEs) to disentangle interpretable features in LM representations has shown significant promise. However, evaluating the quality of these SAEs is difficult because we lack a ground-truth collection of interpretable features which we expect good SAEs to identify. We thus propose to measure progress in interpretable dictionary learning by working in the setting of LMs trained on Chess and Othello transcripts. These settings carry natural collections of interpretable features--for example, ``there is a knight on F3''--which we leverage into metrics for SAE quality. To guide progress in interpretable dictionary learning, we introduce a new SAE training technique, -annealing, which demonstrates improved performance on our metric.},
   keywords      = {Language models, interpretability, dictionary learning},
-  affiliation   = {MIT; University of Massachusetts Amherst; University of Mannheim; Harvard University; Northeastern University},
+  affiliation   = {MIT; UMass Amherst; University of Mannheim; Harvard University; Northeastern University},
   website       = {https://nips.cc/virtual/2024/poster/95121},
   poster        = {https://nips.cc/media/PosterPDFs/NeurIPS%202024/95121.png?t=1730259153.6686015},
   slides        = {https://nips.cc/media/neurips-2024/Slides/95121_AxaqEUR.pdf},
@@ -1252,7 +1252,7 @@
 }
 
 @inproceedings{kumar:2026:directions-computational-theory-of-mind-data-metrics-models-mathematical-formalization,
-  title         = {Directions for Computational Theory of~Mind: Data, Metrics, Models and~Mathematical Formalization},
+  title         = {Directions for Computational Theory of~Mind: Data, Metrics, Models and Mathematical Formalization},
   author        = {Kumar, Prabhat and Zaroukian, Erin and Summers-Stay, Douglas and Raglin, Adrienne},
   editor        = {Degen, Helmut and Ntoa, Stavroula},
   year          = {2026},
@@ -1272,10 +1272,10 @@
   month         = aug,
   publisher     = {PsyArXiv},
   doi           = {10.31234/osf.io/d8zje},
-  url           = {osf.io/preprints/psyarxiv/d8zje},
+  url           = {https://osf.io/preprints/psyarxiv/d8zje},
   abstract      = {Acting intelligently in complex environments poses a challenging learning problem: faced with many different situations and possible actions, how do people learn which action to take in each situation? While traditional laboratory-based experiments have been used to study specific learning mechanisms, these experiments often employ relatively simple tasks conducted over a short period of time. Thus, it is unclear to what extent these mechanisms are used in the significantly more complex and temporally extended environments people encounter in their everyday lives. To understand the processes by which people learn policies to guide their decisions, we investigate the opening strategies of novice online chess players over their first months of play. We use a large online data set consisting of 2,499,783 games, providing us with the necessary scale to explore learning mechanisms in a complex setting. In particular, we focus on two types of learning: reinforcement learning, or learning from rewards given repeated experiences, and social learning, or learning from the actions of others. We show that players' choices are modulated by both game outcomes and observing their opponents' actions, and that they exhibit important hallmarks of adaptive decision-making such as exploration and expertise. Our results provide evidence that people use sophisticated learning algorithms in naturalistic strategic behavior.},
   keywords      = {decision-making, learning, reinforcement learning, social learning},
-  affiliation   = {Princeton University; New York University},
+  affiliation   = {Princeton University},
   code          = {https://github.com/ionatankuperwajs/learning-openings},
 }
 
@@ -1445,6 +1445,7 @@
   address       = {Cham},
   pages         = {131--145},
   isbn          = {978-3-031-84263-4},
+  url           = {https://link.springer.com/chapter/10.1007/978-3-031-84263-4_12},
   abstract      = {With the development of chess engines, cheating online has never been easier, resulting in a need for more robust and accurate detection systems. This paper presents a novel approach to chess cheater detection that combines conventional chess engines and neural networks to help identify which games are authentically played by humans and which show signs of extraneous intervention. By utilizing Stockfish to measure centipawn loss and its mathematical derivatives, we can measure deviations from typical computer-generated moves much like in conventional anti-cheat systems. Additionally, the neural network Maia, designed specifically to mimic human play, transmutes centipawn loss data to highlight deviations from human style. This dual-measurement system addresses the limitations of the given traditional anti-cheat systems, which face the issue of distinguishing between strong human players and those using engines. The collected metadata is analyzed using a sequential neural network, which identifies patterns of fair play violation. Our approach offers a robust solution for maintaining the integrity of online chess by accurately detecting and preventing cheating.},
   affiliation   = {Caucasus University},
 }
@@ -1902,7 +1903,7 @@
   tldr          = {We propose a model-agnostic approach to explain the behaviour of black-box deep RL agents, trained to play Atari and board games, by highlighting relevant portions of the input state.},
   abstract      = {As deep reinforcement learning (RL) is applied to more tasks, there is a need to visualize and understand the behavior of learned agents. Saliency maps explain agent behavior by highlighting the features of the input state that are most relevant for the agent in taking an action. Existing perturbation-based approaches to compute saliency often highlight regions of the input that are not relevant to the action taken by the agent. Our proposed approach, SARFA (Specific and Relevant Feature Attribution), generates more focused saliency maps by balancing two aspects (specificity and relevance) that capture different desiderata of saliency. The first captures the impact of perturbation on the relative expected reward of the action to be explained. The second downweighs irrelevant features that alter the relative expected rewards of actions other than the action to be explained. We compare SARFA with existing approaches on agents trained to play board games (Chess and Go) and Atari games (Breakout, Pong and Space Invaders). We show through illustrative examples (Chess, Atari, Go), human studies (Chess), and automated evaluation methods (Chess) that SARFA generates saliency maps that are more interpretable for humans than existing approaches. For the code release and demo videos, see: https://nikaashpuri.github.io/sarfa-saliency/.},
   keywords      = {Deep Reinforcement Learning, Saliency maps, Chess, Go, Atari, Interpretable AI, Explainable AI},
-  affiliation   = {Adobe; Indian Institute of Technology Kharagpur; Indian Institute of Technology Madras; UC Irvine},
+  affiliation   = {Adobe; IIT Kharagpur; IIT Madras; UC Irvine},
   website       = {https://nikaashpuri.github.io/sarfa-saliency/},
   pdf           = {https://openreview.net/pdf?id=SJgzLkBKPB},
   code          = {https://github.com/nikaashpuri/sarfa-saliency},
@@ -1922,7 +1923,7 @@
     Quitting in Online Chess players: My first project looked at the quitting behavior of online chess players. Using the the open access data from lichess.org, I analyzed chess players' propensity to quit in 'Classical' chess matches. Using a combination of game factors and custom quitting factors, I quantified the quitting behavior of player with a statistical hazard of quitting. I also showed evidence for tilting in chess players, that occurs as a consquence of quitting a chess match.
   },
   abstract      = {Online chess serves as a naturalistic context where cognitive processes can be studied within rule-based, constrained environments. Player skills are defined via ELO rating system accomodating game factors such as wins/losses, and change in ratings over time. Furthermore, quitting a chess match possesses actual consequences for a player by affecting their rankings/ratings. We used chess as a testbed for understanding quitting due to its adversarial nature and availability of large amounts of data that contribute towards its ecological relevance.},
-  affiliation   = {Indian Institute of Technology Kanpur},
+  affiliation   = {IIT Kanpur},
   website       = {https://www.cgs.iitk.ac.in/user/hariharan22/site/},
 }
 
@@ -1934,7 +1935,7 @@
   volume        = {47},
   url           = {https://escholarship.org/uc/item/02n5p1j5},
   abstract      = {Stopping decisions are frequently modeled as decisions to switch to alternative activities once the current activity stops being adequately rewarding, such as in optimal foraging theory, as well as more recent metacognitive models. However, the sense of stopping and making decisions in such frameworks is highly platonic, with both decisions and stopping actions occurring instantaneously. In contrast, the phenomenology of quitting actions that one is undertaking appears to be temporally extended and metacognitively challenging. We study the metacognitive covariates of quitting decisions made by chess players using a large database of chess games sourced from an online chess portal. Our analysis reveals that players tend to persevere when they are playing against stronger opponents and after having played poor moves. We also find that a history of quitting games makes players more likely to quit in future games, but that having recently quit in a game offers some protective effect against quitting. Finally, we find that quitting a game makes it more likely that a player will play a game again soon. We place these results in the context of modeling quitting as a metacognitive choice affected by multiple competing goals.},
-  affiliation   = {Indian Institute of Technology Kanpur},
+  affiliation   = {IIT Kanpur},
 }
 
 @article{purohit:2026-metacognitive-appraisal-quitting-chess,
@@ -1950,7 +1951,7 @@
   url           = {https://onlinelibrary.wiley.com/doi/abs/10.1111/cogs.70193},
   abstract      = {Abstract Decisions to stop or quit are often described as choices to switch to alternative activities once the current activity ceases to be rewarding. However, popular models of stopping—such as optimal foraging theory and recent metacognitive frameworks—fail to fully capture the nuanced differences in behavior between quitting and stopping. While quitting is closely related to stopping, it remains a phenomenologically distinct experience. The absence of a clear, separate definition for quitting motivates the present study. We investigate the contextual and noncontextual factors influencing quitting decisions among chess players, utilizing a large dataset of games from an online chess platform. Our analysis reveals that players tend to persevere in higher skill brackets and against stronger opponents when they are performing poorly. Additionally, a history of quitting increases the likelihood of quitting in future games, although recent quitting episodes can have protective effects. We also find that quitting influences subsequent behavior, with players often playing more games after a recent quit. We discuss these findings within the broader context of resource-rational and metacognitive approaches. Finally, we provide a metacognitive account of quitting decisions with the aim to derive better models of complex decision-making.},
   keywords      = {Decision-making, Metacognition, Optimal stopping problem, Quitting decisions},
-  affiliation   = {Indian Institute of Technology Kanpur},
+  affiliation   = {IIT Kanpur},
 }
 
 @inproceedings{qian:2020:comparative-study-online-chess-educational-products,
@@ -2137,7 +2138,7 @@
   note          = {Previously known as "Grandmaster-Level Chess Without Search" (https://arxiv.org/pdf/2402.04494v1)},
   abstract      = {This paper uses chess, a landmark planning problem in AI, to assess transformers' performance on a planning task where memorization is futile -- even at a large scale. To this end, we release ChessBench, a large-scale benchmark dataset of 10 million chess games with legal move and value annotations (15 billion data points) provided by Stockfish 16, the state-of-the-art chess engine. We train transformers with up to 270 million parameters on ChessBench via supervised learning and perform extensive ablations to assess the impact of dataset size, model size, architecture type, and different prediction targets (state-values, action-values, and behavioral cloning). Our largest models learn to predict action-values for novel boards quite accurately, implying highly non-trivial generalization. Despite performing no explicit search, our resulting chess policy solves challenging chess puzzles and achieves a surprisingly strong Lichess blitz Elo of 2895 against humans (grandmaster level). We also compare to Leela Chess Zero and AlphaZero (trained without supervision via self-play) with and without search. We show that, although a remarkably good approximation of Stockfish's search-based algorithm can be distilled into large-scale transformers via supervised learning, perfect distillation is still beyond reach, thus making ChessBench well-suited for future research.},
   keywords      = {chess, supervised learning, transformer, scaling, benchmark},
-  affiliation   = {Google DeepMind},
+  affiliation   = {Google DeepMind, Google},
   website       = {https://neurips.cc/virtual/2024/poster/94747},
   poster        = {https://neurips.cc/media/PosterPDFs/NeurIPS%202024/94747.png},
   pdf           = {https://proceedings.neurips.cc/paper_files/paper/2024/file/78f0db30c39c850de728c769f42fc903-Paper-Conference.pdf},
@@ -2154,7 +2155,7 @@
   doi           = {10.31234/osf.io/8j9zx},
   url           = {https://doi.org/10.31234/osf.io/8j9zx},
   abstract      = {Although artificial intelligence systems can now outperform humans in a variety of domains, they still lag behind in the ability to arrive at good solutions to problems using limited resources. Recent proposals have suggested that the key to this cognitive efficiency is intelligent selection of the situations in which computational resources are spent. We tested this hypothesis in the domain of complex planning by analyzing how humans managed time available for thinking in over 12 million online chess matches. We found that players spent more time thinking in board positions where planning was more beneficial. This effect was greater in stronger players, and additionally strengthened by considering only the information available to the player at the time of choice. Finally, we found that the qualitative features of this relationship were consistent with a policy that considers the empirically-measured cost of spending time in chess. This provides evidence that human efficiency is supported by intelligent selection of when to apply computation.},
-  affiliation   = {Princeton University; University of California San Diego; New York University},
+  affiliation   = {Princeton University; UC San Diego; New York University},
 }
 
 @thesis{russel:2025:beyond-workload-paving-road-next-generation-implicit-prefrontal-cortex-brain-computer-interface,
@@ -2209,11 +2210,12 @@
   pages         = {276--283},
   doi           = {10.5220/0006535502760283},
   isbn          = {978-989758276-9},
-  url           = {http://www.icpram.org/},
+  url           = {https://hdl.handle.net/11370/5e5b49b3-cc41-4a9c-b7b2-140c9aa62f38},
   note          = {7th International Conference on Pattern Recognition Applications and Methods ; Conference date: 16-01-2018 Through 18-01-2018},
   abstract      = {In this paper we propose a novel supervised learning approach for training Artificial Neural Networks (ANNs) to evaluate chess positions. The method that we present aims to train different ANN architectures to understand chess positions similarly to how highly rated human players do. We investigate the capabilities that ANNs have when it comes to pattern recognition, an ability that distinguishes chess grandmasters from more amateurplayers. We collect around 3,000,000 different chess positions played by highly skilled chess players and label them with the evaluation function of Stockfish, one of the strongest existing chess engines. We create 4 different datasets from scratch that are used for different classification and regression experiments. The results show how relatively simple Multilayer Perceptrons (MLPs) outperform Convolutional Neural Networks (CNNs) in all the experiments that we have performed. We also investigate two different board representations, the first one representing if a piece is present on the board or not, and the second one in which we assign a numerical value to the piece according to its strength. Our results show how the latter input representation influences the performances of the ANNs negatively in almost all experiments.},
-  keywords      = {Deep Learning, COMPUTER GAMES, Machine Learning},
+  keywords      = {Deep Learning, Computer Games, Machine Learning, Artificial Neural Networks, Classification, Regression, Chess Patterns},
   affiliation   = {University of Groningen},
+  pdf           = {https://pure.rug.nl/ws/portalfiles/portal/1274180537/ICPRAM_CHESS_DNN_2018.pdf},
 }
 
 @misc{sadhuka:2025:evaluator-reliable-agent-verifiers-sequential-hypothesis-testing,
