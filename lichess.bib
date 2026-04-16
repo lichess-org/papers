@@ -2816,6 +2816,19 @@
   abstract      = {Estimating the difficulty of chess puzzles provides a rich testbed for studying human–computer interaction and adaptive learning. Building on recent advances and the FedCSIS 2025 Challenge, we address the task of predicting chess puzzle difficulty ratings using a multi-source representation approach. Our approach integrates pre-trained neural embeddings of board states, solution move sequences, and engine-derived success probabilities. These heterogeneous features are fused via dedicated embedding and projection layers, followed by a multi-layer perceptron regressor. Post-processing calibration and model ensemble further enhance robustness and generalization. Experiments on the FedCSIS 2025 dataset demonstrate that our method effectively leverages both structural and empirical information, achieving strong predictive performance. Our approach achieved fifth place on the final official leaderboard, highlighting the effectiveness of combining neural representations with domain-specific probabilistic features for robust chess puzzle difficulty prediction.},
 }
 
+@inproceedings{xie:2026:incr-faster-re-execution-via-bolt-on-incrementalization,
+  title         = {Incr: Faster Re-execution via Bolt-on Incrementalization},
+  author        = {Xie, Yizheng and Lamprou, Evangelos and Xia, Jerry and Vasilakis, Nikos},
+  year          = {2026},
+  booktitle     = {20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 26)},
+  publisher     = {USENIX Association},
+  abstract      = {While most software development is incremental, most execution environments are not: even small program modifications fail to take advantage of prior executions, at worst requiring full re-execution of all computational stages in the modified program. Such full re-execution decelerates software development and debugging, especially in dynamic polyglot environments such as the Unix and Linux shell. This paper presents INCR, a system that accelerates the re-execution of unmodified shell programs by automatically incrementalizing their execution. INCR analyzes and tracks interdependencies to detect and store key intermediate results, reusing them on subsequent re-executions whenever possible. INCR’s effect analysis guarantees correct re-execution even for non-idempotent computations, and several static and dynamic optimizations reduce the runtime and storage overheads of incrementalization. Applied to diverse real-world scenarios, INCR accelerates re-execution by an average of 34.2× and a maximum of 373.3×—all while requiring no developer annotations or code modifications and remaining behaviorally indistinguishable from non-incremental execution.},
+  keywords      = {performance},
+  affiliation   = {Brown University},
+  pdf           = {https://atlas.cs.brown.edu/pdf/incr:osdi:2026.pdf},
+  code          = {https://github.com/atlas-brown/incr},
+}
+
 @inproceedings{yamada:2023:estimating-online-ratings-decision-tree,
   title         = {A Method for Estimating Online Chess Game Player Ratings with Decision Tree},
   author        = {Habuki Yamada and Nobuko Kishi and Masato Oguchi and Miyuki Nakano},
