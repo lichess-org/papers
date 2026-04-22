@@ -1377,6 +1377,19 @@
   abstract      = {FedCSIS 2025 competition is to predict the difficulty of chess puzzles, we present a structured multi-stage regression pipeline developed for the FedCSIS 2025 Challenge. The approach consists of three stages: (i) four Elo-banded base models trained on separate rating ranges to capture localized difficulty semantics and mitigate bias in imbalanced datasets; (ii) a feature-level stacking ensemble combining base predictions with structural attributes, such as success probabilities, failure distributions, and solution length, to enhance cross-band generalization; and (iii) a lightweight post-hoc residual correction to reduce systematic prediction biases. Additionally, an uncertainty-aware mask-based evaluation is introduced to identify the 10\% most challenging puzzles for extended scoring. Our method achieved competitive results, ranking 7th in the final leaderboard, while maintaining low computational cost. These findings demonstrate that lightweight, interpretable models, when combined with structural reasoning and uncertainty estimation, can rival more complex deep-learning approaches. This study highlights the potential of structured machine learning pipelines for scalable, human-centric chess puzzle analytics.},
 }
 
+@misc{lin:2026:tracing-thought-grandmaster-level-chess-playing-transformer,
+  title         = {Tracing the Thought of a Grandmaster-level Chess-Playing Transformer},
+  author        = {Rui Lin and Zhenyu Jin and Guancheng Zhou and Xuyang Ge and Wentao Shu and Jiaxing Wu and Junxuan Wang and Zhengfu He and Junping Zhang and Xipeng Qiu},
+  year          = {2026},
+  eprint        = {2604.10158},
+  url           = {https://arxiv.org/abs/2604.10158},
+  abstract      = {While modern transformer neural networks achieve grandmaster-level performance in chess and other reasoning tasks, their internal computation process remains largely opaque. Focusing on Leela Chess Zero (LC0), we introduce a sparse decomposition framework to interpret its internal computation by decomposing its MLP and attention modules with sparse replacement layers, which capture the primary computation process of LC0. We conduct a detailed case study showing that these pathways expose rich, interpretable tactical considerations that are empirically verifiable. We further introduce three quantitative metrics and show that LC0 exhibits parallel reasoning behavior consistent with the inductive bias of its policy head architecture. To the best of our knowledge, this is the first work to decompose the internal computation of a transformer on both MLP and attention modules for interpretability. Combining sparse replacement layers and causal interventions in LC0 provides a comprehensive understanding of advanced tactical reasoning, offering critical insights into the underlying mechanisms of superhuman systems. Our code is available at this https URL: https://github.com/JacklE0niden/Leela-SAEs},
+  affiliation   = {Shanghai Innovation Institute; Fudan University;  Xi’an Jiaotong University},
+  code          = {https://github.com/JacklE0niden/Leela-SAEs},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+}
+
 @misc{liu:2025:chessarena-chess-testbed-evaluating-strategic-reasoning-capabilities-large-language-models,
   title         = {ChessArena: A Chess Testbed for Evaluating Strategic Reasoning Capabilities of Large Language Models},
   author        = {Jincheng Liu and Sijun He and Jingjing Wu and Xiangsen Wang and Yang Chen and Zhaoqi Kuang and Siqi Bao and Yuan Yao},
