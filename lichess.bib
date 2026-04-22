@@ -248,6 +248,7 @@
   url           = https://ieeexplore.ieee.org/document/10825991,
   abstract      = {Solving chess puzzles, which require finding a certain sequence of moves to achieve a winning position (such as checkmate or a significant material advantage), is a commonly used method for improving chess skills, particularly tactical awareness. Estimating the puzzlingness--i.e., the difficulty--of a chess puzzle is challenging and typically involves showing the puzzle to multiple players and measuring their success rate. In this work, we present a method for predicting the difficulty of chess puzzles using only the initial position and the sequence of correct moves. We generate multiple features, including both hand-crafted features and those extracted from chess engines such as Maia, Leela Chess Zero, and Stockfish. We also train a residual neural network to directly predict the Glicko-2 puzzle rating. The output of this neural network, along with the other generated features, serves as input to a gradient boosting decision tree model to predict the final Glicko-2 rating. Our model was applied to the IEEE BigData 2024 Cup competition on Predicting Chess Puzzle Difficulty, where it achieved third place.},
   keywords      = {Neural networks;Predictive models;Big Data;Feature extraction;Boosting;Decision trees;Engines;Residual neural networks;chess;chess puzzle;machine learning},
+  affiliation   = {IPRally},
   pdf           = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10825991},
 }
 
@@ -264,6 +265,7 @@
   doi           = {10.15439/2025F6497},
   url           = {http://dx.doi.org/10.15439/2025F6497},
   abstract      = {A common way for chess players to practice tactical awareness is to solve chess puzzles, consisting of an initial position and a sequence of moves to achieve a winning position. This practice is more effective when puzzles are matched to the player's skill level. In this work, we present an approach for estimating the difficulty of a chess puzzle using only the initial position and the sequence of correct moves. Our approach uses a fine-tuned modification of the Maia-2 model combined with a set of hand-crafted features and features extracted from chess engines such as Leela Chess Zero and Stockfish. All of these features are then used as input to a gradient boosted decision tree model that predicts the final rating of the puzzle. We applied our approach to the FedCSIS 2025 Challenge on Predicting Chess Puzzle Difficulty Part 2, where it achieved first place},
+  affiliation   = {IPRally},
 }
 
 @thesis{bos:2021:improving-chess-elo-system-process-mining,
@@ -291,6 +293,7 @@
   doi           = {10.15439/2025F6771},
   url           = {http://dx.doi.org/10.15439/2025F6771},
   abstract      = {We detail the bread emoji team's submission to the FedCSIS 2025 Predicting Chess Puzzle Difficulty Challenge. Our solution revolved around improving our submission from the previous competition by incorporating a new puzzle metadata feature and optimizing our implementation to allow for larger model ensembles and more stable training. Similar to our submission from last year, our system has two stages: learning a strong predictor for the Lichess dataset and then rescaling the distribution using an empirically-guided post-processing step to fit it to the smaller and noisier competition dataset. Our submission placed second with a ~3.9\% gap in mean squared error (MSE) from first place in the final evaluation.},
+  affiliation   = {Google; Institute of Science Tokyo; Amazon Project Kuiper},
 }
 
 @inproceedings{cen:2025:multi-stage-framework-chess-puzzle-difficulty-prediction,
@@ -1362,6 +1365,19 @@
   affiliation   = {Universit\'{e} catholique de Louvain},
 }
 
+@misc{li:2026:tracking-vs-deciding-dual-capability-bottleneck-searchless-chess-transformers,
+  title         = {Tracking vs. Deciding: The Dual-Capability Bottleneck in Searchless Chess Transformers},
+  author        = {Quanhao Li and Wei Jiang},
+  year          = {2026},
+  eprint        = {2603.29761},
+  url           = {https://arxiv.org/abs/2603.29761},
+  abstract      = {A human-like chess engine should mimic the style, errors, and consistency of a strong human player rather than maximize playing strength. We show that training from move sequences alone forces a model to learn two capabilities: state tracking, which reconstructs the board from move history, and decision quality, which selects good moves from that reconstructed state. These impose contradictory data requirements: low-rated games provide the diversity needed for tracking, while high-rated games provide the quality signal for decision learning. Removing low-rated data degrades performance. We formalize this tension as a dual-capability bottleneck, P <= min(T,Q), where overall performance is limited by the weaker capability. Guided by this view, we scale the model from 28M to 120M parameters to improve tracking, then introduce Elo-weighted training to improve decisions while preserving diversity. A 2 x 2 factorial ablation shows that scaling improves tracking, weighting improves decisions, and their combination is superadditive. Linear weighting works best, while overly aggressive weighting harms tracking despite lower validation loss. We also introduce a coverage-decay formula, t* = log(N/kcrit)/log b, as a reliability horizon for intra-game degeneration risk. Our final 120M-parameter model, without search, reached Lichess bullet 2570 over 253 rated games. On human move prediction it achieves 55.2% Top-1 accuracy, exceeding Maia-2 rapid and Maia-2 blitz. Unlike position-based methods, sequence input naturally encodes full game history, enabling history-dependent decisions that single-position models cannot exhibit.},
+  affiliation   = {Abbey Park High School; Shanghai Soong Ching Ling School},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.AI},
+  bot           = {https://lichess.org/@/PineappleDrag},
+}
+
 @inproceedings{liang:2025:stacking-based-ensemble-approach-predicting-chess-puzzle-difficulty,
   title         = {A Stacking-Based Ensemble Approach for Predicting Chess Puzzle Difficulty},
   author        = {Alan Liang and Cenzhi Liu and Kai Wang and Ethan Liu},
@@ -1397,6 +1413,10 @@
   eprint        = {2509.24239},
   url           = {https://arxiv.org/abs/2509.24239},
   abstract      = {Recent large language models (LLMs) have shown strong reasoning capabilities. However, a critical question remains: do these models possess genuine reasoning skills particularly complex strategic reasoning or are they primarily excelling at sophisticated pattern recognition within their training data? To address this question, this paper presents a chess testbed, ChessArena, to evaluate the strategic reasoning capabilities of LLMs. Chess requires complex strategic reasoning capabilities including long-term planning, strict rule comprehension, and multi-turn conversation memorization. Specifically, ChessArena is a competitive framework where LLMs play against each other, under four different play modes. The testbed is equipped with a ranking algorithm and a leaderboard. The testbed can also evaluate fine-grained capabilities including basic understanding, move selection, and puzzle solving. Over 13 LLMs with different modes are evaluated in ChessArena, playing over 800 games. The results reveal significant shortcomings in current LLMs: no model can beat Maia-1100 (a chess engine at human amateur level), while some even failed to defeat a random player that selects moves arbitrarily. We also present a strong baseline to the testbed: our fine-tuned Qwen3-8B substantially improved performance, approaching much larger state-of-the-art reasoning models.},
+  affiliation   = {Baidu, Nanjing University, University of Electronic Science and Technology of China (UESTC)},
+  code          = {https://github.com/XiaoFaJiang/ChessArena},
+  dataset       = {https://huggingface.co/datasets/ljcnju/ChessArena_Training_Dataset},
+  huggingface   = {https://huggingface.co/ljcnju/Qwen3-8B-Chess, https://huggingface.co/ljcnju/Qwen3-8B-Chess-SFT},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
@@ -1446,6 +1466,7 @@
   numpages      = {11},
   abstract      = {In the intricate landscape of game-playing algorithms, Crazyhouse stands as a complex variant of chess where captured pieces are reintroduced, presenting unique evaluation challenges. This paper explores a hybrid approach that combines traditional evaluation functions with neural network-based evaluations, seeking an optimal balance in performance. Through rigorous experimentation, including self-play, matchups against a variant of the renowned program, Go-deep experiments, and score deviations, we present compelling evidence for the effectiveness of a weighted sum of both evaluations. Remarkably, in our experiments, the combination of 75\% neural network and 25\% traditional evaluation consistently emerged as the most effective choice. Furthermore, we introduce the use of Best-Change rates, which have previously been associated with evaluation quality, in the context of Monte Carlo tree search-based algorithms.},
   keywords      = {Crazyhouse, chess variants, heuristic evaluation functions, neural networks, Best-Change rates, Monte Carlo tree search},
+  affiliation   = {University of Ljubljana, TU Graz},
 }
 
 @inproceedings{maksim:2025:neural-network-approach-chess-cheat-detection,
@@ -3044,4 +3065,5 @@
   doi           = {10.15439/2025F5937},
   url           = {http://dx.doi.org/10.15439/2025F5937},
   abstract      = {We summarize the results of the FedCSIS 2025 machine learning competition organized on the knowledgepit.ai platform. We recall the competition's goals corresponding to estimations of the chess puzzle difficulty levels, we refer to the winning solutions, and we also compare the scope of this year's competition (and particularly the data available to competition participants) with its previous edition associated with the IEEE BigData 2024 conference. Finally, we discuss the new functionality of the knowledgepit.ai platform, which enables competition participants to submit additional "uncertainty masks" reflecting their assessment of test cases that are mostly problematic for their machine learning models.},
+  affiliation   = {University of Warsaw; Polish-Japanese Academy of Information Technology; QED Software; Grail Team},
 }
