@@ -215,9 +215,9 @@
   url           = {https://doi.org/10.1145/3649921.3659846},
   numpages      = {8},
   articleno     = {69},
-  affiliation   = {Northeastern University},
   abstract      = {When generating levels, algorithmically evaluating the results is essential. In this paper, we looked at predicting a level's difficulty and enjoyment. Past work has approached this problem for puzzle games like Sudoku by analyzing the characteristics of the initial level, the solved level, and the process that led to that solution. In this work, we examined a set of heuristics for Roguelike levels and their solutions, and their relationship to subjective player ratings of the levels. We gathered ratings of difficulty and enjoyment of levels in a study with 143 players. We ran an ablation study on the set of heuristics to find the best combination of heuristics for predicting difficulty and enjoyment with a linear regression model, and found solution path-based heursitics performed well. However, these models did not outperform a simple baseline for predicting enjoyment. Jaccard similarity on paths--a method we have not seen used in the field of game AI--was a useful predictor of difficulty. Testing proximity to enemies across a solution path is the only heuristic needed to predict how enjoyable a level will be.},
   keywords      = {difficulty, player study, procedural content generation},
+  affiliation   = {Northeastern University},
 }
 
 @inproceedings{bizjak:2021:automatic-recognition-similar-chess-motifs,
@@ -359,11 +359,10 @@
   year          = {2025},
   booktitle     = {The Thirteenth International Conference on Learning Representations},
   url           = {https://openreview.net/forum?id=CvjXlsBLCX},
-  affiliation   = {National Taiwan University; Academia Sinica},
   tldr          = {This paper proposes a strength system that can estimate the strength from games and provide various playing strengths while simultaneously offer a human-like behavior in both Go and chess.},
   abstract      = {Strength estimation and adjustment are crucial in designing human-AI interactions, particularly in games where AI surpasses human players. This paper introduces a novel strength system, including a strength estimator (SE) and an SE-based Monte Carlo tree search, denoted as SE-MCTS, which predicts strengths from games and offers different playing strengths with human styles. The strength estimator calculates strength scores and predicts ranks from games without direct human interaction. SE-MCTS utilizes the strength scores in a Monte Carlo tree search to adjust playing strength and style. We first conduct experiments in Go, a challenging board game with a wide range of ranks. Our strength estimator significantly achieves over 80\% accuracy in predicting ranks by observing 15 games only, whereas the previous method reached 49\% accuracy for 100 games. For strength adjustment, SE-MCTS successfully adjusts to designated ranks while achieving a 51.33\% accuracy in aligning to human actions, outperforming a previous state-of-the-art, with only 42.56\% accuracy. To demonstrate the generality of our strength system, we further apply SE and SE-MCTS to chess and obtain consistent results. These results show a promising approach to strength estimation and adjustment, enhancing human-AI interactions in games. Our code is available at https://rlg.iis.sinica.edu.tw/papers/strength-estimator.},
   keywords      = {Bradley-Terry Model, Strength Estimation, Strength Adjustment, Human-like Playing Style, Monte-Carlo Tree Search, Go, Chess},
-  affiliation   = {Academia Sinica; National Taiwan University},
+  affiliation   = {National Taiwan University; Academia Sinica},
   website       = {https://rlg.iis.sinica.edu.tw/papers/strength-estimator/},
   blog          = {https://lichess.org/@/Dr_Kiwi/blog/a-humanlike-playstyle-chess-bot-for-every-level-player/pU3M8ya4},
   poster        = {https://rlg.iis.sinica.edu.tw/papers/strength-estimator/assets/Strength%20Estimation%20and%20Human-Like%20Strength%20Adjustment%20in%20Games%20Poster.pdf},
@@ -447,8 +446,8 @@
   journal       = {ICGA Journal},
   doi           = {10.1177/13896911251315903},
   url           = {https://doi.org/10.1177/13896911251315903},
-  affiliation   = {University of Central Oklahoma},
   abstract      = {There is a long-held belief in the chess community that the player with the white pieces has an advantage in making the first move. This phenomenon has been observed repeatedly in over-the-board games between high-level players and professionals. However, less is known about the prevalence of white's advantage in games played between amateurs in more casual settings. This article attempts to identify a first-move advantage in chess by examining a large database of amateur games played online on a dedicated chess website. Win rates are calculated for various rating levels, and the influence of opening move choice is also explored. These results can help determine whether there is an inherent first-move advantage in chess observable for all players in multiple settings, or if this effect is exclusively seen with players of high skill during games played in person.},
+  affiliation   = {University of Central Oklahoma},
 }
 
 @article{cruz:2025:understanding-learned-look-ahead-behavior-chess-neural-networks,
@@ -461,10 +460,10 @@
   eprint        = {2505.21552},
   eprinttype    = {arXiv},
   url           = {https://doi.org/10.48550/arXiv.2505.21552},
-  affiliation   = {Pivotal Research},
   note          = {keywords from rejected openreview submission: https://openreview.net/forum?id=OcBAd0JPxv},
   abstract      = {We investigate the look-ahead capabilities of chess-playing neural networks, specifically focusing on the Leela Chess Zero policy network. We build on the work of Jenner et al. (2024) by analyzing the model's ability to consider future moves and alternative sequences beyond the immediate next move. Our findings reveal that the network's look-ahead behavior is highly context-dependent, varying significantly based on the specific chess position. We demonstrate that the model can process information about board states up to seven moves ahead, utilizing similar internal mechanisms across different future time steps. Additionally, we provide evidence that the network considers multiple possible move sequences rather than focusing on a single line of play. These results offer new insights into the emergence of sophisticated look-ahead capabilities in neural networks trained on strategic tasks, contributing to our understanding of AI reasoning in complex domains. Our work also showcases the effectiveness of interpretability techniques in uncovering cognitive-like processes in artificial intelligence systems.},
   keywords      = {model behavior attribution, look-ahead planning, mechanistic interpretability},
+  affiliation   = {Pivotal Research},
 }
 
 @article{czech:2020:learning-chess-variant-crazyhouse-above-world-champion-level-deep-neural-networks-human-data,
@@ -511,11 +510,11 @@
   pages         = {510–518},
   doi           = {10.1145/3377325.3377512},
   isbn          = {9781450371186},
-  affiliation   = {Georgia Institute of Technology},
   url           = {https://doi.org/10.1145/3377325.3377512},
   numpages      = {9},
   abstract      = {Machine learning (ML) systems across many application areas are increasingly demonstrating performance that is beyond that of humans. In response to the proliferation of such models, the field of Explainable AI (XAI) has sought to develop techniques that enhance the transparency and interpretability of machine learning methods. In this work, we consider a question not previously explored within the XAI and ML communities: Given a computational system whose performance exceeds that of its human user, can explainable AI capabilities be leveraged to improve the performance of the human? We study this question in the context of the game of Chess, for which computational game engines that surpass the performance of the average player are widely available. We introduce the Rationale-Generating Algorithm, an automated technique for generating rationales for utility-based computational methods, which we evaluate with a multi-day user study against two baselines. The results show that our approach produces rationales that lead to statistically significant improvement in human task performance, demonstrating that rationales automatically generated from an AI's internal task model can be used not only to explain what the system is doing, but also to instruct the user and ultimately improve their task performance.},
   keywords      = {explainable AI, machine learning},
+  affiliation   = {Georgia Institute of Technology},
 }
 
 @inproceedings{davis:2024:decoding-chess-mastery-mechanistic-analysis-chess-language-transformer-model,
@@ -531,9 +530,9 @@
   isbn          = {978-3-031-65571-5},
   url           = {https://doi.org/10.1007/978-3-031-65572-2_7},
   numpages      = {10},
-  affiliation   = {University of Central Florida},
   abstract      = {Mechanistic interpretability (MI) studies aim to identify the specific neural pathways that underlie decision-making in neural networks. Here we analyze both the horizontal and vertical information flows of a chess-playing transformer. This paper introduces a new taxonomy of chessboard attention patterns that synchronize to guide move selection. Our findings show that the early layers of the chess transformer correctly identify moves that are highly ranked by the final layer. Experiments conducted on human chess players laid the foundation for much of our current understanding of human problem-solving, cognition, and visual memory. We believe that the study of chess language transformers may be an equally fruitful research area for AGI systems.},
   keywords      = {chess cognition, mechanistic interpretability, transformers},
+  affiliation   = {University of Central Florida},
 }
 
 @inproceedings{davis:2024:hidden-pieces-analysis-linear-probes-gpt-representation-edits,
@@ -575,10 +574,10 @@
   journal       = {Preprints},
   publisher     = {Preprints},
   doi           = {10.20944/preprints202601.2229.v1},
-  affiliation   = {University of Central Florida},
   url           = {https://doi.org/10.20944/preprints202601.2229.v1},
   abstract      = {Probing classifiers are a technique for understanding and modifying the operation of neural networks in which a smaller classifier is trained to use the model's internal representation to learn a probing task. Similar to a neural electrode array, probing classifiers help both discern and edit the internal representation of a neural network. This article evaluates the use of probing classifiers to modify the internal hidden state of a chess-playing transformer. We contrast the performance of standard linear probes against Sparse Autoencoders (SAEs), a latent space interpretability technique designed to decompose polysemantic concepts into atomic features via an overcomplete basis. Our experiments demonstrate that linear probes trained directly on the residual stream significantly outperform probes based on SAE latents. When quantifying the success of interventions via the probability of legal moves, linear probe edits achieved an 88\% success rate, whereas SAE-based edits yielded only 41\%. These findings suggest that while SAEs are valuable for specific interpretability tasks, they do not enhance the controllability of hidden states compared to raw vectors. Finally, we show that the residual stream respects the Markovian property of chess, validating the feasibility of applying consistent edits across different time steps for the same board state.},
   keywords      = {representation engineering;  probing classifiers;  chess;  language models;  GPT;  sparse autoencoders},
+  affiliation   = {University of Central Florida},
   code          = {https://github.com/austinleedavis/icmla-2024},
 }
 
@@ -607,9 +606,9 @@
   pages         = {152--160},
   doi           = {10.1109/SVR.2019.00038},
   url           = {https://ieeexplore.ieee.org/document/8921043},
-  affiliation   = {Universidade Federal de Pernambuco (UFPE},
   abstract      = {Chess pieces recognition using computer vision is a problem generally approached in various ways, with different kinds of results and complexity. Deep learning is a state of the art approach to solve problems on image recognition although facing necessity of huge data sets. This paper discusses a method to identify synthetically generated chess images on Blender using its Python API via fine-tuning of VGG16 convolutional network obtaining close to 97\% accuracy on piece classification. Possible applications include automated record of real chess games and real-time play between online players using real boards.},
   keywords      = {Histograms, Image color analysis, Games, Tracking, Image edge detection, Machine learning, Task analysis, chess, neural networks, piece recognition, synthetic data generation},
+  affiliation   = {Universidade Federal de Pernambuco (UFPE},
   code          = {https://github.com/rafaelmcam/cChess},
   dataset       = {https://github.com/rafaelmcam/cChess/tree/master/Jogos},
 }
@@ -638,9 +637,9 @@
   address       = {Online},
   pages         = {210--222},
   doi           = {10.18653/v1/2021.conll-1.16},
-  affiliation   = {Northwestern University; Allen Institute for AI}
   url           = {https://aclanthology.org/2021.conll-1.16},
   abstract      = {The capabilities of today{'}s natural language processing systems are typically evaluated using large datasets of curated questions and answers. While these are critical benchmarks of progress, they also suffer from weakness due to artificial distributions and incomplete knowledge. Artifacts arising from artificial distributions can overstate language model performance, while incomplete knowledge limits fine-grained analysis. In this work, we introduce a complementary benchmarking approach based on SimPlified Language Activity Traces (SPLAT). SPLATs are corpora of language encodings of activity in some closed domain (we study traces from chess and baseball games in this work). SPLAT datasets use naturally-arising distributions, allow the generation of question-answer pairs at scale, and afford complete knowledge in their closed domains. We show that language models of three different architectures can answer questions about world states using only verb-like encodings of activity. Our approach is extensible to new language models and additional question-answering tasks.},
+  affiliation   = {Northwestern University; Allen Institute for AI},
 }
 
 @inproceedings{diallo:2025:chessmovellm-large-language-models-chess-next-move-prediction,
@@ -650,10 +649,10 @@
   booktitle     = {SoutheastCon 2025},
   pages         = {475--480},
   doi           = {10.1109/SoutheastCon56624.2025.10971611},
-  affiliation   = {Université de Moncton},
   url           = {https://ieeexplore.ieee.org/document/10971611},
   abstract      = {Creating a chess engine using language models is challenging due to the complexity of understanding the logic and depth of moves. To solve this problem, we propose several approaches with different types of training of different LLMs that already have some knowledge of tasks and not necessarily on chess, and adjust them for faster learning. We propose three groups of methods and five approaches to enhance state-of-the-art results. Our approaches will involve different types of database manipulation, the training of different types of networks and the application of a new, widely used approach, the RAG (Retrieval-Augmented Generation). We demonstrated the potential of networks and approaches with promising results for the first 2 methods, and we demonstrated with RAG in combination with FAISS (Facebook AI Similarity Search) [1], algebraic notation and GPT3.5-turbo-instruct that it is possible to increase the ability of networks to predict good chess moves. The first approach demonstrated that successive move generation benefits generalization and reduces illegal moves; for the second approach, we proved that the use of noiseless algebraic notation gives the network the possibility of progressing significantly before giving illegal moves. The second group of approaches, demonstrated that using the FEN (Forsyth-Edwards Notation), a textual graphical representation, for the prediction of move sequences to force context understanding could give promising results with a low number of epochs. Even with limitations in computation time and epochs, we were able to find promising results with a part of our dataset that can be improved with more epochs and data.},
   keywords      = {Training, Deep learning, Social networking (online), Large language models, Retrieval augmented generation, Force, Transformers, Logic, Engines, Tuning, Deep learning, Transformers ,LLMs, RAG, FAISS, GPT, Similarity Search, Chess engine, Fine tuning},
+  affiliation   = {Université de Moncton},
 }
 
 @inproceedings{ding:2024:easy2hard-bench,
