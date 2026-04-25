@@ -1849,6 +1849,7 @@
   doi           = {10.21203/rs.3.rs-5574128/v1},
   abstract      = {Introduction: Quantifying signals in large, sparse datasets is challenging, as noise and redundant features often obscure informative patterns. Chess middlegames, with their dynamic complexity and endless possibilities, provide a testbed for exploring such challenges. Building on 12 studies that identified three categories of chess complexity--difficulty, optionality, and rarity--we propose a novel method to quantify chess pattern complexity. Methods: A complexity scoring system was developed, integrating centipawn change, variability, engine search depth, and inverse document frequency of constellations to measure difficulty, optionality, and rarity. From a large dataset of chess games, we extracted 106,810 unique 11-ply constellations that appeared at least 20 times across 2,235,823 games. The chess engine was used to evaluate chess decisions when answering on constellations, and a multinomial logistic regression model was employed to predict move quality. Results: The model demonstrated good predictive power with a weighted F1 score of 0.75 and a ROC AUC of 0.82. It correctly classified over 70\% of blunders, mistakes, and optimal moves, although it has less success in differentiating inaccuracies from optimal moves. Discussion: Our approach establishes a flexible framework for quantifying complexity in large, sparse datasets, demonstrating applicability beyond chess. By integrating different metrics, we achieve high accuracy in predicting move quality during chess middlegames. Beyond supporting chess education by identifying constellations tied to specific move types, this methodology could be valuable in contexts where understanding the interplay of dynamic patterns and their outcomes is essential for deriving actionable insights.},
   keywords      = {Chess Complexity, Move Prediction, Cognitive Modeling, Big Data Analysis, Sparse Data},
+  affiliation   = {University of Sheffield; Northumbria University},
   pdf           = {https://www.researchsquare.com/article/rs-5574128/v1.pdf?c=1748726628000},
   code          = {https://github.com/sgjustino/Chess_Thesis},
 }
@@ -1864,8 +1865,9 @@
   volume        = {392},
   pages         = {874--881},
   doi           = {10.3233/FAIA240574},
-  url           = {https://doi.org/10.3233/FAIA240574},
+  url           = {https://ebooks.iospress.nl/doi/10.3233/FAIA240574},
   abstract      = {Concept probing is one prominent methodology for interpreting and analyzing (deep) neural network models. It has, for example, formed the backbone of several recent works to understand better the high-level knowledge learned and employed by game-playing agents, particularly in chess. However, some recent theoretical and empirical studies have questioned the methodology's reliability and highlighted some limitations. Here, in the game-playing domain of chess, we investigate the effectiveness of several different probing architectures and look into the reliability of methods for interpreting their results. We use a world-class chess-playing agent as our test domain, which allows us, via self-play, to quantify the importance of the concepts identified in the agent's neural network by the concept probes. Our results demonstrate that the widespread practice of using linear probes and interpreting their accuracy to indicate concept importance is somewhat unreliable and needs to be revised. We demonstrate several ways of doing that in our domain, particularly by using more complex probes and amnesic-like probing.},
+  affiliation   = {Reykjavik University},
 }
 
 @inproceedings{patria:2021:cheat-detection-online-chess,
@@ -1878,6 +1880,7 @@
   url           = {https://ieeexplore.ieee.org/document/9702792},
   abstract      = {With the widespread use of chess engines cheating in chess has become easier than ever, especially in online chess. Cheating obviously brings a negative impact to the sport. However, research on the topic on cheat detection in chess is still scarcely found. Thus, this paper will discuss data and algorithms that can be used to develop cheat detection tools to analyze games. For data, there are analyzed data and unanalyzed data from online chess games whereas for the algorithm that will be explored there are convolutional neural network (CNN) and densely connected neural network. The results from the experiment using the CNN algorithm are better than the densely connected neural network for detecting if the player is cheating or not. Meanwhile for the data, using either unanalyzed and analyzed data doesn't change the best performing neural network, but it was found using the analyzed data still boosts the accuracy of both neural networks.},
   keywords      = {Seminars;Neural networks;Games;Convolutional neural networks;Intelligent systems;Information technology;Engines;Cheat Detection;Online Chess Games;Convolutional Neural Network;Dense Neural Network;Neural Network},
+  affiliation   = {Bina Nusantara University},
   pdf           = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9702792},
 }
 
@@ -1889,6 +1892,7 @@
   url           = {https://arxiv.org/abs/2504.21548},
   abstract      = {Social robots (SRs) should autonomously interact with humans, while exhibiting proper social behaviors associated to their role. By contributing to health-care, education, and companionship, SRs will enhance life quality. However, personalization and sustaining user engagement remain a challenge for SRs, due to their limited understanding of human mental states. Accordingly, we leverage a recently introduced mathematical dynamic model of human perception, cognition, and decision-making for SRs. Identifying the parameters of this model and deploying it in behavioral steering system of SRs allows to effectively personalize the responses of SRs to evolving mental states of their users, enhancing long-term engagement and personalization. Our approach uniquely enables autonomous adaptability of SRs by modeling the dynamics of invisible mental states, significantly contributing to the transparency and awareness of SRs. We validated our model-based control system in experiments with 10 participants who interacted with a Nao robot over three chess puzzle sessions, 45 - 90 minutes each. The identified model achieved a mean squared error (MSE) of 0.067 (i.e., 1.675\% of the maximum possible MSE) in tracking beliefs, goals, and emotions of participants. Compared to a model-free controller that did not track mental states of participants, our approach increased engagement by 16\% on average. Post-interaction feedback of participants (provided via dedicated questionnaires) further confirmed the perceived engagement and awareness of the model-driven robot. These results highlight the unique potential of model-based approaches and control theory in advancing human-SR interactions.},
   keywords      = {Mathematical Dynamic Model of Mental States, Adaptive Cognition-Aware Social Robots, Model-based Control},
+  affiliation   = {TU Delft},
   code          = {https://github.com/marialuis-mp/MMM-Controller-for-Social-Robot},
   dataset       = {https://data.4tu.nl/datasets/ccadc914-9502-46d6-9ba5-fef581f2933f},
   archiveprefix = {arXiv},
@@ -1897,11 +1901,13 @@
 
 @misc{pav:2025:inferring-piece-value-chess-variants,
   title         = {Inferring Piece Value in Chess and Chess Variants},
-  author        = {Steven Pav},
+  author        = {Pav, Steven E.},
   year          = {2025},
   eprint        = {2509.04691},
   url           = {https://arxiv.org/abs/2509.04691},
+  note          = {tweet thread: https://x.com/gilgamath/status/1966550535827583388; more analyses here: http://gilgamath.com/category/analysis.html},
   abstract      = {We use logistic regression to estimate the value of the pieces in standard chess and several chess variants, namely Chess 960, Atomic chess, Antichess, and Horde chess. We perform our regressions on several years of data from Lichess, the free and open-source internet chess server. We use the published player ratings to control for the confounding effect of differential player skill. We adjust for the attenuation bias in regressions due to the noise in observed ratings. We find that major piece values, relative to the value of a pawn, are fairly consistent with historical valuation systems. However we find slightly higher value to bishops than knights. We find that piece values are smaller, in absolute value, in Atomic and Antichess than standard chess. We also present approximate values of the pieces to equalize odds when players of varying skill face off.},
+  affiliation   = {Gilgamath},
   archiveprefix = {arXiv},
   primaryclass  = {stat.AP},
 }
@@ -1911,12 +1917,16 @@
   author        = {Pilone, Arthur and Raglianti, Marco and Lanza, Michele and Kon, Fabio and Meirelles, Paulo},
   year          = {2025},
   booktitle     = {2025 International Conference on Software Maintenance and Evolution (ICSME)},
+  pages         = {418--429},
+  url           = {https://ieeexplore.ieee.org/document/11186053},
   abstract      = {Development teams for mobile applications can receive thousands of user reviews daily. At the same time, these developers use different communication channels, such as the GitHub issue tracker. Although GitHub issues are accessible and manageable for developers, their content often differs starkly from what users write in app reviews. Issues may lack steps to reproduce bugs or insights that justify the priority of new feature requests. The sheer volume of user reviews for a popular app, combined with their heterogeneity and varying quality, makes manual integration into issue trackers unfeasible. We present an approach that automatically augments GitHub issues with informative user reviews to bridge the gap between user feedback and developer-managed issues. Using a state-of-the-art large language model (LLM), our approach automatically retrieves user reviews with high semantic textual similarity (STS) to the issue content and suggests reviews that augment developers' understanding of the issue. In this paper, we present large-scale quantitative and qualitative analyses to assess the feasibility of enriching development workflows with user-written information. Using over 37,000 issues and 750,000 reviews from 19 popular Free/Libre/Open Source Software (FLOSS) mobile applications, our approach augments 3,017 (8\%) issues with 7,287 (1\%) potentially informative reviews. In addition to providing insights into user-reported bugs and feature requests, the information from these matches points toward a novel and promising way to leverage user reviews for concerted app evolution.},
   keywords      = {Semantic Textual Similarity, User Feedback Mining, GitHub Issues, Information Retrieval, Software Repository Mining},
+  affiliation   = {University of São Paulo; Università della Svizzera italiana (USI)},
   code          = {https://gitlab.com/ArthurPilone/deepermatcher},
   dataset       = {https://figshare.com/articles/dataset/Replication_package_for_the_paper_Automatically_Augmenting_GitHub_Issues_with_Informative_User_Reviews_/28578140},
 }
 
+}
 @misc{poesia:2025:programmatic-representation-learning-language-models,
   title         = {Programmatic Representation Learning with Language Models},
   author        = {Gabriel Poesia and Georgia Gabriela Sampaio},
@@ -1924,6 +1934,7 @@
   eprint        = {2510.14825},
   url           = {https://arxiv.org/abs/2510.14825},
   abstract      = {Classical models for supervised machine learning, such as decision trees, are efficient and interpretable predictors, but their quality is highly dependent on the particular choice of input features. Although neural networks can learn useful representations directly from raw data (e.g., images or text), this comes at the expense of interpretability and the need for specialized hardware to run them efficiently. In this paper, we explore a hypothesis class we call Learned Programmatic Representations (LeaPR) models, which stack arbitrary features represented as code (functions from data points to scalars) and decision tree predictors. We synthesize feature functions using Large Language Models (LLMs), which have rich prior knowledge in a wide range of domains and a remarkable ability to write code using existing domain-specific libraries. We propose two algorithms to learn LeaPR models from supervised data. First, we design an adaptation of FunSearch to learn features rather than directly generate predictors. Then, we develop a novel variant of the classical ID3 algorithm for decision tree learning, where new features are generated on demand when splitting leaf nodes. In experiments from chess position evaluation to image and text classification, our methods learn high-quality, neural network-free predictors often competitive with neural networks. Our work suggests a flexible paradigm for learning interpretable representations end-to-end where features and predictions can be readily inspected and understood.},
+  affiliation   = {Harvard University; Stanford University},
   code          = {https://github.com/gpoesia/leapr/},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
@@ -1936,6 +1947,7 @@
   eprint        = {2509.25475},
   url           = {https://arxiv.org/abs/2509.25475},
   abstract      = {Interpretability of Deep Neural Networks (DNNs) is a growing field driven by the study of vision and language models. Yet, some use cases, like image captioning, or domains like Deep Reinforcement Learning (DRL), require complex modelling, with multiple inputs and outputs or use composable and separated networks. As a consequence, they rarely fit natively into the API of popular interpretability frameworks. We thus present TDHook, an open-source, lightweight, generic interpretability framework based on `tensordict` and applicable to any `torch`' model. It focuses on handling complex composed models which can be trained for Computer Vision, Natural Language Processing, Reinforcement Learning or any other domain. This library features ready-to-use methods for attribution, probing and a flexible get-set API for interventions, and is aiming to bridge the gap between these method classes to make modern interpretability pipelines more accessible. TDHook is designed with minimal dependencies, requiring roughly half as much disk space as `transformer\_lens`, and, in our controlled benchmark, achieves up to a \texttimes{}2 speed-up over `captum` when running integrated gradients for multi-target pipelines on both CPU and GPU. In addition, to value our work, we showcase concrete use cases of our library with composed interpretability pipelines in Computer Vision (CV) and Natural Language Processing (NLP), as well as with complex models in DRL.},
+  affiliation   = {Sorbonne University; Laboratoire d'Informatique de Paris 6 (LIP6)},
   code          = {https://github.com/Xmaster6y/tdhook},
   archiveprefix = {arXiv},
   primaryclass  = {cs.AI},
