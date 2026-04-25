@@ -498,6 +498,24 @@
   pdf           = {https://ojs.aaai.org/index.php/ICAPS/article/view/15952/15763},
 }
 
+@inproceedings{czech:2024:representation-matters-mastering-chess-improved-feature-representation-alphazero-outperforms-switching-transformers,
+  title         = {Representation Matters for Mastering Chess: Improved Feature Representation in AlphaZero Outperforms Switching to Transformers},
+  author        = {Johannes Czech and Jannis Blüml and Kristian Kersting and Hedinn Steingrimsson},
+  year          = {2024},
+  booktitle     = {ECAI 2024},
+  series        = {Frontiers in Artificial Intelligence and Applications},
+  volume        = {392},
+  pages         = {2378--2385},
+  doi           = {10.3233/FAIA240763},
+  url           = {https://ebooks.iospress.nl/DOI/10.3233/FAIA240763},
+  note          = {preprint v1: Representation Matters: The Game of Chess Poses a Challenge to Vision Transformers (https://arxiv.org/abs/2304.14918v1).},
+  abstract      = {While transformers have gained recognition as a versatile tool for artificial intelligence (AI), an unexplored challenge arises in the context of chess — a classical AI benchmark. Here, incorporating Vision Transformers (ViTs) into AlphaZero is insufficient for chess mastery, mainly due to ViTs’ computational limitations. The attempt to optimize their efficiency by combining MobileNet and NextViT outperformed AlphaZero by about 30 Elo. However, we propose a practical improvement that involves a simple change in the input representation and value loss functions. As a result, we achieve a significant performance boost of up to 180 Elo points beyond what is currently achievable with AlphaZero in chess. In addition to these improvements, our experimental results using the Integrated Gradient technique confirm the effectiveness of the newly introduced features.},
+  keywords      = {Transformer, Input Representation, Loss Formulation, Chess, Monte-Carlo Tree Search, AlphaZero},
+  affiliation   = {TU Darmstadt; German Research Center for Artificial Intelligence (DFKI); Hessian Center for Artificial Intelligence (hessian.AI); Rice University; The Steingrimsson Foundation},
+  preprint      = {https://arxiv.org/abs/2304.14918},
+  code          = {https://github.com/QueensGambit/CrazyAra/releases/tag/1.0.4},
+}
+
 @inproceedings{das:2020:leveraging-rationales-human-task-performance,
   title         = {Leveraging rationales to improve human task performance},
   author        = {Das, Devleena and Chernova, Sonia},
@@ -1768,6 +1786,7 @@
   abstract      = {Designing AI systems that capture human-like behavior has attracted growing attention in applications where humans may want to learn from, or need to collaborate with, these AI systems. Many existing works in designing human-like AI have taken a supervised learning approach that learns from data of human behavior, with the goal of creating models that can accurately predict human behavior. While this approach has shown success in capturing human behavior at different skill levels and even identifying individual behavioral styles, it also suffers from the drawback of mimicking human mistakes. Moreover, existing models only capture a snapshot of human behavior, leaving the question of how to improve them---e.g., from one human skill level to a stronger one---largely unanswered. Using chess as an experimental domain, we investigate the question of teaching an existing human-like model to be stronger using a data-efficient curriculum, while maintaining the model's human similarity. To achieve this goal, we extend the concept of curriculum learning to settings with multiple labeling strategies, allowing us to vary both the curriculum (dataset) and the teacher (labeling strategy).  We find that the choice of teacher has a strong impact on both playing strength and human similarity; for example, a teacher that is too strong can be less effective at improving playing strength and degrade human similarity more rapidly. We also find that the choice of curriculum can impact these metrics, but to a smaller extent; for example, training on a curriculum of human mistakes provides only a marginal benefit over training on a random curriculum. Finally, we show that our strengthened models achieve human similarity on datasets corresponding to their strengthened level of play, suggesting that our curriculum training methodology is improving them in human-like steps.},
   keywords      = {Human-like AI, Curriculum Learning},
   pdf           = {https://openreview.net/pdf?id=fJY2iCssvIs},
+  todo          = {cleanup this entry},
 }
 
 @inproceedings{nguyen:2025:comparison-effects-model-adaptation-techniques-large-language-models-non-linguistic-tasks,
@@ -1782,10 +1801,11 @@
   pages         = {936--944},
   doi           = {10.1145/3672608.3707740},
   isbn          = {9798400706295},
-  url           = {https://doi.org/10.1145/3672608.3707740},
+  url           = {https://dl.acm.org/doi/10.1145/3672608.3707740},
   numpages      = {9},
   abstract      = {Generative large language models (LLMs) have revolutionized natural language processing (NLP) by demonstrating exceptional performance in interpreting and generating human language. There has been some exploration of their application to non-linguistic tasks, which could lead to significant advancements in fields that rely heavily on structured data and specialized knowledge. However, there has been limited direct comparison of the effects of model adaptation techniques for non-linguistic compared to linguistic tasks with LLMs. To this end, the work in this paper investigates the effects of fine-tuning and few-shot learning on pre-trained LLMs for non-linguistic tasks using chess puzzles as a case study task. We compare the impact of fine-tuning and few-shot learning on models performing the same task represented in both chess notation (i.e., non-linguistic data) and natural language descriptions of the same chess notations (i.e., natural language data). Our experiments with Mixtral-8x7B-v0.1 and Meta-Llama-3-70B resulted in a 5\% lower average increase in performance after fine-tuning for non-linguistic tasks compared to linguistic tasks. Similarly, few-shot learning on pre-trained models exhibited a 3\% lower average increase in performance for on non-linguistic tasks compared to linguistic tasks. Furthermore, few-shot learning on fine-tuned models resulted in a significant accuracy drop, particularly for Mixtral, with a 24.82\% decrease for non-linguistic tasks. These results suggest that fine-tuning and few-shot learning for generative LLMs have stronger effects on linguistic tasks and their data than for non-linguistic.},
   keywords      = {large language models, natural language processing, model adaptation techniques},
+  affiliation   = {UT San Antonio},
 }
 
 @misc{nolan:2021:online-chess-social-networks,
@@ -1838,7 +1858,10 @@
   url           = {https://link.springer.com/chapter/10.1007/978-3-031-86585-5_1},
   abstract      = {Current chess rating systems update ratings incrementally and may not always accurately reflect a player's true strength at all times, especially for rapidly improving players or very rusty players. To overcome this, we explore a method to estimate player ratings directly from game moves and clock times. We compiled a benchmark dataset from Lichess with over one million games, encompassing various time controls and including move sequences and clock times. Our model architecture comprises a CNN to learn positional features, which are then integrated with clock-time data into a Bidirectional LSTM, predicting player ratings after each move. The model achieved an MAE of 182 rating points on the test data. Additionally, we applied our model to the 2024 IEEE Big Data Cup Chess Puzzle Difficulty Competition dataset, predicted puzzle ratings and achieved competitive results. This model is the first to use no hand-crafted features to estimate chess ratings and also the first to output a rating prediction after each move. Our method highlights the potential of using move-based rating estimation for enhancing rating systems and potentially other applications such as cheating detection.},
   keywords      = {Chess, Rating Estimation, Cheating Detection},
+  affiliation   = {Oregon State University},
   pdf           = {https://arxiv.org/pdf/2409.11506},
+  code          = {https://github.com/AstroBoy1/RatingNet},
+  model         = {https://drive.google.com/drive/folders/1W7WsZZVDXzOTLSn--iJMzOaxQYtJSDHg},
 }
 
 @article{ong:2024:sparse-but-strategic-quantitative-insights-chess-middlegame-complexity,
