@@ -2531,16 +2531,22 @@
 }
 
 @inproceedings{siji:2026:seqret-mining-rule-sets-event-sequences,
-  title         = {Seqret: Mining Rule Sets from Event Sequences},
-  author        = {Aleena Siji and Joscha C\"{u}ppers and Osman Ali Mian and Jilles Vreeken},
-  booktitle     = {Proceedings of the Fortieth AAAI Conference on Artificial Intelligence (AAAI-26)},
-  location      = {Singapore},
-  publisher     = {AAAI Press},
-  url           = {https://arxiv.org/abs/2505.06049},
+  title         = {SEQRET: Mining Rule Sets from Event Sequences},
+  author        = {Siji, Aleena and Cüppers, Joscha and Mian, Osman and Vreeken, Jilles},
+  year          = {2026},
+  month         = {Mar.},
+  journal       = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume        = {40},
+  number        = {18},
+  pages         = {15725--15733},
+  doi           = {10.1609/aaai.v40i18.38603},
+  url           = {https://ojs.aaai.org/index.php/AAAI/article/view/38603},
   note          = {preprint: https://arxiv.org/abs/2505.06049},
-  abstract      = {Summarizing event sequences is a key aspect of data mining. Most existing methods neglect conditional dependencies and focus on discovering sequential patterns only. In this paper, we study the problem of discovering both conditional and unconditional dependencies from event sequences. We do so by discovering rules of the form X \rightarrow{} Y where X and Yare sequential patterns. Such rules are simple to understand and provide a clear description of the relation between the antecedent and the consequent. To discover a succinct and non-redundant set of rules we formalize the problem in terms of the Minimum Description Length principle. As the search space is enormous and does not exhibit helpful structure, we propose the SEQRET method to discover high-quality rule sets in practice. Through extensive empirical evaluation we show that unlike the state of the art, SEQRET ably recovers the ground truth on synthetic datasets and finds useful rules from real datasets.},
+  abstract      = {Summarizing event sequences is a key aspect of data mining. Most existing methods neglect conditional dependencies and focus on discovering sequential patterns only. In this paper, we study the problem of discovering both conditional and unconditional dependencies from event sequences. We do so by discovering rules of the form X --> Y where X and Y are sequential patterns. Rules like these are simple to understand and provide a clear description of the relation between the antecedent and the consequent. To discover succinct and non-redundant sets of rules we formalize the problem in terms of the Minimum Description Length principle. As the search space is enormous and does not exhibit helpful structure, we propose the SEQRET method to discover high-quality rule sets in practice. Through extensive empirical evaluation we show that unlike the state of the art, SEQRET ably recovers the ground truth on synthetic datasets and finds useful rules from real datasets.},
   keywords      = {sequential patterns, rule mining, minimum description length},
+  affiliation   = {Helmholtz AI; CISPA Helmholtz Center for Information Security; Institute for AI in Medicine IKIM},
   website       = {https://eda.rg.cispa.io/prj/seqret/},
+  video         = {https://underline.io/lecture/141995-seqret-mining-rule-sets-from-event-sequences},
   code          = {https://eda.rg.cispa.io/prj/seqret/seqret-v20250526.zip},
 }
 
@@ -2552,12 +2558,13 @@
   url           = {https://arxiv.org/abs/2504.05425},
   abstract      = {Predicting player behavior in strategic games, especially complex ones like chess, presents a significant challenge. The difficulty arises from several factors. First, the sheer number of potential outcomes stemming from even a single position, starting from the initial setup, makes forecasting a player's next move incredibly complex. Second, and perhaps even more challenging, is the inherent unpredictability of human behavior. Unlike the optimized play of engines, humans introduce a layer of variability due to differing playing styles and decision-making processes. Each player approaches the game with a unique blend of strategic thinking, tactical awareness, and psychological tendencies, leading to diverse and often unexpected actions. This stylistic variation, combined with the capacity for creativity and even irrational moves, makes predicting human play difficult. Chess, a longstanding benchmark of artificial intelligence research, has seen significant advancements in tools and automation. Engines like Deep Blue, AlphaZero, and Stockfish can defeat even the most skilled human players. However, despite their exceptional ability to outplay top-level grandmasters, predicting the moves of non-grandmaster players, who comprise most of the global chess community -- remains complicated for these engines. This paper proposes a novel approach combining expert knowledge with machine learning techniques to predict human players' next moves. By applying feature engineering grounded in domain expertise, we seek to uncover the patterns in the moves of intermediate-level chess players, particularly during the opening phase of the game. Our methodology offers a promising framework for anticipating human behavior, advancing both the fields of AI and human-computer interaction.},
   keywords      = {Knowledge Representation, Machine Learning, Behavioral Programming, Predicting Human Actions, Human Decision-Making in Chess, Feature Engineering, Chess},
+  affiliation   = {Ben-Gurion University},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
 
 @inproceedings{soliman:2026:caissa-ai-neuro-symbolic-chess-agent-explainable-move-suggestion-grounded-commentary,
-  title         = {Ca{\"i}ssa AI: A Neuro-Symbolic Chess Agent for~Explainable Move Suggestion and~Grounded Commentary},
+  title         = {Ca{\"i}ssa AI: A Neuro-Symbolic Chess Agent for~Explainable Move Suggestion and Grounded Commentary},
   author        = {Soliman, Mazen and Ehab, Nourhan},
   editor        = {Braun, Tanya and Paa{\ss}en, Benjamin and Stolzenburg, Frieder},
   year          = {2026},
@@ -2565,9 +2572,12 @@
   publisher     = {Springer Nature Switzerland},
   address       = {Cham},
   pages         = {148--160},
+  doi           = {10.1007/978-3-032-02813-6_11},
   isbn          = {978-3-032-02813-6},
+  url           = {https://link.springer.com/chapter/10.1007/978-3-032-02813-6_11},
   abstract      = {Despite the impressive generative capabilities of large language models (LLMs), their lack of grounded reasoning and susceptibility to hallucinations limit their reliability in structured domains such as chess. We present Ca{\"i}ssa AI, a neuro-symbolic chess agent that augments LLM-generated move commentary with symbolic reasoning, knowledge graph integration, and verification modules. Ca{\"i}ssa AI combines a fine-tuned chess-specific LLM with a Prolog-based rule engine encoding chess tactics and rules, along with a dynamically constructed Neo4j knowledge graph representing the current board state. This hybrid architecture enables the system to generate not only accurate move suggestions but also coherent, strategically grounded commentary. A LangGraph-based verification module cross-checks LLM outputs against symbolic logic to ensure consistency and correctness, effectively mitigating hallucinations. By aligning data-driven generation with formal domain knowledge, Ca{\"i}ssa AI enhances both trustworthiness and explainability. Our results demonstrate that this tight neuro-symbolic integration produces verifiable, high-quality commentary and serves as a generalizable blueprint for AI systems requiring real-time, interpretable decision support.},
   keywords      = {Neuro-Symbolic AI, Chess Agents, Explainable Reasoning},
+  affiliation   = {German University in Cairo},
 }
 
 @article{song:2023:investigation-sicilian-defense,
@@ -2591,6 +2601,7 @@
   url           = {https://arxiv.org/abs/2512.15033},
   abstract      = {The evaluation of Large Language Models (LLMs) in complex reasoning domains typically relies on performance alignment with ground-truth oracles. In the domain of chess, this standard manifests as accuracy benchmarks against strong engines like Stockfish. However, high scalar accuracy does not necessarily imply robust conceptual understanding. This paper argues that standard accuracy metrics fail to distinguish between genuine geometric reasoning and the superficial memorization of canonical board states. To address this gap, we propose a Geometric Stability Framework, a novel evaluation methodology that rigorously tests model consistency under invariant transformations-including board rotation, mirror symmetry, color inversion, and format conversion. We applied this framework to a comparative analysis of six state-of-the-art LLMs including GPT-5.1, Claude Sonnet 4.5, and Kimi K2 Turbo, utilizing a dataset of approximately 3,000 positions. Our results reveal a significant Accuracy-Stability Paradox. While models such as GPT-5.1 achieve near-optimal accuracy on standard positions, they exhibit catastrophic degradation under geometric perturbation, specifically in rotation tasks where error rates surge by over 600\%. This disparity suggests a reliance on pattern matching over abstract spatial logic. Conversely, Claude Sonnet 4.5 and Kimi K2 Turbo demonstrate superior dual robustness, maintaining high consistency across all transformation axes. Furthermore, we analyze the trade-off between helpfulness and safety, identifying Gemini 2.5 Flash as the leader in illegal state rejection (96.0\%). We conclude that geometric stability provides an orthogonal and essential metric for AI evaluation, offering a necessary proxy for disentangling reasoning capabilities from data contamination and overfitting in large-scale models.},
   keywords      = {Large Language Models, Geometric Stability, Chess Evaluation, Robustness Analysis, AI Reasoning, Evaluation Metrics},
+  affiliation   = {Wuhan Donghu University; University of Manchester},
   archiveprefix = {arXiv},
   primaryclass  = {cs.AI},
 }
@@ -2603,6 +2614,7 @@
   url           = {https://ai4hgi.github.io/paper13.pdf},
   abstract      = {Contemporary chess engines offer precise yet opaque evaluations, typically expressed as centipawn scores. While effective for decision-making, these outputs obscure the underlying contributions of individual pieces or patterns. In this paper, we explore adapting SHAP (SHapley Additive exPlanations) to the domain of chess analysis, aiming to attribute a chess engines evaluation to specific pieces on the board. By treating pieces as features and systematically ablating them, we compute additive, per-piece contributions that explain the engines output in a locally faithful and human-interpretable manner. This method draws inspiration from classical chess pedagogy, where players assess positions by mentally removing pieces, and grounds it in modern explainable AI techniques. Our approach opens new possibilities for visualization, human training, and engine comparison. We release accompanying code and data to foster future research in interpretable chess AI.},
   keywords      = {chess, explainable AI, shap},
+  affiliation   = {University of Pisa},
   code          = {https://github.com/fspinna/chessplainer},
 }
 
@@ -2619,6 +2631,7 @@
   note          = {Older version with only chessography scheme covered: https://arxiv.org/abs/2412.09742},
   abstract      = {This paper shows the weaknesses of two symmetric encryption schemes – Chessography and Cascaded Spin Shuffle. The security claims made by their authors are unsubstantiated. Despite being featured in peer-reviewed publications, their flaws are readily apparent and do not require any sophisticated cryptanalysis. Consequently, the paper proposes a set of speculative "red flag" indicators aimed at identifying encryption proposals of potentially questionable quality.},
   keywords      = {encryption, symmetric ciphers, cryptanalysis, chess},
+  affiliation   = {Comenius University},
 }
 
 @misc{stenzel:2026:quantum-king-ring-domination-chess-qaoa-approach,
@@ -2628,6 +2641,8 @@
   eprint        = {2601.00318},
   url           = {https://arxiv.org/abs/2601.00318},
   abstract      = {The Quantum Approximate Optimization Algorithm (QAOA) is extensively benchmarked on synthetic random instances such as MaxCut, TSP, and SAT problems, but these lack semantic structure and human interpretability, offering limited insight into performance on real-world problems with meaningful constraints. We introduce Quantum King-Ring Domination (QKRD), a NISQ-scale benchmark derived from chess tactical positions that provides 5,000 structured instances with one-hot constraints, spatial locality, and 10--40 qubit scale. The benchmark pairs human-interpretable coverage metrics with intrinsic validation against classical heuristics, enabling algorithmic conclusions without external oracles. Using QKRD, we systematically evaluate QAOA design choices and find that constraint-preserving mixers (XY, domain-wall) converge approximately 13 steps faster than standard mixers (p<10^{-7}, d\approx0.5) while eliminating penalty tuning, warm-start strategies reduce convergence by 45 steps (p<10^{-127}, d=3.35) with energy improvements exceeding d=8, and Conditional Value-at-Risk (CVaR) optimization yields an informative negative result with worse energy (p<10^{-40}, d=1.21) and no coverage benefit. Intrinsic validation shows QAOA outperforms greedy heuristics by 12.6\% and random selection by 80.1\%. Our results demonstrate that structured benchmarks reveal advantages of problem-informed QAOA techniques obscured in random instances. We release all code, data, and experimental artifacts for reproducible NISQ algorithm research.},
+  affiliation   = {LMU Munich},
+  todo          = {paper mentions code and data availability upon publication},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
@@ -2658,6 +2673,9 @@
   url           = {https://www.sciencedirect.com/science/article/pii/S2451958826000722},
   abstract      = {This research explores the relationship between visual attention and chess performance through an analysis of eye-tracking data collected from 30 participants engaging with 15 chess puzzles of varying difficulty levels. By constructing saliency maps and conducting correlation analyses, we identified that successful players tend to focus on critical areas of the chessboard. Furthermore, we have found 22 out of 35 general features, 11 out of 26 Important squares features, and 40 out of 55 Attention map features to be statistically significant. To predict puzzle-solving success, we evaluated three predictive models: Puzzle-agnostic (puzzle independent), Puzzle-informed (with additional features encoding puzzle information), and Puzzle-driven (individual feature set for each puzzle). The Puzzle-driven model, performing feature selection for each puzzle individually, achieved the highest accuracy of 0.8911 with a standard deviation of 0.0452. These findings not only highlight the importance of visual attention in chess performance but also showcase the value of the newly introduced complex features. Both the Important squares and the Attention maps can be viewed as extensions of ideas rooted in earlier literature, particularly chunk theory. Their success demonstrates the possibilities of applying chunk theory beyond theoretical explanations, enabling its practical use in real-world tasks such as feature construction and model development.},
   keywords      = {Eye-tracking, Visual attention, Chess, Machine learning, Saliency maps, Correlation analysis},
+  affiliation   = {University of Bath; Skoltech},
+  poster        = {https://ars.els-cdn.com/content/image/1-s2.0-S2451958826000722-ga1_lrg.jpg},
+  appendix      = {https://ars.els-cdn.com/content/image/1-s2.0-S2451958826000722-mmc1.pdf},
 }
 
 @inproceedings{tang:2024:maia-2-unified-model-human-ai-alignment-chess,
@@ -2690,8 +2708,9 @@
   eprint        = {2502.10985},
   url           = {https://arxiv.org/abs/2502.10985},
   note          = {submitted to ICLR 2026: https://openreview.net/forum?id=uUq0gemhnv},
-  abstract      = {Elo rating, widely used for skill assessment across diverse domains ranging from competitive games to large language models, is often understood as an incremental update algorithm for estimating a stationary Bradley-Terry (BT) model. However, our empirical analysis of practical matching datasets reveals two surprising findings: (1) Most games deviate significantly from the assumptions of the BT model and stationarity, raising questions on the reliability of Elo. (2) Despite these deviations, Elo frequently outperforms more complex rating systems, such as mElo and pairwise models, which are specifically designed to account for non-BT components in the data, particularly in terms of win rate prediction. This paper explains this unexpected phenomenon through three key perspectives: (a) We reinterpret Elo as an instance of online gradient descent, which provides no-regret guarantees even in misspecified and non-stationary settings. (b) Through extensive synthetic experiments on data generated from transitive but non-BT models, such as strongly or weakly stochastic transitive models, we show that the ''sparsity'' of practical matching data is a critical factor behind Elo's superior performance in prediction compared to more complex rating systems. (c) We observe a strong correlation between Elo's predictive accuracy and its ranking performance, further supporting its effectiveness in ranking.},
+  abstract      = {Elo rating, widely used for skill assessment across diverse domains ranging from competitive games to large language models, is often understood as an incremental update algorithm for estimating a stationary Bradley-Terry (BT) model. However, our empirical analysis of practical matching datasets reveals two surprising findings: (1) Most games deviate significantly from the assumptions of the BT model and stationarity, raising questions on the reliability of Elo. (2) Despite these deviations, Elo frequently outperforms more complex rating systems, such as mElo and pairwise models, which are specifically designed to account for non-BT components in the data, particularly in terms of win rate prediction. This paper explains this unexpected phenomenon through three key perspectives: (a) We reinterpret Elo as an instance of online gradient descent, which provides no-regret guarantees even in misspecified and non-stationary settings. (b) Through extensive synthetic experiments on data generated from transitive but non-BT models, such as strongly or weakly stochastic transitive models, we show that the "sparsity" of practical matching data is a critical factor behind Elo's superior performance in prediction compared to more complex rating systems. (c) We observe a strong correlation between Elo's predictive accuracy and its ranking performance, further supporting its effectiveness in ranking.},
   keywords      = {Pairwise comparison, ranking},
+  affiliation   = {Princeton University},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
@@ -2702,7 +2721,10 @@
   year          = {2025},
   booktitle     = {Second Conference on Language Modeling},
   url           = {https://openreview.net/forum?id=lI4LgGv4sX},
+  tldr          = {We created a benchmark testing VLMs' ability to reason consistently across different modalities, revealing limitations in how models process semantically equivalent information based on format rather than meaning.},
   abstract      = {Evaluating whether vision-language models (VLMs) reason consistently across representations is challenging because modality comparisons are typically confounded by task differences and asymmetric information. We introduce SEAM, a benchmark that pairs semantically equivalent inputs across four domains that have existing standardized textual and visual notations. By employing distinct notation systems across modalities, in contrast to OCR-based image-text pairing, SEAM provides a rigorous comparative assessment of the textual-symbolic and visual-spatial reasoning capabilities of VLMs. Across 21 contemporary models, we observe systematic modality imbalance: vision frequently lags language in overall performance, despite the problems containing semantically equivalent information, and cross-modal agreement is relatively low. Our error analysis reveals two main drivers: textual perception failures from tokenization in domain notation and visual perception failures that induce hallucinations. We also show that our results are largely robust to visual transformations. SEAM establishes a controlled, semantically equivalent setting for measuring and improving modality-agnostic reasoning.},
+  keywords      = {Vision-Language Models, Benchmark, Modality Imbalance},
+  affiliation   = {University of Toronto; Coolwei AI Lab},
   code          = {https://github.com/CSSLab/SEAM},
   huggingface   = {https://huggingface.co/datasets/lilvjosephtang/SEAM-Benchmark},
   annote        = {https://lilv98.github.io/SEAM-Website/},
@@ -2717,6 +2739,7 @@
   url           = {https://escholarship.org/uc/item/85d620jz},
   abstract      = {The ability to make good decisions is critical in life. Although anecdotal and preliminary evidence suggests that social comparison could impair decision making, surprisingly little attention has been paid to such dynamics within cognitive science. The present study aimed to address this gap by exploring, via a sample of 1.5 million chess games and a fuzzy regression discontinuity design, whether higher status of competitors could cause individuals to commit more errors. Critically, chess data includes overt symbols of social status, viz. titles conferred at arbitrary thresholds of ratings that represent playing strength, and an objective measure of errors could be calculated by contrasting the moves that players chose in games against the optimal moves determined by powerful chess engines. I found no evidence that the mere presence of status titles impacted error rates.},
   keywords      = {decision making; error rate; cognitive psychology, social psychology, regression discontinuity design; chess},
+  affiliation   = {University of Western Australia},
 }
 
 @inproceedings{tijhuis:2023:predicting-chess-rating-single-game,
@@ -2727,8 +2750,9 @@
   publisher     = {{IEEE}},
   pages         = {1--8},
   doi           = {10.1109/COG57401.2023.10333133},
-  url           = {https://doi.org/10.1109/CoG57401.2023.10333133},
+  url           = {https://ieeexplore.ieee.org/document/10333133},
   abstract      = {Traditionally, the relative strength of a chess player within a competitive pool is identified by a rating number. In order to reach a fair rating that best represents their level of play, chess players are required to play numerous games against various opponents within that pool. However, intuitively, experienced chess players are capable of extracting a rough estimate of a player's strength by looking at the moves they made in a single game. How accurately could a machine learning model based on a large dataset of chess games predict player ratings from a single game, and what would these predictions depend on? This paper presents an attempt to identify, encode and model chess gameplay features in order to predict a player's rating from a single game played. If successful, such a model could be employed to attach a fair initial rating to a new player within a pool before any games are played. We use an extensive dataset of chess games downloaded from a popular online chess platform, from which we extract a set of 30 features which are used to model and ultimately predict players' ratings. Our findings show that we are capable of predicting the rating bracket of a player with 79.3\% accuracy when considering the extreme ends of the dataset (lowest vs. highest rated players), while the accuracy consistently drops as we increase the respective bracket width. We discovered that the most important features of our predictive models are both theory-and engine-related; most importantly, the features that we have extracted lead to explainable, quantifiable predictions of chess player strength.},
+  affiliation   = {Tilburg University},
 }
 
 @book{urcan:2025:east-meets-east-inside-2024-world-chess-championship-singapore,
@@ -2782,6 +2806,7 @@
   isbn          = {979-8-89176-190-2},
   url           = {https://aclanthology.org/2025.naacl-short.52/},
   abstract      = {Reasoning is a central capability of human intelligence. In recent years, with the advent of large-scale datasets, pretrained large language models have emerged with new capabilities, including reasoning. However, these models still struggle with long-term, complex reasoning tasks, such as playing chess. Based on the observation that expert chess players employ a dual approach combining long-term strategic play with short-term tactical play along with language explanation, we propose improving the reasoning capability of large language models in chess by integrating annotated strategy and tactic. Specifically, we collect a dataset named MATE, which consists of 1 million chess positions with candidate moves annotated for strategy and tactics. We finetune the LLaMA-3-8B model and compare it against state-of-the-art commercial language models in the task of selecting better chess moves. Our experiments show that our models perform better than GPT, Claude, and Gemini models. We find that language explanations can enhance the reasoning capability of large language models.},
+  affiliation   = {UCLA; Microsoft Research; Mohamed bin Zayed University of Artificial Intelligence (MBZUAI); University of Toronto; Peking University},
   website       = {https://mate-chess.github.io/},
   dataset       = {https://huggingface.co/datasets/OutFlankShu/MATE_NAACL2025_Explore-the-Reasoning-Capability-of-LLMs-in-the-Chess-Testbed},
   huggingface   = {https://huggingface.co/OutFlankShu/MATE},
@@ -2803,6 +2828,7 @@
   numpages      = {10},
   abstract      = {Lossless data compression has evolved into an indispensable tool for reducing data transfer times in heterogeneous systems. However, performing decompression on host systems can create performance bottlenecks. Accelerator libraries, such as nvCOMP, address this problem by providing custom GPU-enabled versions of some general-purpose compression methods, including Snappy, ZStandard and gzip. However, popular bzip-like compression schemes, which rely on block-sorting transforms have not yet been integrated since their fine-grained parallelization is challenging. With a focus on decompression, we propose novel techniques for fine-grained parallelization of inverse Burrows-Wheeler transform (iBWT) and inverse Move-to-Front (iMTF) transform on GPUs, which enable efficient processing of bzip2-based archives on CUDA-enabled accelerators for the first time. Consequently, we present the first fully GPU-enabled bzip2 decompression pipeline as a use case for the proposed algorithms. Our experimental results reveal speedups of up to 6.1x over a multicore CPU implementation for iBWT, and throughput rates of up to 2400 MB/s for combined iBWT and iMTF on an A100 GPU. For decompression of bzip2 archives, a throughput of over 11.62 GB/s is achieved on a DGX H100 server. The source code of our parallel decoder implementation is available at https://github.com/weissenberger/bzip2gpu.},
   keywords      = {Burrows-Wheeler transform, CUDA, GPU, Move-to-front transform, accelerators, bzip2, data compression},
+  affiliation   = {Johannes Gutenberg University Mainz},
 }
 
 @misc{wen:2025:chessqa-evaluating-large-language-models-chess-understanding,
@@ -2813,6 +2839,7 @@
   url           = {https://arxiv.org/abs/2510.23948},
   note          = {submitted here: https://openreview.net/forum?id=gBz9NMbvYS},
   abstract      = {Chess provides an ideal testbed for evaluating the reasoning, modeling, and abstraction capabilities of large language models (LLMs), as it has well-defined structure and objective ground truth while admitting a wide spectrum of skill levels. However, existing evaluations of LLM ability in chess are ad hoc and narrow in scope, making it difficult to accurately measure LLM chess understanding and how it varies with scale, post-training methodologies, or architecture choices. We present ChessQA, a comprehensive benchmark that assesses LLM chess understanding across five task categories (Structural, Motifs, Short Tactics, Position Judgment, and Semantic), which approximately correspond to the ascending abstractions that players master as they accumulate chess knowledge, from understanding basic rules and learning tactical motifs to correctly calculating tactics, evaluating positions, and semantically describing high-level concepts. In this way, ChessQA captures a more comprehensive picture of chess ability and understanding, going significantly beyond the simple move quality evaluations done previously, and offers a controlled, consistent setting for diagnosis and comparison. Furthermore, ChessQA is inherently dynamic, with prompts, answer keys, and construction scripts that can evolve as models improve. Evaluating a range of contemporary LLMs, we find persistent weaknesses across all five categories and provide results and error analyses by category. We will release the code, periodically refreshed datasets, and a public leaderboard to support further research.},
+  affiliation   = {University of Toronto},
   dataset       = {https://huggingface.co/datasets/wieeii/ChessQA-Benchmark},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
@@ -2832,6 +2859,7 @@
   url           = {https://doi.org/10.1007/978-3-031-30442-2_32},
   abstract      = {The idea of training Artificial Neural Networks to evaluate chess positions has been widely explored in the last ten years. In this paper we investigated dataset impact on chess position evaluation. We created two datasets with over 1.6 million unique chess positions each. In one of those we also included randomly generated positions resulting from consideration of potentially unpredictable chess moves. Each position was evaluated by the Stockfish engine. Afterwards, we created a multi class evaluation model using Multilayer Perceptron. Solution to the evaluation problem was tested with three different data labeling methods and three different board representations. We show that the accuracy for the model trained for the dataset without randomly generated positions is higher than for the model with such positions, for all data representations and 3, 5 and 11 evaluation classes.},
   keywords      = {chess position evaluation, deep neural network, model evaluation, accuracy},
+  affiliation   = {Gdańsk University of Technology},
 }
 
 @inproceedings{woodruff:2024:predicting-chess-puzzle-difficulty,
@@ -2861,6 +2889,7 @@
   doi           = {10.15439/2025F2456},
   url           = {http://dx.doi.org/10.15439/2025F2456},
   abstract      = {Estimating the difficulty of chess puzzles provides a rich testbed for studying human–computer interaction and adaptive learning. Building on recent advances and the FedCSIS 2025 Challenge, we address the task of predicting chess puzzle difficulty ratings using a multi-source representation approach. Our approach integrates pre-trained neural embeddings of board states, solution move sequences, and engine-derived success probabilities. These heterogeneous features are fused via dedicated embedding and projection layers, followed by a multi-layer perceptron regressor. Post-processing calibration and model ensemble further enhance robustness and generalization. Experiments on the FedCSIS 2025 dataset demonstrate that our method effectively leverages both structural and empirical information, achieving strong predictive performance. Our approach achieved fifth place on the final official leaderboard, highlighting the effectiveness of combining neural representations with domain-specific probabilistic features for robust chess puzzle difficulty prediction.},
+  affiliation   = {China Mobile},
 }
 
 @inproceedings{xie:2026:incr-faster-re-execution-via-bolt-on-incrementalization,
@@ -2885,9 +2914,10 @@
   publisher     = {{IEEE}},
   pages         = {320--321},
   doi           = {10.1109/BIGCOMP57234.2023.00066},
-  url           = {https://doi.org/10.1109/BigComp57234.2023.00066},
+  url           = {https://ieeexplore.ieee.org/document/10066746},
   abstract      = {Chess is a popular game among many people worldwide and is frequently played online. Although players are ranked based on existing rating systems, automation is essential for coordinating matches in tournaments with thousands of participants. In this study, we analyzed the game records of highly skilled chess players and determined appropriate ratings for players without ratings by using a decision tree model. It was determined that high-rated and low-rated players could be identified with accuracy levels above 80\%, even for players who were not included at the time of model training.},
   keywords      = {Chess log, player rating prediction, Training, Analytical models, Automation, Computational modeling, Games, Big Data, Decision trees, Model Training Time, Skilled Players, Chess Players, Thousands Of Participants, Process Mining, Internet Gaming, Tree Depth, Stage Of The Game},
+  affiliation   = {Tsuda University; Ochanomizu University},
 }
 
 @inproceedings{yang2025miyang:2025:mixture-experts-intrinsically-interpretable,
@@ -2926,8 +2956,10 @@
   booktitle     = {2023 4th International Conference on Artificial Intelligence and Data Sciences (AiDAS)},
   pages         = {160--164},
   doi           = {10.1109/AiDAS60501.2023.10284718},
+  url           = {https://ieeexplore.ieee.org/document/10284718/},
   abstract      = {Online chess has opened up a way for players to sharpen their skills through move analytics. Based on this feature, a support system called chess advisor can be utilized to assist players in a real-time match. However such system doesn't exist within the website itself, rather an involvement of 3rd party software is required. These kinds of software usually need assistance for input. This paper aims to create a system that is able to recognize chessboard state in real-time. We have proposed a chess piece image recognition system using transfer learning using ResNet50, a simple neural network, and a convolutional neural network (CNN). We collected our own 693 2D chess piece images dataset and performed data preprocessing to standardize the image dimensions. The proposed system detects and converts individual positions of each piece into a computer-readable output. This output can be used to facilitate the chess advisor in determining the best move. The transfer learning approach utilizing the ResNet50 model exhibited superior performance with an accuracy of 95.65\%. This outperformed alternative methods such as the simple neural network and the CNN. The ResNet50 model's advantage stemmed from its pre-training on the ImageNet dataset, enabling effective pattern generalization. In contrast, the simple neural network and CNN achieved lower accuracies of 73.4\% and 85\%. These models encountered difficulties due to limited dataset quantity and quality, as well as the absence of regularization techniques. Nevertheless, the CNN displayed better consistency in generalizing patterns compared to the simple neural network.},
   keywords      = {Training;Image recognition;Computational modeling;Transfer learning;Neural networks;Software;Real-time systems;Chess Pieces;CNN;Transfer Learning;Simple Neural Network;Image Recognition},
+  affiliation   = {Bina Nusantara University},
 }
 
 @inproceedings{yu:2026:biological-processing-units-leveraging-insect-connectome-pioneer-biofidelic-neural-architectures,
@@ -2940,8 +2972,10 @@
   address       = {Cham},
   pages         = {361--369},
   isbn          = {978-3-032-00800-8},
+  url           = {https://link.springer.com/chapter/10.1007/978-3-032-00800-8_32},
   abstract      = {The complete connectome of the Drosophila larva brain offers a unique opportunity to investigate whether biologically evolved circuits can support artificial intelligence. We convert this wiring diagram into a Biological Processing Unit (BPU)---a fixed recurrent network derived directly from synaptic connectivity. Despite its modest size (3,000 neurons and 65,000 weights between them), the unmodified BPU achieves 98\% accuracy on MNIST and 58\% on CIFAR-10, surpassing size-matched MLPs. Scaling the BPU via structured connectome expansions further improves CIFAR-10 performance, while modality-specific ablations reveal the uneven contributions of different sensory subsystems. On the ChessBench dataset, a lightweight GNN-BPU model trained on only 10,000 games achieves 60{\%} move accuracy, nearly 10x better than any size transformer. Moreover, CNN-BPU models with {\$}{\$}{\backslash}sim {\$}{\$}\sim{}2M parameters outperform parameter-matched Transformers, and with a depth-6 minimax search at inference, reach 91.7{\%} accuracy, exceeding even a 9M-parameter Transformer baseline. These results demonstrate the potential of biofidelic neural architectures to support complex cognitive tasks and motivate scaling to larger and more intelligent connectomes in future work.},
   keywords      = {biological inspired AI, biological connectome, chess},
+  affiliation   = {Johns Hopkins University; Pomegranate Intelligence; Catalio Capital Management},
   pdf           = {https://arxiv.org/pdf/2507.10951},
 }
 
