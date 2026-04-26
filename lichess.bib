@@ -839,7 +839,7 @@
   eissn         = {2538-1504},
 }
 
-@thesis{giadikiaroglou:2025:investgiating-capabilities-language-models-puzzles,
+@thesis{giadikiaroglou:2025:investigating-capabilities-language-models-puzzles,
   title         = {Investigating the capabilities of language models in puzzle reasoning: A survey and experimental analysis},
   author        = {Giadikiaroglou, Panagiotis},
   year          = {2025},
@@ -1461,7 +1461,7 @@
   eprint        = {2509.24239},
   url           = {https://arxiv.org/abs/2509.24239},
   abstract      = {Recent large language models (LLMs) have shown strong reasoning capabilities. However, a critical question remains: do these models possess genuine reasoning skills particularly complex strategic reasoning or are they primarily excelling at sophisticated pattern recognition within their training data? To address this question, this paper presents a chess testbed, ChessArena, to evaluate the strategic reasoning capabilities of LLMs. Chess requires complex strategic reasoning capabilities including long-term planning, strict rule comprehension, and multi-turn conversation memorization. Specifically, ChessArena is a competitive framework where LLMs play against each other, under four different play modes. The testbed is equipped with a ranking algorithm and a leaderboard. The testbed can also evaluate fine-grained capabilities including basic understanding, move selection, and puzzle solving. Over 13 LLMs with different modes are evaluated in ChessArena, playing over 800 games. The results reveal significant shortcomings in current LLMs: no model can beat Maia-1100 (a chess engine at human amateur level), while some even failed to defeat a random player that selects moves arbitrarily. We also present a strong baseline to the testbed: our fine-tuned Qwen3-8B substantially improved performance, approaching much larger state-of-the-art reasoning models.},
-  affiliation   = {Baidu, Nanjing University, University of Electronic Science and Technology of China (UESTC)},
+  affiliation   = {Baidu; Nanjing University; University of Electronic Science and Technology of China (UESTC)},
   code          = {https://github.com/XiaoFaJiang/ChessArena},
   dataset       = {https://huggingface.co/datasets/ljcnju/ChessArena_Training_Dataset},
   huggingface   = {https://huggingface.co/ljcnju/Qwen3-8B-Chess, https://huggingface.co/ljcnju/Qwen3-8B-Chess-SFT},
@@ -1514,7 +1514,7 @@
   numpages      = {11},
   abstract      = {In the intricate landscape of game-playing algorithms, Crazyhouse stands as a complex variant of chess where captured pieces are reintroduced, presenting unique evaluation challenges. This paper explores a hybrid approach that combines traditional evaluation functions with neural network-based evaluations, seeking an optimal balance in performance. Through rigorous experimentation, including self-play, matchups against a variant of the renowned program, Go-deep experiments, and score deviations, we present compelling evidence for the effectiveness of a weighted sum of both evaluations. Remarkably, in our experiments, the combination of 75\% neural network and 25\% traditional evaluation consistently emerged as the most effective choice. Furthermore, we introduce the use of Best-Change rates, which have previously been associated with evaluation quality, in the context of Monte Carlo tree search-based algorithms.},
   keywords      = {Crazyhouse, chess variants, heuristic evaluation functions, neural networks, Best-Change rates, Monte Carlo tree search},
-  affiliation   = {University of Ljubljana, TU Graz},
+  affiliation   = {University of Ljubljana; TU Graz},
 }
 
 @inproceedings{maksim:2025:neural-network-approach-chess-cheat-detection,
@@ -2244,7 +2244,7 @@
   note          = {Previously known as "Grandmaster-Level Chess Without Search" (https://arxiv.org/pdf/2402.04494v1)},
   abstract      = {This paper uses chess, a landmark planning problem in AI, to assess transformers' performance on a planning task where memorization is futile -- even at a large scale. To this end, we release ChessBench, a large-scale benchmark dataset of 10 million chess games with legal move and value annotations (15 billion data points) provided by Stockfish 16, the state-of-the-art chess engine. We train transformers with up to 270 million parameters on ChessBench via supervised learning and perform extensive ablations to assess the impact of dataset size, model size, architecture type, and different prediction targets (state-values, action-values, and behavioral cloning). Our largest models learn to predict action-values for novel boards quite accurately, implying highly non-trivial generalization. Despite performing no explicit search, our resulting chess policy solves challenging chess puzzles and achieves a surprisingly strong Lichess blitz Elo of 2895 against humans (grandmaster level). We also compare to Leela Chess Zero and AlphaZero (trained without supervision via self-play) with and without search. We show that, although a remarkably good approximation of Stockfish's search-based algorithm can be distilled into large-scale transformers via supervised learning, perfect distillation is still beyond reach, thus making ChessBench well-suited for future research.},
   keywords      = {chess, supervised learning, transformer, scaling, benchmark},
-  affiliation   = {Google DeepMind, Google},
+  affiliation   = {Google DeepMind; Google},
   website       = {https://neurips.cc/virtual/2024/poster/94747},
   poster        = {https://neurips.cc/media/PosterPDFs/NeurIPS%202024/94747.png},
   pdf           = {https://proceedings.neurips.cc/paper_files/paper/2024/file/78f0db30c39c850de728c769f42fc903-Paper-Conference.pdf},
@@ -2498,7 +2498,7 @@
   eprint        = {https://www.pnas.org/doi/pdf/10.1073/pnas.2406675122},
   url           = {https://www.pnas.org/doi/abs/10.1073/pnas.2406675122},
   abstract      = {As AI systems become more capable, they may internally represent concepts outside the sphere of human knowledge. This work gives an end-to-end example of unearthing machine-unique knowledge in the domain of chess. We obtain machine-unique knowledge from an AI system (AlphaZero) by a method that finds novel yet teachable concepts and show that it can be transferred to human experts (grandmasters). In particular, the new knowledge is learned from internal mathematical representations without a priori knowing what it is or where to start. The produced knowledge from AlphaZero (new chess concepts) is then taught to four grandmasters in a setting where we can quantify their learning, showing that machine-guided discovery and teaching is possible at the highest human level. AI systems have attained superhuman performance across various domains. If the hidden knowledge encoded in these highly capable systems can be leveraged, human knowledge and performance can be advanced. Yet, this internal knowledge is difficult to extract. Due to the vast space of possible internal representations, searching for meaningful new conceptual knowledge can be like finding a needle in a haystack. Here, we introduce a method that extracts new chess concepts from AlphaZero, an AI system that mastered chess via self-play without human supervision. Our method excavates vectors that represent concepts from AlphaZero's internal representations using convex optimization, and filters the concepts based on teachability (whether the concept is transferable to another AI agent) and novelty (whether the concept contains information not present in human chess games). These steps ensure that the discovered concepts are useful and meaningful. For the resulting set of concepts, prototypes (chess puzzle–solution pairs) are presented to experts for final validation. In a preliminary human study, four top chess grandmasters (all former or current world chess champions) were evaluated on their ability to solve concept prototype positions. All grandmasters showed improvement after the learning phase, suggesting that the concepts are at the frontier of human understanding. Despite the small scale, our result is a proof of concept demonstrating the possibility of leveraging knowledge from a highly capable AI system to advance the frontier of human knowledge; a development that could bear profound implications and shape how we interact with AI systems across many applications.},
-  affiliation   = {Google DeepMind, University of Oxford, Goodfire AI},
+  affiliation   = {Google DeepMind; University of Oxford; Goodfire AI},
   dataset       = {https://www.pnas.org/doi/suppl/10.1073/pnas.2406675122/suppl_file/pnas.2406675122.sd01.rtf},
   appendix      = {https://www.pnas.org/doi/suppl/10.1073/pnas.2406675122/suppl_file/pnas.2406675122.sapp.pdf},
   annote        = {Lichess openings cited in appendix},
