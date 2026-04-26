@@ -1095,6 +1095,18 @@
   affiliation   = {Stanford University},
 }
 
+@thesis{kandasamy:2026:chess-position-evaluation-using-deep-neural-networks,
+  title         = {Chess Position Evaluation Using Deep Neural Networks},
+  author        = {Kandasamy, Aakash},
+  year          = {2026},
+  url           = {https://hdl.handle.net/10356/214266},
+  type          = {Bachelor's thesis},
+  institution   = {Nanyang Technological University},
+  supervisor    = {He, Ying},
+  abstract      = {This project investigates the application of deep neural networks to the problem of chess position evaluation, a core component of any competitive chess engine. Traditional engines rely on handcrafted evaluation functions: manually tuned combinations of material balance, king safety, and hundreds of heuristic terms accumulated over decades. This work proposes an alternative approach, training a data- driven classifier that learns the mapping from raw board states to positional judgments directly from data, without any domain-specific feature engineering. Specifically, the model maps each position to one of seven discrete advantage categories ranging from black winning to white winning, providing a more granular evaluation than existing neural approaches such as Giraffe (which uses regression) or DeepChess (which uses binary comparison). The aim is to determine whether a simple multilayer perceptron, given sufficient labelled data and an appropriate encoding scheme, can learn meaningful positional evaluation from Stockfish-labelled examples alone, and to characterise how classification performance scales with dataset size. The pipeline encompasses data collection from Lichess game archives (~158,000 games, ~6.0 million unique positions), automated labelling using Stockfish at 300,000 nodes per position, bitplane-based feature encoding (785 dimensions), and a four-layer MLP trained with cross-entropy loss and inverse- frequency class weighting. The baseline model achieves 44.79% validation accuracy and a macro-F1 of 0.3729 at 298,132 positions. A scaling study from 100k to 1.5M positions reveals logarithmic improvement in macro-F1 from 0.272 to 0.498, at which point the MLP's capacity becomes the dominant bottleneck. Per-class analysis shows rare advantage classes benefit disproportionately from additional data, and confusion matrix analysis confirms the model has learned ordinal structure, with 78.3% of errors falling in adjacent categories. These results are contextualised against the Giraffe and DeepChess baselines, and a roadmap toward more expressive architectures is presented.},
+  affiliation   = {Nanyang Technological University},
+}
+
 @misc{kapla:2025:generalized-multi-linear-models-dimension-reduction-tensor-valued-predictors,
   title         = {Generalized Multi-Linear Models for Sufficient Dimension Reduction on Tensor Valued Predictors},
   author        = {Daniel Kapla and Efstathia Bura},
