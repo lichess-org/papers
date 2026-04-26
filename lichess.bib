@@ -853,15 +853,21 @@
   keywords      = {Large Language Models; Reasoning; Puzzle Solving; Prompting; Neurosymbolic Methods},
 }
 
-@misc{gilot:2026:verifying-floating-point-programs-stainless,
+@inproceedings{gilot:2026:verifying-floating-point-programs-stainless,
   title         = {Verifying Floating-Point Programs in Stainless},
-  author        = {Andrea Gilot and Axel Bergstr\"{o}m and Eva Darulova},
+  author        = {Gilot, Andrea and Bergstr{\"o}m, Axel and Darulova, Eva},
+  editor        = {Junges, Sebastian and Katz, Guy},
   year          = {2026},
-  eprint        = {2601.14059},
-  url           = {https://arxiv.org/abs/2601.14059},
+  booktitle     = {Tools and Algorithms for the Construction and Analysis of Systems},
+  publisher     = {Springer Nature Switzerland},
+  address       = {Cham},
+  pages         = {3--22},
+  isbn          = {978-3-032-22749-2},
   abstract      = {We extend the Stainless deductive verifier with floating-point support, providing the first automated verification support for floating-point numbers for a subset of Scala that includes polymorphism, recursion and higher-order functions. We follow the recent approach in the KeY verifier to axiomatise reasoning about mathematical functions, but go further by supporting all functions from Scala's math API, and by verifying the correctness of the axioms against the actual implementation in Stainless itself. We validate Stainless' floating-point support on a new set of benchmarks sampled from real-world code from GitHub, showing that it can verify specifications about, e.g., ranges of output or absence of special values for most supported functions, or produce counter-examples when the specifications do not hold.},
-  archiveprefix = {arXiv},
-  primaryclass  = {cs.PL},
+  keywords      = {Floating-Point Arithmetic; Transcendental Functions; Deductive Verification},
+  affiliation   = {Uppsala University},
+  preprint      = {https://arxiv.org/abs/2601.14059},
+  code          = {https://github.com/epfl-lara/stainless, https://github.com/fxpl/stainless-float-benchmarks},
 }
 
 @thesis{giron:2025:alpha-deep-chess-chess-engine-alpha-beta-pruning,
