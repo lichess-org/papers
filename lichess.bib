@@ -2955,8 +2955,10 @@
   pages         = {8415--8422},
   doi           = {10.1109/BigData62323.2024.10826037},
   issn          = {2573-2978},
+  url = {https://ieeexplore.ieee.org/document/10826037},
   abstract      = {We detail the bread emoji team's submission to the IEEE BigData 2024 Predicting Chess Puzzle Difficulty Challenge. Our solution revolved around the use of ensembled, pretrained, neural chessboard embedders (specifically, truncated Maia and Leela models) and an empirically-guided distribution rescaling postprocessing step.Our approach was the outright winner of the competition with a >16.4\% reduction in mean squared error (MSE) over second place in the preliminary evaluation and a >13.3\% reduction in MSE over second place in the final evaluation.},
   keywords      = {Training;Transfer learning;Artificial neural networks;Predictive models;Big Data;Data models;Emojis},
+  affiliation = {Google; Tokyo Institute of Technology},
   code          = {https://github.com/mcognetta/ieee-chess},
 }
 
@@ -3156,6 +3158,7 @@
   eprint        = {2602.16833},
   url           = {https://arxiv.org/abs/2602.16833},
   abstract      = {Exploration remains a key bottleneck for reinforcement learning (RL) post-training of large language models (LLMs), where sparse feedback and large action spaces can lead to premature collapse into repetitive behaviors. We propose Verbalized Action Masking (VAM), which verbalizes an action mask in the prompt and enforces that the model outputs an action from the masked set. Building on this interface, we introduce iterative action-space pruning: if the target action is not sampled, we remove valid sampled actions from the mask and resample under the reduced candidate set, repeating until the target is sampled or a fixed budget is exhausted. We study VAM in chess and evaluate it under two training regimes: an engine-play regime that generates states via play against an engine opponent and a fixed-dataset regime that trains from a fixed dataset of positions with verifier scores. Across held-out chess puzzles and full-game play measured by average centipawn loss (ACPL), VAM improves learning efficiency and final performance over strong baselines, highlighting verbalized masking as a practical mechanism for controllable exploration in LLM RL post-training.},
+  affiliation = {Carnegie Mellon University; King's College London},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
