@@ -309,7 +309,8 @@
   volume        = {43},
   pages         = {807--812},
   doi           = {10.15439/2025F4532},
-  url           = {http://dx.doi.org/10.15439/2025F4532},
+  url           = {https://ieeexplore.ieee.org/document/11214528},
+  affiliation   = {Neurospark Lab; University College Dublin; Anhui University of Finance and Economics; South China University of Technology},
   abstract      = {Accurately estimating the difficulty of the chess puzzle is important for adaptive training systems, personalized recommendations, and large-scale content curation. Unlike engine evaluations optimized for perfect play, this task involves modeling human-perceived solving difficulty, typically expressed by Glicko-2 ratings. We present a multi-stage framework developed for the FedCSIS 2025 Challenge. The method trains four rating-banded neural regression models in different Elo ranges to capture localized difficulty patterns and reduce bias from unbalanced data. Their predictions are combined with statistical attributes, including success probabilities, failure distributions, and solution length, through a feature-based regression stage to improve cross-range generalization. A final calibration step adjusts the output to statistically plausible rating levels, mitigating systematic prediction biases without adding computational complexity. An additional mask selection procedure was explored as part of the competition extension to identify 10\% of the puzzles that are most likely to benefit from the refined evaluation. The proposed solution ranked  in the final standings. These results demonstrate that a lightweight and interpretable regression pipeline can achieve competitive precision in modeling human-perceived chess puzzle difficulty.},
 }
 
@@ -351,6 +352,7 @@
   pages         = {813--818},
   doi           = {10.15439/2025F3227},
   url           = {http://dx.doi.org/10.15439/2025F3227},
+  affiliation   = {The Chinese University of Hong Kong, Shenzhen; Ngee Ann Polytechnic; University of Melbourne},
   abstract      = {The goal of FedCSIS 2025 Challenge is to build a model to predict the difficulty (measured as Lichess rating) of given chess puzzles. To address this task, we propose a three-stage joint visual–statistical framework for predicting Glicko-based difficulty ratings. In the first stage, a convolutional model based on MobileNetV2 integrates FEN-rendered board images with structured features, including engine-predicted success probabilities, move count, and piece counts, to generate baseline predictions. The second stage employs LightGBM to perform residual refinement, explicitly learning the residual errors of the baseline predictions to correct systematic biases, particularly for extreme difficulty levels. Finally, a domain-informed refinement adjusts the outputs toward interpretable difficulty estimates derived from failure probability distributions and rating-bucket inflection points. Our model ranked 9th in the challenge. Experimental results show that residual refinement and domain-informed adjustment significantly reduce mean squared error compared to the baseline visual–statistical model.},
 }
 
@@ -380,6 +382,8 @@
   booktitle     = {2025 7th International Congress on Human-Computer Interaction, Optimization and Robotic Applications (ICHORA)},
   pages         = {1--5},
   doi           = {10.1109/ICHORA65333.2025.11016842},
+  url           = {https://ieeexplore.ieee.org/document/11016842},
+  affiliation   = {Rhine-Waal University of Applied Sciences},
   abstract      = {This paper presents the design, implementation, and evaluation of an innovative electronic chess board leveraging Hall-effect sensors for chess piece identification. Current electronic chess boards employ diverse technologies such as RFID, resistive switches, optical sensors, and computer vision, each with varying complexity and cost. The proposed solution utilizes Hall-effect sensors to detect changes in magnetic flux density caused by magnets embedded in chess pieces.The design features a modular 4x4 grid of sensors integrated on printed circuit boards, where each piece is differentiated by a unique magnet-spacer configuration. Experimental investigations validate the relationship between magnetic flux density and distance, modelled theoretically and tested with a field strength meter and the PCB system. Results confirm the accurate detection of piece positions and classes, despite minor interference from adjacent pieces. A Python-based system processes the sensor data, translating chess moves into live updates on the Li-Chess platform.The system has displayed good results in piece position identification accurately. Further improvement including as spacer configurations are to be done to implement piece classification. Future work aims to explore enhanced micro-controller integration, offering a streamlined and accessible alternative to existing technologies.},
   keywords      = {Magnetic flux density;Magnetic sensors;Printed circuits;Interference;Sensor phenomena and characterization;Robot sensing systems;Sensor systems;Sensors;Reliability;Magnets;electronic chessboard;analogue object identification;Hall-effect sensors;micro-controller},
 }
@@ -419,6 +423,7 @@
   volume        = {18},
   number        = {6},
   abstract      = {A chess opening is the preliminary stage of a chess game which typically consists of moves from formerly analysed openings. Opening strategy plays a crucial role in the entire game and decides the destiny of the middlegame and endgame. Here in this article, we attempted to introduce a method to predict the opening moves of a specific opponent. The technique analyses the past games played by a specific player to discover the most probable opening that the player is going to play in the subsequent games. The overall performance of this method is analysed and demonstrated by taking several factors such as transience, average turn and opponent's response in a given situation into consideration. This comparative study enables us to acquire the knowledge about the opening preferences of an opponent, which gives a strategic advantage to a chess player and helps them to develop a game strategy from the beginning of the game. In this article, we attempted to give an overview of how to predict the most favoured opening of a player and how we can utilise it for our benefit},
+  affiliation   = {Heritage Institute of Technology; Maulana Abul Kalam Azad University of Technology},
   keywords      = {Chess Opening, Opponent, middlegame, endgame.},
   pdf           = {https://www.webology.org/data-cms/articles/20220815062132pmwebology%2018%20(6)%20-%20579.pdf},
 }
@@ -435,6 +440,7 @@
   doi           = {10.5753/eniac.2021.18296},
   issn          = {2763-9061},
   url           = {https://sol.sbc.org.br/index.php/eniac/article/view/18296},
+  affiliation   = {Universidade Federal do Espírito Santo; Universidade Federal de Viçosa},
   langid        = {portuguese},
   abstract      = {Chess is becoming more popular and accessible by the day. For ins- tance, online chess enables matches between players from different parts of the world, bringing new ways of learning the game and interacting with other Web users. With this growth in popularity, there is a possibility to empower amateur players with rich computer analysis and tools, which may assist them in their learning process. One of the ways to analyze chess matches is through the study of errors. In this context, we present a new approach for the task of error pre- diction in chess. Our motivation is that knowing when players are likely to make a mistake is knowing what types of situations lead to difficulties in making the right decision. To that end, we add an abstraction layer to the already studied error prediction task, providing graph-based features to the machine learning models. Our results show a increase in the accuracy of the tested models, im- proving the results obtained in recent studies.},
   pdf           = {https://sol.sbc.org.br/index.php/eniac/article/view/18296/18130},
