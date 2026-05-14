@@ -1506,6 +1506,7 @@
   volume        = {38},
   number        = {4},
   pages         = {572--589},
+  affiliation   = {ChessEd; University of Chicago; Phillips Academy Andover}
   doi           = {10.1002/asmb.2684},
   eprint        = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/asmb.2684},
   url           = {https://onlinelibrary.wiley.com/doi/abs/10.1002/asmb.2684},
@@ -1640,13 +1641,14 @@
 
 @inproceedings{milosz:2024:predicting-puzzle-difficulty-transformers,
   title         = {{ Predicting Chess Puzzle Difficulty with Transformers }},
-  author        = {Milosz, Szymon and Kapusta, Pawel},
+  author        = {Mi\l{}osz, Szymon and Kapusta, Pawel},
   year          = {2024},
   month         = dec,
   booktitle     = {2024 IEEE International Conference on Big Data (BigData)},
   publisher     = {IEEE Computer Society},
   address       = {Los Alamitos, CA, USA},
   pages         = {8377--8384},
+  affiliation   = {Lodz University of Technology},
   doi           = {10.1109/BigData62323.2024.10825919},
   url           = {https://doi.ieeecomputersociety.org/10.1109/BigData62323.2024.10825919},
   abstract      = {This study addresses the challenge of quantifying chess puzzle difficulty - a complex task that combines elements of game theory and human cognition and underscores its critical role in effective chess training. We present GlickFormer, a novel transformer-based architecture that predicts chess puzzle difficulty by approximating the Glicko-2 rating system. Unlike conventional chess engines that optimize for game outcomes, GlickFormer models human perception of tactical patterns and problem-solving complexity.The proposed model utilizes a modified ChessFormer backbone for spatial feature extraction and incorporates temporal information via factorized transformer techniques. This approach enables the capture of both spatial chess piece arrangements and move sequences, effectively modeling spatio-temporal relationships relevant to difficulty assessment.Experimental evaluation was conducted on a dataset of over 4 million chess puzzles. Results demonstrate GlickFormer's superior performance compared to the state-of-the-art ChessFormer baseline across multiple metrics. The algorithm's performance has also been recognized through its competitive results in the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty competition, where it placed 11th.The insights gained from this study have implications for personalized chess training and broader applications in educational technology and cognitive modeling.},
@@ -1665,6 +1667,7 @@
   pages         = {831--835},
   doi           = {10.15439/2025F7603},
   url           = {http://dx.doi.org/10.15439/2025F7603},
+  affiliation   = {Lodz University of Technology},
   abstract      = {This paper presents our third-place solution for the FedCSIS 2025 Challenge: Predicting Chess Puzzle Difficulty - Second Edition. Building on our prior GlickFormer architecture, we develop a transformer-based approach featuring a novel multitask pretraining strategy that combines masked-square reconstruction with solution policy prediction. Our spatial-only architecture directly embeds solution moves, eliminating temporal modules, while integrating human-centric priors through Maia-2 engine solve-rate predictions. Evaluated on the Lichess puzzle corpus, our approach reduces validation MSE by 30.4\% compared to from-scratch training and achieves competitive results (test MSE: 55.9k) despite distribution shifts in the competition environment.\hspace{0.6em}},
 }
 
