@@ -63,6 +63,7 @@
   doi           = {10.4230/LIPICS.FUN.2022.2},
   url           = {https://doi.org/10.4230/LIPIcs.FUN.2022.2},
   abstract      = {The FIDE Laws of Chess establish that if a player runs out of time during a game, they lose unless there exists no sequence of legal moves that ends in a checkmate by their opponent, in which case the game is drawn. The problem of determining whether or not a given chess position is unwinnable for a certain player has been considered intractable by the community and, consequently, chess servers do not apply the above rule rigorously, thus unfairly classifying many games. We propose, to the best of our knowledge, the first algorithm for chess unwinnability that is sound, complete and efficient for practical use. We also develop a prototype implementation and evaluate it over the entire Lichess Database (containing more than 3 billion games), successfully identifying all unfairly classified games in the database.},
+  affiliation   = {Independent},
   website       = {https://chasolver.org/},
   pdf           = {https://chasolver.org/FUN22-full.pdf},
   code          = {https://github.com/miguel-ambrona/D3-Chess},
@@ -830,6 +831,7 @@
   url           = {https://doi.org/10.1515/jqas-2025-0035},
   abstract      = {The presence or absence of winner-loser effects is a widely discussed phenomenon across both sports and psychology research. Investigation of such effects is often hampered by the limited availability of data. Online chess has exploded in popularity in recent years and provides vast amounts of data which can be used to explore this question. With a hierarchical Bayesian regression model, we carefully investigate the presence of such experiential effects in online chess. Using a large quantity of online chess data, we see little evidence for experiential effects that are consistent across all players, with some individual players showing some evidence for such effects. Given the challenging temporal nature of this data, we discuss several methods for assessing the suitability of our model and carefully check its validity.},
   keywords      = {Winner-loser Effects, Chess, Hierarchical Bayesian Modeling, online competitions},
+  affiliation   = {Simon Fraser University; UT Austin},
   pdf           = {https://www.degruyterbrill.com/document/doi/10.1515/jqas-2025-0035/pdf},
   code          = {https://github.com/OwenWard/Chess_Winner},
   dataset       = {https://zenodo.org/records/17247312},
@@ -854,14 +856,14 @@
   author        = {Giadikiaroglou, Panagiotis},
   year          = {2025},
   month         = mar,
-  publisher     = {National Technological University of Athens},
+  publisher     = {National Technical University of Athens},
   doi           = {http://dx.doi.org/10.26240/heal.ntua.29165},
   url           = {https://dspace.lib.ntua.gr/xmlui/handle/123456789/61469},
   type          = {Bachelor's thesis},
   supervisor    = {Giorgos Stamou},
   abstract      = {Puzzle-solving has long served as a benchmark for evaluating artificial intelligence, testing a model's ability to reason, infer, and strategize across complex problem spaces. Traditional AI and machine learning methods, such as symbolic reasoning and reinforcement learning, have made notable strides in structured domains like board games and logic puzzles. However, as neural networks and, more recently, large language models (LLMs) have evolved, new possibilities have emerged for tackling a broader range of puzzle types, including those requiring nuanced commonsense reasoning, abstract pattern recognition, and complex multi-step calculations. LLMs, with their vast data-driven language capabilities, hold unique potential to bridge structured logical tasks and less formal, knowledge-based puzzles. Despite these advances, the current landscape of puzzle-solving with LLMs reveals both achievements and limitations, particularly when models are tasked with problems that demand interpretative reasoning and precise calculation. This thesis explores the evolving role of LLMs in solving such complex reasoning tasks, specifically focusing on their puzzle-solving capabilities. Divided into two main sections, the thesis first provides a comprehensive survey of recent advancements in LLM methodologies, covering diverse prompting techniques, neuro-symbolic approaches, and fine-tuning strategies for puzzles. Using a newly proposed taxonomy, puzzles are categorized into rule-based and rule-less types, with each category examined for its unique cognitive demands on LLMs. The second section presents experimental evaluations conducted on four datasets--two math-based datasets (GSM8K, SVAMP) and two puzzle-focused datasets (Game of 24 and RiddleSense). Various reasoning techniques, including Input-Output (IO) prompting, Chain-of-Thought (CoT), Least-to-Most (LtM), and Faithful-CoT methods, are employed to assess LLM performance. Models of varying scales, particularly smaller LLMs like Llama-3.1 family and Mistral, are tested across settings such as zero-shot, few-shot, and self-consistency to evaluate their efficacy in solving complex and multi-step reasoning tasks. The thesis provides critical insights into the performance limitations of current LLMs in puzzle-solving, particularly noting that advanced reasoning methods like Faithful-CoT and puzzle translation techniques yield inconsistent improvements with smaller models. Finally, it outlines future research directions, advocating for expanded dataset creation, neuro-symbolic integration, and advancements in puzzle generation. This thesis aims to deepen our understanding of LLMs' reasoning abilities and highlight pathways to enhance their performance in complex cognitive tasks.},
   keywords      = {Large Language Models; Reasoning; Puzzle Solving; Prompting; Neurosymbolic Methods},
-  affiliation   = {National Technological University of Athens},
+  affiliation   = {National Technical University of Athens},
 }
 
 @inproceedings{gilot:2026:verifying-floating-point-programs-stainless,
@@ -1292,17 +1294,17 @@
   primaryclass  = {cs.HC},
 }
 
-@article{kuboki:2025:policies-multiple-skill-levels-better-strength-estimation-games,
+@misc{kuboki:2025:policies-multiple-skill-levels-better-strength-estimation-games,
   title         = {Policies of Multiple Skill Levels for Better Strength Estimation in Games},
-  author        = {Kyota Kuboki and Tatsuyoshi Ogawa and Chu{-}Hsuan Hsueh and Shi{-}Jim Yen and Kokolo Ikeda},
+  author        = {Kyota Kuboki and Tatsuyoshi Ogawa and Chu-Hsuan Hsueh and Shi-Jim Yen and Kokolo Ikeda},
   year          = {2025},
-  journal       = {CoRR},
-  volume        = {abs/2505.00279},
-  doi           = {10.48550/ARXIV.2505.00279},
   eprint        = {2505.00279},
-  eprinttype    = {arXiv},
-  url           = {https://doi.org/10.48550/arXiv.2505.00279},
+  url           = {https://arxiv.org/abs/2505.00279},
   abstract      = {Accurately estimating human skill levels is crucial for designing effective human-AI interactions so that AI can provide appropriate challenges or guidance. In games where AI players have beaten top human professionals, strength estimation plays a key role in adapting AI behavior to match human skill levels. In a previous state-of-the-art study, researchers have proposed a strength estimator trained using human players' match data. Given some matches, the strength estimator computes strength scores and uses them to estimate player ranks (skill levels). In this paper, we focus on the observation that human players' behavior tendency varies according to their strength and aim to improve the accuracy of strength estimation by taking this into account. Specifically, in addition to strength scores, we obtain policies for different skill levels from neural networks trained using human players' match data. We then combine features based on these policies with the strength scores to estimate strength. We conducted experiments on Go and chess. For Go, our method achieved an accuracy of 80\% in strength estimation when given 10 matches, which increased to 92\% when given 20 matches. In comparison, the previous state-of-the-art method had an accuracy of 71\% with 10 matches and 84\% with 20 matches, demonstrating improvements of 8-9\%. We observed similar improvements in chess. These results contribute to developing a more accurate strength estimation method and to improving human-AI interaction.},
+  keywords      = {Strength estimation; Go; chess; human-like play; supervised learning},
+  affiliation   = {Japan Advanced Institute of Science and Technology; National Dong Hwa University},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
 }
 
 @inproceedings{kumar:2025:optimizing-ai-driven-chess-bots-strategies-balancing-performance-accuracy-computational-efficiency,
@@ -1790,6 +1792,7 @@
   note          = {Section 4.1 of the paper mentions code being available alongside the data on kaggle},
   abstract      = {Methods of Explainable AI (XAI) try to illuminate the decision making process of complex Machine Learning models by generating explanations. However, for most real-world data there is no ``groundtruth'' explanation, which makes evaluating the correctness of XAI methods and model decisions difficult. Often visual assessment or anecdotal evidence is the only type of evaluation. In this work we propose to use the game of chess as a source of ``near ground-truth'' (NGT) explanations, which XAI methods can be compared against using various metrics, serving as a ``sanity check''. We demonstrate this process in an experiment with a deep convolutional neural network, to which we apply a range of commonly used XAI methods. As our main contribution, we publish our data set of 30 million chess positions along with their NGT explanations for free use in XAI research.},
   keywords      = {Explainable AI, Trustworthy AI, Convolutional Neural Networks, Chess},
+  affiliation   = {TU Dortmund},
   dataset       = {https://www.kaggle.com/datasets/smuecke/chess-xai-benchmark},
 }
 
@@ -2231,6 +2234,7 @@
   year          = {2024},
   url           = {https://flatfish4u.github.io/research/2024/02/22/chess-research.html},
   abstract      = {This research investigates temporal differences in chess gameplay between ADHD and neurotypical players, analyzing over 9,800 games across various skill levels and time controls. The study reveals distinct patterns in time management and decision-making, with significant variations observed across different game phases and complexity levels.},
+  affiliation   = {Independent},
   pdf           = {https://flatfish4u.github.io/assets/papers/chess_study.pdf},
 }
 
