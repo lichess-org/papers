@@ -95,8 +95,8 @@
   articleno     = {347},
   abstract      = {WebAssembly (Wasm for short) brings a new, powerful capability to the web as well as Edge, IoT, and embedded systems. Wasm is a portable, compact binary code format with high performance and robust sandboxing properties. As Wasm applications grow in size and importance, the complex performance characteristics of diverse Wasm engines demand robust, representative benchmarks for proper tuning. Stopgap benchmark suites, such as PolyBenchC and libsodium, continue to be used in the literature, though they are known to be unrepresentative. Porting of more complex suites remains difficult because Wasm lacks many system APIs and extracting real-world Wasm benchmarks from the web is difficult due to complex host interactions. To address this challenge, we introduce Wasm-R3, the first record and replay technique for Wasm. Wasm-R3 transparently injects instrumentation into Wasm modules to record an execution trace from inside the module, then reduces the execution trace via several optimizations, and finally produces a replay module that is executable standalone without any host environment-on any engine. The benchmarks created by our approach are (i) realistic, because the approach records real-world web applications, (ii) faithful to the original execution, because the replay benchmark includes the unmodified original code, only adding emulation of host interactions, and (iii) standalone, because the replay benchmarks run on any engine. Applying Wasm-R3 to web-based Wasm applications in the wild demonstrates the correctness of our approach as well as the effectiveness of our optimizations, which reduce the recorded traces by 99.53\% and the size of the replay benchmark by 9.98\%. We release the resulting benchmark suite of 27 applications, called Wasm-R3-Bench, to the community, to inspire a new generation of realistic and standalone Wasm benchmarks.},
   keywords      = {Benchmarking, WebAssembly, record and replay},
-  issue_date    = {October 2024},
   affiliation   = {KAIST; Carngie Mellon University; University of Stuttgart; Google},
+  issue_date    = {October 2024},
 }
 
 @inproceedings{balogh:2026:verification-implicit-world-model-generative-model-adversarial-sequences,
@@ -183,9 +183,9 @@
   pages         = {1--6},
   doi           = {10.1109/IVCNZ67716.2025.11281842},
   url           = {https://ieeexplore.ieee.org/document/11281842},
-  affiliation   = {The University of Electro-Communications},
   abstract      = {Chess is widely played on computers, yet over-theboard (OTB) chess remains the official and preferred format for many players due to its tactile and immersive nature. Bridging digital and physical play requires accurate recognition of OTB positions. Prior research has explored modular pipelines for board localization, square occupancy, and piece classification, as well as single-stage detectors. While these approaches demonstrate strong accuracy in controlled conditions, they often accumulate errors across stages, face latency and robustness issues, and rarely support interactive play. Thus, in this work, we present Y-LIChess, a YOLO-based system for live, interactive OTB play with engines and online platforms. Y-LIChess employs semiautomatic calibration, event-triggered recognition, and legalityaware validation to ensure seamless, low-latency interaction. On our wood180 dataset, built with an active learning process to reduce manual annotation, Y-LIChess achieves 99.36 AP50 with only 0.21 \% per-square error, reconstructs 100 \% of boards within one mistake, and performs FEN reconstruction in ~7 ms GPU, more than an order of magnitude faster than prior pipelines.},
   keywords      = {YOLO;Accuracy;Pipelines;Games;Robustness;Calibration;Time factors;Synchronization;Image reconstruction;Engines;Chess recognition;YOLO;Stockfish;Lichess},
+  affiliation   = {The University of Electro-Communications},
 }
 
 @inproceedings{bertrand:2023:limitations-elo-real-world-games-transitive-not-additive,
@@ -312,8 +312,8 @@
   pages         = {807--812},
   doi           = {10.15439/2025F4532},
   url           = {https://ieeexplore.ieee.org/document/11214528},
-  affiliation   = {Neurospark Lab; University College Dublin; Anhui University of Finance and Economics; South China University of Technology},
   abstract      = {Accurately estimating the difficulty of the chess puzzle is important for adaptive training systems, personalized recommendations, and large-scale content curation. Unlike engine evaluations optimized for perfect play, this task involves modeling human-perceived solving difficulty, typically expressed by Glicko-2 ratings. We present a multi-stage framework developed for the FedCSIS 2025 Challenge. The method trains four rating-banded neural regression models in different Elo ranges to capture localized difficulty patterns and reduce bias from unbalanced data. Their predictions are combined with statistical attributes, including success probabilities, failure distributions, and solution length, through a feature-based regression stage to improve cross-range generalization. A final calibration step adjusts the output to statistically plausible rating levels, mitigating systematic prediction biases without adding computational complexity. An additional mask selection procedure was explored as part of the competition extension to identify 10\% of the puzzles that are most likely to benefit from the refined evaluation. The proposed solution ranked  in the final standings. These results demonstrate that a lightweight and interpretable regression pipeline can achieve competitive precision in modeling human-perceived chess puzzle difficulty.},
+  affiliation   = {Neurospark Lab; University College Dublin; Anhui University of Finance and Economics; South China University of Technology},
 }
 
 @article{chelly:2025:how-relevant-personas-open-source-software-development,
@@ -354,8 +354,8 @@
   pages         = {813--818},
   doi           = {10.15439/2025F3227},
   url           = {http://dx.doi.org/10.15439/2025F3227},
-  affiliation   = {The Chinese University of Hong Kong, Shenzhen; Ngee Ann Polytechnic; University of Melbourne},
   abstract      = {The goal of FedCSIS 2025 Challenge is to build a model to predict the difficulty (measured as Lichess rating) of given chess puzzles. To address this task, we propose a three-stage joint visual–statistical framework for predicting Glicko-based difficulty ratings. In the first stage, a convolutional model based on MobileNetV2 integrates FEN-rendered board images with structured features, including engine-predicted success probabilities, move count, and piece counts, to generate baseline predictions. The second stage employs LightGBM to perform residual refinement, explicitly learning the residual errors of the baseline predictions to correct systematic biases, particularly for extreme difficulty levels. Finally, a domain-informed refinement adjusts the outputs toward interpretable difficulty estimates derived from failure probability distributions and rating-bucket inflection points. Our model ranked 9th in the challenge. Experimental results show that residual refinement and domain-informed adjustment significantly reduce mean squared error compared to the baseline visual–statistical model.},
+  affiliation   = {The Chinese University of Hong Kong, Shenzhen; Ngee Ann Polytechnic; University of Melbourne},
 }
 
 @inproceedings{chen:2025:strength-estimation-human-like-strength-adjustment-games,
@@ -385,9 +385,9 @@
   pages         = {1--5},
   doi           = {10.1109/ICHORA65333.2025.11016842},
   url           = {https://ieeexplore.ieee.org/document/11016842},
-  affiliation   = {Rhine-Waal University of Applied Sciences},
   abstract      = {This paper presents the design, implementation, and evaluation of an innovative electronic chess board leveraging Hall-effect sensors for chess piece identification. Current electronic chess boards employ diverse technologies such as RFID, resistive switches, optical sensors, and computer vision, each with varying complexity and cost. The proposed solution utilizes Hall-effect sensors to detect changes in magnetic flux density caused by magnets embedded in chess pieces.The design features a modular 4x4 grid of sensors integrated on printed circuit boards, where each piece is differentiated by a unique magnet-spacer configuration. Experimental investigations validate the relationship between magnetic flux density and distance, modelled theoretically and tested with a field strength meter and the PCB system. Results confirm the accurate detection of piece positions and classes, despite minor interference from adjacent pieces. A Python-based system processes the sensor data, translating chess moves into live updates on the Li-Chess platform.The system has displayed good results in piece position identification accurately. Further improvement including as spacer configurations are to be done to implement piece classification. Future work aims to explore enhanced micro-controller integration, offering a streamlined and accessible alternative to existing technologies.},
   keywords      = {Magnetic flux density;Magnetic sensors;Printed circuits;Interference;Sensor phenomena and characterization;Robot sensing systems;Sensor systems;Sensors;Reliability;Magnets;electronic chessboard;analogue object identification;Hall-effect sensors;micro-controller},
+  affiliation   = {Rhine-Waal University of Applied Sciences},
 }
 
 @misc{choudhary:2025:human-chess-novel-searchless-rl-chess-agent-capable-multi-elo-human-like-play,
@@ -425,8 +425,8 @@
   volume        = {18},
   number        = {6},
   abstract      = {A chess opening is the preliminary stage of a chess game which typically consists of moves from formerly analysed openings. Opening strategy plays a crucial role in the entire game and decides the destiny of the middlegame and endgame. Here in this article, we attempted to introduce a method to predict the opening moves of a specific opponent. The technique analyses the past games played by a specific player to discover the most probable opening that the player is going to play in the subsequent games. The overall performance of this method is analysed and demonstrated by taking several factors such as transience, average turn and opponent's response in a given situation into consideration. This comparative study enables us to acquire the knowledge about the opening preferences of an opponent, which gives a strategic advantage to a chess player and helps them to develop a game strategy from the beginning of the game. In this article, we attempted to give an overview of how to predict the most favoured opening of a player and how we can utilise it for our benefit},
-  affiliation   = {Heritage Institute of Technology; Maulana Abul Kalam Azad University of Technology},
   keywords      = {Chess Opening, Opponent, middlegame, endgame.},
+  affiliation   = {Heritage Institute of Technology; Maulana Abul Kalam Azad University of Technology},
   pdf           = {https://www.webology.org/data-cms/articles/20220815062132pmwebology%2018%20(6)%20-%20579.pdf},
 }
 
@@ -442,9 +442,9 @@
   doi           = {10.5753/eniac.2021.18296},
   issn          = {2763-9061},
   url           = {https://sol.sbc.org.br/index.php/eniac/article/view/18296},
-  affiliation   = {Universidade Federal do Espírito Santo; Universidade Federal de Viçosa},
   langid        = {portuguese},
   abstract      = {Chess is becoming more popular and accessible by the day. For ins- tance, online chess enables matches between players from different parts of the world, bringing new ways of learning the game and interacting with other Web users. With this growth in popularity, there is a possibility to empower amateur players with rich computer analysis and tools, which may assist them in their learning process. One of the ways to analyze chess matches is through the study of errors. In this context, we present a new approach for the task of error pre- diction in chess. Our motivation is that knowing when players are likely to make a mistake is knowing what types of situations lead to difficulties in making the right decision. To that end, we add an abstraction layer to the already studied error prediction task, providing graph-based features to the machine learning models. Our results show a increase in the accuracy of the tested models, im- proving the results obtained in recent studies.},
+  affiliation   = {Universidade Federal do Espírito Santo; Universidade Federal de Viçosa},
   pdf           = {https://sol.sbc.org.br/index.php/eniac/article/view/18296/18130},
 }
 
@@ -858,9 +858,9 @@
   url           = {https://dspace.lib.ntua.gr/xmlui/handle/123456789/61469},
   type          = {Bachelor's thesis},
   supervisor    = {Giorgos Stamou},
-  affiliation   = {National Technological University of Athens},
   abstract      = {Puzzle-solving has long served as a benchmark for evaluating artificial intelligence, testing a model's ability to reason, infer, and strategize across complex problem spaces. Traditional AI and machine learning methods, such as symbolic reasoning and reinforcement learning, have made notable strides in structured domains like board games and logic puzzles. However, as neural networks and, more recently, large language models (LLMs) have evolved, new possibilities have emerged for tackling a broader range of puzzle types, including those requiring nuanced commonsense reasoning, abstract pattern recognition, and complex multi-step calculations. LLMs, with their vast data-driven language capabilities, hold unique potential to bridge structured logical tasks and less formal, knowledge-based puzzles. Despite these advances, the current landscape of puzzle-solving with LLMs reveals both achievements and limitations, particularly when models are tasked with problems that demand interpretative reasoning and precise calculation. This thesis explores the evolving role of LLMs in solving such complex reasoning tasks, specifically focusing on their puzzle-solving capabilities. Divided into two main sections, the thesis first provides a comprehensive survey of recent advancements in LLM methodologies, covering diverse prompting techniques, neuro-symbolic approaches, and fine-tuning strategies for puzzles. Using a newly proposed taxonomy, puzzles are categorized into rule-based and rule-less types, with each category examined for its unique cognitive demands on LLMs. The second section presents experimental evaluations conducted on four datasets--two math-based datasets (GSM8K, SVAMP) and two puzzle-focused datasets (Game of 24 and RiddleSense). Various reasoning techniques, including Input-Output (IO) prompting, Chain-of-Thought (CoT), Least-to-Most (LtM), and Faithful-CoT methods, are employed to assess LLM performance. Models of varying scales, particularly smaller LLMs like Llama-3.1 family and Mistral, are tested across settings such as zero-shot, few-shot, and self-consistency to evaluate their efficacy in solving complex and multi-step reasoning tasks. The thesis provides critical insights into the performance limitations of current LLMs in puzzle-solving, particularly noting that advanced reasoning methods like Faithful-CoT and puzzle translation techniques yield inconsistent improvements with smaller models. Finally, it outlines future research directions, advocating for expanded dataset creation, neuro-symbolic integration, and advancements in puzzle generation. This thesis aims to deepen our understanding of LLMs' reasoning abilities and highlight pathways to enhance their performance in complex cognitive tasks.},
   keywords      = {Large Language Models; Reasoning; Puzzle Solving; Prompting; Neurosymbolic Methods},
+  affiliation   = {National Technological University of Athens},
 }
 
 @inproceedings{gilot:2026:verifying-floating-point-programs-stainless,
@@ -924,9 +924,9 @@
   url           = {https://doi.org/10.1145/3279810.3279846},
   numpages      = {8},
   articleno     = {12},
-  affiliation   = {Université Grenoble Alpes; CNRS; Inria; Grenoble INP}
   abstract      = {In this paper we present results from recent experiments that suggest that chess players associate emotions to game situations and reactively use these associations to guide search for planning and problem solving. We report on a pilot experiment with multi-modal observation of human experts engaged in solving challenging problems in Chess. Our results confirm that cognitive processes have observable correlates in displays of emotion and fixation, and that these displays can be used to evaluate models of cognitive processes. They also revealed an unexpected observation of rapid changes in emotion as players attempt to solve challenging problems. In this paper, we propose a cognitive model to explain our observations, and describe initial results from a second experiment designed to test this model.},
   keywords      = {chess, chunking, cognitive models, multimodal observation of gaze and emotion, situation models, working memory},
+  affiliation   = {Université Grenoble Alpes; CNRS; Inria; Grenoble INP},
   pdf           = {https://dl.acm.org/doi/pdf/10.1145/3279810.3279846},
 }
 
@@ -1258,8 +1258,8 @@
   pages         = {91--97},
   doi           = {10.1201/9781003355281-6},
   url           = {https://www.taylorfrancis.com/chapters/edit/10.1201/9781003355281-6/towards-automatic-synthesis-interpretable-chess-tactics-abhijeet-krishnan-chris-martens},
-  affiliation   = {North Carolina State University},
   abstract      = {State-of-the-art reinforcement learning agents are capable of outperforming human experts at games like chess, Go, and StarCraft II. These agents do not simply take advantage of their digital hardware in being able to react and calculate faster than humans, but employ better strategies that lead to more victories. Interpreting these strategies would give human players valuable insight into how to improve their play. In this preliminary work, we propose a symbolic sub-policy model for playing chess. Inspired by chess tactics, our model attempts to incorporate domain knowledge to improve interpretability. We adapt patterns learned by an inductive logic programming system called PAL to derive our model. We contribute a divergence metric to evaluate our model against a random baseline, and find a set of tactics that is able to suggest moves of similar playing strength to a human beginner. Finally, we propose a computational evaluation scheme for the model by augmenting an off-the-shelf engine with it.},
+  affiliation   = {North Carolina State University},
   slides        = {https://abhijeetkrishnan.me/publications/eaai-22/EAAI_22_Presentation.pdf},
   pdf           = {https://abhijeetkrishnan.me/publications/eaai-22/Interpretable_Chess_Tactics.pdf},
 }
@@ -1365,13 +1365,13 @@
   volume        = {13865},
   pages         = {163--180},
   doi           = {10.1007/978-3-031-34017-8_14},
-  affiliation   = {TNO; Washington University in St. Louis},
   url           = {https://doi.org/10.1007/978-3-031-34017-8_14},
   abstract      = {
     Online game providers face the challenge of preventing malicious users (cheaters) from breaking the rules and winning games through illegal means. This issue in particular plagues the online chess scene, where the strongest algorithms have long surpassed the world's best players - any cheater can beat the best human players through computer assistance. Moreover, recent developments in AI-based chess engines have opened the door to even more human-like engines, which are increasingly able to mimic legitimate human players. Unfortunately, because major chess websites do not discuss their cheat detection mechanisms publicly, there is limited scientific literature on how to tackle the pervasive problem of cheating in online chess. Certainly, there is no way to validate whether these mechanisms actually work.
 
     We take a first step towards formalizing a proper cheat detection framework for online chess by leveraging a large-scale statistical examination of human and computer decision-making tendencies over millions of chess games played online. Although cheaters are not engines (computer players) but centaurs (computer-assisted human players), the insights into computer play serve as a useful guideline for finding the strongest indicators of cheating. We then demonstrate how these findings may distinguish legitimate human players from cheaters in an automated, rules-based manner. Additionally, we argue that the status quo of hiding cheat detection mechanisms from the public eye is dangerous to the integrity of the game, and that cheat detection is foremost a service to society instead of a competitive advantage for chess websites to attract more users. Consistent with Kerckhoffs' paradigm, we believe that the benefits of an open discussion on cheat detection far outweigh the potential drawbacks of cheaters learning about these methods.
   },
+  affiliation   = {TNO; Washington University in St. Louis},
 }
 
 @inproceedings{le-louedec:2019:chess-player-attention-prediction,
@@ -1384,9 +1384,9 @@
   pages         = {1:1--1:9},
   doi           = {10.1145/3314111.3319827},
   url           = {https://doi.org/10.1145/3314111.3319827},
-  affiliation   = {Université Grenoble Alpes; CNRS; Inria; Grenoble INP},
   abstract      = {This article reports on an investigation of the use of convolutional neural networks to predict the visual attention of chess players. The visual attention model described in this article has been created to generate saliency maps that capture hierarchical and spatial features of chessboard, in order to predict the probability fixation for individual pixels Using a skip-layer architecture of an autoencoder, with a unified decoder, we are able to use multiscale features to predict saliency of part of the board at different scales, showing multiple relations between pieces. We have used scan path and fixation data from players engaged in solving chess problems, to compute 6600 saliency maps associated to the corresponding chess piece configurations. This corpus is completed with synthetically generated data from actual games gathered from an online chess platform. Experiments realized using both scan-paths from chess players and the CAT2000 saliency dataset of natural images, highlights several results. Deep features, pretrained on natural images, were found to be helpful in training visual attention prediction for chess. The proposed neural network architecture is able to generate meaningful saliency maps on unseen chess configurations with good scores on standard metrics. This work provides a baseline for future work on visual attention prediction in similar contexts.},
   keywords      = {Deep neural network, Computer vision, Visual attention, Chess},
+  affiliation   = {Université Grenoble Alpes; CNRS; Inria; Grenoble INP},
   pdf           = {https://dl.acm.org/doi/pdf/10.1145/3314111.3319827},
 }
 
@@ -1507,12 +1507,12 @@
   volume        = {38},
   number        = {4},
   pages         = {572--589},
-  affiliation   = {ChessEd; University of Chicago; Phillips Academy Andover}
   doi           = {10.1002/asmb.2684},
   eprint        = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/asmb.2684},
   url           = {https://onlinelibrary.wiley.com/doi/abs/10.1002/asmb.2684},
   abstract      = {Abstract Gambits are central to human decision-making. Our goal is to provide a theory of Gambits. A Gambit is a combination of psychological and technical factors designed to disrupt predictable play. Chess provides an environment to study gambits and behavioral game theory. Our theory is based on the Bellman optimality path for sequential decision-making. This allows us to calculate the Q\$\$ Q \$\$-values of a Gambit where material (usually a pawn) is sacrificed for dynamic play. On the empirical side, we study the effectiveness of a number of popular chess Gambits. This is a natural setting as chess Gambits require a sequential assessment of a set of moves (a.k.a. policy) after the Gambit has been accepted. Our analysis uses Stockfish 14.1 to calculate the optimal Bellman Q\$\$ Q \$\$-values, which fundamentally measures if a position is winning or losing. To test whether Bellman's equation holds in play, we estimate the transition probabilities to the next board state via a database of expert human play. This then allows us to test whether the Gambiteer is following the optimal path in his decision-making. Our methodology is applied to the popular Stafford and reverse Stafford (a.k.a. Boden–Kieretsky–Morphy) Gambit and other common ones including the Smith-Morra, Goring, Danish and Halloween Gambits. We build on research in human decision-making by proving an irrational skewness preference within agents in chess. We conclude with directions for future research.},
   keywords      = {adversarial risk analysis, AI, AlphaZero, behavioral economics, behavioral game theory, behavioral science, chess gambits, decision-making, deep learning, neural network, Q learning, rationality, skewness preference, Stafford Gambit, Stockfish 14},
+  affiliation   = {ChessEd; University of Chicago; Phillips Academy Andover},
 }
 
 @inproceedings{makovec:2023:merging-neural-networks-traditional-evaluations-crazyhouse,
@@ -1649,11 +1649,11 @@
   publisher     = {IEEE Computer Society},
   address       = {Los Alamitos, CA, USA},
   pages         = {8377--8384},
-  affiliation   = {Lodz University of Technology},
   doi           = {10.1109/BigData62323.2024.10825919},
   url           = {https://doi.ieeecomputersociety.org/10.1109/BigData62323.2024.10825919},
   abstract      = {This study addresses the challenge of quantifying chess puzzle difficulty - a complex task that combines elements of game theory and human cognition and underscores its critical role in effective chess training. We present GlickFormer, a novel transformer-based architecture that predicts chess puzzle difficulty by approximating the Glicko-2 rating system. Unlike conventional chess engines that optimize for game outcomes, GlickFormer models human perception of tactical patterns and problem-solving complexity.The proposed model utilizes a modified ChessFormer backbone for spatial feature extraction and incorporates temporal information via factorized transformer techniques. This approach enables the capture of both spatial chess piece arrangements and move sequences, effectively modeling spatio-temporal relationships relevant to difficulty assessment.Experimental evaluation was conducted on a dataset of over 4 million chess puzzles. Results demonstrate GlickFormer's superior performance compared to the state-of-the-art ChessFormer baseline across multiple metrics. The algorithm's performance has also been recognized through its competitive results in the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty competition, where it placed 11th.The insights gained from this study have implications for personalized chess training and broader applications in educational technology and cognitive modeling.},
   keywords      = {Training;Measurement;Accuracy;Games;Predictive models;Transformers;Feature extraction;Data models;Problem-solving;Context modeling},
+  affiliation   = {Lodz University of Technology},
 }
 
 @inproceedings{milosz:2025:pretraining-transformers-chess-puzzle-difficulty-prediction,
@@ -1668,8 +1668,8 @@
   pages         = {831--835},
   doi           = {10.15439/2025F7603},
   url           = {http://dx.doi.org/10.15439/2025F7603},
-  affiliation   = {Lodz University of Technology},
   abstract      = {This paper presents our third-place solution for the FedCSIS 2025 Challenge: Predicting Chess Puzzle Difficulty - Second Edition. Building on our prior GlickFormer architecture, we develop a transformer-based approach featuring a novel multitask pretraining strategy that combines masked-square reconstruction with solution policy prediction. Our spatial-only architecture directly embeds solution moves, eliminating temporal modules, while integrating human-centric priors through Maia-2 engine solve-rate predictions. Evaluated on the Lichess puzzle corpus, our approach reduces validation MSE by 30.4\% compared to from-scratch training and achieves competitive results (test MSE: 55.9k) despite distribution shifts in the competition environment.\hspace{0.6em}},
+  affiliation   = {Lodz University of Technology},
 }
 
 @article{miranda:2025:observational-analysis-mistakes-chess-initiation-decision-trees,
@@ -2973,10 +2973,10 @@
   pages         = {8415--8422},
   doi           = {10.1109/BigData62323.2024.10826037},
   issn          = {2573-2978},
-  url = {https://ieeexplore.ieee.org/document/10826037},
+  url           = {https://ieeexplore.ieee.org/document/10826037},
   abstract      = {We detail the bread emoji team's submission to the IEEE BigData 2024 Predicting Chess Puzzle Difficulty Challenge. Our solution revolved around the use of ensembled, pretrained, neural chessboard embedders (specifically, truncated Maia and Leela models) and an empirically-guided distribution rescaling postprocessing step.Our approach was the outright winner of the competition with a >16.4\% reduction in mean squared error (MSE) over second place in the preliminary evaluation and a >13.3\% reduction in MSE over second place in the final evaluation.},
   keywords      = {Training;Transfer learning;Artificial neural networks;Predictive models;Big Data;Data models;Emojis},
-  affiliation = {Google; Tokyo Institute of Technology},
+  affiliation   = {Google; Tokyo Institute of Technology},
   code          = {https://github.com/mcognetta/ieee-chess},
 }
 
@@ -3176,7 +3176,7 @@
   eprint        = {2602.16833},
   url           = {https://arxiv.org/abs/2602.16833},
   abstract      = {Exploration remains a key bottleneck for reinforcement learning (RL) post-training of large language models (LLMs), where sparse feedback and large action spaces can lead to premature collapse into repetitive behaviors. We propose Verbalized Action Masking (VAM), which verbalizes an action mask in the prompt and enforces that the model outputs an action from the masked set. Building on this interface, we introduce iterative action-space pruning: if the target action is not sampled, we remove valid sampled actions from the mask and resample under the reduced candidate set, repeating until the target is sampled or a fixed budget is exhausted. We study VAM in chess and evaluate it under two training regimes: an engine-play regime that generates states via play against an engine opponent and a fixed-dataset regime that trains from a fixed dataset of positions with verifier scores. Across held-out chess puzzles and full-game play measured by average centipawn loss (ACPL), VAM improves learning efficiency and final performance over strong baselines, highlighting verbalized masking as a practical mechanism for controllable exploration in LLM RL post-training.},
-  affiliation = {Carnegie Mellon University; King's College London},
+  affiliation   = {Carnegie Mellon University; King's College London},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
 }
