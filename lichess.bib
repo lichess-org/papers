@@ -200,6 +200,7 @@
   pages         = {2905--2921},
   url           = {https://proceedings.mlr.press/v206/bertrand23a.html},
   abstract      = {The Elo score has been extensively used to rank players by their skill or strength in competitive games such as chess, go, or StarCraft II. The Elo score implicitly assumes games have a strong additive--hence transitive--component. In this paper, we investigate the challenge of identifying transitive components in games. As a starting point, we show that the Elo score provably fails to extract the transitive component of some elementary transitive games. Based on this observation, we propose an alternative ranking system which properly extracts the transitive components in these games. Finally, we conduct an in-depth empirical validation on real-world game payoff matrices: it shows significant prediction performance improvements compared to the Elo score.},
+  affiliation   = {Mila; Université de Montréal; VoyLab},
   pdf           = {https://proceedings.mlr.press/v206/bertrand23a/bertrand23a.pdf},
   code          = {https://github.com/QB3/discrating},
 }
@@ -1159,6 +1160,7 @@
   tldr          = {We train a GPT model from scratch to play chess and  find that it learns to compute board state and estimate player Elo. We use these representations to edit the GPT's internal board state and increase or decrease its chess-playing ability.},
   abstract      = {Language models have shown unprecedented capabilities, sparking debate over the source of their performance. Is it merely the outcome of learning syntactic patterns and surface level statistics, or do they extract semantics and a world model from the text? Prior work by Li et al. investigated this by training a GPT model on synthetic, randomly generated Othello games and found that the model learned an internal representation of the board state. We extend this work into the more complex domain of chess, training on real games and investigating our model's internal representations using linear probes and contrastive activations. The model is given no a priori knowledge of the game and is solely trained on next character prediction, yet we find evidence of internal representations of board state. We validate these internal representations by using them to make interventions on the model's activations and edit its internal board state. Unlike Li et al's prior synthetic dataset approach, our analysis finds that the model also learns to estimate latent variables like player skill to better predict the next character. We derive a player skill vector and add it to the model, improving the model's win rate by up to 2.6 times.},
   keywords      = {GPT, large language model, interpretability, world model},
+  affiliation   = {Independent},
   code          = {https://github.com/adamkarvonen/chess_llm_interpretability},
   dataset       = {https://huggingface.co/datasets/adamkarvonen/chess_games},
   huggingface   = {https://huggingface.co/adamkarvonen/chess_llms},
@@ -1559,6 +1561,7 @@
   url           = {https://www.sciencedirect.com/science/article/pii/S0950584925000187},
   abstract      = {Context: This study aims to confirm, replicate and extend the findings of a previous article entitled ''Metamorphic Testing of Chess Engines'' that reported inconsistencies in the analyses provided by Stockfish, the most widely used chess engine, for transformed chess positions that are fundamentally identical. Initial findings, under conditions strictly identical to those of the original study, corroborate the reported inconsistencies. Objective: However, the original article considers a specific dataset (including randomly generated chess positions, end-games, or checkmate problems) and very low analysis depth (10 plies11A ply refers to a single turn taken by one player in a game. Two plies, one from each player, together constitute a complete move., corresponding to 5 moves). These decisions pose threats that limit generalizability of the results, but also their practical usefulness both for chess players and maintainers of Stockfish. Thus, we replicate the original study. Methods: We consider this time (1) positions derived from actual chess games, (2) analyses at appropriate and larger depths, and (3) different versions of Stockfish. We conduct novel experiments on thousands of positions, employing significantly deeper searches. Results: The replication results show that the Stockfish chess engines demonstrate significantly greater consistency in its evaluations. The metamorphic relations are not as effective as in the original article, especially on realistic chess positions. We also demonstrate that, for any given position, there exists a depth threshold beyond which further increases in depth do not result in any evaluation differences for the studied metamorphic relations. We perform an in-depth analysis to identify and clarify the implementation reasons behind Stockfish's inconsistencies when dealing with transformed positions. Conclusion: A first concrete result is thus that metamorphic testing of chess engines is not yet an effective technique for finding faults of Stockfish. Another result is the lessons learned through this replication effort: metamorphic relations must be verified in the context of the domain's specificities; without such contextual validation, they may lead to misleading or irrelevant conclusions; changes in parameters and input dataset can drastically alter the effectiveness of a testing method.},
   keywords      = {Reproducibility, Replicability, Metamorphic testing, Chess engines},
+  affiliation   = {Université de Rennes; CNRS; Inria; IRISA; Université de Bordeaux; LaBRI; Institut Universitaire de France},
 }
 
 @inproceedings{mcilroy-young:2020:aligning-superhuman-ai-human-behavior,
@@ -1747,9 +1750,10 @@
   number        = {0},
   pages         = {1--21},
   doi           = {10.1080/13546783.2025.2550306},
-  url           = {https://doi.org/10.1080/13546783.2025.2550306},
+  url           = {https://www.tandfonline.com/doi/full/10.1080/13546783.2025.2550306},
   abstract      = {Chess is a game of strategic thinking and time management, where a player can lose a game on time despite making all the best moves. Finding the best move is a deliberate and energy-intensive process in a game where players are often under time pressure. Therefore, players who can balance this trade-off will have a significant advantage. The current study explores such instances where winning is contingent on how well players balance their accuracy under time pressure. We found that winning players, compared to their opponents, followed a more adaptive decision strategy--they made more theoretical best moves (i.e., accurate moves) in highly critical positions. However, the accuracy difference between the opponents was very similar in less critical positions. We conclude that winning players have a better understanding of when and how to allocate their limited resources efficiently, even when controlling for differences in skill levels, compared to their opponents.},
   keywords      = {Chess, Adaptive Decision Making, Resource Constraints, Skilled Decision Maker, Evaluation},
+  affiliation   = {SWPS University},
 }
 
 @article{morel-balbi:2025:estimation-partial-rankings-sparse-noisy-comparisons,
@@ -1764,8 +1768,9 @@
   pages         = {30},
   doi           = {10.1038/s42005-025-02461-y},
   issn          = {2399-3650},
-  url           = {https://doi.org/10.1038/s42005-025-02461-y},
+  url           = {https://www.nature.com/articles/s42005-025-02461-y},
   abstract      = {Ranking items from pairwise comparisons is common in domains ranging from sports to consumer preferences. Statistical inference-based methods, such as the Bradley--Terry model, have emerged as flexible and powerful tools to tackle ranking in empirical data. However, in situations with limited and/or noisy comparisons, it is often challenging to confidently distinguish item performance based on evidence available in the data. Most ranking methods nevertheless force a complete ordering, suggesting a meaningful distinction when there is none. Here, we introduce a principled nonparametric Bayesian framework for learning partial rankings---rankings with ties---that infers distinctions between items only when supported by the evidence. We develop a fast agglomerative algorithm for Maximum a Posteriori (MAP) inference under this framework and evaluate its performance on a range of synthetic and real-world datasets, finding that it often yields a more parsimonious and reliable summary of the data than traditional ranking approaches, particularly in sparse observational settings.},
+  affiliation   = {University of Hong Kong},
   pdf           = {https://www.nature.com/articles/s42005-025-02461-y.pdf},
   preprint      = {https://arxiv.org/abs/2501.02505},
   code          = {https://github.com/seb310/partial-rankings},
