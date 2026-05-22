@@ -797,6 +797,17 @@
   dataset       = {https://data.4tu.nl/datasets/25142e2b-9c97-4002-8fc2-c9a4eac17cb8},
 }
 
+@misc{fanning:2025:graph-based-deep-chess-matchmaking,
+  title         = {Graph-based Deep Chess Matchmaking},
+  author        = {Charles Fanning and Faruk Muritala and Promi Roy and Joe DeMaio},
+  year          = {2025},
+  url           = {https://digitalcommons.kennesaw.edu/undergradsymposiumksu/spring2025/spring2025/171/},
+  note          = {Poster presented at the 29th Annual Symposium of Student Scholars, Kennesaw State University: https://www.kennesaw.edu/news/stories/2025/passions-lead-to-innovation-at-ksu-symposium-student-scholars.php},
+  abstract      = {The goal of a rating system in zero sum games such as chess is to quickly and accurately assign skill ratings to individual players. In chess, this is most often done with ELO rating, which iteratively updates player ratings based solely on the result of the game as well as the rating of the other player. When it comes to new players, these methods rely random pairings in order to collect initial estimates. Efforts have been made, including the integration of Glicko-1 and Glicko-2 scores as opposed to standard ELO ratings, but none of these methods take into account the content of the games themselves when predicting ratings of new players. We implemented a hybrid graph-representation and deep learning based framework based on the lichess.org open database which maximizes both the accuracy and rate of convergence of rating assignments for new players by considering the context of actual prior game states as opposed to solely focusing on game outcome and prior ratings. Roughly, we constructed a graph representation of prior player pools along with their game histories and performed regression analysis based on moves in their previous games using an LSTM model in order to predict their true rating. We then assigned players to play either black or white in their next game, mapped our existing history graph into a bipartite graph (bi-partitioned by color in the next game), weighted edges by difference in predicted rating, and used the Hungarian algorithm in order to evaluate which pairings will result in the least predicted rating difference. This allows for a hybrid rating and matchmaking framework that takes into account the context from moves in previous games as opposed to the more limited priors of player ratings and game outcomes.},
+  affiliation   = {Kennesaw State University},
+  todo          = {check if published as paper},
+}
+
 @inproceedings{feng:2023:chessgpt-bridging-policy-learning-language-modeling,
   title         = {ChessGPT: bridging policy learning and language modeling},
   author        = {Feng, Xidong and Luo, Yicheng and Wang, Ziyan and Tang, Hongrui and Yang, Mengyue and Shao, Kun and Mguni, David and Du, Yali and Wang, Jun},
