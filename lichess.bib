@@ -2916,6 +2916,19 @@
   annote        = {https://lilv98.github.io/SEAM-Website/},
 }
 
+@misc{tang:2026:generalization-memorization-brittleness-testing-chess-trained-language-models,
+  title         = {Generalization or Memorization? Brittleness Testing for Chess-Trained Language Models},
+  author        = {Ethan Tang},
+  year          = {2026},
+  eprint        = {2605.17565},
+  url           = {https://arxiv.org/abs/2605.17565},
+  abstract      = {Recent work has fine-tuned language models on chess data and reported high benchmark scores as evidence that the resulting models can understand the rules of chess, play full chess games at a professional level, or generate human-readable explanations grounded in expert knowledge. We train KinGPT, a 25M-parameter character-level language model trained only on (position, best-move) pairs, who exceeds 3B-parameter ChessGPT on a 600-puzzle mate-in-N suite and 4B-parameter C1-4B over a 20-theme puzzle benchmark. We examine several claims made in existing literature regarding chess-trained language models and assert that their impressive benchmark performance is largely explained by pattern-matching. We also demonstrate how LLM-Modulo, a verifier-in-the-loop framework, raises RedPajama 3B's best move accuracy from 1.2% to 21.2% and move generation validity from 19.3% to 95.3% on mate-in-N chess puzzles, comparable to gains achieved from ChessGPT's fine-tuning on chess-specific web corpora at a fraction of the cost. Our results illustrate how pairing a general LLM with an external verifier offers a more flexible alternative to directly training on synthetic data for well-defined domains. We open source all training/evaluation code, datasets, puzzle samples, and KinGPT model checkpoints for reproducibility.},
+  code          = {https://github.com/ethanjtang/KinGPT},
+  huggingface   = {https://huggingface.co/ethanjtang/KinGPT, https://huggingface.co/datasets/ethanjtang/GAMBIT-lichess-puzzle-positions ,https://huggingface.co/datasets/ethanjtang/GAMBIT-stockfish18-selfplay},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.AI},
+}
+
 @inproceedings{tay:2023:social-status-competitors-cause-decision-maker-errors,
   title         = {Can higher social status of competitors cause decision makers to commit more errors?},
   author        = {Tay, Li Qian},
