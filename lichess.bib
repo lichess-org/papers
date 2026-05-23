@@ -1577,6 +1577,20 @@
   abstract      = {The FedCSIS 2025 Challenge on Predicting Chess Puzzle Difficulty tasked participants with estimating puzzle ratings directly from board states and solution sequences, without relying on human solver statistics. We propose a three-stage hybrid framework integrating gradient-boosting regressors, a multi-modal neural network, and an XGBoost stacking ensemble. The boosting stage modeled handcrafted structural features derived from FEN and engine metadata, while the multi-modal network jointly learned from structured features and image-rendered chessboards to capture positional and tactical patterns. The residual-based stacking stage explicitly modeled prediction errors to correct systematic biases and enhance performance, particularly for high-difficulty puzzles. Our method achieved a competitive performance, ranking 7th in the preliminary stage and 8th in the final leaderboard. These results demonstrate that combining interpretable boosting models with visual-tactical deep representations and meta-learning provides a robust and computationally efficient alternative to large-scale transformer-based approaches.},
 }
 
+@misc{liu:2026:halluworl-dcontrolled-benchmark-hallucination-reference-world-models,
+  title         = {HalluWorld: A Controlled Benchmark for Hallucination via Reference World Models},
+  author        = {Emmy Liu and Varun Gangal and Michael Yu and Zhuofu Tao and Karan Singh and Sachin Kumar and Steven Y. Feng},
+  year          = {2026},
+  eprint        = {2605.19341},
+  url           = {https://arxiv.org/abs/2605.19341},
+  abstract      = {Hallucination remains a central failure mode of large language models, but existing benchmarks operationalize it inconsistently across summarization, question answering, retrieval-augmented generation, and agentic interaction. This fragmentation makes it unclear whether a mitigation that works in one setting reduces hallucinations across contexts. Current benchmarks either require human annotation and fixed references that may be memorized, or rely on observations in settings that are difficult to reproduce. To study root causes, we introduce HalluWorld, an extensible benchmark grounded in an explicit reference-world formulation: a model hallucinates when it produces an observable claim that is false with respect to this world. Building on this view, we construct synthetic and semi-synthetic environments in which the reference world is fully specified, the model's view is controlled, and hallucination labels are generated automatically. HalluWorld spans gridworlds, chess, and realistic terminal tasks, enabling controlled variation of world complexity, observability, temporal change, and source-conflict policy, and disentangling hallucinations into fine-grained error categories. We evaluate frontier and open-weight language models across these settings and find consistent patterns: perceptual hallucination on directly observed information is near-solved for frontier models, while multi-step state tracking and causal forward simulation remain difficult and are not generally solved by extended thinking. In the terminal setting, models also struggle with when to abstain. The uneven profile of failures across probe types and domains suggests that hallucinations arise from distinct failure modes rather than a single capability. Our results suggest that controlled reference worlds offer a scalable and reproducible path toward measuring and reducing hallucinations in modern language models.},
+  affiliation   = {Carnegie Mellon University; Patronus AI; Independent; Stanford University; The Ohio State University},
+  website       = {https://degenai-labs.github.io/research/hallu-world/},
+  code          = {https://github.com/DegenAI-Labs/HalluWorld},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+}
+
 @article{maharaj:2022:gambits-theory-evidence,
   title         = {Gambits: Theory and evidence},
   author        = {Maharaj, Shiva and Polson, Nick and Turk, Christian},
