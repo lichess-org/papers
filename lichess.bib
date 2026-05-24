@@ -1264,7 +1264,7 @@
   affiliation   = {Technische Universit\"{a}t Wien},
 }
 
-@article{Kevanishvili:2026:hybrid-human-centric-framework-discriminating-engine-like-human-like-chess-play-proof-concept-study,
+@article{kevanishvili:2026:hybrid-human-centric-framework-discriminating-engine-like-human-like-chess-play-proof-concept-study,
   title         = {A Hybrid Human-Centric Framework for Discriminating Engine-like from Human-like Chess Play: A Proof-of-Concept Study},
   author        = {Kevanishvili, Zura and Iavich, Maksim},
   year          = {2026},
@@ -1864,6 +1864,24 @@
   abstract      = {Chess is a game of strategic thinking and time management, where a player can lose a game on time despite making all the best moves. Finding the best move is a deliberate and energy-intensive process in a game where players are often under time pressure. Therefore, players who can balance this trade-off will have a significant advantage. The current study explores such instances where winning is contingent on how well players balance their accuracy under time pressure. We found that winning players, compared to their opponents, followed a more adaptive decision strategy--they made more theoretical best moves (i.e., accurate moves) in highly critical positions. However, the accuracy difference between the opponents was very similar in less critical positions. We conclude that winning players have a better understanding of when and how to allocate their limited resources efficiently, even when controlling for differences in skill levels, compared to their opponents.},
   keywords      = {Chess, Adaptive Decision Making, Resource Constraints, Skilled Decision Maker, Evaluation},
   affiliation   = {SWPS University},
+}
+
+@inproceedings{monroe:2026:chessformer-unified-architecture-chess-modeling-maia3,
+  title         = {Chessformer: A Unified Architecture for Chess Modeling},
+  author        = {Daniel Monroe and George Eilender and Philip Chalmers and Zhenwei Tang and Ashton Anderson},
+  year          = {2026},
+  booktitle     = {The Fourteenth International Conference on Learning Representations},
+  url           = {https://openreview.net/forum?id=2ltBRzEHyd},
+  tldr          = {Chessformer is  a transformer architecture for chess that advances the state of the art on several chess modeling tasks.},
+  abstract      = {
+    Chess has long served as a canonical testbed for artificial intelligence, but modeling approaches for its central tasks have diverged. Maximizing playing strength, predicting human play, and enabling interpretability are typically solved with disparate architectures, and these designs are often misaligned with the geometry of the domain. This raises the natural question of whether these objectives require separate modeling paradigms, or if there exists a single architecture that supports them simultaneously.
+
+    We introduce Chessformer, a unified architecture that advances the state of the art on all three central goals in chess modeling. Chessformer is an encoder- only transformer that represents board squares as tokens, augments self-attention with a novel dynamic positional encoding called Geometric Attention Bias (GAB) that adapts to domain-specific geometry, and predicts actions with an attention-based source-destination policy head. We evaluate Chessformer on each front. First, we develop MAIA-3, a family of models for human move prediction that reaches 57.1% move-matching accuracy, significantly surpassing the previous state of the art with fewer than a quarter of the parameters. Second, we integrate Chessformer into Leela Chess Zero, a leading open-source engine, adding over 100 Elo of playing strength and resulting in tournament victories over Stockfish in major computer chess competitions. Third, we show that Chessformer’s square-token design makes attention patterns and activations directly attributable to board squares, enabling granular interpretability analyses that prior architectures do not naturally support. More broadly, our results demonstrate that aligning a model’s tokenization, positional encoding, and output design with the underlying structure of a domain can yield simultaneous gains in performance, human compatibility, and interpretability.
+  },
+  keywords      = {Transformers, Interpretability, Human-Aligned AI, Chess, Action Prediction},
+  affiliation   = {University of Toronto; Williams College},
+  code          = {https://github.com/CSSLab/maia3},
+  huggingface   = {https://huggingface.co/collections/MaiaChess/maia3},
 }
 
 @article{morel-balbi:2025:estimation-partial-rankings-sparse-noisy-comparisons,
