@@ -1,0 +1,20 @@
+name: Tidy BibTeX
+on: push
+
+permissions:
+  contents: write
+
+jobs:
+  tidy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install bibtexparser
+      - run: python scripts/generate-bibkeys.py lichess.bib
+      - run: npx bibtex-tidy@1.14.0 lichess.bib --sort --curly --no-escape --blank-lines --duplicates --trailing-commas --modify --remove-empty-fields --sort-fields
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "style: bibtex-tidy"
