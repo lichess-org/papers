@@ -2778,6 +2778,18 @@
   code          = {https://eda.rg.cispa.io/prj/seqret/seqret-v20250526.zip},
 }
 
+@misc{siu2026unimaiasteeringchesspolicies,
+  title         = {UniMaia: Steering Chess Policies with Language for Human-like Play},
+  author        = {Sherman Siu and Lesley Istead},
+  year          = {2026},
+  eprint        = {2605.27767},
+  url           = {https://arxiv.org/abs/2605.27767},
+  abstract      = {Recent advances in large language models have enabled natural language to serve as a flexible interface for controlling complex systems, but often at the cost of large-scale multimodal training or weakened domain-specific inductive biases. In structured decision-making domains such as chess, specialized policy networks achieve strong performance but lack semantic controllability, while prompt-conditioned language models are more flexible yet typically exhibit weaker domain grounding. We propose UniMaia, a framework for prompt-conditioned policy modulation that adapts a frozen Lc0-based chess policy network using a parameter-efficient text encoder and a ControlNet-style conditioning mechanism. UniMaia enables semantic control over gameplay, including opening selection and player strength, while preserving the pretrained policy representations. We further introduce UniMaia-Aux, which incorporates auxiliary temporal conditioning and behavioral prediction objectives. To support this work, we construct a large-scale metadata-augmented Lichess dataset, develop a semi-automated prompt-generation pipeline, and introduce benchmarks spanning both prompt-conditioned and metadata-conditioned settings. UniMaia achieves state-of-the-art expected accuracy on several prompt-conditioned benchmarks and competitive top-move accuracy on general instruction-following tasks, while remaining competitive with dedicated metadata-conditioned approaches on human move prediction benchmarks. UniMaia-Aux further improves expected accuracy and behavioral modeling across several evaluation settings, with modest trade-offs in top-move accuracy. Overall, our results demonstrate that prompt-conditioned control of domain-specific policy networks is feasible without end-to-end multimodal training, while highlighting trade-offs between controllability and predictive performance.},
+  affiliation   = {University of Waterloo, Carleton University},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
+}
+
 @misc{skidanov:2025:behavior-based-knowledge-representation-improves-prediction-of-players-moves-in-chess-by-25,
   title         = {A Behavior-Based Knowledge Representation Improves Prediction of Players' Moves in Chess by 25%},
   author        = {Benny Skidanov and Daniel Erbesfeld and Gera Weiss and Achiya Elyasaf},
@@ -3047,6 +3059,19 @@
   supervisor    = {Markidis, Stefano},
   abstract      = {Convolutional neural networks are typically applied to image analysis problems. We investigate whether a simple convolutional neural network can be trained to evaluate chess positions by means of predicting Stockfish (an existing chess engine) evaluations. Publicly available data from lichess.org was used, and we obtained a final MSE of 863.48 and MAE of 12.18 on our test dataset (with labels ranging from -255 to +255). To accomplish better results, we conclude that a more capable model architecture must be used.},
   affiliation   = {KTH Royal Institute of Technology},
+}
+
+@misc{walker2026chessworldmodel10mgamebenchmarkexact,
+  title         = {Chess-World-Model: A 10M-Game Benchmark for Exact State Tracking from Chess Move Sequences},
+  author        = {Benjamin Walker and Terry Lyons},
+  year          = {2026},
+  eprint        = {2605.30100},
+  url           = {https://arxiv.org/abs/2605.30100},
+  abstract      = {World models require state tracking, which is the ability to maintain a correct latent state across action sequences. Existing benchmarks are often synthetic or language-based, limiting their value as tests of structured state updates in realistic domains. We introduce Chess-World-Model, a large-scale state-tracking benchmark built from 10 million real chess games, where models predict the exact board state reached after a sequence of legal moves. Alongside a held-out real-game split, we include an out-of-distribution split from uniformly random legal play, which tests whether models learn the transition rules rather than shortcuts from common human positions. Prior theoretical and empirical work has shown that Transformers struggle to state-track, while input-dependent linear RNNs require expressive state-transition matrices to do so. We therefore benchmark a causal Transformer, block-diagonal SLiCE, Mamba-3, and Gated DeltaNet with negative eigenvalues under a matched interface and training protocol. The recurrent models strongly outperform the Transformer at 3 and 8 million parameters. Real-game performance saturates above 18 million parameters, but the random-uniform split remains discriminative up to 40 million, exposing failures otherwise hidden by scale. Additionally, ablations show that less expressive state-transition mechanisms reduce performance on the out-of-distribution split for all three recurrent models. Together, these results establish Chess-World-Model as a practical large-scale benchmark for state tracking that exposes failures model scale would otherwise conceal.},
+  affiliation   = {University of Oxford; Imperial College London},
+  code          = {https://github.com/Benjamin-Walker/Chess-World-Model},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
 }
 
 @inproceedings{wang:2025:explore-reasoning-capability-of-llms-in-chess-testbed,
