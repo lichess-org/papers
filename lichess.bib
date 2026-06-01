@@ -2816,6 +2816,18 @@
   primaryclass  = {cs.LG},
 }
 
+@article{soldera:2026:chess-board-digitization-human-move-prediction-using-machine-learning,
+  title         = {Chess Board Digitization and Human Move Prediction Using Machine Learning},
+  author        = {Soldera, Heigon and Pedrini, Helio},
+  year          = {2026},
+  month         = {01},
+  journal       = {IEEE Access},
+  doi           = {10.1109/ACCESS.2026.3697295},
+  abstract      = {Chess is a strategic game widely studied due to its complexity and the cognitive skills it requires. The analysis of chess games has been significantly enhanced by the use of machine learning techniques, allowing not only the creation of digital boards that identify the positions of the pieces in real-time but also the determination of the best possible moves. These tools enable the development of advanced training systems and the offering of complex strategies, making the understanding of moves more challenging. This project proposes the integration of two main fronts: the digitization of chess boards through images and the prediction of moves that mimic human patterns. The approach combines computer vision techniques, machine learning, and realistic three-dimensional (3D) models, allowing the capture of arbitrary configurations of the pieces on the board and suggesting moves that simulate the style of professional players. The proposed system introduces a human-move prediction model that acts as a pre-filter, guiding the move selection process before validation by a traditional engine. The goal is to offer an accessible solution for board digitization and propose more understandable moves. In digitization, the methodology employed uses photogrammetry of chess pieces and the board to generate a large set of synthetic images from 3D models that are used for pre-training the model. Refinement is carried out with a limited set of real images, allowing efficient learning with less dependence on real data. This approach resulted in an accuracy of 99.78% in the classification of pieces in the test set, reducing the effort of collecting real data and maintaining high quality in the results. For move prediction, a model based on convolutional neural networks was developed, capable of classifying the movements of the pieces based on patterns learned from human players’ games. Rather than functioning as an independent chess engine, this model is integrated with Stockfish, which is responsible for evaluating and validating the final move selection. This model acts as a pre-filter for computational tools, which then select the best move. Under the proposed evaluation protocol, the hybrid approach achieved an average Top-1 accuracy of 68.52% in predicting human moves, compared to 39.38% obtained by Stockfish alone, representing an improvement of approximately 29 percentage points. This performance remains consistent across different game phases and shows competitive results when compared to prior human-move prediction approaches such as Maia, which reports an average accuracy of around 50% in a broader setting across multiple player rating groups and playing styles. Overall, the results demonstrate that combining learned human-like priors with engine-based validation improves both the plausibility and the practical quality of suggested moves.},
+  keywords      = {chess game, machine learning, neural networks, board digitizaton, human move prediction},
+  affiliation   = {University of Campinas},
+}
+
 @inproceedings{soliman:2026:caissa-ai-neuro-symbolic-chess-agent-forexplainable-move-suggestion-grounded-commentary,
   title         = {Ca{\"i}ssa AI: A Neuro-Symbolic Chess Agent for~Explainable Move Suggestion and Grounded Commentary},
   author        = {Soliman, Mazen and Ehab, Nourhan},
