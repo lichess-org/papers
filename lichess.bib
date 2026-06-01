@@ -478,6 +478,19 @@
   pdf           = {https://www.webology.org/data-cms/articles/20220815062132pmwebology%2018%20(6)%20-%20579.pdf},
 }
 
+@misc{co:2026:atomic-chess-reveals-compositional-reasoning-failures-llms,
+  title         = {Atomic Chess Reveals Compositional Reasoning Failures in {LLM}s},
+  author        = {Ryan Co and Karthik Reddy Konuganti},
+  year          = {2026},
+  booktitle     = {2nd Workshop on Compositional Learning: Safety, Interpretability, and Agents},
+  url           = {https://openreview.net/forum?id=Aeqrxt99JW},
+  tldr          = {Atomic chess exposes that reasoning LLMs can state and locally apply altered rules, but still often fail to integrate them into globally correct action selection when those rules conflict with standard priors.},
+  abstract      = {LLMs are capable of playing chess at a notable level, but it is unclear whether this is a result of memorization or reasoning. We study whether they can compose an explicit rule change using atomic chess, a variant that preserves the board, pieces, and surface notation, but where capturing a piece will explode adjacent ones. We evaluate Claude Opus 4.6 and GPT-5.4 on contrastive pattern-trap positions drawn from atomic chess games. Atomic Win% loss is consistently larger than under standard rules on the same positions, with atomic/standard mean-loss ratios from 2.1x to 4.6x . Increasing reasoning compute reduces atomic-rules mean Win% loss, but does not eliminate the gap to standard rules. Mapping observed errors onto the components of a chess game decomposition, qualitative analysis of reasoning traces identifies recurring failure mechanisms, including unpropagated refutation, where a model recognizes that a candidate move is bad under atomic rules but selects it anyway, a failure mode directly analogous to safety-relevant agent settings in which a model identifies a violating action but executes it. These results suggest that reasoning LLMs can partially use explicit compositional rules, but often fail to integrate altered transition and terminal semantics into global action selection.},
+  keywords      = {large language models, compositional generalization, reasoning},
+  pdf           = {https://openreview.net/pdf?id=BH3dv3W0J7},
+  todo          = {check camera ready},
+}
+
 @inproceedings{comarela:2021:lightweight-approach-for-predicting-errors-in-chess-matches,
   title         = {A lightweight approach for predicting errors in chess matches},
   author        = {Giovanni Comarela and Davi Silva},
