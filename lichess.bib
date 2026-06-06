@@ -3458,3 +3458,18 @@
   abstract      = {We summarize the results of the FedCSIS 2025 machine learning competition organized on the knowledgepit.ai platform. We recall the competition's goals corresponding to estimations of the chess puzzle difficulty levels, we refer to the winning solutions, and we also compare the scope of this year's competition (and particularly the data available to competition participants) with its previous edition associated with the IEEE BigData 2024 conference. Finally, we discuss the new functionality of the knowledgepit.ai platform, which enables competition participants to submit additional "uncertainty masks" reflecting their assessment of test cases that are mostly problematic for their machine learning models.},
   affiliation   = {University of Warsaw; Polish-Japanese Academy of Information Technology; QED Software; Grail Team},
 }
+
+@misc{uzunoglu2026trustfunctionsnearlosslessweaktostrong,
+      title={Trust Functions: Near-Lossless Weak-to-Strong Generalization by Learning When to Trust the Weak Teacher}, 
+      author={Arda Uzunoglu and Alvin Zhang and Daniel Khashabi},
+      year={2026},
+      eprint={2606.01000},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+abstract = {Weak-to-strong generalization studies how to improve a strong student using supervision from a weaker teacher when reliable labels are scarce. We view this primarily as a data selection problem, where the key challenge is to identify which weak labels are reliable enough to serve as a training signal. To address this, we introduce trust functions that assign each weak label a scalar trust score and use these scores to filter weak supervision. Across several domains, including world knowledge, quantitative reasoning, and strategy games, trust filtering yields students that match and sometimes surpass ground-truth supervision, achieving near-lossless weak-to-strong generalization. Moreover, trust functions enable an iterative weak-to-strong chain that compounds gains by training a student and reusing it as the next teacher, amplifying the gains. There are several mechanisms to which advantage of trust functions can be attributed.},
+code = {https://github.com/ardauzunoglu/trust-functions/tree/main},
+website = {https://ardauzunoglu.github.io/trust-functions/},
+affiliation = {Johns Hopkins University},
+tldr = {Learning-to-Trust identifies which weak labels are reliable enough to supervise stronger students, recovering near ground-truth performance through trust-filtered weak supervision.},
+      url={https://arxiv.org/abs/2606.01000}, 
+}
