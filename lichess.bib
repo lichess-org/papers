@@ -1429,6 +1429,22 @@
   code          = {https://github.com/LLM-CHESS/llm_chess_minimal, https://github.com/maxim-saplin/llm_chess/},
 }
 
+@misc{koller2026repairpredictiveselfsupervisedrepresentation,
+  title         = {RePAIR: Predictive Self-Supervised Representation Learning in Chess},
+  author        = {Christoph Koller and Johannes Fürnkranz and Timo Bertram},
+  year          = {2026},
+  eprint        = {2606.11860},
+  url           = {https://arxiv.org/abs/2606.11860},
+  abstract      = {In this paper, we introduce Representation Prediction via Autoencoding using Iterative Refinement (RePAIR) - a novel self-supervised representation learning architecture that synthesizes Masked Autoencoders (MAE), Joint Embedding Predictive Architectures (JEPA), and Bidirectional Encoder Representations from Transformers (BERT). We demonstrate how it can be used to encode objects in sequential data like consecutive chess positions into compact yet meaningful representations. The basic principle of the architecture is to mask large portions of a sequence of latent states, similar to BERT and MAE. Then, we apply a lightweight Predictor to the latent representations that repairs gaps in the sequence in a lower-dimensional embedding space akin to JEPA. Our experiments in the domain of chess show that the Encoder refines the board representations such that meaningful chess concepts emerge clustered in the latent space. Furthermore, reconstructions of the masked board states show that the model is able to reason about the piece movements without relying on costly reinforcement learning methods. Lastly, we find that the resulting representation space allows for quick and intuitive dissections of chess games by observing the game path trajectories in this semantically rich space.},
+  keywords      = {Representation Learning, chess, XAI, Autoencoder, Transformer},
+  affiliation   = {Johannes Kepler University Linz (JKU)},
+  code          = {https://github.com/Artificial-Chrisi/RePAIR},
+  model         = {https://github.com/Artificial-Chrisi/RePAIR/tree/main/model_weights},
+  todo          = {Accepted for oral presentation at IEEE Conference on Games 2026. Add camera-ready},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
+}
+
 @inproceedings{krishnan:2022:synthesizing-interpretable-chess-tactics-from-player-games,
   title         = {Synthesizing interpretable chess tactics from player games},
   author        = {Krishnan, Abhijeet and Martens, Chris},
