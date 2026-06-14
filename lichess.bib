@@ -2362,6 +2362,19 @@
   pdf           = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10879733},
 }
 
+@inproceedings{rigaux2024enhancing,
+  title         = {Enhancing Chess Reinforcement Learning with Graph Representation},
+  author        = {Tomas Rigaux and Hisashi Kashima},
+  year          = {2024},
+  booktitle     = {The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+  url           = {https://openreview.net/forum?id=97OvPgmjRN},
+  abstract      = {Mastering games is a hard task, as games can be extremely complex, and still fundamentally different in structure from one another. While the AlphaZero algorithm has demonstrated an impressive ability to learn the rules and strategy of a large variety of games, ranging from Go and Chess, to Atari games, its reliance on extensive computational resources and rigid Convolutional Neural Network (CNN) architecture limits its adaptability and scalability. A model trained to play on a Go board cannot be used to play on a smaller board, despite the similarity between the two Go variants. In this paper, we focus on Chess, and explore using a more generic Graph-based Representation of a game state, rather than a grid-based one, to introduce a more general architecture based on Graph Neural Networks (GNN). We also expand the classical Graph Attention Network (GAT) layer to incorporate edge-features, to naturally provide a generic policy output format. Our experiments, performed on smaller networks than the initial AlphaZero paper, show that this new architecture outperforms previous architectures with a similar number of parameters, being able to increase playing strength an order of magnitude faster. We also show that the model, when trained on a smaller variant of chess, is able to be quickly fine-tuned to play on regular chess, suggesting that this approach yields promising generalization abilities. Our code is available at https://github.com/akulen/AlphaGateau.},
+  keywords      = {deep learning, GNN, Chess, RL},
+  affiliation   = {Kyoto University},
+  code          = {https://github.com/Akulen/AlphaGateau},
+  bot           = {https://lichess.org/@/AlphaGateau},
+}
+
 @article{rokach:2026:blunder-prediction-in-chess,
   title         = {Blunder prediction in chess},
   author        = {Rokach, Yarden and Shapira, Bracha},
