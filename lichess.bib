@@ -11,6 +11,18 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@inproceedings{
+fugate2026linear,
+title={Linear Pin Representations and the Limits of Patching Evidence in a Searchless Chess Transformer},
+author={Lucas Fugate},
+booktitle={Mechanistic Interpretability Workshop at ICML 2026},
+year={2026},
+url={https://openreview.net/forum?id=sbt3pBy9Rx},
+abstract = {An important question in mechanistic interpretability is whether neural networks trained on structured domains develop linear representations of abstract concepts, and whether intervening on these representations affects the model's output. We present a case study on the 270M searchless chess transformer of Ruoss et al. (2024), focusing on absolute pins. A linear probe identifies pin status well above bitboard, untrained-model, and random-label baselines. Mean-difference activation patching along the resulting pin direction reshapes the model's value-prediction output, but two controls reveal caveats to the behavioral interpretation. A placebo direction for the broader concept of geometric king–slider alignment produces a larger effect at matched magnitude despite being nearly orthogonal, and per-action scoring shows the model's recommended move rarely changes despite the much larger bucket-flip rate. Probe and patching peaks lie at different layers in both 270M and 9M variants. Beyond our chess-specific findings, our results provide a quantitative case study of how standard interpretability evidence types, probe accuracy, random-direction controls, and output-bucket flips, can each overstate behavioral causation.},
+keywords = {Feature Geometry, Methods (probing, steering, causal interventions)},
+tldr = {A case study on absolute pins in a searchless chess transformer, demonstrating that probe accuracy, random-direction patching specificity, and return-bucket flip rates overstate behavioral causation.},
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajam{\"a}e, Sigge and Rungardt, Edvin and Tafani, Marco},
