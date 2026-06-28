@@ -11,6 +11,19 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@misc{carlson2026elodisentangledplayerstyleembeddingshuman,
+      title={Elo-Disentangled Player-Style Embeddings for Human Chess via Rating-Conditioned Residual Move Model}, 
+      author={Jason Carlson},
+      year={2026},
+      eprint={2606.25176},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+abstract = {We study representation learning for individual human chess style: a per-player embedding learned from a player's move history such that inner products measure stylistic similarity, while being approximately disentangled from playing strength (Elo). Our key design is a residual formulation: a rating-conditioned base move model (Maia-3 policy logits plus Stockfish-derived features, scored over Maia-2-proposed candidates) captures what a typical player of a given strength would play, and a frozen copy of it anchors a learned move encoder and a per-player vector z, so that z explains only deviations from rating-typical play. The base model improves move prediction over the strong Maia-3 policy by 27-37% relative NLL across the rating spectrum, with the largest gains at the top (2800+); Stockfish's marginal value grows monotonically with Elo (negligible at 900-1200, +0.085 nats at 2800+). On a shared Elo-stratified benchmark of 22,620 held-out decisions, top-1 move-matching rises monotonically from Maia-2 to Maia-3 to the Stockfish-augmented base (0.51 -> 0.57 -> 0.68): the base is +33% relative top-1 over Maia-2 and +19% over Maia-3 (30% lower NLL), with the engine-feature lift largest at high Elo. The player embedding adds little to raw move-matching on top of this base -- its marginal top-1 gain falls within the 95% confidence interval -- and its value is instead representational: z generalizes to held-out decisions without overfitting, re-identifies players from disjoint games above chance, and a linear probe recovers rating from z with only R^2 = 0.06 (no better nonlinearly), evidence it captures style on an Elo-orthogonal axis. We argue that a strong rating-conditioned base plus a compact, Elo-disentangled embedding -- separating typical play from individual deviation -- is an economical, interpretable model of individual style, an alternative to per-player preference fine-tuning.},
+code = {https://github.com/jcarlson212/garry-chess-dpo},
+affiliation = {Arizona State University},
+      url={https://arxiv.org/abs/2606.25176}, 
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajam{\"a}e, Sigge and Rungardt, Edvin and Tafani, Marco},
