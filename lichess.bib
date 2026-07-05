@@ -1,3 +1,15 @@
+@inproceedings{11566620,
+  title         = {Cross Dataset Generalization of a Hybrid Transformer Evaluator for Human Aligned Chess Move Prediction},
+  author        = {Durge, Shreyas and Pawar, Niranjan and Karale, Harshad and Bhosale, Jagjit and Shinde, Gitanjali and Fatangare, Sonal and Railkar, Poonam},
+  year          = {2026},
+  booktitle     = {2026 International Conference on Sustainable and Futuristic Technologies (ICSFT)},
+  pages         = {1--6},
+  doi           = {10.1109/ICSFT67370.2026.11566620},
+  abstract      = {In this paper, we have done a comparative analysis of assessing chess positions with a Transformer based deep learning model that has been trained on our own dataset and on a publicly available Kaggle Lichess dataset. The suggested model involves the use of move sequence encoding with player ELO difference to forecast normalized positional evaluation scores. Our dataset was posted on Mendeley (with more than 30,000 games being published ethically on Chess.com, as well as matches between 800-1400 ratings and also Grandmasters' games. Every record contains all the metadata, including the move sequences, ELO ratings, results, openings, and termination types, which are appropriate in training advanced AI models. The same Transformer architectures were trained on our and Kaggle datasets and measured in terms of Mean Absolute Error (MAE) and R2. It has been found that the model trained with our dataset had a 4.1 % higher MAE (0.3755 vs 0.3915) and higher R2 values, demonstrating superior generalization and stability. This shows that data quality and ethical curation increase the accuracy of models more than data size. The results show that to build interpretable and human consistent chess evaluation systems, it is necessary to use human gameplay data that is balanced and well structured. The research concludes that smaller, high quality datasets are capable of performing better than large ones used in chess AI research with optimized Transformer architectures.0},
+  keywords      = {Modeling;Transformers;Training;Equations;Games;Sequences;Sequential analysis;Architecture;Computer architecture;Artificial intelligence;Transformer Model;Dataset Comparison;ELO Rating;Cross-Dataset Generalization;Machine Learning},
+  affiliation   = {Vishwakarma Institute of Information Technology; Vishwakarma Institute of Technology; SKN Sinhgad College of Engineering},
+}
+
 @inproceedings{adnan:2024:unleashing-artificial-cognition-integrating-multiple-ai-systems,
   title         = {Unleashing Artificial Cognition: Integrating Multiple {AI} Systems},
   author        = {Muntasir Adnan and Buddhi Gamage and Zhiwei Xu and Damith Chandana Herath and Carlos C. N. Kuhn},
@@ -1157,6 +1169,18 @@
   code          = {https://github.com/QueensGambit/CrazyAra},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
+}
+
+@misc{hoag:2025:applying-direct-preference-optimization-to-searchless-chess-models,
+  title         = {Applying Direct Preference Optimization to Searchless Chess Models},
+  author        = {Scott Hoag and Matthew Fiedler and William Lee},
+  year          = {2025},
+  url           = {https://www.scottyhoag.com/misc/publications/CSCI_544___Project_Final_Report.pdf},
+  note          = {Final project for CSCI 544 (https://sites.google.com/usc.edu/csci544-2025f/home), University of Southern California},
+  abstract      = {Recent work has demonstrated that transformers can achieve grandmaster-level chess play (2895 ELO) without explicit search through large-scale supervised training on billions of positions. We investigate whether Direct Preference Optimization (DPO) can further enhance strategic reasoning in already-strong models through post-training on engine-derived preferences. Using the Searchless Chess 9M-parameter model, we apply DPO with Stockfish-ranked move preferences. While preference accuracy improves dramatically from 12% to 89%, actual playing performance collapses: win rates drop from 50% to 9% against the baseline and puzzle-solving accuracy falls from 87% to 67%. Analysis reveals a fundamental incompatibility between DPO’s pairwise training objective and greedy action selection. DPO provides training signals for only two moves per position, leaving remaining legal moves unconstrained. These "intruder" moves drift to high q-values and dominate action selection despite not being targeted by optimization. Our negative results highlight important challenges in applying preference-based alignment methods to complex reasoning domains with discrete action spaces.},
+  keywords      = {DPO, chess, transformer, reinforcement learning from human feedback},
+  affiliation   = {University of Southern California},
+  pdf           = {https://www.scottyhoag.com/misc/publications/CSCI_544___Project_Final_Report.pdf},
 }
 
 @inproceedings{holdaway:2021:risk-taking-in-adversarial-games-what-can-1-billion-online-chess-games-tell-us,
