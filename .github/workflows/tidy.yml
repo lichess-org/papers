@@ -21,6 +21,8 @@ jobs:
       - run: pip install bibtexparser
       - run: python scripts/generate-bibkeys.py lichess.bib
       - run: make tidy
+      - run: pip install rich
+      - run: python scripts/generate-readme-stats.py lichess.bib
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "style: bibtex-tidy"
