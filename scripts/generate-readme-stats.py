@@ -82,7 +82,7 @@ for e in entries:
                 kw_counter[k] += 1
 
 aff_table = Table(title="Top Affiliations", box=box.SIMPLE_HEAVY, show_edge=False)
-aff_table.add_column("Affiliation", no_wrap=True)
+aff_table.add_column("Affiliation", no_wrap=False)
 aff_table.add_column("Papers", justify="right", style="bold")
 for aff, count in aff_counter.most_common(20):
     aff_table.add_row(aff, str(count))
