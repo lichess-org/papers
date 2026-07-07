@@ -84,13 +84,13 @@ for e in entries:
 aff_table = Table(title="Top Affiliations", box=box.SIMPLE_HEAVY, show_edge=False)
 aff_table.add_column("Affiliation", no_wrap=True)
 aff_table.add_column("Papers", justify="right", style="bold")
-for aff, count in aff_counter.most_common(15):
+for aff, count in aff_counter.most_common(20):
     aff_table.add_row(aff, str(count))
 
 kw_table = Table(title="Top Keywords", box=box.SIMPLE_HEAVY, show_edge=False)
 kw_table.add_column("Keyword", no_wrap=True)
 kw_table.add_column("Papers", justify="right", style="bold")
-for kw, count in kw_counter.most_common(15):
+for kw, count in kw_counter.most_common(20):
     kw_table.add_row(kw, str(count))
 
 console.print(Columns([aff_table, kw_table], padding=(0, 4)))
