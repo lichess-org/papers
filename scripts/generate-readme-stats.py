@@ -18,6 +18,7 @@ n = len(entries)
 
 has_code = sum(1 for e in entries if e.get("code") or e.get("github"))
 has_dataset = sum(1 for e in entries if e.get("dataset"))
+has_bot = sum(1 for e in entries if e.get("bot"))
 years = sorted(int(e["year"]) for e in entries if e.get("year"))
 year_counts = Counter(years)
 min_y, max_y = min(years), max(years)
@@ -51,8 +52,8 @@ summary.add_column("key", style="bold")
 summary.add_column("val", justify="right")
 summary.add_row("Papers", str(n))
 summary.add_row("With code", f"{has_code} ({100*has_code//n}%)")
-summary.add_row("With datasets", f"{has_dataset} ({100*has_dataset//n}%)")
-summary.add_row("Year range", f"{min_y}--{max_y}")
+summary.add_row("With data", f"{has_dataset} ({100*has_dataset//n}%)")
+summary.add_row("Lichess bot", f"{has_bot} ({100*has_bot//n}%)")
 for t in ["conference", "journal", "preprint", "thesis", "other"]:
     if type_counts[t]:
         summary.add_row(t, str(type_counts[t]))
