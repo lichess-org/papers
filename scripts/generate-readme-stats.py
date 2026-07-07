@@ -81,13 +81,13 @@ for e in entries:
             if k and len(k) > 2 and k != "chess":
                 kw_counter[k] += 1
 
-aff_table = Table(title="Top Affiliations", box=box.SIMPLE_HEAVY, show_edge=False)
-aff_table.add_column("Affiliation", no_wrap=False, max_width=25)
+aff_table = Table(title=None, box=box.SIMPLE_HEAVY, show_edge=False)
+aff_table.add_column("Affiliation", no_wrap=False, max_width=35)
 aff_table.add_column("Papers", justify="right", style="bold")
 for aff, count in aff_counter.most_common(20):
     aff_table.add_row(aff, str(count))
 
-kw_table = Table(title="Top Keywords", box=box.SIMPLE_HEAVY, show_edge=False)
+kw_table = Table(title=None, box=box.SIMPLE_HEAVY, show_edge=False)
 kw_table.add_column("Keyword", no_wrap=True)
 kw_table.add_column("Papers", justify="right", style="bold")
 for kw, count in kw_counter.most_common(20):
