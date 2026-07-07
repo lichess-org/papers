@@ -21,33 +21,28 @@ If we missed your work, feel free to open an issue or submit a PR.
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>  <span style="font-weight: bold">other       </span>         5   <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">2026 </span>  <span style="color: #000080; text-decoration-color: #000080; font-weight: bold">██████████</span><span style="color: #7f7fbf; text-decoration-color: #7f7fbf; font-weight: bold">░░░░░░░░░░</span>  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f"> 49</span>  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>                           <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>                                    <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰───────────────────────────╯</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰────────────────────────────────────╯</span>
-<span style="font-style: italic">          Top Affiliations          </span>    <span style="font-style: italic">              Top Keywords              </span>
-<span style="font-weight: bold"> Affiliation               </span> <span style="font-weight: bold"> Papers </span>    <span style="font-weight: bold"> Keyword                       </span> <span style="font-weight: bold"> Papers </span>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- University of Toronto      <span style="font-weight: bold">     11 </span>     machine learning               <span style="font-weight: bold">     14 </span>
- University of Oxford       <span style="font-weight: bold">      9 </span>     games                          <span style="font-weight: bold">     13 </span>
- Google DeepMind            <span style="font-weight: bold">      8 </span>     transformers                   <span style="font-weight: bold">     12 </span>
- Stanford University        <span style="font-weight: bold">      6 </span>     training                       <span style="font-weight: bold">     12 </span>
- Carnegie Mellon            <span style="font-weight: bold">      6 </span>     deep learning                  <span style="font-weight: bold">     11 </span>
- University                 <span style="font-weight: bold">        </span>     artificial intelligence        <span style="font-weight: bold">     10 </span>
- Princeton University       <span style="font-weight: bold">      6 </span>     large language models          <span style="font-weight: bold">      8 </span>
- Microsoft Research         <span style="font-weight: bold">      6 </span>     engines                        <span style="font-weight: bold">      8 </span>
- Google                     <span style="font-weight: bold">      5 </span>     predictive models              <span style="font-weight: bold">      8 </span>
- New York University        <span style="font-weight: bold">      5 </span>     neural networks                <span style="font-weight: bold">      7 </span>
- TU Darmstadt               <span style="font-weight: bold">      4 </span>     big data                       <span style="font-weight: bold">      7 </span>
- University of Central      <span style="font-weight: bold">      4 </span>     accuracy                       <span style="font-weight: bold">      6 </span>
- Florida                    <span style="font-weight: bold">        </span>     explainable ai                 <span style="font-weight: bold">      6 </span>
- Peking University          <span style="font-weight: bold">      4 </span>     transformer                    <span style="font-weight: bold">      6 </span>
- UC Berkeley                <span style="font-weight: bold">      4 </span>     action prediction              <span style="font-weight: bold">      5 </span>
- MIT                        <span style="font-weight: bold">      4 </span>     reinforcement learning         <span style="font-weight: bold">      5 </span>
- Harvard University         <span style="font-weight: bold">      4 </span>     human-ai interaction           <span style="font-weight: bold">      5 </span>
- Independent                <span style="font-weight: bold">      4 </span>     convolutional neural networks  <span style="font-weight: bold">      5 </span>
- Cornell University         <span style="font-weight: bold">      4 </span>     gpt                            <span style="font-weight: bold">      4 </span>
- Indian Statistical         <span style="font-weight: bold">      3 </span>     computer architecture          <span style="font-weight: bold">      4 </span>
- Institute                  <span style="font-weight: bold">        </span>                                            
- Hessian Center for         <span style="font-weight: bold">      3 </span>                                            
- Artificial Intelligence    <span style="font-weight: bold">        </span>                                            
- (hessian.AI)               <span style="font-weight: bold">        </span>                                            
- Northwestern University    <span style="font-weight: bold">      3 </span>                                            
+<span style="font-weight: bold"> Affiliation                         </span> <span style="font-weight: bold"> Papers </span>    <span style="font-weight: bold"> Keyword                       </span> <span style="font-weight: bold"> Papers </span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ University of Toronto                <span style="font-weight: bold">     11 </span>     machine learning               <span style="font-weight: bold">     14 </span>
+ University of Oxford                 <span style="font-weight: bold">      9 </span>     games                          <span style="font-weight: bold">     13 </span>
+ Google DeepMind                      <span style="font-weight: bold">      8 </span>     transformers                   <span style="font-weight: bold">     12 </span>
+ Stanford University                  <span style="font-weight: bold">      6 </span>     training                       <span style="font-weight: bold">     12 </span>
+ Carnegie Mellon University           <span style="font-weight: bold">      6 </span>     deep learning                  <span style="font-weight: bold">     11 </span>
+ Princeton University                 <span style="font-weight: bold">      6 </span>     artificial intelligence        <span style="font-weight: bold">     10 </span>
+ Microsoft Research                   <span style="font-weight: bold">      6 </span>     large language models          <span style="font-weight: bold">      8 </span>
+ Google                               <span style="font-weight: bold">      5 </span>     engines                        <span style="font-weight: bold">      8 </span>
+ New York University                  <span style="font-weight: bold">      5 </span>     predictive models              <span style="font-weight: bold">      8 </span>
+ TU Darmstadt                         <span style="font-weight: bold">      4 </span>     neural networks                <span style="font-weight: bold">      7 </span>
+ University of Central Florida        <span style="font-weight: bold">      4 </span>     big data                       <span style="font-weight: bold">      7 </span>
+ Peking University                    <span style="font-weight: bold">      4 </span>     accuracy                       <span style="font-weight: bold">      6 </span>
+ UC Berkeley                          <span style="font-weight: bold">      4 </span>     explainable ai                 <span style="font-weight: bold">      6 </span>
+ MIT                                  <span style="font-weight: bold">      4 </span>     transformer                    <span style="font-weight: bold">      6 </span>
+ Harvard University                   <span style="font-weight: bold">      4 </span>     action prediction              <span style="font-weight: bold">      5 </span>
+ Independent                          <span style="font-weight: bold">      4 </span>     reinforcement learning         <span style="font-weight: bold">      5 </span>
+ Cornell University                   <span style="font-weight: bold">      4 </span>     human-ai interaction           <span style="font-weight: bold">      5 </span>
+ Indian Statistical Institute         <span style="font-weight: bold">      3 </span>     convolutional neural networks  <span style="font-weight: bold">      5 </span>
+ Hessian Center for Artificial        <span style="font-weight: bold">      3 </span>     gpt                            <span style="font-weight: bold">      4 </span>
+ Intelligence (hessian.AI)            <span style="font-weight: bold">        </span>     computer architecture          <span style="font-weight: bold">      4 </span>
+ Northwestern University              <span style="font-weight: bold">      3 </span>                                            
 </pre>
 <!-- stats:end -->
