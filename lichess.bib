@@ -867,18 +867,6 @@
   affiliation   = {Vishwakarma Institute of Information Technology; Vishwakarma Institute of Technology; SKN Sinhgad College of Engineering},
 }
 
-@inproceedings{durge:2026:cross-dataset-generalization-of-hybrid-transformer-evaluator-for-human-aligned-chess-move-prediction,
-  title         = {Cross Dataset Generalization of a Hybrid Transformer Evaluator for Human Aligned Chess Move Prediction},
-  author        = {Durge, Shreyas and Pawar, Niranjan and Karale, Harshad and Bhosale, Jagjit and Shinde, Gitanjali and Fatangare, Sonal and Railkar, Poonam},
-  year          = {2026},
-  booktitle     = {2026 International Conference on Sustainable and Futuristic Technologies (ICSFT)},
-  pages         = {1--6},
-  doi           = {10.1109/ICSFT67370.2026.11566620},
-  abstract      = {In this paper, we have done a comparative analysis of assessing chess positions with a Transformer based deep learning model that has been trained on our own dataset and on a publicly available Kaggle Lichess dataset. The suggested model involves the use of move sequence encoding with player ELO difference to forecast normalized positional evaluation scores. Our dataset was posted on Mendeley (with more than 30,000 games being published ethically on Chess.com, as well as matches between 800-1400 ratings and also Grandmasters' games. Every record contains all the metadata, including the move sequences, ELO ratings, results, openings, and termination types, which are appropriate in training advanced AI models. The same Transformer architectures were trained on our and Kaggle datasets and measured in terms of Mean Absolute Error (MAE) and R2. It has been found that the model trained with our dataset had a 4.1 % higher MAE (0.3755 vs 0.3915) and higher R2 values, demonstrating superior generalization and stability. This shows that data quality and ethical curation increase the accuracy of models more than data size. The results show that to build interpretable and human consistent chess evaluation systems, it is necessary to use human gameplay data that is balanced and well structured. The research concludes that smaller, high quality datasets are capable of performing better than large ones used in chess AI research with optimized Transformer architectures.0},
-  keywords      = {Modeling;Transformers;Training;Equations;Games;Sequences;Sequential analysis;Architecture;Computer architecture;Artificial intelligence;Transformer Model;Dataset Comparison;ELO Rating;Cross-Dataset Generalization;Machine Learning},
-  affiliation   = {Vishwakarma Institute of Information Technology; Vishwakarma Institute of Technology; SKN Sinhgad College of Engineering},
-}
-
 @article{eisma:2024:turing-tests-in-chess-experiment-revealing-role-of-human-subjectivity,
   title         = {Turing Tests in Chess: An Experiment Revealing the Role of Human Subjectivity},
   author        = {Yke Bauke Eisma and Robin Koerts and Joost {de Winter}},
@@ -1871,18 +1859,21 @@
   affiliation   = {INESCTEC; Universidade do Porto},
 }
 
-@inproceedings{meszaros:2026:out-of-distribution-study-of-rule-based-strategic-reasoning-in-chess-transformers,
-  title         = {Out-of-Distribution Study of Rule-Based and Strategic Reasoning in Chess Transformers},
+@inproceedings{meszaros2026outofdistribution,
+  title         = {Out-of-Distribution Evaluation of Rule-Based and Strategic Reasoning in Chess Transformers},
   author        = {Anna M{\'e}sz{\'a}ros and Patrik Reizinger and Ferenc Husz{\'a}r},
   year          = {2026},
-  booktitle     = {ICLR 2026 Workshop on Logical Reasoning of Large Language Models},
-  url           = {https://openreview.net/forum?id=bG9LOL7fF6},
-  note          = {Preprint title: Out-of-distribution Tests Reveal Compositionality in Chess Transformers},
-  abstract      = {Modern decision transformers, trained similarly to LLMs, can achieve strong in- distribution performance in complex sequential domains like chess, but it remains unclear to what extent they reason systematically about rules and strategy. We study the reasoning capabilities of a 270M-parameter chess transformer trained via behavior cloning on standard chess. To investigate its abilities, we construct out-of-distribution test sets —including board states and variants never seen dur- ing training—designed to reveal failures of systematic generalization. Our analy- sis shows that the model exhibits robust rule-based reasoning, consistently gener- ating legal moves in novel configurations, but its strategic reasoning is more lim- ited. The model generates high-quality moves on curated OOD puzzles and shows basic strategy adaptation in full games. It underperforms symbolic AI algorithms that rely on explicit search, although the performance gap is smaller when playing against human users on Lichess. Moreover, the training dynamics reveals distinct phases in how the model learns to respect the fundamental constraints, suggesting an emergent compositional understanding of the game.},
+  booktitle     = {Forty-third International Conference on Machine Learning},
+  url           = {https://openreview.net/forum?id=JFGUsQ68rG},
+  note          = {Preprint title: Out-of-distribution Tests Reveal Compositionality in Chess Transformers. Also presented at the ICLR 2026 Workshop on Logical Reasoning of Large Language Models: https://openreview.net/forum?id=bG9LOL7fF6},
+  abstract      = {Modern decision transformers, trained similarly to LLMs, can achieve strong in-distribution performance in complex sequential domains like chess, but it remains unclear to what extent they reason systematically about rules and strategy. We study the reasoning capabilities of a 270M-parameter chess transformer trained via behavior cloning on standard chess. To investigate its abilities, we construct out-of-distribution test sets ---including board states and variants never seen during training---designed to reveal failures of systematic generalization. Our analysis shows that the model exhibits robust rule-based reasoning, consistently generating legal moves in novel configurations, but its strategic reasoning is more limited. The model generates high-quality moves on curated OOD puzzles and shows basic strategy adaptation in full games. It underperforms symbolic AI algorithms that rely on explicit search, although the performance gap is smaller when playing against human users on Lichess. Moreover, the training dynamics reveals distinct phases in how the model learns to respect the fundamental constraints, suggesting an emergent compositional understanding of the game.},
   keywords      = {Language model, reasoning, transformer, chess, out-of-distribution generalization, compositional generalization, rule extrapolation, chess960},
   affiliation   = {University of Cambridge; Max Planck Institute for Intelligent Systems; ELLIS Institute Tübingen},
   preprint      = {https://arxiv.org/abs/2510.20783},
   code          = {https://github.com/meszarosanna/ood_chess},
+  dataset       = {https://github.com/meszarosanna/ood_chess/tree/main/datasets},
+  laysummary    = {Modern AI systems are increasingly used to make decisions in complex settings such as games, code generation, and planning. However, it is not well understood whether these systems truly learn the underlying rules of a domain or whether they mainly imitate patterns seen during training. This distinction matters because reliable deployment requires both correct rule-following and good decision-making. In this work, we study a chess-playing AI model that is trained only by learning from examples of human games. We test it not only on standard chess positions, but also on many carefully designed situations that have been never seen during training, including unusual board configurations and modified game rules. We find that the model is very reliable at following the rules of chess, even in unfamiliar situations, and almost always produces legal moves. However, its ability to choose strong strategies is less robust, especially in highly unusual scenarios. It performs well on many challenging test puzzles, but still falls short of traditional chess engines that use explicit search to plan ahead. When playing against human users, the gap is smaller, suggesting the model can still be practically useful. We also observe that the model's learning process follows a clear progression: it first learns basic rules of movement and only later improves its ability to choose better moves. Overall, our results suggest that large AI models can learn the structure of a complex system like chess quite reliably, but improving strategic reasoning remains an important open challenge.},
+  models        = {https://drive.google.com/drive/folders/1X-LUMs2Zv8OpbX5tlfjgfMnFkKJW9S-r},
 }
 
 @inproceedings{milosz:2024:predicting-chess-puzzle-difficulty-with-transformers,
