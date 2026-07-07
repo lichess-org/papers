@@ -3633,3 +3633,18 @@
   abstract      = {We summarize the results of the FedCSIS 2025 machine learning competition organized on the knowledgepit.ai platform. We recall the competition's goals corresponding to estimations of the chess puzzle difficulty levels, we refer to the winning solutions, and we also compare the scope of this year's competition (and particularly the data available to competition participants) with its previous edition associated with the IEEE BigData 2024 conference. Finally, we discuss the new functionality of the knowledgepit.ai platform, which enables competition participants to submit additional "uncertainty masks" reflecting their assessment of test cases that are mostly problematic for their machine learning models.},
   affiliation   = {University of Warsaw; Polish-Japanese Academy of Information Technology; QED Software; Grail Team},
 }
+
+@misc{wang2026disciplinegen1mlargescaledatasetmultidisciplinary,
+      title={DisciplineGen-1M: A Large-Scale Dataset for Multidisciplinary Visual Generation and Editing}, 
+      author={Zhaokai Wang and Mingxin Liu and Zirun Zhu and Ziqian Fan and Yiguo He and Mohan Zhang and Leyao Gu and Xiangyu Zhao and Ning Liao and Shaofeng Zhang and Xuanhe Zhou and Zhihang Zhong and Junchi Yan and Xue Yang},
+      year={2026},
+      eprint={2607.02290},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2607.02290},
+      abstract = {Recent image generation and editing models can produce visually appealing natural images, yet they remain unreliable when the target image is a knowledge-intensive diagram whose correctness depends on disciplinary concepts, symbolic structure, and precise spatial relations. We introduce DisciplineGen-1M, a million-scale multidisciplinary dataset that supports text-to-image generation and image editing. It contains 1.2M samples spanning mathematics, physics, chemistry, biology, geography, computer science, economics, history, music, and sports. To construct the dataset, we design a scalable framework that combines vector-graphics rendering, OCR-based editing, curated programmatic synthesis, and large-scale text-to-image filtering. These pipelines produce captions, editing instructions, structured annotations, and paired images with controllable semantic differences. Building on DisciplineGen-1M, we further introduce a discipline-informed reasoning-generation model for both text-to-image generation and image editing. Experiments on discipline-related benchmarks, GenExam and GRADE, show substantial improvements over open-source baselines, while evaluations on general reasoning-informed benchmarks, WISE and RISE, further indicate broader transfer. The results suggest that large-scale structured academic visual data is a key ingredient for moving image generation from aesthetic plausibility toward verifiable knowledge-grounded visual creation. We will publicly release our dataset, model, and source code of the data curation pipeline to ensure reproducibility and benefit future research.},
+      affiliation = {Shanghai Jiao Tong University; South China University of Technology; Xiamen University; 4University of Science and Technology of China},
+      website = {https://disciplinegen.github.io/},
+      code = {https://github.com/VisionXLab/DisciplineGen-1M},
+      dataset = {https://huggingface.co/datasets/VisionXLab/DisciplineGen-1M},
+}
