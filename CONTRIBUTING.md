@@ -38,4 +38,4 @@ Use BibLaTeX conventions and try to include as much metadata as possible. A good
 }
 ```
 
-To properly format the .bib file after you change it, please run the `tidy` recipe from the [Makefile](Makefile). You will need to have [`bibtex-tidy`](https://github.com/FlamingTempura/bibtex-tidy?tab=readme-ov-file#sec-cli) installed.
+There is no need for you to format the bibliography after you add an entry, that will be handled automatically by a GitHub action.
