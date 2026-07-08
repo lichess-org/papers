@@ -1,5 +1,8 @@
 SORT_FIELDS  = title,shorttitle,titleaddon,author,editor,year,month,day,journal,booktitle,organization,location,publisher,address,series,volume,number,pages,doi,isbn,issn,eprint,eprinttype,eprintclass,url,urldate,copyright,category,type,institution,supervisor,langid,pagetotal,numpages,articleno,note,tldr,abstract,keywords,affiliation,website,blog,poster,slides,talk,video,pdf,preprint,github,code,dataset,model,huggingface,figshare,pypi,software,todo
 
+bibkeys:
+	python3 scripts/generate-bibkeys.py lichess.bib
+
 tidy:
 	npx bibtex-tidy lichess.bib --sort --curly --no-escape --blank-lines --duplicates --sort-fields=$(SORT_FIELDS) --modify --remove-empty-fields --trailing-commas --omit=timestamp,biburl,bibsource
 
@@ -8,3 +11,5 @@ stats count:
 
 hf:
 	uvx --with bibtexparser --with pandas --with datasets python scripts/bib2parquet.py
+
+local: bibkeys tidy
