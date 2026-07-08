@@ -455,7 +455,7 @@
   year          = {2025},
   url           = {https://cs224r.stanford.edu/projects/pdfs/CS224R_Final_Report__1_%20(3).pdf},
   note          = {Final project for CS 224R Deep Reinforcement Learning, Spring 2025 https://cs224r.stanford.edu/projects/cs224r_final_projects.html},
-  abstract      = {Traditional chess engines face a compelling dual challenge that significantly limits their practical utility for human chess education and training. First, engines like Stockfish, AlphaZero, and LeelaChess require computationally intensive tree-search algorithms, evaluating millions of positions per second to determine optimal moves. Second, and more critically, these systems fail to provide realistic opponents for human players across different skill levels. Current approaches create weaker opponents by simply limiting search depth, resulting in highly inconsistent play patterns that alternate unpredictably between brilliant strategic moves and inexplicable blunders--fundamentally unlike the systematic, consistent errors characteristic of human players at specific ELO ratings. This creates an unrealistic training environment where players practice against opponents that exhibit superhuman tactical vision followed by irrational mistakes, poorly preparing them for actual human competition.},
+  abstract      = {Traditional chess engines face a compelling dual challenge that significantly limits their practical utility for human chess education and training. First, engines like Stockfish, , and LeelaChess require computationally intensive tree-search algorithms, evaluating millions of positions per second to determine optimal moves. Second, and more critically, these systems fail to provide realistic opponents for human players across different skill levels. Current approaches create weaker opponents by simply limiting search depth, resulting in highly inconsistent play patterns that alternate unpredictably between brilliant strategic moves and inexplicable blunders--fundamentally unlike the systematic, consistent errors characteristic of human players at specific ELO ratings. This creates an unrealistic training environment where players practice against opponents that exhibit superhuman tactical vision followed by irrational mistakes, poorly preparing them for actual human competition.},
   affiliation   = {Stanford University},
 }
 
@@ -581,8 +581,8 @@
   dataset       = {https://github.com/QueensGambit/CrazyAra/wiki/Stockfish-10:-Crazyhouse-Self-Play},
 }
 
-@inproceedings{czech:2021:improving-alphazero-using-monte-carlo-graph-search,
-  title         = {Improving AlphaZero Using Monte-Carlo Graph Search},
+@inproceedings{czech:2021:improving--using-monte-carlo-graph-search,
+  title         = {Improving  Using Monte-Carlo Graph Search},
   author        = {Johannes Czech and Patrick Korus and Kristian Kersting},
   editor        = {Susanne Biundo and Minh Do and Robert Goldman and Michael Katz and Qiang Yang and Hankz Hankui Zhuo},
   year          = {2021},
@@ -590,14 +590,14 @@
   publisher     = {{AAAI} Press},
   pages         = {103--111},
   url           = {https://ojs.aaai.org/index.php/ICAPS/article/view/15952},
-  abstract      = {The AlphaZero algorithm has been successfully applied in a range of discrete domains, most notably board games. It utilizes a neural network that learns a value and policy function to guide the exploration in a Monte-Carlo Tree Search. Although many search improvements such as graph search have been proposed for Monte-Carlo Tree Search in the past, most of them refer to an older variant of the Upper Confidence bounds for Trees algorithm that does not use a policy for planning. We improve the search algorithm for AlphaZero by generalizing the search tree to a directed acyclic graph. This enables information flow across different subtrees and greatly reduces memory consumption. Along with Monte-Carlo Graph Search, we propose a number of further extensions, such as the inclusion of Epsilon-Greedy exploration, a revised terminal solver and the integration of domain knowledge as constraints. In our empirical evaluations, we use the CrazyAra engine on chess and crazyhouse as examples to show that these changes bring significant improvements to AlphaZero.},
+  abstract      = {The  algorithm has been successfully applied in a range of discrete domains, most notably board games. It utilizes a neural network that learns a value and policy function to guide the exploration in a Monte-Carlo Tree Search. Although many search improvements such as graph search have been proposed for Monte-Carlo Tree Search in the past, most of them refer to an older variant of the Upper Confidence bounds for Trees algorithm that does not use a policy for planning. We improve the search algorithm for  by generalizing the search tree to a directed acyclic graph. This enables information flow across different subtrees and greatly reduces memory consumption. Along with Monte-Carlo Graph Search, we propose a number of further extensions, such as the inclusion of Epsilon-Greedy exploration, a revised terminal solver and the integration of domain knowledge as constraints. In our empirical evaluations, we use the CrazyAra engine on chess and crazyhouse as examples to show that these changes bring significant improvements to .},
   keywords      = {Classical Planning Techniques And Analysis, Applications And Case Studies Of Planning And Scheduling Techniques, Learning For Planning And Scheduling, Multi-agent And Distributed Planning},
   affiliation   = {Hessian Center for Artificial Intelligence (hessian.AI); TU Darmstadt},
   pdf           = {https://ojs.aaai.org/index.php/ICAPS/article/view/15952/15763},
 }
 
-@inproceedings{czech:2024:representation-matters-for-mastering-chess-improved-feature-representation-in-alphazero-outperforms-switching-to-transformers,
-  title         = {Representation Matters for Mastering Chess: Improved Feature Representation in AlphaZero Outperforms Switching to Transformers},
+@inproceedings{czech:2024:representation-matters-for-mastering-chess-improved-feature-representation-in--outperforms-switching-to-transformers,
+  title         = {Representation Matters for Mastering Chess: Improved Feature Representation in  Outperforms Switching to Transformers},
   author        = {Johannes Czech and Jannis Blüml and Kristian Kersting and Hedinn Steingrimsson},
   year          = {2024},
   booktitle     = {ECAI 2024},
@@ -607,7 +607,7 @@
   doi           = {10.3233/FAIA240763},
   url           = {https://ebooks.iospress.nl/DOI/10.3233/FAIA240763},
   note          = {preprint v1: Representation Matters: The Game of Chess Poses a Challenge to Vision Transformers (https://arxiv.org/abs/2304.14918v1).},
-  abstract      = {While transformers have gained recognition as a versatile tool for artificial intelligence (AI), an unexplored challenge arises in the context of chess — a classical AI benchmark. Here, incorporating Vision Transformers (ViTs) into AlphaZero is insufficient for chess mastery, mainly due to ViTs’ computational limitations. The attempt to optimize their efficiency by combining MobileNet and NextViT outperformed AlphaZero by about 30 Elo. However, we propose a practical improvement that involves a simple change in the input representation and value loss functions. As a result, we achieve a significant performance boost of up to 180 Elo points beyond what is currently achievable with AlphaZero in chess. In addition to these improvements, our experimental results using the Integrated Gradient technique confirm the effectiveness of the newly introduced features.},
+  abstract      = {While transformers have gained recognition as a versatile tool for artificial intelligence (AI), an unexplored challenge arises in the context of chess — a classical AI benchmark. Here, incorporating Vision Transformers (ViTs) into  is insufficient for chess mastery, mainly due to ViTs’ computational limitations. The attempt to optimize their efficiency by combining MobileNet and NextViT outperformed  by about 30 Elo. However, we propose a practical improvement that involves a simple change in the input representation and value loss functions. As a result, we achieve a significant performance boost of up to 180 Elo points beyond what is currently achievable with  in chess. In addition to these improvements, our experimental results using the Integrated Gradient technique confirm the effectiveness of the newly introduced features.},
   keywords      = {Transformer, Input Representation, Loss Formulation, Chess, Monte-Carlo Tree Search, AlphaZero},
   affiliation   = {TU Darmstadt; German Research Center for Artificial Intelligence (DFKI); Hessian Center for Artificial Intelligence (hessian.AI); Rice University; The Steingrimsson Foundation},
   blog          = {https://www.informatik.tu-darmstadt.de/fb20/ueber_uns_details_308928.en.jsp},
@@ -3469,18 +3469,16 @@
   pdf           = {https://arxiv.org/pdf/2507.10951},
 }
 
-@article{zahavy:2023:diversifying-ai-towards-creative-chess-with-alphazero,
-  title         = {Diversifying {AI:} Towards Creative Chess with AlphaZero},
-  author        = {Tom Zahavy and Vivek Veeriah and Shaobo Hou and Kevin Waugh and Matthew Lai and Edouard Leurent and Nenad Tomasev and Lisa Schut and Demis Hassabis and Satinder Singh},
-  year          = {2023},
-  journal       = {CoRR},
-  volume        = {abs/2308.09175},
-  doi           = {10.48550/ARXIV.2308.09175},
-  eprint        = {2308.09175},
-  eprinttype    = {arXiv},
-  url           = {https://doi.org/10.48550/arXiv.2308.09175},
-  abstract      = {In recent years, Artificial Intelligence (AI) systems have surpassed human intelligence in a variety of computational tasks. However, AI systems, like humans, make mistakes, have blind spots, hallucinate, and struggle to generalize to new situations. This work explores whether AI can benefit from creative decision-making mechanisms when pushed to the limits of its computational rationality. In particular, we investigate whether a team of diverse AI systems can outperform a single AI in challenging tasks by generating more ideas as a group and then selecting the best ones. We study this question in the game of chess, the so-called drosophila of AI. We build on AlphaZero (AZ) and extend it to represent a league of agents via a latent-conditioned architecture, which we call AZ\_db. We train AZ\_db to generate a wider range of ideas using behavioral diversity techniques and select the most promising ones with sub-additive planning. Our experiments suggest that AZ\_db plays chess in diverse ways, solves more puzzles as a group and outperforms a more homogeneous team. Notably, AZ\_db solves twice as many challenging puzzles as AZ, including the challenging Penrose positions. When playing chess from different openings, we notice that players in AZ\_db specialize in different openings, and that selecting a player for each opening using sub-additive planning results in a 50 Elo improvement over AZ. Our findings suggest that diversity bonuses emerge in teams of AI agents, just as they do in teams of humans and that diversity is a valuable asset in solving computationally hard problems.},
+@misc{zahavy2024diversifyingaicreativechess,
+      title={Diversifying AI: Towards Creative Chess with AlphaZero}, 
+      author={Tom Zahavy and Vivek Veeriah and Shaobo Hou and Kevin Waugh and Matthew Lai and Edouard Leurent and Nenad Tomasev and Lisa Schut and Demis Hassabis and Satinder Singh},
+      year={2024},
+      eprint={2308.09175},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+  abstract      = {In recent years, Artificial Intelligence (AI) systems have surpassed human intelligence in a variety of computational tasks. However, AI systems, like humans, make mistakes, have blind spots, hallucinate, and struggle to generalize to new situations. This work explores whether AI can benefit from creative decision-making mechanisms when pushed to the limits of its computational rationality. In particular, we investigate whether a team of diverse AI systems can outperform a single AI in challenging tasks by generating more ideas as a group and then selecting the best ones. We study this question in the game of chess, the so-called drosophila of AI. We build on AlphaZero (AZ) and extend it to represent a league of agents via a latent-conditioned architecture, which we call AZ_db. We train AZ_db to generate a wider range of ideas using behavioral diversity techniques and select the most promising ones with sub-additive planning. Our experiments suggest that AZ_db plays chess in diverse ways, solves more puzzles as a group and outperforms a more homogeneous team. Notably, AZ_db solves twice as many challenging puzzles as AZ, including the challenging Penrose positions. When playing chess from different openings, we notice that players in AZ_db specialize in different openings, and that selecting a player for each opening using sub-additive planning results in a 50 Elo improvement over AZ. Our findings suggest that diversity bonuses emerge in teams of AI agents, just as they do in teams of humans and that diversity is a valuable asset in solving computationally hard problems.},
   affiliation   = {Google DeepMind; Sony AI; University of Oxford},
+      url={https://arxiv.org/abs/2308.09175}, 
 }
 
 @inproceedings{zaidi:2024:predicting-user-perception-of-move-brilliance-in-chess,
