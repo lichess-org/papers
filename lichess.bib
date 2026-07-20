@@ -11,6 +11,21 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@misc{shen2026understandingreasoningpretrainingposttraining,
+      title={Understanding Reasoning from Pretraining to Post-Training}, 
+      author={Jingyan Shen and Ang Li and Salman Rahman and Yifan Sun and Micah Goldblum and Matus Telgarsky and Pavel Izmailov},
+      year={2026},
+      eprint={2607.16097},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+affiliation = {New York University; Modal Labs; UCLA; Columbia University; University of Illinois Urbana-Champaign},
+huggingface = {https://huggingface.co/collections/pavelslab-nyu/pre2post-chess},
+code = {https://github.com/pavelslab-nyu/pre2post-chess},
+
+abstract = {Reinforcement learning (RL) has become central to improving large language models (LLMs) on complex reasoning tasks, yet RL post-training is largely studied in isolation from the pretraining that precedes it. As a result, two basic questions remain open: (1) how do pretraining choices (model size, data) shape the returns to RL compute, and (2) what does RL actually do to the model? These questions are difficult to study in the standard LLM setting: pretraining corpora are vast and uncontrolled, making it hard to attribute behaviors to pretraining versus RL, and systematic compute sweeps across both stages are prohibitively expensive. To address these challenges, we use chess as a controlled testbed for studying reasoning across the full pretraining-to-post-training pipeline. We follow the standard LLM training pipeline by pretraining language models from 5M to 1B parameters on human chess games, supervised fine-tuning on synthetic reasoning traces, and running RL on chess puzzles with verifiable rewards. Using this framework, we find that the post-RL performance at given RL compute level is well-predicted from the pretraining loss, and slope of the RL reward curves improves approximately linearly with the pretraining tokens. Beyond scaling, we find that RL does not simply sharpen the SFT policy: on easy puzzles it amplifies correct moves the SFT policy already preferred, while on hard puzzles it surfaces correct moves that were nearly absent under SFT. We further test whether our findings transfer beyond chess by training a 1B language model on math-domain text, where the same predictive pattern emerges: longer-pretrained checkpoints reach higher post-RL performance and improve faster under RL. In sum, we provide a quantitative account of the pretraining-to-RL interface and a controlled testbed for studying the science of reasoning across the full pretraining-to-post-training pipeline.},
+      url={https://arxiv.org/abs/2607.16097}, 
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajam{\"a}e, Sigge and Rungardt, Edvin and Tafani, Marco},
