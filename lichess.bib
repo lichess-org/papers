@@ -11,6 +11,41 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@thesis{goutsias:2026,
+  title         = {Developing a Lightweight Chess Agent for Aggressive Play using Reinforcement Learning},
+  author        = {Goutsias, Konstantinos},
+  year          = {2026},
+  month         = may,
+  type          = {Diploma Thesis},
+  institution   = {Technical University of Crete},
+  supervisor    = {Spyropoulos, Thrasyvoulos},
+  abstract = {Chess artificial intelligence has advanced significantly in recent years,
+with new approaches continuously surpassing previous ones. While heuristicbased engines dominated the field for many years, reinforcement learning
+(RL) methods, such as AlphaZero, have recently emerged as powerful and
+reliable alternatives.
+Against this background, this thesis presents an AlphaZero-inspired
+reinforcement learning agent that learns to play chess primarily through
+self-play, relying on minimal human-generated data. Due to the complexity
+of chess, RL-based approaches typically require substantial computational
+resources. In this work, we first establish a baseline implementation of a
+Monte Carlo Tree Search-based self-play framework and demonstrate that,
+even with limited computational power, it is possible to reproduce the fundamental self-improvement principle underlying AlphaZero.
+The second part of this work focuses on a series of optimizations at
+different levels of the system. These optimizations pursue two main objectives: accelerating the generation of data and improving its quality so that
+less data is required overall. By improving computational efficiency and
+training effectiveness, the proposed modifications reduce the overall computational cost of the training process. Experimental results show that
+these improvements allow the system to run up to 20 times faster on the
+same computational hardware configuration used in this study.
+Finally, we investigate methods for biasing the agent toward a more
+aggressive playing style. By combining heuristic guidance with reward
+shaping techniques, the training process encourages attacking and dynamic
+gameplay. The experimental results indicate that the agent progressively
+adopts a more aggressive strategy during training, demonstrating that
+stylistic behavior in RL-based chess agents can be effectively influenced
+through targeted modifications to the learning framework.},
+  url = {https://dias.library.tuc.gr/files/ee3a24d3-7da7-439d-9ad4-98a778b82a82/download/Goutsias_Konstantinos_Dip_2026.pdf},
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajam{\"a}e, Sigge and Rungardt, Edvin and Tafani, Marco},
