@@ -33,6 +33,8 @@ for e in entries:
         for a in re.split(r"\s*;\s*", aff):
             a = a.strip()
             if a:
+                if "google" in a.lower() or "deepmind" in a.lower():
+                    a = "Google DeepMind"
                 aff_counter[a] += 1
 
 venue_counter = Counter()
