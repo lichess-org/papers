@@ -11,24 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@article{sembiring:2026,
-  title         = {Analysis of Chess Opening Patterns Using Data Mining Methods to Determine Players’ Strategic Tendencies},
-  author        = {Femasta Sembiring, Rahmadani Rahmadani, Muhammad Fauzi Muhammad Fauzi},
-  year          = {2026},
-  month         = jun,
-  journal       = {Journal of Artificial Intelligence and Software Engineering},
-  volume        = {6},
-  number        = {2},
-  pages         = {233--250},
-  doi           = {10.30811/jaise.v6i2.9781},
-  issn          = {2777-001X},
-  url           = {https://e-jurnal.pnl.ac.id/JAISE/article/view/9781},
-  langid        = {indonesian},
-  abstract      = {Online chess games generate large-scale match data that can be used to objectively analyze opening patterns. This study aims to cluster chess openings based on game statistical characteristics using the K-Means Clustering algorithm. The dataset was obtained from Lichess in PGN format, focusing on Rapid games played by players with ratings above 1200. The data were selected, preprocessed, transformed based on ECO codes, and reduced to the 300 most frequent ECO codes. The variables used were Win Rate, Draw Rate, and Average Moves, which were standardized using Z-Score. Testing was conducted using 3-, 4-, and 5-cluster scenarios and evaluated using the Davies-Bouldin Index. The DBI values for each scenario were 0.9538, 0.8715, and 0.7312. The best result was obtained by the 5-cluster scenario because it produced the smallest DBI value. The clustering results show that chess openings can be grouped into aggressive, solid, balanced, and special-characteristic tendencies.},
-  affiliation   = {STMIK Kaputama; Universitas Pembangunan Panca Budi},
-  pdf           = {https://e-jurnal.pnl.ac.id/JAISE/article/view/9781/6274},
-}
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajam{\"a}e, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -951,6 +933,24 @@
   abstract      = {The goal of a rating system in zero sum games such as chess is to quickly and accurately assign skill ratings to individual players. In chess, this is most often done with ELO rating, which iteratively updates player ratings based solely on the result of the game as well as the rating of the other player. When it comes to new players, these methods rely random pairings in order to collect initial estimates. Efforts have been made, including the integration of Glicko-1 and Glicko-2 scores as opposed to standard ELO ratings, but none of these methods take into account the content of the games themselves when predicting ratings of new players. We implemented a hybrid graph-representation and deep learning based framework based on the lichess.org open database which maximizes both the accuracy and rate of convergence of rating assignments for new players by considering the context of actual prior game states as opposed to solely focusing on game outcome and prior ratings. Roughly, we constructed a graph representation of prior player pools along with their game histories and performed regression analysis based on moves in their previous games using an LSTM model in order to predict their true rating. We then assigned players to play either black or white in their next game, mapped our existing history graph into a bipartite graph (bi-partitioned by color in the next game), weighted edges by difference in predicted rating, and used the Hungarian algorithm in order to evaluate which pairings will result in the least predicted rating difference. This allows for a hybrid rating and matchmaking framework that takes into account the context from moves in previous games as opposed to the more limited priors of player ratings and game outcomes.},
   affiliation   = {Kennesaw State University},
   todo          = {check if published as paper},
+}
+
+@article{femastasembiring:2026:analysis-of-chess-opening-patterns-using-data-mining-methods-to-determine-players-strategic-tendencies,
+  title         = {Analysis of Chess Opening Patterns Using Data Mining Methods to Determine Players’ Strategic Tendencies},
+  author        = {Femasta Sembiring, Rahmadani Rahmadani, Muhammad Fauzi Muhammad Fauzi},
+  year          = {2026},
+  month         = {June},
+  journal       = {Journal of Artificial Intelligence and Software Engineering},
+  volume        = {6},
+  number        = {2},
+  pages         = {233--250},
+  doi           = {10.30811/jaise.v6i2.9781},
+  issn          = {2777-001X},
+  url           = {https://e-jurnal.pnl.ac.id/JAISE/article/view/9781},
+  langid        = {indonesian},
+  abstract      = {Online chess games generate large-scale match data that can be used to objectively analyze opening patterns. This study aims to cluster chess openings based on game statistical characteristics using the K-Means Clustering algorithm. The dataset was obtained from Lichess in PGN format, focusing on Rapid games played by players with ratings above 1200. The data were selected, preprocessed, transformed based on ECO codes, and reduced to the 300 most frequent ECO codes. The variables used were Win Rate, Draw Rate, and Average Moves, which were standardized using Z-Score. Testing was conducted using 3-, 4-, and 5-cluster scenarios and evaluated using the Davies-Bouldin Index. The DBI values for each scenario were 0.9538, 0.8715, and 0.7312. The best result was obtained by the 5-cluster scenario because it produced the smallest DBI value. The clustering results show that chess openings can be grouped into aggressive, solid, balanced, and special-characteristic tendencies.},
+  affiliation   = {STMIK Kaputama; Universitas Pembangunan Panca Budi},
+  pdf           = {https://e-jurnal.pnl.ac.id/JAISE/article/view/9781/6274},
 }
 
 @inproceedings{feng:2023:chessgpt-bridging-policy-learning-language-modeling,
