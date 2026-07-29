@@ -59,12 +59,12 @@ console = Console(record=True, width=140)
 summary = Table(box=box.SIMPLE, show_header=False, pad_edge=False)
 summary.add_column("key", style="bold")
 summary.add_column("val", justify="right")
+summary.add_row("Authors", str(len(authors)))
 summary.add_row("Papers", str(n))
 summary.add_row("With code", f"{has_code} ({100*has_code//n}%)")
 summary.add_row("With data", f"{has_dataset} ({100*has_dataset//n}%)")
 summary.add_row("Lichess bot", f"{has_bot} ({100*has_bot//n}%)")
-summary.add_row("Authors", str(len(authors)))
-for t in ["conference", "journal", "preprint", "thesis", "other"]:
+for t in ["conference", "journal", "preprint", "thesis"]:
     if type_counts[t]:
         summary.add_row(t, str(type_counts[t]))
 
