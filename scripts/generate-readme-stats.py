@@ -26,6 +26,13 @@ min_y, max_y = min(years), max(years)
 type_map = {"inproceedings": "conference", "article": "journal", "misc": "preprint", "thesis": "thesis"}
 type_counts = Counter(type_map.get(e["ENTRYTYPE"], "other") for e in entries)
 
+authors = set()
+for e in entries:
+    for a in re.split(r'\s+and\s+', e.get('author', '')):
+        a = a.strip()
+        if a:
+            authors.add(a)
+
 aff_counter = Counter()
 for e in entries:
     aff = e.get("affiliation", "")
@@ -56,6 +63,7 @@ summary.add_row("Papers", str(n))
 summary.add_row("With code", f"{has_code} ({100*has_code//n}%)")
 summary.add_row("With data", f"{has_dataset} ({100*has_dataset//n}%)")
 summary.add_row("Lichess bot", f"{has_bot} ({100*has_bot//n}%)")
+summary.add_row("Authors", str(len(authors)))
 for t in ["conference", "journal", "preprint", "thesis", "other"]:
     if type_counts[t]:
         summary.add_row(t, str(type_counts[t]))
