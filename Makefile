@@ -4,7 +4,7 @@ bibkeys:
 	python3 scripts/generate-bibkeys.py lichess.bib
 
 tidy:
-	npx bibtex-tidy lichess.bib --sort --curly --no-escape --blank-lines --duplicates --sort-fields=$(SORT_FIELDS) --modify --remove-empty-fields --trailing-commas --omit=timestamp,biburl,bibsource
+	npx bibtex-tidy@1.14.0 lichess.bib --sort --curly --no-escape --blank-lines --duplicates --sort-fields=$(SORT_FIELDS) --modify --remove-empty-fields --trailing-commas --omit=timestamp,biburl,bibsource
 
 stats count:
 	@echo "$$(grep -c '^@' lichess.bib) entries"
