@@ -57,7 +57,7 @@ for e in entries:
 console = Console(record=True, width=140)
 
 summary = Table(box=box.SIMPLE, show_header=False, pad_edge=False)
-summary.add_column("key", style="bold")
+summary.add_column("key", style="bold", min_width=20)
 summary.add_column("val", justify="right")
 summary.add_row("Authors", str(len(authors)))
 summary.add_row("Papers", str(n))
