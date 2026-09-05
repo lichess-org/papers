@@ -1,4 +1,5 @@
 import re, sys
+import requests, json
 from collections import Counter
 import bibtexparser
 from bibtexparser.bparser import BibTexParser
@@ -91,6 +92,20 @@ for e in entries:
             if k and len(k) > 2 and k != "chess":
                 kw_counter[k] += 1
 
+dois = [e.get("doi", "").strip("{}") for e in entries if e.get("doi")]
+citation_data = []
+for doi in dois:
+    try:
+        url = f"https://api.openalex.org/works/https://doi.org/{doi}?select=cited_by_count,display_name"
+        response = requests.get(url)
+        data = response.json()
+        citations = data.get('cited_by_count', 0)
+        name = data.get('display_name', 0)
+        citation_data.append((doi, citations, name))
+    except (requests.RequestException, json.JSONDecodeError) as e:
+        print(f"Error fetching citations for {doi}: {e}")
+        citation_data.append((doi, 0))
+
 aff_table = Table(title=None, box=box.SIMPLE_HEAVY, show_edge=False)
 aff_table.add_column("Affiliation", no_wrap=False, max_width=35)
 aff_table.add_column("Papers", justify="right", style="bold")
@@ -103,7 +118,15 @@ kw_table.add_column("Papers", justify="right", style="bold")
 for kw, count in kw_counter.most_common(17):
     kw_table.add_row(kw, str(count))
 
+citation_table = Table(box=box.SIMPLE, show_header=False, pad_edge=False)
+citation_table.add_column("Title", no_wrap=True, max_width=60, overflow="ellipsis")
+citation_table.add_column("Citations", justify="right", style="bold")
+for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=True)[:17]:
+    link_text = Text(name, style=f"link https://doi.org/{doi}")
+    citation_table.add_row(link_text, str(citations))
+
 console.print(Columns([aff_table, kw_table], padding=(0, 4)))
+console.print(Columns([Panel(citation_table, title="Most cited papers", border_style="dim", box=box.ROUNDED)]))
 
 CONSOLE_HTML_FORMAT = '<pre style="font-family:Menlo,\'DejaVu Sans Mono\',consolas,\'Courier New\',monospace">{code}</pre>'
 html = console.export_html(inline_styles=True, code_format=CONSOLE_HTML_FORMAT)
