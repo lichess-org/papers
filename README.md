@@ -7,9 +7,6 @@ If we missed your work, feel free to open an issue or submit a PR.
 > [!NOTE]
 > the inclusion of a work is not a statement on its scientific integrity or merit.
 
-> [!NOTE]
-> Citations are retrieved using [OpenAlex](https://openalex.org/)'s [API](https://help.openalex.org/api/).
-
 <!-- stats:start -->
 <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╭── Bibliography Statistics ───╮</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╭────────── Papers by Year ──────────╮</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>                              <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>                                    <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
