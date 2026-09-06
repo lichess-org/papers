@@ -100,7 +100,7 @@ for doi in dois:
         response = requests.get(url)
         data = response.json()
         citations = data.get('cited_by_count', 0)
-        name = data.get('display_name', 0)
+        name = data.get('display_name', "")
         citation_data.append((doi, citations, name))
     except (requests.RequestException, json.JSONDecodeError) as e:
         print(f"Error fetching citations for {doi}: {e}")
