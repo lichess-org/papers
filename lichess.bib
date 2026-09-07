@@ -365,25 +365,6 @@
   affiliation   = {University of Twente},
 }
 
-@thesis{trap9764,
-          school = {Dublin, National College of Ireland},
-            year = {2025},
-type          = {mathesis},
-           title = {Explainable Chess AI: A Browser Extension for Move Explanation and Analysis in Real-Time Chess Interfaces},
-        keywords = {Explainable Artificial Intelligence; Chess AI; Convolutional Neural Networks; Natural Language Processing; Deep Learning; Tactical Pattern Recognition; Browser Extension; Stockfish; PyTorch; Multi-Modal AI},
-          author = {Nanduri, Sai Manohar},
-supervisor = {Garg, Mohit},
-        abstract = {This thesis presents an innovative real-time explainable artificial intelligence (AI) mechanism for the analysis of chess is put forward, which overcomes the "black box" problem that has existed for ages with chess engines (Adadi and Berrada (2018)). Even though present-day chess engines have superhuman playing power, they only present numerical evaluations which do not clarify their reasoning, thus creating hurdles for chess learners. The research described here is a direct projection of a hybrid multi-modal AI system that fuses symbolic reasoning (Stockfish chess engine: Stockfish Team (2023)), deep learning (Convolutional Neural Networks for tactical pattern recognition: Lecun et al. (1998)), algorithmic position analysis, and natural language processing (Large Language Models: Brown et al. (2020)) to generate human-understandable explanations for chess moves.
-
-The system is made available to users as a browser extension on Chess.com (Google (2024)), offering an analysis of the game in real-time with explanations that highlight particular board features, tactical themes, and strategic concepts. The tactical classification model was able to categorize 20 tactical themes with a 78.1\% detection rate and the model was trained using 100,000 positions from the Lichess puzzle database (Lichess.org (2024)). The average time taken by the system to respond is 2.65-3.50 seconds per position, which conforms to the requirements for real-time usability. The system integrates multiple AI components to produce contextual, grounded explanations designed to support chess learning and understanding.
-
-Main contributions of the present study are the following: (1) a new hybrid ensemble architecture for multi-objective tactical classification, which has shown that intelligently combined specialized models outperform general-purpose ones (71.8\% precision, 52.3\% recall vs. single-model baselines), (2) a systematic comparative study of model evolution from single architectures through specialized ensembles to hybrid solutions, (3) context-aware explanation generation using LLMs with hallucination prevention through explicit piece verification, (4) practical real-time deployment showing XAI applicability in game domains, and (5) a comprehensive computational evaluation with a proposed framework for future empirical validation. The present study reveals that using context-aware ensemble routing instead of uniform approaches is a great advantage for multi-objective optimization in machine learning.},
-             url = {https://norma.ncirl.ie/9764/},
-affiliation = {National College of Ireland},
-code = {https://github.com/NSM1997/chessAI},
-}
-
-
 @misc{carlson:2026:elo-disentangled-player-style-embeddings-for-human-chess-via-rating-conditioned-residual-move-model,
   title         = {Elo-Disentangled Player-Style Embeddings for Human Chess via Rating-Conditioned Residual Move Model},
   author        = {Jason Carlson},
@@ -2267,6 +2248,26 @@ code = {https://github.com/NSM1997/chessAI},
   website       = {https://tom7.org/chess/},
   pdf           = {https://tom7.org/chess/survival.pdf},
   code          = {https://sourceforge.net/p/tom7misc/svn/HEAD/tree/trunk/chess/},
+}
+
+@thesis{nanduri:2025:explainable-chess-ai-browser-extension-for-move-explanation-analysis-in-real-time-chess-interfaces,
+  title         = {Explainable Chess AI: A Browser Extension for Move Explanation and Analysis in Real-Time Chess Interfaces},
+  author        = {Nanduri, Sai Manohar},
+  year          = {2025},
+  url           = {https://norma.ncirl.ie/9764/},
+  type          = {mathesis},
+  supervisor    = {Garg, Mohit},
+  abstract      = {
+    This thesis presents an innovative real-time explainable artificial intelligence (AI) mechanism for the analysis of chess is put forward, which overcomes the "black box" problem that has existed for ages with chess engines (Adadi and Berrada (2018)). Even though present-day chess engines have superhuman playing power, they only present numerical evaluations which do not clarify their reasoning, thus creating hurdles for chess learners. The research described here is a direct projection of a hybrid multi-modal AI system that fuses symbolic reasoning (Stockfish chess engine: Stockfish Team (2023)), deep learning (Convolutional Neural Networks for tactical pattern recognition: Lecun et al. (1998)), algorithmic position analysis, and natural language processing (Large Language Models: Brown et al. (2020)) to generate human-understandable explanations for chess moves.
+
+    The system is made available to users as a browser extension on Chess.com (Google (2024)), offering an analysis of the game in real-time with explanations that highlight particular board features, tactical themes, and strategic concepts. The tactical classification model was able to categorize 20 tactical themes with a 78.1\% detection rate and the model was trained using 100,000 positions from the Lichess puzzle database (Lichess.org (2024)). The average time taken by the system to respond is 2.65-3.50 seconds per position, which conforms to the requirements for real-time usability. The system integrates multiple AI components to produce contextual, grounded explanations designed to support chess learning and understanding.
+
+    Main contributions of the present study are the following: (1) a new hybrid ensemble architecture for multi-objective tactical classification, which has shown that intelligently combined specialized models outperform general-purpose ones (71.8\% precision, 52.3\% recall vs. single-model baselines), (2) a systematic comparative study of model evolution from single architectures through specialized ensembles to hybrid solutions, (3) context-aware explanation generation using LLMs with hallucination prevention through explicit piece verification, (4) practical real-time deployment showing XAI applicability in game domains, and (5) a comprehensive computational evaluation with a proposed framework for future empirical validation. The present study reveals that using context-aware ensemble routing instead of uniform approaches is a great advantage for multi-objective optimization in machine learning.
+  },
+  keywords      = {Explainable Artificial Intelligence; Chess AI; Convolutional Neural Networks; Natural Language Processing; Deep Learning; Tactical Pattern Recognition; Browser Extension; Stockfish; PyTorch; Multi-Modal AI},
+  affiliation   = {National College of Ireland},
+  code          = {https://github.com/NSM1997/chessAI},
+  school        = {Dublin, National College of Ireland},
 }
 
 @misc{narayanan:2023:improving-strength-of-human-like-models-in-chess,
