@@ -11,6 +11,20 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@misc{s2026exploringcollaborationlanguagenonlanguage,
+      title={Exploring Collaboration between a language and a non-language agent}, 
+      author={Harini S I and Somesh Singh and Yaman K Singla and Rajiv Ratn Shah and David Doermann and Balaji Krishnamurthy},
+      year={2026},
+      eprint={2609.00474},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2609.00474},
+affiliation = {Adobe Media and Data Science Research (MDSR), IIIT-Delhi, IIT Kanpur, SUNY at Buffalo},
+abstract = {LLMs are increasingly deployed as orchestrators that coordinate specialized subagents to solve complex tasks through natural language. However, in many important domains like game playing and robotics, the strongest available agents are not language models. Integrating non-language agents with LLMs would require \emph{verbalization}: compressing their rich continuous representations into sparse textual summaries at each interaction step. To study whether verbalization constitutes a bottleneck, we introduce \textsc{LLAMIA-Bench}, a suite of six diverse collaborative chess tasks spanning three facets: behavioral imitation, state assessment, and natural-language explanation. Each task instantiates a well-established chess problem that neither the LLM nor the chess engine can solve alone. To solve LLM collaboration with non-language agents, we introduce \emph{latent state internalization}, which projects the subagent's continuous representations directly into the LLM's token stream as learned state tokens, with dynamic re-encoding as actions advance the environment state. Comparing internalization to verbalized integration, our experiments reveal a consistent \emph{verbalization debt}: the performance gap widens throughout training and persists as the LLM scales from 4B to 14B parameters. A single 14B model, \textsc{LLAMIA}, trained with latent state internalization, matches or exceeds task specialists and frontier models including GPT-5.1 with tool access across all benchmark tasks, and generalizes out-of-distribution where task-specific finetunes collapse},
+todo = {check for EMNLP 2026 camera-ready. website: https://behavior-in-the-wild.github.io/llamia.html (currently unavailable)},
+
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajam{\"a}e, Sigge and Rungardt, Edvin and Tafani, Marco},
