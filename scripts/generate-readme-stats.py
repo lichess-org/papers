@@ -81,7 +81,7 @@ for y in range(min_y, max_y + 1):
     bar = Text("█" * filled, style="bold blue") + Text("░" * (bar_width - filled), style="dim")
     year_table.add_row(str(y), bar, str(c))
 
-console.print(Columns([Panel(summary, title="Bibliography Statistics", border_style="dim", box=box.ROUNDED), Panel(year_table, title="Papers by Year", border_style="dim", box=box.ROUNDED)]))
+console.print(Columns([Panel(summary, title="Bibliography Statistics", border_style="dim", box=box.ROUNDED), Panel(year_table, title="Papers by Year", border_style="dim", box=box.ROUNDED)], equal=True, expand=True))
 
 kw_counter = Counter()
 for e in entries:
@@ -118,7 +118,7 @@ kw_table.add_column("Papers", justify="right", style="bold")
 for kw, count in kw_counter.most_common(17):
     kw_table.add_row(kw, str(count))
 
-console.print(Columns([aff_table, kw_table], padding=(0, 4)))
+console.print(Columns([aff_table, kw_table], equal=True, expand=True, padding=(0, 4)))
 
 citation_html = '<h4>Most cited</h4>\n<table style="border-collapse:collapse;width:100%">\n'
 for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=True)[:17]:
