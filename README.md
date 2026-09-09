@@ -1,11 +1,11 @@
+> [!NOTE]
+> the inclusion of a work is not a statement on its scientific integrity or merit.
+> 
 # Lichess Bibliography
 
 Publications that study Lichess, use Lichess data, or otherwise use or mention Lichess in a meaningful way.
 
 If we missed your work, feel free to open an issue or submit a PR.
-
-> [!NOTE]
-> the inclusion of a work is not a statement on its scientific integrity or merit.
 
 <!-- stats:start -->
 <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╭─────────────────── Bibliography Statistics ───────────────────╮</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╭──────────────────────────── Papers by Year ────────────────────────────╮</span>
