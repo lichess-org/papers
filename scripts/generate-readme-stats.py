@@ -120,11 +120,14 @@ for kw, count in kw_counter.most_common(17):
 
 console.print(Columns([aff_table, kw_table], padding=(0, 4)))
 
-citation_html = '<h4>Most cited</h4>\n<table>\n'
+citation_html = '<h4>Most cited</h4>\n<table style="border-collapse:collapse;width:100%">\n'
 for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=True)[:17]:
     if not name:
         continue
-    citation_html += f'  <tr><td><a href="https://doi.org/{doi}">{name}</a></td><td align="right"><b>{citations}</b></td></tr>\n'
+    entry = next((e for e in entries if e.get("doi", "").strip("{}") == doi), None)
+    year = entry.get("year", "") if entry else ""
+    label = f'{name} ({year})' if year else name
+    citation_html += f'  <tr><td style="padding:4px 8px"><a href="https://doi.org/{doi}">{label}</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>{citations}</b></td></tr>\n'
 citation_html += '</table>'
 
 CONSOLE_HTML_FORMAT = '<pre style="font-family:Menlo,\'DejaVu Sans Mono\',consolas,\'Courier New\',monospace">{code}</pre>'
