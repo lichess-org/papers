@@ -128,7 +128,7 @@ for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=Tr
     year = entry.get("year", "") if entry else ""
     label = f'<a href="https://doi.org/{doi}">{name}</a> ({year})' if year else f'<a href="https://doi.org/{doi}">{name}</a>'
     citation_html += f'  <tr><td style="padding:4px 8px">{label}</td><td align="right" style="padding:4px 12px 4px 8px"><b>{citations}</b></td></tr>\n'
-    citation_html += '</table>'
+citation_html += '</table>'
 
 CONSOLE_HTML_FORMAT = '<pre style="font-family:Menlo,\'DejaVu Sans Mono\',consolas,\'Courier New\',monospace">{code}</pre>'
 html = console.export_html(inline_styles=True, code_format=CONSOLE_HTML_FORMAT) + '\n' + citation_html
