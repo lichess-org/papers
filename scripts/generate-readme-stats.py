@@ -118,18 +118,20 @@ kw_table.add_column("Papers", justify="right", style="bold")
 for kw, count in kw_counter.most_common(17):
     kw_table.add_row(kw, str(count))
 
-citation_table = Table(box=box.SIMPLE, show_header=False, pad_edge=False)
-citation_table.add_column("Title", no_wrap=True, max_width=60, overflow="ellipsis")
-citation_table.add_column("Citations", justify="right", style="bold")
-for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=True)[:17]:
-    link_text = Text(name, style=f"link https://doi.org/{doi}")
-    citation_table.add_row(link_text, str(citations))
-
 console.print(Columns([aff_table, kw_table], padding=(0, 4)))
-console.print(Columns([Panel(citation_table, title="Most cited papers", border_style="dim", box=box.ROUNDED)]))
+
+citation_html = '<h4>Most cited</h4>\n<table style="border-collapse:collapse;width:100%">\n'
+for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=True)[:17]:
+    if not name:
+        continue
+    entry = next((e for e in entries if e.get("doi", "").strip("{}") == doi), None)
+    year = entry.get("year", "") if entry else ""
+    label = f'<a href="https://doi.org/{doi}">{name}</a> ({year})' if year else f'<a href="https://doi.org/{doi}">{name}</a>'
+    citation_html += f'  <tr><td style="padding:4px 8px">{label}</td><td align="right" style="padding:4px 12px 4px 8px"><b>{citations}</b></td></tr>\n'
+citation_html += '</table>'
 
 CONSOLE_HTML_FORMAT = '<pre style="font-family:Menlo,\'DejaVu Sans Mono\',consolas,\'Courier New\',monospace">{code}</pre>'
-html = console.export_html(inline_styles=True, code_format=CONSOLE_HTML_FORMAT)
+html = console.export_html(inline_styles=True, code_format=CONSOLE_HTML_FORMAT) + '\n' + citation_html
 
 readme_path = sys.argv[2] if len(sys.argv) > 2 else "README.md"
 with open(readme_path) as f:

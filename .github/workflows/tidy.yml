@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install bibtexparser requests rich
+      - run: pip install 'bibtexparser<2' requests rich
       - run: python scripts/generate-bibkeys.py lichess.bib
       - run: make tidy
       - run: python scripts/generate-readme-stats.py lichess.bib
