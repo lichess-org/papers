@@ -81,7 +81,7 @@ for y in range(min_y, max_y + 1):
     bar = Text("█" * filled, style="bold blue") + Text("░" * (bar_width - filled), style="dim")
     year_table.add_row(str(y), bar, str(c))
 
-console.print(Columns([Panel(summary, title="Bibliography Statistics", border_style="dim", box=box.ROUNDED), Panel(year_table, title="Papers by Year", border_style="dim", box=box.ROUNDED)], expand=True))
+console.print(Columns([Panel(summary, title="Bibliography Statistics", border_style="dim", box=box.ROUNDED), Panel(year_table, title="Papers by Year", border_style="dim", box=box.ROUNDED)]))
 
 kw_counter = Counter()
 for e in entries:
