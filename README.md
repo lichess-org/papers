@@ -42,23 +42,23 @@ If we missed your work, feel free to open an issue or submit a PR.
  Cornell University             <span style="font-weight: bold">      4 </span>     reinforcement learning         <span style="font-weight: bold">      5 </span>
 </pre>
 <h4>Most cited</h4>
-<table>
-  <tr><td><a href="https://doi.org/10.1145/3394486.3403219">Aligning Superhuman AI with Human Behavior</a></td><td align="right"><b>80</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1145/3377325.3377512">Leveraging rationales to improve human task performance</a></td><td align="right"><b>42</b></td></tr>
-  <tr><td><a href="https://doi.org/10.47611/jsrhs.v12i1.4356">Determining Chess Piece Values Using Machine Learning</a></td><td align="right"><b>22</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1145/3534678.3539367">Learning Models of Individual Behavior in Chess</a></td><td align="right"><b>19</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1109/BigData62323.2024.10825289">IEEE Big Data Cup 2024 Report: Predicting Chess Puzzle Difficulty at KnowledgePit.ai</a></td><td align="right"><b>18</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1109/SVR.2019.00038">Chess Position Identification using Pieces Classification Based on Synthetic Images Generation and Deep Neural Network Fine-Tuning</a></td><td align="right"><b>17</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1145/3314111.3319827">Deep learning investigation for chess player attention prediction using eye-tracking and game data</a></td><td align="right"><b>17</b></td></tr>
-  <tr><td><a href="https://doi.org/10.3390/A15050152">Measuring the Non-Transitivity in Chess</a></td><td align="right"><b>17</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1038/s41598-023-27735-9">Quantifying human performance in chess</a></td><td align="right"><b>16</b></td></tr>
-  <tr><td><a href="https://doi.org/10.31234/osf.io/8j9zx">Time spent thinking in online chess reflects the value of computation</a></td><td align="right"><b>16</b></td></tr>
-  <tr><td><a href="https://doi.org/10.3389/FRAI.2020.00024">Learning to Play the Chess Variant Crazyhouse Above World Champion Level With Deep Neural Networks and Human Data</a></td><td align="right"><b>13</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1145/3449160">The Complementary Nature of Perceived and Actual Time Spent Online in Measuring Digital Well-being</a></td><td align="right"><b>11</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1038/s41598-023-31658-w">Quantifying the complexity and similarity of chess openings using online chess community data</a></td><td align="right"><b>10</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1073/pnas.2406675122">Bridging the human–AI knowledge gap through concept discovery and transfer in AlphaZero</a></td><td align="right"><b>10</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1109/BigData62323.2024.10825991">Estimating the Puzzlingness of Chess Puzzles</a></td><td align="right"><b>9</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1109/ISRITI54043.2021.9702792">Cheat Detection on Online Chess Games using Convolutional and Dense Neural Network</a></td><td align="right"><b>9</b></td></tr>
-  <tr><td><a href="https://doi.org/10.1109/BigData62323.2024.10826037">The bread emoji Team’s Submission to the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty Challenge</a></td><td align="right"><b>9</b></td></tr>
+<table style="border-collapse:collapse;width:100%">
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1145/3394486.3403219">Aligning Superhuman AI with Human Behavior (2020)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>80</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1145/3377325.3377512">Leveraging rationales to improve human task performance (2020)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>42</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.47611/jsrhs.v12i1.4356">Determining Chess Piece Values Using Machine Learning (2023)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>22</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1145/3534678.3539367">Learning Models of Individual Behavior in Chess (2022)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>19</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/BigData62323.2024.10825289">IEEE Big Data Cup 2024 Report: Predicting Chess Puzzle Difficulty at KnowledgePit.ai (2024)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>18</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/SVR.2019.00038">Chess Position Identification using Pieces Classification Based on Synthetic Images Generation and Deep Neural Network Fine-Tuning (2019)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>17</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1145/3314111.3319827">Deep learning investigation for chess player attention prediction using eye-tracking and game data (2019)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>17</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.3390/A15050152">Measuring the Non-Transitivity in Chess (2022)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>17</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1038/s41598-023-27735-9">Quantifying human performance in chess (2023)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>16</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.31234/osf.io/8j9zx">Time spent thinking in online chess reflects the value of computation (2022)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>16</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.3389/FRAI.2020.00024">Learning to Play the Chess Variant Crazyhouse Above World Champion Level With Deep Neural Networks and Human Data (2020)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>13</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1145/3449160">The Complementary Nature of Perceived and Actual Time Spent Online in Measuring Digital Well-being (2021)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>11</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1038/s41598-023-31658-w">Quantifying the complexity and similarity of chess openings using online chess community data (2023)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>10</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1073/pnas.2406675122">Bridging the human–AI knowledge gap through concept discovery and transfer in AlphaZero (2025)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>10</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/BigData62323.2024.10825991">Estimating the Puzzlingness of Chess Puzzles (2024)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>9</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/ISRITI54043.2021.9702792">Cheat Detection on Online Chess Games using Convolutional and Dense Neural Network (2021)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>9</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/BigData62323.2024.10826037">The bread emoji Team’s Submission to the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty Challenge (2024)</a></td><td align="right" style="padding:4px 12px 4px 8px"><b>9</b></td></tr>
 </table>
 <!-- stats:end -->
