@@ -142,7 +142,7 @@ with open(readme_path) as f:
 
 START, END = "<!-- stats:start -->", "<!-- stats:end -->"
 if START in readme:
-    readme = re.sub(re.escape(START) + r".*?" + re.escape(END), f"{START}\n{html}\n{END}", readme, flags=re.DOTALL)
+    readme = re.sub(re.escape(START) + r".*?" + re.escape(END), lambda _: f"{START}\n{html}\n{END}", readme, flags=re.DOTALL)
 else:
     readme = readme.rstrip() + f"\n\n{START}\n{html}\n{END}\n"
 
