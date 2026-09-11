@@ -125,11 +125,11 @@ for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=Tr
     if not name:
         continue
     entry = next((e for e in entries if e.get("doi", "").strip("{}") == doi), None)
+    year = entry.get("year", "") if entry else ""
     label = f'<a href="https://doi.org/{doi}">{name}</a> ({year})' if year else f'<a href="https://doi.org/{doi}">{name}</a>'
-    authors = entry.get("author", "").replace(" and ", ", ") if entry else ""
-    if authors:
-        label += f'<br><sub>{authors}</sub>'
-    label = f'<a href="https://doi.org/{doi}">{name}</a> ({year})' if year else f'<a href="https://doi.org/{doi}">{name}</a>'
+    entry_authors = entry.get("author", "").replace(" and ", ", ") if entry else ""
+    if entry_authors:
+        label += f'<br><sub>{entry_authors}</sub>'
     citation_html += f'  <tr><td style="padding:4px 8px">{label}</td><td align="right" style="padding:4px 12px 4px 8px"><b>{citations}</b></td></tr>\n'
 citation_html += '</table>'
 
