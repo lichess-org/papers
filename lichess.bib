@@ -1100,7 +1100,7 @@
   code          = {https://github.com/epfl-lara/stainless, https://github.com/fxpl/stainless-float-benchmarks},
 }
 
-@thesis{gironherranz:2025:alphadeepchess-chess-engine-based-on-alpha-beta-pruning,
+@thesis{girnherranz:2025:alphadeepchess-chess-engine-based-on-alpha-beta-pruning,
   title         = {AlphaDeepChess: chess engine based on alpha-beta pruning},
   author        = {Girón Herranz, Juan and Wang Qiu, Yi},
   year          = {2025},
@@ -2009,23 +2009,6 @@
   affiliation   = {INESCTEC; Universidade do Porto},
 }
 
-@inproceedings{meszaros:2026:out-of-distribution-evaluation-of-rule-based-strategic-reasoning-in-chess-transformers,
-  title         = {Out-of-Distribution Evaluation of Rule-Based and Strategic Reasoning in Chess Transformers},
-  author        = {Anna Mész{\'a}ros and Patrik Reizinger and Ferenc Husz{\'a}r},
-  year          = {2026},
-  booktitle     = {Forty-third International Conference on Machine Learning},
-  url           = {https://openreview.net/forum?id=JFGUsQ68rG},
-  note          = {Preprint title: Out-of-distribution Tests Reveal Compositionality in Chess Transformers. Also presented at the ICLR 2026 Workshop on Logical Reasoning of Large Language Models: https://openreview.net/forum?id=bG9LOL7fF6},
-  abstract      = {Modern decision transformers, trained similarly to LLMs, can achieve strong in-distribution performance in complex sequential domains like chess, but it remains unclear to what extent they reason systematically about rules and strategy. We study the reasoning capabilities of a 270M-parameter chess transformer trained via behavior cloning on standard chess. To investigate its abilities, we construct out-of-distribution test sets ---including board states and variants never seen during training---designed to reveal failures of systematic generalization. Our analysis shows that the model exhibits robust rule-based reasoning, consistently generating legal moves in novel configurations, but its strategic reasoning is more limited. The model generates high-quality moves on curated OOD puzzles and shows basic strategy adaptation in full games. It underperforms symbolic AI algorithms that rely on explicit search, although the performance gap is smaller when playing against human users on Lichess. Moreover, the training dynamics reveals distinct phases in how the model learns to respect the fundamental constraints, suggesting an emergent compositional understanding of the game.},
-  keywords      = {Language model, reasoning, transformer, chess, out-of-distribution generalization, compositional generalization, rule extrapolation, chess960},
-  affiliation   = {University of Cambridge; Max Planck Institute for Intelligent Systems; ELLIS Institute Tübingen},
-  preprint      = {https://arxiv.org/abs/2510.20783},
-  code          = {https://github.com/meszarosanna/ood_chess},
-  dataset       = {https://github.com/meszarosanna/ood_chess/tree/main/datasets},
-  laysummary    = {Modern AI systems are increasingly used to make decisions in complex settings such as games, code generation, and planning. However, it is not well understood whether these systems truly learn the underlying rules of a domain or whether they mainly imitate patterns seen during training. This distinction matters because reliable deployment requires both correct rule-following and good decision-making. In this work, we study a chess-playing AI model that is trained only by learning from examples of human games. We test it not only on standard chess positions, but also on many carefully designed situations that have been never seen during training, including unusual board configurations and modified game rules. We find that the model is very reliable at following the rules of chess, even in unfamiliar situations, and almost always produces legal moves. However, its ability to choose strong strategies is less robust, especially in highly unusual scenarios. It performs well on many challenging test puzzles, but still falls short of traditional chess engines that use explicit search to plan ahead. When playing against human users, the gap is smaller, suggesting the model can still be practically useful. We also observe that the model's learning process follows a clear progression: it first learns basic rules of movement and only later improves its ability to choose better moves. Overall, our results suggest that large AI models can learn the structure of a complex system like chess quite reliably, but improving strategic reasoning remains an important open challenge.},
-  models        = {https://drive.google.com/drive/folders/1X-LUMs2Zv8OpbX5tlfjgfMnFkKJW9S-r},
-}
-
 @inproceedings{miosz:2024:predicting-chess-puzzle-difficulty-with-transformers,
   title         = {{ Predicting Chess Puzzle Difficulty with Transformers }},
   author        = {Miłosz, Szymon and Kapusta, Pawel},
@@ -2176,6 +2159,23 @@
   pdf           = {https://www.nature.com/articles/s42005-025-02461-y.pdf},
   preprint      = {https://arxiv.org/abs/2501.02505},
   code          = {https://github.com/seb310/partial-rankings},
+}
+
+@inproceedings{mszaros:2026:out-of-distribution-evaluation-of-rule-based-strategic-reasoning-in-chess-transformers,
+  title         = {Out-of-Distribution Evaluation of Rule-Based and Strategic Reasoning in Chess Transformers},
+  author        = {Anna Mész{\'a}ros and Patrik Reizinger and Ferenc Husz{\'a}r},
+  year          = {2026},
+  booktitle     = {Forty-third International Conference on Machine Learning},
+  url           = {https://openreview.net/forum?id=JFGUsQ68rG},
+  note          = {Preprint title: Out-of-distribution Tests Reveal Compositionality in Chess Transformers. Also presented at the ICLR 2026 Workshop on Logical Reasoning of Large Language Models: https://openreview.net/forum?id=bG9LOL7fF6},
+  abstract      = {Modern decision transformers, trained similarly to LLMs, can achieve strong in-distribution performance in complex sequential domains like chess, but it remains unclear to what extent they reason systematically about rules and strategy. We study the reasoning capabilities of a 270M-parameter chess transformer trained via behavior cloning on standard chess. To investigate its abilities, we construct out-of-distribution test sets ---including board states and variants never seen during training---designed to reveal failures of systematic generalization. Our analysis shows that the model exhibits robust rule-based reasoning, consistently generating legal moves in novel configurations, but its strategic reasoning is more limited. The model generates high-quality moves on curated OOD puzzles and shows basic strategy adaptation in full games. It underperforms symbolic AI algorithms that rely on explicit search, although the performance gap is smaller when playing against human users on Lichess. Moreover, the training dynamics reveals distinct phases in how the model learns to respect the fundamental constraints, suggesting an emergent compositional understanding of the game.},
+  keywords      = {Language model, reasoning, transformer, chess, out-of-distribution generalization, compositional generalization, rule extrapolation, chess960},
+  affiliation   = {University of Cambridge; Max Planck Institute for Intelligent Systems; ELLIS Institute Tübingen},
+  preprint      = {https://arxiv.org/abs/2510.20783},
+  code          = {https://github.com/meszarosanna/ood_chess},
+  dataset       = {https://github.com/meszarosanna/ood_chess/tree/main/datasets},
+  laysummary    = {Modern AI systems are increasingly used to make decisions in complex settings such as games, code generation, and planning. However, it is not well understood whether these systems truly learn the underlying rules of a domain or whether they mainly imitate patterns seen during training. This distinction matters because reliable deployment requires both correct rule-following and good decision-making. In this work, we study a chess-playing AI model that is trained only by learning from examples of human games. We test it not only on standard chess positions, but also on many carefully designed situations that have been never seen during training, including unusual board configurations and modified game rules. We find that the model is very reliable at following the rules of chess, even in unfamiliar situations, and almost always produces legal moves. However, its ability to choose strong strategies is less robust, especially in highly unusual scenarios. It performs well on many challenging test puzzles, but still falls short of traditional chess engines that use explicit search to plan ahead. When playing against human users, the gap is smaller, suggesting the model can still be practically useful. We also observe that the model's learning process follows a clear progression: it first learns basic rules of movement and only later improves its ability to choose better moves. Overall, our results suggest that large AI models can learn the structure of a complex system like chess quite reliably, but improving strategic reasoning remains an important open challenge.},
+  models        = {https://drive.google.com/drive/folders/1X-LUMs2Zv8OpbX5tlfjgfMnFkKJW9S-r},
 }
 
 @inproceedings{mujagi:2024:predictive-analysis-of-chess-player-performance-analysis-of-factors-influencing-competitive-success-using-machine-learning-techniques,
@@ -2401,21 +2401,7 @@
   primaryclass  = {cs.AI},
 }
 
-@inproceedings{patria:2021:cheat-detection-on-online-chess-games-using-convolutional-dense-neural-network,
-  title         = {Cheat Detection on Online Chess Games using Convolutional and Dense Neural Network},
-  author        = {Patria, Reyhan and Favian, Sean and Caturdewa, Anggoro and Suhartono, Derwin},
-  year          = {2021},
-  booktitle     = {2021 4th International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)},
-  pages         = {389--395},
-  doi           = {10.1109/ISRITI54043.2021.9702792},
-  url           = {https://ieeexplore.ieee.org/document/9702792},
-  abstract      = {With the widespread use of chess engines cheating in chess has become easier than ever, especially in online chess. Cheating obviously brings a negative impact to the sport. However, research on the topic on cheat detection in chess is still scarcely found. Thus, this paper will discuss data and algorithms that can be used to develop cheat detection tools to analyze games. For data, there are analyzed data and unanalyzed data from online chess games whereas for the algorithm that will be explored there are convolutional neural network (CNN) and densely connected neural network. The results from the experiment using the CNN algorithm are better than the densely connected neural network for detecting if the player is cheating or not. Meanwhile for the data, using either unanalyzed and analyzed data doesn't change the best performing neural network, but it was found using the analyzed data still boosts the accuracy of both neural networks.},
-  keywords      = {Seminars;Neural networks;Games;Convolutional neural networks;Intelligent systems;Information technology;Engines;Cheat Detection;Online Chess Games;Convolutional Neural Network;Dense Neural Network;Neural Network},
-  affiliation   = {Bina Nusantara University},
-  pdf           = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9702792},
-}
-
-@misc{patricio:2025:leveraging-systems-control-theory-for-social-robotics-model-based-behavioral-control-approach-to-human-robot-interaction,
+@misc{patrcio:2025:leveraging-systems-control-theory-for-social-robotics-model-based-behavioral-control-approach-to-human-robot-interaction,
   title         = {Leveraging Systems and Control Theory for Social Robotics: A Model-Based Behavioral Control Approach to Human-Robot Interaction},
   author        = {Maria Morão Patrício and Anahita Jamshidnejad},
   year          = {2025},
@@ -2428,6 +2414,20 @@
   dataset       = {https://data.4tu.nl/datasets/ccadc914-9502-46d6-9ba5-fef581f2933f},
   archiveprefix = {arXiv},
   primaryclass  = {eess.SY},
+}
+
+@inproceedings{patria:2021:cheat-detection-on-online-chess-games-using-convolutional-dense-neural-network,
+  title         = {Cheat Detection on Online Chess Games using Convolutional and Dense Neural Network},
+  author        = {Patria, Reyhan and Favian, Sean and Caturdewa, Anggoro and Suhartono, Derwin},
+  year          = {2021},
+  booktitle     = {2021 4th International Seminar on Research of Information Technology and Intelligent Systems (ISRITI)},
+  pages         = {389--395},
+  doi           = {10.1109/ISRITI54043.2021.9702792},
+  url           = {https://ieeexplore.ieee.org/document/9702792},
+  abstract      = {With the widespread use of chess engines cheating in chess has become easier than ever, especially in online chess. Cheating obviously brings a negative impact to the sport. However, research on the topic on cheat detection in chess is still scarcely found. Thus, this paper will discuss data and algorithms that can be used to develop cheat detection tools to analyze games. For data, there are analyzed data and unanalyzed data from online chess games whereas for the algorithm that will be explored there are convolutional neural network (CNN) and densely connected neural network. The results from the experiment using the CNN algorithm are better than the densely connected neural network for detecting if the player is cheating or not. Meanwhile for the data, using either unanalyzed and analyzed data doesn't change the best performing neural network, but it was found using the analyzed data still boosts the accuracy of both neural networks.},
+  keywords      = {Seminars;Neural networks;Games;Convolutional neural networks;Intelligent systems;Information technology;Engines;Cheat Detection;Online Chess Games;Convolutional Neural Network;Dense Neural Network;Neural Network},
+  affiliation   = {Bina Nusantara University},
+  pdf           = {https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9702792},
 }
 
 @misc{pav:2025:inferring-piece-value-in-chess-chess-variants,
@@ -3221,7 +3221,7 @@
   affiliation   = {University of Campinas},
 }
 
-@inproceedings{soliman:2026:caissa-ai-neuro-symbolic-chess-agent-forexplainable-move-suggestion-grounded-commentary,
+@inproceedings{soliman:2026:cassa-ai-neuro-symbolic-chess-agent-forexplainable-move-suggestion-grounded-commentary,
   title         = {Caïssa AI: A Neuro-Symbolic Chess Agent for~Explainable Move Suggestion and Grounded Commentary},
   author        = {Soliman, Mazen and Ehab, Nourhan},
   editor        = {Braun, Tanya and Paaßen, Benjamin and Stolzenburg, Frieder},
