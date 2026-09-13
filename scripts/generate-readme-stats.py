@@ -10,6 +10,17 @@ from rich.columns import Columns
 from rich.panel import Panel
 from rich.text import Text
 
+def format_authors(raw):
+    authors = []
+    for a in raw.split(" and "):
+        a = a.strip()
+        if ", " in a:
+            last, first = a.split(", ", 1)
+            authors.append(f"{first} {last}")
+        else:
+            authors.append(a)
+    return ", ".join(authors)
+
 parser = BibTexParser(common_strings=True)
 parser.ignore_nonstandard_types = False
 with open(sys.argv[1]) as f:
@@ -127,7 +138,7 @@ for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=Tr
     entry = next((e for e in entries if e.get("doi", "").strip("{}") == doi), None)
     year = entry.get("year", "") if entry else ""
     label = f'<a href="https://doi.org/{doi}">{name}</a> ({year})' if year else f'<a href="https://doi.org/{doi}">{name}</a>'
-    entry_authors = entry.get("author", "").replace(" and ", ", ") if entry else ""
+    entry_authors = format_authors(entry.get("author", "")) if entry else ""
     if entry_authors:
         label += f'<br><sub>{entry_authors}</sub>'
     citation_html += f'  <tr><td style="padding:4px 8px">{label}</td><td align="right" style="padding:4px 12px 4px 8px"><b>{citations}</b></td></tr>\n'
