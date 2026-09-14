@@ -11,18 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@misc{bao2026dartdistributionaladversarialrecurrent,
-      title={DART: Distributional Adversarial Recurrent Training for Algorithm Learning}, 
-      author={Hieu Tran Bao and Phung Thanh Dang and Pham Quang Nhat Minh and Hoang Thanh Tung},
-      year={2026},
-      eprint={2609.05988},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2609.05988},
-abstract = {Recurrent reasoning models (RRMs) can solve structured problems, achieving easy-to-hard generalization through iterative computation in hidden space. These models are typically trained with instance-level supervision, which becomes increasingly problematic as task difficulty grows: valid solutions occupy a tiny region of the solution space, while invalid solutions proliferate rapidly. We propose Distributional Adversarial Recurrent Training (DART), a training framework that replaces single-point supervision with a local target distribution around the ground-truth solution and aligns model outputs with this distribution through an adversarial objective. DART provides a richer learning signal and encourages more stable iterative trajectories toward valid solutions. When evaluated on Maze, Chess, and masked Sudoku with multiple RRMs, including Deep Thinking Systems and Tiny Recursive Models, DART improves solution quality, stability, and robustness under the evaluated distribution shifts. Comparisons with label smoothing, Gaussian softened targets, and progressive training show that DART is not explained by target softening alone and is complementary to training schemes that stabilize long-horizon recurrence. These results identify DART as a promising approach for improving robustness across the evaluated recurrent reasoning models.},
-affiliation = {FPT Information System; VNU University of Engineering and Technolog},
-}
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -183,6 +171,18 @@ affiliation = {FPT Information System; VNU University of Engineering and Technol
   abstract      = {This paper presents a data-driven statistical framework to quantify the role of skill in games, addressing the long-standing question of whether success in a game is predominantly driven by skill or chance. We analyze player level data from four popular games Chess, Rummy, Ludo, and Teen Patti, using empirical win statistics across varying levels of experience. By modeling win rate as a function of experience through a regression framework and employing empirical bootstrap resampling, we estimate the degree to which outcomes improve with repeated play. To summarize these dynamics, we propose a flexible skill score that emphasizes learning over initial performance, aligning with practical and regulatory interpretations of skill. Our results reveal a clear ranking, with Chess showing the highest skill component and Teen Patti the lowest, while Rummy and Ludo fall in between. The proposed framework is transparent, reproducible, and adaptable to other game formats and outcome metrics, offering potential applications in legal classification, game design, and player performance analysis.},
   keywords      = {Chance, Chess, Ludo, Rummy, Skill, Statistical Analysis, Teen Patti},
   affiliation   = {Indian Institute of Technology; Indian Statistical Institute},
+}
+
+@misc{bao:2026:dart-distributional-adversarial-recurrent-training-for-algorithm-learning,
+  title         = {DART: Distributional Adversarial Recurrent Training for Algorithm Learning},
+  author        = {Hieu Tran Bao and Phung Thanh Dang and Pham Quang Nhat Minh and Hoang Thanh Tung},
+  year          = {2026},
+  eprint        = {2609.05988},
+  url           = {https://arxiv.org/abs/2609.05988},
+  abstract      = {Recurrent reasoning models (RRMs) can solve structured problems, achieving easy-to-hard generalization through iterative computation in hidden space. These models are typically trained with instance-level supervision, which becomes increasingly problematic as task difficulty grows: valid solutions occupy a tiny region of the solution space, while invalid solutions proliferate rapidly. We propose Distributional Adversarial Recurrent Training (DART), a training framework that replaces single-point supervision with a local target distribution around the ground-truth solution and aligns model outputs with this distribution through an adversarial objective. DART provides a richer learning signal and encourages more stable iterative trajectories toward valid solutions. When evaluated on Maze, Chess, and masked Sudoku with multiple RRMs, including Deep Thinking Systems and Tiny Recursive Models, DART improves solution quality, stability, and robustness under the evaluated distribution shifts. Comparisons with label smoothing, Gaussian softened targets, and progressive training show that DART is not explained by target softening alone and is complementary to training schemes that stabilize long-horizon recurrence. These results identify DART as a promising approach for improving robustness across the evaluated recurrent reasoning models.},
+  affiliation   = {FPT Information System; VNU University of Engineering and Technolog},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.LG},
 }
 
 @inproceedings{barrish:2023:making-superhuman-ai-more-human-in-chess,
