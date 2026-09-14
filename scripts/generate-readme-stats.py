@@ -72,13 +72,13 @@ summary = Table(box=box.SIMPLE, show_header=False, pad_edge=False)
 summary.add_column("key", style="bold", min_width=20)
 summary.add_column("val", justify="right")
 summary.add_row("Authors", str(len(authors)))
-# summary.add_row("Papers", str(n))
 summary.add_row("With code", f"{has_code}")
 summary.add_row("With data", f"{has_dataset}")
 summary.add_row("Lichess bot", f"{has_bot}")
 for t in ["conference", "journal", "preprint", "thesis"]:
     if type_counts[t]:
         summary.add_row(t, str(type_counts[t]))
+summary.add_row("", "")
 
 max_count = max(year_counts.values())
 bar_width = 20
