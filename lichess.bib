@@ -11,6 +11,21 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@misc{vanderweijden2026reproducingevaluatinggeneralizabilitysubliminal,
+      title={Reproducing and Evaluating the Generalizability of Subliminal Learning in Open-Weight Models}, 
+      author={Daan van der Weijden and Nathan Brack and Selene Baez Santamaria},
+      year={2026},
+      eprint={2609.12586},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2609.12586},
+abstract = {In this reproduction paper we investigate subliminal learning, a consequence of distillation where teacher models transmit behavioral preference traits through semantically unrelated data. The original paper explores two types of traits (animal preferences and misalignment), three data modalities (number sequences, code, and chain of thought), and several model families. We reproduce their experiments and extend the setup along three axes: new preference categories (actors and politicians), a new task (chess move generation), and an additional open-weight model (Ministral8B). We also run a controlled ablation on the numbers task's answer-space size (1-, 2-, and 3-digit sequences). We focus on open-weight models with accessible checkpoints on HuggingFace, since the original paper's GPT-4.x fine-tuning is no longer available. Our reproduction supports the original paper's claims, but our extensions show they are not universal as transmission strength varies across traits and tasks, and one model shows almost no effect at all.},
+code = {https://github.com/daanvdweijden/subliminal-learning-blackboxnlp2026},
+affiliation = {University of Zurich},
+todo = {to appear in BlackboxNLP 2026 (see github bibtex). change to inproceedings},
+
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
