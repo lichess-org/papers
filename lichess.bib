@@ -11,24 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@article{63cv-52fj,
-  title = {Artificial intelligence sustains higher strategic tension than humans in chess},
-  author = {Cerioli, Adamo and Lee, Edward D. and Servedio, Vito D. P.},
-  journal = {APS Open Sci.},
-  volume = {1},
-  pages = {000131},
-  numpages = {30},
-  year = {2026},
-  month = {Sep},
-  publisher = {American Physical Society},
-  doi = {10.1103/63cv-52fj},
-  url = {https://link.aps.org/doi/10.1103/63cv-52fj},
-abstract = {Strategic decision-making requires balancing immediate opportunities against long-term objectives: a tension fundamental to competitive environments. We investigate this trade-off in chess by analyzing the dynamics of human and AI (artificial intelligence) gameplay through a network-based metric that quantifies piece-to-piece interactions. Our analysis reveals that elite AI players sustain substantially higher levels of strategic tension for longer durations than top human grandmasters. We find that cumulative tension scales with algorithmic complexity in AI systems and increases linearly with skill level (Elo rating) in human play. Longer time controls are associated with higher tension in human games, reflecting the additional strategic complexity players can manage with more thinking time. The temporal profiles reveal contrasting approaches: Highly competitive AI systems tolerate densely interconnected positions that balance offensive and defensive tactics over extended periods, while human players systematically limit tension and game complexity. These differences have broader implications for understanding how artificial and biological systems navigate complex strategic environments and for the deployment of AI in high-stakes competitive scenarios.},
-affiliation = {University of Parma; Complexity Science Hub Vienna; BOKU},
-code = {https://github.com/Draghellon/Tension_Chess},
-}
-
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -434,6 +416,23 @@ code = {https://github.com/Draghellon/Tension_Chess},
   url           = {https://ieeexplore.ieee.org/document/11214528},
   abstract      = {Accurately estimating the difficulty of the chess puzzle is important for adaptive training systems, personalized recommendations, and large-scale content curation. Unlike engine evaluations optimized for perfect play, this task involves modeling human-perceived solving difficulty, typically expressed by Glicko-2 ratings. We present a multi-stage framework developed for the FedCSIS 2025 Challenge. The method trains four rating-banded neural regression models in different Elo ranges to capture localized difficulty patterns and reduce bias from unbalanced data. Their predictions are combined with statistical attributes, including success probabilities, failure distributions, and solution length, through a feature-based regression stage to improve cross-range generalization. A final calibration step adjusts the output to statistically plausible rating levels, mitigating systematic prediction biases without adding computational complexity. An additional mask selection procedure was explored as part of the competition extension to identify 10\% of the puzzles that are most likely to benefit from the refined evaluation. The proposed solution ranked  in the final standings. These results demonstrate that a lightweight and interpretable regression pipeline can achieve competitive precision in modeling human-perceived chess puzzle difficulty.},
   affiliation   = {Neurospark Lab; University College Dublin; Anhui University of Finance and Economics; South China University of Technology},
+}
+
+@article{cerioli:2026:artificial-intelligence-sustains-higher-strategic-tension-than-humans-in-chess,
+  title         = {Artificial intelligence sustains higher strategic tension than humans in chess},
+  author        = {Cerioli, Adamo and Lee, Edward D. and Servedio, Vito D. P.},
+  year          = {2026},
+  month         = {Sep},
+  journal       = {APS Open Sci.},
+  publisher     = {American Physical Society},
+  volume        = {1},
+  pages         = {000131},
+  doi           = {10.1103/63cv-52fj},
+  url           = {https://link.aps.org/doi/10.1103/63cv-52fj},
+  numpages      = {30},
+  abstract      = {Strategic decision-making requires balancing immediate opportunities against long-term objectives: a tension fundamental to competitive environments. We investigate this trade-off in chess by analyzing the dynamics of human and AI (artificial intelligence) gameplay through a network-based metric that quantifies piece-to-piece interactions. Our analysis reveals that elite AI players sustain substantially higher levels of strategic tension for longer durations than top human grandmasters. We find that cumulative tension scales with algorithmic complexity in AI systems and increases linearly with skill level (Elo rating) in human play. Longer time controls are associated with higher tension in human games, reflecting the additional strategic complexity players can manage with more thinking time. The temporal profiles reveal contrasting approaches: Highly competitive AI systems tolerate densely interconnected positions that balance offensive and defensive tactics over extended periods, while human players systematically limit tension and game complexity. These differences have broader implications for understanding how artificial and biological systems navigate complex strategic environments and for the deployment of AI in high-stakes competitive scenarios.},
+  affiliation   = {University of Parma; Complexity Science Hub Vienna; BOKU},
+  code          = {https://github.com/Draghellon/Tension_Chess},
 }
 
 @article{chelly:2025:how-relevant-are-personas-in-open-source-software-development,
