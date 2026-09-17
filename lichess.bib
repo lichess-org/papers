@@ -11,21 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@misc{vanderweijden2026reproducingevaluatinggeneralizabilitysubliminal,
-      title={Reproducing and Evaluating the Generalizability of Subliminal Learning in Open-Weight Models}, 
-      author={Daan van der Weijden and Nathan Brack and Selene Baez Santamaria},
-      year={2026},
-      eprint={2609.12586},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2609.12586},
-abstract = {In this reproduction paper we investigate subliminal learning, a consequence of distillation where teacher models transmit behavioral preference traits through semantically unrelated data. The original paper explores two types of traits (animal preferences and misalignment), three data modalities (number sequences, code, and chain of thought), and several model families. We reproduce their experiments and extend the setup along three axes: new preference categories (actors and politicians), a new task (chess move generation), and an additional open-weight model (Ministral8B). We also run a controlled ablation on the numbers task's answer-space size (1-, 2-, and 3-digit sequences). We focus on open-weight models with accessible checkpoints on HuggingFace, since the original paper's GPT-4.x fine-tuning is no longer available. Our reproduction supports the original paper's claims, but our extensions show they are not universal as transmission strength varies across traits and tasks, and one model shows almost no effect at all.},
-code = {https://github.com/daanvdweijden/subliminal-learning-blackboxnlp2026},
-affiliation = {University of Zurich},
-todo = {to appear in BlackboxNLP 2026 (see github bibtex). change to inproceedings},
-
-}
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -3623,6 +3608,20 @@ todo = {to appear in BlackboxNLP 2026 (see github bibtex). change to inproceedin
   abstract      = {Lossless data compression has evolved into an indispensable tool for reducing data transfer times in heterogeneous systems. However, performing decompression on host systems can create performance bottlenecks. Accelerator libraries, such as nvCOMP, address this problem by providing custom GPU-enabled versions of some general-purpose compression methods, including Snappy, ZStandard and gzip. However, popular bzip-like compression schemes, which rely on block-sorting transforms have not yet been integrated since their fine-grained parallelization is challenging. With a focus on decompression, we propose novel techniques for fine-grained parallelization of inverse Burrows-Wheeler transform (iBWT) and inverse Move-to-Front (iMTF) transform on GPUs, which enable efficient processing of bzip2-based archives on CUDA-enabled accelerators for the first time. Consequently, we present the first fully GPU-enabled bzip2 decompression pipeline as a use case for the proposed algorithms. Our experimental results reveal speedups of up to 6.1x over a multicore CPU implementation for iBWT, and throughput rates of up to 2400 MB/s for combined iBWT and iMTF on an A100 GPU. For decompression of bzip2 archives, a throughput of over 11.62 GB/s is achieved on a DGX H100 server. The source code of our parallel decoder implementation is available at https://github.com/weissenberger/bzip2gpu.},
   keywords      = {Burrows-Wheeler transform, CUDA, GPU, Move-to-front transform, accelerators, bzip2, data compression},
   affiliation   = {Johannes Gutenberg University Mainz},
+}
+
+@misc{weijden:2026:reproducing-evaluating-generalizability-of-subliminal-learning-in-open-weight-models,
+  title         = {Reproducing and Evaluating the Generalizability of Subliminal Learning in Open-Weight Models},
+  author        = {Daan van der Weijden and Nathan Brack and Selene Baez Santamaria},
+  year          = {2026},
+  eprint        = {2609.12586},
+  url           = {https://arxiv.org/abs/2609.12586},
+  abstract      = {In this reproduction paper we investigate subliminal learning, a consequence of distillation where teacher models transmit behavioral preference traits through semantically unrelated data. The original paper explores two types of traits (animal preferences and misalignment), three data modalities (number sequences, code, and chain of thought), and several model families. We reproduce their experiments and extend the setup along three axes: new preference categories (actors and politicians), a new task (chess move generation), and an additional open-weight model (Ministral8B). We also run a controlled ablation on the numbers task's answer-space size (1-, 2-, and 3-digit sequences). We focus on open-weight models with accessible checkpoints on HuggingFace, since the original paper's GPT-4.x fine-tuning is no longer available. Our reproduction supports the original paper's claims, but our extensions show they are not universal as transmission strength varies across traits and tasks, and one model shows almost no effect at all.},
+  affiliation   = {University of Zurich},
+  code          = {https://github.com/daanvdweijden/subliminal-learning-blackboxnlp2026},
+  todo          = {to appear in BlackboxNLP 2026 (see github bibtex). change to inproceedings},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.AI},
 }
 
 @misc{wen:2025:chessqa-evaluating-large-language-models-for-chess-understanding,
