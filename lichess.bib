@@ -22,6 +22,30 @@
   affiliation   = {Chalmers University of Technology},
 }
 
+@misc{fathy:2026:contextual-action-representation-search-aware-action-centric-representations-for-monte-carlo-tree-search,
+  title         = {Contextual Action Representation: Search-Aware, Action-Centric Representations for Monte Carlo Tree Search},
+  author        = {Muhammad Fathy},
+  year          = {2026},
+  url           = {https://www.researchgate.net/publication/414124529_Action-Centric_Representations_for_Monte_Carlo_Tree_Search},
+  abstract      = {Conventional neural game-playing architectures are predominantly state-centric: a board
+position is encoded into a single shared representation from which policy and value predictions
+are derived, while candidate actions remain implicit output indices of a state-level policy head.
+We propose Contextual Action Representation (CAR), an action-centric framework in
+which each legal action is explicitly embedded and subsequently contextualized against the
+board state through action-to-state cross-attention. CAR is further trained in a search-aware
+supervised setting (SL-MCTS) that exposes the representation to Stockfish-evaluated Monte
+Carlo Tree Search (MCTS) trajectories at variable search budgets. Across a held-out benchmark
+of 979 chess positions, CAR improves raw Top-1 policy accuracy from 9.70% to 17.06%, and,
+more importantly, extracts substantially more decision quality from additional search: the CAR–
+baseline gap widens from +7.35 pp at N =0 to +14.71 pp at N =400 simulations. CAR’s fitted
+logarithmic search-scaling coeﬀicient is 2.47× that of the baseline, and CAR both corrects
+more initially wrong decisions (Saves) and destroys fewer initially correct ones (Hurts) than the
+baseline at every tested budget. These results support the claim that representation quality
+should be evaluated not only by what a model predicts before search, but by how effectively
+search can exploit the representation once additional computation becomes available.},
+  affiliation   = {Capital University},
+}
+
 @article{adorjan:2025:statistical-analysis-of-hungarian-board-game-sales,
   title         = {Statistical Analysis of Hungarian Board Game Sales},
   author        = {Adorján, Balázs and Bednárik, Éva},
