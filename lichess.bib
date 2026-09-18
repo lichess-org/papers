@@ -22,30 +22,6 @@
   affiliation   = {Chalmers University of Technology},
 }
 
-@misc{fathy:2026:contextual-action-representation-search-aware-action-centric-representations-for-monte-carlo-tree-search,
-  title         = {Contextual Action Representation: Search-Aware, Action-Centric Representations for Monte Carlo Tree Search},
-  author        = {Muhammad Fathy},
-  year          = {2026},
-  url           = {https://www.researchgate.net/publication/414124529_Action-Centric_Representations_for_Monte_Carlo_Tree_Search},
-  abstract      = {Conventional neural game-playing architectures are predominantly state-centric: a board
-position is encoded into a single shared representation from which policy and value predictions
-are derived, while candidate actions remain implicit output indices of a state-level policy head.
-We propose Contextual Action Representation (CAR), an action-centric framework in
-which each legal action is explicitly embedded and subsequently contextualized against the
-board state through action-to-state cross-attention. CAR is further trained in a search-aware
-supervised setting (SL-MCTS) that exposes the representation to Stockfish-evaluated Monte
-Carlo Tree Search (MCTS) trajectories at variable search budgets. Across a held-out benchmark
-of 979 chess positions, CAR improves raw Top-1 policy accuracy from 9.70% to 17.06%, and,
-more importantly, extracts substantially more decision quality from additional search: the CAR–
-baseline gap widens from +7.35 pp at N =0 to +14.71 pp at N =400 simulations. CAR’s fitted
-logarithmic search-scaling coeﬀicient is 2.47× that of the baseline, and CAR both corrects
-more initially wrong decisions (Saves) and destroys fewer initially correct ones (Hurts) than the
-baseline at every tested budget. These results support the claim that representation quality
-should be evaluated not only by what a model predicts before search, but by how effectively
-search can exploit the representation once additional computation becomes available.},
-  affiliation   = {Capital University},
-}
-
 @article{adorjan:2025:statistical-analysis-of-hungarian-board-game-sales,
   title         = {Statistical Analysis of Hungarian Board Game Sales},
   author        = {Adorján, Balázs and Bednárik, Éva},
@@ -999,6 +975,15 @@ search can exploit the representation once additional computation becomes availa
   abstract      = {The goal of a rating system in zero sum games such as chess is to quickly and accurately assign skill ratings to individual players. In chess, this is most often done with ELO rating, which iteratively updates player ratings based solely on the result of the game as well as the rating of the other player. When it comes to new players, these methods rely random pairings in order to collect initial estimates. Efforts have been made, including the integration of Glicko-1 and Glicko-2 scores as opposed to standard ELO ratings, but none of these methods take into account the content of the games themselves when predicting ratings of new players. We implemented a hybrid graph-representation and deep learning based framework based on the lichess.org open database which maximizes both the accuracy and rate of convergence of rating assignments for new players by considering the context of actual prior game states as opposed to solely focusing on game outcome and prior ratings. Roughly, we constructed a graph representation of prior player pools along with their game histories and performed regression analysis based on moves in their previous games using an LSTM model in order to predict their true rating. We then assigned players to play either black or white in their next game, mapped our existing history graph into a bipartite graph (bi-partitioned by color in the next game), weighted edges by difference in predicted rating, and used the Hungarian algorithm in order to evaluate which pairings will result in the least predicted rating difference. This allows for a hybrid rating and matchmaking framework that takes into account the context from moves in previous games as opposed to the more limited priors of player ratings and game outcomes.},
   affiliation   = {Kennesaw State University},
   todo          = {check if published as paper},
+}
+
+@misc{fathy:2026:contextual-action-representation-search-aware-action-centric-representations-for-monte-carlo-tree-search,
+  title         = {Contextual Action Representation: Search-Aware, Action-Centric Representations for Monte Carlo Tree Search},
+  author        = {Muhammad Fathy},
+  year          = {2026},
+  url           = {https://www.researchgate.net/publication/414124529_Action-Centric_Representations_for_Monte_Carlo_Tree_Search},
+  abstract      = {Conventional neural game-playing architectures are predominantly state-centric: a board position is encoded into a single shared representation from which policy and value predictions are derived, while candidate actions remain implicit output indices of a state-level policy head. We propose Contextual Action Representation (CAR), an action-centric framework in which each legal action is explicitly embedded and subsequently contextualized against the board state through action-to-state cross-attention. CAR is further trained in a search-aware supervised setting (SL-MCTS) that exposes the representation to Stockfish-evaluated Monte Carlo Tree Search (MCTS) trajectories at variable search budgets. Across a held-out benchmark of 979 chess positions, CAR improves raw Top-1 policy accuracy from 9.70% to 17.06%, and, more importantly, extracts substantially more decision quality from additional search: the CAR– baseline gap widens from +7.35 pp at N =0 to +14.71 pp at N =400 simulations. CAR’s fitted logarithmic search-scaling coeﬀicient is 2.47× that of the baseline, and CAR both corrects more initially wrong decisions (Saves) and destroys fewer initially correct ones (Hurts) than the baseline at every tested budget. These results support the claim that representation quality should be evaluated not only by what a model predicts before search, but by how effectively search can exploit the representation once additional computation becomes available.},
+  affiliation   = {Capital University},
 }
 
 @article{femastasembiring:2026:analysis-of-chess-opening-patterns-using-data-mining-methods-to-determine-players-strategic-tendencies,
