@@ -13,12 +13,15 @@ STOP_WORDS = {
 
 
 def to_ascii(text):
+    manual = {'ł': 'l', 'Ł': 'L', 'ß': 'ss', 'ð': 'd', '–': '-', '\u2019': "'"}
+    for k, v in manual.items():
+        text = text.replace(k, v)
     return unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('ascii')
     
 def slugify(text):
     text = re.sub(r"[{}\\]", "", text)
-    text = re.sub(r"[^a-zA-Z0-9\s-]", "", text)
     text = to_ascii(text)
+    text = re.sub(r"[^a-zA-Z0-9\s-]", "", text)
     words = text.lower().split()
     result = "-".join(w for w in words if w not in STOP_WORDS)
     return re.sub(r"-{2,}", "-", result)
