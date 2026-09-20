@@ -13,6 +13,9 @@ STOP_WORDS = {
 
 
 def to_ascii(text):
+    manual = {'ł': 'l', 'Ł': 'L', 'ß': 'ss', 'ð': 'd', '–': '-', '\u2019': "'"}
+    for k, v in manual.items():
+        text = text.replace(k, v)
     return unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('ascii')
     
 def slugify(text):
