@@ -11,18 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@misc{parfenova2026chessexplanationsreflectmodel,
-      title={Do Chess Explanations Reflect Model Decisions? Behavioral and Token-Level Tests of LLM Reasoning Faithfulness}, 
-      author={Angelina Parfenova},
-      year={2026},
-      eprint={2609.22245},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-    abstract = {Large language models can produce fluent explanations for chess moves, but plausible language does not necessarily reflect the reasoning behind a decision. We study this question in chess, where the board state is fully observable, legal actions can be enumerated, and move quality can be evaluated independently. Across 200 Lichess endgame puzzles, we test explanations using move recoverability, decoder-side controls, and token-level scoring of legal candidate moves. Unmasked explanations make generated moves easy to recover, but this advantage drops sharply after explicit move hints are removed. Under strict masking, explanations provide only small and decoder-dependent gains over the board state alone. Token-level scoring shows that explanations can nevertheless alter move preferences: random but plausible explanations from other puzzles reduce the probability of the correct move, indicating that irrelevant reasoning text is not simply ignored. We also find that recognizable endgame motifs can make generated moves easier to recover without reliably improving move correctness. Together, these results show that linguistic plausibility, consistency with a generated action, and solution correctness are distinct properties. Fluent chess explanations can influence action preferences and support a coherent move narrative while providing only limited evidence of faithful reasoning.},
-affiliation = {Lucerne University of Applied Sciences and Arts; Technical University of Munich},
-      url={https://arxiv.org/abs/2609.22245}, 
-}
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -2488,6 +2476,18 @@ affiliation = {Lucerne University of Applied Sciences and Arts; Technical Univer
   url           = {https://ebooks.iospress.nl/doi/10.3233/FAIA240574},
   abstract      = {Concept probing is one prominent methodology for interpreting and analyzing (deep) neural network models. It has, for example, formed the backbone of several recent works to understand better the high-level knowledge learned and employed by game-playing agents, particularly in chess. However, some recent theoretical and empirical studies have questioned the methodology's reliability and highlighted some limitations. Here, in the game-playing domain of chess, we investigate the effectiveness of several different probing architectures and look into the reliability of methods for interpreting their results. We use a world-class chess-playing agent as our test domain, which allows us, via self-play, to quantify the importance of the concepts identified in the agent's neural network by the concept probes. Our results demonstrate that the widespread practice of using linear probes and interpreting their accuracy to indicate concept importance is somewhat unreliable and needs to be revised. We demonstrate several ways of doing that in our domain, particularly by using more complex probes and amnesic-like probing.},
   affiliation   = {Reykjavik University},
+}
+
+@misc{parfenova:2026:do-chess-explanations-reflect-model-decisions-behavioral-token-level-tests-of-llm-reasoning-faithfulness,
+  title         = {Do Chess Explanations Reflect Model Decisions? Behavioral and Token-Level Tests of LLM Reasoning Faithfulness},
+  author        = {Angelina Parfenova},
+  year          = {2026},
+  eprint        = {2609.22245},
+  url           = {https://arxiv.org/abs/2609.22245},
+  abstract      = {Large language models can produce fluent explanations for chess moves, but plausible language does not necessarily reflect the reasoning behind a decision. We study this question in chess, where the board state is fully observable, legal actions can be enumerated, and move quality can be evaluated independently. Across 200 Lichess endgame puzzles, we test explanations using move recoverability, decoder-side controls, and token-level scoring of legal candidate moves. Unmasked explanations make generated moves easy to recover, but this advantage drops sharply after explicit move hints are removed. Under strict masking, explanations provide only small and decoder-dependent gains over the board state alone. Token-level scoring shows that explanations can nevertheless alter move preferences: random but plausible explanations from other puzzles reduce the probability of the correct move, indicating that irrelevant reasoning text is not simply ignored. We also find that recognizable endgame motifs can make generated moves easier to recover without reliably improving move correctness. Together, these results show that linguistic plausibility, consistency with a generated action, and solution correctness are distinct properties. Fluent chess explanations can influence action preferences and support a coherent move narrative while providing only limited evidence of faithful reasoning.},
+  affiliation   = {Lucerne University of Applied Sciences and Arts; Technical University of Munich},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
 }
 
 @misc{park:2026:engine-equal-human-unequal-reproducible-outcome-skew-in-engine-assessed-equal-chess-positions,
