@@ -11,6 +11,18 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@misc{parfenova2026chessexplanationsreflectmodel,
+      title={Do Chess Explanations Reflect Model Decisions? Behavioral and Token-Level Tests of LLM Reasoning Faithfulness}, 
+      author={Angelina Parfenova},
+      year={2026},
+      eprint={2609.22245},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+    abstract = {Large language models can produce fluent explanations for chess moves, but plausible language does not necessarily reflect the reasoning behind a decision. We study this question in chess, where the board state is fully observable, legal actions can be enumerated, and move quality can be evaluated independently. Across 200 Lichess endgame puzzles, we test explanations using move recoverability, decoder-side controls, and token-level scoring of legal candidate moves. Unmasked explanations make generated moves easy to recover, but this advantage drops sharply after explicit move hints are removed. Under strict masking, explanations provide only small and decoder-dependent gains over the board state alone. Token-level scoring shows that explanations can nevertheless alter move preferences: random but plausible explanations from other puzzles reduce the probability of the correct move, indicating that irrelevant reasoning text is not simply ignored. We also find that recognizable endgame motifs can make generated moves easier to recover without reliably improving move correctness. Together, these results show that linguistic plausibility, consistency with a generated action, and solution correctness are distinct properties. Fluent chess explanations can influence action preferences and support a coherent move narrative while providing only limited evidence of faithful reasoning.},
+affiliation = {Lucerne University of Applied Sciences and Arts; Technical University of Munich},
+      url={https://arxiv.org/abs/2609.22245}, 
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
