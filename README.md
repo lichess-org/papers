@@ -5,7 +5,7 @@
 
 Publications that study Lichess, use Lichess data, or otherwise use or mention Lichess in a meaningful way.
 
-If we missed your work, feel free to open an issue or submit a PR.
+If we missed your work, feel free to open an issue or submit a PR. See the [CONTRIBUTING.md](CONTRIBUTING.md) file for more information.
 
 <!-- stats:start -->
 <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╭────────  271 Papers ─────────╮</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╭────────── Papers by Year ──────────╮</span>
