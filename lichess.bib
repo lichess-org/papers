@@ -11,6 +11,20 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@misc{litman2026increasingskilllevelrecruits,
+      title={Increasing Skill Level Recruits Deeper Attention Layers in a Frozen Chess Transformer}, 
+      author={David Litman},
+      year={2026},
+      eprint={2609.23917},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+abstract = {Chess involves complex reasoning in a deterministic environment, which makes it a useful setting for studying the mechanisms of computation inside transformers. The Maia-3 chess transformer takes Elo, a measure of competitive chess skill, as an input to the pre-trained network, so we can vary the skill the network is conditioned on with no change to its weights. Here we investigate how turning this skill dial affects self-attention. Ablating every attention head at every Elo from 700 to 2500, we find 1) increasing skill pushes the causal center of mass of the computation deeper, monotonically, for every chess piece and move type we measured; 2) the depth migration is much greater for specific tactics, especially knight forks, than for other move types; 3) the migration consists of deeper heads getting recruited for more specialized computations while one shared shallow head keeps a roughly constant contribution. These results may shed light on how conditioning inputs redistribute computation in larger transformers.},
+affiliation = {Salk Institute},
+blog = {https://www.lesswrong.com/posts/HzeuyQvqN4nHHvaXc/increasing-skill-level-recruits-deeper-attention-layers-in-a},
+code = {https://github.com/David-31415/maia-depth-migration},
+      url={https://arxiv.org/abs/2609.23917}, 
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
