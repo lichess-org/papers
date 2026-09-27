@@ -11,22 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@article{JEONG2026103056,
-title = {recoverr: A Python package for estimating within-person recovery dynamics from behavioral telemetry},
-journal = {SoftwareX},
-volume = {36},
-pages = {103056},
-year = {2026},
-issn = {2352-7110},
-doi = {https://doi.org/10.1016/j.softx.2026.103056},
-url = {https://www.sciencedirect.com/science/article/pii/S2352711026005479},
-author = {Hongwon Jeong},
-affiliation = {Hanyang University},
-code = {https://github.com/beatsbywoni/recoverr},
-keywords = {Recovery dynamics, Behavioral telemetry, Regression to the mean, Reliability, Individual differences, Learning analytics},
-abstract = {recoverr is an open-source Python package for measuring how a person's performance changes after a failure and how it returns to baseline, using ordinary behavioral logs. Post-failure windows are compared with context-matched placebo windows from the same person, which avoids the regression-to-the-mean artifact of in-sample baselines. The package returns a recovery curve, per-person depth, speed and completeness, and the diagnostics needed to interpret them: covariate balance, an exact permutation null, split-half reliability that is robust to overlapping windows, bootstrap intervals and held-out predictive gain. Simulations quantify bias and error of the estimator against alternatives, and worked examples on public learning, memory and chess data show a detectable post-failure excess in all three domains with domain-specific reliability.}
-}
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -1444,6 +1428,22 @@ abstract = {recoverr is an open-source Python package for measuring how a person
   website       = {https://leela-interp.github.io/},
   pdf           = {https://proceedings.neurips.cc/paper_files/paper/2024/file/37d9f19150fce07bced2a81fc87d47a6-Paper-Conference.pdf},
   code          = {https://github.com/HumanCompatibleAI/leela-interp},
+}
+
+@article{jeong:2026:recoverr-python-package-for-estimating-within-person-recovery-dynamics-from-behavioral-telemetry,
+  title         = {recoverr: A Python package for estimating within-person recovery dynamics from behavioral telemetry},
+  author        = {Hongwon Jeong},
+  year          = {2026},
+  journal       = {SoftwareX},
+  volume        = {36},
+  pages         = {103056},
+  doi           = {https://doi.org/10.1016/j.softx.2026.103056},
+  issn          = {2352-7110},
+  url           = {https://www.sciencedirect.com/science/article/pii/S2352711026005479},
+  abstract      = {recoverr is an open-source Python package for measuring how a person's performance changes after a failure and how it returns to baseline, using ordinary behavioral logs. Post-failure windows are compared with context-matched placebo windows from the same person, which avoids the regression-to-the-mean artifact of in-sample baselines. The package returns a recovery curve, per-person depth, speed and completeness, and the diagnostics needed to interpret them: covariate balance, an exact permutation null, split-half reliability that is robust to overlapping windows, bootstrap intervals and held-out predictive gain. Simulations quantify bias and error of the estimator against alternatives, and worked examples on public learning, memory and chess data show a detectable post-failure excess in all three domains with domain-specific reliability.},
+  keywords      = {Recovery dynamics, Behavioral telemetry, Regression to the mean, Reliability, Individual differences, Learning analytics},
+  affiliation   = {Hanyang University},
+  code          = {https://github.com/beatsbywoni/recoverr},
 }
 
 @misc{jiang:2023:building-natural-language-chess-engine-with-pretraining-instruction-fine-tuning,
