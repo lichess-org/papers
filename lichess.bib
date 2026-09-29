@@ -22,31 +22,6 @@
   affiliation   = {Chalmers University of Technology},
 }
 
-@thesis{deng:2026,
-  title         = {Building Machine Learning Systems Aligned With Human Values},
-  author        = {Deng, Chenghao},
-  year          = {2026},
-  type          = {PhD Dissertation},
-  institution   = {University of Maryland},
-  supervisor    = {Huang, Furong},
-  url           = {https://www.proquest.com/openview/5b2bef456725de7992208e69cdba9a93/},
-abstract = {As machine learning (ML) systems assume an increasingly important role in modern society, it
-is imperative that they be developed in ways that reflect human values. In particular, aligning ML systems with human values entails ensuring that they make fair decisions, maintain robust performance
-under uncertainty and adversarial conditions, exhibit behavior that more closely reflects human cognition, and are deployed in ways that are socially responsible and affordable. These values should be
-incorporated throughout the entire ML pipeline, from data preparation and model training to test-time
-evaluation and system deployment.
-Motivated by these goals, we investigate how to align ML systems with human values across
-the full development lifecycle. First, we study temporal discrimination in sequential decision-making
-and introduce ELBERT, a principled measure of long-term group fairness together with an effective
-bias mitigation method. We then improve robustness in reinforcement learning by proposing PROTECTED, a framework that combines non-dominated policy discovery during training with online
-adaptation at test time. Next, we examine the performance and generalization of large language models (LLMs) across different difficulty levels through Easy2Hard-Bench, a benchmark collection with
-standardized difficulty annotations derived from extensive human and model evaluations. Finally, we
-propose FlowBank, a portfolio-based framework for LLM multi-agent workflow optimization that constructs a compact set of complementary workflows and adaptively selects the most suitable workflow
-for each query under a performance–cost trade-off in large-scale deployment.},
-  affiliation   = {University of Maryland},
-note = {Chapter 4 is based on author's other paper ding:2024:easy2hard-bench-standardized-difficulty-labels-for-profiling-llm-performance-generalization},
-}
-
 @article{adorjan:2025:statistical-analysis-of-hungarian-board-game-sales,
   title         = {Statistical Analysis of Hungarian Board Game Sales},
   author        = {Adorján, Balázs and Bednárik, Éva},
@@ -855,6 +830,19 @@ note = {Chapter 4 is based on author's other paper ding:2024:easy2hard-bench-sta
   url           = {https://aclanthology.org/2021.conll-1.16},
   abstract      = {The capabilities of today{'}s natural language processing systems are typically evaluated using large datasets of curated questions and answers. While these are critical benchmarks of progress, they also suffer from weakness due to artificial distributions and incomplete knowledge. Artifacts arising from artificial distributions can overstate language model performance, while incomplete knowledge limits fine-grained analysis. In this work, we introduce a complementary benchmarking approach based on SimPlified Language Activity Traces (SPLAT). SPLATs are corpora of language encodings of activity in some closed domain (we study traces from chess and baseball games in this work). SPLAT datasets use naturally-arising distributions, allow the generation of question-answer pairs at scale, and afford complete knowledge in their closed domains. We show that language models of three different architectures can answer questions about world states using only verb-like encodings of activity. Our approach is extensible to new language models and additional question-answering tasks.},
   affiliation   = {Northwestern University; Allen Institute for AI},
+}
+
+@thesis{deng:2026:building-machine-learning-systems-aligned-with-human-values,
+  title         = {Building Machine Learning Systems Aligned With Human Values},
+  author        = {Deng, Chenghao},
+  year          = {2026},
+  url           = {https://www.proquest.com/openview/5b2bef456725de7992208e69cdba9a93/},
+  type          = {PhD Dissertation},
+  institution   = {University of Maryland},
+  supervisor    = {Huang, Furong},
+  note          = {Chapter 4 is based on author's other paper ding:2024:easy2hard-bench-standardized-difficulty-labels-for-profiling-llm-performance-generalization},
+  abstract      = {As machine learning (ML) systems assume an increasingly important role in modern society, it is imperative that they be developed in ways that reflect human values. In particular, aligning ML systems with human values entails ensuring that they make fair decisions, maintain robust performance under uncertainty and adversarial conditions, exhibit behavior that more closely reflects human cognition, and are deployed in ways that are socially responsible and affordable. These values should be incorporated throughout the entire ML pipeline, from data preparation and model training to test-time evaluation and system deployment. Motivated by these goals, we investigate how to align ML systems with human values across the full development lifecycle. First, we study temporal discrimination in sequential decision-making and introduce ELBERT, a principled measure of long-term group fairness together with an effective bias mitigation method. We then improve robustness in reinforcement learning by proposing PROTECTED, a framework that combines non-dominated policy discovery during training with online adaptation at test time. Next, we examine the performance and generalization of large language models (LLMs) across different difficulty levels through Easy2Hard-Bench, a benchmark collection with standardized difficulty annotations derived from extensive human and model evaluations. Finally, we propose FlowBank, a portfolio-based framework for LLM multi-agent workflow optimization that constructs a compact set of complementary workflows and adaptively selects the most suitable workflow for each query under a performance–cost trade-off in large-scale deployment.},
+  affiliation   = {University of Maryland},
 }
 
 @inproceedings{desadelgadoneto:2019:chess-position-identification-using-pieces-classification-based-on-synthetic-images-generation-deep-neural-network-fine-tuning,
