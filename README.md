@@ -23,7 +23,7 @@ If we missed your work, feel free to open an issue or submit a PR. See the [CONT
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰──────────────────────────────╯</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰────────────────────────────────────╯</span>
 <span style="font-weight: bold"> Affiliation                   </span> <span style="font-weight: bold"> Papers </span>    <span style="font-weight: bold"> Keyword                       </span> <span style="font-weight: bold"> Papers </span>
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- Google DeepMind                <span style="font-weight: bold">     13 </span>     games                          <span style="font-weight: bold">     13 </span>
+ Google DeepMind                <span style="font-weight: bold">     14 </span>     games                          <span style="font-weight: bold">     13 </span>
  University of Toronto          <span style="font-weight: bold">     11 </span>     machine learning               <span style="font-weight: bold">     13 </span>
  University of Oxford           <span style="font-weight: bold">      9 </span>     deep learning                  <span style="font-weight: bold">     12 </span>
  Stanford University            <span style="font-weight: bold">      7 </span>     transformers                   <span style="font-weight: bold">     11 </span>
