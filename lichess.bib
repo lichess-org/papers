@@ -11,21 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@misc{lesort2026benchmarkingpromptoptimizationlarge,
-      title={Benchmarking Prompt Optimization of Large Language Models With Chess}, 
-      author={Timothée Lesort and Alejandra López de Aberasturi Gómez and Tristan Karch and Tom Veniat and Philippe Modard and Karl Tuyls and Ludovic Denoyer},
-      year={2026},
-      eprint={2610.00416},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2610.00416},
-code = {https://github.com/imec-ailabs/Automatic-Prompt-Optimization-with-Chess},
-affiliation = {imec AI.labs},
-dataset = {https://github.com/imec-ailabs/Automatic-Prompt-Optimization-with-Chess/tree/main/data},
-abstract = {Evaluating large language models becomes increasingly challenging as their capabilities advance: benchmarks can saturate, public test sets risk contamination, and assessing harder tasks can require expensive grading or execution infrastructure. These challenges are amplified in automatic prompt optimization (APO), where evaluation is repeated throughout the search for better prompts. Studying APO therefore requires a benchmark that is cheap and deterministic to score, hard enough to leave room for improvement, and renewable as models evolve. We introduce a chess benchmark built from 1,118 Lichess puzzles to study APO for frozen LLMs: we optimize their prompts without updating their model weights. Chess combines inexpensive exact-match scoring, engine-based evaluation of alternative moves, and a renewable supply of problems with adjustable difficulty. Unlike evaluations that report only success on isolated test items, the benchmark also connects puzzle-solving gains to short game-play rollouts within the same domain. We use it to evaluate six APO algorithms on eight target models, measuring not only baseline strength but also how much each model responds to optimization and whether optimized prompts transfer across models and to game play. Chess is thus a well-suited benchmark for APO: it is (i) challenging, as even the strongest evaluated model, Gemini 3.5 Flash (used as the meta-model), solves only about 55\% of puzzles; (ii) discriminative, revealing gains, unchanged performance, and regressions across methods and models; (iii) renewable, with fresh puzzles to reduce contamination risk and adjustable difficulty to maintain headroom as models improve; and (iv) affordable, as the complete study runs for around $800. We release the puzzles, optimization and evaluation code, and dataset-renewal scripts},
-
-}
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -1898,6 +1883,20 @@ abstract = {Evaluating large language models becomes increasingly challenging as
   abstract      = {This thesis investigates how neural networks can be used to analyze and compare chess player styles. Using the last layer of Stockfish's neural network, we process positions from historical World Chess Championships (1886–2024), as well as the 2024 World Blitz and Rapid Championships. We apply dimensionality reduction (PCA, t-SNE, MDS) and clustering (K-means) to build style-based player maps, measuring similarities through Jensen–Shannon divergence. Results show consistent stylistic signatures for some players--such as Firouzja and Dubov but may fail with others e.g. Nepomniachtchi. We also confirmed the evolution of chess player's still accros time. Though the approach is promising, limitations remain, especially in data size and the influence of forced lines. Still, this work lays a foundation for future stylometry studies and applications in AI driven chess training},
   keywords      = {neural network, chess, PCA, t-SNE, MDS, Kmeans, kde},
   affiliation   = {Université catholique de Louvain},
+}
+
+@misc{lesort:2026:benchmarking-prompt-optimization-of-large-language-models-with-chess,
+  title         = {Benchmarking Prompt Optimization of Large Language Models With Chess},
+  author        = {Timothée Lesort and Alejandra López de Aberasturi Gómez and Tristan Karch and Tom Veniat and Philippe Modard and Karl Tuyls and Ludovic Denoyer},
+  year          = {2026},
+  eprint        = {2610.00416},
+  url           = {https://arxiv.org/abs/2610.00416},
+  abstract      = {Evaluating large language models becomes increasingly challenging as their capabilities advance: benchmarks can saturate, public test sets risk contamination, and assessing harder tasks can require expensive grading or execution infrastructure. These challenges are amplified in automatic prompt optimization (APO), where evaluation is repeated throughout the search for better prompts. Studying APO therefore requires a benchmark that is cheap and deterministic to score, hard enough to leave room for improvement, and renewable as models evolve. We introduce a chess benchmark built from 1,118 Lichess puzzles to study APO for frozen LLMs: we optimize their prompts without updating their model weights. Chess combines inexpensive exact-match scoring, engine-based evaluation of alternative moves, and a renewable supply of problems with adjustable difficulty. Unlike evaluations that report only success on isolated test items, the benchmark also connects puzzle-solving gains to short game-play rollouts within the same domain. We use it to evaluate six APO algorithms on eight target models, measuring not only baseline strength but also how much each model responds to optimization and whether optimized prompts transfer across models and to game play. Chess is thus a well-suited benchmark for APO: it is (i) challenging, as even the strongest evaluated model, Gemini 3.5 Flash (used as the meta-model), solves only about 55\% of puzzles; (ii) discriminative, revealing gains, unchanged performance, and regressions across methods and models; (iii) renewable, with fresh puzzles to reduce contamination risk and adjustable difficulty to maintain headroom as models improve; and (iv) affordable, as the complete study runs for around $800. We release the puzzles, optimization and evaluation code, and dataset-renewal scripts},
+  affiliation   = {imec AI.labs},
+  code          = {https://github.com/imec-ailabs/Automatic-Prompt-Optimization-with-Chess},
+  dataset       = {https://github.com/imec-ailabs/Automatic-Prompt-Optimization-with-Chess/tree/main/data},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.AI},
 }
 
 @misc{li:2026:tracking-vs-deciding-dual-capability-bottleneck-in-searchless-chess-transformers,
