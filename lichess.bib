@@ -11,21 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@misc{bhaskar2026languagemodelsplaychess,
-      title={Language Models that Play Chess and Explain Their Moves}, 
-      author={Adithya Bhaskar and Jeffrey Cheng and Danqi Chen},
-      year={2026},
-      eprint={2610.03695},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2610.03695},
-abstract = {Modern chess engines are silent experts: they play at a superhuman level, but do not offer explanations for their play. On the other hand, language models (LMs) can generate plausible-sounding explanations, but their weak playing strength limits the utility of their explanations. We introduce Queen, a 4B-parameter chess-language model that can explain its moves and plans while playing at the level of a typical Grandmaster. Our novel framework enables domain-specific reasoning through complementary components: an encoder-decoder architecture and an iterative distillation algorithm. This architecture integrates a silent expert chess encoder with an instruction-tuned LM through cross-attention, which we train via a question-answering curriculum to extract chess concepts from the encoder's representations. Building on this domain-adapted model, we iteratively improve its explanations with a natural-language analog of the Bellman update: the model analyzes the positions after its top candidate moves and consolidates them into an explanation of the current position, which is then distilled back into the model. Over seven iterations, our model gains over 900 Elo points (1782 to 2697), substantially surpassing all frontier models on both playing strength and puzzle accuracy, despite containing three orders of magnitude fewer parameters. Furthermore, LM-based evaluations show that our explanations are fluent and approach GPT-5.6-Sol (high) in coherence. The generality of our architecture and training procedure suggests a recipe for applying language models to domains where silent expert encoders are available, like games, robotics, and computer use.},
-affiliation = {Princeton University},
-huggingface = {https://huggingface.co/collections/princeton-nlp/queen-chess-models},
-code = {https://github.com/queen-project/queen},
-
-}
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -287,6 +272,20 @@ code = {https://github.com/queen-project/queen},
   affiliation   = {Mila; Université de Montréal; VoyLab},
   pdf           = {https://proceedings.mlr.press/v206/bertrand23a/bertrand23a.pdf},
   code          = {https://github.com/QB3/discrating},
+}
+
+@misc{bhaskar:2026:language-models-that-play-chess-explain-their-moves,
+  title         = {Language Models that Play Chess and Explain Their Moves},
+  author        = {Adithya Bhaskar and Jeffrey Cheng and Danqi Chen},
+  year          = {2026},
+  eprint        = {2610.03695},
+  url           = {https://arxiv.org/abs/2610.03695},
+  abstract      = {Modern chess engines are silent experts: they play at a superhuman level, but do not offer explanations for their play. On the other hand, language models (LMs) can generate plausible-sounding explanations, but their weak playing strength limits the utility of their explanations. We introduce Queen, a 4B-parameter chess-language model that can explain its moves and plans while playing at the level of a typical Grandmaster. Our novel framework enables domain-specific reasoning through complementary components: an encoder-decoder architecture and an iterative distillation algorithm. This architecture integrates a silent expert chess encoder with an instruction-tuned LM through cross-attention, which we train via a question-answering curriculum to extract chess concepts from the encoder's representations. Building on this domain-adapted model, we iteratively improve its explanations with a natural-language analog of the Bellman update: the model analyzes the positions after its top candidate moves and consolidates them into an explanation of the current position, which is then distilled back into the model. Over seven iterations, our model gains over 900 Elo points (1782 to 2697), substantially surpassing all frontier models on both playing strength and puzzle accuracy, despite containing three orders of magnitude fewer parameters. Furthermore, LM-based evaluations show that our explanations are fluent and approach GPT-5.6-Sol (high) in coherence. The generality of our architecture and training procedure suggests a recipe for applying language models to domains where silent expert encoders are available, like games, robotics, and computer use.},
+  affiliation   = {Princeton University},
+  code          = {https://github.com/queen-project/queen},
+  huggingface   = {https://huggingface.co/collections/princeton-nlp/queen-chess-models},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
 }
 
 @inproceedings{biemer:2024:solution-path-heuristics-for-predicting-difficulty-enjoyment-ratings-of-roguelike-level-segments,
