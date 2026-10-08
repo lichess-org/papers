@@ -144,8 +144,13 @@ for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=Tr
     citation_html += f'  <tr><td style="padding:4px 8px">{label}</td><td align="right" style="padding:4px 12px 4px 8px"><b>{citations}</b></td></tr>\n'
 citation_html += '</table>'
 
+author_html = '<h4>Most prolific authors</h4>\n<table style="border-collapse:collapse;width:100%">\n'
+for name, count in author_counter.most_common(15):
+    author_html += f'  <tr><td style="padding:4px 8px">{name}</td><td align="right" style="padding:4px 12px 4px 8px"><b>{count}</b></td></tr>\n'
+author_html += '</table>'
+
 CONSOLE_HTML_FORMAT = '<pre style="font-family:Menlo,\'DejaVu Sans Mono\',consolas,\'Courier New\',monospace">{code}</pre>'
-html = console.export_html(inline_styles=True, code_format=CONSOLE_HTML_FORMAT) + '\n' + citation_html
+html = console.export_html(inline_styles=True, code_format=CONSOLE_HTML_FORMAT) + '\n' + citation_html + '\n' + author_html
 
 readme_path = sys.argv[2] if len(sys.argv) > 2 else "README.md"
 with open(readme_path) as f:
