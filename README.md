@@ -21,44 +21,31 @@ If we missed your work, feel free to open an issue or submit a PR. See the [CONT
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>  <span style="font-weight: bold">thesis               </span>   27  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">2026 </span>  <span style="color: #000080; text-decoration-color: #000080; font-weight: bold">█████████████████</span><span style="color: #7f7fbf; text-decoration-color: #7f7fbf; font-weight: bold">░░░</span>  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f"> 82</span>  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>                              <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>                                    <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰──────────────────────────────╯</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰────────────────────────────────────╯</span>
-<span style="font-weight: bold"> Affiliation                   </span> <span style="font-weight: bold"> Papers </span>    <span style="font-weight: bold"> Author             </span> <span style="font-weight: bold"> Papers </span>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- Google DeepMind                <span style="font-weight: bold">     14 </span>     Ashton Anderson     <span style="font-weight: bold">      8 </span>
- University of Toronto          <span style="font-weight: bold">     11 </span>     Siddhartha Sen      <span style="font-weight: bold">      6 </span>
- University of Oxford           <span style="font-weight: bold">      9 </span>     Tom Zahavy          <span style="font-weight: bold">      5 </span>
- Princeton University           <span style="font-weight: bold">      8 </span>     Johannes Czech      <span style="font-weight: bold">      4 </span>
- Stanford University            <span style="font-weight: bold">      7 </span>     Kristian Kersting   <span style="font-weight: bold">      4 </span>
- Microsoft Research             <span style="font-weight: bold">      7 </span>     Xidong Feng         <span style="font-weight: bold">      4 </span>
- New York University            <span style="font-weight: bold">      6 </span>     Satinder Singh      <span style="font-weight: bold">      4 </span>
- Carnegie Mellon University     <span style="font-weight: bold">      6 </span>     Evan Russek         <span style="font-weight: bold">      4 </span>
- MIT                            <span style="font-weight: bold">      5 </span>     Tom Griffiths       <span style="font-weight: bold">      4 </span>
- Imperial College London        <span style="font-weight: bold">      4 </span>     Lisa Schut          <span style="font-weight: bold">      4 </span>
- Johns Hopkins University       <span style="font-weight: bold">      4 </span>     Reid McIlroy-Young  <span style="font-weight: bold">      4 </span>
- TU Darmstadt                   <span style="font-weight: bold">      4 </span>     Zhenwei Tang        <span style="font-weight: bold">      4 </span>
- University of Central Florida  <span style="font-weight: bold">      4 </span>     Gita Sukthankar     <span style="font-weight: bold">      3 </span>
- University of Maryland         <span style="font-weight: bold">      4 </span>     Anian Ruoss         <span style="font-weight: bold">      3 </span>
- Peking University              <span style="font-weight: bold">      4 </span>     Avi Schwarzschild   <span style="font-weight: bold">      3 </span>
- UC Berkeley                    <span style="font-weight: bold">      4 </span>     Tom Goldstein       <span style="font-weight: bold">      3 </span>
- Harvard University             <span style="font-weight: bold">      4 </span>     Furong Huang        <span style="font-weight: bold">      3 </span>
-<span style="font-weight: bold"> Keyword                       </span> <span style="font-weight: bold"> Papers </span>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- games                          <span style="font-weight: bold">     13 </span>
- machine learning               <span style="font-weight: bold">     13 </span>
- deep learning                  <span style="font-weight: bold">     12 </span>
- transformers                   <span style="font-weight: bold">     11 </span>
- training                       <span style="font-weight: bold">     11 </span>
- artificial intelligence        <span style="font-weight: bold">     10 </span>
- large language models          <span style="font-weight: bold">      8 </span>
- engines                        <span style="font-weight: bold">      8 </span>
- predictive models              <span style="font-weight: bold">      8 </span>
- neural networks                <span style="font-weight: bold">      7 </span>
- big data                       <span style="font-weight: bold">      7 </span>
- accuracy                       <span style="font-weight: bold">      6 </span>
- explainable ai                 <span style="font-weight: bold">      6 </span>
- transformer                    <span style="font-weight: bold">      6 </span>
- convolutional neural networks  <span style="font-weight: bold">      6 </span>
- action prediction              <span style="font-weight: bold">      5 </span>
- reinforcement learning         <span style="font-weight: bold">      5 </span>
+<span style="font-weight: bold"> Affiliation                   </span> <span style="font-weight: bold"> Papers </span>    <span style="font-weight: bold"> Keyword                       </span> <span style="font-weight: bold"> Papers </span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ Google DeepMind                <span style="font-weight: bold">     14 </span>     games                          <span style="font-weight: bold">     13 </span>
+ University of Toronto          <span style="font-weight: bold">     11 </span>     machine learning               <span style="font-weight: bold">     13 </span>
+ University of Oxford           <span style="font-weight: bold">      9 </span>     deep learning                  <span style="font-weight: bold">     12 </span>
+ Princeton University           <span style="font-weight: bold">      8 </span>     transformers                   <span style="font-weight: bold">     11 </span>
+ Stanford University            <span style="font-weight: bold">      7 </span>     training                       <span style="font-weight: bold">     11 </span>
+ Microsoft Research             <span style="font-weight: bold">      7 </span>     artificial intelligence        <span style="font-weight: bold">     10 </span>
+ New York University            <span style="font-weight: bold">      6 </span>     large language models          <span style="font-weight: bold">      8 </span>
+ Carnegie Mellon University     <span style="font-weight: bold">      6 </span>     engines                        <span style="font-weight: bold">      8 </span>
+ MIT                            <span style="font-weight: bold">      5 </span>     predictive models              <span style="font-weight: bold">      8 </span>
+ Imperial College London        <span style="font-weight: bold">      4 </span>     neural networks                <span style="font-weight: bold">      7 </span>
+ Johns Hopkins University       <span style="font-weight: bold">      4 </span>     big data                       <span style="font-weight: bold">      7 </span>
+ TU Darmstadt                   <span style="font-weight: bold">      4 </span>     accuracy                       <span style="font-weight: bold">      6 </span>
+ University of Central Florida  <span style="font-weight: bold">      4 </span>     explainable ai                 <span style="font-weight: bold">      6 </span>
+ University of Maryland         <span style="font-weight: bold">      4 </span>     transformer                    <span style="font-weight: bold">      6 </span>
+ Peking University              <span style="font-weight: bold">      4 </span>     convolutional neural networks  <span style="font-weight: bold">      6 </span>
+ UC Berkeley                    <span style="font-weight: bold">      4 </span>     action prediction              <span style="font-weight: bold">      5 </span>
+ Harvard University             <span style="font-weight: bold">      4 </span>     reinforcement learning         <span style="font-weight: bold">      5 </span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╭───────────────────────────────────────────────────────── Most prolific authors ──────────────────────────────────────────────────────────╮</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Ashton Anderson (8)            Siddhartha Sen (6)        Tom Zahavy (5)             Johannes Czech (4)       Kristian Kersting (4)       <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Xidong Feng (4)                Satinder Singh (4)        Evan Russek (4)            Tom Griffiths (4)        Lisa Schut (4)              <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Reid McIlroy-Young (4)         Zhenwei Tang (4)          Gita Sukthankar (3)        Anian Ruoss (3)          Avi Schwarzschild (3)       <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Tom Goldstein (3)              Furong Huang (3)                                                                                          <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯</span>
 </pre>
 <h4>Most cited</h4>
 <table style="border-collapse:collapse;width:100%">
