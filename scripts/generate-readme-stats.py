@@ -45,6 +45,13 @@ for e in entries:
         if a:
             authors.add(a)
 
+author_counter = Counter()
+for e in entries:
+    for a in re.split(r'\s+and\s+', e.get('author', '')):
+        a = a.strip()
+        if a:
+            author_counter[format_authors(a)] += 1
+            
 aff_counter = Counter()
 for e in entries:
     aff = e.get("affiliation", "")
