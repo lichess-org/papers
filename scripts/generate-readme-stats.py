@@ -142,8 +142,9 @@ auth_table.add_column("Papers", justify="right", style="bold")
 for name, count in author_counter.most_common(17):
     auth_table.add_row(name, str(count))
 
-console.print(Columns([aff_table, kw_table, auth_table], padding=(0, 4)))
-# console.print(Columns([aff_table, kw_table], padding=(0, 4)))
+console.print(Columns([aff_table, auth_table], padding=(0, 4)))
+console.print(Columns([kw_table], padding=(0, 4)))
+
 
 citation_html = '<h4>Most cited</h4>\n<table style="border-collapse:collapse;width:100%">\n'
 for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=True)[:17]:
