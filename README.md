@@ -21,25 +21,25 @@ If we missed your work, feel free to open an issue or submit a PR. See the [CONT
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>  <span style="font-weight: bold">thesis               </span>   27  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">2026 </span>  <span style="color: #000080; text-decoration-color: #000080; font-weight: bold">█████████████████</span><span style="color: #7f7fbf; text-decoration-color: #7f7fbf; font-weight: bold">░░░</span>  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f"> 82</span>  <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>                              <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>                                    <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰──────────────────────────────╯</span> <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰────────────────────────────────────╯</span>
-<span style="font-weight: bold"> Affiliation                   </span> <span style="font-weight: bold"> Papers </span>    <span style="font-weight: bold"> Keyword                       </span> <span style="font-weight: bold"> Papers </span>
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- Google DeepMind                <span style="font-weight: bold">     14 </span>     games                          <span style="font-weight: bold">     13 </span>
- University of Toronto          <span style="font-weight: bold">     11 </span>     machine learning               <span style="font-weight: bold">     13 </span>
- University of Oxford           <span style="font-weight: bold">      9 </span>     deep learning                  <span style="font-weight: bold">     12 </span>
- Princeton University           <span style="font-weight: bold">      8 </span>     transformers                   <span style="font-weight: bold">     11 </span>
- Stanford University            <span style="font-weight: bold">      7 </span>     training                       <span style="font-weight: bold">     11 </span>
- Microsoft Research             <span style="font-weight: bold">      7 </span>     artificial intelligence        <span style="font-weight: bold">     10 </span>
- New York University            <span style="font-weight: bold">      6 </span>     large language models          <span style="font-weight: bold">      8 </span>
- Carnegie Mellon University     <span style="font-weight: bold">      6 </span>     engines                        <span style="font-weight: bold">      8 </span>
- MIT                            <span style="font-weight: bold">      5 </span>     predictive models              <span style="font-weight: bold">      8 </span>
- Imperial College London        <span style="font-weight: bold">      4 </span>     neural networks                <span style="font-weight: bold">      7 </span>
- Johns Hopkins University       <span style="font-weight: bold">      4 </span>     big data                       <span style="font-weight: bold">      7 </span>
- TU Darmstadt                   <span style="font-weight: bold">      4 </span>     accuracy                       <span style="font-weight: bold">      6 </span>
- University of Central Florida  <span style="font-weight: bold">      4 </span>     explainable ai                 <span style="font-weight: bold">      6 </span>
- University of Maryland         <span style="font-weight: bold">      4 </span>     transformer                    <span style="font-weight: bold">      6 </span>
- Peking University              <span style="font-weight: bold">      4 </span>     convolutional neural networks  <span style="font-weight: bold">      6 </span>
- UC Berkeley                    <span style="font-weight: bold">      4 </span>     action prediction              <span style="font-weight: bold">      5 </span>
- Harvard University             <span style="font-weight: bold">      4 </span>     reinforcement learning         <span style="font-weight: bold">      5 </span>
+<span style="font-weight: bold"> Affiliation                   </span> <span style="font-weight: bold"> Papers </span>    <span style="font-weight: bold"> Keyword                       </span> <span style="font-weight: bold"> Papers </span>    <span style="font-weight: bold"> Author             </span> <span style="font-weight: bold"> Papers </span>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ Google DeepMind                <span style="font-weight: bold">     14 </span>     games                          <span style="font-weight: bold">     13 </span>     Ashton Anderson     <span style="font-weight: bold">      8 </span>
+ University of Toronto          <span style="font-weight: bold">     11 </span>     machine learning               <span style="font-weight: bold">     13 </span>     Siddhartha Sen      <span style="font-weight: bold">      6 </span>
+ University of Oxford           <span style="font-weight: bold">      9 </span>     deep learning                  <span style="font-weight: bold">     12 </span>     Tom Zahavy          <span style="font-weight: bold">      5 </span>
+ Princeton University           <span style="font-weight: bold">      8 </span>     transformers                   <span style="font-weight: bold">     11 </span>     Johannes Czech      <span style="font-weight: bold">      4 </span>
+ Stanford University            <span style="font-weight: bold">      7 </span>     training                       <span style="font-weight: bold">     11 </span>     Kristian Kersting   <span style="font-weight: bold">      4 </span>
+ Microsoft Research             <span style="font-weight: bold">      7 </span>     artificial intelligence        <span style="font-weight: bold">     10 </span>     Xidong Feng         <span style="font-weight: bold">      4 </span>
+ New York University            <span style="font-weight: bold">      6 </span>     large language models          <span style="font-weight: bold">      8 </span>     Satinder Singh      <span style="font-weight: bold">      4 </span>
+ Carnegie Mellon University     <span style="font-weight: bold">      6 </span>     engines                        <span style="font-weight: bold">      8 </span>     Evan Russek         <span style="font-weight: bold">      4 </span>
+ MIT                            <span style="font-weight: bold">      5 </span>     predictive models              <span style="font-weight: bold">      8 </span>     Tom Griffiths       <span style="font-weight: bold">      4 </span>
+ Imperial College London        <span style="font-weight: bold">      4 </span>     neural networks                <span style="font-weight: bold">      7 </span>     Lisa Schut          <span style="font-weight: bold">      4 </span>
+ Johns Hopkins University       <span style="font-weight: bold">      4 </span>     big data                       <span style="font-weight: bold">      7 </span>     Reid McIlroy-Young  <span style="font-weight: bold">      4 </span>
+ TU Darmstadt                   <span style="font-weight: bold">      4 </span>     accuracy                       <span style="font-weight: bold">      6 </span>     Zhenwei Tang        <span style="font-weight: bold">      4 </span>
+ University of Central Florida  <span style="font-weight: bold">      4 </span>     explainable ai                 <span style="font-weight: bold">      6 </span>     Gita Sukthankar     <span style="font-weight: bold">      3 </span>
+ University of Maryland         <span style="font-weight: bold">      4 </span>     transformer                    <span style="font-weight: bold">      6 </span>     Anian Ruoss         <span style="font-weight: bold">      3 </span>
+ Peking University              <span style="font-weight: bold">      4 </span>     convolutional neural networks  <span style="font-weight: bold">      6 </span>     Avi Schwarzschild   <span style="font-weight: bold">      3 </span>
+ UC Berkeley                    <span style="font-weight: bold">      4 </span>     action prediction              <span style="font-weight: bold">      5 </span>     Tom Goldstein       <span style="font-weight: bold">      3 </span>
+ Harvard University             <span style="font-weight: bold">      4 </span>     reinforcement learning         <span style="font-weight: bold">      5 </span>     Furong Huang        <span style="font-weight: bold">      3 </span>
 </pre>
 <h4>Most cited</h4>
 <table style="border-collapse:collapse;width:100%">
@@ -52,31 +52,13 @@ If we missed your work, feel free to open an issue or submit a PR. See the [CONT
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/SVR.2019.00038">Chess Position Identification using Pieces Classification Based on Synthetic Images Generation and Deep Neural Network Fine-Tuning</a> (2019)<br><sub>Afonso de Sá Delgado Neto, Rafael Mendes Campello</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>17</b></td></tr>
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.3390/A15050152">Measuring the Non-Transitivity in Chess</a> (2022)<br><sub>Ricky Sanjaya, Jun Wang, Yaodong Yang</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>17</b></td></tr>
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1038/s41598-023-27735-9">Quantifying human performance in chess</a> (2023)<br><sub>Sandeep Chowdhary, Iacopo Iacopini, Federico Battiston</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>16</b></td></tr>
-  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.31234/osf.io/8j9zx">Time spent thinking in online chess reflects the value of computation</a> (2022)<br><sub>Evan Russek, Daniel Acosta-Kane, Bas van Opheusden, Marcelo Mattar, Tom Griffiths</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>16</b></td></tr>
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.3389/FRAI.2020.00024">Learning to Play the Chess Variant Crazyhouse Above World Champion Level With Deep Neural Networks and Human Data</a> (2020)<br><sub>Johannes Czech, Moritz Willig, Alena Beyer, Kristian Kersting, Johannes Fürnkranz</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>14</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.31234/osf.io/8j9zx">Time spent thinking in online chess reflects the value of computation</a> (2022)<br><sub>Evan Russek, Daniel Acosta-Kane, Bas van Opheusden, Marcelo Mattar, Tom Griffiths</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>14</b></td></tr>
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1073/pnas.2406675122">Bridging the human–AI knowledge gap through concept discovery and transfer in AlphaZero</a> (2025)<br><sub>Lisa Schut, Nenad Tomašev, Thomas McGrath, Demis Hassabis, Ulrich Paquet, Been Kim</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>13</b></td></tr>
-  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1145/3449160">The Complementary Nature of Perceived and Actual Time Spent Online in Measuring Digital Well-being</a> (2021)<br><sub>Lillio Mok, Ashton Anderson</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>11</b></td></tr>
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1038/s41598-023-31658-w">Quantifying the complexity and similarity of chess openings using online chess community data</a> (2023)<br><sub>Giordano De Marzo, Vito D. P. Servedio</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>10</b></td></tr>
+  <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1145/3449160">The Complementary Nature of Perceived and Actual Time Spent Online in Measuring Digital Well-being</a> (2021)<br><sub>Lillio Mok, Ashton Anderson</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>10</b></td></tr>
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/BigData62323.2024.10825991">Estimating the Puzzlingness of Chess Puzzles</a> (2024)<br><sub>Sebastian Björkqvist</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>9</b></td></tr>
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/ISRITI54043.2021.9702792">Cheat Detection on Online Chess Games using Convolutional and Dense Neural Network</a> (2021)<br><sub>Reyhan Patria, Sean Favian, Anggoro Caturdewa, Derwin Suhartono</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>9</b></td></tr>
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/BigData62323.2024.10826037">The bread emoji Team’s Submission to the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty Challenge</a> (2024)<br><sub>Tyler Woodruff, Oleg Filatov, Marco Cognetta</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>9</b></td></tr>
-</table>
-<h4>Most prolific authors</h4>
-<table style="border-collapse:collapse;width:100%">
-  <tr><td style="padding:4px 8px">Ashton Anderson</td><td align="right" style="padding:4px 12px 4px 8px"><b>8</b></td></tr>
-  <tr><td style="padding:4px 8px">Siddhartha Sen</td><td align="right" style="padding:4px 12px 4px 8px"><b>6</b></td></tr>
-  <tr><td style="padding:4px 8px">Tom Zahavy</td><td align="right" style="padding:4px 12px 4px 8px"><b>5</b></td></tr>
-  <tr><td style="padding:4px 8px">Johannes Czech</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
-  <tr><td style="padding:4px 8px">Kristian Kersting</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
-  <tr><td style="padding:4px 8px">Xidong Feng</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
-  <tr><td style="padding:4px 8px">Satinder Singh</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
-  <tr><td style="padding:4px 8px">Evan Russek</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
-  <tr><td style="padding:4px 8px">Tom Griffiths</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
-  <tr><td style="padding:4px 8px">Lisa Schut</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
-  <tr><td style="padding:4px 8px">Reid McIlroy-Young</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
-  <tr><td style="padding:4px 8px">Zhenwei Tang</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
-  <tr><td style="padding:4px 8px">Gita Sukthankar</td><td align="right" style="padding:4px 12px 4px 8px"><b>3</b></td></tr>
-  <tr><td style="padding:4px 8px">Anian Ruoss</td><td align="right" style="padding:4px 12px 4px 8px"><b>3</b></td></tr>
-  <tr><td style="padding:4px 8px">Avi Schwarzschild</td><td align="right" style="padding:4px 12px 4px 8px"><b>3</b></td></tr>
 </table>
 <!-- stats:end -->
