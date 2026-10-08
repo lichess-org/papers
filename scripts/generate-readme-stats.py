@@ -140,7 +140,7 @@ auth_items = [Text(f"{name} ({count})") for name, count in author_counter.most_c
 
 console.print(Columns([aff_table, kw_table], padding=(0, 4)))
 
-console.print(Panel(Columns(auth_items, equal=True), title="Most prolific authors", border_style="dim", box=box.ROUNDED, expand=False))
+console.print(Panel(Columns(auth_items), title="Most prolific authors", border_style="dim", box=box.ROUNDED, expand=False))
 
 citation_html = '<h4>Most cited</h4>\n<table style="border-collapse:collapse;width:100%">\n'
 for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=True)[:17]:
