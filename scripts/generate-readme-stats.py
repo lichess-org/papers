@@ -136,14 +136,11 @@ kw_table.add_column("Papers", justify="right", style="bold")
 for kw, count in kw_counter.most_common(17):
     kw_table.add_row(kw, str(count))
 
-auth_table = Table(title=None, box=box.SIMPLE_HEAVY, show_edge=False)
-auth_table.add_column("Author", no_wrap=True)
-auth_table.add_column("Papers", justify="right", style="bold")
-for name, count in author_counter.most_common(17):
-    auth_table.add_row(name, str(count))
+auth_items = [Text(f"{name} ({count})") for name, count in author_counter.most_common(17)]
 
-console.print(Columns([aff_table, auth_table], padding=(0, 4)))
-console.print(Columns([kw_table], padding=(0, 4)))
+console.print(Columns([aff_table, kw_table], padding=(0, 4)))
+console.print(Panel(Columns(auth_items, equal=True, expand=True), title="Most prolific authors", border_style="dim", box=box.ROUNDED))
+
 
 
 citation_html = '<h4>Most cited</h4>\n<table style="border-collapse:collapse;width:100%">\n'
