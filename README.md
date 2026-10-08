@@ -61,4 +61,22 @@ If we missed your work, feel free to open an issue or submit a PR. See the [CONT
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/ISRITI54043.2021.9702792">Cheat Detection on Online Chess Games using Convolutional and Dense Neural Network</a> (2021)<br><sub>Reyhan Patria, Sean Favian, Anggoro Caturdewa, Derwin Suhartono</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>9</b></td></tr>
   <tr><td style="padding:4px 8px"><a href="https://doi.org/10.1109/BigData62323.2024.10826037">The bread emoji Team’s Submission to the IEEE BigData 2024 Cup: Predicting Chess Puzzle Difficulty Challenge</a> (2024)<br><sub>Tyler Woodruff, Oleg Filatov, Marco Cognetta</sub></td><td align="right" style="padding:4px 12px 4px 8px"><b>9</b></td></tr>
 </table>
+<h4>Most prolific authors</h4>
+<table style="border-collapse:collapse;width:100%">
+  <tr><td style="padding:4px 8px">Ashton Anderson</td><td align="right" style="padding:4px 12px 4px 8px"><b>8</b></td></tr>
+  <tr><td style="padding:4px 8px">Siddhartha Sen</td><td align="right" style="padding:4px 12px 4px 8px"><b>6</b></td></tr>
+  <tr><td style="padding:4px 8px">Tom Zahavy</td><td align="right" style="padding:4px 12px 4px 8px"><b>5</b></td></tr>
+  <tr><td style="padding:4px 8px">Johannes Czech</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
+  <tr><td style="padding:4px 8px">Kristian Kersting</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
+  <tr><td style="padding:4px 8px">Xidong Feng</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
+  <tr><td style="padding:4px 8px">Satinder Singh</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
+  <tr><td style="padding:4px 8px">Evan Russek</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
+  <tr><td style="padding:4px 8px">Tom Griffiths</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
+  <tr><td style="padding:4px 8px">Lisa Schut</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
+  <tr><td style="padding:4px 8px">Reid McIlroy-Young</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
+  <tr><td style="padding:4px 8px">Zhenwei Tang</td><td align="right" style="padding:4px 12px 4px 8px"><b>4</b></td></tr>
+  <tr><td style="padding:4px 8px">Gita Sukthankar</td><td align="right" style="padding:4px 12px 4px 8px"><b>3</b></td></tr>
+  <tr><td style="padding:4px 8px">Anian Ruoss</td><td align="right" style="padding:4px 12px 4px 8px"><b>3</b></td></tr>
+  <tr><td style="padding:4px 8px">Avi Schwarzschild</td><td align="right" style="padding:4px 12px 4px 8px"><b>3</b></td></tr>
+</table>
 <!-- stats:end -->
