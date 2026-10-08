@@ -45,6 +45,13 @@ for e in entries:
         if a:
             authors.add(a)
 
+author_counter = Counter()
+for e in entries:
+    for a in re.split(r'\s+and\s+', e.get('author', '')):
+        a = a.strip()
+        if a:
+            author_counter[format_authors(a)] += 1
+            
 aff_counter = Counter()
 for e in entries:
     aff = e.get("affiliation", "")
@@ -129,7 +136,12 @@ kw_table.add_column("Papers", justify="right", style="bold")
 for kw, count in kw_counter.most_common(17):
     kw_table.add_row(kw, str(count))
 
+auth_items = [Text(f"{name} ({count})") for name, count in author_counter.most_common(16)]
+
 console.print(Columns([aff_table, kw_table], padding=(0, 4)))
+
+console.print()
+console.print(Panel(Columns(auth_items), title="Most prolific authors", border_style="dim", box=box.ROUNDED, expand=False, width=95))
 
 citation_html = '<h4>Most cited</h4>\n<table style="border-collapse:collapse;width:100%">\n'
 for doi, citations, name in sorted(citation_data, key=lambda x: x[1], reverse=True)[:17]:
