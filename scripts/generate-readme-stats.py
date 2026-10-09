@@ -136,7 +136,7 @@ kw_table.add_column("Papers", justify="right", style="bold")
 for kw, count in kw_counter.most_common(17):
     kw_table.add_row(kw, str(count))
 
-auth_items = [Text(f"{name} ({count})") for name, count in author_counter.most_common(16)]
+auth_items = [Text(f"{name} ({count})") for name, count in author_counter.most_common(25)]
 
 console.print(Columns([aff_table, kw_table], padding=(0, 4)))
 
