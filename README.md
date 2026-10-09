@@ -48,7 +48,6 @@ If we missed your work, feel free to open an issue or submit a PR. See the [CONT
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Gita Sukthankar (3)   Anian Ruoss (3)       Avi Schwarzschild (3)  Tom Goldstein (3)        <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Furong Huang (3)      Vivek Veeriah (3)     Shaobo Hou (3)         Nenad Tomašev (3)        <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Maksim Iavich (3)     Zura Kevanishvili (3) Ionatan Kuperwajs (3)  Szymon Miłosz (3)        <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
-<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Tom {Murphy VII} (3)                                                                        <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰─────────────────────────────────────────────────────────────────────────────────────────────╯</span>
 </pre>
 <h4>Most cited</h4>
