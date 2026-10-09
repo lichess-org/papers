@@ -42,10 +42,13 @@ If we missed your work, feel free to open an issue or submit a PR. See the [CONT
  Harvard University             <span style="font-weight: bold">      4 </span>     reinforcement learning         <span style="font-weight: bold">      5 </span>
 
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╭─────────────────────────────────── Most prolific authors ───────────────────────────────────╮</span>
-<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Ashton Anderson (8)   Siddhartha Sen (6) Tom Zahavy (5)         Johannes Czech (4)          <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
-<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Kristian Kersting (4) Xidong Feng (4)    Satinder Singh (4)     Evan Russek (4)             <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
-<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Tom Griffiths (4)     Lisa Schut (4)     Reid McIlroy-Young (4) Zhenwei Tang (4)            <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
-<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Gita Sukthankar (3)   Anian Ruoss (3)    Avi Schwarzschild (3)  Tom Goldstein (3)           <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Ashton Anderson (8)   Siddhartha Sen (6)    Tom Zahavy (5)         Johannes Czech (4)       <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Kristian Kersting (4) Xidong Feng (4)       Satinder Singh (4)     Evan Russek (4)          <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Tom Griffiths (4)     Lisa Schut (4)        Reid McIlroy-Young (4) Zhenwei Tang (4)         <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Gita Sukthankar (3)   Anian Ruoss (3)       Avi Schwarzschild (3)  Tom Goldstein (3)        <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Furong Huang (3)      Vivek Veeriah (3)     Shaobo Hou (3)         Nenad Tomašev (3)        <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Maksim Iavich (3)     Zura Kevanishvili (3) Ionatan Kuperwajs (3)  Szymon Miłosz (3)        <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
+<span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span> Tom {Murphy VII} (3)                                                                        <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">│</span>
 <span style="color: #7f7f7f; text-decoration-color: #7f7f7f">╰─────────────────────────────────────────────────────────────────────────────────────────────╯</span>
 </pre>
 <h4>Most cited</h4>
