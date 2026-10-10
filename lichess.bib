@@ -11,6 +11,20 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@inproceedings{
+kim2026representationaligned,
+title={Representation-Aligned Auxiliary Supervision for Language Model Adaptation},
+author={Kyuyoung Kim and Peiyao Sheng and S Ashwin Hebbar and Peiyang Xu and Yunfei Xie and Kevin Wang and Rui Xin and Chen Wei and Zhangyang Wang and Jinwoo Shin and Pramod Viswanath and Sewoong Oh},
+booktitle={NeurIPS 2026 Workshop on Linguistic Principles for Foundation Models},
+year={2026},
+url={https://openreview.net/forum?id=xyzBL9bWmZ},
+preprint = {https://arxiv.org/abs/2610.04098},
+affiliation =  {KAIST; Sentient Foundation; Princeton University; Rice University; UT Austin; University of Washington; University of Illinois Urbana-Champaign},
+tldr = {Effective language model adaptation via representation-aligned world modeling},
+abstract = {Language models exhibit strong reasoning capabilities, yet adapting them to structured domains remains challenging and can yield inconsistent outcomes. We identify representation compatibility, the alignment between a model's preferences and the representations used for training, as a key factor in effective adaptation. We study this in chess, which provides a controlled testbed with precise semantics, computable optimal actions, and multiple state representations, including a symbolic encoding (FEN) and a spatial format (ASCII). We find that models exhibit strong preferences that affect both learning and generalization. Building on this observation, we introduce representation-aligned auxiliary supervision, which aligns environment-derived tasks with compatible representations to improve adaptation. Across model scales and representations, auxiliary supervision consistently improves optimal-move prediction relative to target-only training under identical target data, with larger gains in cross-representation transfer. Auxiliary tasks that expose environment dynamics provide larger and more consistent gains than surface-level or static supervision, while remaining competitive with substantially increasing the amount of target-task data. Moreover, ASCII-trained models transfer substantially better to FEN than FEN-trained models do to ASCII, even surpassing the FEN target-only baseline on FEN evaluation. The gains also extend beyond optimal-move prediction to open-ended, factually grounded commentary generation. Overall, our results show that effective adaptation can be achieved by providing auxiliary knowledge in representations aligned with the model.},
+keywords = {language models, reasoning models, auxiliary supervision, domain adaptation, representation design},
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
