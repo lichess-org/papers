@@ -11,6 +11,21 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
+@misc{hu2026s2pdserialtoparalleldiffusionphysically,
+      title={S2PD: Serial-to-Parallel Diffusion for Physically and Logically Consistent Video Generation}, 
+      author={Jeffrey Hu and Daniel Olmeda Reino and Ayush Tewari},
+      year={2026},
+      eprint={2610.06847},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2610.06847},
+    abstract = {Bidirectional video diffusion models denoise entire videos in parallel, yet when trained on effectively unlimited in-distribution data from procedural generators, continue to violate physical laws and simple symbolic rules. We introduce Serial-to-Parallel Diffusion (S2PD), which performs autoregressive diffusion at high noise before switching to parallel diffusion at low noise. The autoregressive phase provides the serial computation needed to coordinate interdependent events and produce valid state transitions while the parallel phase jointly refines the entire video and reduces sampling time relative to fully serial generation. We implement S2PD with two architectures: a pixel-space diffusion transformer trained from scratch and a pretrained video model adapted through LoRA fine-tuning with causal attention. Across games, physical simulations, and real video, S2PD follows rules more reliably than matched bidirectional baselines and generates videos with greater temporal stability and sampling efficiency than other serial methods.},
+website = {https://jefequien.github.io/S2PD/},
+  huggingface = {https://huggingface.co/jefequien/S2PD},
+affiliation = {University of Cambridge; Toyota Motor Europe},
+code = {https://github.com/jefequien/S2PD},
+}
+
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
