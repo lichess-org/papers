@@ -3136,6 +3136,18 @@
   primaryclass  = {cs.LG},
 }
 
+@misc{sadoun:2026:from-probabilities-to-decisions-search-multi-teacher-distillation-with-jev,
+  title         = {From Probabilities to Decisions: Search and Multi-Teacher Distillation with Jev},
+  author        = {Mohamad Yazan Sadoun and Sarah Sharif and Yaser Mike Banad},
+  year          = {2026},
+  eprint        = {2610.09188},
+  url           = {https://arxiv.org/abs/2610.09188},
+  abstract      = {Probability-only models, which TypeSafe calls System One models, return calibrated probabilities for fixed choices in milliseconds and generate no text. We study one such model, Jev, through two tasks that require decisions under tight constraints. In bullet chess, a bot that places Jev's judgment inside Stockfish search alongside an opening book and endgame tablebases climbs above a 2200 Lichess bullet rating against other bots. Live model calls are too slow for search, so we distill pairwise judgments into a compact evaluator that runs at every position. We then ask how best to spend a fixed labeling budget when an LLM, Qwen3-32B, is available as a second teacher. In chess, averaging both judges' labels beats spending the whole budget on Qwen alone by 9.6 Elo (95% interval 4.3 to 14.9), and the gain replicates on fresh openings; a second answer from the same judge is no substitute, and Jev is the strongest partner for Qwen among the models tested. In passage reranking, Jev's labels alone train a reranker that scores as high as Qwen's, from 21 minutes of API calls instead of 5.1 GPU-hours, and adding Qwen gains at most a few thousandths in ranking quality. Search supplies the lookahead, distillation makes the judgment cheap enough to use at every position, and an LLM partner pays off in chess.},
+  affiliation   = {University of Oklahoma},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.AI},
+}
+
 @article{saha:2024:valued-vision-logical-understanding-evaluation-dataset,
   title         = {{VALUED} - Vision and Logical Understanding Evaluation Dataset},
   author        = {Soumadeep Saha and Saptarshi Saha and Utpal Garain},
