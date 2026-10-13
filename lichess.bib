@@ -11,17 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@inproceedings{dasaka:2026:shadow-of-past-amortized-inference-belief-revision-using-chess-as-model-system,
-  title         = {The Shadow of the Past: Amortized Inference and Belief Revision using Chess as a Model System},
-  author        = {Dasaka, Amarnath and Bapi, Raju Surampudi},
-  year          = {2026},
-  booktitle     = {Proceedings of the Annual Meeting of the Cognitive Science Society},
-volume = {48},
-  abstract      = {How do humans allocate scarce cognitive resources across a stream of related decisions? Russek et al. (2025) predict reaction time on each chess move from the within-move Benefit of Computation, treating moves as if they were drawn independently. We ask whether those costs also depend on computation carried forward from the previous move. In chess, a player who has calculated a likely opponent reply can often reuse that work; a surprising reply should force revision. On 135,608 live-game tactical sequences (extracted from the Lichess puzzle database and re-timed against the original 2019 Lichess game database) played by 74,609 unique players, the within-sequence log-RT spike is +0.309 (Cohen's d = 0.235; paired t = 86, N = 135,608; BF10 > 10^100). Hierarchical regression climbs from R^2 = 0.011 (Russek-static) to 0.282; the amortization interaction is large when predictability is operationalized by the human-style Maia-2 (β = -0.054, p < 10^-27) and not significant under Stockfish best-move predictability. A three-parameter Bayesian Sampling Model with Cache recovers cache strength s = 0.085 [0.071, 0.099], with 100% of bootstrap draws positive. The H1 spike is roughly twice as large in solved sequences as in failed ones (t = 26.2, p < 10^-150); this pattern suggests successful tactical recognition followed by decisive recalculation rather than passive surprise. The findings replicate on a 2024 Lichess cohort and on FIDE World Rapid + Blitz 2024 over-the-board play.},
-affiliation = {IIT Hyderabad},
-  url           = {https://escholarship.org/uc/item/7h38004r},
-}
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -784,6 +773,17 @@ affiliation = {IIT Hyderabad},
   abstract      = {Machine learning (ML) systems across many application areas are increasingly demonstrating performance that is beyond that of humans. In response to the proliferation of such models, the field of Explainable AI (XAI) has sought to develop techniques that enhance the transparency and interpretability of machine learning methods. In this work, we consider a question not previously explored within the XAI and ML communities: Given a computational system whose performance exceeds that of its human user, can explainable AI capabilities be leveraged to improve the performance of the human? We study this question in the context of the game of Chess, for which computational game engines that surpass the performance of the average player are widely available. We introduce the Rationale-Generating Algorithm, an automated technique for generating rationales for utility-based computational methods, which we evaluate with a multi-day user study against two baselines. The results show that our approach produces rationales that lead to statistically significant improvement in human task performance, demonstrating that rationales automatically generated from an AI's internal task model can be used not only to explain what the system is doing, but also to instruct the user and ultimately improve their task performance.},
   keywords      = {explainable AI, machine learning},
   affiliation   = {Georgia Institute of Technology},
+}
+
+@inproceedings{dasaka:2026:shadow-of-past-amortized-inference-belief-revision-using-chess-as-model-system,
+  title         = {The Shadow of the Past: Amortized Inference and Belief Revision using Chess as a Model System},
+  author        = {Dasaka, Amarnath and Bapi, Raju Surampudi},
+  year          = {2026},
+  booktitle     = {Proceedings of the Annual Meeting of the Cognitive Science Society},
+  volume        = {48},
+  url           = {https://escholarship.org/uc/item/7h38004r},
+  abstract      = {How do humans allocate scarce cognitive resources across a stream of related decisions? Russek et al. (2025) predict reaction time on each chess move from the within-move Benefit of Computation, treating moves as if they were drawn independently. We ask whether those costs also depend on computation carried forward from the previous move. In chess, a player who has calculated a likely opponent reply can often reuse that work; a surprising reply should force revision. On 135,608 live-game tactical sequences (extracted from the Lichess puzzle database and re-timed against the original 2019 Lichess game database) played by 74,609 unique players, the within-sequence log-RT spike is +0.309 (Cohen's d = 0.235; paired t = 86, N = 135,608; BF10 > 10^100). Hierarchical regression climbs from R^2 = 0.011 (Russek-static) to 0.282; the amortization interaction is large when predictability is operationalized by the human-style Maia-2 (β = -0.054, p < 10^-27) and not significant under Stockfish best-move predictability. A three-parameter Bayesian Sampling Model with Cache recovers cache strength s = 0.085 [0.071, 0.099], with 100% of bootstrap draws positive. The H1 spike is roughly twice as large in solved sequences as in failed ones (t = 26.2, p < 10^-150); this pattern suggests successful tactical recognition followed by decisive recalculation rather than passive surprise. The findings replicate on a 2024 Lichess cohort and on FIDE World Rapid + Blitz 2024 over-the-board play.},
+  affiliation   = {IIT Hyderabad},
 }
 
 @inproceedings{davis:2024:decoding-chess-mastery-mechanistic-analysis-of-chess-language-transformer-model,
