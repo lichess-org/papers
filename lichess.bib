@@ -4271,6 +4271,10 @@
   eprint        = {2610.14158},
   url           = {https://arxiv.org/abs/2610.14158},
   website       = {https://videoarena-bench.github.io/},
+affiliation = {miHoYo Honkai AI R&D Team; Tsinghua University; University of Chinese Academy of Sciences; The University of Hong Kong; National University of Singapore},
+abstract = {Understanding and tracking a dynamic world are fundamental to visual intelligence. Existing video benchmarks provide limited insight into whether models can maintain a coherent understanding of evolving world state. Building such a benchmark from real-world videos is challenging because the underlying world state is partially observable, making annotations hard to obtain. To close this gap, we introduce Video-Arena, a benchmark that turns competitive games into scalable, verifiable tests of how well models understand evolving world states from videos. Specifically, inspired by how humans understand dynamic events, we evaluate spatiotemporal world state understanding and tracking through three task categories: perceiving critical events, interpreting state updates, and tracking the resulting states. Our pipeline can generate videos and aligned reference labels from game records at scale. To keep evaluation affordable and reproducible, we curate a golden set of 180 tasks across 9 games and run evaluations under two protocols: native visual understanding and tool-assisted agentic analysis. The best-performing systems achieve F1 scores of and under the two protocols, respectively. The result highlights that native models struggle to perceive events reliably, while tool-assisted systems improve event recovery but still struggle to interpret state updates and track the resulting states consistently over time.},
+dataset = {https://huggingface.co/datasets/THUSI-Lab/Video-Arena},
+code = {https://github.com/THUSI-Lab/VideoArena},
   archiveprefix = {arXiv},
   primaryclass  = {cs.CV},
 }
