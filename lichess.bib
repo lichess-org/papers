@@ -1,27 +1,3 @@
-@article{Guid2026,
-author={Guid, Matej
-and Bizjak, Miha
-and Guid, Taja
-and Krivec, Jana},
-title={Reverse-engineering expert similarity judgments: evidence from chess tactics},
-journal={Cognitive Research: Principles and Implications},
-year={2026},
-month={Oct},
-day={21},
-keywords = {Similarity judgment;
-Expertise;
-Chess tactics;
-Feature-contrast model;
-Knowledge elicitation;
-Interpretable machine learning;
-Information retrieval},
-abstract={Experts in complex domains make similarity judgments they can demonstrate but cannot articulate. Chess tactics offer a natural laboratory for studying such judgments because they separate what a problem looks like (the board position) from what it requires (the solution). However, no study has used supervised learning on expert-labeled data to decompose which features drive an expert's similarity criterion or how they are organized. We collected 2866 binary similarity annotations from a competitive chess player on tactical puzzle pairs and trained interpretable classifiers to recover the implicit decision structure. An ablation study reveals a near-total dissociation: dynamic features alone (solution properties) achieve an AUC of 0.901, versus 0.554 for static features---board appearance plays a negligible role. The expert's implicit decision is well described by a dominant binary criterion with graded refinement: agreement on whether both solutions end in checkmate is near-necessary for a ``similar'' judgment, after which graded comparison of the solution sequences decides the rest. Inter-rater validation with two additional titled players confirms these criteria are shared, not idiosyncratic. Difference features alone nearly match the full model, supporting a feature-contrast representation of similarity (Tversky, 1977). At the methodological level, the combination of information retrieval, expert annotation, supervised classification, and qualitative re-evaluation constitutes a reusable pipeline for reverse-engineering implicit expert criteria. The qualitative step proved especially informative: the expert reversed 70{\%} of disputed labels, every reversal converging with the model. For chess training, similarity-search systems should prioritize solution-level features over board appearance.},
-issn={2365-7464},
-doi={10.1186/s41235-026-00755-5},
-affiliation = {University of Ljubljana; School of Advanced Social Studies (SASS)},
-url={https://link.springer.com/article/10.1186/s41235-026-00755-5}
-}
-
 @inproceedings{adnan:2024:unleashing-artificial-cognition-integrating-multiple-ai-systems,
   title         = {Unleashing Artificial Cognition: Integrating Multiple {AI} Systems},
   author        = {Muntasir Adnan and Buddhi Gamage and Zhiwei Xu and Damith Chandana Herath and Carlos C. N. Kuhn},
@@ -1331,6 +1307,21 @@ url={https://link.springer.com/article/10.1186/s41235-026-00755-5}
   institution   = {Technical University of Crete},
   supervisor    = {Spyropoulos, Thrasyvoulos},
   abstract      = {Chess artificial intelligence has advanced significantly in recent years, with new approaches continuously surpassing previous ones. While heuristicbased engines dominated the field for many years, reinforcement learning (RL) methods, such as AlphaZero, have recently emerged as powerful and reliable alternatives. Against this background, this thesis presents an AlphaZero-inspired reinforcement learning agent that learns to play chess primarily through self-play, relying on minimal human-generated data. Due to the complexity of chess, RL-based approaches typically require substantial computational resources. In this work, we first establish a baseline implementation of a Monte Carlo Tree Search-based self-play framework and demonstrate that, even with limited computational power, it is possible to reproduce the fundamental self-improvement principle underlying AlphaZero. The second part of this work focuses on a series of optimizations at different levels of the system. These optimizations pursue two main objectives: accelerating the generation of data and improving its quality so that less data is required overall. By improving computational efficiency and training effectiveness, the proposed modifications reduce the overall computational cost of the training process. Experimental results show that these improvements allow the system to run up to 20 times faster on the same computational hardware configuration used in this study. Finally, we investigate methods for biasing the agent toward a more aggressive playing style. By combining heuristic guidance with reward shaping techniques, the training process encourages attacking and dynamic gameplay. The experimental results indicate that the agent progressively adopts a more aggressive strategy during training, demonstrating that stylistic behavior in RL-based chess agents can be effectively influenced through targeted modifications to the learning framework.},
+}
+
+@article{guid:2026:reverse-engineering-expert-similarity-judgments-evidence-from-chess-tactics,
+  title         = {Reverse-engineering expert similarity judgments: evidence from chess tactics},
+  author        = {Guid, Matej and Bizjak, Miha and Guid, Taja and Krivec, Jana},
+  year          = {2026},
+  month         = {Oct},
+  day           = {21},
+  journal       = {Cognitive Research: Principles and Implications},
+  doi           = {10.1186/s41235-026-00755-5},
+  issn          = {2365-7464},
+  url           = {https://link.springer.com/article/10.1186/s41235-026-00755-5},
+  abstract      = {Experts in complex domains make similarity judgments they can demonstrate but cannot articulate. Chess tactics offer a natural laboratory for studying such judgments because they separate what a problem looks like (the board position) from what it requires (the solution). However, no study has used supervised learning on expert-labeled data to decompose which features drive an expert's similarity criterion or how they are organized. We collected 2866 binary similarity annotations from a competitive chess player on tactical puzzle pairs and trained interpretable classifiers to recover the implicit decision structure. An ablation study reveals a near-total dissociation: dynamic features alone (solution properties) achieve an AUC of 0.901, versus 0.554 for static features---board appearance plays a negligible role. The expert's implicit decision is well described by a dominant binary criterion with graded refinement: agreement on whether both solutions end in checkmate is near-necessary for a ``similar'' judgment, after which graded comparison of the solution sequences decides the rest. Inter-rater validation with two additional titled players confirms these criteria are shared, not idiosyncratic. Difference features alone nearly match the full model, supporting a feature-contrast representation of similarity (Tversky, 1977). At the methodological level, the combination of information retrieval, expert annotation, supervised classification, and qualitative re-evaluation constitutes a reusable pipeline for reverse-engineering implicit expert criteria. The qualitative step proved especially informative: the expert reversed 70{\%} of disputed labels, every reversal converging with the model. For chess training, similarity-search systems should prioritize solution-level features over board appearance.},
+  keywords      = {Similarity judgment; Expertise; Chess tactics; Feature-contrast model; Knowledge elicitation; Interpretable machine learning; Information retrieval},
+  affiliation   = {University of Ljubljana; School of Advanced Social Studies (SASS)},
 }
 
 @inproceedings{guntz:2018:role-of-emotion-in-problem-solving-first-results-from-observing-chess,
