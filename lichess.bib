@@ -11,19 +11,6 @@
   huggingface   = {https://huggingface.co/OpenSI/cognitive_AI_chess},
 }
 
-@misc{jiao2026playingdumbchesstransformer,
-      title={Playing Dumb: How a Chess Transformer Simulates Users Across Skill Levels}, 
-      author={Difan Jiao and George Eilender and Zhenwei Tang and Ashton Anderson},
-      year={2026},
-      eprint={2611.03439},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-abstract = {Generative models increasingly simulate users at different skill levels in education and AI evaluation. Yet it remains unclear whether lower-skill behavior reflects less internal knowledge or a different use of retained knowledge. This distinction is difficult to study in natural language, where proficiency and relevant knowledge are hard to measure. In this work, we study Maia-2, a chess transformer that predicts human moves conditioned on player skill, using quantitative skill ratings and deterministically labeled chess concepts. We hold board positions and model weights fixed and analyze positions where skill conditioning changes the prediction from a blunder to the best move. First, we measure encoded knowledge by training probes to predict the presence of 172 chess concepts from Maia-2's internal states. Probe accuracy remains nearly constant across skill conditions, and probes trained at one level transfer accurately to the others. To test whether stronger decisions can be recovered from this retained knowledge, we fine-tune only Maia-2's final output layer, raising best-move accuracy in the lowest skill band from 14.4% to 82.8%. Training this layer only on highest-skill representations retains most of the improvement at lower levels, showing that recovery does not require direct training on lower-skill states. Steering concept-relevant features learned by a sparse autoencoder also improves lower-skill decisions while leaving probe-measured concept encoding practically unchanged. These results support an account in which skill conditioning changes how retained concept knowledge influences move selection, showing that weaker behavior can understate the knowledge available within a model.},
-affiliation = { University of Toronto},
-code = {https://github.com/CSSLab/maia2-skill-adaptation},
-      url={https://arxiv.org/abs/2611.03439}, 
-}
-
 @thesis{adolfsson:2025:self-trained-engine-for-chess-variant,
   title         = {A self-trained engine for a chess variant},
   author        = {Adolfsson, Hannes and Lewis, David and Rahmn, Anton and Rajamäe, Sigge and Rungardt, Edvin and Tafani, Marco},
@@ -1632,6 +1619,19 @@ code = {https://github.com/CSSLab/maia2-skill-adaptation},
   note          = {Stanford CS224N Custom Project, Winter 2023 (https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1234/project.html)},
   abstract      = {Although pretrained large language models (LLMs) can generate convincing natural language about games like chess, they lack positional and contextual knowledge and as such are poor game-playing agents. In this project, I utilize language pretaining; instruction fine-tuning, an additional training regimen with chess-specific tasks presented in natural language; and chain-of-thought prompting, a natural language description of problem reasoning prepended to the answer of a problem, to improve the performance of LLMs at chess move generation (validity/legality and quality of moves). I show that fine-tuned GPT-2-XL, a 1.5B parameter LLM, performs favorably well at move generation compared to ChatGPT with few-shot learning; I also validate the additional benefits of chain-of-thought prompting compared to plain prompts in ChatGPT while highlighting tradeoffs between the quality of natural language and the quality of chess when more verbose prompts are used in the smaller GPT-2-XL.},
   affiliation   = {Stanford University},
+}
+
+@misc{jiao:2026:playing-dumb-how-chess-transformer-simulates-users-across-skill-levels,
+  title         = {Playing Dumb: How a Chess Transformer Simulates Users Across Skill Levels},
+  author        = {Difan Jiao and George Eilender and Zhenwei Tang and Ashton Anderson},
+  year          = {2026},
+  eprint        = {2611.03439},
+  url           = {https://arxiv.org/abs/2611.03439},
+  abstract      = {Generative models increasingly simulate users at different skill levels in education and AI evaluation. Yet it remains unclear whether lower-skill behavior reflects less internal knowledge or a different use of retained knowledge. This distinction is difficult to study in natural language, where proficiency and relevant knowledge are hard to measure. In this work, we study Maia-2, a chess transformer that predicts human moves conditioned on player skill, using quantitative skill ratings and deterministically labeled chess concepts. We hold board positions and model weights fixed and analyze positions where skill conditioning changes the prediction from a blunder to the best move. First, we measure encoded knowledge by training probes to predict the presence of 172 chess concepts from Maia-2's internal states. Probe accuracy remains nearly constant across skill conditions, and probes trained at one level transfer accurately to the others. To test whether stronger decisions can be recovered from this retained knowledge, we fine-tune only Maia-2's final output layer, raising best-move accuracy in the lowest skill band from 14.4% to 82.8%. Training this layer only on highest-skill representations retains most of the improvement at lower levels, showing that recovery does not require direct training on lower-skill states. Steering concept-relevant features learned by a sparse autoencoder also improves lower-skill decisions while leaving probe-measured concept encoding practically unchanged. These results support an account in which skill conditioning changes how retained concept knowledge influences move selection, showing that weaker behavior can understate the knowledge available within a model.},
+  affiliation   = {University of Toronto},
+  code          = {https://github.com/CSSLab/maia2-skill-adaptation},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.AI},
 }
 
 @misc{johnson:2026:chessmimic-per-rating-transformer-models-for-human-move-clock-outcome-prediction-in-online-blitz-chess,
