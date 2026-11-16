@@ -22,6 +22,18 @@
   affiliation   = {Chalmers University of Technology},
 }
 
+@misc{barthelemy2026slowstructuresfastdegrees,
+      title={Slow structures, fast degrees of freedom, and the morphology of chess openings}, 
+      author={Marc Barthelemy and Manlio De Domenico},
+      year={2026},
+      eprint={2611.09710},
+      archivePrefix={arXiv},
+      primaryClass={physics.soc-ph},
+abstract = {Chess openings naturally separate into slow and fast degrees of freedom: pawns evolve through irreversible moves, whereas pieces can be rapidly reorganized within the resulting structure. We exploit this separation to construct a quantitative morphology of opening space. From a catalogue of 3810 named variations, 1749 reach a common depth of N=10 plies, corresponding to 619 distinct positions and only 435 joint pawn structures. We characterize these positions through observables measuring pawn commitment and spatial organization, blockade and tension, and piece activity and centralization. Their partial independence reveals a multidimensional opening space and in order to explore its structural organization, we construct a network whose nodes are distinct White pawn structures, connected when a single pawn move or capture transforms one into another. Remarkably, 139 of the 149 observed structures belong to a single connected component containing 98% of all positions. This network exhibits a statistically significant modular organization, with eight communities whose representative structures correspond to familiar pawn formations. Rather than forming isolated categories, these formations emerge as distinct regions of a connected structural landscape. Our approach thus complements the traditional opening taxonomy by revealing similarities between differently named openings and providing a quantitative basis for comparing the positions they produce.},
+affiliation = {Université Paris-Saclay; CEA; CNRS; Institut de Physique Théorique; Centre d'Analyse et de Mathématique Sociales; EHESS; Complexity Science Hub Vienna; University of Padua; Istituto Nazionale di Fisica Nucleare},      
+url={https://arxiv.org/abs/2611.09710}, 
+}
+
 @article{adorjan:2025:statistical-analysis-of-hungarian-board-game-sales,
   title         = {Statistical Analysis of Hungarian Board Game Sales},
   author        = {Adorján, Balázs and Bednárik, Éva},
@@ -3085,7 +3097,7 @@
   eprint        = {2603.08506},
   url           = {https://arxiv.org/abs/2603.08506},
   abstract      = {In high stakes environments, agents relying purely on imitation learning or reinforcement learning often struggle to avoid safety-critical errors during exploration. Existing reinforcement learning approaches for environments such as chess require hundreds of thousands of episodes and substantial computational resources to converge. Imitation learning, on the other hand, is more sample efficient but is brittle under distributional shift and lacks mechanisms for proactive risk avoidance. In this work, we propose Oracle-Guided Soft Shielding (OGSS), a simple yet effective framework for safer decision-making, enabling safe exploration by learning a probabilistic safety model from oracle feedback in an imitation learning setting. Focusing on the domain of chess, we train a model to predict strong moves based on past games, and separately learn a blunder prediction model from Stockfish evaluations to estimate the tactical risk of each move. During inference, the agent first generates a set of candidate moves and then uses the blunder model to determine high-risk options, and uses a utility function combining the predicted move likelihood from the policy model and the blunder probability to select actions that strike a balance between performance and safety. This enables the agent to explore and play competitively while significantly reducing the chance of tactical mistakes. Across hundreds of games against a strong chess engine, we compare our approach with other methods in the literature, such as action pruning, SafeDAgger, and uncertainty-based sampling. Our results demonstrate that OGSS variants maintain a lower blunder rate even as the agent's exploration ratio is increased by several folds, highlighting its ability to support broader exploration without compromising tactical soundness.},
-  affiliation   = {Université Paris-Saclay; Laboratoire d'Intégration de Systèmes et des Technologies (CEA-List; Chips JU; Laboratoire National de Métrologie et d'Essais},
+  affiliation   = {Université Paris-Saclay; Laboratoire d'Intégration de Systèmes et des Technologies (CEA-List); Chips JU; Laboratoire National de Métrologie et d'Essais},
   todo          = {Update with camera-ready once published: Accepted for publication at the 24th International Conference on Machine Learning and Applications (ICMLA), 2025},
   archiveprefix = {arXiv},
   primaryclass  = {cs.LG},
