@@ -22,26 +22,6 @@
   affiliation   = {Chalmers University of Technology},
 }
 
-@article{Fernández_O’Connor_Parker_2026, title={Cross-Game Position-Value Transfer in Chess and Shogi with Aligned Per-Game Encoders}, volume={22}, url={https://ojs.aaai.org/index.php/AIIDE/article/view/43583}, DOI={10.1609/aiide.v22i1.43583}, abstractNote={We study whether learned position values transfer between
-chess and shogi when both games are labeled on a common
-engine-value scale. A single convolutional trunk trained on
-one game does not transfer, and a matched shared trunk trained
-jointly transfers from chess to shogi but is unstable from shogi
-to chess; per-game encoders with a shared value head and
-CORAL-style alignment transfer stably in both directions,
-reaching 0.033 ± 0.008 from chess to shogi and 0.071 ± 0.011
-from shogi to chess. Hand-engineered game-invariant ratio
-features also transfer, with MSE 0.257 from chess to shogi
-and 0.170 from shogi to chess, although ablations show that
-most of this signal comes from material fraction. The learned
-aligned representation improves over the handcrafted baseline
-in both directions and over the matched shared trunk most
-clearly in the unstable shogi-to-chess direction. These results
-indicate that cross-game value structure can be recovered from
-raw boards when game-specific encoding is separated from the
-shared value representation and the latent spaces are explicitly
-aligned.}, number={1}, journal={Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment}, author={Fernández, Melanie and O’Connor, Jim and Parker, Gary B.}, year={2026}, month={Nov.}, pages={250–258} }
-
 @article{adorjan:2025:statistical-analysis-of-hungarian-board-game-sales,
   title         = {Statistical Analysis of Hungarian Board Game Sales},
   author        = {Adorján, Balázs and Bednárik, Éva},
@@ -1210,6 +1190,20 @@ aligned.}, number={1}, journal={Proceedings of the AAAI Conference on Artificial
   affiliation   = {Google DeepMind; University of Oxford},
   archiveprefix = {arXiv},
   primaryclass  = {cs.AI},
+}
+
+@article{fernandez:2026:cross-game-position-value-transfer-in-chess-shogi-with-aligned-per-game-encoders,
+  title         = {Cross-Game Position-Value Transfer in Chess and Shogi with Aligned Per-Game Encoders},
+  author        = {Fernández, Melanie and O’Connor, Jim and Parker, Gary B.},
+  year          = {2026},
+  month         = {Nov.},
+  journal       = {Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment},
+  volume        = {22},
+  number        = {1},
+  pages         = {250–258},
+  doi           = {10.1609/aiide.v22i1.43583},
+  url           = {https://ojs.aaai.org/index.php/AIIDE/article/view/43583},
+  abstractnote  = {We study whether learned position values transfer between chess and shogi when both games are labeled on a common engine-value scale. A single convolutional trunk trained on one game does not transfer, and a matched shared trunk trained jointly transfers from chess to shogi but is unstable from shogi to chess; per-game encoders with a shared value head and CORAL-style alignment transfer stably in both directions, reaching 0.033 ± 0.008 from chess to shogi and 0.071 ± 0.011 from shogi to chess. Hand-engineered game-invariant ratio features also transfer, with MSE 0.257 from chess to shogi and 0.170 from shogi to chess, although ablations show that most of this signal comes from material fraction. The learned aligned representation improves over the handcrafted baseline in both directions and over the matched shared trunk most clearly in the unstable shogi-to-chess direction. These results indicate that cross-game value structure can be recovered from raw boards when game-specific encoding is separated from the shared value representation and the latent spaces are explicitly aligned.},
 }
 
 @misc{finzi:2026:from-entropy-to-epiplexity-rethinking-information-for-computationally-bounded-intelligence,
