@@ -22,6 +22,21 @@
   affiliation   = {Chalmers University of Technology},
 }
 
+@misc{mohsenvand2026attentiongoodwitnesseshigherorder,
+      title={Attention Is Only as Good as Its Witnesses: When Higher-Order Layers Help, and When They Do Not}, 
+      author={Mostafa 'Neo' Mohsenvand},
+      year={2026},
+      eprint={2611.11937},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+abstract = {Transformers stop learning graph search as graphs grow, and learn the card game SET only after many distinct questions, although attention can represent both. We read these failures, and the uneven record of higher-order attention, from what a layer sums over: each layer we study computes the partition function of a family of witnesses and reads it at a temperature. Two laws follow. The depth law is a known result of logic, which we state for these layers: L layers over two-step walks reach exactly 2^L - 1 steps, just as a logical statement with L nested clauses of the form "there is a vertex such that" sees exactly that far. We build a construction that reaches this far, checked in Lean, and, when vertices carry no names, no such network reaches further. The size law is the cost of reading at a temperature, which logic does not have: existence is read correctly at every size, in the worst case, if and only if inverse temperature times margin is at least the logarithm of the number of candidates. Layers built on these laws, and on two principles that we test, learn where Transformers fail. One propagator layer trained on 49-vertex graphs answers every question at every search depth on 250-vertex graphs. Given the modulus 3, exponential Newton computes the softmax of 2-simplicial attention over pairs exactly in 3^d n operations for d clocks; with six clocks it learns SET from as few deals as 2-simplicial attention and transfers from 8- to 20-card tables. On CLRS-30 without hints, a 186,000-parameter block of OR-join and power-mean channels matches (within half a point) or beats a model of at least 73 million parameters on 9 of 12 graph tasks of the official test set, and on 8 of 12 with freshly drawn test graphs. The same account explains where pair layers did not help and where parallel layers must loop.},
+website = {https://neovand.github.io/witnesses/},
+video = {https://www.youtube.com/watch?v=3ITb16_glcg},
+code = {https://github.com/NeoVand/witnesses},
+affiliation = {MIT Media Lab},
+      url={https://arxiv.org/abs/2611.11937}, 
+}
+
 @article{adorjan:2025:statistical-analysis-of-hungarian-board-game-sales,
   title         = {Statistical Analysis of Hungarian Board Game Sales},
   author        = {Adorján, Balázs and Bednárik, Éva},
