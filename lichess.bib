@@ -4026,6 +4026,19 @@
   affiliation   = {Tilburg University},
 }
 
+@misc{trippen:2026:zugwise-domain-aware-game-reconstruction-for-digitizing-handwritten-chess-scoresheets,
+  title         = {Zugwise: Domain-Aware Game Reconstruction for Digitizing Handwritten Chess Scoresheets},
+  author        = {Gerhard Trippen},
+  year          = {2026},
+  eprint        = {2611.14544},
+  url           = {https://arxiv.org/abs/2611.14544},
+  abstract      = {Digitizing handwritten chess scoresheets has been studied as a handwriting-recognition problem: read the move in each box and check that it is legal. This framing misses the errors that matter most. A misread that yields an illegal move is loud. One that yields a legal-but-wrong move is silent, because a legality-only pipeline accepts it and reads every later move against a wrong position. We therefore treat the task as game reconstruction and present Zugwise, which repurposes computer-chess machinery (quiescence search, static exchange evaluation, pin detection) to ask not "what should be played?" but "could a human plausibly have written this?" An absurdity detector makes silent errors loud at or near where they occur, and a backward search traces late symptoms to their cause. Candidate ranking excludes chess-quality signals. A Needleman-Wunsch merge adds the second player's sheet as evidence, and review stops send every disagreement between the sheets' legal readings to a human. In oracle replay of two tournament sections, a release adding them cuts silent errors from 16 to 1 and from 50 to 13. Two learned signals, CTC re-scoring against the recognizer's raw output and a Maia-style human-move prior, raise the correct fix's top-rank rate from 58.8% to 78.0% of the replacement decisions where it is a candidate, and hold without refitting on a later section. On the first section, the human-verified output matches an independent expert transcription move for move on 34 of 45 games, and adjudication against the sheets found errors in both records, on different plies. We do not establish that either workflow is faster or more accurate. The system runs entirely in the browser and is free, private, and offline-capable; alongside it we offer a three-way adjudication protocol for a domain where no single record is ground truth.},
+  affiliation   = {University of Toronto; Rotman School of Management},
+  code          = {https://github.com/GerhardTrippen/Zugwise},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.AI},
+}
+
 @book{urcan:2025:east-meets-east-inside-2024-world-chess-championship-in-singapore,
   title         = {East Meets East: Inside The 2024 World Chess Championship In Singapore},
   author        = {Urcan, Olimpiu G},
