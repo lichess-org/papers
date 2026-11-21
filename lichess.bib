@@ -22,19 +22,6 @@
   affiliation   = {Chalmers University of Technology},
 }
 
-@ARTICLE{11803045,
-  author={Liu, David Y.},
-  journal={IEEE Transactions on Games}, 
-  title={Does Tilt Help Predict Move-Level Blunders? Session History Versus the Current Position in Chess}, 
-  year={2026},
-  abstract = {Players, coaches, and platforms act on the belief that tilt, the deterioration in play attributed to a run of losses, foreshadows further mistakes. We capture that state through session history (recent results, streaks, and session context such as length and pacing) and ask whether it improves move-level blunder prediction beyond what the current board position already reveals, using 5.7 million online blitz games from 400 players. Recent history carries real behavioral signatures: blunder rates rise across losing streaks, most sharply in middlegames where calculation is heaviest, and fall nearly symmetrically across winning streaks. Yet session dynamics features are informationally redundant with board state for predicting blunders. The redundancy survives matched-hyperparameter ablation, sessiondefinition and skill-gradient variation, graded positive controls, a direct test on freshly engine-labeled unanalyzed games, and a neural network on the raw board. A mediation analysis shows why: a losing streak does not reliably steer players into the complex positions where blunders concentrate, so it has no reliable positional route to the next error. The hand-engineered board features alone are competitive with the prior state-of-theart model for move-level blunder prediction. For player modeling, the predictive signal lies in the current position, not in the session history that precedes it.},
-affiliation = {Rice University},
-todo = {Affiliation from ORCID. Double check on camera ready.},
-  pages={1-11},
-  keywords={Games;Modeling;Labeling;Testing;History;Complexity theory;Timing;Engines;Probability;Materials;Chess;player modeling;error prediction;session dynamics features;mediation analysis},
-  doi={10.1109/TG.2026.3754938}}
-
-
 @article{adorjan:2025:statistical-analysis-of-hungarian-board-game-sales,
   title         = {Statistical Analysis of Hungarian Board Game Sales},
   author        = {Adorján, Balázs and Bednárik, Éva},
@@ -2251,6 +2238,19 @@ todo = {Affiliation from ORCID. Double check on camera ready.},
   doi           = {10.15439/2025F3675},
   url           = {http://dx.doi.org/10.15439/2025F3675},
   abstract      = {The FedCSIS 2025 Challenge on Predicting Chess Puzzle Difficulty tasked participants with estimating puzzle ratings directly from board states and solution sequences, without relying on human solver statistics. We propose a three-stage hybrid framework integrating gradient-boosting regressors, a multi-modal neural network, and an XGBoost stacking ensemble. The boosting stage modeled handcrafted structural features derived from FEN and engine metadata, while the multi-modal network jointly learned from structured features and image-rendered chessboards to capture positional and tactical patterns. The residual-based stacking stage explicitly modeled prediction errors to correct systematic biases and enhance performance, particularly for high-difficulty puzzles. Our method achieved a competitive performance, ranking 7th in the preliminary stage and 8th in the final leaderboard. These results demonstrate that combining interpretable boosting models with visual-tactical deep representations and meta-learning provides a robust and computationally efficient alternative to large-scale transformer-based approaches.},
+}
+
+@article{liu:2026:does-tilt-help-predict-move-level-blunders-session-history-versus-current-position-in-chess,
+  title         = {Does Tilt Help Predict Move-Level Blunders? Session History Versus the Current Position in Chess},
+  author        = {Liu, David Y.},
+  year          = {2026},
+  journal       = {IEEE Transactions on Games},
+  pages         = {1--11},
+  doi           = {10.1109/TG.2026.3754938},
+  abstract      = {Players, coaches, and platforms act on the belief that tilt, the deterioration in play attributed to a run of losses, foreshadows further mistakes. We capture that state through session history (recent results, streaks, and session context such as length and pacing) and ask whether it improves move-level blunder prediction beyond what the current board position already reveals, using 5.7 million online blitz games from 400 players. Recent history carries real behavioral signatures: blunder rates rise across losing streaks, most sharply in middlegames where calculation is heaviest, and fall nearly symmetrically across winning streaks. Yet session dynamics features are informationally redundant with board state for predicting blunders. The redundancy survives matched-hyperparameter ablation, sessiondefinition and skill-gradient variation, graded positive controls, a direct test on freshly engine-labeled unanalyzed games, and a neural network on the raw board. A mediation analysis shows why: a losing streak does not reliably steer players into the complex positions where blunders concentrate, so it has no reliable positional route to the next error. The hand-engineered board features alone are competitive with the prior state-of-theart model for move-level blunder prediction. For player modeling, the predictive signal lies in the current position, not in the session history that precedes it.},
+  keywords      = {Games;Modeling;Labeling;Testing;History;Complexity theory;Timing;Engines;Probability;Materials;Chess;player modeling;error prediction;session dynamics features;mediation analysis},
+  affiliation   = {Rice University},
+  todo          = {Affiliation from ORCID. Double check on camera ready.},
 }
 
 @misc{liu:2026:halluworld-controlled-benchmark-for-hallucination-via-reference-world-models,
