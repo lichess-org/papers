@@ -1,9 +1,10 @@
 import { type NextConfig } from 'next';
 
+const basePath = process.env.GITHUB_ACTIONS === 'true' ? '/lichess-papers' : '';
+
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: 'export',
+  basePath,
   reactCompiler: true,
   turbopack: {
     rules: {

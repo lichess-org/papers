@@ -3,6 +3,8 @@ import './globals.css';
 import { type Metadata } from 'next';
 import { Geist, Roboto_Slab } from 'next/font/google';
 
+const basePath = process.env.GITHUB_ACTIONS === 'true' ? '/lichess-papers' : '';
+
 const geist = Geist({
   variable: '--font-geist-sans',
   subsets: ['latin'],
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
   description:
     'Publications that study Lichess, use Lichess data, or otherwise use or mention Lichess in a meaningful way.',
   icons: {
-    icon: '/favicon.svg',
+    icon: `${basePath}/favicon.svg`,
   },
 };
 
