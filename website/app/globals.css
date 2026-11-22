@@ -8,7 +8,7 @@
   --muted: #656d65;
   --rule: #d3d4c9;
   --pencil: #ba4935;
-  --active: #f5eee6;
+  --active: #eee7dc;
   --font-display: var(--font-roboto-slab), Georgia, serif;
   --font-body: var(--font-geist-sans), Arial, sans-serif;
 }
@@ -42,17 +42,22 @@ html {
   }
 }
 
-@keyframes detail-arrive {
-  from {
-    transform: translateY(4px);
-  }
-  to {
-    transform: translateY(0);
-  }
+.paper-detail-panel {
+  height: auto;
+  overflow: clip;
+  interpolate-size: allow-keywords;
+  transition: height 220ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@theme {
-  --animate-detail-arrive: detail-arrive 220ms cubic-bezier(0.16, 1, 0.3, 1) both;
+.paper-detail-panel[data-expanded='false'] {
+  height: 0;
+  transition-duration: 150ms;
+}
+
+@starting-style {
+  .paper-detail-panel[data-expanded='true'] {
+    height: 0;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

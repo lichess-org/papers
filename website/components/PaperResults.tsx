@@ -33,22 +33,18 @@ export default function PaperResults({ expandedId, onToggle }: PaperResultsProps
   return (
     <div className="overflow-x-auto max-sm:overflow-visible">
       <table className="w-full border-collapse text-left max-sm:block">
-        <thead className="bg-ink text-paper max-sm:sr-only">
+        <thead className="bg-active border-rule text-ink sticky top-0 border text-[10px] font-semibold uppercase max-sm:sr-only">
           <tr>
-            <th scope="col" className="px-4 py-2 text-[10px] font-semibold tracking-[0.07em] uppercase">
+            <th scope="col" className="px-3 py-2">
               Paper / author
             </th>
-            <th
-              scope="col"
-              className="w-[170px] px-4 py-2 text-[10px] font-semibold tracking-[0.07em] uppercase max-lg:w-[142px]">
+            <th scope="col" className="w-[170px] px-3 py-2 max-lg:w-[142px]">
               Type
             </th>
-            <th scope="col" className="w-[82px] px-4 py-2 text-[10px] font-semibold tracking-[0.07em] uppercase">
+            <th scope="col" className="w-[82px] px-3 py-2">
               Year
             </th>
-            <th
-              scope="col"
-              className="w-[142px] px-4 py-2 text-[10px] font-semibold tracking-[0.07em] uppercase max-lg:w-[116px]">
+            <th scope="col" className="w-[142px] px-3 py-2 max-lg:w-[116px]">
               Source
             </th>
           </tr>

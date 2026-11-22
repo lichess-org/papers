@@ -64,12 +64,16 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
             LINK_HOVER_CLASSES
           )}
           href="https://lichess.org"
+          target="_blank"
+          rel="noopener noreferrer"
           aria-label="Lichess Bibliography">
           <img src="/lichess.svg" alt="Lichess.org" className="h-8 max-sm:h-5" />
           Lichess.org
         </a>
         <a
-          href="https://github.com/lichess-org/bibliography"
+          href="https://github.com/lichess-org/papers"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-muted hover:text-pencil inline-flex items-center gap-1.5 text-sm max-sm:text-xs">
           <GithubLogoIcon size={20} />
           GitHub

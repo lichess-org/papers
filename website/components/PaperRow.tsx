@@ -1,4 +1,5 @@
 import { CaretDownIcon } from '@phosphor-icons/react/ssr';
+import { useState } from 'react';
 
 import ExternalLink from '~/components/ExternalLink';
 import { type Paper } from '~/lib/types';
@@ -14,14 +15,23 @@ type PaperRowProps = {
 
 export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps) {
   const detailsId = `paper-detail-${paper.number}`;
+  const [isDetailMounted, setIsDetailMounted] = useState(false);
+
+  function toggleExpanded() {
+    if (!isExpanded) {
+      setIsDetailMounted(true);
+    }
+    onToggle(paper.id);
+  }
 
   return (
     <>
       <tr
         className={tw(
-          'border-rule bg-paper-raised hover:bg-active border border-t-0 transition-colors duration-180 ease-out',
+          'border-rule bg-paper-raised border border-t-0 transition-colors duration-180 ease-out',
           'max-sm:grid max-sm:grid-cols-[minmax(0,1fr)_auto] max-sm:gap-y-0 max-sm:border-b max-sm:p-4 max-sm:first:border-t',
-          isExpanded && 'bg-active'
+          'hover:bg-active/65',
+          isExpanded && 'bg-active/40'
         )}>
         <td
           className={tw(
@@ -33,13 +43,13 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
           tabIndex={0}
           aria-expanded={isExpanded}
           aria-controls={isExpanded ? detailsId : undefined}
-          onClick={() => onToggle(paper.id)}
+          onClick={toggleExpanded}
           onKeyDown={event => {
             if (event.key !== 'Enter' && event.key !== ' ') {
               return;
             }
             event.preventDefault();
-            onToggle(paper.id);
+            toggleExpanded();
           }}>
           <div
             className={tw(
@@ -87,7 +97,14 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
           )}
         </td>
       </tr>
-      {isExpanded && <PaperDetailRow id={detailsId} paper={paper} />}
+      {(isExpanded || isDetailMounted) && (
+        <PaperDetailRow
+          id={detailsId}
+          paper={paper}
+          isExpanded={isExpanded}
+          onCloseEnd={() => setIsDetailMounted(false)}
+        />
+      )}
     </>
   );
 }
