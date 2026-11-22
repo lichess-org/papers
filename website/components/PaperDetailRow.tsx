@@ -13,7 +13,7 @@ export default function PaperDetailRow({ id, paper, isExpanded, onCloseEnd }: Pa
   return (
     <tr id={id} className="border-rule border-x max-sm:block">
       <td
-        className="border-rule to-active/40 from-paper-raised border-b bg-linear-to-b from-75% p-0 max-sm:block"
+        className="border-rule to-active/40 from-paper-raised border-b bg-linear-to-b from-66% p-0 max-sm:block"
         colSpan={5}
         aria-label={`Details for ${paper.title}`}>
         <div

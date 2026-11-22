@@ -30,8 +30,8 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
         className={tw(
           'border-rule bg-paper-raised border border-t-0 transition-colors duration-180 ease-out',
           'max-sm:grid max-sm:grid-cols-[minmax(0,1fr)_auto] max-sm:gap-y-0 max-sm:border-b max-sm:p-4 max-sm:first:border-t',
-          'hover:bg-active/65',
-          isExpanded && 'bg-active/40'
+          'hover:bg-active/75',
+          isExpanded && 'bg-active/50'
         )}>
         <td
           className={tw(

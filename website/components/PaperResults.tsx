@@ -33,7 +33,7 @@ export default function PaperResults({ expandedId, onToggle }: PaperResultsProps
   return (
     <div className="overflow-x-auto max-sm:overflow-visible">
       <table className="w-full border-collapse text-left max-sm:block">
-        <thead className="bg-active border-rule text-ink sticky top-0 border text-[10px] font-semibold uppercase max-sm:sr-only">
+        <thead className="bg-rule/50 border-rule text-ink sticky top-0 border text-[10px] font-semibold uppercase max-sm:sr-only">
           <tr>
             <th scope="col" className="px-3 py-2">
               Paper / author
