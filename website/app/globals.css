@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: light;
+  --paper: #f5f3ed;
+  --paper-raised: #fbfaf6;
+  --ink: #202923;
+  --muted: #656d65;
+  --rule: #d3d4c9;
+  --pencil: #ba4935;
+  --active: #f5eee6;
+  --font-display: var(--font-roboto-slab), Georgia, serif;
+  --font-body: var(--font-geist-sans), Arial, sans-serif;
+}
+
+@theme inline {
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-pencil: var(--pencil);
+  --color-active: var(--active);
+  --font-sans: var(--font-body);
+  --font-slab: var(--font-display);
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+  scrollbar-color: #9a9e90 var(--paper);
+  scrollbar-gutter: stable;
+}
+
+@layer base {
+  button,
+  a,
+  select {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@keyframes detail-arrive {
+  from {
+    transform: translateY(4px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@theme {
+  --animate-detail-arrive: detail-arrive 220ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

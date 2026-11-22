@@ -1,0 +1,37 @@
+{
+  "name": "lichess-bibliography",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "oxlint && oxfmt --check",
+    "lint:fix": "oxlint --fix && oxfmt",
+    "typecheck": "bun check",
+    "convert:bib": "bun scripts/convert-bib.ts"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "next": "16.4.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "tailwind-merge": "^3.7.1"
+  },
+  "devDependencies": {
+    "@retorquere/bibtex-parser": "^14.0.6",
+    "@tailwindcss/turbopack": "4.3.5",
+    "@types/bun": "^1.4.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "babel-plugin-react-compiler": "1.0.0",
+    "oxfmt": "^0.79.0",
+    "oxlint": "^1.94.0",
+    "oxlint-plugin-golden": "^0.1.2",
+    "oxlint-plugin-react-doctor": "^0.9.23",
+    "oxlint-tsgolint": "^7.0.2008",
+    "tailwindcss": "4.3.5",
+    "typescript": "^7.0.2"
+  },
+  "packageManager": "bun@1.4.5"
+}
