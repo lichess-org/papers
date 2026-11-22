@@ -116,7 +116,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
                     The paper index
                   </h2>
                   <p className="text-muted mt-1.5 mb-0 text-sm max-sm:max-w-[31ch] max-sm:text-[12px]">
-                    Search the record, then open a title to see its abstract.
+                    Search the record, then click the title cell to see its abstract and additional links.
                   </p>
                 </div>
               </div>
