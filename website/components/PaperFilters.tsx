@@ -47,6 +47,7 @@ export default function PaperFilters() {
               FOCUS_ACTIVE_CLASSES
             )}
             id="paper-search"
+            autoComplete="off"
             type="text"
             value={query}
             onChange={event => setQuery(event.target.value)}
@@ -98,7 +99,7 @@ export default function PaperFilters() {
           ]}
         />
       </search>
-      <div className="flex min-h-12 items-center justify-between">
+      <div className="flex min-h-12 items-center justify-between pb-1">
         <p className="text-muted m-0 text-xs font-semibold tabular-nums" role="status" aria-live="polite">
           {papers.length} {papers.length === 1 ? 'paper' : 'papers'}
           {hasFilters ? ` of ${totalCount}` : ''}

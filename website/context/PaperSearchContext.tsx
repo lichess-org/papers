@@ -3,6 +3,7 @@
 import { createContext, type PropsWithChildren, useCallback, useContext, useMemo, useState } from 'react';
 
 import { type Paper } from '~/lib/types';
+import { normalizeSearchText } from '~/lib/utils';
 
 type PaperSearchContextValue = {
   query: string;
@@ -45,7 +46,7 @@ export function PaperSearchProvider({ papersData, children, onClear }: PaperSear
     return [...availableYears].sort((first, second) => second.localeCompare(first, undefined, { numeric: true }));
   }, [papersData]);
 
-  const normalizedQuery = query.trim().toLocaleLowerCase();
+  const normalizedQuery = normalizeSearchText(query.trim());
 
   const papers = useMemo(() => {
     const filteredPapers = papersData.filter(paper => {

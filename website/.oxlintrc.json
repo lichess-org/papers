@@ -20,7 +20,13 @@
     "no-unused-expressions": ["error", { "allowShortCircuit": true, "enforceForJSX": true }],
     "no-unused-vars": [
       "error",
-      { "vars": "all", "ignoreRestSiblings": true, "caughtErrors": "all", "caughtErrorsIgnorePattern": "^_" }
+      {
+        "vars": "all",
+        "ignoreRestSiblings": true,
+        "caughtErrors": "all",
+        "caughtErrorsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
     ],
     "no-useless-call": "error",
     "no-useless-computed-key": "error",

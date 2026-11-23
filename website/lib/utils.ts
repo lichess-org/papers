@@ -23,6 +23,10 @@ export function getField(fields: Record<string, string | undefined>, key: string
   return typeof value === 'string' ? value.trim() : '';
 }
 
+export function normalizeSearchText(value: string) {
+  return value.normalize('NFD').replace(/\p{M}/gu, '').toLocaleLowerCase().replace(/ς/g, 'σ');
+}
+
 export function getUrl(value: string, key: string) {
   if (!value) {
     return null;
@@ -75,10 +79,11 @@ export function formatPaper(record: RawPaper, index: number): Paper {
     publication,
     abstract: getField(fields, 'abstract'),
     keywords: getField(fields, 'keywords'),
-    searchText: Object.values(fields)
-      .filter((value): value is string => typeof value === 'string')
-      .join(' ')
-      .toLocaleLowerCase(),
+    searchText: normalizeSearchText(
+      Object.values(fields)
+        .filter((value): value is string => typeof value === 'string')
+        .join(' ')
+    ),
     links: getLinks(fields),
   };
 }

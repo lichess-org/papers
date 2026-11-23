@@ -7,14 +7,16 @@ import { type Paper } from '~/lib/types';
 import { formatPaperType, tw } from '~/lib/utils';
 
 import PaperDetailRow from './PaperDetailRow';
+import QueryHighlight from './QueryHighlight';
 
 type PaperRowProps = {
   paper: Paper;
+  query: string;
   isExpanded: boolean;
   onToggle: (paperId: string) => void;
 };
 
-export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps) {
+export default function PaperRow({ paper, query, isExpanded, onToggle }: PaperRowProps) {
   const detailsId = `paper-detail-${paper.number}`;
   const [isDetailMounted, setIsDetailMounted] = useState(false);
 
@@ -67,15 +69,15 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
               )}
             />
             <span className="group-hover:decoration-pencil group-hover:underline group-hover:underline-offset-2">
-              {paper.title}
+              <QueryHighlight text={paper.title} query={query} />
             </span>
           </div>
           <span className="text-muted mt-1 block overflow-hidden pl-7.5 text-xs leading-[1.45] text-ellipsis max-sm:line-clamp-2">
-            {paper.authors ?? 'Author not listed'}
+            <QueryHighlight text={paper.authors ?? 'Author not listed'} query={query} />
             {paper.publication && (
               <>
                 <span className="px-1 opacity-75">•</span>
-                {paper.publication}
+                <QueryHighlight text={paper.publication} query={query} />
               </>
             )}
           </span>
@@ -88,7 +90,7 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
             'text-muted px-3 py-4 align-middle text-xs tabular-nums',
             'max-sm:col-start-3 max-sm:row-start-2 max-sm:flex max-sm:items-center max-sm:justify-end max-sm:p-0 max-sm:pt-2.5 max-sm:text-right'
           )}>
-          {paper.year ?? '—'}
+          <QueryHighlight text={paper.year ?? '—'} query={query} />
         </td>
         <td
           className={tw(
@@ -106,6 +108,7 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
         <PaperDetailRow
           id={detailsId}
           paper={paper}
+          query={query}
           isExpanded={isExpanded}
           onCloseEnd={() => setIsDetailMounted(false)}
         />

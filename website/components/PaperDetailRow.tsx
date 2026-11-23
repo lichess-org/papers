@@ -4,14 +4,17 @@ import ExternalLink from '~/components/ExternalLink';
 import { type Paper } from '~/lib/types';
 import { tw } from '~/lib/utils';
 
+import QueryHighlight from './QueryHighlight';
+
 type PaperDetailRowProps = {
   id: string;
   paper: Paper;
+  query: string;
   isExpanded: boolean;
   onCloseEnd: () => void;
 };
 
-export default function PaperDetailRow({ id, paper, isExpanded, onCloseEnd }: PaperDetailRowProps) {
+export default function PaperDetailRow({ id, paper, query, isExpanded, onCloseEnd }: PaperDetailRowProps) {
   const keywords = paper.keywords
     .split(/[,;]/)
     .map(keyword => keyword.trim())
@@ -42,7 +45,11 @@ export default function PaperDetailRow({ id, paper, isExpanded, onCloseEnd }: Pa
             <div>
               <h3 className="font-slab mt-0 mb-2 text-[13px] font-medium">Abstract</h3>
               <p className="text-ink m-0 text-[13px] leading-snug">
-                {paper.abstract || 'No abstract is included for this record.'}
+                {paper.abstract ? (
+                  <QueryHighlight text={paper.abstract} query={query} />
+                ) : (
+                  'No abstract is included for this record.'
+                )}
               </p>
               {keywords.length > 0 && (
                 <p className="text-ink mt-3 mb-0 text-xs">
@@ -54,7 +61,7 @@ export default function PaperDetailRow({ id, paper, isExpanded, onCloseEnd }: Pa
                     return (
                       <Fragment key={`${keyword}-${occurrence}`}>
                         {index > 0 && <span className="px-1 opacity-75">•</span>}
-                        {keyword}
+                        <QueryHighlight text={keyword} query={query} />
                       </Fragment>
                     );
                   })}

@@ -146,7 +146,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
         <PaperSearchProvider papersData={papers} onClear={clearExpandedId}>
           <section
             id="papers"
-            className="scroll-mt-6 pt-3 pb-18 max-sm:pt-2 max-sm:pb-12"
+            className="scroll-mt-6 pt-2.5 pb-18 max-sm:pt-2 max-sm:pb-12"
             aria-labelledby="papers-title">
             <div ref={papersStickySentinelRef} className="h-px" aria-hidden="true" />
             <div
@@ -154,12 +154,12 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
                 'bg-paper sticky top-0 z-20 border-b border-transparent pt-3 transition-[padding,border-color] duration-150 ease-out max-sm:pt-2',
                 isPapersSticky && 'border-rule'
               )}>
-              <div className="mb-5 flex items-center justify-between gap-5 max-sm:mb-4 max-sm:items-start">
+              <div className="mb-4 flex items-center justify-between gap-5 max-sm:mb-4 max-sm:items-start">
                 <div className="min-w-0 flex-1">
                   <h2 id="papers-title" className="font-slab m-0 text-2xl font-semibold tracking-tight">
                     The paper index
                   </h2>
-                  <p className="text-muted mt-1.5 mb-0 text-sm max-sm:max-w-[31ch] max-sm:text-[12px]">
+                  <p className="text-muted mt-1 mb-0 text-sm max-sm:max-w-[31ch] max-sm:text-[12px]">
                     Search the record, then click the title cell to see its abstract and additional links.
                   </p>
                 </div>

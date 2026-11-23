@@ -10,7 +10,7 @@ type PaperResultsProps = {
 };
 
 export default function PaperResults({ expandedId, onToggle }: PaperResultsProps) {
-  const { papers, clearFilters } = usePaperSearch();
+  const { papers, clearFilters, query } = usePaperSearch();
 
   if (papers.length === 0) {
     return (
@@ -52,7 +52,13 @@ export default function PaperResults({ expandedId, onToggle }: PaperResultsProps
         </thead>
         <tbody className="max-sm:block max-sm:w-full">
           {papers.map(paper => (
-            <PaperRow key={paper.id} paper={paper} isExpanded={expandedId === paper.id} onToggle={onToggle} />
+            <PaperRow
+              key={paper.id}
+              paper={paper}
+              query={query}
+              isExpanded={expandedId === paper.id}
+              onToggle={onToggle}
+            />
           ))}
         </tbody>
       </table>
