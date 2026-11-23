@@ -1,6 +1,6 @@
 'use client';
 
-import { CircleHalfIcon, GithubLogoIcon, MoonIcon, SunIcon } from '@phosphor-icons/react/ssr';
+import { ArrowUpIcon, CircleHalfIcon, GithubLogoIcon, MoonIcon, SunIcon } from '@phosphor-icons/react/ssr';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import LichessLogo from '~/components/LichessLogo';
@@ -154,8 +154,8 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
                 'bg-paper sticky top-0 z-20 border-b border-transparent pt-3 transition-[padding,border-color] duration-150 ease-out max-sm:pt-2',
                 isPapersSticky && 'border-rule'
               )}>
-              <div className="mb-5 flex items-end justify-between gap-5 max-sm:mb-4 max-sm:items-start">
-                <div>
+              <div className="mb-5 flex items-center justify-between gap-5 max-sm:mb-4 max-sm:items-start">
+                <div className="min-w-0 flex-1">
                   <h2 id="papers-title" className="font-slab m-0 text-2xl font-semibold tracking-tight">
                     The paper index
                   </h2>
@@ -163,6 +163,20 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
                     Search the record, then click the title cell to see its abstract and additional links.
                   </p>
                 </div>
+                {isPapersSticky && (
+                  <button
+                    type="button"
+                    aria-label="Scroll to top"
+                    title="Scroll to top"
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className={tw(
+                      'text-muted border-rule bg-paper-raised inline-flex size-9 shrink-0 cursor-pointer items-center justify-center rounded-sm border p-0 shadow-2xs',
+                      'hover:text-pencil',
+                      FOCUS_ACTIVE_CLASSES
+                    )}>
+                    <ArrowUpIcon size={18} aria-hidden="true" />
+                  </button>
+                )}
               </div>
               <PaperFilters />
             </div>

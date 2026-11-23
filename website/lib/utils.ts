@@ -45,6 +45,7 @@ export function getLinks(fields: Record<string, string | undefined>) {
     ['pdf', 'PDF'],
     ['doi', 'DOI'],
     ['code', 'Code'],
+    ['preprint', 'Preprint'],
   ] as const;
 
   return linkFields.flatMap(([key, label]) => {

@@ -19,9 +19,8 @@ export default function PaperResults({ expandedId, onToggle }: PaperResultsProps
         <p className="text-muted mt-2.5 mb-4.5 text-sm">Try a different title, author, keyword, year, or paper type.</p>
         <button
           className={tw(
-            'bg-rule text-ink cursor-pointer rounded-sm px-4 py-2.5 text-[12px]',
-            'hover:bg-pencil hover:text-paper',
-            'focus-visible:bg-pencil focus-visible:text-paper',
+            'border-rule text-ink cursor-pointer rounded-sm border px-4 py-2.5 text-[12px]',
+            'hover:text-pencil focus-visible:text-pencil',
             FOCUS_ACTIVE_CLASSES
           )}
           type="button"
