@@ -2,6 +2,7 @@ import { CaretDownIcon } from '@phosphor-icons/react/ssr';
 import { useState } from 'react';
 
 import ExternalLink from '~/components/ExternalLink';
+import { FOCUS_ACTIVE_CLASSES } from '~/lib/style';
 import { type Paper } from '~/lib/types';
 import { formatPaperType, tw } from '~/lib/utils';
 
@@ -37,7 +38,8 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
         <td
           className={tw(
             'group cursor-pointer px-3 py-4 align-middle',
-            'focus-visible:outline-pencil focus-visible:outline-3 focus-visible:outline-offset-[-3px]',
+            FOCUS_ACTIVE_CLASSES,
+            'focus-visible:outline-offset-[-2px]',
             'max-sm:col-start-1 max-sm:col-end-4 max-sm:min-w-0 max-sm:p-0'
           )}
           role="button"

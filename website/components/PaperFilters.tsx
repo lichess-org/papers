@@ -1,7 +1,7 @@
 import { MagnifyingGlassIcon, XIcon } from '@phosphor-icons/react/ssr';
 
 import { usePaperSearch } from '~/context/PaperSearchContext';
-import { LINK_HOVER_CLASSES } from '~/lib/style';
+import { FOCUS_ACTIVE_CLASSES, LINK_HOVER_CLASSES } from '~/lib/style';
 import { formatPaperType, tw } from '~/lib/utils';
 
 import FilterSelect from './FilterSelect';
@@ -43,8 +43,8 @@ export default function PaperFilters() {
             className={tw(
               'bg-paper-raised text-ink caret-pencil focus-visible:outline-pencil border-rule h-11.5 w-full rounded-sm border py-0 pr-12 pl-10.5 text-sm shadow-2xs',
               'placeholder:text-muted placeholder:opacity-80',
-              'focus-visible:outline-3 focus-visible:outline-offset-[3px]',
-              'max-sm:h-11 max-sm:text-xs'
+              'max-sm:h-11 max-sm:text-xs',
+              FOCUS_ACTIVE_CLASSES
             )}
             id="paper-search"
             type="text"
@@ -55,9 +55,11 @@ export default function PaperFilters() {
           {query && (
             <button
               className={tw(
-                'text-muted hover:text-pencil absolute top-0 right-0 inline-flex h-11.5 w-11.5 cursor-pointer items-center justify-center border-0 bg-transparent',
-                'focus-visible:outline-pencil focus-visible:outline-2 focus-visible:outline-offset-[-3px]',
-                'max-sm:h-11 max-sm:w-11'
+                'text-muted absolute top-0 right-0 inline-flex h-11.5 w-11.5 cursor-pointer items-center justify-center rounded-sm border-0 bg-transparent',
+                'max-sm:h-11 max-sm:w-11',
+                'hover:text-pencil',
+                FOCUS_ACTIVE_CLASSES,
+                'focus-visible:outline-offset-[-5px]'
               )}
               type="button"
               aria-label="Clear search"
@@ -104,7 +106,7 @@ export default function PaperFilters() {
         {hasFilters && (
           <button
             className={tw(
-              'text-pencil cursor-pointer border-0 bg-transparent py-2 pr-0 pl-2.5 text-xs font-semibold',
+              'text-pencil cursor-pointer rounded-sm border-0 bg-transparent py-2 text-xs font-semibold',
               LINK_HOVER_CLASSES
             )}
             type="button"

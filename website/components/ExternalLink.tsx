@@ -11,7 +11,7 @@ type Props = {
 export default function ExternalLink({ href, label }: Props) {
   return (
     <a
-      className={tw('text-pencil flex items-center gap-0.5 text-xs font-semibold', LINK_HOVER_CLASSES)}
+      className={tw('text-pencil flex items-center gap-0.5 rounded-sm text-xs font-semibold', LINK_HOVER_CLASSES)}
       href={href}
       target="_blank"
       rel="noopener noreferrer">

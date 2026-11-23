@@ -5,13 +5,14 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 
 import LichessLogo from '~/components/LichessLogo';
 import { PaperSearchProvider } from '~/context/PaperSearchContext';
-import { CONTENT_WRAPPER_CLASSES, LINK_HOVER_CLASSES } from '~/lib/style';
+import { CONTENT_WRAPPER_CLASSES, FOCUS_ACTIVE_CLASSES, LINK_HOVER_CLASSES } from '~/lib/style';
 import { applyTheme, toggleTheme } from '~/lib/theme';
 import { type Paper } from '~/lib/types';
 import { tw } from '~/lib/utils';
 
 import PaperFilters from './PaperFilters';
 import PaperResults from './PaperResults';
+import ResearchOverviewGraphic from './ResearchOverviewGraphic';
 
 type PaperLibraryProps = {
   papers: Paper[];
@@ -80,7 +81,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
             'text-ink inline-flex items-center gap-2.5 rounded-sm text-xl font-semibold tracking-[-0.035em]',
             'max-sm:text-base',
             LINK_HOVER_CLASSES,
-            'focus-visible:outline-offset-[4px]'
+            'focus-visible:outline-offset-4'
           )}
           href="https://lichess.org"
           target="_blank"
@@ -97,7 +98,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
             className={tw(
               'text-muted inline-flex size-10 cursor-pointer items-center justify-center rounded-sm border-0 bg-transparent p-0',
               'hover:text-pencil',
-              'focus-visible:outline-pencil focus-visible:outline-2 focus-visible:outline-offset-2'
+              FOCUS_ACTIVE_CLASSES
             )}>
             <CircleHalfIcon size={20} className="theme-toggle-icon theme-toggle-icon-automatic" aria-hidden="true" />
             <SunIcon size={20} className="theme-toggle-icon theme-toggle-icon-light" aria-hidden="true" />
@@ -111,7 +112,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
               'text-muted inline-flex h-10 items-center gap-1.5 rounded-sm text-sm',
               'max-sm:text-xs',
               'hover:text-pencil',
-              'focus-visible:outline-pencil focus-visible:outline-2 focus-visible:outline-offset-2'
+              FOCUS_ACTIVE_CLASSES
             )}>
             <GithubLogoIcon size={20} />
             GitHub
@@ -121,12 +122,12 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
       <main className={tw('flex-1', CONTENT_WRAPPER_CLASSES)}>
         <section
           className={tw(
-            'border-rule relative isolate flex min-h-60 items-center justify-start gap-12 overflow-hidden border-b py-9',
+            'border-rule relative isolate flex min-h-60 items-center justify-start gap-8 overflow-hidden border-b py-6',
             'max-lg:min-h-[230px]',
-            'max-sm:min-h-0 max-sm:flex-col max-sm:items-start max-sm:gap-5.5 max-sm:py-10 max-sm:pb-7'
+            'max-sm:min-h-0 max-sm:flex-col max-sm:items-start'
           )}
           aria-labelledby="page-title">
-          <div>
+          <div className="min-w-0 flex-1 max-sm:w-full">
             <h1
               id="page-title"
               className={tw(
@@ -140,6 +141,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
               way.
             </p>
           </div>
+          <ResearchOverviewGraphic className="w-[30%] max-w-[340px] min-w-[250px] max-lg:min-w-[220px] max-sm:hidden max-sm:w-[52%]" />
         </section>
         <PaperSearchProvider papersData={papers} onClear={clearExpandedId}>
           <section
@@ -174,14 +176,14 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
           'max-sm:flex-col max-sm:py-4 max-sm:text-center max-sm:text-[10px]',
           CONTENT_WRAPPER_CLASSES
         )}>
-        <a href="#top" className="text-ink font-slab text-sm font-bold">
+        <a href="#top" className={tw('text-ink font-slab rounded-sm text-sm font-bold', FOCUS_ACTIVE_CLASSES)}>
           Lichess Bibliography
         </a>
         <a
           href="https://github.com/lichess-org/papers/blob/main/CONTRIBUTING.md"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-pencil text-xs">
+          className={tw('rounded-sm text-xs', 'hover:text-pencil', FOCUS_ACTIVE_CLASSES)}>
           If we missed your work, feel free to open an issue or submit a PR.
         </a>
       </footer>

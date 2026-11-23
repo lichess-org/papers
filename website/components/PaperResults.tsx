@@ -1,4 +1,5 @@
 import { usePaperSearch } from '~/context/PaperSearchContext';
+import { FOCUS_ACTIVE_CLASSES } from '~/lib/style';
 import { tw } from '~/lib/utils';
 
 import PaperRow from './PaperRow';
@@ -20,7 +21,8 @@ export default function PaperResults({ expandedId, onToggle }: PaperResultsProps
           className={tw(
             'bg-rule text-ink cursor-pointer rounded-sm px-4 py-2.5 text-[12px]',
             'hover:bg-pencil hover:text-paper',
-            'focus-visible:outline-pencil focus-visible:outline-3 focus-visible:outline-offset-[3px]'
+            'focus-visible:bg-pencil focus-visible:text-paper',
+            FOCUS_ACTIVE_CLASSES
           )}
           type="button"
           onClick={clearFilters}>

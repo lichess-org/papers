@@ -1,5 +1,6 @@
 import { CaretDownIcon } from '@phosphor-icons/react/ssr';
 
+import { FOCUS_ACTIVE_CLASSES } from '~/lib/style';
 import { tw } from '~/lib/utils';
 
 type FilterSelectProps = {
@@ -16,9 +17,9 @@ export default function FilterSelect({ label, value, onChange, options, classNam
       <span className="sr-only">{label}</span>
       <select
         className={tw(
-          'bg-paper-raised text-ink border-rule h-[46px] w-full cursor-pointer appearance-none rounded-sm border py-0 pr-9 pl-3 text-sm shadow-2xs',
-          'focus-visible:outline-pencil focus-visible:outline-3 focus-visible:outline-offset-[3px]',
-          'max-sm:h-11 max-sm:text-[12px]'
+          'bg-paper-raised text-ink border-rule h-11.5 w-full cursor-pointer appearance-none rounded-sm border py-0 pr-9 pl-3 text-sm shadow-2xs',
+          'max-sm:h-11 max-sm:text-[12px]',
+          FOCUS_ACTIVE_CLASSES
         )}
         value={value}
         onChange={event => onChange(event.target.value)}>
