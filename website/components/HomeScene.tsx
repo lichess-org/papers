@@ -4,7 +4,7 @@ import { GithubLogoIcon } from '@phosphor-icons/react/ssr';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { PaperSearchProvider } from '~/context/PaperSearchContext';
-import { LINK_HOVER_CLASSES } from '~/lib/style';
+import { CONTENT_WRAPPER_CLASSES, LINK_HOVER_CLASSES } from '~/lib/style';
 import { type Paper } from '~/lib/types';
 import { tw } from '~/lib/utils';
 
@@ -53,9 +53,9 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
       <header
         id="top"
         className={tw(
-          'border-rule m-auto flex h-18 w-full max-w-[1280px] items-center justify-between border-b',
-          'max-lg:px-6',
-          'max-sm:h-15.5 max-sm:px-5'
+          'border-rule flex h-18 items-center justify-between border-b',
+          'max-sm:h-15.5',
+          CONTENT_WRAPPER_CLASSES
         )}>
         <a
           className={tw(
@@ -79,7 +79,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
           GitHub
         </a>
       </header>
-      <main className="mx-auto w-[calc(100%-48px)] max-w-[1280px] flex-1 max-lg:w-[calc(100%-40px)] max-sm:w-[calc(100%-36px)]">
+      <main className={tw('flex-1', CONTENT_WRAPPER_CLASSES)}>
         <section
           className={tw(
             'border-rule relative isolate flex min-h-60 items-center justify-start gap-12 overflow-hidden border-b py-9',
@@ -88,12 +88,12 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
           )}
           aria-labelledby="page-title">
           <ChessboardBackground />
-          <div className="max-w-[880px]">
+          <div>
             <h1
               id="page-title"
               className={tw(
-                'font-slab m-0 max-w-[760px] text-[clamp(40px,5vw,65px)] leading-[1.04] font-semibold tracking-[-0.035em] text-balance',
-                'max-sm:max-w-[500px] max-sm:text-[clamp(38px,11vw,52px)]'
+                'font-slab m-0 text-[clamp(40px,5vw,65px)] leading-[1.04] font-semibold tracking-[-0.035em] text-balance',
+                'max-sm:text-[clamp(38px,11vw,52px)]'
               )}>
               Lichess Bibliography
             </h1>
@@ -132,9 +132,9 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
       </main>
       <footer
         className={tw(
-          'border-rule text-muted m-auto flex min-h-16 w-full max-w-[1280px] items-center justify-between gap-5 border-t',
-          'max-lg:px-6',
-          'max-sm:px-4.5 max-sm:text-[10px]'
+          'border-rule text-muted flex min-h-16 items-center justify-between gap-x-5 gap-y-3 border-t',
+          'max-sm:flex-col max-sm:py-4 max-sm:text-center max-sm:text-[10px]',
+          CONTENT_WRAPPER_CLASSES
         )}>
         <a href="#top" className="text-ink font-slab text-sm font-bold">
           Lichess Bibliography

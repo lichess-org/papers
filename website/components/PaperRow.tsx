@@ -37,7 +37,7 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
           className={tw(
             'group cursor-pointer px-3 py-4 align-middle',
             'focus-visible:outline-pencil focus-visible:outline-3 focus-visible:outline-offset-[-3px]',
-            'max-sm:col-start-2 max-sm:col-end-4 max-sm:min-w-0 max-sm:p-0'
+            'max-sm:col-start-1 max-sm:col-end-4 max-sm:min-w-0 max-sm:p-0'
           )}
           role="button"
           tabIndex={0}
@@ -75,7 +75,7 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
             )}
           </span>
         </td>
-        <td className={tw('px-3 py-4 align-middle', 'max-sm:col-start-2 max-sm:row-start-2 max-sm:p-0 max-sm:pt-2.5')}>
+        <td className={tw('px-3 py-4 align-middle', 'max-sm:col-start-1 max-sm:row-start-2 max-sm:p-0 max-sm:pt-2.5')}>
           <span className="text-muted inline-block text-xs leading-[1.45]">{formatPaperType(paper.entryType)}</span>
         </td>
         <td
@@ -88,7 +88,7 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
         <td
           className={tw(
             'px-3 py-4 align-middle',
-            'max-sm:col-start-2 max-sm:col-end-4 max-sm:row-start-3 max-sm:p-0 max-sm:pt-2.5'
+            'max-sm:col-start-1 max-sm:col-end-4 max-sm:row-start-3 max-sm:p-0 max-sm:pt-2.5'
           )}>
           {paper.links[0] ? (
             <ExternalLink href={paper.links[0].url} label={paper.links[0].label} />

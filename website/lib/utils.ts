@@ -40,7 +40,7 @@ export function getUrl(value: string, key: string) {
 
 export function getLinks(fields: Record<string, string | undefined>) {
   const linkFields = [
-    ['url', 'Paper page'],
+    ['url', 'Paper'],
     ['website', 'Website'],
     ['pdf', 'PDF'],
     ['doi', 'DOI'],

@@ -38,13 +38,13 @@ export default function PaperResults({ expandedId, onToggle }: PaperResultsProps
             <th scope="col" className="px-3 py-2">
               Paper / author
             </th>
-            <th scope="col" className="w-[170px] px-3 py-2 max-lg:w-[142px]">
+            <th scope="col" className="w-[156px] px-3 py-2 max-lg:w-[136px]">
               Type
             </th>
             <th scope="col" className="w-[82px] px-3 py-2">
               Year
             </th>
-            <th scope="col" className="w-[142px] px-3 py-2 max-lg:w-[116px]">
+            <th scope="col" className="w-[124px] px-3 py-2 max-lg:w-[96px]">
               Source
             </th>
           </tr>
