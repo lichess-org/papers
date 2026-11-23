@@ -29,10 +29,10 @@ export default function PaperFilters() {
       <search
         className={tw(
           'grid grid-cols-[minmax(240px,1fr)_174px_142px_150px] gap-2',
-          'max-lg:grid-cols-[minmax(200px,1fr)_1fr_1fr]',
+          'max-lg:grid-cols-3',
           'max-sm:grid-cols-2 max-sm:gap-2'
         )}>
-        <div className="relative min-w-0 max-sm:col-span-full">
+        <div className="relative min-w-0 max-lg:col-span-full">
           <span className="text-muted pointer-events-none absolute top-3.5 left-3.5 z-1" aria-hidden="true">
             <MagnifyingGlassIcon size={18} />
           </span>
@@ -91,7 +91,7 @@ export default function PaperFilters() {
           label="Sort papers"
           value={sortOrder}
           onChange={setSortOrder}
-          className="max-lg:col-start-2 max-lg:col-end-4 max-sm:col-span-full"
+          className="max-sm:col-span-full"
           options={[
             { value: 'newest', label: 'Newest first' },
             { value: 'oldest', label: 'Oldest first' },

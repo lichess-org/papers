@@ -33,7 +33,7 @@ export default function PaperRow({ paper, query, isExpanded, onToggle }: PaperRo
         className={tw(
           'border-rule bg-paper-raised border-b duration-180 ease-out',
           'last:border-b-0',
-          'max-sm:grid max-sm:grid-cols-[minmax(0,1fr)_auto] max-sm:gap-y-0 max-sm:border-b max-sm:p-4 max-sm:first:border-t',
+          'max-sm:grid max-sm:grid-cols-[minmax(0,1fr)_auto] max-sm:gap-y-0 max-sm:border-b max-sm:p-4',
           'hover:bg-active hover:transition-colors',
           isExpanded && 'bg-active/60'
         )}>

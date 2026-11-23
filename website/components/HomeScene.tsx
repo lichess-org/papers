@@ -159,7 +159,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
                   <h2 id="papers-title" className="font-slab m-0 text-2xl font-semibold tracking-tight">
                     The paper index
                   </h2>
-                  <p className="text-muted mt-1 mb-0 text-sm max-sm:max-w-[31ch] max-sm:text-[12px]">
+                  <p className="text-muted mt-1 mb-0 text-sm max-sm:text-[12px]">
                     Search the record, then click the title cell to see its abstract and additional links.
                   </p>
                 </div>
