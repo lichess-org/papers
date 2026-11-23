@@ -7,6 +7,7 @@ export type Paper = {
   entryType: string;
   publication: string;
   abstract: string;
+  affiliation: string;
   keywords: string;
   searchText: string;
   links: { label: string; url: string }[];

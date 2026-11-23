@@ -19,6 +19,11 @@ export default function PaperDetailRow({ id, paper, query, isExpanded, onCloseEn
     .split(/[,;]/)
     .map(keyword => keyword.trim())
     .filter(Boolean);
+  const affiliations = paper.affiliation
+    .split(';')
+    .map(affiliation => affiliation.trim())
+    .filter(Boolean);
+  const affiliationOccurrences = new Map<string, number>();
   const keywordOccurrences = new Map<string, number>();
 
   return (
@@ -51,6 +56,22 @@ export default function PaperDetailRow({ id, paper, query, isExpanded, onCloseEn
                   'No abstract is included for this record.'
                 )}
               </p>
+              {affiliations.length > 0 && (
+                <p className="text-ink mt-3 mb-0 text-xs">
+                  <strong className="font-slab mr-1.5 text-[13px] font-medium">Affiliation</strong>{' '}
+                  {affiliations.map((affiliation, index) => {
+                    const occurrence = affiliationOccurrences.get(affiliation) ?? 0;
+                    affiliationOccurrences.set(affiliation, occurrence + 1);
+
+                    return (
+                      <Fragment key={`${affiliation}-${occurrence}`}>
+                        {index > 0 && <span className="px-1 opacity-75">•</span>}
+                        <QueryHighlight text={affiliation} query={query} />
+                      </Fragment>
+                    );
+                  })}
+                </p>
+              )}
               {keywords.length > 0 && (
                 <p className="text-ink mt-3 mb-0 text-xs">
                   <strong className="font-slab mr-1.5 text-[13px] font-medium">Keywords</strong>{' '}

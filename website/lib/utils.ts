@@ -78,6 +78,7 @@ export function formatPaper(record: RawPaper, index: number): Paper {
     entryType: record.entryType,
     publication,
     abstract: getField(fields, 'abstract'),
+    affiliation: getField(fields, 'affiliation'),
     keywords: getField(fields, 'keywords'),
     searchText: normalizeSearchText(
       Object.values(fields)
