@@ -16,7 +16,7 @@ export default function ExternalLink({ href, label }: Props) {
       target="_blank"
       rel="noopener noreferrer">
       {label}
-      <ArrowUpRightIcon weight="bold" className="shrink-0" />
+      <ArrowUpRightIcon weight="bold" className="text-pencil/80 shrink-0" />
     </a>
   );
 }

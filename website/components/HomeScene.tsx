@@ -1,14 +1,15 @@
 'use client';
 
-import { GithubLogoIcon } from '@phosphor-icons/react/ssr';
+import { CircleHalfIcon, GithubLogoIcon, MoonIcon, SunIcon } from '@phosphor-icons/react/ssr';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
+import LichessLogo from '~/components/LichessLogo';
 import { PaperSearchProvider } from '~/context/PaperSearchContext';
 import { CONTENT_WRAPPER_CLASSES, LINK_HOVER_CLASSES } from '~/lib/style';
+import { applyTheme, toggleTheme } from '~/lib/theme';
 import { type Paper } from '~/lib/types';
 import { tw } from '~/lib/utils';
 
-import ChessboardBackground from './ChessboardBackground';
 import PaperFilters from './PaperFilters';
 import PaperResults from './PaperResults';
 
@@ -40,6 +41,23 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    const colorScheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function syncSystemTheme(event: MediaQueryList | MediaQueryListEvent = colorScheme) {
+      if ((root.dataset.themeMode ?? 'automatic') !== 'automatic') {
+        return;
+      }
+
+      applyTheme('automatic', event.matches);
+    }
+
+    syncSystemTheme();
+    colorScheme.addEventListener('change', syncSystemTheme);
+    return () => colorScheme.removeEventListener('change', syncSystemTheme);
+  }, []);
+
   function toggleExpanded(paperId: string) {
     setExpandedId(expandedId === paperId ? null : paperId);
   }
@@ -59,25 +77,46 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
         )}>
         <a
           className={tw(
-            'text-ink inline-flex items-center gap-2.5 text-xl font-bold tracking-[-0.035em]',
+            'text-ink inline-flex items-center gap-2.5 rounded-sm text-xl font-semibold tracking-[-0.035em]',
             'max-sm:text-base',
-            LINK_HOVER_CLASSES
+            LINK_HOVER_CLASSES,
+            'focus-visible:outline-offset-[4px]'
           )}
           href="https://lichess.org"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Lichess Bibliography">
-          <img src="/lichess.svg" alt="Lichess.org" className="h-8 max-sm:h-5" />
+          <LichessLogo className="h-8 max-sm:h-5" />
           Lichess.org
         </a>
-        <a
-          href="https://github.com/lichess-org/papers"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-muted hover:text-pencil inline-flex items-center gap-1.5 text-sm max-sm:text-xs">
-          <GithubLogoIcon size={20} />
-          GitHub
-        </a>
+        <div className="flex items-center gap-3">
+          <button
+            type="button"
+            aria-label="Cycle color theme"
+            onClick={toggleTheme}
+            className={tw(
+              'text-muted inline-flex size-10 cursor-pointer items-center justify-center rounded-sm border-0 bg-transparent p-0',
+              'hover:text-pencil',
+              'focus-visible:outline-pencil focus-visible:outline-2 focus-visible:outline-offset-2'
+            )}>
+            <CircleHalfIcon size={20} className="theme-toggle-icon theme-toggle-icon-automatic" aria-hidden="true" />
+            <SunIcon size={20} className="theme-toggle-icon theme-toggle-icon-light" aria-hidden="true" />
+            <MoonIcon size={20} className="theme-toggle-icon theme-toggle-icon-dark" aria-hidden="true" />
+          </button>
+          <a
+            href="https://github.com/lichess-org/papers"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={tw(
+              'text-muted inline-flex h-10 items-center gap-1.5 rounded-sm text-sm',
+              'max-sm:text-xs',
+              'hover:text-pencil',
+              'focus-visible:outline-pencil focus-visible:outline-2 focus-visible:outline-offset-2'
+            )}>
+            <GithubLogoIcon size={20} />
+            GitHub
+          </a>
+        </div>
       </header>
       <main className={tw('flex-1', CONTENT_WRAPPER_CLASSES)}>
         <section
@@ -87,7 +126,6 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
             'max-sm:min-h-0 max-sm:flex-col max-sm:items-start max-sm:gap-5.5 max-sm:py-10 max-sm:pb-7'
           )}
           aria-labelledby="page-title">
-          <ChessboardBackground />
           <div>
             <h1
               id="page-title"

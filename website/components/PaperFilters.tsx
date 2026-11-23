@@ -41,7 +41,7 @@ export default function PaperFilters() {
           </label>
           <input
             className={tw(
-              'bg-paper-raised text-ink caret-pencil focus-visible:outline-pencil h-11.5 w-full rounded-none border border-[#bfc2b7] py-0 pr-12 pl-10.5 text-sm',
+              'bg-paper-raised text-ink caret-pencil focus-visible:outline-pencil border-rule h-11.5 w-full rounded-sm border py-0 pr-12 pl-10.5 text-sm shadow-2xs',
               'placeholder:text-muted placeholder:opacity-80',
               'focus-visible:outline-3 focus-visible:outline-offset-[3px]',
               'max-sm:h-11 max-sm:text-xs'
@@ -97,7 +97,7 @@ export default function PaperFilters() {
         />
       </search>
       <div className="flex min-h-12 items-center justify-between">
-        <p className="text-muted m-0 text-[11px] font-semibold tabular-nums" role="status" aria-live="polite">
+        <p className="text-muted m-0 text-xs font-semibold tabular-nums" role="status" aria-live="polite">
           {papers.length} {papers.length === 1 ? 'paper' : 'papers'}
           {hasFilters ? ` of ${totalCount}` : ''}
         </p>

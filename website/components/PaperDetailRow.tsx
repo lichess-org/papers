@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import ExternalLink from '~/components/ExternalLink';
 import { type Paper } from '~/lib/types';
 import { tw } from '~/lib/utils';
@@ -10,10 +12,16 @@ type PaperDetailRowProps = {
 };
 
 export default function PaperDetailRow({ id, paper, isExpanded, onCloseEnd }: PaperDetailRowProps) {
+  const keywords = paper.keywords
+    .split(/[,;]/)
+    .map(keyword => keyword.trim())
+    .filter(Boolean);
+  const keywordOccurrences = new Map<string, number>();
+
   return (
-    <tr id={id} className="border-rule border-x max-sm:block">
+    <tr id={id} className="group max-sm:block">
       <td
-        className="border-rule to-active/40 from-paper-raised border-b bg-linear-to-b from-66% p-0 max-sm:block"
+        className="border-rule bg-active/60 border-b p-0 group-last:border-b-0 max-sm:block"
         colSpan={5}
         aria-label={`Details for ${paper.title}`}>
         <div
@@ -32,11 +40,24 @@ export default function PaperDetailRow({ id, paper, isExpanded, onCloseEnd }: Pa
               'max-sm:grid-cols-1 max-sm:gap-3.5 max-sm:p-4'
             )}>
             <div>
-              <h3 className="mt-0 mb-2 text-xs font-semibold">Abstract</h3>
-              <p className="text-ink m-0 text-xs">{paper.abstract || 'No abstract is included for this record.'}</p>
-              {paper.keywords && (
+              <h3 className="font-slab mt-0 mb-2 text-[13px] font-medium">Abstract</h3>
+              <p className="text-ink m-0 text-[13px] leading-snug">
+                {paper.abstract || 'No abstract is included for this record.'}
+              </p>
+              {keywords.length > 0 && (
                 <p className="text-ink mt-3 mb-0 text-xs">
-                  <strong className="mr-1.5">Keywords</strong> {paper.keywords}
+                  <strong className="font-slab mr-1.5 text-[13px] font-medium">Keywords</strong>{' '}
+                  {keywords.map((keyword, index) => {
+                    const occurrence = keywordOccurrences.get(keyword) ?? 0;
+                    keywordOccurrences.set(keyword, occurrence + 1);
+
+                    return (
+                      <Fragment key={`${keyword}-${occurrence}`}>
+                        {index > 0 && <span className="px-1 opacity-75">•</span>}
+                        {keyword}
+                      </Fragment>
+                    );
+                  })}
                 </p>
               )}
             </div>
@@ -47,7 +68,7 @@ export default function PaperDetailRow({ id, paper, isExpanded, onCloseEnd }: Pa
                   'max-sm:flex-row max-sm:flex-wrap max-sm:gap-x-2.5 max-sm:gap-y-3.5'
                 )}
                 role="group">
-                <h3 className="mt-0 mb-2 text-xs font-semibold">Additional links</h3>
+                <h3 className="font-slab mt-0 mb-2 text-[13px] font-medium">Additional links</h3>
                 {paper.links.slice(1).map(link => (
                   <ExternalLink key={`${link.label}-${link.url}`} href={link.url} label={link.label} />
                 ))}

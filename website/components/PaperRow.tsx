@@ -28,10 +28,11 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
     <>
       <tr
         className={tw(
-          'border-rule bg-paper-raised border border-t-0 transition-colors duration-180 ease-out',
+          'border-rule bg-paper-raised border-b duration-180 ease-out',
+          'last:border-b-0',
           'max-sm:grid max-sm:grid-cols-[minmax(0,1fr)_auto] max-sm:gap-y-0 max-sm:border-b max-sm:p-4 max-sm:first:border-t',
-          'hover:bg-active/75',
-          isExpanded && 'bg-active/50'
+          'hover:bg-active hover:transition-colors',
+          isExpanded && 'bg-active/60'
         )}>
         <td
           className={tw(
@@ -58,8 +59,10 @@ export default function PaperRow({ paper, isExpanded, onToggle }: PaperRowProps)
             )}>
             <CaretDownIcon
               size={18}
-              color="#72796f"
-              className={tw('shrink-0 transition-transform duration-180 ease-out', isExpanded && 'rotate-180')}
+              className={tw(
+                'text-muted shrink-0 transition-transform duration-180 ease-out',
+                isExpanded && 'rotate-180'
+              )}
             />
             <span className="group-hover:decoration-pencil group-hover:underline group-hover:underline-offset-2">
               {paper.title}

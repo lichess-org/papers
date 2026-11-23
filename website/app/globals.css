@@ -1,16 +1,43 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 :root {
-  color-scheme: light;
-  --paper: #f5f3ed;
-  --paper-raised: #fbfaf6;
-  --ink: #202923;
-  --muted: #656d65;
-  --rule: #d3d4c9;
-  --pencil: #ba4935;
-  --active: #eee6dc;
   --font-display: var(--font-roboto-slab), Georgia, serif;
-  --font-body: var(--font-geist-sans), Arial, sans-serif;
+  --font-body: var(--font-noto-sans-display), Arial, sans-serif;
+
+  color-scheme: light;
+  --paper: #edebe9;
+  --paper-raised: #fbfaf6;
+  --ink: #4d4d4d;
+  --muted: #787878;
+  --rule: #d1d1d1;
+  --pencil: #d56b20;
+  --active: rgb(255 247 237 / 0.8);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #161512;
+  --paper-raised: #262421;
+  --ink: #f5f3ed;
+  --muted: #b7bdb2;
+  --rule: #404040;
+  --pencil: #bf811d;
+  --active: rgb(166 98 56 / 0.2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --paper: #161512;
+    --paper-raised: #262421;
+    --ink: #f5f3ed;
+    --muted: #b7bdb2;
+    --rule: #404040;
+    --pencil: #bf811d;
+    --active: rgb(154 91 53 / 0.2);
+  }
 }
 
 @theme inline {
@@ -28,10 +55,24 @@
 }
 
 html {
-  min-height: 100%;
-  scroll-behavior: smooth;
-  scrollbar-color: #9a9e90 var(--paper);
+  @apply bg-paper text-ink min-h-full scroll-smooth;
+  scrollbar-color: var(--muted) var(--paper);
   scrollbar-gutter: stable;
+}
+
+.theme-toggle-icon {
+  @apply hidden;
+}
+
+:root[data-theme-mode='automatic'] .theme-toggle-icon-automatic,
+:root[data-theme-mode='light'] .theme-toggle-icon-dark,
+:root[data-theme-mode='dark'] .theme-toggle-icon-light {
+  @apply block;
+}
+
+:root[data-theme-changing],
+:root[data-theme-changing] * {
+  transition: none !important;
 }
 
 @layer base {
@@ -43,20 +84,16 @@ html {
 }
 
 .paper-detail-panel {
-  height: auto;
-  overflow: clip;
-  interpolate-size: allow-keywords;
-  transition: height 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  @apply h-auto overflow-clip [interpolate-size:allow-keywords] [transition:height_220ms_cubic-bezier(0.16,1,0.3,1)];
 }
 
 .paper-detail-panel[data-expanded='false'] {
-  height: 0;
-  transition-duration: 150ms;
+  @apply h-0 duration-150;
 }
 
 @starting-style {
   .paper-detail-panel[data-expanded='true'] {
-    height: 0;
+    @apply h-0;
   }
 }
 
