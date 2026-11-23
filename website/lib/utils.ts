@@ -62,12 +62,6 @@ export function formatPaper(record: RawPaper, index: number): Paper {
   const fields = record.fields;
   const title = getField(fields, 'title').replace(/[{}]/g, '');
   const authors = getField(fields, 'author').replace(/\s+and\s+/g, ', ');
-  const publication =
-    getField(fields, 'journal') ||
-    getField(fields, 'booktitle') ||
-    getField(fields, 'institution') ||
-    getField(fields, 'publisher') ||
-    getField(fields, 'affiliation');
 
   return {
     id: record.id,
@@ -76,7 +70,10 @@ export function formatPaper(record: RawPaper, index: number): Paper {
     authors,
     year: getField(fields, 'year'),
     entryType: record.entryType,
-    publication,
+    journal: getField(fields, 'journal'),
+    booktitle: getField(fields, 'booktitle'),
+    institution: getField(fields, 'institution'),
+    publisher: getField(fields, 'publisher'),
     abstract: getField(fields, 'abstract'),
     affiliation: getField(fields, 'affiliation'),
     keywords: getField(fields, 'keywords'),

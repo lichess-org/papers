@@ -5,9 +5,12 @@ export type Paper = {
   authors: string;
   year: string;
   entryType: string;
-  publication: string;
   abstract: string;
-  affiliation: string;
+  journal?: string;
+  booktitle?: string;
+  institution?: string;
+  publisher?: string;
+  affiliation?: string;
   keywords: string;
   searchText: string;
   links: { label: string; url: string }[];

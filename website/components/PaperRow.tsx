@@ -74,12 +74,6 @@ export default function PaperRow({ paper, query, isExpanded, onToggle }: PaperRo
           </div>
           <span className="text-muted mt-1 block overflow-hidden pl-7.5 text-xs leading-[1.45] text-ellipsis max-sm:line-clamp-2">
             <QueryHighlight text={paper.authors ?? 'Author not listed'} query={query} />
-            {paper.publication && (
-              <>
-                <span className="px-1 opacity-75">•</span>
-                <QueryHighlight text={paper.publication} query={query} />
-              </>
-            )}
           </span>
         </td>
         <td className={tw('px-3 py-4 align-middle', 'max-sm:col-start-1 max-sm:row-start-2 max-sm:p-0 max-sm:pt-2.5')}>

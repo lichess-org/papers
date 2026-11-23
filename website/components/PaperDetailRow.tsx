@@ -19,7 +19,13 @@ export default function PaperDetailRow({ id, paper, query, isExpanded, onCloseEn
     .split(/[,;]/)
     .map(keyword => keyword.trim())
     .filter(Boolean);
-  const affiliations = paper.affiliation
+  const publications = [
+    { key: 'journal', value: paper.journal?.trim() },
+    { key: 'booktitle', value: paper.booktitle?.trim() },
+  ].filter((publication): publication is { key: string; value: string } => Boolean(publication.value));
+  const institution = paper.institution?.trim();
+  const publisher = paper.publisher?.trim();
+  const affiliations = (paper.affiliation ?? '')
     .split(';')
     .map(affiliation => affiliation.trim())
     .filter(Boolean);
@@ -49,7 +55,7 @@ export default function PaperDetailRow({ id, paper, query, isExpanded, onCloseEn
             )}>
             <div>
               <h3 className="font-slab mt-0 mb-2 text-[13px] font-medium">Abstract</h3>
-              <p className="text-ink m-0 text-[13px] leading-snug">
+              <p className={tw('text-muted m-0 mb-0.5 text-[13px] leading-snug', paper.abstract && 'text-ink')}>
                 {paper.abstract ? (
                   <QueryHighlight text={paper.abstract} query={query} />
                 ) : (
@@ -57,7 +63,7 @@ export default function PaperDetailRow({ id, paper, query, isExpanded, onCloseEn
                 )}
               </p>
               {affiliations.length > 0 && (
-                <p className="text-ink mt-3 mb-0 text-xs">
+                <p className="text-ink mt-2.5 mb-0 text-xs">
                   <strong className="font-slab mr-1.5 text-[13px] font-medium">Affiliation</strong>{' '}
                   {affiliations.map((affiliation, index) => {
                     const occurrence = affiliationOccurrences.get(affiliation) ?? 0;
@@ -72,8 +78,31 @@ export default function PaperDetailRow({ id, paper, query, isExpanded, onCloseEn
                   })}
                 </p>
               )}
+              {publications.length > 0 && (
+                <p className="text-ink mt-2.5 mb-0 text-xs">
+                  <strong className="font-slab mr-1.5 text-[13px] font-medium">Publication</strong>{' '}
+                  {publications.map((publication, index) => (
+                    <Fragment key={publication.key}>
+                      {index > 0 && <span className="px-1 opacity-75">•</span>}
+                      <QueryHighlight text={publication.value} query={query} />
+                    </Fragment>
+                  ))}
+                </p>
+              )}
+              {institution && institution !== paper.affiliation && (
+                <p className="text-ink mt-2.5 mb-0 text-xs">
+                  <strong className="font-slab mr-1.5 text-[13px] font-medium">Institution</strong>{' '}
+                  <QueryHighlight text={institution} query={query} />
+                </p>
+              )}
+              {publisher && (
+                <p className="text-ink mt-2.5 mb-0 text-xs">
+                  <strong className="font-slab mr-1.5 text-[13px] font-medium">Publisher</strong>{' '}
+                  <QueryHighlight text={publisher} query={query} />
+                </p>
+              )}
               {keywords.length > 0 && (
-                <p className="text-ink mt-3 mb-0 text-xs">
+                <p className="text-ink mt-2.5 mb-0 text-xs">
                   <strong className="font-slab mr-1.5 text-[13px] font-medium">Keywords</strong>{' '}
                   {keywords.map((keyword, index) => {
                     const occurrence = keywordOccurrences.get(keyword) ?? 0;
