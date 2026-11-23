@@ -22,19 +22,6 @@
   affiliation   = {Chalmers University of Technology},
 }
 
-@misc{marosi2026generalprogresssubstitutesspecific,
-      title={General progress substitutes for specific training data in language models}, 
-      author={Mark Marosi and Peter Antal},
-      year={2026},
-      eprint={2611.24844},
-      archivePrefix={arXiv},
-      abstract = {Language models acquire their capabilities from training data, and developers withhold data during training to keep models from learning capabilities that could be misused. How long this delays a capability, and how much data is needed to acquire it later, is unknown. Here we show that the general progress a model makes on the rest of its training data substitutes for the data that was withheld. We withheld the training signal for individual skills in models of chess, Othello, molecular strings, bracket languages and web text. The delay of a withheld skill in larger models was predicted from smaller ones. A chess model never explicitly trained to respond to check ranked the legal responses almost as well as a model that was. When models were then trained on the withheld data, they acquired the skill with a small fraction of the data needed from initialization, and this fraction decreased as the models progressed. A control rule of equal difficulty was learned much more slowly. A programming language withheld from the training text of a 7-billion-parameter model was regained in the same way. Data filtering therefore delays a capability, and the data required to regain it decreases as models improve.},
-affiliation = {Budapest University of Technology and Economics (BME)},
-code = {https://github.com/Mapika/progress-substitutes-data},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2611.24844}, 
-}
-
 @article{adorjan:2025:statistical-analysis-of-hungarian-board-game-sales,
   title         = {Statistical Analysis of Hungarian Board Game Sales},
   author        = {Adorján, Balázs and Bednárik, Éva},
@@ -2356,6 +2343,19 @@ code = {https://github.com/Mapika/progress-substitutes-data},
   abstract      = {In the intricate landscape of game-playing algorithms, Crazyhouse stands as a complex variant of chess where captured pieces are reintroduced, presenting unique evaluation challenges. This paper explores a hybrid approach that combines traditional evaluation functions with neural network-based evaluations, seeking an optimal balance in performance. Through rigorous experimentation, including self-play, matchups against a variant of the renowned program, Go-deep experiments, and score deviations, we present compelling evidence for the effectiveness of a weighted sum of both evaluations. Remarkably, in our experiments, the combination of 75\% neural network and 25\% traditional evaluation consistently emerged as the most effective choice. Furthermore, we introduce the use of Best-Change rates, which have previously been associated with evaluation quality, in the context of Monte Carlo tree search-based algorithms.},
   keywords      = {Crazyhouse, chess variants, heuristic evaluation functions, neural networks, Best-Change rates, Monte Carlo tree search},
   affiliation   = {University of Ljubljana; TU Graz},
+}
+
+@misc{marosi:2026:general-progress-substitutes-for-specific-training-data-in-language-models,
+  title         = {General progress substitutes for specific training data in language models},
+  author        = {Mark Marosi and Peter Antal},
+  year          = {2026},
+  eprint        = {2611.24844},
+  url           = {https://arxiv.org/abs/2611.24844},
+  abstract      = {Language models acquire their capabilities from training data, and developers withhold data during training to keep models from learning capabilities that could be misused. How long this delays a capability, and how much data is needed to acquire it later, is unknown. Here we show that the general progress a model makes on the rest of its training data substitutes for the data that was withheld. We withheld the training signal for individual skills in models of chess, Othello, molecular strings, bracket languages and web text. The delay of a withheld skill in larger models was predicted from smaller ones. A chess model never explicitly trained to respond to check ranked the legal responses almost as well as a model that was. When models were then trained on the withheld data, they acquired the skill with a small fraction of the data needed from initialization, and this fraction decreased as the models progressed. A control rule of equal difficulty was learned much more slowly. A programming language withheld from the training text of a 7-billion-parameter model was regained in the same way. Data filtering therefore delays a capability, and the data required to regain it decreases as models improve.},
+  affiliation   = {Budapest University of Technology and Economics (BME)},
+  code          = {https://github.com/Mapika/progress-substitutes-data},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
 }
 
 @article{martin:2025:re-evaluating-metamorphic-testing-of-chess-engines-replication-study,
