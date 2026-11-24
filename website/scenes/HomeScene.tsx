@@ -1,6 +1,13 @@
 'use client';
 
-import { ArrowUpIcon, CircleHalfIcon, GithubLogoIcon, MoonIcon, SunIcon } from '@phosphor-icons/react/ssr';
+import {
+  ArrowUpIcon,
+  ArrowUpRightIcon,
+  CircleHalfIcon,
+  GithubLogoIcon,
+  MoonIcon,
+  SunIcon,
+} from '@phosphor-icons/react/ssr';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import LichessLogo from '~/components/LichessLogo';
@@ -187,19 +194,30 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
       </main>
       <footer
         className={tw(
-          'border-rule text-muted flex min-h-16 items-center justify-between gap-x-5 gap-y-3 border-t',
-          'max-sm:flex-col max-sm:py-4 max-sm:text-center max-sm:text-[10px]',
+          'border-rule text-muted grid min-h-16 grid-cols-3 items-center justify-between gap-x-5 gap-y-2 border-t',
+          'max-sm:grid-cols-1 max-sm:py-4 max-sm:text-center max-sm:text-[10px]',
           CONTENT_WRAPPER_CLASSES
         )}>
-        <a href="#top" className={tw('text-ink font-slab rounded-sm text-sm font-bold', FOCUS_ACTIVE_CLASSES)}>
+        <a
+          href="#top"
+          className={tw(
+            'text-ink font-slab rounded-sm text-left text-sm font-bold max-sm:text-center',
+            FOCUS_ACTIVE_CLASSES
+          )}>
           Lichess Bibliography
         </a>
+        <LichessLogo className="mx-auto size-7 opacity-40 max-sm:order-3 max-sm:mt-2" />
         <a
           href="https://github.com/lichess-org/papers/blob/main/CONTRIBUTING.md"
           target="_blank"
           rel="noopener noreferrer"
-          className={tw('rounded-sm text-xs', 'hover:text-pencil', FOCUS_ACTIVE_CLASSES)}>
+          className={tw(
+            'group inline-flex items-center justify-end gap-0.5 rounded-sm text-xs',
+            'hover:text-pencil',
+            FOCUS_ACTIVE_CLASSES
+          )}>
           If we missed your work, feel free to open an issue or submit a PR.
+          <ArrowUpRightIcon size={13} className="text-muted/80 group-hover:text-pencil/80 shrink-0 max-sm:hidden" />
         </a>
       </footer>
     </div>

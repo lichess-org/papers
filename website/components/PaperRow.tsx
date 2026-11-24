@@ -59,7 +59,7 @@ export default function PaperRow({ paper, query, isExpanded, onToggle }: PaperRo
           <div
             className={tw(
               'font-slab text-ink flex w-full items-center gap-3 border-0 bg-transparent p-0 text-left text-[15px] leading-[1.35] font-semibold',
-              'max-sm:text-[14px]'
+              'max-sm:flex-row-reverse max-sm:text-[14px]'
             )}>
             <CaretDownIcon
               size={18}
@@ -72,17 +72,21 @@ export default function PaperRow({ paper, query, isExpanded, onToggle }: PaperRo
               <QueryHighlight text={paper.title} query={query} />
             </span>
           </div>
-          <span className="text-muted mt-1 block overflow-hidden pl-7.5 text-xs leading-[1.45] text-ellipsis max-sm:line-clamp-2">
+          <span
+            className={tw(
+              'text-muted mt-1 block overflow-hidden pl-7.5 text-xs leading-[1.45] text-ellipsis',
+              'max-sm:line-clamp-2 max-sm:pl-0'
+            )}>
             <QueryHighlight text={paper.authors ?? 'Author not listed'} query={query} />
           </span>
         </td>
-        <td className={tw('px-3 py-4 align-middle', 'max-sm:col-start-1 max-sm:row-start-2 max-sm:p-0 max-sm:pt-2.5')}>
+        <td className={tw('px-3 py-4 align-middle', 'max-sm:col-start-1 max-sm:row-start-2 max-sm:p-0 max-sm:pt-1.5')}>
           <span className="text-muted inline-block text-xs leading-[1.45]">{formatPaperType(paper.entryType)}</span>
         </td>
         <td
           className={tw(
             'text-muted px-3 py-4 align-middle text-xs tabular-nums',
-            'max-sm:col-start-3 max-sm:row-start-2 max-sm:flex max-sm:items-center max-sm:justify-end max-sm:p-0 max-sm:pt-2.5 max-sm:text-right'
+            'max-sm:col-start-3 max-sm:row-start-2 max-sm:flex max-sm:items-center max-sm:justify-end max-sm:p-0 max-sm:pt-1.5 max-sm:text-right'
           )}>
           <QueryHighlight text={paper.year ?? '—'} query={query} />
         </td>
