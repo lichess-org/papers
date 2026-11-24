@@ -4,15 +4,14 @@ import { ArrowUpIcon, CircleHalfIcon, GithubLogoIcon, MoonIcon, SunIcon } from '
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import LichessLogo from '~/components/LichessLogo';
+import PaperFilters from '~/components/PaperFilters';
+import PaperResults from '~/components/PaperResults';
+import ResearchOverviewGraphic from '~/components/ResearchOverviewGraphic';
 import { PaperSearchProvider } from '~/context/PaperSearchContext';
 import { CONTENT_WRAPPER_CLASSES, FOCUS_ACTIVE_CLASSES, LINK_HOVER_CLASSES } from '~/lib/style';
 import { applyTheme, toggleTheme } from '~/lib/theme';
 import { type Paper } from '~/lib/types';
 import { tw } from '~/lib/utils';
-
-import PaperFilters from './PaperFilters';
-import PaperResults from './PaperResults';
-import ResearchOverviewGraphic from './ResearchOverviewGraphic';
 
 type PaperLibraryProps = {
   papers: Paper[];
@@ -78,7 +77,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
         )}>
         <a
           className={tw(
-            'text-ink inline-flex items-center gap-2.5 rounded-sm text-xl font-semibold tracking-[-0.035em]',
+            'text-ink inline-flex items-center gap-2.5 rounded-sm text-2xl font-semibold tracking-[-0.035em]',
             'max-sm:text-base',
             LINK_HOVER_CLASSES,
             'focus-visible:outline-offset-4'
@@ -88,7 +87,9 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
           rel="noopener noreferrer"
           aria-label="Lichess Bibliography">
           <LichessLogo className="h-8 max-sm:h-5" />
-          Lichess.org
+          <span>
+            lichess<span className="text-muted">.org</span>
+          </span>
         </a>
         <div className="flex items-center gap-3">
           <button

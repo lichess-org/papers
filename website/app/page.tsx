@@ -1,6 +1,6 @@
-import HomeScene from '~/components/HomeScene';
 import { type RawPaper } from '~/lib/types';
 import { formatPaper } from '~/lib/utils';
+import HomeScene from '~/scenes/HomeScene';
 
 import paperData from '../public/data.json';
 
