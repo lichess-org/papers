@@ -1,9 +1,9 @@
 'use client';
 
-import { createContext, type PropsWithChildren, useCallback, useContext, useMemo, useState } from 'react';
+import { createContext, type PropsWithChildren, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
-import { type Paper } from '~/lib/types';
-import { normalizeSearchText } from '~/lib/utils';
+import { type Paper, type RawPaper } from '~/lib/types';
+import { formatPaper, normalizeSearchText } from '~/lib/utils';
 
 type PaperSearchContextValue = {
   query: string;
@@ -18,22 +18,55 @@ type PaperSearchContextValue = {
   years: string[];
   papers: Paper[];
   totalCount: number;
+  isLoading: boolean;
+  loadError: string | null;
   hasFilters: boolean;
   clearFilters: () => void;
 };
 
 type PaperSearchProviderProps = PropsWithChildren<{
-  papersData: Paper[];
+  dataUrl: string;
   onClear: () => void;
 }>;
 
 const PaperSearchContext = createContext<PaperSearchContextValue | null>(null);
 
-export function PaperSearchProvider({ papersData, children, onClear }: PaperSearchProviderProps) {
+export function PaperSearchProvider({ dataUrl, children, onClear }: PaperSearchProviderProps) {
+  const [papersData, setPapersData] = useState<Paper[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
   const [query, setQuery] = useState('');
   const [typeFilter, setTypeFilter] = useState('');
   const [yearFilter, setYearFilter] = useState('');
   const [sortOrder, setSortOrder] = useState('newest');
+
+  useEffect(() => {
+    const controller = new AbortController();
+
+    async function loadPapers() {
+      try {
+        const response = await fetch(dataUrl, { signal: controller.signal });
+        if (!response.ok) {
+          throw new Error(`Paper data request failed with status ${response.status}`);
+        }
+
+        const rawPapers = (await response.json()) as RawPaper[];
+        setPapersData(rawPapers.map(formatPaper).filter(paper => paper.title !== 'Untitled paper'));
+      } catch (error) {
+        if (!controller.signal.aborted) {
+          console.error('Failed to load paper data', error);
+          setLoadError('Could not load the paper list. Please refresh to try again.');
+        }
+      } finally {
+        if (!controller.signal.aborted) {
+          setIsLoading(false);
+        }
+      }
+    }
+
+    void loadPapers();
+    return () => controller.abort();
+  }, [dataUrl]);
 
   const types = useMemo(() => [...new Set(papersData.map(paper => paper.entryType))].sort(), [papersData]);
   const years = useMemo(() => {
@@ -89,10 +122,25 @@ export function PaperSearchProvider({ papersData, children, onClear }: PaperSear
       years,
       papers,
       totalCount: papersData.length,
+      isLoading,
+      loadError,
       hasFilters,
       clearFilters,
     }),
-    [query, typeFilter, yearFilter, sortOrder, types, years, papers, papersData.length, hasFilters, clearFilters]
+    [
+      query,
+      typeFilter,
+      yearFilter,
+      sortOrder,
+      types,
+      years,
+      papers,
+      papersData.length,
+      isLoading,
+      loadError,
+      hasFilters,
+      clearFilters,
+    ]
   );
 
   return <PaperSearchContext.Provider value={value}>{children}</PaperSearchContext.Provider>;

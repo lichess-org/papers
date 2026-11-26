@@ -22,6 +22,8 @@ export default function PaperFilters() {
     years,
     papers,
     totalCount,
+    isLoading,
+    loadError,
     hasFilters,
     clearFilters,
   } = usePaperSearch();
@@ -108,8 +110,11 @@ export default function PaperFilters() {
       </search>
       <div className="flex min-h-12 items-center justify-between pb-1">
         <p className="text-muted m-0 text-xs font-semibold tabular-nums" role="status" aria-live="polite">
-          {papers.length} {papers.length === 1 ? 'paper' : 'papers'}
-          {hasFilters ? ` of ${totalCount}` : ''}
+          {isLoading
+            ? 'Loading papers...'
+            : loadError
+              ? 'Paper list unavailable'
+              : `${papers.length} ${papers.length === 1 ? 'paper' : 'papers'}${hasFilters ? ` of ${totalCount}` : ''}`}
         </p>
         {hasFilters && (
           <button

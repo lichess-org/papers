@@ -1,11 +1,7 @@
-import { type RawPaper } from '~/lib/types';
-import { formatPaper } from '~/lib/utils';
 import HomeScene from '~/scenes/HomeScene';
 
-import paperData from '../public/data.json';
-
-const papers = (paperData as RawPaper[]).map(formatPaper).filter(paper => paper.title !== 'Untitled paper');
+const basePath = process.env.GITHUB_ACTIONS === 'true' ? '/lichess-papers' : '';
 
 export default function Home() {
-  return <HomeScene papers={papers} />;
+  return <HomeScene dataUrl={`${basePath}/data.json`} />;
 }

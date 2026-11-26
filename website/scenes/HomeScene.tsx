@@ -17,14 +17,13 @@ import ResearchOverviewGraphic from '~/components/ResearchOverviewGraphic';
 import { PaperSearchProvider } from '~/context/PaperSearchContext';
 import { CONTENT_WRAPPER_CLASSES, FOCUS_ACTIVE_CLASSES, LINK_HOVER_CLASSES } from '~/lib/style';
 import { applyTheme, toggleTheme } from '~/lib/theme';
-import { type Paper } from '~/lib/types';
 import { tw } from '~/lib/utils';
 
 type PaperLibraryProps = {
-  papers: Paper[];
+  dataUrl: string;
 };
 
-export default function HomeScene({ papers }: PaperLibraryProps) {
+export default function HomeScene({ dataUrl }: PaperLibraryProps) {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [isPapersSticky, setIsPapersSticky] = useState(false);
   const papersStickySentinelRef = useRef<HTMLDivElement>(null);
@@ -151,11 +150,8 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
           </div>
           <ResearchOverviewGraphic className="w-[30%] max-w-[340px] min-w-[250px] max-lg:min-w-[220px] max-sm:hidden max-sm:w-[52%]" />
         </section>
-        <PaperSearchProvider papersData={papers} onClear={clearExpandedId}>
-          <section
-            id="papers"
-            className="scroll-mt-6 pt-2.5 pb-18 max-sm:pt-2 max-sm:pb-12"
-            aria-labelledby="papers-title">
+        <PaperSearchProvider dataUrl={dataUrl} onClear={clearExpandedId}>
+          <section id="papers" className="scroll-mt-6 pt-2.5 pb-12" aria-labelledby="papers-title">
             <div ref={papersStickySentinelRef} className="h-px" aria-hidden="true" />
             <div
               className={tw(

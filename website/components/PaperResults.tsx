@@ -10,7 +10,19 @@ type PaperResultsProps = {
 };
 
 export default function PaperResults({ expandedId, onToggle }: PaperResultsProps) {
-  const { papers, clearFilters, query } = usePaperSearch();
+  const { papers, clearFilters, query, isLoading, loadError } = usePaperSearch();
+
+  if (isLoading) {
+    return null;
+  }
+
+  if (loadError) {
+    return (
+      <p className="text-muted py-8 text-center" role="alert">
+        {loadError}
+      </p>
+    );
+  }
 
   if (papers.length === 0) {
     return (
