@@ -2,6 +2,7 @@ import './globals.css';
 
 import { type Metadata } from 'next';
 import { Noto_Sans_Display, Roboto_Slab } from 'next/font/google';
+import { type PropsWithChildren } from 'react';
 
 const basePath = process.env.GITHUB_ACTIONS === 'true' ? '/lichess-papers' : '';
 
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<'/'>) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html
       lang="en"
