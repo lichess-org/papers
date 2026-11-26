@@ -1,4 +1,5 @@
 import { MagnifyingGlassIcon, XIcon } from '@phosphor-icons/react/ssr';
+import { useState } from 'react';
 
 import { usePaperSearch } from '~/context/PaperSearchContext';
 import { FOCUS_ACTIVE_CLASSES, LINK_HOVER_CLASSES } from '~/lib/style';
@@ -7,6 +8,7 @@ import { formatPaperType, tw } from '~/lib/utils';
 import FilterSelect from './FilterSelect';
 
 export default function PaperFilters() {
+  const [pointerFocusedSearch, setPointerFocusedSearch] = useState(false);
   const {
     query,
     setQuery,
@@ -32,8 +34,10 @@ export default function PaperFilters() {
           'max-lg:grid-cols-3',
           'max-sm:grid-cols-2 max-sm:gap-2'
         )}>
-        <div className="relative min-w-0 max-lg:col-span-full">
-          <span className="text-muted pointer-events-none absolute top-3.5 left-3.5 z-1" aria-hidden="true">
+        <div className="group relative min-w-0 max-lg:col-span-full">
+          <span
+            className="text-muted group-focus-within:text-pencil pointer-events-none absolute top-3.5 left-3.5 z-1 transition-colors"
+            aria-hidden="true">
             <MagnifyingGlassIcon size={18} />
           </span>
           <label htmlFor="paper-search" className="sr-only">
@@ -41,15 +45,18 @@ export default function PaperFilters() {
           </label>
           <input
             className={tw(
-              'bg-paper-raised text-ink caret-pencil focus-visible:outline-pencil border-rule h-11.5 w-full rounded-sm border py-0 pr-12 pl-10.5 text-sm shadow-2xs',
+              'bg-paper-raised text-ink caret-pencil border-rule h-11.5 w-full rounded-sm border py-0 pr-12 pl-10.5 text-sm shadow-2xs',
               'placeholder:text-muted placeholder:opacity-80',
+              'hover:border-pencil/50',
               'max-sm:h-11 max-sm:text-xs',
-              FOCUS_ACTIVE_CLASSES
+              pointerFocusedSearch ? 'outline-none' : FOCUS_ACTIVE_CLASSES
             )}
             id="paper-search"
             autoComplete="off"
             type="text"
             value={query}
+            onPointerDown={() => setPointerFocusedSearch(true)}
+            onBlur={() => setPointerFocusedSearch(false)}
             onChange={event => setQuery(event.target.value)}
             placeholder="Search title, author, keyword…"
           />
@@ -73,6 +80,7 @@ export default function PaperFilters() {
           label="Filter by publication type"
           value={typeFilter}
           onChange={setTypeFilter}
+          className="max-sm:col-span-full"
           options={[
             { value: '', label: 'All paper types' },
             ...types.map(type => ({
@@ -91,7 +99,6 @@ export default function PaperFilters() {
           label="Sort papers"
           value={sortOrder}
           onChange={setSortOrder}
-          className="max-sm:col-span-full"
           options={[
             { value: 'newest', label: 'Newest first' },
             { value: 'oldest', label: 'Oldest first' },
@@ -107,11 +114,12 @@ export default function PaperFilters() {
         {hasFilters && (
           <button
             className={tw(
-              'text-pencil cursor-pointer rounded-sm border-0 bg-transparent py-2 text-xs font-semibold',
+              'text-pencil flex cursor-pointer items-center gap-0.5 rounded-sm border-0 bg-transparent py-2 text-xs font-semibold',
               LINK_HOVER_CLASSES
             )}
             type="button"
             onClick={clearFilters}>
+            <XIcon size={14} aria-hidden="true" className="mt-px opacity-80" />
             Clear filters
           </button>
         )}

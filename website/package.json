@@ -12,6 +12,7 @@
     "convert:bib": "bun scripts/convert-bib.ts"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.27.20",
     "@phosphor-icons/react": "^2.1.10",
     "next": "16.4.6",
     "react": "19.3.0",

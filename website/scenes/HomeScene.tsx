@@ -84,7 +84,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
         )}>
         <a
           className={tw(
-            'text-ink inline-flex items-center gap-2.5 rounded-sm text-2xl font-semibold tracking-[-0.035em]',
+            'text-ink inline-flex items-center gap-2.5 rounded-sm text-2xl font-medium tracking-tight',
             'max-sm:text-base',
             LINK_HOVER_CLASSES,
             'focus-visible:outline-offset-4'
@@ -139,7 +139,7 @@ export default function HomeScene({ papers }: PaperLibraryProps) {
             <h1
               id="page-title"
               className={tw(
-                'font-slab m-0 text-[clamp(40px,5vw,65px)] leading-[1.04] font-semibold tracking-[-0.035em] text-balance',
+                'font-slab m-0 text-[clamp(40px,5vw,65px)] leading-[1.04] font-semibold tracking-tight text-balance',
                 'max-sm:text-[clamp(38px,11vw,52px)]'
               )}>
               Lichess Bibliography

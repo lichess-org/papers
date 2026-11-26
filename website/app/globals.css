@@ -83,6 +83,8 @@ html {
   }
 }
 
+/* DETAILS PANE ANIMATION */
+
 .paper-detail-panel {
   @apply h-auto overflow-clip [interpolate-size:allow-keywords] [transition:height_220ms_cubic-bezier(0.16,1,0.3,1)];
 }
@@ -96,6 +98,30 @@ html {
     @apply h-0;
   }
 }
+
+/* SELECTS ANIMATION */
+
+.select-list-wrapper {
+  @apply pointer-events-none hidden opacity-0;
+  transition:
+    opacity 0.2s ease,
+    display 0.2s allow-discrete,
+    overlay 0.2s allow-discrete;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition-duration: 0s;
+  }
+
+  &[data-open='true'] {
+    @apply pointer-events-auto block opacity-100;
+
+    @starting-style {
+      opacity: 0;
+    }
+  }
+}
+
+/* A11Y */
 
 @media (prefers-reduced-motion: reduce) {
   *,

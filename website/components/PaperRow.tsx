@@ -33,7 +33,7 @@ export default function PaperRow({ paper, query, isExpanded, onToggle }: PaperRo
         className={tw(
           'border-rule bg-paper-raised border-b duration-180 ease-out',
           'last:border-b-0',
-          'max-sm:grid max-sm:grid-cols-[minmax(0,1fr)_auto] max-sm:gap-y-0 max-sm:border-b max-sm:p-4',
+          'max-sm:grid max-sm:grid-cols-[max-content_max-content_minmax(0,1fr)] max-sm:gap-y-0 max-sm:border-b max-sm:p-4',
           'hover:bg-active hover:transition-colors',
           isExpanded && 'bg-active/60'
         )}>
@@ -80,14 +80,19 @@ export default function PaperRow({ paper, query, isExpanded, onToggle }: PaperRo
             <QueryHighlight text={paper.authors ?? 'Author not listed'} query={query} />
           </span>
         </td>
-        <td className={tw('px-3 py-4 align-middle', 'max-sm:col-start-1 max-sm:row-start-2 max-sm:p-0 max-sm:pt-1.5')}>
+        <td
+          className={tw(
+            'px-3 py-4 align-middle',
+            'max-sm:col-start-1 max-sm:row-start-2 max-sm:flex max-sm:items-center max-sm:p-0 max-sm:pt-1.5 max-sm:leading-[1.45]'
+          )}>
           <span className="text-muted inline-block text-xs leading-[1.45]">{formatPaperType(paper.entryType)}</span>
         </td>
         <td
           className={tw(
             'text-muted px-3 py-4 align-middle text-xs tabular-nums',
-            'max-sm:col-start-3 max-sm:row-start-2 max-sm:flex max-sm:items-center max-sm:justify-end max-sm:p-0 max-sm:pt-1.5 max-sm:text-right'
+            'max-sm:col-start-2 max-sm:row-start-2 max-sm:flex max-sm:items-center max-sm:justify-start max-sm:p-0 max-sm:pt-1.5 max-sm:text-left max-sm:leading-[1.45]'
           )}>
+          <span className="hidden px-1 opacity-75 max-sm:inline">•</span>
           <QueryHighlight text={paper.year ?? '—'} query={query} />
         </td>
         <td
