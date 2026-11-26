@@ -1730,6 +1730,18 @@
   preprint      = {https://arxiv.org/abs/2502.20216},
 }
 
+@inproceedings{karan:2026:aha-in-chess-puzzles-connections-to-chess-engine-outputs-enjoyment,
+  title         = {Aha! in Chess Puzzles: Connections to Chess Engine Outputs and Enjoyment},
+  author        = {Karan, Eren and Schütt, Anan and Schlagowski, Ruben and André, Elisabeth},
+  year          = {2026},
+  booktitle     = {2026 IEEE Conference on Games (CoG)},
+  pages         = {1--8},
+  doi           = {10.1109/CoG67430.2026.11778891},
+  abstract      = {In chess puzzles, fun arises from the sensation of discovering an element on the board that clearly leads to a solution. This sensation is called the Aha! moment. However, predicting such Aha! moments is non-trivial. In this paper, we propose four chess-engine-based metrics that we hypothesize correlate with the likelihood of Aha! moments. We evaluated these metrics in an online user study (N=1,967), during which we also investigated the relationship between Aha! moments and subjective measures, such as enjoyment and perceived difficulty, as well as response time. We believe our findings can be useful for assessing player enjoyment and designing chess puzzles that aim to provide enjoyment and fun for chess players.},
+  keywords      = {Printing;Modeling;Games;Measurement;Engines;Timing;Ranking (statistics);Conferences;Correlation;Probability;Games and infotainment;Human factors;Human information processing;Heuristic methods},
+  affiliation   = {University of Augsburg},
+}
+
 @inproceedings{karn:2024:personalized-recommendation-of-chess-puzzles,
   title         = {Personalized recommendation of chess puzzles},
   author        = {Karn, Aryan and Biradar, Chinmay Anil and Puranik, Aryan and Kireeti, Attili Krishna and Jayashree, R},
@@ -2331,6 +2343,19 @@
   abstract      = {In the intricate landscape of game-playing algorithms, Crazyhouse stands as a complex variant of chess where captured pieces are reintroduced, presenting unique evaluation challenges. This paper explores a hybrid approach that combines traditional evaluation functions with neural network-based evaluations, seeking an optimal balance in performance. Through rigorous experimentation, including self-play, matchups against a variant of the renowned program, Go-deep experiments, and score deviations, we present compelling evidence for the effectiveness of a weighted sum of both evaluations. Remarkably, in our experiments, the combination of 75\% neural network and 25\% traditional evaluation consistently emerged as the most effective choice. Furthermore, we introduce the use of Best-Change rates, which have previously been associated with evaluation quality, in the context of Monte Carlo tree search-based algorithms.},
   keywords      = {Crazyhouse, chess variants, heuristic evaluation functions, neural networks, Best-Change rates, Monte Carlo tree search},
   affiliation   = {University of Ljubljana; TU Graz},
+}
+
+@misc{marosi:2026:general-progress-substitutes-for-specific-training-data-in-language-models,
+  title         = {General progress substitutes for specific training data in language models},
+  author        = {Mark Marosi and Peter Antal},
+  year          = {2026},
+  eprint        = {2611.24844},
+  url           = {https://arxiv.org/abs/2611.24844},
+  abstract      = {Language models acquire their capabilities from training data, and developers withhold data during training to keep models from learning capabilities that could be misused. How long this delays a capability, and how much data is needed to acquire it later, is unknown. Here we show that the general progress a model makes on the rest of its training data substitutes for the data that was withheld. We withheld the training signal for individual skills in models of chess, Othello, molecular strings, bracket languages and web text. The delay of a withheld skill in larger models was predicted from smaller ones. A chess model never explicitly trained to respond to check ranked the legal responses almost as well as a model that was. When models were then trained on the withheld data, they acquired the skill with a small fraction of the data needed from initialization, and this fraction decreased as the models progressed. A control rule of equal difficulty was learned much more slowly. A programming language withheld from the training text of a 7-billion-parameter model was regained in the same way. Data filtering therefore delays a capability, and the data required to regain it decreases as models improve.},
+  affiliation   = {Budapest University of Technology and Economics (BME)},
+  code          = {https://github.com/Mapika/progress-substitutes-data},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CL},
 }
 
 @article{martin:2025:re-evaluating-metamorphic-testing-of-chess-engines-replication-study,
