@@ -4,8 +4,6 @@ import { type Metadata } from 'next';
 import { Noto_Sans_Display, Roboto_Slab } from 'next/font/google';
 import { type PropsWithChildren } from 'react';
 
-const basePath = process.env.GITHUB_ACTIONS === 'true' ? '/lichess-papers' : '';
-
 const notoSansDisplay = Noto_Sans_Display({
   variable: '--font-noto-sans-display',
   subsets: ['latin'],
@@ -21,7 +19,7 @@ export const metadata: Metadata = {
   description:
     'Publications that study Lichess, use Lichess data, or otherwise use or mention Lichess in a meaningful way.',
   icons: {
-    icon: `${basePath}/favicon.svg`,
+    icon: './favicon.svg',
   },
 };
 

@@ -7,7 +7,7 @@ on:
     paths:
       - 'lichess.bib'
       - 'website/**'
-      - '.github/workflows/deploy-website.yml'
+      - '.github/workflows/website-deploy.yml'
   workflow_dispatch:
 
 permissions:
